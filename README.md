@@ -26,7 +26,7 @@ Sveto pismo Kralja Jakoba (1769)
 >
 >Translation features:
 >
-> - Jezus words with red
+> - Jesus words with red
 > - "[ ]" translators note; not in original text
 > - "*" difference between SloKJVA and SSP (Slovenian standard translation)
 > 
