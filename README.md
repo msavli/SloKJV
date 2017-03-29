@@ -20,7 +20,7 @@ Sveto pismo Kralja Jakoba (1769)
 >
 >Primer:
 >
->"<chapter osisID="Ps.117" chapterTitle="Psalm 117"><title type="chapter">Psalm 117</title>"
+>(<chapter osisID="Ps.117" chapterTitle="Psalm 117"><title type="chapter">Psalm 117</title>)
 >
 >"  <verse osisID="Ps.117.1">"
 >
