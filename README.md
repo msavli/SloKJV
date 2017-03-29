@@ -2,6 +2,7 @@
 Sveto pismo Kralja Jakoba (1769)
 
 *Slovenščina*
+
 Projekt prevoda **Sveto Pismo kralja Jakoba** 
 
 Doslej prevedene knjige: Geneza, Psalmi, Pregovori, Pridigar, Visoka pesem, Jona, Manasejeva molitev in celotna Nova Zaveza
@@ -16,6 +17,7 @@ Viri: [Angleško besedilo](http://www.crosswire.org/~dmsmith/kjv2006/) [Opombe i
 
 
 *English*
+
 Translation project **King James Version** Bible
 
 Translated books: Gen, Ps, Prov, Eccl, Song, Jonah, PrMan and whole New Testament
