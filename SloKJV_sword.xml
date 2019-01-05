@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace" 
+<osis xmlns="http://www.bibletechnologies.net/2003/OSIS/namespace"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.bibletechnologies.net/2003/OSIS/namespace
        z:/osisCore.2.1.1.xsd"> <!-- http://www.bibletechnologies.net/osisCore.2.1.1.xsd -->
-      
+     
 <osisText osisIDWork="SloKJVA" osisRefWork="Bible" xml:lang="sl">
     <header>
         <work osisWork="SloKJVA">
@@ -764,7 +764,7 @@ In veroval<note type="crossReference"><reference osisRef="Rom.4.3">Rim 4:3</refe
               </verse><verse osisID="Gen.15.7"><milestone type="x-extra-p"/>
 In rekel mu je: „Jaz <transChange type="added">sem</transChange> <divineName>Gospod</divineName>, ki te je privedel iz Ura Kaldejcev, da ti dam to deželo, da jo podeduješ.“
               </verse><verse osisID="Gen.15.8"><milestone type="x-extra-p"/>
-In rekel je: „Gospod <divineName>Bog</divineName>, po čem bom spoznal, da jo bom podedoval?“ 
+In rekel je: „Gospod <divineName>Bog</divineName>, po čem bom spoznal, da jo bom podedoval?“
               </verse><verse osisID="Gen.15.9">
 § On pa mu je rekel: „Vzemi mi triletno telico in triletno kozo in triletnega ovna in grlico ter mladega goloba.“
               </verse><verse osisID="Gen.15.10">
@@ -881,7 +881,7 @@ Na prav isti dan sta bila obrezana Abraham in njegov sin Izmael.
 In vsi ljudje njegove hiše, rojeni v hiši in kupljeni z denarjem od tujca, so bili obrezani z njim.
               </verse></chapter><chapter osisID="Gen.18" chapterTitle="18. Poglavje"><title type="chapter">18. Poglavje</title>
                         <verse osisID="Gen.18.1">
-In <divineName>Gospod</divineName><note type="crossReference"><reference osisRef="Heb.13.2">Heb 13:2</reference></note> se mu je prikazal pri Mamrejevih<note type="study">Mamrejevih…: hebr. Mamrejevi ravnini</note> ravninah: in sedel je pri šotorskih vratih, v vročini dneva;
+In <divineName>Gospod</divineName><note type="crossReference"><reference osisRef="Heb.13.2">Heb 13:2</reference></note> se mu je prikazal pri Mamrejevih ravninah: in sedel je pri šotorskih vratih, v vročini dneva;
               </verse><verse osisID="Gen.18.2">
 in dvignil svoje oči in pogledal in glej, pri njem so stali trije možje: in ko <transChange type="added">jih</transChange> je zagledal, je stekel od šotorskih vrat, da jih sreča in se priklonil proti tlom
               </verse><verse osisID="Gen.18.3">
@@ -2167,7 +2167,7 @@ In to <transChange type="added">so</transChange> sinovi Reguéla, Ezavovega sina
               </verse><verse osisID="Gen.36.18"><milestone type="x-p" subType="x-added" marker="¶"/>
 To pa <transChange type="added">so</transChange> sinovi Ezavove žene Oholibáme: vojvoda Jeúš, vojvoda Jalám, vojvoda Korah; to so <transChange type="added">bili</transChange> vojvode, <transChange type="added">ki so prišli</transChange> iz Ezavove žene Oholibáme, Anájeve hčere.
               </verse><verse osisID="Gen.36.19">
-To <transChange type="added">so</transChange> Ezavovi sinovi, ki <transChange type="added">je</transChange> Edóm in to <transChange type="added">so</transChange> njihove vojvode. 
+To <transChange type="added">so</transChange> Ezavovi sinovi, ki <transChange type="added">je</transChange> Edóm in to <transChange type="added">so</transChange> njihove vojvode.
               </verse><verse osisID="Gen.36.20"><milestone type="x-p" marker="¶ "/>
 <note type="crossReference"><reference osisRef="1Chr.1.38">1 Krn 1:38</reference></note> To <transChange type="added">so</transChange> sinovi Horéjca Seírja, ki je naselil deželo: Lotán in Šobál in Cibón in Anáj
               </verse><verse osisID="Gen.36.21">
@@ -2177,13 +2177,13 @@ In Lotánova sinova sta bila Horí in Hemám;<note type="study">Hemám: ali, Hom
               </verse><verse osisID="Gen.36.23">
 In Šobálovi otroci <transChange type="added">so bili</transChange> tile: Alván<note type="study">Alván: ali, Alian</note> in Manáhat in Ebál, Šefo<note type="study">Šefo: ali, Šefí</note> in Onám.
               </verse><verse osisID="Gen.36.24">
-§ In to <transChange type="added">so</transChange> Cibónova otroka: oba, Ajá in Aná: to <transChange type="added">je bil ta</transChange> Anáj, ki je našel mule<note type="study"><transChange type="added">[mule: ali, tople izvire]</transChange></note> v divjini, ko je pasel osle svojega očeta Cibóna.
+§ In to <transChange type="added">sta</transChange> Cibónova otroka: oba, Ajá in Aná: to <transChange type="added">je bil ta</transChange> Anáj, ki je našel mule <note type="study"><seg><transChange type="added">[mule: ali, tople izvire]</transChange></seg></note>v divjini, ko je pasel osle svojega očeta Cibóna.
               </verse><verse osisID="Gen.36.25">
 In Anájeva otroka <transChange type="added">sta bila</transChange> ta: Dišón in Oholibáma, Anájeva hči.
               </verse><verse osisID="Gen.36.26">
 In to <transChange type="added">so</transChange> Dišónovi otroci: Hemdán<note type="study">Hemdán: ali, Amrám</note> in Ešbán in Jitrán in Kerán.
               </verse><verse osisID="Gen.36.27">
-Ecerjevi otroci <transChange type="added">so</transChange> tile: Bilhán in Zaaván in Akán.<note type="study">Akán: ali, Jakan</note> 
+Ecerjevi otroci <transChange type="added">so</transChange> tile: Bilhán in Zaaván in Akán.<note type="study">Akán: ali, Jakan</note>
               </verse><verse osisID="Gen.36.28">
 Dišánova otroka <transChange type="added">sta</transChange> tale <transChange type="added">[dva]</transChange>: Uc in Arán.
               </verse><verse osisID="Gen.36.29">
@@ -2877,7 +2877,8 @@ In Jožefu sta bila v egiptovski deželi rojena Manáse in Efrájim, katera<note
               </verse><verse osisID="Gen.46.22">
 To <transChange type="added">so</transChange> Rahelini sinovi, ki so bili rojeni Jakobu: vseh duš <transChange type="added">je bilo</transChange> štirinajst.
               </verse><verse osisID="Gen.46.23"><milestone type="x-p" subType="x-added" marker="¶"/>
-In Danovi sinovi:<note type="study"><transChange type="added">[sinovi: ali, sin]</transChange></note> Huším.<note type="study">Huším: ali, Shuham</note>
+In Danovi sinovi:<note type="study"><seg><transChange type="added">[sinovi: ali, sin]</transChange></seg></note>
+		 Huším.<note type="study">Huším: ali, Shuham</note>
               </verse><verse osisID="Gen.46.24"><milestone type="x-p" subType="x-added" marker="¶"/>
 In Neftálijevi sinovi: Jahceél in Guní in Jecer in Šilém.
               </verse><verse osisID="Gen.46.25">
@@ -2956,7 +2957,7 @@ In Jožef je to naredil v egiptovski deželi <transChange type="added">[za]</tra
               </verse><verse osisID="Gen.47.27"><milestone type="x-p" marker="¶ "/>
 In Izrael je prebival v egiptovski deželi, v pokrajini Gošen; in v njej so imeli posesti in rasli ter se silno pomnožili.
               </verse><verse osisID="Gen.47.28">
-In Jakob je v egiptovski deželi živel sedemnajst let: tako je bila<note type="study">bila…: hebr. bilo dni let njegovega življenja</note> celotna Jakobova starost sto sedeminštirideset let. 
+In Jakob je v egiptovski deželi živel sedemnajst let: tako je bila<note type="study">bila…: hebr. bilo dni let njegovega življenja</note> celotna Jakobova starost sto sedeminštirideset let.
               </verse><verse osisID="Gen.47.29">
 Približal pa se je čas, ko je Izrael moral umreti: in poklical je svojega sina Jožefa ter mu rekel: „Če sem sedaj našel milost v tvojem pogledu, položi,<note type="crossReference"><reference osisRef="Gen.24.2">1 Mz 24:2</reference></note> prosim te, svojo roko pod moje stegno ter z menoj postopaj dobrotljivo in iskreno; ne pokoplji me, prosim te, v Egiptu:
               </verse><verse osisID="Gen.47.30">
@@ -3064,7 +3065,7 @@ blagoslovi tvojega očeta so prevladali nad blagoslovi mojih prednikov do skrajn
               </verse><verse osisID="Gen.49.27"><milestone type="x-p" subType="x-added" marker="¶"/>
 Benjamin bo ropal <transChange type="added">kakor</transChange> volk: zjutraj bo požrl plen, ponoči pa bo razdelil dobiček.
               </verse><verse osisID="Gen.49.28"><milestone type="x-p" marker="¶ "/>
-Vsi ti <transChange type="added">so</transChange> dvanajsteri Izraelovi rodovi: in to <transChange type="added">je to</transChange> kar jim je njihov oče govoril in jih blagoslovil; vsakega glede na svoj blagoslov jih je blagoslovil. 
+Vsi ti <transChange type="added">so</transChange> dvanajsteri Izraelovi rodovi: in to <transChange type="added">je to</transChange> kar jim je njihov oče govoril in jih blagoslovil; vsakega glede na svoj blagoslov jih je blagoslovil.
               </verse><verse osisID="Gen.49.29">
 In zapovedal jim je in jim rekel: „Jaz bom zbran k svojemu ljudstvu: pokopljite<note type="crossReference"><reference osisRef="Gen.47.30">1 Mz 47:30</reference></note> me z mojimi očeti v votlini, ki <transChange type="added">je</transChange> na polju Hetejca Efróna,
               </verse><verse osisID="Gen.49.30">
@@ -3216,7 +3217,7 @@ In ko so prišle k svojemu očetu Reguélu<note type="study">Reguélu: imenovane
               </verse><verse osisID="Exod.2.19">
 In rekle so: „Egipčan nas je osvobodil iz roke pastirjev in nam prav tako zajel dovolj <transChange type="added">vode</transChange> in napojil trop.“
               </verse><verse osisID="Exod.2.20">
-In svojim hčeram je rekel: „In kje <transChange type="added">je</transChange>? Zakaj <transChange type="added">je</transChange> to, <transChange type="added">da</transChange> ste človeka pustile? Pokličite ga, da bo lahko jedel kruh.“  
+In svojim hčeram je rekel: „In kje <transChange type="added">je</transChange>? Zakaj <transChange type="added">je</transChange> to, <transChange type="added">da</transChange> ste človeka pustile? Pokličite ga, da bo lahko jedel kruh.“ 
               </verse><verse osisID="Exod.2.21">
 In Mojzes je bil zadovoljen, da prebiva s človekom: in on je Mojzesu dal svojo hčer Cipóro.
               </verse><verse osisID="Exod.2.22">
@@ -3278,7 +3279,7 @@ In Mojzes je odgovoril ter rekel: „Toda, glej, ne bodo mi verjeli, niti prislu
               </verse><verse osisID="Exod.4.2">
 In <divineName>Gospod</divineName> mu je rekel: „Kaj <transChange type="added">je</transChange> to v tvoji roki?“ In rekel je: „Palica.“
               </verse><verse osisID="Exod.4.3">
-In rekel je: „Vrzi jo na tla.“ In vrgel jo je na tla in ta je postala kača; in Mojzes je pobegnil pred njo. 
+In rekel je: „Vrzi jo na tla.“ In vrgel jo je na tla in ta je postala kača; in Mojzes je pobegnil pred njo.
               </verse><verse osisID="Exod.4.4">
 In <divineName>Gospod</divineName> je rekel Mojzesu: „Iztegni svojo roko in jo primi za rep.“ In iztegnil je svojo roko in jo ujel in v njegovi roki je postala palica:
               </verse><verse osisID="Exod.4.5">
@@ -3500,7 +3501,7 @@ In <divineName>Gospod</divineName> je spregovoril Mojzesu: „Pojdi k faraonu in
               </verse><verse osisID="Exod.8.2">
 Če pa odkloniš, da <transChange type="added">jih</transChange> odpustiš, glej, bom vse tvoje meje udaril z žabami:
               </verse><verse osisID="Exod.8.3">
-in reke bodo rodile žab v obilju, ki bodo šle gor in prišle v tvojo hišo in v tvojo spalnico in na tvojo posteljo in v hiše tvojih služabnikov in na tvoje ljudstvo in v tvoje peči in v tvoje nečke:<note type="study">nečke: ali, kvas, <transChange type="added">[posoda za mesenje testa]</transChange></note>
+in reke bodo rodile žab v obilju, ki bodo šle gor in prišle v tvojo hišo in v tvojo spalnico in na tvojo posteljo in v hiše tvojih služabnikov in na tvoje ljudstvo in v tvoje peči in v tvoje nečke:<note type="study">nečke: ali, kvas; <seg><transChange type="added">[posoda za mesenje testa]</transChange></seg></note>
               </verse><verse osisID="Exod.8.4">
 in žabe bodo prišle tako nate, kakor na tvoje ljudstvo in na vse tvoje služabnike.“
               </verse><verse osisID="Exod.8.5"><milestone type="x-p" subType="x-added" marker="¶"/>
@@ -3728,7 +3729,7 @@ In vzeli bodo od krvi in <transChange type="added">jo</transChange> potegnili s 
               </verse><verse osisID="Exod.12.8">
 In v tej noči bodo jedli meso, pečeno z ognjem in nekvašen kruh; <transChange type="added">in</transChange> z grenkimi <transChange type="added">zelišči</transChange> ga bodo jedli.
               </verse><verse osisID="Exod.12.9">
-Ne jejte od njega surovega, niti vsega namočenega z vodo, temveč pečenega <transChange type="added">z</transChange> ognjem; njegovo glavo z njegovimi nogami in z njegovo drobovino.<note type="study"><transChange type="added">[drobovino: srce, jetra in pljuča živali]</transChange></note>
+Ne jejte od njega surovega, niti vsega namočenega z vodo, temveč pečenega <transChange type="added">z</transChange> ognjem; njegovo glavo z njegovimi nogami in z njegovo drobovino.<note type="study"><seg><transChange type="added">[drobovino: srce, jetra in pljuča živali]</transChange></seg></note>
               </verse><verse osisID="Exod.12.10">
 In ničesar od njega ne boste pustili do jutra; in to, kar od njega ostane do jutra, boste sežgali z ognjem.
               </verse><verse osisID="Exod.12.11"><milestone type="x-p" subType="x-added" marker="¶"/>
@@ -4008,7 +4009,7 @@ In ko je rosa,<note type="crossReference"><reference osisRef="Num.11.7">4 Mz 11:
               </verse><verse osisID="Exod.16.15">
 § In ko so Izraelovi otroci <transChange type="added">to</transChange> zagledali, so drug drugemu rekli: „To<note type="crossReference"><reference osisRef="John.6.31">Jn 6:31</reference>; <reference osisRef="1Cor.10.3">1 Kor 10:3</reference></note> <transChange type="added">je</transChange> mana:“ kajti niso vedeli kaj je <transChange type="added">bilo</transChange> to. Mojzes pa jim je rekel: „To <transChange type="added">je</transChange><note type="study">To je…: ali, Kaj je to? ali, To je delež</note> kruh, ki vam ga <divineName>Gospod</divineName> daje za jesti.
               </verse><verse osisID="Exod.16.16"><milestone type="x-p" subType="x-added" marker="¶"/>
-To <transChange type="added">je</transChange> stvar, ki jo je <divineName>Gospod</divineName> zapovedal: ‚Vsak človek naj od tega zbere <transChange type="added">glede na</transChange> svoje prehranjevanje, gomer<note type="study"><transChange type="added">[gomer: protorninska enota: Judovska enciklopedija (1906): 3,64 litra. Judovska študijska biblija (2014): okoli 2,3 litra.]</transChange></note> za vsakega<note type="study">za vsakega…: hebr. po zatilju, ali, na glavo</note> človeka, <transChange type="added">glede na</transChange> število vaših oseb;<note type="study">oseb: hebr. duš</note> vzemite vsak človek za <transChange type="added">tiste</transChange>, ki <transChange type="added">so</transChange> v njegovih šotorih.‘“
+To <transChange type="added">je</transChange> stvar, ki jo je <divineName>Gospod</divineName> zapovedal: ‚Vsak človek naj od tega zbere <transChange type="added">glede na</transChange> svoje prehranjevanje, gomer<note type="study"><seg><transChange type="added">[gomer: protorninska enota: Judovska enciklopedija (1906): 3,64 litra. Judovska študijska biblija (2014): okoli 2,3 litra.]</transChange></seg></note> za vsakega<note type="study">za vsakega…: hebr. po zatilju, ali, na glavo</note> človeka, <transChange type="added">glede na</transChange> število vaših oseb;<note type="study">oseb: hebr. duš</note> vzemite vsak človek za <transChange type="added">tiste</transChange>, ki <transChange type="added">so</transChange> v njegovih šotorih.‘“
               </verse><verse osisID="Exod.16.17">
 In Izraelovi otroci so storili tako in nabrali, nekateri več, drugi manj.
               </verse><verse osisID="Exod.16.18">
@@ -4046,7 +4047,7 @@ In Mojzes je Aronu rekel: „Vzemi lonec in vanj stresi gomer, poln mane in ga p
               </verse><verse osisID="Exod.16.34">
 Kakor je <divineName>Gospod</divineName> zapovedal Mojzesu, tako je Aron to položil pred Pričevanje, da bo obdržano.
               </verse><verse osisID="Exod.16.35">
-In Izraelovi otroci so štirideset let jedli mano, dokler<note type="crossReference"><reference osisRef="Josh.5.1-Josh.5.2">Joz 5:1-2</reference>; <reference osisRef="Neh.9.15">Neh 9:15</reference></note> niso prišli v naseljeno deželo; jedli so mano, dokler niso prišli do meja kánaanske dežele. 
+In Izraelovi otroci so štirideset let jedli mano, dokler<note type="crossReference"><reference osisRef="Josh.5.1-Josh.5.2">Joz 5:1-2</reference>; <reference osisRef="Neh.9.15">Neh 9:15</reference></note> niso prišli v naseljeno deželo; jedli so mano, dokler niso prišli do meja kánaanske dežele.
               </verse><verse osisID="Exod.16.36">
 Torej gomer <transChange type="added">je</transChange> deseti <transChange type="added">del</transChange> efe.
               </verse></chapter><chapter  osisID="Exod.17" chapterTitle="17. Poglavje"><title type="chapter">17. Poglavje</title>
@@ -4249,7 +4250,7 @@ Torej to <transChange type="added">so</transChange> sodbe, ki jih boš postavil 
               </verse><verse osisID="Exod.21.3">
 Če je sam<note type="study">sam: hebr. s svojim telesom</note> prišel, naj sam odide: če je bil poročen, potem naj njegova žena odide z njim.
               </verse><verse osisID="Exod.21.4">
-Če mu je njegov gospodar dal ženo in mu je rodila sinove ali hčere; naj bodo žena in njeni otroci <transChange type="added">[od]</transChange> njegovega gospodarja, on pa naj odide sam. 
+Če mu je njegov gospodar dal ženo in mu je rodila sinove ali hčere; naj bodo žena in njeni otroci <transChange type="added">[od]</transChange> njegovega gospodarja, on pa naj odide sam.
               </verse><verse osisID="Exod.21.5">
 Če pa mu bo služabnik<note type="study">služabnik…: hebr. rekoč rekel</note> jasno rekel: ‚Ljubim svojega gospodarja, svojo ženo in svoje otroke; ne bom odšel svoboden:
               </verse><verse osisID="Exod.21.6">
@@ -4344,7 +4345,7 @@ In če<note type="crossReference"><reference osisRef="Gen.31.39">1 Mz 31:39</ref
               </verse><verse osisID="Exod.22.14"><milestone type="x-p" subType="x-added" marker="¶"/>
 In če si človek karkoli izposodi od svojega soseda in je to poškodovano ali pogine, pa njegov lastnik ni <transChange type="added">bil</transChange> s tem, naj on <transChange type="added">to</transChange> zagotovo nadoknadi.
               </verse><verse osisID="Exod.22.15">
-<transChange type="added">Toda</transChange> če je <transChange type="added">bil</transChange> lastnik od tega z njim, naj on <transChange type="added">tega</transChange> ne nadoknadi: če je <transChange type="added">bila</transChange> najeta <transChange type="added">stvar</transChange>, je ta prišla za njegovo najemnino.     
+<transChange type="added">Toda</transChange> če je <transChange type="added">bil</transChange> lastnik od tega z njim, naj on <transChange type="added">tega</transChange> ne nadoknadi: če je <transChange type="added">bila</transChange> najeta <transChange type="added">stvar</transChange>, je ta prišla za njegovo najemnino.    
               </verse><verse osisID="Exod.22.16"><milestone type="x-p" marker="¶ "/>
 In če<note type="crossReference"><reference osisRef="Deut.22.28">5 Mz 22:28</reference></note> moški privabi služabnico, ki ni zaročena in leži z njo, naj jo zagotovo financira, da postane njegova žena.
               </verse><verse osisID="Exod.22.17">
@@ -4374,7 +4375,7 @@ kajti to <transChange type="added">je</transChange> njegovo edino pokrivalo, to 
               </verse><verse osisID="Exod.22.29"><milestone type="x-p" subType="x-added" marker="¶"/>
 § <note type="crossReference"><reference osisRef="Exod.13.2">2 Mz 13:2</reference>; <reference osisRef="Exod.13.12">2 Mz 13:12</reference>; <reference osisRef="Exod.34.19">2 Mz 34:19</reference></note> Ne boš odlašal <transChange type="added">darovati</transChange> prvin<note type="study">prvin…: hebr. tvojo polnost</note> od svojih zrelih sadov in od svojih žganih pijač:<note type="study">žganih pijač: hebr. solz</note> prvorojenega izmed svojih sinov boš dal meni.
               </verse><verse osisID="Exod.22.30">
-Podobno boš storil s svojimi voli <transChange type="added">in</transChange> s svojimi ovcami: sedem dni naj bo ta s svojo materjo; na osmi dan ga boš dal meni. 
+Podobno boš storil s svojimi voli <transChange type="added">in</transChange> s svojimi ovcami: sedem dni naj bo ta s svojo materjo; na osmi dan ga boš dal meni.
               </verse><verse osisID="Exod.22.31"><milestone type="x-p" subType="x-added" marker="¶"/>
 In vi mi boste sveti ljudje; niti<note type="crossReference"><reference osisRef="Lev.22.8">3 Mz 22:8</reference>; <reference osisRef="Ezek.44.31">Ezk 44:31</reference></note> ne boste jedli <transChange type="added">kakršnega koli</transChange> mesa, <transChange type="added">ki je</transChange> raztrgano od živali na polju; vrgli ga boste psom.
               </verse></chapter><chapter  osisID="Exod.23" chapterTitle="23. Poglavje"><title type="chapter">23. Poglavje</title>
@@ -4393,7 +4394,7 @@ Ti ne boš pačil sodbe ubogega v njegovi zadevi.
               </verse><verse osisID="Exod.23.7">
 Drži se proč od napačne stvari; nedolžnega in pravičnega ne ubij: kajti zlobnega jaz ne bom opravičil.
               </verse><verse osisID="Exod.23.8"><milestone type="x-p" subType="x-added" marker="¶"/>
-§ In ti<note type="crossReference"><reference osisRef="Deut.16.19">5 Mz 16:19</reference>; <reference osisRef="Eccl.20.28">Prd 20:28</reference></note> ne boš prejel nobenega darila: kajti darilo slépi modrega<note type="study">modrega: hebr. tega, ki vidi</note> in izkrivlja besede pravičnega.  
+§ In ti<note type="crossReference"><reference osisRef="Deut.16.19">5 Mz 16:19</reference>; <reference osisRef="Eccl.20.28">Prd 20:28</reference></note> ne boš prejel nobenega darila: kajti darilo slépi modrega<note type="study">modrega: hebr. tega, ki vidi</note> in izkrivlja besede pravičnega. 
               </verse><verse osisID="Exod.23.9"><milestone type="x-p" subType="x-added" marker="¶"/>
 § Ti tudi ne boš zatiral tujca: kajti poznate srce<note type="study">srce: hebr. dušo</note> tujca, glede na to, da ste bili tujci v egiptovski deželi.
               </verse><verse osisID="Exod.23.10"><milestone type="x-extra-p"/>
@@ -4450,7 +4451,7 @@ In Mojzesu je rekel: „Pridite gor h <divineName>Gospodu</divineName>, ti in Ar
               </verse><verse osisID="Exod.24.2">
 Samo Mojzes pa bo prišel blizu <divineName>Gospodu</divineName>: toda oni naj ne pridejo blizu; niti ne bo ljudstvo z njim šlo gor.
               </verse><verse osisID="Exod.24.3"><milestone type="x-p" subType="x-added" marker="¶"/>
-In Mojzes je prišel in ljudstvu povedal vse <divineName>Gospodove</divineName> besede in vse sodbe: in vse ljudstvo je odgovorilo z enim glasom ter reklo: „Vse<note type="crossReference"><reference osisRef="Exod.19.8">2 Mz 19:8</reference>; <reference osisRef="Exod.19.24">2 Mz 19:24</reference>; <reference osisRef="Exod.3.7">2 Mz 3:7</reference>; <reference osisRef="Deut.5.27">5 Mz 5:27</reference></note> besede, ki jih je povedal <divineName>Gospod</divineName>, bomo izpolnjevali.“ 
+In Mojzes je prišel in ljudstvu povedal vse <divineName>Gospodove</divineName> besede in vse sodbe: in vse ljudstvo je odgovorilo z enim glasom ter reklo: „Vse<note type="crossReference"><reference osisRef="Exod.19.8">2 Mz 19:8</reference>; <reference osisRef="Exod.19.24">2 Mz 19:24</reference>; <reference osisRef="Exod.3.7">2 Mz 3:7</reference>; <reference osisRef="Deut.5.27">5 Mz 5:27</reference></note> besede, ki jih je povedal <divineName>Gospod</divineName>, bomo izpolnjevali.“
               </verse><verse osisID="Exod.24.4">
 In Mojzes je zapisal vse <divineName>Gospodove</divineName> besede in vstal zgodaj zjutraj in pod hribom zgradil oltar in dvanajst stebrov, glede na dvanajst Izraelovih rodov.
               </verse><verse osisID="Exod.24.5">
@@ -4472,7 +4473,7 @@ In <divineName>Gospod</divineName> je rekel Mojzesu: „Pridi gor k meni na goro
               </verse><verse osisID="Exod.24.13">
 In Mojzes je vstal ter njegov služabnik Józue: in Mojzes je šel gor na goro Boga.
               </verse><verse osisID="Exod.24.14">
-Starešinam pa je rekel: „Čakajte tukaj na naju, dokler ponovno ne prideva k vam: in glejte, Aron in Hur <transChange type="added">sta</transChange> z vami: če ima katerikoli človek za opraviti kakršnekoli zadeve, naj pride k njima.“   
+Starešinam pa je rekel: „Čakajte tukaj na naju, dokler ponovno ne prideva k vam: in glejte, Aron in Hur <transChange type="added">sta</transChange> z vami: če ima katerikoli človek za opraviti kakršnekoli zadeve, naj pride k njima.“  
               </verse><verse osisID="Exod.24.15">
 In Mojzes je odšel gor na goro in goro je pokril oblak.
               </verse><verse osisID="Exod.24.16">
@@ -4499,7 +4500,7 @@ oniksove kamne in kamne, da bodo vdelani v efód<note type="crossReference"><ref
               </verse><verse osisID="Exod.25.8">
 In naj mi naredijo svetišče; da bom lahko prebival med njimi.
               </verse><verse osisID="Exod.25.9">
-Glede na vse, kar sem ti pokazal, <transChange type="added">po</transChange> vzorcu šotorskega svetišča in vzorcu vseh njegovih priprav, celo tako boste <transChange type="added">to</transChange> naredili. 
+Glede na vse, kar sem ti pokazal, <transChange type="added">po</transChange> vzorcu šotorskega svetišča in vzorcu vseh njegovih priprav, celo tako boste <transChange type="added">to</transChange> naredili.
               </verse><verse osisID="Exod.25.10"><milestone type="x-p" marker="¶ "/>
 <note type="crossReference"><reference osisRef="Exod.37.1">2 Mz 37:1</reference></note> In nosilko bodo naredili <transChange type="added">iz</transChange> akacijevega lesa: dva komolca in pol <transChange type="added">bo</transChange> njena dolžina in komolec in pol njena širina in komolec in pol njena višina.
               </verse><verse osisID="Exod.25.11">
@@ -4568,7 +4569,7 @@ Poleg tega boš naredil šotorsko svetišče <transChange type="added">z</transC
               </verse><verse osisID="Exod.26.2">
 Dolžina ene zavese <transChange type="added">naj bo</transChange> osemindvajset komolcev in širina ene zavese štiri komolce: in vsaka izmed zaves bo imela eno mero.
               </verse><verse osisID="Exod.26.3">
-Pet zaves bo spojeno skupaj druga k drugi; in <transChange type="added">drugih</transChange> pet zaves <transChange type="added">bo spojenih</transChange> skupaj druga k drugi.  
+Pet zaves bo spojeno skupaj druga k drugi; in <transChange type="added">drugih</transChange> pet zaves <transChange type="added">bo spojenih</transChange> skupaj druga k drugi. 
               </verse><verse osisID="Exod.26.4">
 In naredil boš zanke iz modrega na robu prve zavese od zarobitve<note type="study">zarobitve: tako spleten rob obleke, da se ne more razparati</note> v spoju; in enako boš storil na najbolj oddaljenem delu <transChange type="added">druge</transChange> zavese, na spoju druge.
               </verse><verse osisID="Exod.26.5">
@@ -4578,7 +4579,7 @@ In naredil boš petdeset zaponk iz zlata in zavese spojil skupaj z zaponkami: in
               </verse><verse osisID="Exod.26.7"><milestone type="x-p" marker="¶ "/>
 In naredil boš zavese <transChange type="added">iz</transChange> kozje <transChange type="added">dlake</transChange>, da bodo pokrivalo nad šotorskim svetiščem: enajst zaves boš naredil.
               </verse><verse osisID="Exod.26.8">
-Dolžina ene zavese <transChange type="added">bo</transChange> trideset komolcev in širina ene zavese štiri komolce: in <transChange type="added">vseh</transChange> enajst zaves <transChange type="added">bo</transChange> ene mere.  
+Dolžina ene zavese <transChange type="added">bo</transChange> trideset komolcev in širina ene zavese štiri komolce: in <transChange type="added">vseh</transChange> enajst zaves <transChange type="added">bo</transChange> ene mere. 
               </verse><verse osisID="Exod.26.9">
 In pet zaves boš spojil med seboj in šest zaves med seboj in šesto zaveso boš prepognil v sprednjem delu šotorskega svetišča.
               </verse><verse osisID="Exod.26.10">
@@ -4622,11 +4623,11 @@ In srednji zapah v sredi desk naj sega od konca do konca.
               </verse><verse osisID="Exod.26.29">
 In deske boš prevlekel z zlatom in njene obroče naredil <transChange type="added">iz</transChange> zlata <transChange type="added">za</transChange> prostore za zapahe: in zapahe boš prevlekel z zlatom.
               </verse><verse osisID="Exod.26.30">
-In vzdignil boš šotorsko svetišče glede<note type="crossReference"><reference osisRef="Exod.25.9">2 Mz 25:9</reference>; <reference osisRef="Exod.25.40">2 Mz 25:40</reference>; <reference osisRef="Acts.7.44">Apd 7:44</reference>; <reference osisRef="Heb.8.5">Heb 8:5</reference></note> na ta način, ki ti je bil pokazan na gori. 
+In vzdignil boš šotorsko svetišče glede<note type="crossReference"><reference osisRef="Exod.25.9">2 Mz 25:9</reference>; <reference osisRef="Exod.25.40">2 Mz 25:40</reference>; <reference osisRef="Acts.7.44">Apd 7:44</reference>; <reference osisRef="Heb.8.5">Heb 8:5</reference></note> na ta način, ki ti je bil pokazan na gori.
               </verse><verse osisID="Exod.26.31"><milestone type="x-p" marker="¶ "/>
 In naredil boš zagrinjalo <transChange type="added">iz</transChange> modre in vijolične in škrlatne in sukane tančice spretne izdelave: s kerubi bo narejeno:
               </verse><verse osisID="Exod.26.32">
-in obesil ga boš na štiri stebre iz akacijevega <transChange type="added">lesa</transChange> in jih prevlekel z zlatom: njihovi kavlji <transChange type="added">bodo iz</transChange> zlata, na štirih podstavkih iz srebra. 
+in obesil ga boš na štiri stebre iz akacijevega <transChange type="added">lesa</transChange> in jih prevlekel z zlatom: njihovi kavlji <transChange type="added">bodo iz</transChange> zlata, na štirih podstavkih iz srebra.
               </verse><verse osisID="Exod.26.33"><milestone type="x-p" subType="x-added" marker="¶"/>
 In zagrinjalo boš obesil pod zaponke, da boš lahko prinesel tja, znotraj zagrinjala, nosilko pričevanja: in zagrinjalo vam bo razdelilo med svetim <transChange type="added">krajem</transChange> in najsvetejšim.
               </verse><verse osisID="Exod.26.34">
@@ -4639,11 +4640,11 @@ In naredil boš tanko preprogo za vrata šotora <transChange type="added">iz</tr
 In za tanko preprogo boš naredil pet stebrov <transChange type="added">iz</transChange> akacijevega <transChange type="added">lesa</transChange> in jih prevlekel z zlatom <transChange type="added">in</transChange> njihovi kavlji <transChange type="added">bodo iz</transChange> zlata: in zanje boš ulil pet podstavkov iz brona.
               </verse></chapter><chapter  osisID="Exod.27" chapterTitle="27. Poglavje"><title type="chapter">27. Poglavje</title>
                         <verse osisID="Exod.27.1">
-In naredil boš oltar <transChange type="added">iz</transChange> akacijevega lesa, pet komolcev dolg in pet komolcev širok; oltar naj bo štirioglat: in njegova višina <transChange type="added">naj bo</transChange> tri komolce. 
+In naredil boš oltar <transChange type="added">iz</transChange> akacijevega lesa, pet komolcev dolg in pet komolcev širok; oltar naj bo štirioglat: in njegova višina <transChange type="added">naj bo</transChange> tri komolce.
               </verse><verse osisID="Exod.27.2">
 In iz istega boš naredil rogove na njegovih štirih vogalih: njegovi rogovi bodo iz istega: prekril pa ga boš z bronom.
               </verse><verse osisID="Exod.27.3">
-In naredil boš njegove lonce, da sprejmejo njegov pepel in njegove lopate in njegove umivalnike in njegove kavlje za meso in njegove ponve za žerjavico: vse njegove posode boš naredil <transChange type="added">iz</transChange> brona.   
+In naredil boš njegove lonce, da sprejmejo njegov pepel in njegove lopate in njegove umivalnike in njegove kavlje za meso in njegove ponve za žerjavico: vse njegove posode boš naredil <transChange type="added">iz</transChange> brona.  
               </verse><verse osisID="Exod.27.4">
 In zanj boš naredil mrežasto rešetko <transChange type="added">iz</transChange> brona; in na mreži boš naredil štiri bronaste obroče na njenih štirih vogalih.
               </verse><verse osisID="Exod.27.5">
@@ -4671,7 +4672,7 @@ In na drugi strani <transChange type="added">naj bodo</transChange> tanke prepro
               </verse><verse osisID="Exod.27.16"><milestone type="x-p" subType="x-added" marker="¶"/>
 In za velika vrata dvora <transChange type="added">naj bo</transChange> tanka preproga dvajsetih komolcev <transChange type="added">iz</transChange> modre in vijolične in škrlatne in sukane tančice, izdelane z vézenjem: <transChange type="added">in</transChange> njihovi stebri <transChange type="added">naj bodo</transChange> štirje in štirje njihovi podstavki.
               </verse><verse osisID="Exod.27.17">
-Vsi stebri okoli dvora <transChange type="added">naj bodo</transChange> okrašeni s srebrom; njihovi kavlji <transChange type="added">naj bodo iz</transChange> srebra, njihovi podstavki pa <transChange type="added">iz</transChange> brona. 
+Vsi stebri okoli dvora <transChange type="added">naj bodo</transChange> okrašeni s srebrom; njihovi kavlji <transChange type="added">naj bodo iz</transChange> srebra, njihovi podstavki pa <transChange type="added">iz</transChange> brona.
               </verse><verse osisID="Exod.27.18"><milestone type="x-p" subType="x-added" marker="¶"/>
 Dolžina dvora <transChange type="added">naj bo</transChange> sto komolcev in širina vsepovsod petdeset<note type="study">petdeset…: hebr. petdeset po petdeset</note> in višina pet komolcev <transChange type="added">iz</transChange> sukane tančice, njihovi podstavki pa <transChange type="added">iz</transChange> brona.
               </verse><verse osisID="Exod.27.19">
@@ -4746,7 +4747,7 @@ In naredil boš svečano oblačilo efóda, celotno <transChange type="added">iz<
               </verse><verse osisID="Exod.28.32">
 In na vrhu tega naj bo odprtina v njegovi sredi: naj ima vezenje iz spletenega dela naokoli njegove luknje, kakor če bi bila luknja brezrokavne verižne srajce, da ta ne bo raztrgana.
               </verse><verse osisID="Exod.28.33"><milestone type="x-p" subType="x-added" marker="¶"/>
-In <transChange type="added">spodaj</transChange>, na njegovem<note type="study">njegovem…: ali, njegovih krilih</note> obšivu, boš naredil granatna jabolka <transChange type="added">iz</transChange> modre in <transChange type="added">iz</transChange> vijolične in <transChange type="added">iz</transChange> škrlata, naokoli njegovega obšiva; in zvončke iz zlata naokoli med njimi: 
+In <transChange type="added">spodaj</transChange>, na njegovem<note type="study">njegovem…: ali, njegovih krilih</note> obšivu, boš naredil granatna jabolka <transChange type="added">iz</transChange> modre in <transChange type="added">iz</transChange> vijolične in <transChange type="added">iz</transChange> škrlata, naokoli njegovega obšiva; in zvončke iz zlata naokoli med njimi:
               </verse><verse osisID="Exod.28.34">
 zlat zvonček in granatno jabolko, zlat zvonček in granatno jabolko, na obšivu naokoli svečanega oblačila.
               </verse><verse osisID="Exod.28.35">
@@ -4785,7 +4786,8 @@ Potem boš vzel mazilno olje<note type="crossReference"><reference osisRef="Exod
               </verse><verse osisID="Exod.29.8">
 In privedel boš njegove sinove in nanje nadel plašče.
               </verse><verse osisID="Exod.29.9">
-in opasal jih boš s pasovi, Arona in njegove sinove in nanje položil klobučke: in duhovniško opravilo bo njihovo za večno pravilo: in posvetil<note type="study">posvetil…: hebr. napolnil boš Aronovo roko in <transChange type="added">[roke]</transChange> njegovih sinov</note><note type="crossReference"><reference osisRef="Exod.28.41">2 Mz 28:41</reference></note> boš Arona in njegove sinove.
+in opasal jih boš s pasovi, Arona in njegove sinove in nanje položil<note type="study">položil: hebr. povezal</note> klobučke: in duhovniško opravilo bo njihovo za večno pravilo: in posvetil<note type="study">posvetil…: hebr. napolnil boš Aronovo roko in <seg><transChange type="added">[roke]</transChange></seg> njegovih sinov</note><note type="crossReference"><reference osisRef="Exod.28.41">2 Mz 28:41</reference></note> boš Arona in njegove sinove.
+		
               </verse><verse osisID="Exod.29.10">
 In volu boš povzročil, da bo priveden pred šotorsko svetišče shoda: in Aron<note type="crossReference"><reference osisRef="Lev.1.4">3 Mz 1:4</reference></note> in njegovi sinovi bodo svoje roke položili volu na glavo.
               </verse><verse osisID="Exod.29.11">
@@ -4813,7 +4815,7 @@ In vzel boš od krvi, ki <transChange type="added">je</transChange> na oltarju i
               </verse><verse osisID="Exod.29.22">
 Od ovna boš vzel tudi loj in zadnji del in loj, ki pokriva drobovje in opno <transChange type="added">nad</transChange> jetri in dve ledvici in loj, ki <transChange type="added">je</transChange> na njiju in desno pleče; kajti to <transChange type="added">je</transChange> oven posvetitve:
               </verse><verse osisID="Exod.29.23">
-in en hleb kruha in en kolač oljnatega kruha in en vafelj iz košare nekvašenega kruha, ki <transChange type="added">je</transChange> pred <divineName>Gospodom</divineName>:    
+in en hleb kruha in en kolač oljnatega kruha in en vafelj iz košare nekvašenega kruha, ki <transChange type="added">je</transChange> pred <divineName>Gospodom</divineName>:   
               </verse><verse osisID="Exod.29.24">
 in vse boš položil v Aronove roke in v roke njegovih sinov; in majal jih boš<note type="study">majal jih boš: ali, tresel jih boš sem ter tja</note> <transChange type="added"> za</transChange> majalno daritev pred <divineName>Gospodom</divineName>.
               </verse><verse osisID="Exod.29.25">
@@ -4859,7 +4861,7 @@ In jaz bom šotorsko svetišče shoda in oltar naredil sveto; in jaz bom naredil
               </verse><verse osisID="Exod.29.45"><milestone type="x-p" subType="x-added" marker="¶"/>
 In jaz<note type="crossReference"><reference osisRef="Lev.26.12">3 Mz 26:12</reference>; <reference osisRef="2Cor.6.16">2 Kor 6:16</reference></note> bom prebival med Izraelovi otroci in bom njihov Bog.
               </verse><verse osisID="Exod.29.46">
-In spoznali bodo, da <transChange type="added">sem</transChange> jaz <divineName>Gospod</divineName>, njihov Bog, ki jih je privedel iz egiptovske dežele, da lahko prebivam med njimi: jaz <transChange type="added">sem </transChange> <divineName>Gospod</divineName>, njihov Bog.  XXX pregledal z SSPXXX
+In spoznali bodo, da <transChange type="added">sem</transChange> jaz <divineName>Gospod</divineName>, njihov Bog, ki jih je privedel iz egiptovske dežele, da lahko prebivam med njimi: jaz <transChange type="added">sem </transChange> <divineName>Gospod</divineName>, njihov Bog.
               </verse></chapter><chapter  osisID="Exod.30" chapterTitle="30. Poglavje"><title type="chapter">30. Poglavje</title>
                         <verse osisID="Exod.30.1">
 In naredil boš oltar, da na njem zažgeš kadilo: <transChange type="added">iz</transChange> akacijevega lesa ga boš naredil.
@@ -5057,7 +5059,7 @@ In ko je ljudstvo slišalo te zle vesti, je žalovalo: in noben človek si nase 
               </verse><verse osisID="Exod.33.5">
 Kajti <divineName>Gospod</divineName> je rekel Mojzesu: „Reci Izraelovim otrokom: ‚Vi <transChange type="added">ste</transChange> trdovratno ljudstvo: v trenutku bom prišel v tvojo sredo in te použil: zato sedaj iz sebe odloži svoje ornamente, da lahko vem, kaj ti storiti.‘“
               </verse><verse osisID="Exod.33.6">
-In Izraelovi otroci so se pri gori Horeb ogolili svojih ornamentov. 
+In Izraelovi otroci so se pri gori Horeb ogolili svojih ornamentov.
               </verse><verse osisID="Exod.33.7"><milestone type="x-extra-p"/>
 In Mojzes je vzel šotorsko svetišče in ga postavil zunaj tabora, daleč od tabora ter ga imenoval Šotorsko svetišče shoda. In pripetilo se je, <transChange type="added">da</transChange> kdorkoli je iskal <divineName>Gospoda</divineName>, je odšel k šotorskemu svetišču shoda, ki <transChange type="added">je bil</transChange> zunaj tabora.
               </verse><verse osisID="Exod.33.8">
@@ -5075,7 +5077,7 @@ Zdaj torej, prosim te, če sem našel milost v tvojih očeh, pokaži mi torej sv
               </verse><verse osisID="Exod.33.14">
 In rekel je: „Moja prisotnost bo šla <transChange type="added">s teboj</transChange> in jaz ti bom dal počitek.“
               </verse><verse osisID="Exod.33.15">
-In rekel mu je: „Če tvoja prisotnost ne gre <transChange type="added">z menoj</transChange>, nas ne odvedi tja gor.“ 
+In rekel mu je: „Če tvoja prisotnost ne gre <transChange type="added">z menoj</transChange>, nas ne odvedi tja gor.“
               </verse><verse osisID="Exod.33.16">
 Kajti v čem bo to znano tukaj, da smo jaz in tvoje ljudstvo našli milost v tvojih očeh? <transChange type="added">Ali</transChange> ni <transChange type="added">to</transChange> v tem, da hodiš z nami? Tako bomo ločeni, jaz in tvoje ljudstvo, od vseh ljudstev, ki <transChange type="added">so</transChange> na obličju zemlje.“
               </verse><verse osisID="Exod.33.17">
@@ -5175,7 +5177,7 @@ In Mojzes je spregovoril vsemu shodu Izraelovih otrok, rekoč: „To <transChang
               </verse><verse osisID="Exod.35.5">
 ‚Vzemite izmed vas daritev <divineName>Gospodu</divineName>: kdorkoli<note type="crossReference"><reference osisRef="Exod.25.2">2 Mz 25:2</reference></note> <transChange type="added">je</transChange> voljnega srca, naj jo prinese, daritev <divineName>Gospodu</divineName>: zlato in srebro in bron
               </verse><verse osisID="Exod.35.6">
-in modro in vijolično in škrlatno in tanko laneno platno in kozjo <transChange type="added">dlako</transChange> 
+in modro in vijolično in škrlatno in tanko laneno platno in kozjo <transChange type="added">dlako</transChange>
               </verse><verse osisID="Exod.35.7">
 § in rdeče barvane ovnove kože in kože jazbecev in akacijev les
               </verse><verse osisID="Exod.35.8">
@@ -5372,9 +5374,9 @@ In naredil je drogova <transChange type="added">iz</transChange> akacijevega les
 In naredil je sveto<note type="crossReference"><reference osisRef="Exod.30.35">2 Mz 30:35</reference></note> mazilno olje in čisto kadilo iz prijetnih dišav, glede na lekarnarjevo delo.
               </verse></chapter><chapter  osisID="Exod.38" chapterTitle="38. Poglavje"><title type="chapter">38. Poglavje</title>
                         <verse osisID="Exod.38.1">
-In naredil<note type="crossReference"><reference osisRef="Exod.27.1">2 Mz 27:1</reference></note> je oltar žgalne daritve <transChange type="added">iz</transChange> akacijevega lesa: pet komolcev <transChange type="added">je bila</transChange> njegova dolžina in pet komolcev njegova širina; <transChange type="added">bil je</transChange> štirioglat; in tri komolce je bila njegova višina. 
+In naredil<note type="crossReference"><reference osisRef="Exod.27.1">2 Mz 27:1</reference></note> je oltar žgalne daritve <transChange type="added">iz</transChange> akacijevega lesa: pet komolcev <transChange type="added">je bila</transChange> njegova dolžina in pet komolcev njegova širina; <transChange type="added">bil je</transChange> štirioglat; in tri komolce je bila njegova višina.
               </verse><verse osisID="Exod.38.2">
-In naredil je njegove rogove na štirih njegovih vogalih; njegovi rogovi so bili iz istega: in prevlekel jih je z bronom. 
+In naredil je njegove rogove na štirih njegovih vogalih; njegovi rogovi so bili iz istega: in prevlekel jih je z bronom.
               </verse><verse osisID="Exod.38.3">
 In naredil je vse oltarne posode, lonce in lopate in umivalnike <transChange type="added">in</transChange> kavlje za meso in ponve za žerjavico: vse njegove posode je naredil <transChange type="added">iz</transChange> brona.
               </verse><verse osisID="Exod.38.4">
@@ -5473,7 +5475,7 @@ In dva konca dveh spletenih verižic so privezali na dve ležišči in ju pritrd
               </verse><verse osisID="Exod.39.19">
 In naredili so dva obročka iz zlata in <transChange type="added">ju</transChange> položili na dva konca naprsnika, na njegov rob, ki <transChange type="added">je bil</transChange> na notranji strani efóda.
               </verse><verse osisID="Exod.39.20">
-In naredili so dva <transChange type="added">druga</transChange> zlata obročka in ju položili na dve strani pod efód, proti njegovi prednji strani, nasproti <transChange type="added">drugemu</transChange> njegovemu spoju, nad nenavadnim pasom efóda. 
+In naredili so dva <transChange type="added">druga</transChange> zlata obročka in ju položili na dve strani pod efód, proti njegovi prednji strani, nasproti <transChange type="added">drugemu</transChange> njegovemu spoju, nad nenavadnim pasom efóda.
               </verse><verse osisID="Exod.39.21">
 In naprsnik z njegovimi obročki so z modrim trakom privezali k obročkom efóda, da bi bil ta lahko nad nenavadnim pasom efóda in da se naprsnik ne bi odvezal od efóda; kakor je <divineName>Gospod</divineName> zapovedal Mojzesu.
               </verse><verse osisID="Exod.39.22"><milestone type="x-p" subType="x-added" marker="¶"/>
@@ -5501,7 +5503,7 @@ Tako je bilo vse delo šotorskega svetišča shoda končano: in Izraelovi otroci
               </verse><verse osisID="Exod.39.33"><milestone type="x-p" subType="x-added" marker="¶"/>
 In šotorsko svetišče so prinesli k Mojzesu, šotor, vso njegovo opremo, njegove zaponke, njegove deske, njegove zapahe in njegove stebre in njegove podstavke
               </verse><verse osisID="Exod.39.34">
-in pokrivalo rdeče barvanih ovnovih kož in pokrivalo kož jazbecev in zagrinjalo pokrivala, 
+in pokrivalo rdeče barvanih ovnovih kož in pokrivalo kož jazbecev in zagrinjalo pokrivala,
               </verse><verse osisID="Exod.39.35">
 nosilko pričevanja in njena drogova in sedež milosti,
               </verse><verse osisID="Exod.39.36">
@@ -7724,7 +7726,7 @@ Kakor je pregnan dim, <transChange type="added">tako jih</transChange> preženi:
               </verse><verse osisID="Ps.68.3">
 § Toda pravični naj bodo veseli; naj se veselijo pred Bogom: da, naj se silno<note type="study">silno…: hebr. veselijo z veseljem.</note> veselijo.
               </verse><verse osisID="Ps.68.4">
-§ Prepevajte Bogu, prepevajte hvalnice njegovemu imenu: povzdigujte njega, ki jaha po nebesih s svojim imenom <divineName>Jah</divineName> <note type="study"><transChange type="added">[GOSPOD]</transChange></note> in se veselite pred njim.
+§ Prepevajte Bogu, prepevajte hvalnice njegovemu imenu: povzdigujte njega, ki jaha po nebesih s svojim imenom <divineName>Jah</divineName><note type="study"><seg><transChange type="added">[GOSPOD]</transChange></seg></note> in se veselite pred njim.
               </verse><verse osisID="Ps.68.5">
 Oče osirotelim in sodnik vdovam <transChange type="added">je</transChange> Bog v svojem svetem prebivališču.
               </verse><verse osisID="Ps.68.6">
@@ -11131,7 +11133,7 @@ Toda steza pravičnih <transChange type="added">je</transChange> kakor svetlikaj
               </verse><verse osisID="Prov.4.19">
 Pot zlobnih <transChange type="added">je</transChange> kakor tema: ne vedo ob kaj se spotaknejo.
               </verse><verse osisID="Prov.4.20"><milestone type="x-p" marker="¶ "/>
-Moj sin, prisluhni mojim besedam; svoje uho nagni k mojim izrekom. 
+Moj sin, prisluhni mojim besedam; svoje uho nagni k mojim izrekom.
               </verse><verse osisID="Prov.4.21">
 Naj le-ti ne odidejo od tvojih oči; obdrži jih v sredi svojega srca.
               </verse><verse osisID="Prov.4.22">
@@ -11192,7 +11194,7 @@ Naj bo tvoj studenec blagoslovljen: in razveseljuj se z ženo svoje mladosti.
               </verse><verse osisID="Prov.5.22"><milestone type="x-p" subType="x-added" marker="¶"/>
 Njegove lastne krivičnosti bodo zlobnega vzele k sebi in držan bo z vrvmi svojih<note type="study">svojih…: hebr. svojega greha</note> grehov.
               </verse><verse osisID="Prov.5.23">
-Umrl bo brez poučevanja; in v veličini svoje neumnosti bo zašel na stranpot. 
+Umrl bo brez poučevanja; in v veličini svoje neumnosti bo zašel na stranpot.
               </verse></chapter><chapter osisID="Prov.06" chapterTitle="6. Poglavje"><title type="chapter">6. Poglavje</title>
                         <verse osisID="Prov.6.1">
 Moj sin, če si pôrok za svojega prijatelja, <transChange type="added">če</transChange> si udaril svojo roko s tujcem,
@@ -11451,7 +11453,7 @@ Moder v srcu bo sprejel zapovedi: toda žlobudrav<note type="study">žlobudrav�
               </verse><verse osisID="Prov.10.10">
 <note type="crossReference"><reference osisRef="Prov.6.13">Prg 6:13</reference></note> Kdor zavija z očesom, povzroča bridkost: toda žlobudrav bedak bo padel.<note type="study">padel: hebr. pretepen.</note>
               </verse><verse osisID="Prov.10.11">
-<note type="crossReference"><reference osisRef="Prov.13.14">Prg 13:14</reference></note> Usta pravičnega <transChange type="added">človeka so</transChange> izvir življenja: toda nasilje pokriva usta zlobnega. 
+<note type="crossReference"><reference osisRef="Prov.13.14">Prg 13:14</reference></note> Usta pravičnega <transChange type="added">človeka so</transChange> izvir življenja: toda nasilje pokriva usta zlobnega.
               </verse><verse osisID="Prov.10.12">
 <note type="crossReference"><reference osisRef="1Pet.4.8">1 Pt 4:8</reference>; <reference osisRef="1Cor.13.4">1 Kor 13:4</reference></note> Sovraštvo neti prepire: toda ljubezen pokriva vse grehe.
               </verse><verse osisID="Prov.10.13">
@@ -11583,7 +11585,7 @@ Pravičen <transChange type="added">človek</transChange> se ozira na življenje
               </verse><verse osisID="Prov.12.12">
 Zlobni želi mrežo hudobnih <transChange type="added">ljudi</transChange>: toda korenina<note type="study">korenina: ali, trdnjava</note> pravičnih rojeva <transChange type="added">sad</transChange>.
               </verse><verse osisID="Prov.12.13">
-<note type="crossReference"><reference osisRef="Prov.18.7">Prg 18:7</reference></note> Zlobni<note type="study">Zlobni…: hebr. Zanka zlobnega je prestopek ustnic</note> je ujet s prestopkom <transChange type="added">svojih</transChange> ustnic: toda pravičen bo prišel iz stiske. 
+<note type="crossReference"><reference osisRef="Prov.18.7">Prg 18:7</reference></note> Zlobni<note type="study">Zlobni…: hebr. Zanka zlobnega je prestopek ustnic</note> je ujet s prestopkom <transChange type="added">svojih</transChange> ustnic: toda pravičen bo prišel iz stiske.
               </verse><verse osisID="Prov.12.14">
 <note type="crossReference"><reference osisRef="Prov.13.2">Prg 13:2</reference></note> Človek bo nasičen z dobrim po sadu <transChange type="added">svojih</transChange> ust: in poplačilo človeških rok mu bo vrnjeno.
               </verse><verse osisID="Prov.12.15">
@@ -11762,7 +11764,7 @@ Pot zlobnega <transChange type="added">je</transChange> <divineName>Gospodu</div
               </verse><verse osisID="Prov.15.12">
 Posmehljivec nima rad tistega, ki ga ozmerja: niti ne bo šel k modremu.
               </verse><verse osisID="Prov.15.13">
-<note type="crossReference"><reference osisRef="Prov.17.22">Prg 17:22</reference></note> Veselo srce dela vedro obličje: toda s srčno bridkostjo je duh zlomljen.  
+<note type="crossReference"><reference osisRef="Prov.17.22">Prg 17:22</reference></note> Veselo srce dela vedro obličje: toda s srčno bridkostjo je duh zlomljen. 
               </verse><verse osisID="Prov.15.14">
 Srce tistega, ki ima razumevanje, išče spoznanje: toda usta bedakov se hranijo na nespametnosti.
               </verse><verse osisID="Prov.15.15">
@@ -12197,7 +12199,7 @@ Nagni svoje uho in prisluhni besedam modrega in svoje srce usmeri k mojemu spozn
               </verse><verse osisID="Prov.22.18">
 Kajti <transChange type="added">to je</transChange> prijetna stvar, če jih varuješ znotraj<note type="study">znotraj…: hebr. v svojem trebuhu</note> sebe; poleg tega bodo pristojale na tvoje ustnice.
               </verse><verse osisID="Prov.22.19">
-Da bo tvoje trdno upanje lahko v <divineName>Gospodu</divineName>, sem ti to dal spoznati ta dan, celo<note type="study">celo…: ali, tdno upaj tudi ti</note> tebi. 
+Da bo tvoje trdno upanje lahko v <divineName>Gospodu</divineName>, sem ti to dal spoznati ta dan, celo<note type="study">celo…: ali, tdno upaj tudi ti</note> tebi.
               </verse><verse osisID="Prov.22.20">
 § Ali ti nisem napisal odličnih stvari v nasvetih in spoznanju,
               </verse><verse osisID="Prov.22.21">
@@ -12396,7 +12398,7 @@ Svoje stopalo umakni<note type="study">umakni…: ali, Naj bo tvoje stopalo redk
               </verse><verse osisID="Prov.25.18">
 Človek, ki prinaša krivo pričevanje zoper<note type="crossReference"><reference osisRef="Ps.120.4">Ps 120:4</reference>; <reference osisRef="Prov.12.18">Prg 12:18</reference></note> svojega soseda, <transChange type="added">je</transChange> macola in meč in ostra puščica.
               </verse><verse osisID="Prov.25.19">
-Zaupanje v nezvestega človeka v času stiske <transChange type="added">je podobno</transChange> zlomljenemu zobu in izpahnjenemu stopalu. 
+Zaupanje v nezvestega človeka v času stiske <transChange type="added">je podobno</transChange> zlomljenemu zobu in izpahnjenemu stopalu.
               </verse><verse osisID="Prov.25.20">
 § <transChange type="added">Kakor</transChange> kdor odvzema obleko v hladnem vremenu <transChange type="added">in kakor</transChange> kis na soliter, tak <transChange type="added">je</transChange> kdor prepeva pesmi potrtemu srcu.
               </verse><verse osisID="Prov.25.21"><milestone type="x-extra-p"/>
@@ -12553,7 +12555,7 @@ Bogataš <transChange type="added">je</transChange> moder v svoji<note type="stu
               </verse><verse osisID="Prov.28.12">
 <note type="crossReference"><reference osisRef="John.11.10">Jn 11:10</reference>; <reference osisRef="Eccl.10.6">Prd 10:6</reference>; <reference osisRef="Prov.28.28">Prg 28:28</reference></note> Kadar se pravični <transChange type="added">ljudje</transChange> razveseljujejo, <transChange type="added">je</transChange> velika slava: toda kadar vstanejo zlobni, je človek skrit.<note type="study">skrit: ali, iskan</note>
               </verse><verse osisID="Prov.28.13">
-<note type="crossReference"><reference osisRef="Ps.32.5">Ps 32:5</reference>; <reference osisRef="1John.1.9-1John.1.10">1 Jn 1:9-10</reference></note> Kdor prikriva svoje grehe, ne bo uspešen: toda kdorkoli <transChange type="added">jih</transChange> priznava in se <transChange type="added">jim</transChange> odreka, bo imel usmiljenje.   
+<note type="crossReference"><reference osisRef="Ps.32.5">Ps 32:5</reference>; <reference osisRef="1John.1.9-1John.1.10">1 Jn 1:9-10</reference></note> Kdor prikriva svoje grehe, ne bo uspešen: toda kdorkoli <transChange type="added">jih</transChange> priznava in se <transChange type="added">jim</transChange> odreka, bo imel usmiljenje.  
               </verse><verse osisID="Prov.28.14">
 Srečen <transChange type="added">je</transChange> človek, ki se vedno boji:<note type="crossReference"><reference osisRef="Rom.11.20">Rim 11:20</reference></note> toda kdor svoje srce zakrne, bo padel v vragolijo.
               </verse><verse osisID="Prov.28.15">
@@ -12628,7 +12630,7 @@ Vidiš človeka, <transChange type="added">ki je</transChange> nagel v svojih be
               </verse><verse osisID="Prov.29.21">
 § Kdor svojega služabnika od otroških let prefinjeno vzgaja, mu bo končno postal <transChange type="added">njegov</transChange> sin.
               </verse><verse osisID="Prov.29.22">
-<note type="crossReference"><reference osisRef="Prov.15.18">Prg 15:18</reference>; <reference osisRef="Prov.26.2">Prg 26:2</reference></note> Jezen človek neti prepir, besen človek pa je obilen v prestopku.    
+<note type="crossReference"><reference osisRef="Prov.15.18">Prg 15:18</reference>; <reference osisRef="Prov.26.2">Prg 26:2</reference></note> Jezen človek neti prepir, besen človek pa je obilen v prestopku.   
               </verse><verse osisID="Prov.29.23">
 <note type="crossReference"><reference osisRef="Prov.15.33">Prg 15:33</reference>; <reference osisRef="Prov.18.12">Prg 18:12</reference>; <reference osisRef="Job.22.29">Job 22:29</reference>; <reference osisRef="Luke.14.11">Lk 14:11</reference>; <reference osisRef="Matt.23.12">Mt 23:12</reference></note> Človekov ponos ga bo ponižal: toda spoštovanje bo podpiralo ponižnega v duhu.
               </verse><verse osisID="Prov.29.24">
@@ -12693,7 +12695,7 @@ zaradi zoprne <transChange type="added">ženske</transChange>, kadar je poročen
               </verse><verse osisID="Prov.30.26">
 kunci <transChange type="added">so samo</transChange> slaboten narod, vendar si svoje hiše naredijo v skalah;
               </verse><verse osisID="Prov.30.27">
-kobilice nimajo kralja, pa vendar gredo vse izmed njih s<note type="study">s…: hebr. zbrane skupaj</note> trumami; 
+kobilice nimajo kralja, pa vendar gredo vse izmed njih s<note type="study">s…: hebr. zbrane skupaj</note> trumami;
               </verse><verse osisID="Prov.30.28">
 pajkovka zgrabi s svojimi rokami in je v kraljevih palačah.
               </verse><verse osisID="Prov.30.29"><milestone type="x-extra-p"/>
@@ -12880,13 +12882,13 @@ in čas za ubijanje in čas za zdravljenje; čas za rušenje in čas za gradnjo;
               </verse><verse osisID="Eccl.3.8">
 čas za ljubezen in čas za sovraštvo; čas vojne in čas miru.
               </verse><verse osisID="Eccl.3.9">
-<note type="crossReference"><reference osisRef="Eccl.1.3">Prd 1:3</reference></note> Kakšen dobiček ima kdor dela v tem, v čemer se trudi? 
+<note type="crossReference"><reference osisRef="Eccl.1.3">Prd 1:3</reference></note> Kakšen dobiček ima kdor dela v tem, v čemer se trudi?
               </verse><verse osisID="Eccl.3.10">
 Videl sem muko, ki jo Bog daje človeškim sinovom, da bi bili vežbani v tem.
               </verse><verse osisID="Eccl.3.11"><milestone type="x-extra-p"/>
 Vsako <transChange type="added">stvar</transChange> je naredil krasno v svojem času: prav tako je v njihovo srce postavil svet, tako da noben človek ne more spoznati dela, ki ga Bog dela od začetka do konca.
               </verse><verse osisID="Eccl.3.12">
-Vem, da ni dobrega v njih, temveč za <transChange type="added">človeka</transChange>, da se veseli in da v svojem življenju dela dobro. 
+Vem, da ni dobrega v njih, temveč za <transChange type="added">človeka</transChange>, da se veseli in da v svojem življenju dela dobro.
               </verse><verse osisID="Eccl.3.13">
 In prav tako, da naj bi vsak človek jedel in pil in užival dobro od vsega svojega truda, to <transChange type="added">je</transChange> darilo od Boga.
               </verse><verse osisID="Eccl.3.14">
@@ -12909,7 +12911,7 @@ Kdo pozna človekovega<note type="study">človekovega…: hebr. duha človeških
 <note type="crossReference"><reference osisRef="Eccl.2.24">Prd 2:24</reference>; <reference osisRef="Eccl.5.17">Prd 5:17</reference></note> Zatorej dojemam, da ni ničesar boljšega, kakor da naj bi se človek veselil v svojih lastnih delih; kajti to <transChange type="added">je</transChange> njegov delež: kajti kdo ga bo privedel, da vidi kaj bo za njim?
               </verse></chapter><chapter osisID="Eccl.04" chapterTitle="4. Poglavje"><title type="chapter">4. Poglavje</title>
                         <verse osisID="Eccl.4.1">
-Tako<note type="crossReference"><reference osisRef="Eccl.5.7">Prd 5:7</reference></note> sem se vrnil in preudaril vsa zatiranja, ki so storjena pod soncem: in gledal solze <transChange type="added">tistih, ki so bili</transChange> zatirani in niso imeli tolažnika in je <transChange type="added">bila</transChange> moč na strani<note type="study">strani: hebr. roki</note> njihovih zatiralcev; toda niso imeli nobenega tolažnika. 
+Tako<note type="crossReference"><reference osisRef="Eccl.5.7">Prd 5:7</reference></note> sem se vrnil in preudaril vsa zatiranja, ki so storjena pod soncem: in gledal solze <transChange type="added">tistih, ki so bili</transChange> zatirani in niso imeli tolažnika in je <transChange type="added">bila</transChange> moč na strani<note type="study">strani: hebr. roki</note> njihovih zatiralcev; toda niso imeli nobenega tolažnika.
               </verse><verse osisID="Eccl.4.2">
 <note type="crossReference"><reference osisRef="Job.3.17">Job 3:17</reference></note> Zatorej sem bolj hvalil mrtve, ki so že mrtvi, kakor živeče, ki so še živi.
               </verse><verse osisID="Eccl.4.3">
@@ -12923,7 +12925,7 @@ Ponovno, preudaril sem vso muko in vsako<note type="study">vsako: hebr. vso prav
               </verse><verse osisID="Eccl.4.7"><milestone type="x-p" marker="¶ "/>
 Potem sem se vrnil in videl nečimrnost pod soncem.
               </verse><verse osisID="Eccl.4.8">
-Tam je nekdo <transChange type="added">sam</transChange> in ni drugega; da, nima niti otroka niti brata: vendar ni konca vsemu njegovemu trudu; niti njegovo oko ni nasičeno z bogastvi; niti ne <transChange type="added">pravi</transChange>: „Za koga se trudim in svojo dušo oropam dobrega?“ Tudi to <transChange type="added">je</transChange> nečimrnost, da, to <transChange type="added">je</transChange> boleča muka. 
+Tam je nekdo <transChange type="added">sam</transChange> in ni drugega; da, nima niti otroka niti brata: vendar ni konca vsemu njegovemu trudu; niti njegovo oko ni nasičeno z bogastvi; niti ne <transChange type="added">pravi</transChange>: „Za koga se trudim in svojo dušo oropam dobrega?“ Tudi to <transChange type="added">je</transChange> nečimrnost, da, to <transChange type="added">je</transChange> boleča muka.
               </verse><verse osisID="Eccl.4.9"><milestone type="x-p" subType="x-added" marker="¶"/>
 Dva <transChange type="added">sta</transChange> boljša kakor eden, zato ker imata dobro nagrado za svoj trud.
               </verse><verse osisID="Eccl.4.10">
@@ -12968,7 +12970,7 @@ Spanje delovnega človeka <transChange type="added">je</transChange> sladko, bod
               </verse><verse osisID="Eccl.5.13">
 Je boleče zlo, <transChange type="added">katerega</transChange> sem videl pod soncem, <transChange type="added">namreč</transChange> bogastva, zadržana za njihove lastnike v njihovo škodo.
               </verse><verse osisID="Eccl.5.14">
-Toda ta bogastva propadejo po zli muki; in zaplodil je sina, pa v njegovi roki ni ničesar. 
+Toda ta bogastva propadejo po zli muki; in zaplodil je sina, pa v njegovi roki ni ničesar.
               </verse><verse osisID="Eccl.5.15">
 <note type="crossReference"><reference osisRef="Job.1.21">Job 1:21</reference>; <reference osisRef="1Tim.6.7">1 Tim 6:7</reference>; <reference osisRef="Ps.49.17">Ps 49:17</reference></note> Kakor je nag prišel iz maternice svoje matere, se bo vrnil kakor je prišel in nič ne bo vzel od svojega truda, kar bi v svoji roki lahko odnesel.
               </verse><verse osisID="Eccl.5.16">
@@ -12976,7 +12978,7 @@ In tudi to <transChange type="added">je</transChange> boleče zlo, <transChange 
               </verse><verse osisID="Eccl.5.17">
 Prav tako vse svoje dni jé v temi in <transChange type="added">on ima</transChange> mnogo bridkosti in besa s svojo slabostjo.
               </verse><verse osisID="Eccl.5.18"><milestone type="x-p" marker="¶ "/>
-<note type="crossReference"><reference osisRef="Eccl.2.24">Prd 2:24</reference>; <reference osisRef="Eccl.3.12">Prd 3:12</reference></note> Glej <transChange type="added">to</transChange>, kar sem videl: dobro<note type="study">dobro…: hebr. je dobro, kar je ljubko, itd</note> in ljubko <transChange type="added">je za nekoga</transChange> jesti in piti in uživati dobro od vsega svojega truda, ki se ga loteva pod soncem vse<note type="study">vse: hebr. število</note> dni svojega življenja, katere mu jih daje Bog, kajti to <transChange type="added">je</transChange> njegov delež. 
+<note type="crossReference"><reference osisRef="Eccl.2.24">Prd 2:24</reference>; <reference osisRef="Eccl.3.12">Prd 3:12</reference></note> Glej <transChange type="added">to</transChange>, kar sem videl: dobro<note type="study">dobro…: hebr. je dobro, kar je ljubko, itd</note> in ljubko <transChange type="added">je za nekoga</transChange> jesti in piti in uživati dobro od vsega svojega truda, ki se ga loteva pod soncem vse<note type="study">vse: hebr. število</note> dni svojega življenja, katere mu jih daje Bog, kajti to <transChange type="added">je</transChange> njegov delež.
               </verse><verse osisID="Eccl.5.19">
 Tudi vsak človek, kateremu je Bog dal bogastva in premoženje in mu je dal moč, da jé od tega in da vzame svoj delež in se veseli v svojem trudu; <transChange type="added">je</transChange> to darilo od Boga.
               </verse><verse osisID="Eccl.5.20">
@@ -13190,7 +13192,7 @@ Kdor opazuje veter, ne bo sejal; in kdor se ozira na oblake, ne bo žel.
               </verse><verse osisID="Eccl.11.5">
 Kakor ne veš kakšna <transChange type="added">je</transChange> pot duha, <transChange type="added">niti</transChange> kako <transChange type="added">rastejo</transChange> kosti v maternice nje, ki je z otrokom: tako ne poznaš del Boga, ki dela vse.
               </verse><verse osisID="Eccl.11.6">
-Zjutraj sej svoje seme in zvečer ne zadržuj svoje roke: kajti ne veš ali bo uspevalo<note type="study">uspevalo: hebr. pravo</note> to ali ono, ali pa <transChange type="added">bosta</transChange> oba enako dobra. 
+Zjutraj sej svoje seme in zvečer ne zadržuj svoje roke: kajti ne veš ali bo uspevalo<note type="study">uspevalo: hebr. pravo</note> to ali ono, ali pa <transChange type="added">bosta</transChange> oba enako dobra.
               </verse><verse osisID="Eccl.11.7"><milestone type="x-p" marker="¶ "/>
 Resnično, svetloba <transChange type="added">je</transChange> prijazna in prijetna <transChange type="added">stvar je</transChange> za tvoje oči, da gledajo sonce:
               </verse><verse osisID="Eccl.11.8">
@@ -13361,7 +13363,7 @@ Zbudi se, oh severni veter; in pridi, ti jug; pihaj na moj vrt, <transChange typ
                         <verse osisID="Song.5.1">
 Prišel sem v svoj vrt, moja sestra, <transChange type="added">moja</transChange> soproga: nabral sem svojo miro s svojo dišavo; pojedel sem svoje satovje s svojim medom; popil sem svoje vino s svojim mlekom: jejta, oh prijatelja; pijta, da,<note type="study">da…: ali, in bodita opita z ljubeznimi</note> obilno pijta, oh ljubljena.
               </verse><verse osisID="Song.5.2"><milestone type="x-p" marker="¶ "/>
-Spim, toda moje srce bedi: <transChange type="added">to je</transChange> glas mojega ljubljenega, ki trka, rekoč: „Odpri mi, moja sestra, moja ljubezen, moja golobica, moja neomadeževana: kajti moja glava je napolnjena z roso <transChange type="added">in</transChange> moji prameni z nočnimi kapljami. 
+Spim, toda moje srce bedi: <transChange type="added">to je</transChange> glas mojega ljubljenega, ki trka, rekoč: „Odpri mi, moja sestra, moja ljubezen, moja golobica, moja neomadeževana: kajti moja glava je napolnjena z roso <transChange type="added">in</transChange> moji prameni z nočnimi kapljami.
               </verse><verse osisID="Song.5.3">
 Slekla sem svoj plašč; kako naj ga oblečem? Umila sem svoja stopala; kako naj jih omadežujem?
               </verse><verse osisID="Song.5.4">
@@ -13493,7 +13495,7 @@ Torej med temi so bili izmed Judovih otrok Daniel, Hananjá, Mišaél in Azarjá
               </verse><verse osisID="Dan.1.7">
 katerim je princ evnuhov dal imena: kajti Danielu je dal <transChange type="added">ime</transChange> Beltšacár, Hananjáju Šadráh, Mišaélu Mešáh; in Azarjáju Abéd Negó.
               </verse><verse osisID="Dan.1.8"><milestone type="x-p" marker="¶ "/>
-Toda Daniel se je v svojem srcu namenil, da se ne bi omadeževal z deležem kraljeve hrane, niti z vinom, ki ga je on pil: zatorej je od princa evnuhov zahteval, da se mu ne bi bilo potrebno omadeževati. 
+Toda Daniel se je v svojem srcu namenil, da se ne bi omadeževal z deležem kraljeve hrane, niti z vinom, ki ga je on pil: zatorej je od princa evnuhov zahteval, da se mu ne bi bilo potrebno omadeževati.
               </verse><verse osisID="Dan.1.9">
 Torej Bog je Daniela privedel v naklonjenost in nežno ljubezen s princem evnuhov.
               </verse><verse osisID="Dan.1.10">
@@ -13931,7 +13933,7 @@ Toda sodba se bo usedla in odvzeli bodo njegovo gospostvo, da použije in da <tr
               </verse><verse osisID="Dan.7.27">
 In kraljestvo<note type="crossReference"><reference osisRef="Luke.1.33">Lk 1:33</reference></note> in gospostvo in veličina kraljestva pod celotnim nebom bo dano ljudstvu svetih Najvišjega, katerega kraljestvo <transChange type="added">je</transChange> večno kraljestvo in vsa<note type="study">vsa…: ali, vsi njegovi vladarji mu bodo služili in ga ubogali</note> njegova gospostva mu bodo služila in ga ubogala.‘
               </verse><verse osisID="Dan.7.28">
-Do zdaj <transChange type="added">je</transChange> konec zadeve. Kar se mene tiče me je moje poglobljeno razmišljanje zelo vznemirilo in moje obličje na meni je bilo spremenjeno: toda zadevo sem obdržal v svojem srcu.“
+Do zdaj <transChange type="added">je</transChange> konec zadeve. Kar se tiče mene, Daniela, me je moje poglobljeno razmišljanje zelo vznemirilo in moje obličje na meni je bilo spremenjeno: toda zadevo sem obdržal v svojem srcu.“
               </verse></chapter><chapter osisID="Dan.08" chapterTitle="8. Poglavje"><title type="chapter">8. Poglavje</title>
                         <verse osisID="Dan.8.1">
 V tretjem letu kraljevanja kralja Belšacárja se mi je prikazala vizija, <transChange type="added">celo</transChange> meni Danielu, po tej, ki se mi je prikazala najprej.
@@ -13958,7 +13960,7 @@ Da, poveličeval je <transChange type="added">samega sebe</transChange>, celo do
               </verse><verse osisID="Dan.8.12">
 In<note type="study">In…: ali, Vojska je bila predana zaradi prestopka zoper dnevno žrtvovanje</note> dana <transChange type="added">mu</transChange> je bila vojska zoper dnevno <transChange type="added">žrtvovanje</transChange> zaradi razloga prestopka in ta je vrgel resnico dol k tlom; in to izvajal in uspel.
               </verse><verse osisID="Dan.8.13"><milestone type="x-p" subType="x-added" marker="¶"/>
-Potem sem zaslišal nekega svetega govoriti in drugi sveti je rekel temu nekemu <transChange type="added">svetemu</transChange>, ki<note type="study">ki…: ali, tistemu, ki šteje sktivnosti, ali, čudoviti preštevalec: hebr. Palmoni <transChange type="added">[določeni]</transChange></note> je govoril: „Doklej <transChange type="added">bo</transChange> vizija <transChange type="added">glede</transChange> dnevnega <transChange type="added">žrtvovanja</transChange> in prestopka<note type="study">prestopka…: ali, naredil opustošeno</note> opustošenja, da bosta tako svetišče kakor vojska pogažena pod stopalom?“
+Potem sem zaslišal nekega svetega govoriti in drugi sveti je rekel temu nekemu <transChange type="added">svetemu</transChange>, ki<note type="study">ki…: ali, tistemu, ki šteje sktivnosti, ali, čudoviti preštevalec: hebr. Palmoni <seg><transChange type="added">[določeni]</transChange></seg></note> je govoril: „Doklej <transChange type="added">bo</transChange> vizija <transChange type="added">glede</transChange> dnevnega <transChange type="added">žrtvovanja</transChange> in prestopka<note type="study">prestopka…: ali, naredil opustošeno</note> opustošenja, da bosta tako svetišče kakor vojska pogažena pod stopalom?“
               </verse><verse osisID="Dan.8.14">
 In rekel mi je: „Do dva tisoč tristo dni;<note type="study">dni: hebr. večerov juter</note> potem bo svetišče očiščeno.“<note type="study">očiščeno: hebr. opravičeno</note>
               </verse><verse osisID="Dan.8.15"><milestone type="x-p" marker="¶ "/>
@@ -14115,7 +14117,7 @@ Kajti severni kralj se bo vrnil in vzpostavil množico, večjo kakor prejšnja i
               </verse><verse osisID="Dan.11.14">
 In v teh časih bodo mnogi vstali zoper južnega kralja: tudi roparji<note type="study">roparji: hebr. otroci roparjev</note> ljudstva se bodo povišali, da vzpostavijo vizijo; toda padli bodo.
               </verse><verse osisID="Dan.11.15">
-Tako bo prišel severni kralj in nasul okop in zavzel najbolj<note type="study">najbolj…: hebr. mesto streliva</note> obzidana mesta: in orožje iz juga se ne bo zoperstavilo, niti njegovo<note type="study">njegovo…: hebr. ljudstvo njegovih izbir</note> izvoljeno ljudstvo, niti <transChange type="added">ne bo nobene</transChange> moči, da se zoperstavi.       
+Tako bo prišel severni kralj in nasul okop in zavzel najbolj<note type="study">najbolj…: hebr. mesto streliva</note> obzidana mesta: in orožje iz juga se ne bo zoperstavilo, niti njegovo<note type="study">njegovo…: hebr. ljudstvo njegovih izbir</note> izvoljeno ljudstvo, niti <transChange type="added">ne bo nobene</transChange> moči, da se zoperstavi.      
               </verse><verse osisID="Dan.11.16">
 Toda kdor prihaja zoper njega, bo storil glede na njegovo lastno voljo in nihče ne bo obstal pred njim: on pa bo stal v veličastni<note type="study">veličastni…: ali, lepi, itd.: hebr. deželi ornamenta</note> deželi, ki bo z njegovo roko uničena.
               </verse><verse osisID="Dan.11.17">
@@ -14161,7 +14163,7 @@ In kralj bo storil glede na svojo voljo; in poviševal se bo in se poveličeval 
               </verse><verse osisID="Dan.11.37">
 Niti se ne bo oziral na Boga svojih očetov, niti na željo žensk, niti na kateregakoli boga: kajti poveličeval se bo nad vse.
               </verse><verse osisID="Dan.11.38">
-Toda v<note type="study">v…: ali, glede na Vsemogočnega Boga, na njegovem sedežu bo častil, da, častil bo boga, katerega, itd</note> svoji lastnini bo spoštoval boga sil:<note type="study">sil: ali, streliva: hebr. Mauzzim, ali, Božji zaščitniki</note> in boga, katerega njegovi očetje niso poznali, bo častil z zlatom in srebrom in z dragocenimi kamni in prijetnimi<note type="study">prijetnimi: hebr. želenimi stvarmi</note> stvarmi.
+Toda v<note type="study">v…: ali, glede na Vsemogočnega Boga, na njegovem sedežu bo častil, da, častil bo boga, katerega, itd</note> svoji lastnini bo spoštoval Boga sil:<note type="study">sil: ali, streliva: hebr. Mauzzim, ali, Božji zaščitniki</note> in boga, katerega njegovi očetje niso poznali, bo častil z zlatom in srebrom in z dragocenimi kamni in prijetnimi<note type="study">prijetnimi: hebr. želenimi stvarmi</note> stvarmi.
               </verse><verse osisID="Dan.11.39">
 Tako bo storil v večini<note type="study">večini…: hebr. trdnjavah streliva</note> utrdb s tujim bogom, katerega bo priznal <transChange type="added">in</transChange> povečal s slavo: in povzročil jim bo, da vladajo nad mnogimi in deželo bo razdelil zaradi dobička.<note type="study">dobička: hebr. cene</note>
               </verse><verse osisID="Dan.11.40">
@@ -14214,11 +14216,12 @@ Začetek <divineName>Gospodove</divineName> besede po Ozeju. In <divineName>Gosp
               </verse><verse osisID="Hos.1.3">
 Torej je odšel in vzel Gómero, Diblájimovo hčer; katera je spočela in mu rodila sina.
               </verse><verse osisID="Hos.1.4">
-In <divineName>Gospod</divineName> mu je rekel: „Njegovo ime kliči Jezreél<note type="study"><transChange type="added">[Jezreél: hebr: Bog seje]</transChange></note>, kajti le <transChange type="added">še</transChange> malo in jaz bom maščeval<note type="study">maščeval: hebr, obiskal</note> kri Jezreéla na Jehújevi hiši in povzročil bom, da bo prenehalo kraljestvo Izraelove hiše.
+In <divineName>Gospod</divineName> mu je rekel: „Njegovo ime kliči Jezreél<note type="study"><seg><transChange type="added">[Jezreél: hebr: Bog seje]</transChange></seg></note>, kajti le <transChange type="added">še</transChange>malo in jaz bom maščeval<note type="study">maščeval: hebr, obiskal</note> kri Jezreéla na Jehújevi hiši in povzročil bom, da bo prenehalo kraljestvo Izraelove hiše.
+		ENG And the <divineName>Lord</divineName> said unto him, Call his name Jezreel; for yet a little <transChange type="added">while</transChange>, and I will avenge the blood of Jezreel upon the house of Jehu, and will cause to cease the kingdom of the house of Israel.<note type="study">avenge: Heb. visit</note>
               </verse><verse osisID="Hos.1.5">
 In zgodilo se bo na ta dan, da bom zlomil Izraelov lok v dolini Jezreél.“
               </verse><verse osisID="Hos.1.6"><milestone type="x-p" subType="x-added" marker="¶"/>
-§ In ponovno je spočela in rodila hčerko. In <transChange type="added">Bog</transChange> mu je rekel: „Njeno ime kliči Nepomiloščena<note type="study">Nepomiloščena: to je, Ni dosegla milosti</note><note type="study"><transChange type="added">[Nepomiloščena: hebr. Lo–ruhamah]</transChange></note>: kajti ne bom<note type="study">bom…: hebr. dodaj nič več milosti k Izraelovi hiši</note> več imel milosti nad Izraelovo hišo; temveč<note type="study">temveč…: ali, da jim bom vsem skupaj oprostil</note> jih bom popolnoma odvedel stran.
+§ In ponovno je spočela in rodila hčerko. In <transChange type="added">Bog</transChange> mu je rekel: „Njeno ime kliči Nepomiloščena<note type="study">Nepomiloščena: to je, Ni dosegla milosti<seg><transChange type="added">[Nepomiloščena: hebr. Lo–ruhamah]</transChange></seg></note>: kajti ne bom<note type="study">bom…: hebr. dodaj nič več milosti k Izraelovi hiši</note> več imel milosti nad Izraelovo hišo; temveč<note type="study">temveč…: ali, da jim bom vsem skupaj oprostil</note> jih bom popolnoma odvedel stran.
               </verse><verse osisID="Hos.1.7">
 Toda imel bom usmiljenje nad Judovo hišo in rešil jih bom po <divineName>Gospodu</divineName>, njihovemu Bogu in ne bom jih rešil z lokom, niti z mečem, niti z bitko, <transChange type="added">[niti]</transChange> s konji, niti s konjeniki.“
               </verse><verse osisID="Hos.1.8"><milestone type="x-p" marker="¶ "/>
@@ -14280,7 +14283,7 @@ In posejal si jo bom na zemlji; in usmilil se bom nje, ki ni dobila usmiljenja; 
                         <verse osisID="Hos.3.1">
 Potem mi je <divineName>Gospod</divineName> rekel: „Pojdi že, ljubi žensko ljubljeno od <transChange type="added">njenega</transChange> prijatelja, vendar zakonolomko, glede na <divineName>Gospodovo</divineName> ljubezen napram Izraelovim otrokom, ki gledajo k drugim bogovom in ljubijo flaškone vina.“<note type="study">vina: hebr. grozdnih jagod</note>
               </verse><verse osisID="Hos.3.2">
-Tako sem si jo kupil za petnajst <transChange type="added">koščkov</transChange> srebra in <transChange type="added">za</transChange> tovor ječmena in pol<note type="study">pol…: hebr. lethech, <transChange type="added">[ali, mera za tekočine; okoli 5 1/2 mernika]</transChange></note> tovora ječmena:
+Tako sem si jo kupil za petnajst <transChange type="added">koščkov</transChange> srebra in <transChange type="added">za</transChange> tovor ječmena in pol<note type="study">pol…: hebr. lethech, <seg><transChange type="added">[ali, mera za tekočine; okoli 5 1/2 mernika]</transChange></seg></note> tovora ječmena:
               </verse><verse osisID="Hos.3.3">
 in rekel sem ji: „Mnogo dni boš<note type="crossReference"><reference osisRef="Deut.21.3">5 Mz 21:3</reference></note> čakala<note type="crossReference"><reference osisRef="Deut.21.3">5 Mz 21:3</reference></note> name; ne boš igrala pocestnice in ne boš za <transChange type="added">drugega</transChange> moškega: tako <transChange type="added">bom</transChange> tudi jaz zate.“
               </verse><verse osisID="Hos.3.4">
@@ -14319,7 +14322,7 @@ Ne bom<note type="study">Ne bom: ali, Naj ne kaznujem</note> kaznoval vaših hč
               </verse><verse osisID="Hos.4.15"><milestone type="x-p" subType="x-added" marker="¶"/>
 Čeprav ti, Izrael, igraš pocestnico, naj <transChange type="added">vendar</transChange> Juda ne greši; in vi ne prihajajte v Gilgál, niti ne pojdite gor v<note type="crossReference"><reference osisRef="1Kgs.12.29">1 Kr 12:29</reference></note> Bet Aven,<note type="crossReference"><reference osisRef="1Kgs.12.29">1 Kr 12:29</reference></note> niti ne prisegajte: ‚<divineName>Gospod</divineName> živi.‘
               </verse><verse osisID="Hos.4.16">
-Kajti Izrael drsi nazaj kakor nazaj zdrknjena telica:<note type="study"><transChange type="added">[telica, ki odstopa in se upira jarmu]</transChange></note> sedaj jih bo <divineName>Gospod</divineName> hranil kakor jagnje na velikem kraju.
+Kajti Izrael drsi nazaj kakor nazaj zdrknjena telica:<note type="study"><seg><transChange type="added">[telica, ki odstopa in se upira jarmu]</transChange></seg></note> sedaj jih bo <divineName>Gospod</divineName> hranil kakor jagnje na velikem kraju.
               </verse><verse osisID="Hos.4.17">
 Efrájim <transChange type="added">je</transChange> pridružen malikom: pusti ga samega.
               </verse><verse osisID="Hos.4.18">
@@ -14466,7 +14469,7 @@ Globoko <transChange type="added">so</transChange> se izpridili, kakor v dneh<no
               </verse><verse osisID="Hos.9.11"><milestone type="x-extra-p"/>
 <transChange type="added">Glede na</transChange> Efrájima, njihova slava bo odletela proč kakor ptica od poroda in od trebuha in od spočetja.
               </verse><verse osisID="Hos.9.12">
-Čeprav bodo vzredili svoje otroke, jih bom vendar oropal, <transChange type="added">da tam</transChange> noben človek ne <transChange type="added">bo ostal</transChange>: da, gorje tudi tistim, ko odidem od njih! 
+Čeprav bodo vzredili svoje otroke, jih bom vendar oropal, <transChange type="added">da tam</transChange> noben človek ne <transChange type="added">bo ostal</transChange>: da, gorje tudi tistim, ko odidem od njih!
               </verse><verse osisID="Hos.9.13">
 Efrájim <transChange type="added">je</transChange>, kakor sem videl Tir, zasajen na prijetnem kraju: toda Efrájim bo svoje otroke privedel k morilcu.“
               </verse><verse osisID="Hos.9.14">
@@ -14485,9 +14488,9 @@ Njihovo srce<note type="study">Njihovo srce…: ali, Razdelil je njihovo srce</n
               </verse><verse osisID="Hos.10.3">
 Kajti sedaj bodo rekli: ‚Nimamo kralja, ker se nismo bali <divineName>Gospoda</divineName>; kaj nam bi naj torej storil kralj?‘
               </verse><verse osisID="Hos.10.4">
-Govorili so besede, lažno prisegali pri sklepanju zaveze: tako sodba poganja kakor pikasti mišjak<note type="study"><transChange type="added">[pikasti mišjak: strupena rastlina z votlim steblom in belimi cvetovi]</transChange></note> na brazdah polja.
+Govorili so besede, lažno prisegali pri sklepanju zaveze: tako sodba poganja kakor pikasti mišjak<note type="study"><seg><transChange type="added">[pikasti mišjak: strupena rastlina z votlim steblom in belimi cvetovi]</transChange></seg></note> na brazdah polja.
               </verse><verse osisID="Hos.10.5">
-Prebivalci Samarije se bodo bali zaradi telet Bet Avena: kajti ljudstvo le-teh bo nad tem žalovalo in duhovniki<note type="study">duhovniki…: ali, Chemarim <transChange type="added">[Chemarim: ali, malikovalski duhovniki]</transChange></note> le-teh, <transChange type="added"> ki</transChange> so se ob tem veselili zaradi tega slave, zato ker je od tega odšla. 
+Prebivalci Samarije se bodo bali zaradi telet Bet Avena: kajti ljudstvo le-teh bo nad tem žalovalo in duhovniki<note type="study">duhovniki…: ali, Chemarim <seg><transChange type="added">[Chemarim: ali, malikovalski duhovniki]</transChange></seg></note> le-teh, <transChange type="added"> ki</transChange> so se ob tem veselili zaradi tega slave, zato ker je od tega odšla.
               </verse><verse osisID="Hos.10.6">
 Prav tako bo to odnešeno v Asirijo <transChange type="added">za</transChange> darilo kralju<note type="crossReference"><reference osisRef="Hos.5.13">Oz 5:13</reference></note> Jarebu: Efrájim bo prejel sramoto in Izrael se bo sramoval svojega lastnega nasveta.
               </verse><verse osisID="Hos.10.7">
@@ -15728,7 +15731,7 @@ Toda odgovoril je in jim rekel: <q who="Jesus" marker="">„Zakaj vi prav tako s
               </verse><verse osisID="Matt.15.5">
 <q who="Jesus" marker="">Toda vi pravite: ‚Kdorkoli bo rekel <transChange type="added">svojemu</transChange> očetu ali <transChange type="added">svoji</transChange> materi:<note type="crossReference"><reference osisRef="Mark.7.11-12">Mr 7:11-12</reference></note> <transChange type="added">‚To je</transChange> dar, s čimerkoli bi ti mogoče imel korist od mene;‘</q>
               </verse><verse osisID="Matt.15.6">
-<q who="Jesus" marker="">pa ne spoštuje svojega očeta ali svoje matere, <transChange type="added">bo svoboden.‘</transChange> Tako ste s svojim izročilom naredili Božjo zapoved brez učinka.</q>
+<q who="Jesus" marker="">pa ne spoštuje svojega očeta ali svoje matere, <transChange type="added">bo svoboden</transChange>.‘ Tako ste s svojim izročilom naredili Božjo zapoved brez učinka.</q>
               </verse><verse osisID="Matt.15.7">
 <q who="Jesus" marker=""><transChange type="added">Vi</transChange> hinavci, Izaija je dobro prerokoval o vas, rekoč:</q>
               </verse><verse osisID="Matt.15.8">
@@ -16285,7 +16288,7 @@ Jezus mu je rekel:<note type="crossReference"><reference osisRef="Deut.6.5">5 Mz
               </verse><verse osisID="Matt.22.41"><milestone type="x-p" marker="¶ "/>
 <note type="crossReference"><reference osisRef="Mark.12.35">Mr 12:35</reference>; <reference osisRef="Luke.20.41">Lk 20:41</reference></note> Medtem ko so bili farizeji zbrani skupaj, jih je Jezus vprašal,
               </verse><verse osisID="Matt.22.42">
-rekoč: <q who="Jesus" marker="">„Kaj vi mislite o Kristusu? Čigav sin je?“</q> Rečejo mu: ‚Davidov <transChange type="added">Sin.‘</transChange>
+rekoč: <q who="Jesus" marker="">„Kaj vi mislite o Kristusu? Čigav sin je?“</q> Rečejo mu: ‚Davidov <transChange type="added">Sin</transChange>.‘
               </verse><verse osisID="Matt.22.43">
 Reče jim: <q who="Jesus" marker="">„Kako ga torej David v duhu kliče Gospod, rekoč:</q>
               </verse><verse osisID="Matt.22.44">
@@ -16425,7 +16428,7 @@ Jezus pa jim je odgovoril in rekel: <q who="Jesus" marker="">„Pazite, da vas n
               </verse><verse osisID="Matt.24.25">
 <q who="Jesus" marker="">Glejte, vnaprej sem vam povedal.</q>
               </verse><verse osisID="Matt.24.26">
-<q who="Jesus" marker="">Zatorej če vam bodo rekli: ‚Glejte, v puščavi <transChange type="added">je;‘</transChange> ne pojdite tja: ‚Glejte, v skrivnih sobah <transChange type="added">je</transChange>;‘ <transChange type="added">tega</transChange> ne verjemite.</q>
+<q who="Jesus" marker="">Zatorej če vam bodo rekli: ‚Glejte, v puščavi <transChange type="added">je</transChange>;‘ ne pojdite tja: ‚Glejte, v skrivnih sobah <transChange type="added">je</transChange>;‘ <transChange type="added">tega</transChange> ne verjemite.</q>
               </verse><verse osisID="Matt.24.27">
 <q who="Jesus" marker="">Kajti kakor bliskanje prihaja od vzhoda in sveti celó do zahoda; takšen bo tudi prihod Sina človekovega.</q>
               </verse><verse osisID="Matt.24.28">
@@ -17421,7 +17424,7 @@ In rekel jim je: <q who="Jesus" marker="">„Prav dobro zavračate<note type="st
               </verse><verse osisID="Mark.7.10">
 <q who="Jesus" marker="">Kajti Mojzes je rekel: ‚Spoštuj svojega očeta in svojo mater;‘ in: ‚Kdorkoli preklinja očeta ali mater, naj življenje konča s smrtjo:‘</q>
               </verse><verse osisID="Mark.7.11">
-<q who="Jesus" marker="">toda vi pravite: ‚Če bo človek rekel svojemu očetu ali materi: <transChange type="added">‚To je</transChange><note type="crossReference"><reference osisRef="Matt.15.5">Mt 15:5</reference></note> Korbán, to se pravi dar, po čemerkoli bi lahko imel korist od mene;‘ <transChange type="added">bo prost.‘</transChange></q>
+<q who="Jesus" marker="">toda vi pravite: ‚Če bo človek rekel svojemu očetu ali materi: <transChange type="added">‚To je</transChange><note type="crossReference"><reference osisRef="Matt.15.5">Mt 15:5</reference></note> Korbán, to se pravi dar, po čemerkoli bi lahko imel korist od mene;‘ <transChange type="added">bo prost</transChange>.‘</q>
               </verse><verse osisID="Mark.7.12">
 <q who="Jesus" marker="">In mu nič več ne dovolite, da bi za svojega očeta ali svojo mater karkoli storil;</q>
               </verse><verse osisID="Mark.7.13">
@@ -20761,7 +20764,7 @@ Bil je človek izmed farizejev, po imenu Nikodém, vladar Judov:
               </verse><verse osisID="John.3.2">
 ta isti je ponoči prišel k Jezusu in mu rekel: „Rabi, vemo, da si učitelj, ki je prišel od Boga: kajti noben človek ne more delati teh čudežev, katere delaš ti, razen če ni Bog z njim.“
               </verse><verse osisID="John.3.3">
-Jezus je odgovoril in mu rekel: <q who="Jesus" marker="">„Resnično, resnično, povem ti: ‚Razen če se človek ponovno<note type="study">ponovno…: ali, ne rodi od zgoraj.</note> ne rodi, ne more videti Božjega kraljestva.‘“</q> 
+Jezus je odgovoril in mu rekel: <q who="Jesus" marker="">„Resnično, resnično, povem ti: ‚Razen če se človek ponovno<note type="study">ponovno…: ali, ne rodi od zgoraj.</note> ne rodi, ne more videti Božjega kraljestva.‘“</q>
               </verse><verse osisID="John.3.4">
 Nikodém mu reče: „Kako je lahko človek ponovno rojen, ko je star? Ali lahko drugič vstopi v trebuh svoje matere in se rodi?“
               </verse><verse osisID="John.3.5">
@@ -25004,7 +25007,7 @@ Bog svojega ljudstva, katerega je vnaprej poznal, ni zavrgel. Ali ne veste kaj p
               </verse><verse osisID="Rom.11.3">
 <note type="crossReference"><reference osisRef="1Kgs.19.14">1 Kr 19:14</reference></note> ‚Gospod, pobili so tvoje preroke in spodkopali tvoje oltarje; in jaz sam sem ostal in strežejo po mojem življenju.‘
               </verse><verse osisID="Rom.11.4">
-Toda kaj mu pravi Božji odgovor?<note type="crossReference"><reference osisRef="1Kgs.19.18">1 Kr 19:18</reference></note> ‚Prihranil sem si sedem tisoč mož, ki niso upognili kolena k Báalovi <transChange type="added">podobi.‘</transChange>
+Toda kaj mu pravi Božji odgovor?<note type="crossReference"><reference osisRef="1Kgs.19.18">1 Kr 19:18</reference></note> ‚Prihranil sem si sedem tisoč mož, ki niso upognili kolena k Báalovi <transChange type="added">podobi</transChange>.‘
               </verse><verse osisID="Rom.11.5">
 Celó tako je tudi v tem sedanjem času ostanek glede na milosten izbor.
               </verse><verse osisID="Rom.11.6">
