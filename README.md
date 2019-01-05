@@ -16,7 +16,7 @@ Sveto pismo Kralja Jakoba (1769)
 > 
 >Viri: [Angleško besedilo](http://www.crosswire.org/~dmsmith/kjv2006/), [Opombe in reference](www.kingjamesbibleonline.org/Psalms–Chapter–1_Original–1611–KJV/) in [biblija.net](http://www.biblija.net/biblija.cgi?m=&id13=1&id7=1&pos=0&set=6&l=sl).
 >
->Prevajanje poteka v programu [Notepad++](http://notepad-plus-plus.org/) kjer je slovensko besedilo in pod njim angleško. Potem se s skripto to pretvori v Osis format - XML datoteks, ki je objavljena na tej strani.
+>Prevajanje poteka v programu [Notepad++](http://notepad-plus-plus.org/) kjer je slovensko besedilo in pod njim angleško. Potem se s skripto to pretvori v OSIS obliko - XML datoteko, ki je objavljena na tej strani.
 
 
 *English*
@@ -32,3 +32,6 @@ Sveto pismo Kralja Jakoba (1769)
 > - "*" difference between SloKJV and SSP (Slovenian standard translation)
 > 
 >Sources: [English text](http://www.crosswire.org/~dmsmith/kjv2006/), [Notes and references](www.kingjamesbibleonline.org/Psalms–Chapter–1_Original–1611–KJV/) and [biblija.net](http://www.biblija.net/biblija.cgi?m=&id13=1&id7=1&pos=0&set=6&l=sl).
+> 
+>Translation takes place in [Notepad++](http://notepad-plus-plus.org/) where the Slovenian text is below the English text for each verse.
+Then with a script this is converted to OSIS format - the XML file that is published on this page.
