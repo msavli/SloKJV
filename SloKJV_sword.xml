@@ -4,9 +4,9 @@
       xsi:schemaLocation="http://www.bibletechnologies.net/2003/OSIS/namespace
        z:/osisCore.2.1.1.xsd"> <!-- http://www.bibletechnologies.net/osisCore.2.1.1.xsd -->
      
-<osisText osisIDWork="SloKJVA" osisRefWork="Bible" xml:lang="sl">
+<osisText osisIDWork="SloKJV" osisRefWork="Bible" xml:lang="sl">
     <header>
-        <work osisWork="SloKJVA">
+        <work osisWork="SloKJV">
         </work>
     </header>
 <div type="bookGroup" subType="x-OT"><title type="main">Stara zaveza</title>
@@ -2877,8 +2877,7 @@ In Jožefu sta bila v egiptovski deželi rojena Manáse in Efrájim, katera<note
               </verse><verse osisID="Gen.46.22">
 To <transChange type="added">so</transChange> Rahelini sinovi, ki so bili rojeni Jakobu: vseh duš <transChange type="added">je bilo</transChange> štirinajst.
               </verse><verse osisID="Gen.46.23"><milestone type="x-p" subType="x-added" marker="¶"/>
-In Danovi sinovi:<note type="study"><seg><transChange type="added">[sinovi: ali, sin]</transChange></seg></note>
-		 Huším.<note type="study">Huším: ali, Shuham</note>
+In Danovi sinovi:<note type="study"><seg><transChange type="added">[sinovi: ali, sin]</transChange></seg></note> Huším.<note type="study">Huším: ali, Shuham</note>
               </verse><verse osisID="Gen.46.24"><milestone type="x-p" subType="x-added" marker="¶"/>
 In Neftálijevi sinovi: Jahceél in Guní in Jecer in Šilém.
               </verse><verse osisID="Gen.46.25">
@@ -4787,7 +4786,6 @@ Potem boš vzel mazilno olje<note type="crossReference"><reference osisRef="Exod
 In privedel boš njegove sinove in nanje nadel plašče.
               </verse><verse osisID="Exod.29.9">
 in opasal jih boš s pasovi, Arona in njegove sinove in nanje položil<note type="study">položil: hebr. povezal</note> klobučke: in duhovniško opravilo bo njihovo za večno pravilo: in posvetil<note type="study">posvetil…: hebr. napolnil boš Aronovo roko in <seg><transChange type="added">[roke]</transChange></seg> njegovih sinov</note><note type="crossReference"><reference osisRef="Exod.28.41">2 Mz 28:41</reference></note> boš Arona in njegove sinove.
-		
               </verse><verse osisID="Exod.29.10">
 In volu boš povzročil, da bo priveden pred šotorsko svetišče shoda: in Aron<note type="crossReference"><reference osisRef="Lev.1.4">3 Mz 1:4</reference></note> in njegovi sinovi bodo svoje roke položili volu na glavo.
               </verse><verse osisID="Exod.29.11">
@@ -14217,7 +14215,6 @@ Začetek <divineName>Gospodove</divineName> besede po Ozeju. In <divineName>Gosp
 Torej je odšel in vzel Gómero, Diblájimovo hčer; katera je spočela in mu rodila sina.
               </verse><verse osisID="Hos.1.4">
 In <divineName>Gospod</divineName> mu je rekel: „Njegovo ime kliči Jezreél<note type="study"><seg><transChange type="added">[Jezreél: hebr: Bog seje]</transChange></seg></note>, kajti le <transChange type="added">še</transChange>malo in jaz bom maščeval<note type="study">maščeval: hebr, obiskal</note> kri Jezreéla na Jehújevi hiši in povzročil bom, da bo prenehalo kraljestvo Izraelove hiše.
-		ENG And the <divineName>Lord</divineName> said unto him, Call his name Jezreel; for yet a little <transChange type="added">while</transChange>, and I will avenge the blood of Jezreel upon the house of Jehu, and will cause to cease the kingdom of the house of Israel.<note type="study">avenge: Heb. visit</note>
               </verse><verse osisID="Hos.1.5">
 In zgodilo se bo na ta dan, da bom zlomil Izraelov lok v dolini Jezreél.“
               </verse><verse osisID="Hos.1.6"><milestone type="x-p" subType="x-added" marker="¶"/>
