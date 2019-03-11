@@ -6,7 +6,7 @@ Sveto pismo Kralja Jakoba (1769)
 
 >Projekt prevoda **Sveto Pismo kralja Jakoba**.
 >
->Doslej prevedene knjige: Geneza, Exodus, Ruta, Psalmi, Pregovori, Pridigar, Visoka pesem, Daniel, Ozej, Jona in celotna Nova Zaveza.
+>Doslej prevedene knjige: Geneza, Exodus, Ruta, Estera, Psalmi, Pregovori, Pridigar, Visoka pesem, Daniel, Ozej, Joel, Jona in celotna Nova Zaveza.
 >
 >Posebnosti prevoda: 
 >
@@ -23,7 +23,7 @@ Sveto pismo Kralja Jakoba (1769)
 
 >Translation project **King James Version** Bible.
 >
->Translated books: Gen, Exod, Ruth, Ps, Prov, Eccl, Song, Dan, Hos, Jonah and whole New Testament.
+>Translated books: Gen, Exod, Ruth, Esth, Ps, Prov, Eccl, Song, Dan, Hos, Joel, Jonah and whole New Testament.
 >
 >Translation features:
 >
