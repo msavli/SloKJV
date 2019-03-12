@@ -35,3 +35,8 @@ Sveto pismo Kralja Jakoba (1769)
 > 
 >Translation takes place in [Notepad++](http://notepad-plus-plus.org/) where the Slovenian text is below the English text for each verse.
 Then with a script this is converted to OSIS format - the XML file that is published on this page.
+
+
+*License*
+
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
