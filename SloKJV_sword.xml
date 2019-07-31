@@ -7,6 +7,12 @@
 <osisText osisIDWork="SloKJV" osisRefWork="Bible" xml:lang="sl">
     <header>
         <work osisWork="SloKJV">
+            <title>SloKJVA</title>
+            <type type="OSIS">Bible</type>
+            <identifier type="OSIS">SloKJVA_ID</identifier>
+            <rights type="x-copyright">License: CC BY-NC-ND 4.0</rights>
+            <scope></scope>
+            <refSystem>Bible</refSystem>
         </work>
     </header>
 <div type="bookGroup" subType="x-OT" canonical="true"><title type="main">Stara zaveza</title>
@@ -16338,7 +16344,7 @@ Tako govori Gospod <divineName>Bog</divineName>: ‚Noben tujec, neobrezan v src
               </verse><verse osisID="Ezek.44.10"><milestone type="x-extra-p"/>
 In Leviti, ki so šli daleč proč od mene, ko je Izrael zašel, ki so zašli proč od mene, za svojimi maliki; oni bodo celo nosili svojo krivdo.
               </verse><verse osisID="Ezek.44.11">
-Vendar bodo služabniki v mojem svetišču <transChange type="added">in imeli</transChange> bodo zadolžitev	pri velikih vratih hiše in služili hiši: klali bodo žgalno daritev in žrtev za ljudstvo in stali bodo pred njimi, da jim služijo.
+Vendar bodo služabniki v mojem svetišču <transChange type="added">in imeli</transChange> bodo zadolžitev pri velikih vratih hiše in služili hiši: klali bodo žgalno daritev in žrtev za ljudstvo in stali bodo pred njimi, da jim služijo.
               </verse><verse osisID="Ezek.44.12">
 Ker so jim služili pred njihovimi maliki in Izraelovi hiši povzročili,<note type="study">povzročili…: hebr. so bili za kamen spotike krivičnosti, itd</note> da pade v krivičnost; zatorej sem proti njim vzdignil svojo roko,‘ govori Gospod <divineName>Bog</divineName>, ‚in nosili bodo svojo krivičnost.
               </verse><verse osisID="Ezek.44.13">
@@ -16399,7 +16405,7 @@ V deželi bo njegova posest v Izraelu: in moji princi ne bodo več zatirali moje
               </verse><verse osisID="Ezek.45.9"><milestone type="x-p" marker="¶ "/>
 Tako govori Gospod <divineName>Bog</divineName>: ‚Naj vam to zadostuje, oh Izraelovi princi: odstranite nasilje in rop in izvršujte sodbo in pravico, odstranite vaša izsiljevanja od mojega ljudstva.‘ govori Gospod <divineName>Bog</divineName>.
               </verse><verse osisID="Ezek.45.10">
-‚Imeli boste pravične tehtnice<note type="crossReference"><reference osisRef="Lev.19.3">3 Mz 	19:3</reference>; <reference osisRef="Lev.19.35-Lev.19.36">3 Mz 19:35-36</reference></note> in pravičen škaf in pravičen čeber.
+‚Imeli boste pravične tehtnice<note type="crossReference"><reference osisRef="Lev.19.3">3 Mz 19:3</reference>; <reference osisRef="Lev.19.35-Lev.19.36">3 Mz 19:35-36</reference></note> in pravičen škaf in pravičen čeber.
               </verse><verse osisID="Ezek.45.11">
 Škaf in čeber bosta ene mere, da bo čeber lahko vseboval deseti del tovora in škaf deseti del tovora: njegova mera bo po tovoru.
               </verse><verse osisID="Ezek.45.12">
