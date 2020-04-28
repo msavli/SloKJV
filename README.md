@@ -6,7 +6,7 @@ Sveto pismo Kralja Jakoba (1769)
 
 >Projekt prevoda **Sveto Pismo kralja Jakoba** v slovenski jezik.
 >
->Doslej prevedene knjige: Geneza, Exodus, Ruta, Estera, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
+>Doslej prevedene knjige: Geneza, Eksodus, Ruta, Estera, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
 >
 >Skupaj 51 knjig od 66.
 >
