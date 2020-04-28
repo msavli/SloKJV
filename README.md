@@ -7,8 +7,8 @@ Sveto pismo Kralja Jakoba (1769)
 >Projekt prevoda **Sveto Pismo kralja Jakoba** v slovenski jezik.
 >
 >Doslej prevedene knjige: Geneza, Exodus, Ruta, Estera, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
-
-Skupaj 51 knjig od 66.
+>
+>Skupaj 51 knjig od 66.
 >
 >Posebnosti prevoda: 
 >
@@ -26,8 +26,8 @@ Skupaj 51 knjig od 66.
 >Translation project **King James Version** Bible in to Slovenian language.
 >
 >Translated books: Genesis, Exodus, Ruth, Esther, Psalms, Proverbs, Ecclesiastes, Song of Salomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi and whole New Testament.
-
-Total 51 books of 66.
+>
+>Total 51 books of 66.
 >
 >Translation features:
 >
