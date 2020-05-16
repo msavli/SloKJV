@@ -8,6 +8,8 @@ Sveto pismo Kralja Jakoba (1769)
 >
 >Doslej prevedene knjige: Geneza, Eksodus, Ruta, Nehemija, Estera, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
 >
+>Preostale knjige: Levitik, Numeri, Devteronomij, Jozue, Sodniki, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Job, Amos.
+>
 >Prevedenih 52 knjig od 66.
 >
 >Posebnosti prevoda: 
@@ -26,6 +28,8 @@ Sveto pismo Kralja Jakoba (1769)
 >Translation project **King James Version** Bible in to Slovenian language.
 >
 >Translated books: Genesis, Exodus, Ruth, Nehemiah, Esther, Psalms, Proverbs, Ecclesiastes, Song of Salomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi and whole New Testament.
+>
+>Remaining books: Leviticus, Numbers, Deuteronomy, Joshua, Judges, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicle, 2 Chronicle, Ezra, Job, Amos.
 >
 >Total translated 52 books of 66.
 >
