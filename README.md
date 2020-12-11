@@ -6,11 +6,11 @@ Sveto pismo Kralja Jakoba (1769)
 
 >Projekt prevoda **Sveto Pismo kralja Jakoba** v slovenski jezik.
 >
->Doslej prevedene knjige: Geneza, Eksodus, 1 Samuel, 2 Samuel, Ruta, Nehemija, Estera, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
+>Doslej prevedene knjige: Geneza, Eksodus, Levitik, Jozue, Sodniki, 1 Samuel, 2 Samuel, Ruta, Nehemija, Estera, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
 >
->Preostale knjige: Levitik, Numeri, Devteronomij, Jozue, Sodniki, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Job.
+>Preostale knjige: Numeri, Devteronomij, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Job.
 >
->Prevedenih 55 knjig od 66.
+>Prevedenih 58 knjig od 66.
 >
 >Posebnosti prevoda: 
 >
@@ -27,11 +27,11 @@ Sveto pismo Kralja Jakoba (1769)
 
 >Translation project **King James Version** Bible in to Slovenian language.
 >
->Translated books: Genesis, Exodus, 1 Samuel, 2 Samuel, Ruth, Nehemiah, Esther, Psalms, Proverbs, Ecclesiastes, Song of Salomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi and whole New Testament.
+>Translated books: Genesis, Exodus, Leviticus, Joshua, Judges, 1 Samuel, 2 Samuel, Ruth, Nehemiah, Esther, Psalms, Proverbs, Ecclesiastes, Song of Salomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi and whole New Testament.
 >
->Remaining books: Leviticus, Numbers, Deuteronomy, Joshua, Judges, 1 Kings, 2 Kings, 1 Chronicle, 2 Chronicle, Ezra, Job.
+>Remaining books: Numbers, Deuteronomy, 1 Kings, 2 Kings, 1 Chronicle, 2 Chronicle, Ezra, Job.
 >
->Total translated 55 books of 66.
+>Total translated 58 books of 66.
 >
 >Translation features:
 >
