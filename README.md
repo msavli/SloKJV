@@ -12,7 +12,7 @@ Sveto pismo Kralja Jakoba (1769)
 >
 >Prevedenih 64 knjig od 66.
 >
->Posebnosti prevoda: 
+>Posebnosti prevoda:
 >
 > - Jezusove besede izpisane z rdečo
 > - "[ ]" opomba prevajalca, ni v originalu
