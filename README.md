@@ -6,11 +6,9 @@ Sveto pismo Kralja Jakoba (1769)
 
 >Projekt prevoda **Sveto Pismo kralja Jakoba** v slovenski jezik.
 >
->Doslej prevedene knjige: Geneza, Eksodus, Levitik, Numeri, Devteronomij, Jozue, Sodniki, Ruta, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, Ezra, Nehemija, Estera, Job, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
+>Doslej prevedene knjige: Geneza, Eksodus, Levitik, Numeri, Devteronomij, Jozue, Sodniki, Ruta, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Nehemija, Estera, Job, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
 >
->Preostale knjige: 2 Kroniška.
->
->Prevedenih 65 knjig od 66.
+>Prevedenih 66 knjig.
 >
 >Posebnosti prevoda:
 >
@@ -27,11 +25,9 @@ Sveto pismo Kralja Jakoba (1769)
 
 >Translation project **King James Version** Bible in to Slovenian language.
 >
->Translated books: Genesis, Exodus, Leviticus, Deuteronomy, Numbers, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Salomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi and whole New Testament.
+>Translated books: Genesis, Exodus, Leviticus, Deuteronomy, Numbers, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Salomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi and whole New Testament.
 >
->Remaining books: 2 Chronicles.
->
->Total translated 65 books of 66.
+>Total translated 66 books.
 >
 >Translation features:
 >
