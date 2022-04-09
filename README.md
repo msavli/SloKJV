@@ -20,7 +20,7 @@ Sveto pismo Kralja Jakoba (1769)
 >
 >Prevajanje je potekalo v programu [Notepad++](http://notepad-plus-plus.org/) kjer je slovensko besedilo in pod njim angleško. Potem se s skripto to pretvori v OSIS obliko - XML datoteko, ki je objavljena na tej strani. XML datoteko se potem pretvori v Sword modul, ki je dostopen na spletni strani [Crosswire.org](http://www2.crosswire.org/sword/modules/). Sveto pismo lahko berete s pomočjo enega izmed teh [programov](http://wiki.crosswire.org/Choosing_a_SWORD_program), [VideoPsalm](https://myvideopsalm.weebly.com/) ali online [Stara Zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [Nova zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New) ali 
 
-[Stephan Kreutzer](https://skreutzer.de/) mi je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti [PDF]( https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.pdf) verzijo. Različico PDF je treba še izboljšati (manjkajo tekoče knjige v glavi, poševni tisk ni, TOC ... vendar je mogoče brati in natisniti).
+[Stephan Kreutzer](https://skreutzer.de/) mi je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti [PDF]( https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.pdf) verzijo, ki pa jo je potrebno še izboljšati (v glavi manjkajo imena knjig, ni poševnega tiska, ni kazala,... vendar je mogoče brati in natisniti).
 
 
 *English*
@@ -41,7 +41,7 @@ Sveto pismo Kralja Jakoba (1769)
 > 
 >Translation takes place in [Notepad++](http://notepad-plus-plus.org/) where the Slovenian text is below the English text for each verse. Then with a script this is converted to OSIS format - the XML file that is published on this page. The XML file is then converted into a Sword module, which is accessible on the [Crosswire.org](http://www2.crosswire.org/sword/modules/). You can read the Bible using one of these [programs](http://wiki.crosswire.org/Choosing_a_SWORD_program), [VideoPsalm](https://myvideopsalm.weebly.com/) or online [Old Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old) [New Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New) or [PDF](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.pdf).
 
-[Stephan Kreutzer](https://skreutzer.de/) helped me with his project [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) to make [PDF](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.pdf) version. PDF still has to be improved (missing running books in header, italics not present, TOC...  but is can be read and printed).
+[Stephan Kreutzer](https://skreutzer.de/) helped me with his project [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) to make [PDF](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.pdf) version but has to be improved (missing running books in header, italics not present, missing TOC...  but is can be read and printed).
 
 
 *License*
