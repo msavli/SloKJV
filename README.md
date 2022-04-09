@@ -24,7 +24,7 @@ Sveto pismo Kralja Jakoba (1769)
 > - [Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
 > - [VideoPsalm](https://myvideopsalm.weebly.com/)
 > - online [Stara Zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [Nova zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New)
-> - [PDF]( https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.pdf) (>[Stephan Kreutzer](https://skreutzer.de/) mi je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti [PDF]( https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.pdf) verzijo, ki pa jo je potrebno še izboljšati (v glavi manjkajo imena knjig, ni poševnega tiska, ni kazala,... vendar je mogoče brati in natisniti.))
+> - [PDF]( https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.pdf) ([Stephan Kreutzer](https://skreutzer.de/) mi je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti [PDF]( https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.pdf) verzijo, ki pa jo je potrebno še izboljšati (v glavi manjkajo imena knjig, ni poševnega tiska, ni kazala,... vendar je mogoče brati in natisniti.))
 > - na starih telefonih, ki podpirajo Java MIDP 2.0 - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
 
 
