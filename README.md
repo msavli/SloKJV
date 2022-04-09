@@ -23,6 +23,7 @@ Sveto pismo Kralja Jakoba (1769)
 >[Stephan Kreutzer](https://skreutzer.de/) mi je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti [PDF]( https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.pdf) verzijo, ki pa jo je potrebno še izboljšati (v glavi manjkajo imena knjig, ni poševnega tiska, ni kazala,... vendar je mogoče brati in natisniti).
 
 
+
 *English*
 
 >Translation project **King James Version** Bible in to Slovenian language.
