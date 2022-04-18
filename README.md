@@ -12,6 +12,7 @@ Sveto pismo Kralja Jakoba (1769)
 >
 >Posebnosti prevoda:
 >
+> - Dodane opombe in reference iz KJV 1611
 > - Jezusove besede izpisane z rdečo
 > - "[ ]" opomba prevajalca, ni v originalu
 > - "§" razlika med besedilom KJV in ostalimi slovenskimi prevodi
@@ -38,6 +39,7 @@ Sveto pismo Kralja Jakoba (1769)
 >
 >Translation features:
 >
+> - Added footnotes and references from KJV 1611
 > - Jesus words with red
 > - "[ ]" translators note; not in original text
 > - "§" difference between SloKJV and other slovenian translations
