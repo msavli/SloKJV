@@ -4,7 +4,7 @@ Sveto pismo Kralja Jakoba (1769)
 
 *Slovensko / Slovenščina*
 
->Projekt prevoda **Sveto Pismo kralja Jakoba** v slovenski jezik poteka od 16. 05. 2010. Vseh 66 knjig je bilo prevedenih 16. 04 2022. Od takrat poteka lektoriranje in odprava napak.
+>Projekt prevoda **Sveto Pismo kralja Jakoba** v slovenski jezik poteka od 16. 05. 2010. Vseh 66 knjig je bilo prevedenih dne 16. 04 2022. Od takrat dalje poteka lektoriranje in odprava napak.
 >
 >Prevedene knjige: Geneza, Eksodus, Levitik, Numeri, Devteronomij, Jozue, Sodniki, Ruta, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Nehemija, Estera, Job, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
 >
@@ -15,9 +15,9 @@ Sveto pismo Kralja Jakoba (1769)
 > - "[ ]" opomba prevajalca, ni v originalu
 > - "§" razlika med besedilom KJV in ostalimi slovenskimi prevodi
 > 
->Viri: [Angleško besedilo](http://www.crosswire.org/~dmsmith/kjv2006/), [Opombe in reference](www.kingjamesbibleonline.org/Psalms–Chapter–1_Original–1611–KJV/) in [biblija.net](http://www.biblija.net/biblija.cgi?m=&id13=1&id7=1&pos=0&set=6&l=sl).
+>Viri: [Angleško besedilo](http://www.crosswire.org/~dmsmith/kjv2006/), [Opombe in reference](https://www.kingjamesbibleonline.org/Genesis-Chapter-1_Original-1611-KJV/) in [biblija.net](http://www.biblija.net/biblija.cgi?m=&id13=1&id7=1&pos=0&set=6&l=sl).
 >
->Prevajanje je potekalo v programu [Notepad++](http://notepad-plus-plus.org/) kjer je slovensko besedilo in pod njim angleško. Potem se s skripto to pretvori v OSIS obliko - XML datoteko, ki je objavljena na tej strani. XML datoteko se potem pretvori v Sword modul, ki je dostopen na spletni strani [Crosswire.org](http://www2.crosswire.org/sword/modules/).
+>Prevajanje je potekalo v programu [Notepad++](https://notepad-plus-plus.org/) kjer je slovensko besedilo in pod njim angleško. Potem se s skripto to pretvori v OSIS obliko - XML datoteko, ki je objavljena na tej strani. XML datoteko se potem pretvori v Sword modul, ki je dostopen na spletni strani [Crosswire.org](http://www2.crosswire.org/sword/modules/).
 >
 > Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
 > - [Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
@@ -40,9 +40,9 @@ Sveto pismo Kralja Jakoba (1769)
 > - "[ ]" translators note; not in original text
 > - "§" difference between SloKJV and other slovenian translations
 > 
->Sources: [English text](http://www.crosswire.org/~dmsmith/kjv2006/), [Notes and references](www.kingjamesbibleonline.org/Psalms–Chapter–1_Original–1611–KJV/) and [biblija.net](http://www.biblija.net/biblija.cgi?m=&id13=1&id7=1&pos=0&set=6&l=sl).
+>Sources: [English text](http://www.crosswire.org/~dmsmith/kjv2006/), [Notes and references](https://www.kingjamesbibleonline.org/Genesis-Chapter-1_Original-1611-KJV/) and [biblija.net](http://www.biblija.net/biblija.cgi?m=&id13=1&id7=1&pos=0&set=6&l=sl).
 > 
->Translation takes place in [Notepad++](http://notepad-plus-plus.org/) where the Slovenian text is below the English text for each verse. Then with a script this is converted to OSIS format - the XML file that is published on this page. The XML file is then converted into a Sword module, which is accessible on the [Crosswire.org](http://www2.crosswire.org/sword/modules/). 
+>Translation takes place in [Notepad++](https://notepad-plus-plus.org/) where the Slovenian text is below the English text for each verse. Then with a script this is converted to OSIS format - the XML file that is published on this page. The XML file is then converted into a Sword module, which is accessible on the [Crosswire.org](http://www2.crosswire.org/sword/modules/). 
 >
 >SloKJV Bible can be read using one of these operating system or devices:
 > - [Windows, Mac, Linux, Andorid, iPhone, iPads](http://wiki.crosswire.org/Choosing_a_SWORD_program)
