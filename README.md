@@ -1,6 +1,6 @@
 # SloKJV
-##Sveto pismo Kralja Jakoba (1769) prevedeno iz angleščine v slovenščino
-##The King James Version Bible (1769) translated from English to Slovenian language
+## Sveto pismo Kralja Jakoba (1769) prevedeno iz angleščine v slovenščino
+## The King James Version Bible (1769) translated from English to Slovenian language
 
 ## *Slovensko / Slovenščina*
 
