@@ -1,6 +1,6 @@
 # SloKJV
-Sveto pismo Kralja Jakoba (1769)
-
+##Sveto pismo Kralja Jakoba (1769) prevedeno iz angleščine v slovenščino
+##The King James Version Bible (1769) translated from English to Slovenian language
 
 ## *Slovensko / Slovenščina*
 
@@ -8,7 +8,7 @@ Sveto pismo Kralja Jakoba (1769)
 >
 >Prevedene knjige: Geneza, Eksodus, Levitik, Numeri, Devteronomij, Jozue, Sodniki, Ruta, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Nehemija, Estera, Job, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
 >
->Posebnosti prevoda:
+> ### Posebnosti prevoda:
 >
 > - Dodane opombe in reference iz KJV 1611
 > - Jezusove besede izpisane z rdečo
@@ -28,12 +28,12 @@ Sveto pismo Kralja Jakoba (1769)
 > - stari telefoni, ki podpirajo Java MIDP 2.0 - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
 >
 > ### Opis datotek:
-> - SloKJV_sword.xml (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
-> - slokjv.conf (konfiguracija za SloKJV_sword.xml)
-> - SloKJV.pdf (PDF datoteka za tisk z okoli 1604 stranmi)
-> - slokjv.jad in slokjv.jar (za stare Java MIDP 2.0 mobilne naprave; GoBible SLO-ENG KJV z opombami in referencami)
-> - SloEngKJV_VideoPsalm_sword.xml (Za uvoz v program VideoPsalm, ki se uporablja za prezentacijo v evangelijskih cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini)
-> - Android_data_net.bible.android.activity_files.zip (Ročna namestitev na Android napravo z nameščenim programom [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity). Razpakirati v mapo \\Android\data\net.bible.android.activity\files na vaši napravi)
+> - `SloKJV_sword.xml` (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
+> - `slokjv.conf` (konfiguracija za SloKJV_sword.xml)
+> - `SloKJV.pdf` (PDF datoteka za tisk z okoli 1604 stranmi)
+> - `slokjv.jad` in `slokjv.jar` (za stare Java MIDP 2.0 mobilne naprave; GoBible SLO-ENG KJV z opombami in referencami)
+> - `SloEngKJV_VideoPsalm_sword.xml` (Za uvoz v program VideoPsalm, ki se uporablja za prezentacijo v evangelijskih cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini)
+> - `Android_data_net.bible.android.activity_files.zip` (**Ročna namestitev na Android** napravo z nameščenim programom [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity). Razpakirati v mapo \\Android\data\net.bible.android.activity\files na vaši napravi)
 
 
 ## *English*
@@ -42,7 +42,7 @@ Sveto pismo Kralja Jakoba (1769)
 >
 >Translated books: Genesis, Exodus, Leviticus, Deuteronomy, Numbers, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Salomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi and whole New Testament.
 >
->Translation features:
+> ### Translation features:
 >
 > - Added footnotes and references from KJV 1611
 > - Jesus words with red
@@ -62,12 +62,12 @@ Sveto pismo Kralja Jakoba (1769)
 > - old phones with Java MIDP 2.0 support - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
 >
 > ### File description:
-> - SloKJV_sword.xml (main translation file; XML SWORD format for [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
-> - slokjv.conf (configuration for SloKJV_sword.xml)
-> - SloKJV.pdf (PDF file for printing with about 1604 pages)
-> - slokjv.jad and slokjv.jar (for old Java MIDP 2.0 mobile devices; GoBible SLO-ENG KJV with notes and references)
-> - SloEngKJV_VideoPsalm_sword.xml (For import into the VideoPsalm program used for presentation in evangelical churches. Each Bible verse is in Slovene and below it in English)
-> - Android_data_net.bible.android.activity_files.zip (Manual installation on Android device with [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installed. Unpack in \\Android\data\net.bible.android.activity\files folder on your device)
+> - `SloKJV_sword.xml` (main translation file; XML SWORD format for [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
+> - `slokjv.conf` (configuration for SloKJV_sword.xml)
+> - `SloKJV.pdf` (PDF file for printing with about 1604 pages)
+> - `slokjv.jad` and `slokjv.jar` (for old Java MIDP 2.0 mobile devices; GoBible SLO-ENG KJV with notes and references)
+> - `SloEngKJV_VideoPsalm_sword.xml` (For import into the VideoPsalm program used for presentation in evangelical churches. Each Bible verse is in Slovene and below it in English)
+> - `Android_data_net.bible.android.activity_files.zip` (**Manual installation on Android** device with [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installed. Unpack in \\Android\data\net.bible.android.activity\files folder on your device)
 
 *License*
 
