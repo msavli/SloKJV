@@ -4,7 +4,7 @@ Sveto pismo Kralja Jakoba (1769)
 
 *Slovensko / Slovenščina*
 
->Projekt prevoda **Sveto Pismo kralja Jakoba** v slovenski jezik je potekal od maja 2010 dne maja 2022. Prevedenih je bilo 66 knjig. Od takrat dalje poteka lektoriranje in odprava napak.
+>Projekt prevoda **Sveto Pismo kralja Jakoba** v slovenski jezik je potekalo od maja 2010 do maja 2022. Prevedenih je bilo 66 knjig. Od takrat dalje poteka lektoriranje in odprava napak.
 >
 >Prevedene knjige: Geneza, Eksodus, Levitik, Numeri, Devteronomij, Jozue, Sodniki, Ruta, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Nehemija, Estera, Job, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
 >
