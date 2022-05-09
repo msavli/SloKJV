@@ -4,7 +4,7 @@
 
 ## *Slovensko / Slovenščina*
 
->Projekt prevoda **Sveto Pismo kralja Jakoba** v slovenski jezik je potekalo od maja 2010 do maja 2022. Prevedenih je bilo 66 knjig. Od takrat dalje poteka lektoriranje in odprava napak.
+>Projekt prevoda **Sveto Pismo kralja Jakoba** v slovenski jezik je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Sedaj poteka lektoriranje in odprava napak.
 >
 >Prevedene knjige: Geneza, Eksodus, Levitik, Numeri, Devteronomij, Jozue, Sodniki, Ruta, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Nehemija, Estera, Job, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
 >
@@ -34,6 +34,7 @@
 > - `slokjv.jad` in `slokjv.jar` (za stare Java MIDP 2.0 mobilne naprave; GoBible SLO-ENG KJV z opombami in referencami)
 > - `SloEngKJV_VideoPsalm_sword.xml` (Za uvoz v program VideoPsalm, ki se uporablja za prezentacijo v evangelijskih cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini)
 > - `Android_data_net.bible.android.activity_files.zip` (**Ročna namestitev na Android** napravo z nameščenim programom [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity). Razpakirati v mapo \\Android\data\net.bible.android.activity\files na vaši napravi)
+
 
 
 ## *English*
