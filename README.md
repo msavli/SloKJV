@@ -36,7 +36,7 @@
 > - `Android_data_net.bible.android.activity_files.zip` (**Ročna namestitev na Android** napravo z nameščenim programom [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity). Razpakirati v mapo \\Android\data\net.bible.android.activity\files na vaši napravi)
 
 > ### Napake
-> Če ste v prevodu našli kako napako, jo lahko [sporočite](mailto:msavli@users.noreply.github.com).
+> Če ste v prevodu našli kako napako, jo lahko [sporočite](mailto:marjan.savli@gmail.com).
 
 
 ## *English*
@@ -75,7 +75,7 @@
 > - `Android_data_net.bible.android.activity_files.zip` (**Manual installation on Android** device with [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installed. Unpack in \\Android\data\net.bible.android.activity\files folder on your device)
 >
 > ### Errors
-> If you found any error in the translation, you can [send it](mailto:msavli@users.noreply.github.com].
+> If you found any error in the translation, you can [send it](mailto:marjan.savli@gmail.com].
 
 
 *License*
