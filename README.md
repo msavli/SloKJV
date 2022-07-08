@@ -14,7 +14,6 @@
 > - Jezusove besede izpisane z rdečo
 > - "[ ]" opomba prevajalca, ni v originalu
 > - "§" razlika med besedilom KJV in ostalimi slovenskimi prevodi
-> - 1 Kroniška knjiga ima pri osebnih imen vnešeno dodano opombo s hebrejskim pomenom
 > 
 >Viri: [Angleško besedilo](http://www.crosswire.org/~dmsmith/kjv2006/), [Opombe in reference](https://www.kingjamesbibleonline.org/Genesis-Chapter-1_Original-1611-KJV/) in [biblija.net](http://www.biblija.net/biblija.cgi?m=&id13=1&id7=1&pos=0&set=6&l=sl).
 >
@@ -33,7 +32,7 @@
 > - `SloKJV.pdf` (PDF datoteka za tisk z okoli 1604 stranmi)
 > - `slokjv.jad` in `slokjv.jar` (za stare Java MIDP 2.0 mobilne naprave; GoBible SLO-ENG KJV z opombami in referencami)
 > - `SloEngKJV_VideoPsalm_sword.xml` (Za uvoz v program VideoPsalm, ki se uporablja za prezentacijo v evangelijskih cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini)
-> - `Android_data_net.bible.android.activity_files.zip` (**Ročna namestitev na Android** napravo z nameščenim programom [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity). Razpakirati v mapo \\Android\data\net.bible.android.activity\files na vaši napravi)
+> - `Android_data_net.bible.android.activity_files.zip` (**Ročna namestitev na Android** napravo z nameščenim programom [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity). Razpakirati v mapo \\Android\data\net.bible.android.activity\files na vaši Android napravi)
 >
 > ### Predlogi za izboljšavo
 > Če ste v prevodu našli kako napako ali predlog za izboljšavo, jo lahko [sporočite](mailto:marjan.savli@gmail.com?subject=SloKJV–predlog&body=Predlagam...).
@@ -53,7 +52,6 @@
 > - Jesus words with red
 > - "[ ]" translators note; not in original text
 > - "§" difference between SloKJV and other slovenian translations
-> - 1 Chronicle has many notes with Hebrew meaning added to personal names
 > 
 >Sources: [English text](http://www.crosswire.org/~dmsmith/kjv2006/), [Notes and references](https://www.kingjamesbibleonline.org/Genesis-Chapter-1_Original-1611-KJV/) and [biblija.net](http://www.biblija.net/biblija.cgi?m=&id13=1&id7=1&pos=0&set=6&l=sl).
 > 
@@ -72,7 +70,7 @@
 > - `SloKJV.pdf` (PDF file for printing with about 1604 pages)
 > - `slokjv.jad` and `slokjv.jar` (for old Java MIDP 2.0 mobile devices; GoBible SLO-ENG KJV with notes and references)
 > - `SloEngKJV_VideoPsalm_sword.xml` (For import into the VideoPsalm program used for presentation in evangelical churches. Each Bible verse is in Slovene and below it in English)
-> - `Android_data_net.bible.android.activity_files.zip` (**Manual installation on Android** device with [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installed. Unpack in \\Android\data\net.bible.android.activity\files folder on your device)
+> - `Android_data_net.bible.android.activity_files.zip` (**Manual installation on Android** device with [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installed. Unpack in \\Android\data\net.bible.android.activity\files folder on your Android device)
 >
 > ### Suggestions for improvement
 > If you find an error or suggestion for improvement in the translation, you can [report it](mailto:marjan.savli@gmail.com?subject=SloKJV–suggestion&body=Suggestion...).
