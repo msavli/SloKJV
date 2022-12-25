@@ -21,6 +21,7 @@
 >
 > Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
 > - [Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
+> - [ePUB (kindle, Kobo, e-bralniki)](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub)
 > - [VideoPsalm](https://myvideopsalm.weebly.com/)
 > - online [Stara Zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [Nova zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New)
 > - [PDF - en stolpec]( https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) mi je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti PDF verzijo.)
@@ -30,7 +31,10 @@
 > ### Opis datotek:
 > - `SloKJV_sword.xml` (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
 > - `slokjv.conf` (konfiguracija za SloKJV_sword.xml)
-> - `SloKJV.pdf` (PDF datoteka za tisk z okoli 1604 stranmi)
+> - `SloKJV.pdf` (PDF datoteka za tisk z okoli 1808 stranmi, A5, en stolpec)
+> - `SloKJV A4.pdf` (PDF datoteka za tisk z okoli 859 stranmi, A4, en stolpec)
+> - `SloKJV_A5_PDF_GEN-REV_No_Psalms_PTXprint.pdf` (PDF datoteka za tisk z okoli 1772 stranmi, A5, dva stolpca)
+> - `SloKJV.epub` (ePUB datoteka za Kindle, KoboPDF, e-bralnike)
 > - `slokjv.jad` in `slokjv.jar` (za stare Java MIDP 2.0 mobilne naprave; GoBible SLO-ENG KJV z opombami in referencami)
 > - `SloEngKJV_VideoPsalm_sword.xml` (Za uvoz v program VideoPsalm, ki se uporablja za prezentacijo v evangelijskih cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini)
 > - `Android_data_net.bible.android.activity_files.zip` (**Ročna namestitev na Android** napravo z nameščenim programom [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity). Razpakirati v mapo \\Android\data\net.bible.android.activity\files na vaši Android napravi)
@@ -60,16 +64,20 @@
 >
 >SloKJV Bible can be read using one of these operating system or devices:
 > - [Windows, Mac, Linux, Andorid, iPhone, iPads](http://wiki.crosswire.org/Choosing_a_SWORD_program)
+> - [ePUB (kindle, Kobo, e-readers)](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub)
 > - [VideoPsalm](https://myvideopsalm.weebly.com/)
 > - online [Old Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [New Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New)
 > - [PDF - one column](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) helped me with his project [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) to make PDF version.)
 > - [PDF - two columns]( https://github.com/msavli/SloKJV/blob/master/SloKJV_A5_PDF_GEN-REV_No_Psalms_PTXprint.pdf), but without Psalms until [this problem]( https://stackoverflow.com/questions/74104362/how-to-include-osis-tag-title-to-existing-python-osis2usfm-py-script) is resloved.
 > - old phones with Java MIDP 2.0 support - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
 >
-> ### File description:
+> ### Files description:
 > - `SloKJV_sword.xml` (main translation file; XML SWORD format for [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
 > - `slokjv.conf` (configuration for SloKJV_sword.xml)
-> - `SloKJV.pdf` (PDF file for printing with about 1604 pages)
+> - `SloKJV.pdf` (PDF file for printing with about 1808 pages, A4, one column)
+> - `SloKJV A4.pdf` (PDF file for printing with about 859 pages, A4, one column)
+> - `SloKJV_A5_PDF_GEN-REV_No_Psalms_PTXprint.pdf` (PDF file for printing with about 1772 pages, A5, two columns)
+> - `SloKJV.epub` (ePUB file for Kindle, KoboPDF, e-readers)
 > - `slokjv.jad` and `slokjv.jar` (for old Java MIDP 2.0 mobile devices; GoBible SLO-ENG KJV with notes and references)
 > - `SloEngKJV_VideoPsalm_sword.xml` (For import into the VideoPsalm program used for presentation in evangelical churches. Each Bible verse is in Slovene and below it in English)
 > - `Android_data_net.bible.android.activity_files.zip` (**Manual installation on Android** device with [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installed. Unpack in \\Android\data\net.bible.android.activity\files folder on your Android device)
