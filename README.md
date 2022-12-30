@@ -21,7 +21,7 @@
 >
 > Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
 > - [Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
-> - [ePUB (Kindle, Kobo, e-bralniki)](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub)
+> - [ePUB](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, Kobo, e-bralniki)
 > - [VideoPsalm](https://myvideopsalm.weebly.com/)
 > - online [Stara Zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [Nova zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New)
 > - [PDF - en stolpec]( https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) mi je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti PDF verzijo.)
@@ -64,7 +64,7 @@
 >
 >SloKJV Bible can be read using one of these operating system or devices:
 > - [Windows, Mac, Linux, Andorid, iPhone, iPads](http://wiki.crosswire.org/Choosing_a_SWORD_program)
-> - [ePUB (Kindle, Kobo, e-readers)](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub)
+> - [ePUB](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, Kobo, e-readers)
 > - [VideoPsalm](https://myvideopsalm.weebly.com/)
 > - online [Old Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [New Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New)
 > - [PDF - one column](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) helped me with his project [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) to make PDF version.)
