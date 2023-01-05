@@ -1,0 +1,5 @@
+﻿"Error: This error will block the book from publishing. The error needs to be fixed in order to publish."
+"Notice: This issue will not block the book from publishing and can be safely ignored as there will be no impact."
+"Type","Description","Source File","Line Number","Text Preceding Warning or Error","Recommended Fix"
+"Notice","W14016: Cover not specified","","","",""
+"Error","Kindle conversion has encountered an internal error.","","","","Our team needs to investigate this error in order to resolve. Please go to the KPR Help Menu and select the Send Feedback option to inform us of this issue. Please make sure you are signed in and we will provide you with more information within 3 business days. Thank you."
