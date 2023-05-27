@@ -29,7 +29,7 @@
 > - stari telefoni, ki podpirajo Java MIDP 2.0 - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
 >
 > ### Opis datotek:
-> - `SloKJV_sword.xml` (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
+> - `SloKJV_sword.xml` (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV)
 > - `slokjv.conf` (konfiguracija za SloKJV_sword.xml)
 > - `SloKJV.pdf` (PDF datoteka za tisk z okoli 1808 stranmi, A5, en stolpec)
 > - `SloKJV A4.pdf` (PDF datoteka za tisk z okoli 859 stranmi, A4, en stolpec)
@@ -43,7 +43,7 @@
 > Trenutno je na voljo samo Anionian verzija z [mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/paperback/product-1y5gpyry.html), s [trdimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/hardcover/product-j25j7z.html) in [Nova Zaveza z mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769-new-testament/paperback/product-6k4jeq.html) Digitalen tisk v Franciji na 80g papir. Objavljeni ceni je potrebno dodati še ca 10 eur za poštnino in pride po pošti na dom v treh tednih.
 >
 > ### Predlogi za izboljšavo
-> Če ste v prevodu našli kako napako ali predlog za izboljšavo, jo lahko [sporočite](mailto:marjan.savli@gmail.com?subject=SloKJV–predlog&body=Predlagam...).> 
+> Če ste v prevodu našli kako napako ali predlog za izboljšavo, jo lahko [sporočite](mailto:marjan.savli@gmail.com?subject=SloKJV–predlog&body=Predlagam...).
 
 
 ## *English*
@@ -75,7 +75,7 @@
 > - old phones with Java MIDP 2.0 support - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
 >
 > ### Files description:
-> - `SloKJV_sword.xml` (main translation file; XML SWORD format for [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
+> - `SloKJV_sword.xml` (main translation file; XML SWORD format for [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV)
 > - `slokjv.conf` (configuration for SloKJV_sword.xml)
 > - `SloKJV.pdf` (PDF file for printing with about 1808 pages, A4, one column)
 > - `SloKJV A4.pdf` (PDF file for printing with about 859 pages, A4, one column)
