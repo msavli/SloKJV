@@ -29,7 +29,7 @@
 > - stari telefoni, ki podpirajo Java MIDP 2.0 - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
 >
 > ### Opis datotek:
-> - `SloKJV_sword.xml` (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
+> - `SloKJV_sword.xml` (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV)
 > - `slokjv.conf` (konfiguracija za SloKJV_sword.xml)
 > - `SloKJV.pdf` (PDF datoteka za tisk z okoli 1808 stranmi, A5, en stolpec)
 > - `SloKJV A4.pdf` (PDF datoteka za tisk z okoli 859 stranmi, A4, en stolpec)
@@ -38,6 +38,9 @@
 > - `slokjv.jad` in `slokjv.jar` (za stare Java MIDP 2.0 mobilne naprave; GoBible SLO-ENG KJV z opombami in referencami)
 > - `SloEngKJV_VideoPsalm_sword.xml` (Za uvoz v program VideoPsalm, ki se uporablja za prezentacijo v evangelijskih cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini)
 > - `Android_data_net.bible.android.activity_files.zip` (**Ročna namestitev na Android** napravo z nameščenim programom [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity). Razpakirati v mapo \\Android\data\net.bible.android.activity\files na vaši Android napravi)
+>
+> ### Papirni izvod SloKJV
+> Trenutno je na voljo samo Anionian verzija z [mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/paperback/product-1y5gpyry.html), s [trdimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/hardcover/product-j25j7z.html) in [Nova Zaveza z mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769-new-testament/paperback/product-6k4jeq.html) Digitalen tisk v Franciji na 80g papir. Objavljeni ceni je potrebno dodati še ca 10 eur za poštnino in pride po pošti na dom v treh tednih.
 >
 > ### Predlogi za izboljšavo
 > Če ste v prevodu našli kako napako ali predlog za izboljšavo, jo lahko [sporočite](mailto:marjan.savli@gmail.com?subject=SloKJV–predlog&body=Predlagam...).
@@ -72,7 +75,7 @@
 > - old phones with Java MIDP 2.0 support - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
 >
 > ### Files description:
-> - `SloKJV_sword.xml` (main translation file; XML SWORD format for [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
+> - `SloKJV_sword.xml` (main translation file; XML SWORD format for [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV)
 > - `slokjv.conf` (configuration for SloKJV_sword.xml)
 > - `SloKJV.pdf` (PDF file for printing with about 1808 pages, A4, one column)
 > - `SloKJV A4.pdf` (PDF file for printing with about 859 pages, A4, one column)
@@ -81,6 +84,9 @@
 > - `slokjv.jad` and `slokjv.jar` (for old Java MIDP 2.0 mobile devices; GoBible SLO-ENG KJV with notes and references)
 > - `SloEngKJV_VideoPsalm_sword.xml` (For import into the VideoPsalm program used for presentation in evangelical churches. Each Bible verse is in Slovene and below it in English)
 > - `Android_data_net.bible.android.activity_files.zip` (**Manual installation on Android** device with [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installed. Unpack in \\Android\data\net.bible.android.activity\files folder on your Android device)
+> 
+> ### SloKJV paper copy
+> Currently only the Anionian version is available: [Paperback](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/paperback/product-1y5gpyry.html), [Hardcover](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/hardcover/product-j25j7z.html) and [Paperback New Testament](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769-new-testament/paperback/product-6k4jeq.html) Digital printing in France on 80g paper. It is necessary to add approx. 10 euros for postage to the published price, and it will be delivered to your home in three weeks.
 >
 > ### Suggestions for improvement
 > If you find an error or suggestion for improvement in the translation, you can [report it](mailto:marjan.savli@gmail.com?subject=SloKJV–suggestion&body=Suggestion...).
