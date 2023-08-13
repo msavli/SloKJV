@@ -25,7 +25,7 @@
 > - [VideoPsalm](https://myvideopsalm.weebly.com/)
 > - online [Stara Zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [Nova zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New)
 > - [PDF - en stolpec]( https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) mi je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti PDF verzijo.)
-> - [PDF - dva stolpca]( https://github.com/msavli/SloKJV/blob/master/SloKJV_A5_PDF_GEN-REV_No_Psalms_PTXprint.pdf), toda brez Psalmov, dokler se [ta problem]( https://stackoverflow.com/questions/74104362/how-to-include-osis-tag-title-to-existing-python-osis2usfm-py-script) ne reši.
+> - [PDF - dva stolpca](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf),
 > - stari telefoni, ki podpirajo Java MIDP 2.0 - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
 >
 > ### Opis datotek:
@@ -71,7 +71,7 @@
 > - [VideoPsalm](https://myvideopsalm.weebly.com/)
 > - online [Old Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [New Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New)
 > - [PDF - one column](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) helped me with his project [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) to make PDF version.)
-> - [PDF - two columns]( https://github.com/msavli/SloKJV/blob/master/SloKJV_A5_PDF_GEN-REV_No_Psalms_PTXprint.pdf), but without Psalms until [this problem]( https://stackoverflow.com/questions/74104362/how-to-include-osis-tag-title-to-existing-python-osis2usfm-py-script) is resloved.
+> - [PDF - two columns](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf)
 > - old phones with Java MIDP 2.0 support - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
 >
 > ### Files description:
