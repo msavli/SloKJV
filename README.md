@@ -38,7 +38,7 @@
 > - `slokjv.jad` in `slokjv.jar` (za stare Java MIDP 2.0 mobilne naprave; GoBible SLO-ENG KJV z opombami in referencami)
 > - `SloEngKJV_VideoPsalm_sword.xml` (Za uvoz v program VideoPsalm, ki se uporablja za prezentacijo v evangelijskih cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini)
 > - `Android_data_net.bible.android.activity_files.zip` (**Ročna namestitev na Android** napravo z nameščenim programom [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity). Razpakirati v mapo \\Android\data\net.bible.android.activity\files na vaši Android napravi)
-> - `SloKJV.bblx` ([e-SWORD](https://www.e-sword.net/) datoteka. Odložiti v mapo: c:\Program Files (x86)\e-Sword\)
+> - `SloKJV.bblx` ([e-SWORD](https://www.e-sword.net/) datoteka. Odložiti v mapo: c:\Program Files (x86)\e-Sword )
 >
 > ### Papirni izvod SloKJV
 > Trenutno je na voljo digitalen tisk na 60g papir. Objavljeni ceni je potrebno dodati še ca 10 eur za poštnino in pride po pošti iz Francije na dom v treh tednih.
@@ -87,7 +87,7 @@
 > - `slokjv.jad` and `slokjv.jar` (for old Java MIDP 2.0 mobile devices; GoBible SLO-ENG KJV with notes and references)
 > - `SloEngKJV_VideoPsalm_sword.xml` (For import into the VideoPsalm program used for presentation in evangelical churches. Each Bible verse is in Slovene and below it in English)
 > - `Android_data_net.bible.android.activity_files.zip` (**Manual installation on Android** device with [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installed. Unpack in \\Android\data\net.bible.android.activity\files folder on your Android device)
-> - `SloKJV.bblx` ([e-SWORD](https://www.e-sword.net/) file. Put it into folder: c:\Program Files (x86)\e-Sword\)
+> - `SloKJV.bblx` ([e-SWORD](https://www.e-sword.net/) file. Put it into folder: c:\Program Files (x86)\e-Sword )
 > 
 > ### SloKJV paper copy
 > Currently is available digital print on 60g paper. It is necessary to add approx. 10 euros for postage to the published price, and it will be delivered from France to your home in three weeks.
