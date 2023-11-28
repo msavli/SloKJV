@@ -10,10 +10,14 @@
 >
 > ### Posebnosti prevoda:
 >
-> - Dodane opombe in reference iz KJV 1611
-> - Jezusove besede izpisane z rdečo
-> - "[ ]" opomba prevajalca, ni v originalu
-> - "§" razlika med besedilom KJV in ostalimi slovenskimi prevodi
+> - dodane opombe in reference iz KJV 1611,
+> - dodane približne letnice dogodkov; KJV Oxford 1769,
+> - »nagnjene« besede so dodane izvirnem KJV besedilu,
+> - »<sup>a</sup>« opombe KJV 1611 in opombe prevajalca,
+> - »<sub>b</sub>« sklici na druge dela besedila,
+> - »[ ]« dodala prevajalca, ni v originalu KJV,
+> - »§« razlika besedila SloKJV in ostalih slovenskih prevodov.
+> - Jezusove besede izpisane z rdečo (Android verzija)
 > 
 >Viri: [Angleško besedilo](http://www.crosswire.org/~dmsmith/kjv2006/), [Opombe in reference](https://www.kingjamesbibleonline.org/Genesis-Chapter-1_Original-1611-KJV/) in [biblija.net](http://www.biblija.net/biblija.cgi?m=&id13=1&id7=1&pos=0&set=6&l=sl).
 >
@@ -59,10 +63,14 @@
 >
 > ### Translation features:
 >
-> - Added footnotes and references from KJV 1611
-> - Jesus words with red
-> - "[ ]" translators note; not in original text
-> - "§" difference between SloKJV and other slovenian translations
+> - added notes and references from KJV 1611,
+> - added approximate years of events; KJV Oxford 1769,
+> - The "italicized" words are added to the original KJV text,
+> - "<sup>a</sup>" KJV 1611 notes and translator's notes,
+> - "<sub>b</sub>" references to other parts of the text,
+> - "[ ]" added by the translator, not in the original KJV,
+> - "§" is the difference between the SloKJV text and other Slovenian translations.
+> - Jesus' words written in red (Android version)
 > 
 >Sources: [English text](http://www.crosswire.org/~dmsmith/kjv2006/), [Notes and references](https://www.kingjamesbibleonline.org/Genesis-Chapter-1_Original-1611-KJV/) and [biblija.net](http://www.biblija.net/biblija.cgi?m=&id13=1&id7=1&pos=0&set=6&l=sl).
 > 
