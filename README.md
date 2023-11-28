@@ -29,15 +29,13 @@
 > - [VideoPsalm](https://myvideopsalm.weebly.com/)
 > - online [Stara Zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [Nova zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New)
 > - [PDF - en stolpec]( https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) mi je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti PDF verzijo.)
-> - [PDF - dva stolpca](https://github.com/msavli/SloKJV/blob/master/SloKJV_A4_dva_stolpca.pdf),
+> - PDF - dva stolpca,
 > - stari telefoni, ki podpirajo Java MIDP 2.0 - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
 >
 > ### Opis datotek:
 > - `SloKJV_sword.xml` (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV)
 > - `slokjv.conf` (konfiguracija za SloKJV_sword.xml)
-> - `SloKJV.pdf` (PDF datoteka za tisk z okoli 1808 stranmi, A5, en stolpec)
-> - `SloKJV A4.pdf` (PDF datoteka za tisk z okoli 859 stranmi, A4, en stolpec)
-> - `SloKJV_A5_PDF_GEN-REV_No_Psalms_PTXprint.pdf` (PDF datoteka za tisk z okoli 1772 stranmi, A5, dva stolpca)
+> - `SloKJV*.pdf` (PDF datoteke)
 > - `SloKJV.epub` (ePUB datoteka za Kindle, KoboPDF, e-bralnike)
 > - `slokjv.jad` in `slokjv.jar` (za stare Java MIDP 2.0 mobilne naprave; GoBible SLO-ENG KJV z opombami in referencami)
 > - `SloEngKJV_VideoPsalm_sword.xml` (Za uvoz v program VideoPsalm, ki se uporablja za prezentacijo v evangelijskih cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini)
@@ -45,9 +43,9 @@
 > - `SloKJV.bblx` ([e-SWORD](https://www.e-sword.net/) datoteka. Odložiti v mapo: c:\Program Files (x86)\e-Sword )
 >
 > ### Papirni izvod SloKJV
-> Trenutno je na voljo digitalen tisk na 60g papir. Objavljeni ceni je potrebno dodati še ca 10 eur za poštnino in pride po pošti iz Francije na dom v treh tednih.
-> - SloKJV s [trdimi](https://www.lulu.com/shop/barbara-hojkar-%C5%A1avli-and-marjan-%C5%A1avli/sveto-pismo-kralja-jakoba/hardcover/product-rnp8r5.html?q=hojkar&page=1&pageSize=4) in [mehkimi](https://www.lulu.com/shop/barbara-hojkar-%C5%A1avli-and-marjan-%C5%A1avli/sveto-pismo-kralja-jakoba/paperback/product-m2dq2kg.html?q=hojkar&page=1&pageSize=4) platnicami
-> - Anionian verzija z [mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/paperback/product-1y5gpyry.html), s [trdimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/hardcover/product-j25j7z.html) in [Nova Zaveza z mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769-new-testament/paperback/product-6k4jeq.html)
+> Trenutno je na voljo digitalen tisk na 60g papir. Objavljeni ceni je potrebno dodati še ca 10 eur za poštnino in pride po pošti iz Francije na dom v treh tednih:
+> - SloKJV s [trdimi ali mehkimi]([https://www.lulu.com/search?page=1&q=hojkar&pageSize=100&adult_audience_rating=00] platnicami,
+> - Anionian verzija z [mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/paperback/product-1y5gpyry.html), s [trdimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/hardcover/product-j25j7z.html) in [Nova Zaveza z mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769-new-testament/paperback/product-6k4jeq.html).
 >
 > ### Predlogi za izboljšavo
 > Če ste v prevodu našli kako napako ali predlog za izboljšavo, jo lahko [sporočite](mailto:marjan.savli@gmail.com?subject=SloKJV–predlog&body=Predlagam...).
@@ -82,15 +80,13 @@
 > - [VideoPsalm](https://myvideopsalm.weebly.com/)
 > - online [Old Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [New Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New)
 > - [PDF - one column](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) helped me with his project [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) to make PDF version.)
-> - [PDF - two columns](https://github.com/msavli/SloKJV/blob/master/SloKJV_A4_dva_stolpca.pdf)
+> - PDF - two columns
 > - old phones with Java MIDP 2.0 support - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
 >
 > ### Files description:
 > - `SloKJV_sword.xml` (main translation file; XML SWORD format for [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV)
 > - `slokjv.conf` (configuration for SloKJV_sword.xml)
-> - `SloKJV.pdf` (PDF file for printing with about 1808 pages, A4, one column)
-> - `SloKJV A4.pdf` (PDF file for printing with about 859 pages, A4, one column)
-> - `SloKJV_A5_PDF_GEN-REV_No_Psalms_PTXprint.pdf` (PDF file for printing with about 1772 pages, A5, two columns)
+> - `SloKJV*.pdf` (PDF files)
 > - `SloKJV.epub` (ePUB file for Kindle, KoboPDF, e-readers)
 > - `slokjv.jad` and `slokjv.jar` (for old Java MIDP 2.0 mobile devices; GoBible SLO-ENG KJV with notes and references)
 > - `SloEngKJV_VideoPsalm_sword.xml` (For import into the VideoPsalm program used for presentation in evangelical churches. Each Bible verse is in Slovene and below it in English)
@@ -99,7 +95,7 @@
 > 
 > ### SloKJV paper copy
 > Currently is available digital print on 60g paper. It is necessary to add approx. 10 euros for postage to the published price, and it will be delivered from France to your home in three weeks.
-> - SloKJV with [hardcover](https://www.lulu.com/shop/barbara-hojkar-%C5%A1avli-and-marjan-%C5%A1avli/sveto-pismo-kralja-jakoba/hardcover/product-rnp8r5.html?q=hojkar&page=1&pageSize=4) and [paperback](https://www.lulu.com/shop/barbara-hojkar-%C5%A1avli-and-marjan-%C5%A1avli/sveto-pismo-kralja-jakoba/paperback/product-m2dq2kg.html?q=hojkar&page=1&pageSize=4)
+> - SloKJV with [hardcover or paperback](https://www.lulu.com/search?page=1&q=hojkar&pageSize=100&adult_audience_rating=00)
 > - Anionian version: [Paperback](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/paperback/product-1y5gpyry.html), [Hardcover](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/hardcover/product-j25j7z.html) and [Paperback New Testament](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769-new-testament/paperback/product-6k4jeq.html) 
 >
 > ### Suggestions for improvement
