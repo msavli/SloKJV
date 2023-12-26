@@ -104,16 +104,10 @@ echo " "
 echo "   Pozene GITHUB Desktop?"
 echo " "
 PS5='   Izberi: '
-options_ver=("Ne" "Pozene" "Izhod")
+options_ver=("Pozene" "Ne" "Izhod")
 select opt_ver in "${options_ver[@]}"
 do
       case $opt_ver in
-          "Ne")
-              echo " "
-              echo "   Pa drugic sinhronizacija z Githubom."
-              echo " "
-              break
-             ;;
           "Pozene")
               echo " "
               echo "   Izbral si nadgraditev."
@@ -123,6 +117,12 @@ do
               /usr/bin/github-desktop
               break
               ;;
+          "Ne")
+              echo " "
+              echo "   Pa drugic sinhronizacija z Githubom."
+              echo " "
+              break
+             ;;
           "Izhod")
               echo " "
               echo "   Izbral si $REPLY kar je $opt_ver"
