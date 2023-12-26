@@ -44,9 +44,13 @@ done
 #===================================================
 
 # Kreira mapo z izbrano velikostjo SloKJV PDF datoteke.
-mkdir $SloKJV$format 2>/dev/null
+mkdir $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format  2>/dev/null
 
-
+# Naredi simbolicen link iz Github na mapo osis2usfm (samo prvic)
+ln -s $SloKJV_Github/PTXprint/osis2usfm/run_osis2usfm $osis2usfm
+ln -s $SloKJV_Github/PTXprint/osis2usfm/osis2usfm.py $osis2usfm
+ln -s $SloKJV_Github/PTXprint/osis2usfm/SloKJV/ $osis2usfm
+ls -al $osis2usfm 
 
 #================ PTXPrint nadgradi na zadnjo verzijo? ====================
 echo " "
@@ -58,11 +62,13 @@ options_ver=("Ne" "Nadgradi" "Izhod")
  do
      case $opt_ver in
          "Ne")
-             echo "   Pa drugic...."
+             echo " "
+             echo "   Pa drugic nadgradnja PTXprint...."
              echo " "
              break
              ;;
          "Nadgradi")
+             echo " "
              echo "   Izbral si nadgraditev."
              echo " "
              echo "     Ubuntu package ptxprint update ..."
@@ -73,7 +79,9 @@ options_ver=("Ne" "Nadgradi" "Izhod")
              break
              ;;
          "Izhod")
+             echo " "
              echo "Izbral si $REPLY kar je $opt_ver"
+             echo " "
              exit
              ;;
          *) echo "Napacna izbira $REPLY";;
@@ -86,26 +94,46 @@ options_ver=("Ne" "Nadgradi" "Izhod")
 #https_proxy=http://proxy.gov.si:80/
 #wget --no-proxy https://github.com/msavli/SloKJV/raw/master/SloKJV_sword.xml -O /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 
-echo
-echo    Pripravi backup PtxPrint datotek za na Github...
-echo 
-find SloKJV/release/ -name '*.sty' | zip ptxprint_SloKJV.zip -@  >/dev/null 2>&1
-find SloKJV/release/ -name '*.cfg' | zip ptxprint_SloKJV.zip -@  >/dev/null 2>&1
-find SloKJV/release/ -name '*.xml' | zip ptxprint_SloKJV.zip -@  >/dev/null 2>&1
-find -name 'run_osis2usfm'         | zip ptxprint_SloKJV.zip -@  >/dev/null 2>&1
-find -name 'osis2usfm.py'         | zip ptxprint_SloKJV.zip -@  >/dev/null 2>&1
+echo -E "  Ocisti mape zacasnih datotek..."
+find $SloKJV_Github/PTXprint -name '*.usfm' -exec rm {} \;        >/dev/null 2>&1
+find $SloKJV_Github/PTXprint -name 'local'  -exec rm -rf {} \;    >/dev/null 2>&1
 
 
-cp ptxprint_SloKJV.zip $SloKJV_Github                            >/dev/null 2>&1
+#============ Pozene GITHUB Desktop? ========================
+echo " "
+echo "   Pozene GITHUB Desktop?"
+echo " "
+PS5='   Izberi: '
+options_ver=("Ne" "Pozene" "Izhod")
+select opt_ver in "${options_ver[@]}"
+do
+      case $opt_ver in
+          "Ne")
+              echo " "
+              echo "   Pa drugic sinhronizacija z Githubom."
+              echo " "
+              break
+             ;;
+          "Pozene")
+              echo " "
+              echo "   Izbral si nadgraditev."
+              echo " "
+              echo "     Sinhronizacija z Githubom ..."
+              echo " "
+              /usr/bin/github-desktop
+              break
+              ;;
+          "Izhod")
+              echo " "
+              echo "   Izbral si $REPLY kar je $opt_ver"
+              echo " "
+              exit
+             ;;
+          *) echo "Napacna izbira $REPLY";;
+     esac
+done
+#==========================================================================
 
-
-echo
-echo    Vlecem iz Githuba...
-echo 
-cd $SloKJV_Github
-#git stash
-#git rebase
-git pull
 
 cd $osis2usfm
 
@@ -1268,7 +1296,7 @@ echo -E "   --==  Doda STARA ZAVEZA in NOVA ZAVEZA  in page break med Staro in N
 # Gleda na string   \mt1 Prva Mojzesova knjiga
 sed -i "s|\(\\\mt1 Prva Mojzesova knjiga\)|\\\mt1 STARA ZAVEZA\n\\\b\\\b\1|g"               $SloKJV$format/01_GEN.usfm
 # Gleda na string   udarim zemlje s prekletstvom.«
-sed -i "s|\(udarim zemlje s prekletstvom.«\)|\1\n\\\pb\n\\\mt NOVA ZAVEZA\n\\\b \n|g"       $SloKJV$format/39_MAL.usfm
+sed -i "s|\(\\\toc3 Mt\)|\1\n\\\pb\n\\\mt1 NOVA ZAVEZA\n\\\b \n|g"                           $SloKJV$format/41_MAT.usfm
 #==============================================================
 
 #========== Popravi ALEF ===============
@@ -1293,7 +1321,39 @@ pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/pt
 #SloKJV=/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_
 #format=US_Trade
 
-#============ Pozene GITHUB ========================
-echo -E "   --==  Pozene /usr/bin/github-desktop ==--"
-# /usr/bin/github-desktop
+
+#============ Pozene GITHUB Desktop? ========================
+echo " "
+echo "   Pozene GITHUB Desktop?"
+echo " "
+PS5='   Izberi: '
+options_ver=("Ne" "Pozene" "Izhod")
+select opt_ver in "${options_ver[@]}"
+do
+      case $opt_ver in
+          "Ne")
+              echo " "
+              echo "   Pa drugic sinhronizacija z Githubom."
+              echo " "
+              break
+             ;;
+          "Pozene")
+              echo " "
+              echo "   Izbral si nadgraditev."
+              echo " "
+              echo "     Sinhronizacija z Githubom ..."
+              echo " "
+              echo "   --==  Pozene /usr/bin/github-desktop ==--"
+              /usr/bin/github-desktop
+              break
+              ;;
+          "Izhod")
+              echo " "
+              echo "   Izbral si $REPLY kar je $opt_ver"
+              echo " "
+              exit
+             ;;
+          *) echo "Napacna izbira $REPLY";;
+     esac
+done
 #====================================================
