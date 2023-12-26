@@ -94,10 +94,11 @@ options_ver=("Ne" "Nadgradi" "Izhod")
 #https_proxy=http://proxy.gov.si:80/
 #wget --no-proxy https://github.com/msavli/SloKJV/raw/master/SloKJV_sword.xml -O /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 
+#================================================================================
 echo -E "  Ocisti mape zacasnih datotek..."
 find $SloKJV_Github/PTXprint -name '*.usfm' -exec rm {} \;        >/dev/null 2>&1
 find $SloKJV_Github/PTXprint -name 'local'  -exec rm -rf {} \;    >/dev/null 2>&1
-
+#================================================================================
 
 #============ Pozene GITHUB Desktop? ========================
 echo " "
@@ -1320,6 +1321,13 @@ pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/pt
 #SloKJV_Github=/home/pc/Dokumenti/GitHub/SloKJV
 #SloKJV=/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_
 #format=US_Trade
+
+
+#================================================================================
+echo -E "  Ocisti mape zacasnih datotek..."
+find $SloKJV_Github/PTXprint -name '*.usfm' -exec rm {} \;        >/dev/null 2>&1
+find $SloKJV_Github/PTXprint -name 'local'  -exec rm -rf {} \;    >/dev/null 2>&1
+#================================================================================
 
 
 #============ Pozene GITHUB Desktop? ========================
