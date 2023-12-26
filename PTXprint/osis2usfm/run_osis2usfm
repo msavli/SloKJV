@@ -112,8 +112,9 @@ do
               echo " "
                 #================================================================================
                 echo -E "  Ocisti mape zacasnih datotek..."
-                find $SloKJV_Github/PTXprint -name '*.usfm' -exec rm {} \;        >/dev/null 2>&1
-                find $SloKJV_Github/PTXprint -name 'local'  -exec rm -rf {} \;    >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint -name '*.usfm'     -exec rm {} \;        >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint -name '*.usfm.adj' -exec rm {} \;        >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint -name 'local'      -exec rm -rf {} \;    >/dev/null 2>&1
                 #================================================================================
               /usr/bin/github-desktop
               break
@@ -1332,7 +1333,21 @@ ptxprint -c       /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format
 #              to je ze v PTXprint nastavljeno
 #echo -E "   --==  Spredaj doda 6 A4 strani SloKJV PDF-ju ==--"
 #echo "   pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf"
+echo  "   Kopira v Github mapo ..."
 #============================================================================================
+#  Ce je Samo nova zaveza se fajl drugace imenuje    ...PSA-REV_ptxp.pdf
+     case $format in
+          "A5_NZ")
+              echo " "
+              echo "   Samo Nova zaveza ..."
+              echo " "
+              cp $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_PSA-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
+              ;;
+          *)  echo "  Celotno Sveto pismo ... "
+              cp $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
+              ;;
+     esac
+#=============================================================================================
 
 #============ Pozene GITHUB Desktop? ========================
 echo " "
@@ -1358,8 +1373,9 @@ do
               echo "   --==  Pozene /usr/bin/github-desktop ==--"
                 #================================================================================
                 echo -E "  Ocisti mape zacasnih datotek..."
-                find $SloKJV_Github/PTXprint -name '*.usfm' -exec rm {} \;        >/dev/null 2>&1
-                find $SloKJV_Github/PTXprint -name 'local'  -exec rm -rf {} \;    >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint -name '*.usfm'     -exec rm {} \;        >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint -name '*.usfm.adj' -exec rm {} \;        >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint -name 'local'      -exec rm -rf {} \;    >/dev/null 2>&1
                 #================================================================================
               /usr/bin/github-desktop
               break
