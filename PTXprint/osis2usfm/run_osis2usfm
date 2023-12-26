@@ -1310,17 +1310,26 @@ echo -E "   --==  ptxprint -c /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV
 echo              ptxprint -c /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format
 echo .
 ptxprint -c       /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format
+====================================================
+
+
+#===========  Spredaj doda 6 A4 strani SloKJV PDF-ju  =======================================
 echo -E "   --==  Spredaj doda 6 A4 strani SloKJV PDF-ju ==--"
 echo "pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf"
 pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
-#====================================================
-
-
-#SloKJVepubPath=/home/pc/Dokumenti/epub
-#osis2usfm=/home/pc/Dokumenti/osis2usfm
-#SloKJV_Github=/home/pc/Dokumenti/GitHub/SloKJV
-#SloKJV=/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_
-#format=US_Trade
+#============================================================================================
+#  Ce je Samo nova zaveza se fajl drugace imenuje    ...MAT-REV_ptxp.pdf
+     case $format in
+          "A5_NZ")
+              echo " "
+              echo "   Izbral si $REPLY kar je $opt_ver"
+              echo " "
+              pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_MAT-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
+              exit
+             ;;
+          *) echo " ";;
+     esac
+#=============================================================================================
 
 
 #================================================================================
