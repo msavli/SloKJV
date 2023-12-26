@@ -50,7 +50,6 @@ mkdir $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format  2>/dev/nu
 ln -s $SloKJV_Github/PTXprint/osis2usfm/run_osis2usfm $osis2usfm
 ln -s $SloKJV_Github/PTXprint/osis2usfm/osis2usfm.py $osis2usfm
 ln -s $SloKJV_Github/PTXprint/osis2usfm/SloKJV/ $osis2usfm
-ls -al $osis2usfm 
 
 #================ PTXPrint nadgradi na zadnjo verzijo? ====================
 echo " "
@@ -1310,7 +1309,7 @@ echo -E "   --==  ptxprint -c /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV
 echo              ptxprint -c /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format
 echo .
 ptxprint -c       /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format
-====================================================
+#====================================================
 
 
 #===========  Spredaj doda 6 A4 strani SloKJV PDF-ju  =======================================
