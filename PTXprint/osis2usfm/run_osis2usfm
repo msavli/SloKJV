@@ -1305,7 +1305,6 @@ sed -i "s|\(\\\mt1 Prva Mojzesova knjiga\)|\\\pb\n\\\mt1 STARA ZAVEZA\n\\\b\\\b\
               echo "     med kazalom in Mt 1 stran frej da se Mt zacne na desni strani "
               echo " "
               sed -i "s|\(\\\toc3 Mt\)|\1\n\\\pb\n\\\pb\n\\\mt1 NOVA ZAVEZA\n\\\b\n|g"         $SloKJV$format/41_MAT.usfm
-              exit
               ;;
           *)  echo "  Celotno Sveto pismo ... "
               sed -i "s|\(\\\toc3 Mt\)|\1\n\\\pb\n\\\mt1 NOVA ZAVEZA\n\\\b\n|g"                $SloKJV$format/41_MAT.usfm
@@ -1340,7 +1339,6 @@ echo "   pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$f
               echo "   Samo Nova zaveza ..."
               echo " "
               pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_MAT-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
-              exit
               ;;
           *)  echo "  Celotno Sveto pismo ... "
               pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
