@@ -1,0 +1,16 @@
+<ScriptureText><Name>engKJV06</Name>
+    <Language>English</Language>
+    <Encoding>65001</Encoding>
+    <Copyright>PUBLIC DOMAINexcept in the United Kingdom, where a Crown Copyright applies to printing the KJV. Seehttp://www.cambridge.org/about-us/who-we-are/queens-printers-patent</Copyright>
+    <DefaultFont>Gentium Basic</DefaultFont>
+    <DefaultFontSize>14</DefaultFontSize>
+    <FileNamePostPart>.usfm</FileNamePostPart>
+    <FileNameBookNameForm>41_MAT</FileNameBookNameForm>
+    <FileNamePrePart />
+    <StyleSheet>usfm.sty</StyleSheet>
+    <MinParatextVersion>8.0.63.1</MinParatextVersion>
+    <FullName>King James Version [eng] without Strong's numbers, 1769 standardized text</FullName>
+    <Editable>F</Editable>
+    <BooksPresent>1111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000</BooksPresent>
+</ScriptureText>
+    
