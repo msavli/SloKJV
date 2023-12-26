@@ -1305,10 +1305,10 @@ sed -i "s|\(\\\mt1 Prva Mojzesova knjiga\)|\\\pb\n\\\mt1 STARA ZAVEZA\n\\\b\\\b\
               echo "   Samo Nova zaveza ..."
               echo "     med kazalom in Mt 1 stran frej da se Mt zacne na desni strani "
               echo " "
-              sed -i "s|\(\\\toc3 Mt\)|\1\n\\\pb\n\\\pb\n\\\mt1 NOVA ZAVEZA\n\\\b\n|g"         $SloKJV$format/41_MAT.usfm
+              sed -i "s|\(\\\toc3 Mt\)|\1\n\\\mt1 NOVA ZAVEZA\n\\\b\n|g"         $SloKJV$format/41_MAT.usfm
               ;;
           *)  echo "  Celotno Sveto pismo ... "
-              sed -i "s|\(\\\toc3 Mt\)|\1\n\\\pb\n\\\mt1 NOVA ZAVEZA\n\\\b\n|g"                $SloKJV$format/41_MAT.usfm
+              sed -i "s|\(\\\toc3 Mt\)|\1\\n\\\mt1 NOVA ZAVEZA\n\\\b\n|g"                $SloKJV$format/41_MAT.usfm
               ;;
      esac
 #=============================================================================================
@@ -1329,24 +1329,10 @@ ptxprint -c       /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format
 
 
 #===========  Spredaj doda 6 A4 strani SloKJV PDF-ju  =======================================
-echo -E "   --==  Spredaj doda 6 A4 strani SloKJV PDF-ju ==--"
-echo "   pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf"
+#              to je ze v PTXprint nastavljeno
+#echo -E "   --==  Spredaj doda 6 A4 strani SloKJV PDF-ju ==--"
+#echo "   pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf"
 #============================================================================================
-#  Ce je Samo nova zaveza se fajl drugace imenuje    ...MAT-REV_ptxp.pdf
-
-     case $format in
-          "A5_NZ")
-              echo " "
-              echo "   Samo Nova zaveza ..."
-              echo " "
-              pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_MAT-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
-              ;;
-          *)  echo "  Celotno Sveto pismo ... "
-              pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
-              ;;
-     esac
-#=============================================================================================
-
 
 #============ Pozene GITHUB Desktop? ========================
 echo " "
