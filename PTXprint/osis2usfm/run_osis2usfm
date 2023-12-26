@@ -801,32 +801,32 @@ echo -E "   --==  Popravi naslove knjig ==--"
 
 # 1SA
   sed -i "s/\\\\h  /\x5ch 1 Sam/g"                                                               $SloKJV$format/09_1SA.usfm
-  sed -i "s/\\\\h1/\x5ch1 Prva Samuelova knjiga, drugače imenovana Prva knjiga kraljev/g"        $SloKJV$format/09_1SA.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Prva Samuelova knjiga, drugače imenovana Prva knjiga kraljev/g"    $SloKJV$format/09_1SA.usfm
+  sed -i "s/\\\\h1/\x5ch1 Prva Samuelova knjiga, tudi Prva knjiga kraljev/g"                     $SloKJV$format/09_1SA.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Prva Samuelova knjiga, tudi Prva knjiga kraljev/g"                 $SloKJV$format/09_1SA.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 1 Samuel/g"                                                        $SloKJV$format/09_1SA.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 1Sa/g"                                                             $SloKJV$format/09_1SA.usfm
   sed -i "s/\\\\mt1/\x5cmt1 Prva Samuelova knjiga, drugače imenovana Prva knjiga kraljev/g"      $SloKJV$format/09_1SA.usfm
 
 # 2SA
   sed -i "s/\\\\h  /\x5ch 2 Sam/g"                                                               $SloKJV$format/10_2SA.usfm
-  sed -i "s/\\\\h1/\x5ch1 Druga Samuelova knjiga, drugače imenovana Druga knjiga kraljev/g"      $SloKJV$format/10_2SA.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Druga Samuelova knjiga, drugače imenovana Druga knjiga kraljev/g"  $SloKJV$format/10_2SA.usfm
+  sed -i "s/\\\\h1/\x5ch1 Druga Samuelova knjiga, tudi Druga knjiga kraljev/g"                   $SloKJV$format/10_2SA.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Druga Samuelova knjiga, tudi Druga knjiga kraljev/g"               $SloKJV$format/10_2SA.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 2 Samuel/g"                                                        $SloKJV$format/10_2SA.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 2Sa/g"                                                             $SloKJV$format/10_2SA.usfm
   sed -i "s/\\\\mt1/\x5cmt1 Druga Samuelova knjiga, drugače imenovana Druga knjiga kraljev/g"    $SloKJV$format/10_2SA.usfm
 
 # 1KI
   sed -i "s/\\\\h  /\x5ch 1 Kr/g"                                                                $SloKJV$format/11_1KI.usfm
-  sed -i "s/\\\\h1/\x5ch1 Prva knjiga kraljev, pogosto imenovana Tretja knjiga kraljev/g"        $SloKJV$format/11_1KI.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Prva knjiga kraljev, pogosto imenovana Tretja knjiga kraljev/g"    $SloKJV$format/11_1KI.usfm
+  sed -i "s/\\\\h1/\x5ch1 Prva knjiga kraljev, tudi Tretja knjiga kraljev/g"                     $SloKJV$format/11_1KI.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Prva knjiga kraljev, tudi Tretja knjiga kraljev/g"                 $SloKJV$format/11_1KI.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 1 Kralji/g"                                                        $SloKJV$format/11_1KI.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 1Kr/g"                                                             $SloKJV$format/11_1KI.usfm
   sed -i "s/\\\\mt1/\x5cmt1 Prva knjiga kraljev, pogosto imenovana Tretja knjiga kraljev/g"      $SloKJV$format/11_1KI.usfm
 
 # 2KI
   sed -i "s/\\\\h  /\x5ch 2 Kr/g"                                                                $SloKJV$format/12_2KI.usfm
-  sed -i "s/\\\\h1/\x5ch1 Druga knjiga kraljev, pogosto imenovana Četrta knjiga kraljev/g"       $SloKJV$format/12_2KI.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Druga knjiga kraljev, pogosto imenovana Četrta knjiga kraljev/g"   $SloKJV$format/12_2KI.usfm
+  sed -i "s/\\\\h1/\x5ch1 Druga knjiga kraljev, tudi Četrta knjiga kraljev/g"                    $SloKJV$format/12_2KI.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Druga knjiga kraljev, tudi Četrta knjiga kraljev/g"                $SloKJV$format/12_2KI.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 2 Kralji/g"                                                        $SloKJV$format/12_2KI.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 2Kr/g"                                                             $SloKJV$format/12_2KI.usfm
   sed -i "s/\\\\mt1/\x5cmt1 Druga knjiga kraljev, pogosto imenovana Četrta knjiga kraljev/g"     $SloKJV$format/12_2KI.usfm
