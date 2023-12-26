@@ -1326,8 +1326,9 @@ echo "   pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format
               pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_MAT-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
               exit
               ;;
-          *)  echo "  Celotno Sveto pismo ... ";;
+          *)  echo "  Celotno Sveto pismo ... "
               pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
+              ;;
      esac
 #=============================================================================================
 
