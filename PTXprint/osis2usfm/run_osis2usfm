@@ -1314,7 +1314,7 @@ ptxprint -c       /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format
 
 #===========  Spredaj doda 6 A4 strani SloKJV PDF-ju  =======================================
 echo -E "   --==  Spredaj doda 6 A4 strani SloKJV PDF-ju ==--"
-echo "   pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf"
+echo "   pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf"
 #============================================================================================
 #  Ce je Samo nova zaveza se fajl drugace imenuje    ...MAT-REV_ptxp.pdf
 
@@ -1323,11 +1323,11 @@ echo "   pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format
               echo " "
               echo "   Samo Nova zaveza ..."
               echo " "
-              pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_MAT-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
+              pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_MAT-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
               exit
               ;;
           *)  echo "  Celotno Sveto pismo ... "
-              pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
+              pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
               ;;
      esac
 #=============================================================================================
