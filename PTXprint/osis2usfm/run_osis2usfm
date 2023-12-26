@@ -1294,13 +1294,28 @@ sed -i "s|XXYYmt2XX|\n\\\q1\n\\\p\n\\\v 1|g"                                    
 #============= Doda STARA ZAVEZA in NOVA ZAVEZA  ==============
 echo -E "   --==  Doda STARA ZAVEZA in NOVA ZAVEZA  in page break med Staro in Novo zavezo  ==--"
 # Gleda na string   \mt1 Prva Mojzesova knjiga
-sed -i "s|\(\\\mt1 Prva Mojzesova knjiga\)|\\\pb\\\mt1 STARA ZAVEZA\n\\\b\\\b\1|g"           $SloKJV$format/01_GEN.usfm
-# Gleda na string   udarim zemlje s prekletstvom.«
-sed -i "s|\(\\\toc3 Mt\)|\1\n\\\pb\n\\\mt1 NOVA ZAVEZA\n\\\b \n|g"                           $SloKJV$format/41_MAT.usfm
+sed -i "s|\(\\\mt1 Prva Mojzesova knjiga\)|\\\pb\n\\\mt1 STARA ZAVEZA\n\\\b\\\b\1|g"           $SloKJV$format/01_GEN.usfm
+# Gleda na string   \toc3 Mt
+#============================================================================================
+#  Ce je Samo nova zaveza mora biti med kazalom in Mt 1 stran frej da se Mt zacne na desni strani
+     case $format in
+          "A5_NZ")
+              echo " "
+              echo "   Samo Nova zaveza ..."
+              echo "     med kazalom in Mt 1 stran frej da se Mt zacne na desni strani "
+              echo " "
+              sed -i "s|\(\\\toc3 Mt\)|\1\n\\\pb\n\\\pb\n\\\mt1 NOVA ZAVEZA\n\\\b\n|g"         $SloKJV$format/41_MAT.usfm
+              ;;
+          *)  echo "  Celotno Sveto pismo ... "
+              sed -i "s|\(\\\toc3 Mt\)|\1\n\\\pb\n\\\mt1 NOVA ZAVEZA\n\\\b\n|g"                $SloKJV$format/41_MAT.usfm
+              ;;
+     esac
+#=============================================================================================
+
 #==============================================================
 
 #========== Popravi ALEF ===============
-sed -i "s|\(\\\c 119\)|\1\n\\\qa ALEF א|g"                                                   $SloKJV$format/19_PSA.usfm
+sed -i "s|\(\\\c 119\)|\1\n\\\qa ALEF א|g"                                                     $SloKJV$format/19_PSA.usfm
 cat $SloKJV$format/19_PSA.usfm |grep -2 "ALEF"
 #========================================
 
@@ -1314,7 +1329,7 @@ ptxprint -c       /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format
 
 #===========  Spredaj doda 6 A4 strani SloKJV PDF-ju  =======================================
 echo -E "   --==  Spredaj doda 6 A4 strani SloKJV PDF-ju ==--"
-echo "   pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf"
+echo "   pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf"
 #============================================================================================
 #  Ce je Samo nova zaveza se fajl drugace imenuje    ...MAT-REV_ptxp.pdf
 
@@ -1323,11 +1338,10 @@ echo "   pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format
               echo " "
               echo "   Samo Nova zaveza ..."
               echo " "
-              pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_MAT-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
-              exit
+              pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_MAT-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
               ;;
           *)  echo "  Celotno Sveto pismo ... "
-              pdfunite $osis2usfm/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
+              pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf
               ;;
      esac
 #=============================================================================================
