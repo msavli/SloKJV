@@ -10,7 +10,7 @@ format=US_Trade
 #======= zberi velikost PDF verzije SloKJV =============
 echo "   Izberi velikost PDF verzije SloKJV"
 PS3='Izberi velikost PDF verzije SloKJV: '
-options=("A4" "US_Trade" "A5" "A5_NZ" "Izhod")
+options=("A4" "US_Trade" "A5" "A5_NZ" "Test" "Izhod")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -32,6 +32,11 @@ do
         "A5_NZ")
             echo "   Izbral si A5_NZ."
             format=A5_NZ
+            break
+            ;;
+        "Test")
+            echo "   Izbral si Test."
+            format=Test
             break
             ;;
         "Izhod")
@@ -135,7 +140,6 @@ do
      esac
 done
 #==========================================================================
-
 
 cd $osis2usfm
 
