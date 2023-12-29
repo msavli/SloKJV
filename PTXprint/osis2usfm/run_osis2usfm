@@ -10,7 +10,7 @@ format=US_Trade
 #======= zberi velikost PDF verzije SloKJV =============
 echo "   Izberi velikost PDF verzije SloKJV"
 PS3='Izberi velikost PDF verzije SloKJV: '
-options=("A4" "US_Trade" "A5" "A5_NZ" "Test" "Izhod")
+options=("A4" "US_Trade" "A5" "A5_NZ" "SLO-KJV" "Test" "Izhod")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -34,6 +34,11 @@ do
             format=A5_NZ
             break
             ;;
+        "SLO-KJV")
+            echo "   Izbral si SLO-KJV."
+            format=SLO-KJV
+            break
+            ;;
         "Test")
             echo "   Izbral si Test."
             format=Test
@@ -48,14 +53,14 @@ do
 done
 #===================================================
 
-# Kreira mapo z izbrano velikostjo SloKJV PDF datoteke.
+# Kreira mapo z izbrano velikostjo PDF datoteke.
 mkdir $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format  2>/dev/null
 
 # Naredi simbolicen link iz Github na mapo osis2usfm (samo prvic)
-ln -s $SloKJV_Github/PTXprint/osis2usfm/run_osis2usfm $osis2usfm
-ln -s $SloKJV_Github/PTXprint/osis2usfm/osis2usfm.py $osis2usfm
-ln -s $SloKJV_Github/PTXprint/osis2usfm/SloKJV/ $osis2usfm
-ln -s $SloKJV_Github/PTXprint/osis2usfm/uvod/ $osis2usfm
+ln -s $SloKJV_Github/PTXprint/osis2usfm/run_osis2usfm $osis2usfm       2>/dev/null
+ln -s $SloKJV_Github/PTXprint/osis2usfm/osis2usfm.py $osis2usfm        2>/dev/null
+ln -s $SloKJV_Github/PTXprint/osis2usfm/SloKJV/ $osis2usfm             2>/dev/null
+ln -s $SloKJV_Github/PTXprint/osis2usfm/uvod/ $osis2usfm               2>/dev/null
 
 #================ PTXPrint nadgradi na zadnjo verzijo? ====================
 echo " "
@@ -145,8 +150,26 @@ cd $osis2usfm
 
 # Potegne iz lokanega Githuba (hitreje)
 cp /home/pc/Dokumenti/GitHub/SloKJV/SloKJV_sword.xml  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-	# ls -al /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-	# sleep 2s # Caka 2 sekundi
+
+#============== Odstrani sklice/reference in opombe ce je izbran SloKJV_KJV ========================
+      case $format in
+           "SLO-KJV")
+               echo " "
+               echo "   Odstrani reference in opombe ..."
+               #  Zacetek <note da v novo vrstico
+               sed -i "s|<note|\n<note|g"             /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               #  Za  </note > da v novo vrstico
+               sed -i "s|<\/note>|<\/note>\n|g"       /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               #  Pobrise vrstice ki se zacnejo z <note in to zamenja z SSSS"
+               sed -i "s|^<note.*|SSSS|g"             /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               #  Potegne nazaj gor vrstice"
+               sed -i ':a;N;$!ba;s/\nSSSS\n/ /g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               # pico  /home/pc/Dokumenti/osis2usfm/SloKJV_brez_note.xml
+               ;;
+           *)  echo "   Nic ne naredi. Obicajno Sveto pismo ... "
+               ;;
+      esac
+#=============================================================================================
 
 # Naredi mapo release in mapo projekta
 mkdir $osis2usfm/SloKJV/release                >/dev/null 2>&1
@@ -155,6 +178,19 @@ mkdir $osis2usfm/SloKJV/release/SloKJV_$format >/dev/null 2>&1
 # Prestavi se v mapo   osis2usfm=/home/pc/Dokumenti/osis2usfm
 cd $osis2usfm                                  >/dev/null 2>&1
 
+
+# ===================== ODSTRANI INTRODUCTION UVOD ========================
+echo "  Odstrani vrstice z Uvodom da je stevilcenje poglavij v redu dokler se ne naredi boljsi osis2usfm.py"
+#     To naj bi zamenjal s \ip   Introduction paragraph
+# Potegne gor vrstico in vse zamenja z   introduction
+#    div type="introduction">         <p type="x-noindent" subType="x-introduction">
+sed -i ':a;N;$!ba;s|<div type=\"introduction\">\n        <p type=\"x-noindent\" subType=\"x-introduction\">|<introduction>|g'  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+# Potegne gor vrstico  </p> ENTER  presledki </div>
+sed -i ':a;N;$!ba;s|<\/p>\n      <\/div>|</p></div>|g'                                                                        /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+# Pobrise  vrstice z besedo introduction
+sed -i '/<introduction>/d'                                /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep introduction
+#========================================================================
 
 
 # =============================
@@ -233,7 +269,7 @@ sed -i "s|<note type=\"crossReference\">;|\x5cx + \x5cxo \x5creference : \x5cxt 
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<verse osisID=\"Gen.1.1\""
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<reference"
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "reference>"
-#head -30 /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+# head -30 /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 
 
 # ======= VGNEZDEN GOSPOD ===============
@@ -627,20 +663,6 @@ sed -i ':a;N;$!ba;s|</verse></chapter>\n<div type=\"colophon\" osisID=\"\([^.]*\
 cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -2 "Titus.c"
 #=============================================================
 
-
-# ===================== INTRODUCTION UVOD========================
-# TO zamenja s \ip   Introduction paragraph
-# div type="introduction">         <p type="x-noindent" subType="x-introduction">
-#sed -i "s|<div type=\"introduction\">         <p type=\"x-noindent\" subType=\"x-introduction\">|<introduction>|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-# Potegne gor vrstico  </p> ENTER </div>
-sed -i ':a;N;$!ba;s|<\/p>\n<\/div>|</p></div>|g'                                                   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#Zamenja  </p></div>  z nic
-#sed -i "s|<\/p><\/div>|<\/introduction>|g" /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-echo  Odstrani vrstice z Uvodom da je stevilcenje poglavij v redu dokler se ne naredi boljsi osis2usfm.py
-sed -i '/<div type=\"introduction\">/d'                                /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep introduction
-# exit
-#================================================================
 
 
 
@@ -1322,7 +1344,7 @@ sed -i "s|\(\\\mt1 Prva Mojzesova knjiga\)|\\\pb\n\\\mt1 STARA ZAVEZA\n\\\b\\\b\
 
 #========== Popravi ALEF ===============
 sed -i "s|\(\\\c 119\)|\1\n\\\qa ALEF א|g"                                                     $SloKJV$format/19_PSA.usfm
-cat $SloKJV$format/19_PSA.usfm |grep -2 "ALEF"
+# cat $SloKJV$format/19_PSA.usfm |grep -2 "ALEF"
 #========================================
 
 #===========  PTXPRINT  ============================

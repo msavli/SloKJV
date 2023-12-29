@@ -1,0 +1,26 @@
+﻿<ldml><identity><version number="" /><generation date="2018-07-09T01:50:19Z" /><language type="en" /><special xmlns:sil="urn://www.sil.org/ldml/0.1"><sil:identity windowsLCID="1033" /></special></identity><characters><exemplarCharacters>[A-Za-z]</exemplarCharacters><exemplarCharacters type="punctuation">[*\-\u200C\u200D]</exemplarCharacters><special xmlns:sil="urn://www.sil.org/ldml/0.1"><sil:exemplarCharacters type="diacritics">[]</sil:exemplarCharacters><sil:exemplarCharacters type="wordFormingPunctuation">['\-?]</sil:exemplarCharacters><sil:exemplarCharacters type="footnotes">[]</sil:exemplarCharacters><sil:exemplarCharacters type="crossrefs">[]</sil:exemplarCharacters><sil:exemplarCharacters type="verseSegments">[a b c d e f g h i j k l m n o p q r s t u v w x y z {aa} {bb} {cc} {dd} {ee} {ff} {gg} {hh} {ii} {jj} {kk} {ll} {mm} {nn} {oo} {pp} {qq} {rr} {ss} {tt} {uu} {vv} {ww} {xx} {yy} {zz}]</sil:exemplarCharacters><sil:exemplarCharacters type="wordBreaks">[]</sil:exemplarCharacters></special></characters><delimiters><special xmlns:sil="urn://www.sil.org/ldml/0.1"><sil:matched-pairs><sil:matched-pair open="(" close=")" paraClose="false" /><sil:matched-pair open="{" close="}" paraClose="false" /><sil:matched-pair open="[" close="]" paraClose="false" /></sil:matched-pairs><sil:punctuation-patterns><sil:punctuation-pattern pattern="._" context="final" /><sil:punctuation-pattern pattern="!_" context="final" /><sil:punctuation-pattern pattern="?_" context="final" /><sil:punctuation-pattern pattern="-" context="medial" /><sil:punctuation-pattern pattern="'" context="medial" /><sil:punctuation-pattern pattern="´" context="medial" /><sil:punctuation-pattern pattern="—" context="medial" /><sil:punctuation-pattern pattern="‌" context="medial" /><sil:punctuation-pattern pattern="‍" context="medial" /></sil:punctuation-patterns><sil:quotation-marks paraContinueType="all"><sil:quotationContinue>“</sil:quotationContinue><sil:alternateQuotationContinue>‘</sil:alternateQuotationContinue><sil:quotation open="“" close="”" continue="“" level="3" /><sil:quotation open="" continue="“" level="1" type="narrative" /><sil:quotation open="" continue="‘" level="2" type="narrative" /><sil:quotation open="" continue="“" level="3" type="narrative" /></sil:quotation-marks></special><quotationStart>“</quotationStart><quotationEnd>”</quotationEnd><alternateQuotationStart>‘</alternateQuotationStart><alternateQuotationEnd>’</alternateQuotationEnd></delimiters><layout><orientation><characterOrder>left-to-right</characterOrder></orientation></layout><collations><defaultCollation>standard</defaultCollation><collation type="standard"><cr><![CDATA[&[before 1] [first regular] < a\/A < b\/B < c\/C < d\/D < e\/E < f\/F < g\/G < h\/H < i\/I < j\/J < k\/K < l\/L < m\/M < n\/N < o\/O < p\/P < q\/Q < r\/R < s\/S < t\/T < u\/U < v\/V < w\/W < x\/X < y\/Y < z\/Z]]></cr><special xmlns:sil="urn://www.sil.org/ldml/0.1"><sil:simple><![CDATA[a/A
+b/B
+c/C
+d/D
+e/E
+f/F
+g/G
+h/H
+i/I
+j/J
+k/K
+l/L
+m/M
+n/N
+o/O
+p/P
+q/Q
+r/R
+s/S
+t/T
+u/U
+v/V
+w/W
+x/X
+y/Y
+z/Z]]></sil:simple></special></collation></collations><special xmlns:sil="urn://www.sil.org/ldml/0.1"><sil:external-resources><sil:font name="Times New Roman" /><sil:font name="Cambria" /><sil:font name="Maiandra GD" /><sil:font name="Gentium" size="1.2" /><sil:font name="Arial" /><sil:font name="Gentium Basic" size="1.4" /></sil:external-resources></special></ldml>
