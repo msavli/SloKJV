@@ -121,10 +121,11 @@ do
               echo "     Sinhronizacija z Githubom ..."
               echo " "
                 #================================================================================
-                echo -E "  Ocisti mape zacasnih datotek..."
-                find $SloKJV_Github/PTXprint -name '*.usfm'     -exec rm {} \;        >/dev/null 2>&1
-                find $SloKJV_Github/PTXprint -name '*.usfm.adj' -exec rm {} \;        >/dev/null 2>&1
-                find $SloKJV_Github/PTXprint -name 'local'      -exec rm -rf {} \;    >/dev/null 2>&1
+                echo -E "  Ocisti mapo $format zacasnih datotek..."
+                #  SloKJV_Github=/home/pc/Dokumenti/GitHub/SloKJV
+                find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format -name '*.usfm'     -exec rm {} \;        >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format -name '*.usfm.adj' -exec rm {} \;        >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format -name 'local'      -exec rm -rf {} \;    >/dev/null 2>&1
                 #================================================================================
               /usr/bin/github-desktop
               break
@@ -1399,9 +1400,9 @@ do
               echo "   --==  Pozene /usr/bin/github-desktop ==--"
                 #================================================================================
                 echo -E "  Ocisti mape zacasnih datotek..."
-                find $SloKJV_Github/PTXprint -name '*.usfm'     -exec rm {} \;        >/dev/null 2>&1
-                find $SloKJV_Github/PTXprint -name '*.usfm.adj' -exec rm {} \;        >/dev/null 2>&1
-                find $SloKJV_Github/PTXprint -name 'local'      -exec rm -rf {} \;    >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format -name '*.usfm'     -exec rm {} \;        >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format -name '*.usfm.adj' -exec rm {} \;        >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format -name 'local'      -exec rm -rf {} \;    >/dev/null 2>&1
                 #================================================================================
               /usr/bin/github-desktop
               break
