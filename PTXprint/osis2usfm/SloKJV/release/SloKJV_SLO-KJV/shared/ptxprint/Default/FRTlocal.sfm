@@ -1,2 +1,13 @@
-To je v shared/ptxprint/Default/FRTlocal.sfm  
-Click the Generate button (above) to start the process of creating Front Matter...
+\rem ----------Page KAZALO----------------
+\periph Table of Contents|id="contents"
+\mt3 \zvar|pritoctitle\*
+\ip \ztoc|mainL\*
+\zthumbtab Intro
+\pb
+\mt3 \zvar|sectoctitle\*
+\ip \ztoc|mainR\*
+\resetpagenums -1
+\dopagenums
+\ip
+\ip \ztoc|post\*
+\pb
