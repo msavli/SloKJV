@@ -412,27 +412,6 @@ sed -i "s|\\\\add \\\\nd Gospod\\\\nd\*\\\\add\*|\x5c+add \x5c+nd Gospod\x5c+nd\
 # ===============================================================
 
 
-# ============TOC Menda uredi program za konverzijo===============
-	#echo -E " "
-	#echo -E "   --==      <title type=\"main\" short=\"Geneza\">Prva Mojzesova knjiga, imenovana Geneza</title>   "
-	#echo -E "   --==   \mt1    "
-
-	#echo -E " "
-	#echo -E "   --==      <title type=\"main\" short=\"Geneza\">Prva Mojzesova knjiga, imenovana Geneza</title>    "
-	#echo -E "   --==   \toc1 The First Book of Moses, called Genesis     "
-	#echo -E "   --==   \toc2 Genesis    "
-	#sed -i "s|<title type=\"main\" short=\"\([^.]*\)\">\([^.]*\)</title>| \x5ctoc2 \1 \x5ctoc1 \2 |g"   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-	#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "toc1"
-	#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "toc2"
-
-
-	#echo -E " "
-	#echo -E "   --==     <div type=\"book\" osisID=\"Gen\">     "
-	#echo -E "   --==   \toc3 Gen     "
-	#sed -i "s|<div type=\"book\" osisID=\"\([^.]*\)\">| \x5ctoc3 \1 |g"   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-	#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "toc3"
-# ============To menda uredi program za konverzijo===============
-
 
 # ================== Hebrejske besede v Psalmih ==================
 echo -E "   --==              <verse osisID=\"Ps.119.1\"> <title type=\"acrostic\" canonical=\"true\"><foreign n=\"א\">ALEF א</foreign> </title>   "
@@ -482,6 +461,7 @@ sed -i "s|</hi>| \\\bd* |g"                                                     
 # cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep 'Ps.22.6"'
 
 
+#========================================================
 echo -E "   --== Odstrani rdece JEZUSOVE BESEDE ==--"
 #Odstranil \wj... ker mi potem ni delovale vgnezdenje referenc
 # problem so italic in dodane  reference
@@ -497,6 +477,7 @@ sed -i "s|</q>||g"                                    /home/pc/Dokumenti/osis2us
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<q>"
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "wj"
 # ========================================================
+
 
 
 # Odstranil +   pri \+w
@@ -581,7 +562,7 @@ sed -i "s|<chapter osisID=\"\([^.]*\).\([^.]*\)\" chapterTitle=\"\([^.]*\)\"><ti
 
 
 
-# ===================== CHAPTER OSIS ID ODSTRANI ================================
+# ===================== ZACETEK ODSTRANI ================================
 #      Popraviti zaradi python skripta
 echo -E " "
 #<?xml version=\"1.0\" encoding=\"UTF-8\" ?>
