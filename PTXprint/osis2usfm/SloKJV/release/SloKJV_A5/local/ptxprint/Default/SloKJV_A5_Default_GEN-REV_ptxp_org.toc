@@ -1,0 +1,67 @@
+\defTOC{main}{
+\doTOCline{EXO}{Druga Mojzesova knjiga, imenovana Eksodus}{Eksodus}{2Mz}{38}
+\doTOCline{LEV}{Tretja Mojzesova knjiga, imenovana Levitik}{Levitik}{3Mz}{68}
+\doTOCline{NUM}{Četrta Mojzesova knjiga, imenovana Numeri}{Numeri}{4Mz}{89}
+\doTOCline{DEU}{Peta Mojzesova knjiga, imenovana Devteronomij}{Devteronomij}{5Mz}{120}
+\doTOCline{JOS}{Jozuetova knjiga}{Jozue}{Joz}{146}
+\doTOCline{JDG}{Knjiga sodnikov}{Sodniki}{Sod}{163}
+\doTOCline{RUT}{Rutina knjiga}{Ruta}{Rut}{181}
+\doTOCline{1SA}{Prva Samuelova knjiga, tudi Prva knjiga kraljev}{1 Samuel}{1Sa}{183}
+\doTOCline{2SA}{Druga Samuelova knjiga, tudi Druga knjiga kraljev}{2 Samuel}{2Sa}{207}
+\doTOCline{1KI}{Prva knjiga kraljev, tudi Tretja knjiga kraljev}{1 Kralji}{1Kr}{227}
+\doTOCline{2KI}{Druga knjiga kraljev, tudi Četrta knjiga kraljev}{2 Kralji}{2Kr}{251}
+\doTOCline{1CH}{Prva kroniška knjiga}{1 Kroniška}{1Krn}{273}
+\doTOCline{2CH}{Druga kroniška knjiga}{2 Kroniška}{2Krn}{299}
+\doTOCline{EZR}{Ezrova knjiga}{Ezra}{Ezr}{324}
+\doTOCline{NEH}{Nehemijeva knjiga}{Nehemija}{Neh}{331}
+\doTOCline{EST}{Esterina knjiga}{Estera}{Est}{341}
+\doTOCline{JOB}{Jobova knjiga}{Job}{Job}{347}
+\doTOCline{PSA}{Knjiga Psalmov}{Psalmi}{Ps}{366}
+\doTOCline{PRO}{Pregovori}{Pregovori}{Prg}{414}
+\doTOCline{ECC}{Kohelet ali Pridigar}{Pridigar}{Prd}{430}
+\doTOCline{SNG}{Salomonova pesem (hebr. Pesem pesmi)}{Pesem pesmi}{Pp}{436}
+\doTOCline{ISA}{Knjiga preroka Izaija}{Izaija}{Iz}{439}
+\doTOCline{JER}{Knjiga preroka Jeremija}{Jeremija}{Jer}{475}
+\doTOCline{LAM}{Jeremijeve žalostinke}{Žalostinke}{Žal}{516}
+\doTOCline{EZK}{Knjiga preroka Ezekiela}{Ezekiel}{Ezk}{519}
+\doTOCline{DAN}{Danielova knjiga}{Daniel}{Dan}{555}
+\doTOCline{HOS}{Ozej}{Ozej}{Oz}{568}
+\doTOCline{JOL}{Joel}{Joel}{Jl}{574}
+\doTOCline{AMO}{Amos}{Amos}{Am}{576}
+\doTOCline{OBA}{Abdija}{Abdija}{Abd}{580}
+\doTOCline{JON}{Jona}{Jona}{Jon}{581}
+\doTOCline{MIC}{Mihej}{Mihej}{Mih}{582}
+\doTOCline{NAM}{Nahum}{Nahum}{Nah}{585}
+\doTOCline{HAB}{Habakuk}{Habakuk}{Hab}{587}
+\doTOCline{ZEP}{Sofonija}{Sofonija}{Sof}{589}
+\doTOCline{HAG}{Agej}{Agej}{Ag}{590}
+\doTOCline{ZEC}{Zaharija}{Zaharija}{Zah}{592}
+\doTOCline{MAL}{Malahija}{Malahija}{Mal}{598}
+\doTOCline{MAT}{Evangelij po Sv. Mateju}{Matej}{Mt}{600}
+\doTOCline{MRK}{Evangelij po Svetem Marku}{Marko}{Mr}{624}
+\doTOCline{LUK}{Evangelij po Sv. Luku}{Luka}{Lk}{638}
+\doTOCline{JHN}{Evangelij po Sv. Janezu}{Janez}{Jn}{662}
+\doTOCline{ACT}{Apostolska dela}{Apostolska dela}{Apd}{680}
+\doTOCline{ROM}{Poslanica apostola Pavla Rimljanom}{Rimljanom}{Rim}{703}
+\doTOCline{1CO}{Prva poslanica apostola Pavla Korinčanom}{1 Korinčanom}{1Ko}{712}
+\doTOCline{2CO}{Druga poslanica apostola Pavla Korinčanom}{2 Korinčanom}{2Ko}{721}
+\doTOCline{GAL}{Poslanica apostola Pavla Galačanom}{Galačanom}{Gal}{727}
+\doTOCline{EPH}{Poslanica apostola Pavla Efežanom}{Efežanom}{Ef}{730}
+\doTOCline{PHP}{Poslanica apostola Pavla Filipljanom}{Filipljanom}{Flp}{733}
+\doTOCline{COL}{Poslanica apostola Pavla Kološanom}{Kološanom}{Kol}{735}
+\doTOCline{1TH}{Prva poslanica apostola Pavla Tesaloničanom}{1 Tesaloničanom}{1Te}{737}
+\doTOCline{2TH}{Druga poslanica apostola Pavla Tesaloničanom}{2 Tesaloničanom}{2Te}{739}
+\doTOCline{1TI}{Prva poslanica apostola Pavla Timóteju}{1 Timóteju}{1Ti}{741}
+\doTOCline{2TI}{Druga poslanica apostola Pavla Timóteju}{2 Timóteju}{2Ti}{743}
+\doTOCline{TIT}{Poslanica apostola Pavla Titu}{Titu}{Tit}{745}
+\doTOCline{PHM}{Poslanica apostola Pavla Filemonu}{Filemonu}{Fil}{746}
+\doTOCline{HEB}{Poslanica apostola Pavla Hebrejcem}{Hebrejcem}{Heb}{747}
+\doTOCline{JAS}{Splošno Jakobovo pismo}{Jakob}{Jak}{754}
+\doTOCline{1PE}{Prva splošna Petrova poslanica}{1 Peter}{1Pt}{756}
+\doTOCline{2PE}{Druga splošna Petrova poslanica}{2 Peter}{2Pt}{759}
+\doTOCline{1JN}{Prva splošna Janezova poslanica}{1 Janez}{1Jn}{761}
+\doTOCline{2JN}{Druga Janezova poslanica}{2 Janez}{2Jn}{763}
+\doTOCline{3JN}{Tretja Janezova poslanica}{3 Janez}{3Jn}{764}
+\doTOCline{JUD}{Judova splošna poslanica}{Juda}{Jud}{764}
+\doTOCline{REV}{Božansko razodetje Sv. Janeza}{Razodetje}{Raz}{765}
+}

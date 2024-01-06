@@ -1,0 +1,464 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xetex 2023.11.29)  29 DEC 2023 18:39
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**SloKJV_Test_Default_PSA_ptxp.tex
+(/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_Test/local/ptxprint/Default/SloKJV_Test_Default_PSA_ptxp.tex (/usr/share/ptx2pdf/texmacros/paratext2.tex This is xetex "0" "999993"
+\@ndhooks=\toks13
+\st@rtptxhooks=\toks14
+\@ndptxhooks=\toks15
+\@nithooks=\toks16
+\@idhooks=\toks17
+\@veryparhooks=\toks18
+\@veryparstarthooks=\toks19
+\p@rstylehooks=\toks20
+ (/usr/share/ptx2pdf/texmacros/ptx-constants.tex) (/usr/share/ptx2pdf/texmacros/ptx-utility.tex
+\s@vedeofdepth=\count28
+) (/usr/share/ptx2pdf/texmacros/ptx-tracing.tex
+\TRACEcount=\count29
+) (/usr/share/ptx2pdf/texmacros/ptx-diglot.tex
+\diglotDbgJoinboxes=\count30
+ Special penalty dgl@tPenColSwap is -10002 Special penalty dgl@tPenInternalRpt is -10003 Special penalty dgl@tPenLtrialEnd is -10004 Special penalty dgl@tPenRtrialEnd is -10005
+\diglotLho@ks=\toks21
+\diglotRho@ks=\toks22
+\FontSizeUnitL=\dimen20
+\FontSizeUnitR=\dimen21
+\le@dingunitL=\dimen22
+\le@dingunitR=\dimen23
+\onel@neunitL=\dimen24
+\onel@neunitR=\dimen25
+\verticalsp@ceunitL=\dimen26
+\verticalsp@ceunitR=\dimen27
+\IndentUnitL=\dimen28
+\IndentUnitR=\dimen29
+\p@rlinesgone-L=\count31
+\p@rlinesgone-R=\count32
+\curr@djparL=\count33
+\curr@djparR=\count34
+\p@rnumL=\count35
+\p@rnumR=\count36
+\n@xtpartialNrml=\box20
+\n@xtpartialRev=\box21
+\galleyexc@ss=\box22
+\partialL=\box23
+\excessL=\box24
+\excessR=\box25
+\partialR=\box26
+\trialbox=\box27
+\savedpenalty=\count37
+\tmpcount=\count38
+\curactivecols=\count39
+\Lboxpenalty=\count40
+\Rboxpenalty=\count41
+\partialLpenalty=\count42
+\partialRpenalty=\count43
+\endtri@lpen@lty=\count44
+\chunkpenalty=\count45
+\lastchunkpenalty=\count46
+\columnLwidth=\dimen30
+\columnRwidth=\dimen31
+\availhtL=\dimen32
+\availhtR=\dimen33
+\chunkDelta=\dimen34
+\p@geChunkDelta=\dimen35
+\baselineDelta=\dimen36
+\baselineDeltaL=\dimen37
+\baselineDeltaR=\dimen38
+\thisjointDelta=\dimen39
+\cumulativeDeltaL=\count47
+\cumulativeDeltaR=\count48
+\cumulativeDelta=\count49
+\adjustp@ge=\dimen40
+\Lht=\dimen41
+\Rht=\dimen42
+\TempDim=\dimen43
+\Lbox=\box28
+\Rbox=\box29
+\MaxPages=\count50
+\topchunk=\box30
+\botchunk=\box31
+\notechunk=\box32
+\triall@@pcount=\count51
+) (/usr/share/ptx2pdf/texmacros/ptx-para-style.tex
+\c@rrentcols=\count52
+\headingtopspace=\dimen44
+\headingmidspace=\dimen45
+\he@dingbox=\box33
+\upwardsHackDiff=\dimen46
+\lastdepth=\dimen47
+\dropped@ther@lines=\count53
+\p@rlocs=\write0
+\readp@rlocs=\read1
+\prev@y=\count54
+\this@y=\count55
+\thing@y=\count56
+\tmp@lines=\count57
+\thispar@lines=\count58
+\p@rlinesgoneMonoglot=\count59
+\pr@vdelay=\count60
+\th@sdelay=\count61
+\j@nkbox=\box34
+\ch@pterwd=\dimen48
+\ch@pterbox=\box35
+\ch@pternote=\box36
+\str@tbox=\box37
+) (/usr/share/ptx2pdf/texmacros/ptx-char-style.tex
+\f@ntl@g=\write1
+\end@box@run=\toks23
+\start@box@run=\toks24
+\ulb@x=\box38
+\n@tenesting=\count62
+\p@ranesting=\count63
+) (/usr/share/ptx2pdf/texmacros/ptx-milestone-style.tex
+\tmpt@ks=\toks25
+\it@mcount=\count64
+\afterwordpages=\count65
+\num@rgs=\count66
+\ISBNfontdim=\dimen49
+) (/usr/share/ptx2pdf/texmacros/ptx-note-style.tex
+\n@tecl@sses=\toks26
+\n@teid=\count67
+\AboveNoteSpace=\dimen50
+\InterNoteSpace=\dimen51
+\NoteCallerWidth=\dimen52
+\NoteCallerSpace=\dimen53
+\he@dingnotes=\box39
+\t@blenotes=\box40
+\d@note=\toks27
+\endn@teclasses=\toks28
+\plac@ndnotes=\toks29
+\f@@tstrut=\box41
+\AboveEndNoteSpace=\dimen54
+\n@tewidth=\dimen55
+\internoteskip=\skip18
+\noteRag=\skip19
+\xr@fbox=\box42
+\XrefB@x=\box43
+\XrefSkip=\dimen56
+) (/usr/share/ptx2pdf/texmacros/ptx-stylesheet.tex
+\pstr@t=\box44
+\dropnumbersize=\dimen57
+\dropnumberraise=\dimen58
+\v@rsehooks=\toks30
+\prev@rsehooks=\toks31
+\gr@btoks=\toks32
+\styl@sheet=\read2
+\origb@selineskip=\dimen59
+\t@stread=\read3
+\AdjListPath=\toks33
+\PicListPath=\toks34
+\TrigListPath=\toks35
+\PtxFilePath=\toks36
+\do@ctive=\toks37
+DefineActiveChar: 91
+DefineActiveChar: 40
+\c@th@@ks=\toks38
+\afterh@@ks=\toks39
+\FontSizeUnit=\dimen60
+\IndentUnit=\dimen61
+\PaperWidth=\dimen62
+\PaperHeight=\dimen63
+\MarginUnit=\dimen64
+\BindingGutter=\dimen65
+\TitleColumns=\count68
+\IntroColumns=\count69
+\BodyColumns=\count70
+\le@dingunit=\dimen66
+\onel@neunit=\dimen67
+\verticalsp@ceunit=\dimen68
+\topm@rgin=\dimen69
+\bottomm@rgin=\dimen70
+\bmg@p=\dimen71
+\textwidth=\dimen72
+\textheight=\dimen73
+\colwidth=\dimen74
+\ExtraRMargin=\dimen75
+\gutter=\dimen76
+\XrefNotesWidth=\dimen77
+\XrefNotesMargin=\dimen78
+) (/usr/share/ptx2pdf/texmacros/ptx-periph.tex
+\periphdepth=\count71
+\an@nymousperiphs=\count72
+) (/usr/share/ptx2pdf/texmacros/ptx-attribute.tex) (/usr/share/ptx2pdf/texmacros/ptx-references.tex
+\c@untA=\count73
+\c@untB=\count74
+\oddhead=\toks40
+\evenhead=\toks41
+\titleoddhead=\toks42
+\titleevenhead=\toks43
+\noVoddhead=\toks44
+\noVevenhead=\toks45
+\oddfoot=\toks46
+\evenfoot=\toks47
+\titleevenfoot=\toks48
+\titleoddfoot=\toks49
+\noVoddfoot=\toks50
+\noVevenfoot=\toks51
+) (/usr/share/ptx2pdf/texmacros/ptx-cropmarks.tex
+\topcr@p=\box45
+\bottomcr@p=\box46
+\pdfcropwidth=\dimen79
+\pdfcropheight=\dimen80
+\tabheight=\dimen81
+\tabwidth=\dimen82
+\TabsStart=\dimen83
+\TabsEnd=\dimen84
+\NumTabs=\count75
+\gp@boxN=\box47
+\gp@boxL=\box48
+\gp@boxR=\box49
+\b@rder=\box50
+\instopcr@p=\box51
+\insbottomcr@p=\box52
+\sp@newidth=\dimen85
+\bl@eds=\dimen86
+) (/usr/share/ptx2pdf/texmacros/ptx-toc.tex
+\t@cfile=\write2
+\tocc@l=\count76
+\t@ccount=\count77
+) (/usr/share/ptx2pdf/texmacros/ptx-tables.tex
+\t@bleinserts=\box53
+\s@vedm@rks=\toks52
+\s@vedmarkcount=\count78
+\cellb@x=\box54
+\t@talwidth=\dimen87
+\linec@unt=\count79
+\lct@mp=\count80
+\sp@re=\dimen88
+\exc@ss=\dimen89
+\thr@shold=\dimen90
+\nth@line=\count81
+\tabler@ws=\count82
+\maxtablec@l=\count83
+\tablec@l=\count84
+\@col=\count85
+\@row=\count86
+\allocatedtablec@ls=\count87
+) (/usr/share/ptx2pdf/texmacros/ptx-triggers.tex
+\trigg@rchecks=\toks53
+\p@rnum=\count88
+) (/usr/share/ptx2pdf/texmacros/ptx-adj-list.tex
+\@djparindex=\count89
+\@djlist=\read4
+\curr@djpar=\count90
+) (/usr/share/ptx2pdf/texmacros/ptx-pic-list.tex
+\p@clistsuff=\count91
+\p@clistentries=\count92
+\p@clistused=\count93
+\p@cusecheck=\toks54
+\p@clist=\read5
+) (/usr/share/ptx2pdf/texmacros/ptx-cutouts.tex
+\@numcuts=\count94
+\@parshapelines=\count95
+\@index=\count96
+\@line=\count97
+\@after=\count98
+\@until=\count99
+\@width=\dimen91
+\@indent=\dimen92
+\@hsize=\dimen93
+) (/usr/share/ptx2pdf/texmacros/ptx-callers.tex
+\c@llernum=\count100
+\numc@llers=\count101
+\n@tepages=\write3
+\n@tepagetest=\read6
+\AutoCallerStartChar=\count102
+\AutoCallerNumChars=\count103
+) (/usr/share/ptx2pdf/texmacros/ptx-figure.tex
+\bottomins=\insert252
+\verybottomins=\insert251
+\topleftins=\insert250
+\toprightins=\insert249
+\bottomleftins=\insert248
+\bottomrightins=\insert247
+\tmpcountB=\count104
+\c@ptionbox=\box55
+\FigCreditPadding=\dimen94
+\FigCreditOverEdgeV=\dimen95
+\FigCreditOverEdgeH=\dimen96
+\PicPath=\toks55
+\newpicb@x=\box56
+\picb@x=\box57
+\picb@xR=\box58
+\wholepagepic=\box59
+\p@ramnumber=\count105
+\notim@gecount=\count106
+\p@cinswid=\dimen97
+\p@cwidth=\dimen98
+\p@cheight=\dimen99
+\p@chshift=\dimen100
+\otherinsht=\dimen101
+\picl@ctest=\read7
+\picp@ges=\write4
+\onship@ut=\toks56
+) (/usr/share/ptx2pdf/texmacros/ptxplus-character-kerning.tex
+\quotekernamount=\dimen102
+DefineActiveChar: 8216
+DefineActiveChar: 8217
+DefineActiveChar: 8220
+DefineActiveChar: 8221
+) (/usr/share/ptx2pdf/texmacros/ptx-unicode.tex
+\KclassVir=\XeTeXcharclass4
+\KclassCM=\XeTeXcharclass5
+\KclassNum=\XeTeXcharclass6
+) (/usr/share/ptx2pdf/texmacros/ptx-extended.tex
+\extb@x=\box60
+\extchunkb@x=\box61
+\sid@barnotes=\box62
+\old@bx=\toks57
+\feintb@xnum=\count107
+\sb@rwidth=\dimen103
+\sb@rchunkh@ight=\dimen104
+\sb@rus@dheightl=\dimen105
+\sb@rus@dheightr=\dimen106
+) (/usr/share/ptx2pdf/texmacros/ptx-borders.tex
+\b@rderbox=\box63
+) (/usr/share/ptx2pdf/texmacros/ptx-labels.tex) (/usr/share/ptx2pdf/texmacros/ptx-output.tex
+\RHruleposition=\dimen107
+\t@xttrialheight=\dimen108
+\partial=\box64
+\ornXFids=\count108
+\ornXobjects=\box65
+\galley=\box66
+\galleypenalty=\count109
+\trialheight=\dimen109
+\lastd@pth=\dimen110
+\s@vedpage=\box67
+\availht=\dimen111
+\shortavail=\dimen112
+\colhtA=\dimen113
+\colhtB=\dimen114
+\colA=\box68
+\colB=\box69
+\loopcount=\count110
+\availA=\dimen115
+\availB=\dimen116
+\b@lbestavail=\dimen117
+\b@lbestdiff=\dimen118
+\coln@tebox=\box70
+\n@tesbox=\box71
+\bestavailht=\dimen119
+\und@rfill=\dimen120
+\columnshift=\dimen121
+\ColumnGutterRuleSkip=\dimen122
+\RuleThickness=\dimen123
+\StudyColumnGutterRuleSkip=\dimen124
+\t@mpfile=\read8
+) (/usr/share/ptx2pdf/texmacros/ptx-plugins.tex (/usr/share/ptx2pdf/texmacros/QR.tex
+\QRtmpfile=\write5
+ (/usr/share/ptx2pdf/texmacros/contrib/QRcode.tex
+\QRcodebox=\box72
+\QRnumA=\count111
+\QRnumB=\count112
+\QRnumC=\count113
+\QRnumD=\count114
+\QRnumE=\count115
+\QRnumF=\count116
+\QRnumG=\count117
+\QRbounding=\dimen125
+\QRinside=\dimen126
+\QRpixelUnit=\dimen127
+\basePixelUnit=\dimen128
+)))
+\pdfp@ges=\count118
+\whichp@ge=\count119
+\im@gecount=\count120
+\totalp@ges=\count121
+\badspacepenalty=\count122
+) (/usr/share/ptx2pdf/texmacros/ptx-ptxprint.tex) Reading Paratext stylesheet "usfm_sb.sty" ()... [\id ] [\usfm ] [\ide ] [\h ] [\h1 ] [\h2 ] [\h3 ] [\toc1 ] [\toc2 ] [\toc3 ] [\toca1 ] [\toca2 ] [\toca3 ] [\rem ] [\sts ] [\restore ] [\imt ] [\imt1 ] [\imt2 ] [\imt3 ] [\imt4 ] [\imte ] [\imte1 ] [\imte2 ] [\is ] [\is1 ] [\is2 ] [\iot ] [\io ] [\io1 ] [\io2 ] [\io3 ] [\io4 ] [\ior ] [\ip ] [\im ] [\ipi ] [\imi ] [\ili ] [\ili1 ] [\ili2 ] [\ipq ] [\imq ] [\ipr ] [\ib ] [\iq ] [\iq1 ] [\iq2 ] [\iq3 ] [\iex ] [\iqt ] [\ie ] [\c ] [\ca ] [\cp ] [\cl ] [\cd ] [\v ] [\va ] [\vp ] [\p ] [\m ] [\po ] [\pr ] [\cls ] [\pmo ] [\pm ] [\pmc ] [\pmr ] [\pi ] [\pi1 ] [\pi2 ] [\pi3 ] [\pc ] [\mi ] [\nb ] [\q ] [\q1 ] [\q2 ] [\q3 ] [\q4 ] [\qc ] [\qr ] [\qs ] [\qa ] [\qac ] [\qm ] [\qm1 ] [\qm2 ] [\qm3 ] [\qd ] [\b ] [\mt ] [\mt1 ] [\mt2 ] [\mt3 ] [\mt4 ] [\mte ] [\mte1 ] [\mte2 ] [\ms ] [\mse ] [\ms1 ] [\ms2 ] [\ms2e ] [\ms3 ] [\ms3e ] [\mr ] [\s ] [\s1 ] [\s1e ] [\s2 ] [\s2e ] [\s3 ] [\s3e ] [\s4 ] [\s4e ] [\sr ] [\r ] [\sp ] [\d ] [\sd ] [\sd1 ] [\sd2 ] [\sd3 ] [\sd4 ] [\tr ] [\th1 ] [\th2 ] [\th3 ] [\th4 ] [\th5 ] [\th6 ] [\th7 ] [\th8 ] [\tc1 ] [\tc2 ] [\tc3 ] [\tc4 ] [\tc5 ] [\tc6 ] [\tc7 ] [\tc8 ] [\thc1 ] [\thc2 ] [\thc3 ] [\thc4 ] [\thc5 ] [\thc6 ] [\thc7 ] [\thc8 ] [\tcc1 ] [\tcc2 ] [\tcc3 ] [\tcc4 ] [\tcc5 ] [\tcc6 ] [\tcc7 ] [\tcc8 ] [\thr1 ] [\thr2 ] [\thr3 ] [\thr4 ] [\thr5 ] [\thr6 ] [\thr7 ] [\thr8 ] [\tcr1 ] [\tcr2 ] [\tcr3 ] [\tcr4 ] [\tcr5 ] [\tcr6 ] [\tcr7 ] [\tcr8 ] [\lh ] [\li ] [\li1 ] [\li2 ] [\li3 ] [\li4 ] [\lf ] [\lim ] [\lim1 ] [\lim2 ] [\lim3 ] [\lim4 ] [\litl ] [\lik ] [\liv ] [\liv1 ] [\liv2 ] [\liv3 ] [\liv4 ] [\f
+\note-f=\insert246
+\notesave1-f=\box73
+\notesave2-f=\box74
+ ] [\fe
+\note-fe=\insert245
+\notesave1-fe=\box75
+\notesave2-fe=\box76
+ ] [\fr ] [\ft ] [\fk ] [\fq ] [\fqa ] [\fl ] [\fw ] [\fp ] [\fs ] [\fv ] [\fdc ] [\fm ] [\x
+\note-x=\insert244
+\notesave1-x=\box77
+\notesave2-x=\box78
+ ] [\xo ] [\xop ] [\xt ] [\xta ] [\xk ] [\xq ] [\xot ] [\xnt ] [\xdc ] [\rq ] [\ef
+\note-ef=\insert243
+\notesave1-ef=\box79
+\notesave2-ef=\box80
+ ] [\ex
+\note-ex=\insert242
+\notesave1-ex=\box81
+\notesave2-ex=\box82
+ ] [\esb ] [\esbe ] [\erq ] [\erqe ] [\cat ] [\qt ] [\nd ] [\tl ] [\dc ] [\bk ] [\sig ] [\pn ] [\png ] [\addpn ] [\wj ] [\k ] [\sls ] [\ord ] [\add ] [\lit ] [\no ] [\it ] [\bd ] [\bdit ] [\em ] [\sc ] [\sup ] [\pb ] [\fig ] [\jmp ] [\pro ] [\rb ] [\w ] [\wh ] [\wg ] [\wa ] [\ndx ] [\periph ] [\p1 ] [\p2 ] [\k1 ] [\k2 ] [\xtsee ] [\xtseealso ] [\qt-s ] [\qt1-s ] [\qt2-s ] [\qt3-s ] [\qt4-s ] [\qt5-s ] [\ts-s ] [\ph ] [\ph1 ] [\ph2 ] [\ph3 ] [\phi ] [\tr1 ] [\tr2 ] [\ps ] [\psi ] [\wr ] [\pub ] [\toc ] [\pref ] [\intro ] [\conc ] [\glo ] [\idx ] [\maps ] [\cov ] [\spine ] [\pubinfo ] [\zpa-xb ] [\zpa-xc ] [\zpa-xv ] [\zpa-d ] Reading Paratext stylesheet "ptx2pdf.sty" ()... [\k [\imt [\imt1 [\imt2 [\imt3 [\imt4 [\imte [\imte1 [\imte2 [\is [\is1 [\is2 [\iot [\io1 [\io2 [\io3 [\io4 [\ip [\im [\ipi [\imi [\ili [\ili1 [\ili2 [\ipq [\imq [\ipr [\ib [\iq [\iq1 [\iq2 [\iq3 [\iex [\ie [\mt [\mt1 [\mt2 [\mt3 [\mt4 [\p [\m [\ms [\b [\pi [\pi1 [\pi2 [\pi3 [\pc [\mi [\nb [\pn [\nd [\s [\s1 [\s1e [\s2 [\s2e [\s3 [\s3e [\s4 [\s4e [\sr [\d [\lh [\li [\li1 [\li2 [\li3 [\li4 [\pb [\q [\q1 [\q2 [\q3 [\q4 [\pi [\pi1 [\pi2 [\pi3 [\tr [\p1 [\p2 [\v [\f [\fr [\fp ] [\fq [\fqa [\fk [\ft [\fv [\fm [\fdc [\x [\xo [\xq [\xk [\xdc [\xot [\xnt [\xt [\iqt [\pmo [\pm [\pmc [\qs [\rq [\pro [\wr [\wh [\wg [\wl ] [\fig [\periph [\rem [\rb ] [\it [\sc [\no [\bd [\bdit [\em [\cat [\err ] [\inc ] [\vrs ] [\ref ] [\refnp ] [\rep ] [\mod ] [\qt-s [\ampersand
+* Warning: stylesheet redefines preexisting macro: ampersand
+] [\asterisk
+* Warning: stylesheet redefines preexisting macro: asterisk
+] [\circumflex
+* Warning: stylesheet redefines preexisting macro: circumflex
+] [\dollar
+* Warning: stylesheet redefines preexisting macro: dollar
+] [\dopagenums
+* Warning: stylesheet redefines preexisting macro: dopagenums
+] [\zfooter ] [\hash
+* Warning: stylesheet redefines preexisting macro: hash
+] [\nopagenums
+* Warning: stylesheet redefines preexisting macro: nopagenums
+] [\percent
+* Warning: stylesheet redefines preexisting macro: percent
+] [\resetpagenums
+* Warning: stylesheet redefines preexisting macro: resetpagenums
+] [\space
+* Warning: stylesheet redefines preexisting macro: space
+] [\xts ] [\xti ] [\gloss\rb ] [\zthumbtab ] [\esb [\zimagecopyrights ] [\zfiga ] [\zifvarset ] [\zifhook ] [\ztruetext ] [\zfalsetext ] [\ztoc ] [\zfillsignature ] [\zvar ] [\zgetperiph ] [\zisbnbarcode ] [\x-credit [\dark\x-credit [\light\x-credit [\none\x-credit [\toc3 [\zbl ] [\zrule ] [\zmakeinsert ] [\zrule ] [\zmvm ] [\zqrcode ] [\zgap ] [\zsetref ] [\zlabel ] [\zpage ] [\zref ] [\zcustommark ] [\zcustomtopmark ] [\zcustombotmark ] [\zcustomfirstmark ] [\zornament ] [\textborder [\strong-s ] [\strong-s+li ] [\strong-s+m ] [\wg+strong-s ] [\wh+strong-s ] [\wl+strong-s ] [\xt+strong-s ] [\k+strong-s ] [\cat:toc\tr [\cat:toc\tc1 [\cat:box\esb [\zglm ] [\zpmkr ] [\th1 [\th2 [\th3 [\th4 [\th5 [\th6 [\th7 [\th8 [\tc1 [\tc2 [\tc3 [\tc4 [\tc5 [\tc6 [\tc7 [\tc8 [\cat:coverwhole\esb [\cat:coverspine\esb [\cat:coverfront\esb [\cat:coverback\esb [\cat:isbnbox\esb [\zcolsync ] [\cat:coverfront\mt1 ] [\cat:coverfront\mt2 ] [\cat:coverspine\mt1 ] [\cat:coverspine\mt2 ] [\cat:titlebox\esb [\cat:headingsbox\esb Reading Paratext stylesheet "../../../shared/ptxprint/Default/ptxprint.sty" ()... [\ili [\imt [\imte [\io [\iq [\is [\li [\lim [\liv [\ms [\mt [\mte [\pi [\q [\qm [\s [\sd
+\intercharskip=\skip20
+ (/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_Test/local/ptxprint/Default/SloKJV_Test_Default_PSA_ptxp.notepages)
+\openout3 = `SloKJV_Test_Default_PSA_ptxp.notepages'.
+
+\langund=\language29
+ snippet 1 [\cat:toc\tc1 ] [\cat:toc\tc2 ] [\cat:toc\tc3 ] [\cat:toc\tc4 ] ptxfile  monoglot
+Baselineskip for p was undefined, now set to 13.99988pt(13.99988pt)
+lineskiplimit=-10.49991pt
+\baselineskip =13.99988pt, topskip=13.99988pt
+(/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_Test/local/ptxprint/Default/SloKJV_Test_Default_PSA_ptxp.delayed)
+\openout0 = `SloKJV_Test_Default_PSA_ptxp.parlocs'.
+
+\endn@te-fe=\box83
+\savecolinsert@tLcol=\box84
+\savecolinsert@tLchunk=\box85
+\savecolinsert@tRcol=\box86
+\savecolinsert@tRchunk=\box87
+\savecolinsert@bLcol=\box88
+\savecolinsert@bLchunk=\box89
+\savecolinsert@bRcol=\box90
+\savecolinsert@bRchunk=\box91
+\savebottominscol=\box92
+\savebottominschunk=\box93
+\saveverybottominscol=\box94
+\saveverybottominschunk=\box95
+\savetopinscol=\box96
+\savetopinschunk=\box97
+(no adjustment list "../../../shared/ptxprint/Default/AdjLists/.adj" found)
+(no picture list ".piclist" found)
+ (/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_Test/local/ptxprint/Default/SloKJV_Test_Default_PSA_ptxp.picpages)
+\openout4 = `SloKJV_Test_Default_PSA_ptxp.picpages'.
+
+ ptxfile 19_PSA-Default.usfm monoglot
+(no adjustment list "../../../shared/ptxprint/Default/AdjLists/19_PSA-Default.usfm.adj" found)
+(no picture list "19_PSA-Default.usfm.piclist" found)
+ (./19_PSA-Default.usfm First chapter for PSA [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] Placement for image 0(at PSA48.3) could not be understood. Image Lost! [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96] [97] [98]) [99] 25.99988pt+0.0pt* 0.0pt
+\openout0 = `SloKJV_Test_Default_PSA_ptxp.delayed'.
+
+ (/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_Test/local/ptxprint/Default/SloKJV_Test_Default_PSA_ptxp.parlocs) (/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_Test/local/ptxprint/Default/SloKJV_Test_Default_PSA_ptxp.notepages) (/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_Test/local/ptxprint/Default/SloKJV_Test_Default_PSA_ptxp.picpages)
+\@pgstart{100}
+[100
+\@nontextstart {2237615}{5354886}
+\figonpage{100}{1}{Sidebar-colophon}{B}{PSA150.6}{348.8142pt}
+\@nontextstop {2237615}{2602398}
+\@parstart {versetext}{p}{-1000.0pt}{2237615}{1957913}
+] ) 
+Here is how much of TeX's memory you used:
+ 16696 strings out of 494445
+ 213109 string characters out of 12427121
+ 522607 words of memory out of 5000000
+ 20548 multiletter control sequences out of 15000+600000
+ 5094 words of font info for 31 fonts, out of 8000000 for 9000
+ 350 hyphenation exceptions out of 65521
+ 47i,14n,34p,2230b,2934s stack positions out of 30000i,500n,10000p,200000b,80000s
+
+Output written on SloKJV_Test_Default_PSA_ptxp.xdv (100 pages, 4338260 bytes).

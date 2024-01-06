@@ -1,0 +1,50 @@
+<FONTMAP:/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map><FONTMAP:/var/lib/texmf/fonts/map/dvipdfmx/updmap/kanjix.map><FONTMAP:/usr/share/texlive/texmf-dist/fonts/map/dvipdfmx/ckx.map>DVI Comment: "date=2023-12-29T18:39:29.405249 ptxprint_version=2.4.7 run=0"
+SloKJV_Test_Default_PSA_ptxp.xdv -> SloKJV_Test_Default_PSA_ptxp.prepress.pdf
+<AGL:texglyphlist.txt><AGL:pdfglyphlist.txt><AGL:glyphlist.txt>[1
+xdvipdfmx:warning: File "../../../../../../../../../../usr/lib/python3/dist-packages/ptxprint/sRGB.icc" not found.
+xdvipdfmx:warning: Interpreting special command fstream (pdf:) failed.
+xdvipdfmx:warning: >> at page="1" position="(34.0157, 544.247)" (in PDF)
+xdvipdfmx:warning: >> xxx "pdf:fstream @OBJCVR (../../../../../../../../../../usr/lib/pyth"
+
+Current input buffer is -->pdf:fstream @OBJCVR (../../../../../../../../../.....<--
+
+xdvipdfmx:warning: Specified object not exist: OBJCVR
+xdvipdfmx:warning: Interpreting special command put (pdf:) failed.
+xdvipdfmx:warning: >> at page="1" position="(34.0157, 544.247)" (in PDF)
+xdvipdfmx:warning: >> xxx "pdf:put @OBJCVR <</N 4>>"
+xdvipdfmx:warning: >> Reading special command stopped around >> <</N 4>><<
+
+Current input buffer is -->pdf:put @OBJCVR <</N 4>><--
+</usr/share/fonts/opentype/linux-libertine/LinLibertine_RZ.otf@18.26pt<NATIVE-FONTMAP:/usr/share/fonts/opentype/linux-libertine/LinLibertine_RZ.otf/0/H/62915/0/0>(CID:LinLibertineOZ)
+pdf_font>> Type0 font "/usr/share/fonts/opentype/linux-libertine/LinLibertine_RZ.otf" cmap_id=<Identity-H,0> font_id=</usr/share/fonts/opentype/linux-libertine/LinLibertine_RZ.otf/0/H/62915/0/0,1>.
+></usr/share/fonts/opentype/linux-libertine/LinLibertine_RZ.otf@30.44pt
+pdf_font>> Font "/usr/share/fonts/opentype/linux-libertine/LinLibertine_RZ.otf/0/H/62915/0/0" (enc_id=0) found at id=1.
+></usr/share/fonts/opentype/linux-libertine/LinLibertine_R.otf@8.22pt<NATIVE-FONTMAP:/usr/share/fonts/opentype/linux-libertine/LinLibertine_R.otf/0/H/62915/0/0>(CID:LinLibertineO)
+pdf_font>> Type0 font "/usr/share/fonts/opentype/linux-libertine/LinLibertine_R.otf" cmap_id=<Identity-H,0> font_id=</usr/share/fonts/opentype/linux-libertine/LinLibertine_R.otf/0/H/62915/0/0,3>.
+></usr/share/fonts/opentype/linux-libertine/LinLibertine_R.otf@10.96pt
+pdf_font>> Font "/usr/share/fonts/opentype/linux-libertine/LinLibertine_R.otf/0/H/62915/0/0" (enc_id=0) found at id=3.
+></usr/share/fonts/opentype/linux-libertine/LinLibertine_RZI.otf@10.96pt<NATIVE-FONTMAP:/usr/share/fonts/opentype/linux-libertine/LinLibertine_RZI.otf/0/H/62915/0/0>(CID:LinLibertineOZI)
+pdf_font>> Type0 font "/usr/share/fonts/opentype/linux-libertine/LinLibertine_RZI.otf" cmap_id=<Identity-H,0> font_id=</usr/share/fonts/opentype/linux-libertine/LinLibertine_RZI.otf/0/H/62915/0/0,5>.
+></usr/share/fonts/opentype/linux-libertine/LinLibertine_RI.otf@8.22pt<NATIVE-FONTMAP:/usr/share/fonts/opentype/linux-libertine/LinLibertine_RI.otf/0/H/62915/0/0>(CID:LinLibertineOI)
+pdf_font>> Type0 font "/usr/share/fonts/opentype/linux-libertine/LinLibertine_RI.otf" cmap_id=<Identity-H,0> font_id=</usr/share/fonts/opentype/linux-libertine/LinLibertine_RI.otf/0/H/62915/0/0,7>.
+></usr/share/fonts/opentype/linux-libertine/LinLibertine_RI.otf@10.96pt
+pdf_font>> Font "/usr/share/fonts/opentype/linux-libertine/LinLibertine_RI.otf/0/H/62915/0/0" (enc_id=0) found at id=7.
+></usr/share/fonts/opentype/linux-libertine/LinLibertine_R.otf@6.85pt
+pdf_font>> Font "/usr/share/fonts/opentype/linux-libertine/LinLibertine_R.otf/0/H/62915/0/0" (enc_id=0) found at id=3.
+></usr/share/fonts/opentype/linux-libertine/LinLibertine_RZ.otf@9.13pt
+pdf_font>> Font "/usr/share/fonts/opentype/linux-libertine/LinLibertine_RZ.otf/0/H/62915/0/0" (enc_id=0) found at id=1.
+></usr/share/fonts/opentype/linux-libertine/LinLibertine_R.otf@9.13pt
+pdf_font>> Font "/usr/share/fonts/opentype/linux-libertine/LinLibertine_R.otf/0/H/62915/0/0" (enc_id=0) found at id=3.
+>][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22][23][24][25][26][27][28][29][30][31][32][33][34][35][36][37][38][39][40][41][42][43][44][45][46][47][48][49][50][51][52][53][54][55][56][57][58][59][60][61][62][63][64][65][66][67][68][69][70][71][72][73][74][75][76][77][78][79][80][81][82][83][84][85][86][87][88][89][90][91][92][93][94][95][96][97][98][99][100]
+xdvipdfmx:warning: Object @OBJCVR used, but not defined. Replaced by null.
+[Type0]
+otf_cmap>> Creating ToUnicode CMap for "/usr/share/fonts/opentype/linux-libertine/LinLibertine_RZ.otf"...
+[Type0]
+otf_cmap>> Creating ToUnicode CMap for "/usr/share/fonts/opentype/linux-libertine/LinLibertine_R.otf"...
+[Type0]
+otf_cmap>> Creating ToUnicode CMap for "/usr/share/fonts/opentype/linux-libertine/LinLibertine_RZI.otf"...
+[Type0]
+otf_cmap>> Creating ToUnicode CMap for "/usr/share/fonts/opentype/linux-libertine/LinLibertine_RI.otf"...
+:/usr/share/fonts/opentype/linux-libertine/LinLibertine_RZ.otf[CIDFontType0]:/usr/share/fonts/opentype/linux-libertine/LinLibertine_R.otf[CIDFontType0]:/usr/share/fonts/opentype/linux-libertine/LinLibertine_RZI.otf[CIDFontType0]:/usr/share/fonts/opentype/linux-libertine/LinLibertine_RI.otf[CIDFontType0]
+Compression saved 1775106 bytes
+1013261 bytes written
