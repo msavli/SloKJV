@@ -24,7 +24,8 @@
 >Prevajanje je potekalo v programu [Notepad++](https://notepad-plus-plus.org/) kjer je slovensko besedilo in pod njim angleško. Potem se s skripto to pretvori v OSIS obliko - XML datoteko, ki je objavljena na tej strani. XML datoteko se potem pretvori v Sword modul, ki je dostopen na spletni strani [Crosswire.org](http://www2.crosswire.org/sword/modules/).
 >
 > Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
-> - [Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
+> - [Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program) Za operacijski sistem Windows in Linux predlagam program [Xiphos](https://xiphos.org/), za Android naprave [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity), za okolje iPhone pa [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
+> - [Windows e-sword](https://www.e-sword.net/) ([modul](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) je potrebno ročno namestiti)
 > - [ePUB](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, Kobo, e-bralniki)
 > - [VideoPsalm](https://myvideopsalm.weebly.com/)
 > - online [Stara Zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [Nova zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New)
@@ -75,7 +76,8 @@
 >Translation takes place in [Notepad++](https://notepad-plus-plus.org/) where the Slovenian text is below the English text for each verse. Then with a script this is converted to OSIS format - the XML file that is published on this page. The XML file is then converted into a Sword module, which is accessible on the [Crosswire.org](http://www2.crosswire.org/sword/modules/). 
 >
 >SloKJV Bible can be read using one of these operating system or devices:
-> - [Windows, Mac, Linux, Andorid, iPhone, iPads](http://wiki.crosswire.org/Choosing_a_SWORD_program)
+> - [Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program) For the Windows and Linux operating system I suggest the program [Xiphos](https://xiphos.org/), for Android devices [AndBible](https://play.google.com/store/apps/details?id=net.bible .android.activity), and for the iPhone environment [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
+> - [Windows e-sword](https://www.e-sword.net/) ([modul](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) must be installed manually)
 > - [ePUB](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, Kobo, e-readers)
 > - [VideoPsalm](https://myvideopsalm.weebly.com/)
 > - online [Old Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [New Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New)
