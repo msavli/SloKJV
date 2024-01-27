@@ -8,7 +8,7 @@ SloKJV=/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_
 format=US_Trade
 
 
-#======== Pobrise vse pdf datoteke ====================
+#======== Pobrise vse  *pdf  in  *.usfm  datoteke =====
 echo  "    Pobrise vse pdf datoteke ..."
 echo  "      Ostaja samo *.USFM v KJV mapi ..."
 cd $osis2usfm
@@ -16,6 +16,9 @@ cd $osis2usfm
 find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release  . -type f -name "*.pdf"  -exec rm {} +
 find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release  . -type f -name "*.usfm" -exec ls {} +
 find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release  . -type f -name "*.usfm" -exec rm {} +
+echo  "      Pobrise vse fajle v mapah local ..."
+find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print -delete ';'
+# find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print ';'
 exit
 #=======================================================
 
@@ -44,12 +47,12 @@ do
             ;;
         "A5_NZ_PS")
             echo "   Izbral si A5_NZ_PS."
-            format=A5_NZ
+            format=A5_NZ_PS
             break
             ;;
         "A5_NZ_prostor")
             echo "   Izbral si A5_NZ_prostor."
-            format=A5_NZ
+            format=A5_NZ_prostor
             break
             ;;
         "SLO-KJV")
@@ -1346,6 +1349,17 @@ sed -i "s|\(\\\mt1 Prva Mojzesova knjiga\)|\\\pb\n\\\mt1 STARA ZAVEZA\n\\\b\\\b\
 sed -i "s|\(\\\c 119\)|\1\n\\\qa ALEF א|g"                                                     $SloKJV$format/19_PSA.usfm
 # cat $SloKJV$format/19_PSA.usfm |grep -2 "ALEF"
 #========================================
+
+
+#========== Doda QR kodo ===============
+sed -i "s/Lepa zaradi lege/Lepa zaradi lege \\\zqrcode|pgpos=\"cr\" size=\"1.7cm\" data=\"https:\/\/www.brighteon.com\/fc8a3ecf-7b86-469e-b7fb-ea723c84e347\"\\\* /g"        $SloKJV$format/19_PSA.usfm
+#cat $SloKJV$format/19_PSA.usfm |grep -2 "Lepa zaradi lege"
+sed -i "s/da se mazili Najsvetejše./da se mazili Najsvetejše. \\\zqrcode|pgpos=\"cr\" size=\"1.6cm\" data=\"https:\/\/github.com\/msavli\/Ronald_Wyatt\"\\\* /g"  $SloKJV$format/27_DAN.usfm
+# cat $SloKJV$format/27_DAN.usfm |grep -1 "da se mazili Najsvetejše."
+sed -i "s/›Jaz sem Kralj Judov.‹«/›Jaz sem Kralj Judov.‹« \\\zqrcode|pgpos=\"cr\" size=\"1.9cm\" data=\"https:\/\/relojprofetico.blogspot.com\/2010\/07\/yeshua-hanotzri-wmelej-hayehudim.html\"\\\* /g"  $SloKJV$format/44_JHN.usfm
+cat $SloKJV$format/44_JHN.usfm |grep -1 "›Jaz sem Kralj Judov.‹«"
+#========================================
+
 
 #===========  PTXPRINT  ============================
 echo -E "   --==  ptxprint -c /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_A4 ==--"
