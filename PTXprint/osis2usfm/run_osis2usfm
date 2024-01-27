@@ -10,11 +10,12 @@ format=US_Trade
 
 #======== Pobrise vse pdf datoteke ====================
 echo  "    Pobrise vse pdf datoteke ..."
+echo  "      Ostaja samo *.USFM v KJV mapi ..."
 cd $osis2usfm
-#find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release . -type f -iname "*.pdf"  -exec ls {} +
-find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release . -type f -iname  "*.pdf"  -exec rm {} +
-find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release . -type f -iname "*.usfm" -exec ls {} +
-find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release . -type f -iname  "*.usfm" -exec rm {} +
+#find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release . -type f -name "*.pdf"  -exec ls {} +
+find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release  . -type f -name "*.pdf"  -exec rm {} +
+find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release  . -type f -name "*.usfm" -exec ls {} +
+find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release  . -type f -name "*.usfm" -exec rm {} +
 exit
 #=======================================================
 
