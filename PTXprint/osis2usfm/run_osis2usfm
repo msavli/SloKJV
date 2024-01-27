@@ -7,10 +7,22 @@ SloKJV_Github=/home/pc/Dokumenti/GitHub/SloKJV
 SloKJV=/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_
 format=US_Trade
 
+
+#======== Pobrise vse pdf datoteke ====================
+echo  "    Pobrise vse pdf datoteke ..."
+cd $osis2usfm
+#find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release . -type f -iname "*.pdf"  -exec ls {} +
+find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release . -type f -iname  "*.pdf"  -exec rm {} +
+find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release . -type f -iname "*.usfm" -exec ls {} +
+find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release . -type f -iname  "*.usfm" -exec rm {} +
+exit
+#=======================================================
+
+
 #======= zberi velikost PDF verzije SloKJV =============
 echo "   Izberi velikost PDF verzije SloKJV"
 PS3='Izberi velikost PDF verzije SloKJV: '
-options=("A4" "US_Trade" "A5" "A5_NZ" "SLO-KJV" "Test" "Izhod")
+options=("A4" "US_Trade" "A5" "A5_NZ_PS" "A5_NZ_prostor" "SLO-KJV" "Test" "Izhod")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -29,8 +41,13 @@ do
             format=A5
             break
             ;;
-        "A5_NZ")
-            echo "   Izbral si A5_NZ."
+        "A5_NZ_PS")
+            echo "   Izbral si A5_NZ_PS."
+            format=A5_NZ
+            break
+            ;;
+        "A5_NZ_prostor")
+            echo "   Izbral si A5_NZ_prostor."
             format=A5_NZ
             break
             ;;
@@ -595,7 +612,7 @@ sed -i "s|<title type=\"main\">\([^.]*\)</title>|\1|g"                          
 #cat SloKJV_sword.xml |grep  "Nova zaveza"
 	#cat SloKJV_sword.xml |grep  "Stara zaveza</title>"
 #          <title type=\"main\" short=\"Geneza\">Prva Mojzesova knjiga, imenovana Geneza</title>
-#          <title type=\"main\" short=\"Matej\">Evangelij po Sv. Mateju</title>
+#          <title type=\"main\" short=\"Matej\">Evangelij po Mateju</title>
 # To je za tiste naslove knjig ki nimajo notri nobene pike
 sed -i 's|<title type=\"main\" short=\"\([^.]*\)\">\([^.]*\)</title>|\1_X_\2|g'    /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 # To je za tiste naslove knjig ki nimajo notri eno piko
@@ -1057,11 +1074,11 @@ echo -E "   --==  Popravi naslove knjig ==--"
 
 # MAT
   sed -i "s/\\\\h  /\x5ch Mt/g"                                                                  $SloKJV$format/41_MAT.usfm
-  sed -i "s/\\\\h1/\x5ch1 Evangelij po Sv. Mateju/g"                                             $SloKJV$format/41_MAT.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Sv. Mateju/g"                                         $SloKJV$format/41_MAT.usfm
+  sed -i "s/\\\\h1/\x5ch1 Evangelij po Mateju/g"                                             $SloKJV$format/41_MAT.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Mateju/g"                                         $SloKJV$format/41_MAT.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Matej/g"                                                           $SloKJV$format/41_MAT.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Mt/g"                                                              $SloKJV$format/41_MAT.usfm
-  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Sv. Mateju/g"                                           $SloKJV$format/41_MAT.usfm
+  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Mateju/g"                                           $SloKJV$format/41_MAT.usfm
 
 # MRK
   sed -i "s/\\\\h  /\x5ch Mr/g"                                                                  $SloKJV$format/42_MRK.usfm
@@ -1073,19 +1090,19 @@ echo -E "   --==  Popravi naslove knjig ==--"
 
 # LUK
   sed -i "s/\\\\h  /\x5ch Lk/g"                                                                  $SloKJV$format/43_LUK.usfm
-  sed -i "s/\\\\h1/\x5ch1 Evangelij po Sv. Luku/g"                                               $SloKJV$format/43_LUK.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Sv. Luku/g"                                           $SloKJV$format/43_LUK.usfm
+  sed -i "s/\\\\h1/\x5ch1 Evangelij po Luku/g"                                               $SloKJV$format/43_LUK.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Luku/g"                                           $SloKJV$format/43_LUK.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Luka/g"                                                            $SloKJV$format/43_LUK.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Lk/g"                                                              $SloKJV$format/43_LUK.usfm
-  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Sv. Luku/g"                                             $SloKJV$format/43_LUK.usfm
+  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Luku/g"                                             $SloKJV$format/43_LUK.usfm
 
 # JHN
   sed -i "s/\\\\h  /\x5ch Jn/g"                                                                  $SloKJV$format/44_JHN.usfm
-  sed -i "s/\\\\h1/\x5ch1 Evangelij po Sv. Janezu/g"                                             $SloKJV$format/44_JHN.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Sv. Janezu/g"                                         $SloKJV$format/44_JHN.usfm
+  sed -i "s/\\\\h1/\x5ch1 Evangelij po Janezu/g"                                             $SloKJV$format/44_JHN.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Janezu/g"                                         $SloKJV$format/44_JHN.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Janez/g"                                                           $SloKJV$format/44_JHN.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Jn/g"                                                              $SloKJV$format/44_JHN.usfm
-  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Sv. Janezu/g"                                           $SloKJV$format/44_JHN.usfm
+  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Janezu/g"                                           $SloKJV$format/44_JHN.usfm
 
 # ACT
   sed -i "s/\\\\h  /\x5ch Apd/g"                                                                 $SloKJV$format/45_ACT.usfm
@@ -1265,11 +1282,11 @@ echo -E "   --==  Popravi naslove knjig ==--"
 
 # REV
   sed -i "s/\\\\h /\x5ch Raz/g"                                                                  $SloKJV$format/67_REV.usfm
-  sed -i "s/\\\\h1/\x5ch1 Božansko razodetje Sv. Janeza/g"                                       $SloKJV$format/67_REV.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Božansko razodetje Sv. Janeza/g"                                   $SloKJV$format/67_REV.usfm
+  sed -i "s/\\\\h1/\x5ch1 Božansko razodetje Janeza/g"                                       $SloKJV$format/67_REV.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Božansko razodetje Janeza/g"                                   $SloKJV$format/67_REV.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Razodetje/g"                                                       $SloKJV$format/67_REV.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Raz/g"                                                             $SloKJV$format/67_REV.usfm
-  sed -i "s/\\\\mt1/\x5cmt1 Božansko razodetje Sv. Janeza/g"                                     $SloKJV$format/67_REV.usfm
+  sed -i "s/\\\\mt1/\x5cmt1 Božansko razodetje Janeza/g"                                     $SloKJV$format/67_REV.usfm
 
 
 echo -E "   --==     Fajl od Psalmov popravi da doda prazno vrstico pred psalme ki imajo naslov ==--"

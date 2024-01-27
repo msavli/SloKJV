@@ -18,7 +18,6 @@
 \pb
 \ip Naslov izvirnika: The Book of Enoch
 \ip Avtor: H.R. Charles
-\ip https://gitlab.com/crosswire-bible-society/enochcharles
 \zbl|1\*
 \ip \zvar|maintitle\*
 \ip \zvar|subtitle\*
@@ -30,21 +29,25 @@
 \ip D.D. Oxford: The Clarendon Press
 \ip Oxford: The Clarendon Press 1913
 \zbl|1\*
-\ip Skeniral in uredil: Joshua Williams, Northwest Nazarene College, 1995
+\ip Skeniral in uredil: Joshua Williams, Northwest Nazarene College, 1995,
 \ip vir: https://archive.org/details/apocryphapseudep02charuoft
-\ip
 \ip V javni lasti
-\rem ----\zqrcode|pgpos="r" size="1.2cm" data="https://archive.org/details/apocryphapseudep02charuoft"\\*'  
 \zbl|3\*
 \ip Prva izdaja
 \ip Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2023
 \ip Priprava besedila: Marjan Šavli (PTXPrint)
 \ip email: marjan.savli@gmail.com
-\ip Fotografija na naslovnici:                                                       xxxxxxxxxxxxxxxxxxxxxxxxxx
-\ip Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka
-\ip Knjiga je objavljena na spletni strani: https://github.com/msavli/SloHenoh/
+\ip Fotografija na naslovnici: xxxxxxxxxxxxxxxxxxxxxxxxxx
+
+\ip Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, 
+\ip Škofja Loka
+\ip Knjiga je objavljena na: https://github.com/msavli/SloHenoh/
+\zqrcode|pgpos="cr" size="1.2cm" data="https://www.lulu.com/spotlight/msavli"\*
+\ip Papirni izvod lahko naročite na naslovu: https://www.lulu.com/spotlight/msavli
 \zbl|1\*
-\ip CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
+
+\zbl|1\*
+\ip CIP   xxxxxxxxxxxxxxxxxxxxxxxxxx
 \zbl|3\*
 \ip BREZPLAČEN IZVOD – NI ZA PRODAJO
 \zbl|6\*

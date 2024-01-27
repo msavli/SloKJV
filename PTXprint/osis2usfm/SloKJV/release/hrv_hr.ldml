@@ -1,0 +1,32 @@
+﻿<ldml><identity><version number="" /><generation date="0001-01-01T06:00:00Z" /><language type="hr" /></identity><characters><exemplarCharacters>[A-PR-VZa-pr-vz\u00C2\u00C6\u00E2\u00E6\u0106\u0107\u010C\u010D\u0110\u0111\u0160\u0161\u017D\u017E{d\u017E}{lj}{nj}]</exemplarCharacters><exemplarCharacters type="punctuation">[!(),-.\:;?\u200C\u200D\u2014\u2018\u2019\u201C\u201D\u2026{...}]</exemplarCharacters><special xmlns:sil="urn://www.sil.org/ldml/0.1"><sil:exemplarCharacters type="wordFormingPunctuation">[\-]</sil:exemplarCharacters><sil:exemplarCharacters type="footnotes">[]</sil:exemplarCharacters><sil:exemplarCharacters type="crossrefs">[]</sil:exemplarCharacters><sil:exemplarCharacters type="verseSegments">[]</sil:exemplarCharacters><sil:exemplarCharacters type="diacritics">[]</sil:exemplarCharacters><sil:exemplarCharacters type="wordBreaks">[]</sil:exemplarCharacters></special></characters><delimiters><special xmlns:sil="urn://www.sil.org/ldml/0.1"><sil:matched-pairs><sil:matched-pair open="(" close=")" paraClose="false" /><sil:matched-pair open="[" close="]" paraClose="false" /><sil:matched-pair open="{" close="}" paraClose="false" /></sil:matched-pairs><sil:quotation-marks paraContinueType="all"><sil:quotationContinue></sil:quotationContinue><sil:quotation open="“" close="”" level="3" /></sil:quotation-marks></special><quotationStart>“</quotationStart><quotationEnd>”</quotationEnd><alternateQuotationStart>‘</alternateQuotationStart><alternateQuotationEnd>’</alternateQuotationEnd></delimiters><layout><orientation><characterOrder>left-to-right</characterOrder></orientation></layout><collations><defaultCollation>standard</defaultCollation><collation type="standard"><cr><![CDATA[&[before 1] [first regular] < a\/A < â\/Â < æ\/Æ < b\/B < c\/C < č\/Č < ć\/Ć < d\/D < dž < đ\/Đ < e\/E < f\/F < g\/G < h\/H < i\/I < j\/J < k\/K < l\/L < lj < m\/M < n\/N < nj < o\/O < p\/P < r\/R < s\/S < š\/Š < t\/T < u\/U < v\/V < z\/Z < ž\/Ž]]></cr><special xmlns:sil="urn://www.sil.org/ldml/0.1"><sil:simple><![CDATA[a/A
+â/Â
+æ/Æ
+b/B
+c/C
+č/Č
+ć/Ć
+d/D
+dž
+đ/Đ
+e/E
+f/F
+g/G
+h/H
+i/I
+j/J
+k/K
+l/L
+lj
+m/M
+n/N
+nj
+o/O
+p/P
+r/R
+s/S
+š/Š
+t/T
+u/U
+v/V
+z/Z
+ž/Ž]]></sil:simple></special></collation></collations><special xmlns:sil="urn://www.sil.org/ldml/0.1"><sil:external-resources><sil:font name="Arial" types="default" /></sil:external-resources></special></ldml>
