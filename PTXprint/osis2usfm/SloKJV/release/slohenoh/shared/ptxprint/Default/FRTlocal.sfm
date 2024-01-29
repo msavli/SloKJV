@@ -1,30 +1,25 @@
 \id FRT
-\zEmptyPage
 \nopagenums
 \zEmptyPage
-\ip .
-\rem -------------------------------------------------------------------------
-\rem \periph Title Page|id="title"
-\rem -------------------------------------------------------------------------
-\nopagenums
-\zbl|5\*\p
+\zEmptyPage
+\zgap|4cm\*
 \mt1 \zvar|maintitle\*
 \mt2 \zvar|subtitle\*
 \zbl|12\*\p
 \mt4 Študijska izdaja
-\zbl|5\*\p
+\zbl|9\*\p
 \mt4 Škofja Loka, 2024
-\rem ----------------Kolofon-------------------------------------------------
 \pb
+\rem ----------------Kolofon-------------------------------------------------
+\h Kolofon
 \ip Naslov izvirnika: The Book of Enoch
 \ip Avtor: H.R. Charles
 \zbl|1\*
 \ip \zvar|maintitle\*
 \ip \zvar|subtitle\*
-\zbl|1\*
-\ip Z UVODNIMI TER KRITIČNIMI IN POJASNJENIMI
-\ip OPOMBAMI K VEČ KNJIGAM V SODELOVANJU S
-\ip ŠTEVILNIMI UČENJAKI JE \ip UREJAL R. H. CHARLES, D.Litt., 
+\ip Z Uvodnimi Ter Kritičnimi In Pojasnjenimi
+\ip Opombami K Več Knjigam V Sodelovanju S
+\ip Številnimi Učenjaki Je \Ip Urejal R. H. Charles, D.Litt., 
 \zbl|1\*
 \ip D.D. Oxford: The Clarendon Press
 \ip Oxford: The Clarendon Press 1913
@@ -38,19 +33,16 @@
 \ip Priprava besedila: Marjan Šavli (PTXPrint)
 \ip email: marjan.savli@gmail.com
 \ip Fotografija na naslovnici: xxxxxxxxxxxxxxxxxxxxxxxxxx
-
-\ip Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, 
-\ip Škofja Loka
+\ip Založnik: Marjan Šavli in Barbara Hojkar Šavli, 
+\ip Mestni trg 11, Škofja Loka
 \ip Knjiga je objavljena na: https://github.com/msavli/SloHenoh/
-\zqrcode|pgpos="cr" size="1.2cm" data="https://www.lulu.com/spotlight/msavli"\*
-\ip Papirni izvod lahko naročite na naslovu: https://www.lulu.com/spotlight/msavli
+\zqrcode|pgpos="cr" size="1.5cm" data="https://www.lulu.com/spotlight/msavli"\*
+\ip Papirni izvod lahko naročite na naslovu:
+\ip   https://www.lulu.com/spotlight/msavli
 \zbl|1\*
 
 \zbl|1\*
 \ip CIP   xxxxxxxxxxxxxxxxxxxxxxxxxx
-\zbl|3\*
-\ip BREZPLAČEN IZVOD – NI ZA PRODAJO
-\zbl|6\*
 \pb
 \zEmptyPage
 \zEmptyPage
@@ -67,6 +59,7 @@
 \pb
 \zEmptyPage
 \rem -------------------------------------------------------------------------
+\h Jezus reši me!
 \ipi Bog je že dokazal Svojo ljubezen do tebe osebno. Kajti Bog je tako ljubil svet (tebe), da je dal Svojega edinorojenega Sina, da kdorkoli veruje vanj, (ti?) se ne bo pogubil, temveč bo imel večno življenje.\vp(Jn 3,16)\vp*
 \ipi Ali verjameš Besedi Njega, ki te je ustvaril, ki te pozna in te ljubi?
 \ipi Ali si pripravljen sprejeti Njega, to je Božjo Besedo – Jezusa Kristusa, po katerem so bile narejene vse stvari?
@@ -85,6 +78,8 @@
 \ipi in prejeli boste dar Svetega Duha.\vp(Apd 2,38)\vp*
 \ipi Kdor veruje vanj, ni obsojen, toda kdor ne veruje, je že obsojen, ker ni veroval v ime edinorojenega Božjega Sina.\vp(Jn 3,18)\vp* Kdor zavrača mene (Jezusa) in ne sprejema mojih besed, ima nekoga, ki ga sodi. Beseda, ki sem jo govoril, ta ista ga bo sodila na poslednji dan.\vp(Jn 12,48)\vp*
 \pb
-\zEmptyPage
 \rem -------------------------------------------------------------------------
 \nopagenums
+\zNeedEvenPage
+
+

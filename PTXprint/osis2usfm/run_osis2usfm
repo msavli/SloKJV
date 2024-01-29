@@ -19,7 +19,6 @@ find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release  . -type
 echo  "      Pobrise vse fajle v mapah local ..."
 find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print -delete ';'
 # find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print ';'
-exit
 #=======================================================
 
 
@@ -685,6 +684,10 @@ sed -i "s|<\/verse><\/chapter><\/div><\/div>|<\/verse><\/chapter><\/div><div typ
 #=============================================================
 
 
+#============= Popravim reference namesto dvopicja vejica ================
+sed -i "s|\([0-9]*\):\([0-9]\)|\1,\2|g"    /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#=========================================================================
+
 
 #=========================================================================
 echo -E "   --== Pozene generiranje usfm datotek==--   "
@@ -1078,11 +1081,11 @@ echo -E "   --==  Popravi naslove knjig ==--"
 
 # MAT
   sed -i "s/\\\\h  /\x5ch Mt/g"                                                                  $SloKJV$format/41_MAT.usfm
-  sed -i "s/\\\\h1/\x5ch1 Evangelij po Mateju/g"                                             $SloKJV$format/41_MAT.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Mateju/g"                                         $SloKJV$format/41_MAT.usfm
+  sed -i "s/\\\\h1/\x5ch1 Evangelij po Mateju/g"                                                 $SloKJV$format/41_MAT.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Mateju/g"                                             $SloKJV$format/41_MAT.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Matej/g"                                                           $SloKJV$format/41_MAT.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Mt/g"                                                              $SloKJV$format/41_MAT.usfm
-  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Mateju/g"                                           $SloKJV$format/41_MAT.usfm
+  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Mateju/g"                                               $SloKJV$format/41_MAT.usfm
 
 # MRK
   sed -i "s/\\\\h  /\x5ch Mr/g"                                                                  $SloKJV$format/42_MRK.usfm
@@ -1094,19 +1097,19 @@ echo -E "   --==  Popravi naslove knjig ==--"
 
 # LUK
   sed -i "s/\\\\h  /\x5ch Lk/g"                                                                  $SloKJV$format/43_LUK.usfm
-  sed -i "s/\\\\h1/\x5ch1 Evangelij po Luku/g"                                               $SloKJV$format/43_LUK.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Luku/g"                                           $SloKJV$format/43_LUK.usfm
+  sed -i "s/\\\\h1/\x5ch1 Evangelij po Luku/g"                                                   $SloKJV$format/43_LUK.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Luku/g"                                               $SloKJV$format/43_LUK.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Luka/g"                                                            $SloKJV$format/43_LUK.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Lk/g"                                                              $SloKJV$format/43_LUK.usfm
-  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Luku/g"                                             $SloKJV$format/43_LUK.usfm
+  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Luku/g"                                                 $SloKJV$format/43_LUK.usfm
 
 # JHN
   sed -i "s/\\\\h  /\x5ch Jn/g"                                                                  $SloKJV$format/44_JHN.usfm
-  sed -i "s/\\\\h1/\x5ch1 Evangelij po Janezu/g"                                             $SloKJV$format/44_JHN.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Janezu/g"                                         $SloKJV$format/44_JHN.usfm
+  sed -i "s/\\\\h1/\x5ch1 Evangelij po Janezu/g"                                                 $SloKJV$format/44_JHN.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Janezu/g"                                             $SloKJV$format/44_JHN.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Janez/g"                                                           $SloKJV$format/44_JHN.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Jn/g"                                                              $SloKJV$format/44_JHN.usfm
-  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Janezu/g"                                           $SloKJV$format/44_JHN.usfm
+  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Janezu/g"                                               $SloKJV$format/44_JHN.usfm
 
 # ACT
   sed -i "s/\\\\h  /\x5ch Apd/g"                                                                 $SloKJV$format/45_ACT.usfm
@@ -1286,11 +1289,11 @@ echo -E "   --==  Popravi naslove knjig ==--"
 
 # REV
   sed -i "s/\\\\h /\x5ch Raz/g"                                                                  $SloKJV$format/67_REV.usfm
-  sed -i "s/\\\\h1/\x5ch1 Božansko razodetje Janeza/g"                                       $SloKJV$format/67_REV.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Božansko razodetje Janeza/g"                                   $SloKJV$format/67_REV.usfm
+  sed -i "s/\\\\h1/\x5ch1 Božansko razodetje Janeza/g"                                           $SloKJV$format/67_REV.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Božansko razodetje Janeza/g"                                       $SloKJV$format/67_REV.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Razodetje/g"                                                       $SloKJV$format/67_REV.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Raz/g"                                                             $SloKJV$format/67_REV.usfm
-  sed -i "s/\\\\mt1/\x5cmt1 Božansko razodetje Janeza/g"                                     $SloKJV$format/67_REV.usfm
+  sed -i "s/\\\\mt1/\x5cmt1 Božansko razodetje Janeza/g"                                         $SloKJV$format/67_REV.usfm
 
 
 echo -E "   --==     Fajl od Psalmov popravi da doda prazno vrstico pred psalme ki imajo naslov ==--"
