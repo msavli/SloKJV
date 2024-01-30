@@ -7,25 +7,35 @@ SloKJV_Github=/home/pc/Dokumenti/GitHub/SloKJV
 SloKJV=/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_
 format=US_Trade
 
+echo "   Pritisni tipko za brisanje začasnih PTXprint datotek ..."
+# Function to check if a key is pressed
+key_pressed_brisanje_temp_files() {
+    read -t 2 -n 1 key
+    if [ $? -eq 0 ]; then
+        echo "   Brisanje datotek ...."
+		#======== Pobrise vse  *pdf  in  *.usfm  datoteke =====
+		echo  "    Pobrise vse pdf datoteke ..."
+		echo  "      Ostaja samo *.USFM v KJV mapi ..."
+		cd $osis2usfm
+		#find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release . -type f -name "*.pdf"  -exec ls {} +
+		find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release  . -type f -name "*.pdf"  -exec rm {} +
+		find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release  . -type f -name "*.usfm" -exec ls {} +
+		find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release  . -type f -name "*.usfm" -exec rm {} +
+		echo  "      Pobrise vse fajle v mapah local ..."
+		find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print -delete ';'
+		# find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print ';'
+		#=======================================================
+    else
+        echo "   Nadaljujem ...."
+    fi
+}
 
-#======== Pobrise vse  *pdf  in  *.usfm  datoteke =====
-echo  "    Pobrise vse pdf datoteke ..."
-echo  "      Ostaja samo *.USFM v KJV mapi ..."
-cd $osis2usfm
-#find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release . -type f -name "*.pdf"  -exec ls {} +
-find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release  . -type f -name "*.pdf"  -exec rm {} +
-find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release  . -type f -name "*.usfm" -exec ls {} +
-find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release  . -type f -name "*.usfm" -exec rm {} +
-echo  "      Pobrise vse fajle v mapah local ..."
-find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print -delete ';'
-# find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print ';'
-#=======================================================
-
+key_pressed_brisanje_temp_files
 
 #======= zberi velikost PDF verzije SloKJV =============
 echo "   Izberi velikost PDF verzije SloKJV"
 PS3='Izberi velikost PDF verzije SloKJV: '
-options=("A4" "US_Trade" "A5" "A5_NZ_PS" "A5_NZ_prostor" "SLO-KJV" "Test" "Izhod")
+options=("A4" "US_Trade" "A5" "A5_NZ_Ps" "A5_NZ_prostor" "SLO-KJV" "Test" "Izhod")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -44,9 +54,9 @@ do
             format=A5
             break
             ;;
-        "A5_NZ_PS")
-            echo "   Izbral si A5_NZ_PS."
-            format=A5_NZ_PS
+        "A5_NZ_Ps")
+            echo "   Izbral si A5_NZ_Ps."
+            format=A5_NZ_Ps
             break
             ;;
         "A5_NZ_prostor")
@@ -130,10 +140,16 @@ echo " "
 echo "   Pozene GITHUB Desktop?"
 echo " "
 PS5='   Izberi: '
-options_ver=("Pozene" "Ne" "Izhod")
+options_ver=("Ne" "Pozene" "Izhod")
 select opt_ver in "${options_ver[@]}"
 do
       case $opt_ver in
+          "Ne")
+              echo " "
+              echo "   Pa drugic sinhronizacija z Githubom."
+              echo " "
+              break
+             ;;
           "Pozene")
               echo " "
               echo "   Izbral si nadgraditev."
@@ -150,12 +166,6 @@ do
               /usr/bin/github-desktop
               break
               ;;
-          "Ne")
-              echo " "
-              echo "   Pa drugic sinhronizacija z Githubom."
-              echo " "
-              break
-             ;;
           "Izhod")
               echo " "
               echo "   Izbral si $REPLY kar je $opt_ver"
