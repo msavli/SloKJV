@@ -17,9 +17,9 @@
 \zbl|1\*
 \ip \zvar|maintitle\*
 \ip \zvar|subtitle\*
-\ip Z Uvodnimi Ter Kritičnimi In Pojasnjenimi
-\ip Opombami K Več Knjigam V Sodelovanju S
-\ip Številnimi Učenjaki Je \Ip Urejal R. H. Charles, D.Litt., 
+\ip Z uvodnimi ter kritičnimi in pojasnjenimi
+\ip opombami k več knjigam v sodelovanju s
+\ip številnimi učenjaki je urejal R. H. Charles, D.Litt., 
 \zbl|1\*
 \ip D.D. Oxford: The Clarendon Press
 \ip Oxford: The Clarendon Press 1913
@@ -46,6 +46,8 @@
 \pb
 \zEmptyPage
 \zEmptyPage
+\resetpagenums -1
+\dopagenums
 \rem -------------------------------------------------------------------------
 \h Spremna beseda
 \mt1 Spremna beseda
@@ -79,7 +81,5 @@
 \ipi Kdor veruje vanj, ni obsojen, toda kdor ne veruje, je že obsojen, ker ni veroval v ime edinorojenega Božjega Sina.\vp(Jn 3,18)\vp* Kdor zavrača mene (Jezusa) in ne sprejema mojih besed, ima nekoga, ki ga sodi. Beseda, ki sem jo govoril, ta ista ga bo sodila na poslednji dan.\vp(Jn 12,48)\vp*
 \pb
 \rem -------------------------------------------------------------------------
-\nopagenums
+\rem \nopagenums
 \zNeedEvenPage
-
-
