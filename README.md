@@ -44,8 +44,8 @@
 > - `SloKJV.bblx` ([e-SWORD](https://www.e-sword.net/) datoteka. Odložiti v mapo: c:\Program Files (x86)\e-Sword )
 >
 > ### Papirni izvod SloKJV
-> Trenutno je na voljo digitalen tisk na 60g papir. Objavljeni ceni je potrebno dodati še ca 10 eur za poštnino in pride po pošti iz Francije na dom v treh tednih:
-> - SloKJV s [trdimi ali mehkimi]([https://www.lulu.com/spotlight/msavli] platnicami,
+> Trenutno je na voljo digitalen tisk na 60g papir.
+> Naročite ga s [klikom.](mailto:marjan.savli@gmail.com?subject=SloKJV–Narocilo&body=Na voljo so:%0A%0A - (1) SloKJV (A4,  trde  platnice, velikost pisave 12,5)%0A - (2) SloKJV (A4,  mehke platnice, velikost pisave 12,5)%0A - (3) SloKJV (A5+, trde  platnice, velikost pisave 10)%0A - (4) SloKJV (A5+, mehke platnice, velikost pisave 10)%0A - (5) SloKJV (A5,  mehke platnice, velikost pisave 9,4)%0A - (6) SloKJV (A5,  mehke  platnice, velikost pisave 9,4)%0A - (7) SloKJV Ps+Nz (A5, mehke platnice, velikost pisave 9,4)%0A - (8) SloKJV Ps+NZ (A5, trde  platnice, velikost pisave 9,4)%0A%0A Narocam 1 kos papirni izvod SloKJV z zaporedno stevilko: _____, s ceno 0 EUR (cena vkljucuje dostavo).%0A %0A  Moj naslov:%0A  _____________%0A  _____________%0A  _____________%0A). Paket bo prispel na vaš dom v nekaj dneh (konec aprila 2024 se bo pričela dobava).
 > - Anionian verzija z [mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/paperback/product-1y5gpyry.html), s [trdimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/hardcover/product-j25j7z.html) in [Nova Zaveza z mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769-new-testament/paperback/product-6k4jeq.html).
 >
 > ### Predlogi za izboljšavo
@@ -96,8 +96,8 @@
 > - `SloKJV.bblx` ([e-SWORD](https://www.e-sword.net/) file. Put it into folder: c:\Program Files (x86)\e-Sword )
 > 
 > ### SloKJV paper copy
-> Currently is available digital print on 60g paper. It is necessary to add approx. 10 euros for postage to the published price, and it will be delivered from France to your home in three weeks.
-> - SloKJV with [hardcover or paperback](https://www.lulu.com/spotlight/msavli)
+> Currently is available digital print on 60g paper.
+> To get it, look on Slovenian section of this page "Naročite ga s klikom."
 > - Anionian version: [Paperback](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/paperback/product-1y5gpyry.html), [Hardcover](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/hardcover/product-j25j7z.html) and [Paperback New Testament](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769-new-testament/paperback/product-6k4jeq.html) 
 >
 > ### Suggestions for improvement
