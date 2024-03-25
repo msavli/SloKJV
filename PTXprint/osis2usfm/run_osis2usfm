@@ -818,12 +818,13 @@ echo -E "   --==  Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Peta Mojzesova knjiga, imenovana Devteronomij/g"                     $SloKJV$format/05_DEU.usfm
 
 # JOS
+#  UTF-8   U+00F3  ó   c3 b3  \xC3\xB3
   sed -i "s/\\\\h  /\x5ch Joz/g"                                                                 $SloKJV$format/06_JOS.usfm
-  sed -i "s/\\\\h1/\x5ch1 Jozuetova knjiga/g"                                                    $SloKJV$format/06_JOS.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Jozuetova knjiga/g"                                                $SloKJV$format/06_JOS.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Jozue/g"                                                           $SloKJV$format/06_JOS.usfm
+  sed -i "s/\\\\h1/\x5ch1 J\xC3\xB3zuetova knjiga/g"                                                    $SloKJV$format/06_JOS.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 J\xC3\xB3zuetova knjiga/g"                                                $SloKJV$format/06_JOS.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 J\xC3\xB3zue/g"                                                           $SloKJV$format/06_JOS.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Joz/g"                                                             $SloKJV$format/06_JOS.usfm
-  sed -i "s/\\\\mt1/\x5cmt1 Jozuetova knjiga/g"                                                  $SloKJV$format/06_JOS.usfm
+  sed -i "s/\\\\mt1/\x5cmt1 J\xC3\xB3zuetova knjiga/g"                                                  $SloKJV$format/06_JOS.usfm
 
 # JDG
   sed -i "s/\\\\h  /\x5ch Sod/g"                                                                 $SloKJV$format/07_JDG.usfm
