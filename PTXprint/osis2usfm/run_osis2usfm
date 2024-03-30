@@ -1,4 +1,4 @@
-pdf#!/bin/bash
+#!/bin/bash
 
 # Set paths
 SloKJVepubPath=/home/pc/Dokumenti/epub
@@ -6,6 +6,24 @@ osis2usfm=/home/pc/Dokumenti/osis2usfm
 SloKJV_Github=/home/pc/Dokumenti/GitHub/SloKJV
 SloKJV=/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_
 format=US_Trade
+
+# Set basic variables
+unset Debug #; Debug="yes" # print extra messages
+IMBackground="white"      # what colour for paper
+IMQuality="91"            # JPEG compression level
+PaperWdthMetr="210"       # milimeters, 210 for ISO A4
+PaperHghtMetr="297"       # milimeters, 297 for ISO A4
+                          #  A4        210 x 297 mm
+                          #  A5        148 x 210 mm
+                          #  US Trade  152 x 229 mm
+PaperDens="300"           # maximum (wanted) dpi for a page
+PaperHInch=$( echo scale=5\; $PaperHghtMetr / 2.54 / 10      | bc -l ) # Inch
+PaperWInch=$( echo scale=5\; $PaperWdthMetr / 2.54 / 10      | bc -l ) # Inch
+PaperRtio=$(     echo scale=5\; $PaperWdthMetr / $PaperHghtMetr | bc -l )
+
+
+
+
 
 echo "   Pritisni tipko za brisanje začasnih PTXprint datotek ..."
 # Function to check if a key is pressed
@@ -35,43 +53,69 @@ key_pressed_brisanje_temp_files
 #======= zberi velikost PDF verzije SloKJV =============
 echo "   Izberi velikost PDF verzije SloKJV"
 PS3='Izberi velikost PDF verzije SloKJV: '
-options=("A4" "US_Trade" "A5" "A5_NZ_Ps" "A5_NZ_prostor" "SLO-KJV" "Test" "Izhod")
+options=("A4" "US_Trade" "A5" "A5_NZ_Ps" "A5_NZ_prostor" "SLO-KJV" "Test" "FRTLOCAL_SFM" "PTXPRINT_STY" "Izhod")
 select opt in "${options[@]}"
 do
     case $opt in
         "A4")
             echo "   Izbral si A4."
             format=A4
+            PaperWdthMetr="210"       # milimeters, 210 for ISO A4
+            PaperHghtMetr="297"       # milimeters, 297 for ISO A4
             break
             ;;
         "US_Trade")
             echo "   Izbral si US_Trade."
             format=US_Trade
+            PaperWdthMetr="152"       # milimeters, US Trade 152 mm
+            PaperHghtMetr="229"       # milimeters, US Trade 229 mm
             break
             ;;
         "A5")
             echo "   Izbral si A5."
             format=A5
+            PaperWdthMetr="148"       # milimeters, 148 mm for ISO A5
+            PaperHghtMetr="210"       # milimeters, 210 mm for ISO A5
             break
             ;;
         "A5_NZ_Ps")
             echo "   Izbral si A5_NZ_Ps."
             format=A5_NZ_Ps
+            PaperWdthMetr="148"       # milimeters, 148 mm for ISO A5
+            PaperHghtMetr="210"       # milimeters, 210 mm for ISO A5
             break
             ;;
         "A5_NZ_prostor")
             echo "   Izbral si A5_NZ_prostor."
             format=A5_NZ_prostor
+            PaperWdthMetr="148"       # milimeters, 148 mm for ISO A5
+            PaperHghtMetr="210"       # milimeters, 210 mm for ISO A5
             break
             ;;
         "SLO-KJV")
             echo "   Izbral si SLO-KJV."
             format=SLO-KJV
+            PaperWdthMetr="210"       # milimeters, 210 for ISO A4
+            PaperHghtMetr="297"       # milimeters, 297 for ISO A4
             break
             ;;
         "Test")
             echo "   Izbral si Test."
             format=Test
+            PaperWdthMetr="210"       # milimeters, 210 for ISO A4
+            PaperHghtMetr="297"       # milimeters, 297 for ISO A4
+            break
+            ;;
+        "FRTLOCAL_SFM")
+            echo "   Izbral si Urejanje FRTlocal.sfm datotek."
+            format=FRTLOCAL_SFM
+            find SloKJV/ -type f -name "FRTlocal.sfm" -exec pico {} \;
+            break
+            ;;
+        "PTXPRINT_STY")
+            echo "   Izbral si Urejanje ptxprint.sty datotek."
+            format=PTXPRINT_STY
+            find SloKJV/ -type f -name "ptxprint.sty" -exec pico {} \;
             break
             ;;
         "Izhod")
@@ -83,8 +127,25 @@ do
 done
 #===================================================
 
-# Kreira mapo z izbrano velikostjo PDF datoteke.
-mkdir $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format  2>/dev/null
+
+#============== Kreira mapo z izbrano velikostjo PDF datoteke. ========================
+      case $format in
+           "FRTLOCAL_SFM")
+               echo "   Preskoci kreiranje mape."
+               ;;
+           "PTXPRINT_STY")
+               echo "   Preskoci kreiranje mape."
+               ;;
+           *)  echo "   Kreira mapo."
+               mkdir $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format  2>/dev/null
+               ;;
+      esac
+#=============================================================================================
+
+
+exit
+
+
 
 # Naredi simbolicen link iz Github na mapo osis2usfm (samo prvic)
 ln -s $SloKJV_Github/PTXprint/osis2usfm/run_osis2usfm $osis2usfm       2>/dev/null
@@ -324,17 +385,34 @@ sed -i "s|<note t=\"s\">\([^.]*\)</d>\([^.]*\)</note>|<note t=\"s\">\1</dY>\2</n
 # =======================================
 
 
-
-# ======= OPOMBE ===============
+# ============= OPOMBE =====================================
 # Toda najprej mora biti reseno gornje vgnezdenje Gospoda
 echo -E " "
 echo -E "   --==    <note type=\"study\">  \</note> "
 echo -E "   --==   \f opomba \f*"
-sed -i "s|<note type=\"study\">|\x5cf + \x5cfr \x5creference : \x5cft |g"                              /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+# Dve vrsti opomb.
+# ------ Dodane opombe ki sem jih dodal in so kao Extended footnotes samo za A4 format -------
+      case $format in
+           "A4")
+               sed -i "s|<note type=\"study\">\[|\x5cef + \x5cfr \x5creference : \x5cft \[|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               sed -i "s|\]</note>|\]\x5cef*|g"                                                /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               ;;
+           "SLO-KJV")
+               sed -i "s|<note type=\"study\">\[|\x5cef + \x5cfr \x5creference : \x5cft \[|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               sed -i "s|\]</note>|\]\x5cef*|g"                                                /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               ;;
+           *)  echo "   Popravil Extended opombe v 2 stolpca ... "
+               ;;
+      esac
+# --------------------------------------------------------------------------
+#
+# ------ Klasicne opombe, ki so bile v KJV ---------------------------------
+sed -i "s|<note type=\"study\">|\x5cf + \x5cfr \x5creference : \x5cft |g"       /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i "s|</note>|\x5cf*|g"                                                     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<note>"
 cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "</note>"
-# =======================================================
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Škrlatni črv"
+# ========================================================
 
 
 # ======= DODANE BESEDE ITALIC ===============
@@ -666,6 +744,36 @@ rm     /home/pc/Dokumenti/osis2usfm/40____.usfm
 #=========================================================================
 
 
+# ======= Kreira datoteko z dodatki - zemljevidi maps mapami =============
+	touch A1_BAK.usfm
+		echo "\id BAK"                 >> A1_BAK.usfm
+		echo "\h Dodatki"              >> A1_BAK.usfm
+		echo "\toc1 Zemljevidi"        >> A1_BAK.usfm
+		echo "\toc2 "                  >> A1_BAK.usfm
+		echo "\toc3 "                  >> A1_BAK.usfm
+		# echo "\mt Zemljevidi"          >> A1_BAK.usfm
+		echo "\zfiga|p001\*"           >> A1_BAK.usfm
+                echo "\pb"                     >> A1_BAK.usfm
+		echo "\zfiga|p002\*"           >> A1_BAK.usfm
+                echo "\pb"                     >> A1_BAK.usfm
+		echo "\zfiga|p003\*"           >> A1_BAK.usfm
+                echo "\pb"                     >> A1_BAK.usfm
+		echo "\zfiga|p004\*"           >> A1_BAK.usfm
+       # cat pico A1_BAK.usfm
+# ========================================================================
+
+
+#============== Da ni v SLo-KJV med zemljevidi praznih strani ========================
+      case $format in
+           "SLO-KJV")
+               echo "Pobrise \pb da ni med zemljevidi praznih strani"
+               sed -i "s|\\\\pb||g"             A1_BAK.usfm
+               ;;
+           *)  echo "   Nic ne naredi. Obicajno Sveto pismo ... "
+               ;;
+      esac
+      #cat A1_BAK.usfm
+#=============================================================================================
 
 
 # XXX sed -i "s/^\\\\v \([0-9]*\) \\\\p /\x5cp\n\x5cv \1 /g"  $SloKJV$format/64_2JN.usfm | cat $SloKJV$format/64_2JN.usfm
@@ -703,7 +811,8 @@ sed -i "s/\\\\add\*\\\\x/\x5cadd\* \x5cx/g"             $SloKJV$format/*.usfm
 #  Pri barvnem tisku popravi nazaj na wj   in   wj*
 echo -E "   --== Povrne nazaj rdece JEZUSOVE BESEDE ==--"
 #echo -E "   --==       Words of Jesus begin  <q who=\"Jesus\" marker=\"\">  \</q>    "
-#echo -E "   --==       \wj     \wj*    "
+#echo -E "   --==       \wj     \wj*    "    
+#echo -E "   --==    CB tisk moba biti \bd in \bd*  "    
 # Zamenja #rz#  ->
 sed -i "s/#rz#/\\\\bd /g"                               $SloKJV$format/*.usfm
 # Zamenja #rk#  -> 

@@ -23,16 +23,19 @@
 \ip \zvar|maintitle\*
 \ip \zvar|subtitle\*
 \zbl|1\*
-\ip V javni lasti
-\zbl|8\*
+\im Pravica do uporabe besedila
+\im To delo je ponujeno pod licenco Creative Commons 
+\im CC BY-NC-ND PRIZNANJE AVTORSTVA – NEKOMERCIALNO – BREZ PREDELAV
+\im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo. https://creativecommons.org/licenses/by-nc-nd/4.0/
+\zccimg by-nc-nd|size="col" pgpos="pc" scale="0.15"\*
+\zbl|15\*
 \ip Prva izdaja
-\ip Prevod: Marjan Šavli in Barbara Hojkar Šavli
-\ip Priprava besedila: Marjan Šavli (PTXPrint)
-\ip email: marjan.savli@gmail.com
-\ip Fotografija na naslovnici: arhiv družine Šavli
-\ip Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka
-\ip Knjiga je objavljena na spletni strani: 
-\ip https://github.com/msavli/SloKJV
+\im Prevod: Marjan Šavli in Barbara Hojkar Šavli
+\im Priprava besedila: Marjan Šavli (PTXPrint)
+\im email: marjan.savli@gmail.com
+\im Fotografija na naslovnici: arhiv družine Šavli
+\im Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka
+\im Knjiga je objavljena na spletni strani: https://github.com/msavli/SloKJV
 \zqrcode|pgpos="cr" size="1.2cm" data="https://github.com/msavli/SloKJV"\*
 \zbl|1\*
 \ip CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -44,7 +47,7 @@
 \h Predgovor
 \mt1 Predgovor
 \zbl|2\*
-\ip Projekt prevoda Sveto pismo kralja Jakoba v slovenski jezik je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Sedaj poteka lektoriranje in odprava napak.
+\ip Projekt prevoda Sveto pismo kralja Jakoba v slovenski jezik je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Pri pregledu besedila sodeluje Vinko Ošlak.
 \ip Prevedene knjige: Geneza, Eksodus, Levitik, Numeri, Devteronomij, Jozue, Sodniki, Ruta, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Nehemija, Estera, Job, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
 \ip Pred vami je študijska verzija z opombami in referencami.
 \ip Prosiva Boga, da bi bila tudi vam ta knjiga v blagoslov in spodbudo pri hoji z Jezusom.
@@ -81,11 +84,13 @@
 \ipi in prejeli boste dar Svetega Duha.\vp(Apd 2,38)\vp*
 \ipi Kdor veruje vanj, ni obsojen, toda kdor ne veruje, je že obsojen, ker ni veroval v ime edinorojenega Božjega Sina.\vp(Jn 3,18)\vp* Kdor zavrača mene (Jezusa) in ne sprejema mojih besed, ima nekoga, ki ga sodi. Beseda, ki sem jo govoril, ta ista ga bo sodila na poslednji dan.\vp(Jn 12,48)\vp*
 \pb
-\zEmptyPage
 \rem -------------------------------Kazalo------------------------------------------
 \nopagenums
 \mt3 \zvar|toctitle\*
-\ip \ztoc|main\*
+\is Knjige Stare zaveze
+\ip \ztoc|ot\*
+\is Knjige Nove zaveze
+\ip \ztoc|nt\*
 \pb
 \rem -------------------------------------------------------------------------
 \zNeedOddPage
