@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ 
 # Set paths
 SloKJVepubPath=/home/pc/Dokumenti/epub
 osis2usfm=/home/pc/Dokumenti/osis2usfm
@@ -35,6 +35,9 @@ key_pressed_brisanje_temp_files() {
     fi
 }
 
+#= === Vklop in izklop čakanja ===
+key_pressed_brisanje_temp_files
+#=================================
 
 #======= zberi velikost PDF verzije SloKJV =============
 echo "   Izberi velikost PDF verzije SloKJV"

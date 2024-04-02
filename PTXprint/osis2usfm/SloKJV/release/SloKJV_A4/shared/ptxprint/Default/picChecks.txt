@@ -37,6 +37,8 @@ pubnoise = no
 pubaccept = Culturally Appropriate
 approved = false
 notes = 
+approved_by = 
+approval_date = 
 
 [map_paul_journeys_bw]
 pubusage = Unknown
@@ -51,7 +53,7 @@ pubusage = Clarification
 pubclear = yes
 pubnoise = no
 pubaccept = Culturally Appropriate
-approved = true
+approved = false
 notes = 
 approved_by = 
 approval_date = 
@@ -61,7 +63,7 @@ pubusage = Clarification
 pubclear = yes
 pubnoise = no
 pubaccept = Culturally Appropriate
-approved = true
+approved = false
 notes = 
 approved_by = 
 approval_date = 
@@ -73,4 +75,6 @@ pubnoise = no
 pubaccept = Culturally Appropriate
 approved = false
 notes = 
+approved_by = 
+approval_date = 
 

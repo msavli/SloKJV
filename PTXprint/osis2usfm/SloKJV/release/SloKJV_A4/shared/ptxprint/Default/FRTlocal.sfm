@@ -91,7 +91,11 @@
 \ip \ztoc|ot\*
 \is Knjige Nove zaveze
 \ip \ztoc|nt\*
-
+\is Dodatki
+\ip \ztoc|post\*
+\b
+\is Abecedni seznam Svetopisemskih knjig
+\ip \ztoc|sortb\*
 \pb
 \rem -------------------------------------------------------------------------
 \zNeedOddPage
