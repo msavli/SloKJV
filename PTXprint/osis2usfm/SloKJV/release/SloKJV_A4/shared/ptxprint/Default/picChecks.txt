@@ -1,0 +1,80 @@
+[DEFAULT]
+pubusage = Unknown
+pubclear = unchecked
+pubnoise = unchecked
+pubaccept = Unknown
+
+[map_ancient_world_patriarchs_bw]
+pubusage = Clarification
+pubclear = yes
+pubnoise = yes
+pubaccept = Culturally Appropriate
+approved = true
+notes = 
+approved_by = 
+approval_date = 
+
+[map_exodus_and_canaan_conquest_bw]
+pubusage = Unknown
+pubclear = yes
+pubnoise = yes
+pubaccept = Unknown
+approved = false
+notes = 
+
+[1]
+pubusage = Unknown
+pubclear = unchecked
+pubnoise = unchecked
+pubaccept = Unknown
+approved = false
+notes = 
+
+[map_israel_new_testament_bw]
+pubusage = Clarification
+pubclear = yes
+pubnoise = no
+pubaccept = Culturally Appropriate
+approved = false
+notes = 
+approved_by = 
+approval_date = 
+
+[map_paul_journeys_bw]
+pubusage = Unknown
+pubclear = unchecked
+pubnoise = unchecked
+pubaccept = Unknown
+approved = false
+notes = 
+
+[map_ancient_world_patriarchs_bw_90]
+pubusage = Clarification
+pubclear = yes
+pubnoise = no
+pubaccept = Culturally Appropriate
+approved = false
+notes = 
+approved_by = 
+approval_date = 
+
+[map_exodus_and_canaan_conquest_bw_90]
+pubusage = Clarification
+pubclear = yes
+pubnoise = no
+pubaccept = Culturally Appropriate
+approved = false
+notes = 
+approved_by = 
+approval_date = 
+
+[map_paul_journeys_bw_90]
+pubusage = Clarification
+pubclear = yes
+pubnoise = no
+pubaccept = Culturally Appropriate
+approved = false
+notes = 
+approved_by = 
+approval_date = 
+

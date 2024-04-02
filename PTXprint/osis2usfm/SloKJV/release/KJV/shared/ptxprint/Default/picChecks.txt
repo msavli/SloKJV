@@ -1,0 +1,22 @@
+[DEFAULT]
+pubusage = Unknown
+pubclear = unchecked
+pubnoise = unchecked
+pubaccept = Unknown
+
+[map_ancient_world_patriarchs_bw]
+pubusage = Unknown
+pubclear = unchecked
+pubnoise = unchecked
+pubaccept = Unknown
+approved = false
+notes = 
+
+[map_exodus_and_canaan_conquest_bw]
+pubusage = Unknown
+pubclear = yes
+pubnoise = yes
+pubaccept = Unknown
+approved = false
+notes = 
+

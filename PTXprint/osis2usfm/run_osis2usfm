@@ -1,11 +1,16 @@
 #!/bin/bash
-
+ 
 # Set paths
 SloKJVepubPath=/home/pc/Dokumenti/epub
 osis2usfm=/home/pc/Dokumenti/osis2usfm
 SloKJV_Github=/home/pc/Dokumenti/GitHub/SloKJV
 SloKJV=/home/pc/Dokumenti/osis2usfm/SloKJV/release/SloKJV_
 format=US_Trade
+                          #  A4        210 x 297 mm
+                          #  A5        148 x 210 mm
+                          #  US Trade  152 x 229 mm
+
+
 
 echo "   Pritisni tipko za brisanje začasnih PTXprint datotek ..."
 # Function to check if a key is pressed
@@ -30,48 +35,83 @@ key_pressed_brisanje_temp_files() {
     fi
 }
 
+#= === Vklop in izklop čakanja ===
 key_pressed_brisanje_temp_files
+#=================================
 
 #======= zberi velikost PDF verzije SloKJV =============
 echo "   Izberi velikost PDF verzije SloKJV"
 PS3='Izberi velikost PDF verzije SloKJV: '
-options=("A4" "US_Trade" "A5" "A5_NZ_Ps" "A5_NZ_prostor" "SLO-KJV" "Test" "Izhod")
+options=("A4" "US_Trade" "A5" "A5_NZ_BIG" "A5_NZ_Ps" "A5_NZ_prostor" "SLO-KJV" "Test" "FRTLOCAL_SFM" "PTXPRINT_STY" "Izhod")
 select opt in "${options[@]}"
 do
     case $opt in
         "A4")
             echo "   Izbral si A4."
             format=A4
+            PaperWdthMetr="210"       # milimeters, 210 for ISO A4
+            PaperHghtMetr="297"       # milimeters, 297 for ISO A4
             break
             ;;
         "US_Trade")
             echo "   Izbral si US_Trade."
             format=US_Trade
+            PaperWdthMetr="152"       # milimeters, US Trade 152 mm
+            PaperHghtMetr="229"       # milimeters, US Trade 229 mm
             break
             ;;
         "A5")
             echo "   Izbral si A5."
             format=A5
+            PaperWdthMetr="148"       # milimeters, 148 mm for ISO A5
+            PaperHghtMetr="210"       # milimeters, 210 mm for ISO A5
+            break
+            ;;
+        "A5_NZ_BIG")
+            echo "   Izbral si A5_NZ_BIG."
+            format=A5_NZ_BIG
+            PaperWdthMetr="148"       # milimeters, 148 mm for ISO A5
+            PaperHghtMetr="210"       # milimeters, 210 mm for ISO A5
             break
             ;;
         "A5_NZ_Ps")
             echo "   Izbral si A5_NZ_Ps."
             format=A5_NZ_Ps
+            PaperWdthMetr="148"       # milimeters, 148 mm for ISO A5
+            PaperHghtMetr="210"       # milimeters, 210 mm for ISO A5
             break
             ;;
         "A5_NZ_prostor")
             echo "   Izbral si A5_NZ_prostor."
             format=A5_NZ_prostor
+            PaperWdthMetr="148"       # milimeters, 148 mm for ISO A5
+            PaperHghtMetr="210"       # milimeters, 210 mm for ISO A5
             break
             ;;
         "SLO-KJV")
             echo "   Izbral si SLO-KJV."
             format=SLO-KJV
+            PaperWdthMetr="210"       # milimeters, 210 for ISO A4
+            PaperHghtMetr="297"       # milimeters, 297 for ISO A4
             break
             ;;
         "Test")
             echo "   Izbral si Test."
             format=Test
+            PaperWdthMetr="210"       # milimeters, 210 for ISO A4
+            PaperHghtMetr="297"       # milimeters, 297 for ISO A4
+            break
+            ;;
+        "FRTLOCAL_SFM")
+            echo "   Izbral si Urejanje FRTlocal.sfm datotek."
+            format=FRTLOCAL_SFM
+            find SloKJV/ -type f -name "FRTlocal.sfm" -exec pico {} \;
+            break
+            ;;
+        "PTXPRINT_STY")
+            echo "   Izbral si Urejanje ptxprint.sty datotek."
+            format=PTXPRINT_STY
+            find SloKJV/ -type f -name "ptxprint.sty" -exec pico {} \;
             break
             ;;
         "Izhod")
@@ -83,14 +123,26 @@ do
 done
 #===================================================
 
-# Kreira mapo z izbrano velikostjo PDF datoteke.
-mkdir $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format  2>/dev/null
+
+#============== Kreira mapo z izbrano velikostjo PDF datoteke. ========================
+      case $format in
+           "FRTLOCAL_SFM")
+               echo "   Preskoci kreiranje mape."
+               ;;
+           "PTXPRINT_STY")
+               echo "   Preskoci kreiranje mape."
+               ;;
+           *)  echo "   Kreira mapo."
+               mkdir $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format  2>/dev/null
+               ;;
+      esac
+#=============================================================================================
+
 
 # Naredi simbolicen link iz Github na mapo osis2usfm (samo prvic)
 ln -s $SloKJV_Github/PTXprint/osis2usfm/run_osis2usfm $osis2usfm       2>/dev/null
 ln -s $SloKJV_Github/PTXprint/osis2usfm/osis2usfm.py $osis2usfm        2>/dev/null
 ln -s $SloKJV_Github/PTXprint/osis2usfm/SloKJV/ $osis2usfm             2>/dev/null
-ln -s $SloKJV_Github/PTXprint/osis2usfm/uvod/ $osis2usfm               2>/dev/null
 
 #================ PTXPrint nadgradi na zadnjo verzijo? ====================
 echo " "
@@ -182,8 +234,21 @@ cd $osis2usfm
 # Potegne iz lokanega Githuba (hitreje)
 cp /home/pc/Dokumenti/GitHub/SloKJV/SloKJV_sword.xml  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 
-#============== Odstrani sklice/reference in opombe ce je izbran SloKJV_KJV ========================
+#========= Odstrani sklice/reference in opombe ce je izbran SloKJV_KJV ali A5_NZ_BIG ==============
       case $format in
+           "A5_NZ_BIG")
+               echo " "
+               echo "   Odstrani reference in opombe ..."
+               #  Zacetek <note da v novo vrstico
+               sed -i "s|<note|\n<note|g"             /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               #  Za  </note > da v novo vrstico
+               sed -i "s|<\/note>|<\/note>\n|g"       /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               #  Pobrise vrstice ki se zacnejo z <note in to zamenja z SSSS"
+               sed -i "s|^<note.*|SSSS|g"             /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               #  Potegne nazaj gor vrstice"
+               sed -i ':a;N;$!ba;s/\nSSSS\n/ /g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               # pico  /home/pc/Dokumenti/osis2usfm/SloKJV_brez_note.xml
+               ;;
            "SLO-KJV")
                echo " "
                echo "   Odstrani reference in opombe ..."
@@ -210,17 +275,14 @@ mkdir $osis2usfm/SloKJV/release/SloKJV_$format >/dev/null 2>&1
 cd $osis2usfm                                  >/dev/null 2>&1
 
 
-# ===================== ODSTRANI INTRODUCTION UVOD ========================
+# ===================== UVOD ================================
 echo "  Odstrani vrstice z Uvodom da je stevilcenje poglavij v redu dokler se ne naredi boljsi osis2usfm.py"
 #     To naj bi zamenjal s \ip   Introduction paragraph
 # Potegne gor vrstico in vse zamenja z   introduction
 #    div type="introduction">         <p type="x-noindent" subType="x-introduction">
 sed -i ':a;N;$!ba;s|<div type=\"introduction\">\n        <p type=\"x-noindent\" subType=\"x-introduction\">|<introduction>|g'  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 # Potegne gor vrstico  </p> ENTER  presledki </div>
-sed -i ':a;N;$!ba;s|<\/p>\n      <\/div>|</p></div>|g'                                                                        /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-# Pobrise  vrstice z besedo introduction
-sed -i '/<introduction>/d'                                /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep introduction
+sed -i ':a;N;$!ba;s|<\/p>\n      <\/div>|</p></div>|g'                                                                         /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #========================================================================
 
 
@@ -301,6 +363,7 @@ sed -i "s|<note type=\"crossReference\">;|\x5cx + \x5cxo \x5creference : \x5cxt 
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<reference"
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "reference>"
 # head -30 /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+# =======================================================
 
 
 # ======= VGNEZDEN GOSPOD ===============
@@ -314,7 +377,6 @@ echo -E "   --==      \+nd Gospod \+nd*                        "
 
 # bla1 <d>G</d> bla2 <d>G</d><note t="s"><d>G</d>…: bla3. <d>G</d> bla4.</note> bla5 <note t="s">bla6…: bla7. bla8 <d>G</d>, bla9.</note> bla10 <d>G</d> bla11.
 
-
 sed -i "s|<note t=\"s\">\([^.]*\)<d>\([^.]*\)</note>|<note t=\"s\">\1<dX>\2</note>|g"    /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i "s|<note t=\"s\">\([^.]*\)</d>\([^.]*\)</note>|<note t=\"s\">\1</dY>\2</note>|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 
@@ -325,21 +387,37 @@ sed -i "s|<note t=\"s\">\([^.]*\)</d>\([^.]*\)</note>|<note t=\"s\">\1</dY>\2</n
 
 # Ali to res dela na tej vrstici 1Sam.12.14
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<verse osisID=\"1Sam.12.14\""
+# =======================================
 
 
-
-
-# ======= OPOMBE ===============
+# ============= OPOMBE =====================================
 # Toda najprej mora biti reseno gornje vgnezdenje Gospoda
 echo -E " "
 echo -E "   --==    <note type=\"study\">  \</note> "
 echo -E "   --==   \f opomba \f*"
-sed -i "s|<note type=\"study\">|\x5cf + \x5cfr \x5creference : \x5cft |g"                              /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+# Dve vrsti opomb.
+# ------ Dodane opombe ki sem jih dodal in so kao Extended footnotes samo za A4 format -------
+      case $format in
+           "A4")
+               sed -i "s|<note type=\"study\">\[|\x5cef + \x5cfr \x5creference : \x5cft \[|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               sed -i "s|\]</note>|\]\x5cef*|g"                                                /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               ;;
+           "SLO-KJV")
+               sed -i "s|<note type=\"study\">\[|\x5cef + \x5cfr \x5creference : \x5cft \[|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               sed -i "s|\]</note>|\]\x5cef*|g"                                                /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               ;;
+           *)  echo "   Popravil Extended opombe v 2 stolpca ... "
+               ;;
+      esac
+# --------------------------------------------------------------------------
+#
+# ------ Klasicne opombe, ki so bile v KJV ---------------------------------
+sed -i "s|<note type=\"study\">|\x5cf + \x5cfr \x5creference : \x5cft |g"       /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i "s|</note>|\x5cf*|g"                                                     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<note>"
 cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "</note>"
-
-
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Škrlatni črv"
+# ========================================================
 
 
 # ======= DODANE BESEDE ITALIC ===============
@@ -350,66 +428,6 @@ sed -i "s|<transChange type=\"added\">|\x5cadd |g"                              
 sed -i "s|</transChange>|\x5cadd*|g"                                             /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "transChange"
 # =======================================================
-
-# ======= DODANE BESEDE ITALIC VGNEZDEN ===============================================
-echo -E "   --==     če je vgnezden v opombo              "
-echo -E "   --==   \+add    \+add*                        "
-# Med Jezusovim govorjenjem so italic besede, ki morajo biti vgnezdene
-#  <q who=\"Jesus\" marker=\"\">„Jaz, Davidov \+add in\+add* svetla ter jutranja zvezda.“</q>
-# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "svetla ter jutranja zvezda"
-# </verse><verse osisID="Rev.22.16"> \p <q who="Jesus" marker="">„Jaz, Jezus,  \add in\add* zvezda.“</q>
-# Primer ce je v tej vrstici pika. Naprej isce \add*     in doda +
-# 12x pa zoto ce je 5 italic opomb v Jezus vrstici in je v njej ena pika
-# Odstranil ker tega ni v usfm 
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)[.]\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1.\2\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)[.]\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1.\2\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)[.]\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1.\2\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)[.]\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1.\2\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)[.]\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1.\2\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)[.]\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1.\2\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)[.]\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1.\2\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)[.]\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1.\2\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)[.]\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1.\2\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)[.]\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1.\2\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)[.]\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1.\2\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)[.]\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1.\2\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-
-# Ce v vrstici ni pike.
-# 12x pa zoto ce je v njej 5 italic opomb v Jezus vrstici brez vmesne  pika
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|<q who=\"Jesus\" marker=\"\">\([^.]*\)\\\\add|<q who=\"Jesus\" marker=\"\">\1\x5c+add|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-
-# Sedaj pa se izjeme ki gornjih 24 vrstic ne upostevajo.
-#    Oh, \add vi\add* hinavci, lahko razpoznavate obličje neba, toda ne morete \add razpoznati\add* znamenj
-#    Oh, \\\\add vi\\\\add* hinavci, lahko razpoznavate obličje neba, toda ne morete \\\\add razpoznati\\\\add* znamenj
-#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "lahko razpoznavate obli"
-#sed -i "s|\\\\add vi\\\\add\* hinavci|\x5c+add vi\x5c+add\* hinavci|g" /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#sed -i "s|\\\\add razpoznati\\\\add\* znamenj|\x5c+add razpoznati\x5c+add\* znamenj|g" /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "lahko razpoznavate obli"
-
-# koliko bolj \add bodo imenovali\add* te iz njegove
-# koliko bolj \\\\add bodo imenovali\\\\add\* te iz njegove
-#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "te iz njegove družine"
-#sed -i "s|koliko bolj \\\\add bodo imenovali\\\\add\* te iz njegove|koliko bolj \x5c+add bodo imenovali\x5c+add\* te iz njegove|g" /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "te iz njegove družine"
-
-#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Niti se ne dajte imenovati učitelji"
-#sed -i "s|\\\\add celó\\\\add\* Kristus|\x5c+add celó\x5c+add\* Kristus|g"    /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Niti se ne dajte imenovati učitelji"
-
-#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "postave, sodbo, usmiljenje in vero"
-#sed -i "s|pomembnejše \\\\add zadeve\\\\add\* iz|pomembnejše \x5c+add zadeve\x5c+add* iz|g"   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "postave, sodbo, usmiljenje in vero"
-
 
 
 # ======= DIVINE NAME GOSPOD ===============
@@ -474,35 +492,34 @@ sed  -z -i 's|Y</title>\n                      <verse osisID="Ps.[0-9]*.1">|XXYY
 # mt2 moram spremeniti v prvo vrstico    Ja vedno je Ps.1   narobe toda za paratex bo dobro
 sed  -i 's|<mt2>|                      <verse osisID=\"Ps.1.1\">|g' /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 
-
-
-
 # Izjema v Ps 52.0 54 ker ni pike na koncu vrstice.
 # cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep 'pred svojim sinom'
 # =======================================================
 
+# Nova vrstica new line uporabljeni pri Psalmih in uvodih
 echo -E "   --==     Psalm 22 6  Skrlatni crv..."
-# zamenja <lb />   z nic
-sed -i "s|<lb />||g"                                                                         /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+# zamenja <lb /> 3      z " \imi stevilka"
+sed -i "s|<lb /> \([0-9]\)| \\\\imi \1|g"                    /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+# zamenja <lb />        z " \iex crka"      (V psalm 21 kasneje to pobrisem)
+sed -i "s|<lb /> | \\\\iex |g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+# Ostajeno se trije primeri ko je  <lb /><
+sed -i "s|<lb /><| \\\\iex <|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 # Zamenja <hi type="bold"> </hi>     z   \bd   \bd*
-sed -i "s|<hi type=\"bold\">| \\\bd |g"                                                         /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i "s|</hi>| \\\bd* |g"                                                                    /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-
+sed -i "s|<hi type=\"bold\">| \\\bd |g"                       /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i "s|</hi>| \\\bd* |g"                                   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 # cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep 'Ps.22.6"'
+# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -2 "<lb "  #  |grep "book"
+# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<lb " | grep "<introduction>" | wc -l
+#=======================================================
 
 
-#========================================================
-echo -E "   --== Odstrani rdece JEZUSOVE BESEDE ==--"
-#Odstranil \wj... ker mi potem ni delovale vgnezdenje referenc
-# problem so italic in dodane  reference
-# Vgnezdenim zadevam moras dati spredaj bacslash in plus  
+#=======================================================
+echo -E "   --== Zacasno zamenja rdece JEZUSOVE BESEDE ==--"
 #echo -E " "
 #echo -E "   --==   	Words of Jesus begin  <q who=\"Jesus\" marker=\"\">  \</q>    "
 #echo -E "   --==   \wj     \wj*    "
-# sed -i "s|<q who=\"Jesus\" marker=\"\">|\x5cwj |g"            /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed  -i "s|<q who=\"Jesus\" marker=\"\">||g"            /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-# sed -i "s|</q>|\x5cwj* |g"                                    /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i "s|</q>||g"                                    /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i "s|<q who=\"Jesus\" marker=\"\">|#rz#|g"              /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i "s|</q>|#rk#|g"                                       /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<q who="
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<q>"
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "wj"
@@ -570,8 +587,6 @@ cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -F '<verse osisID=\"Gen.
 #=============================================================
 
 
-
-
 # ===================== CHAPTER OSIS ID ODSTRANI ================================
 #      Popraviti zaradi python skripta
 #    <chapter osisID=\"Gen.01\" chapterTitle=\"1. Poglavje\">   ->   <chapter>
@@ -589,7 +604,6 @@ sed -i "s|<chapter osisID=\"\([^.]*\).\([^.]*\)\" chapterTitle=\"\([^.]*\)\"><ti
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -F 'chapter osisID="Ps.100" chapterTitle="Psalm 100">'
 # cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -F '<chapter>\p '
 #=============================================================
-
 
 
 # ===================== ZACETEK ODSTRANI ================================
@@ -677,7 +691,6 @@ cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -2 "Titus.c"
 
 
 
-
 # ===================== PSALMI ================================
 
 # cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -10 "Psalm 4"
@@ -690,17 +703,41 @@ cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -2 "Titus.c"
 #  Doda se eno kvazi prazno knjigo da je     Mt  41-ta knjiga namesto 40
 #                                        in  Raz 67-ta knjiga namesto 66 
 #       </verse></chapter></div></div>      spremeni v    </verse></chapter></div><div type="book"></div></div>   
-sed -i "s|<\/verse><\/chapter><\/div><\/div>|<\/verse><\/chapter><\/div><div type=\"book\"><\/div><\/div>|g"    /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i "s|<\/verse><\/chapter><\/div><\/div>|<\/verse><\/chapter><\/div><div type=\"book\"><\/div><\/div>|g"            /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #=============================================================
 
 
-#============= Popravim reference namesto dvopicja vejica ================
-sed -i "s|\([0-9]*\):\([0-9]\)|\1,\2|g"    /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#=========================================================================
+#============= Popravim reference namesto dvopicja -> vejica ================
+sed -i "s|\([0-9]*\):\([0-9]\)|\1,\2|g"                                                                                 /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#============================================================================
+
+
+#================ UVOD NADALJEVANJE =====================================
+#  Odstrani vse </p></div>  ki se nahajajo v introduction vrstici
+sed -i "s|<\/p><\/div>|#UVOD#|g"                                                                                        /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#   Odstrani vse vrstice  s   <chapter>1. Poglavje"
+sed -i '/<chapter>1. Poglavje/d'                                                                                        /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#   Tukaj je samo dela resitev <introduction>  zamenja  s  <chapter>
+sed -i ':a;N;$!ba;s|<introduction>|<chapter>1. Poglavje\n<verse>|g'                                                     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#   Potegne gor 1. vrstico
+sed -i ':a;N;$!ba;s|#UVOD#\n<verse>|#UVOD#|g'                                                                           /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#   Izjema pri Psalmih kjer se Poglavje imenuje Psalm
+sed -i ':a;N;$!ba;s|Psalmi_X_Knjiga Psalmov\n<chapter>1. Poglavje|Psalmi_X_Knjiga Psalmov|g'                            /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i ':a;N;$!ba;s|#UVOD#\n<chapter>\\p \\n _P_Psalm 1\n<verse>|#UVOD#|g'                                              /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i ':a;N;$!ba;s|Psalmi_X_Knjiga Psalmov\n<verse>|Psalmi_X_Knjiga Psalmov\n<chapter>\\p \\n _P_Psalm 1\n<verse>|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#   Odstrani osamelo podpičje ki je ostalo od preobračanja referenc " ; " -> " ; "
+sed -i "s| ; | |g"                                                                                                      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#   Odstrani osamelo podpičje ki je ostalo od preobračanja referenc "(; " -> "( "
+sed -i "s|(; |( |g"                                                                                                     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#   Pobrise osamele </reference> ki so ostale v uvodu
+sed -i "s|</reference>||g"                                                                                              /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<verse>V zač"
+#========================================================================
 
 
 #=========================================================================
 echo -E "   --== Pozene generiranje usfm datotek==--   "
+#=========================================================================
 # Pobrise vse prejsnje usfm datoteke
 rm /home/pc/Dokumenti/osis2usfm/*.usfm  >/dev/null 2>&1
 rm $SloKJV$format/*.usfm >/dev/null 2>&1
@@ -708,13 +745,41 @@ rm $SloKJV$format/*.usfm >/dev/null 2>&1
 rm $SloKJV$format/local/ptxprint/*.pdf >/dev/null 2>&1
 echo -E "python3 osis2usfm.py SloKJV_sword.xml"
 python3 osis2usfm.py SloKJV_sword.xml
-
-
-
-
 # Pobrise 40-to kvazi knjigo da so knjige Nove zaveze pravilno ostevilcene
 rm     /home/pc/Dokumenti/osis2usfm/40____.usfm
 #=========================================================================
+
+
+      # ======= Kreira datoteko z dodatki - zemljevidi maps mapami =============
+      touch A1_BAK.usfm
+		echo "\id BAK"                 >> A1_BAK.usfm
+		echo "\h Dodatki"              >> A1_BAK.usfm
+		echo "\toc1 Zemljevidi"        >> A1_BAK.usfm
+		echo "\toc2 "                  >> A1_BAK.usfm
+		echo "\toc3 "                  >> A1_BAK.usfm
+		# echo "\mt Zemljevidi"          >> A1_BAK.usfm
+		echo "\zfiga|p001\*"           >> A1_BAK.usfm
+                echo "\pb"                     >> A1_BAK.usfm
+		echo "\zfiga|p002\*"           >> A1_BAK.usfm
+                echo "\pb"                     >> A1_BAK.usfm
+		echo "\zfiga|p003\*"           >> A1_BAK.usfm
+                echo "\pb"                     >> A1_BAK.usfm
+		echo "\zfiga|p004\*"           >> A1_BAK.usfm
+      # cat pico A1_BAK.usfm
+      # ========================================================================
+
+
+      #============== Da ni v SLo-KJV med zemljevidi praznih strani ========================
+      case $format in
+           "SLO-KJV")
+               echo "Pobrise \pb da ni med zemljevidi praznih strani"
+               sed -i "s|\\\\pb||g"             A1_BAK.usfm
+               ;;
+           *)  echo "   Nic ne naredi. Obicajno Sveto pismo ... "
+               ;;
+      esac
+      #cat A1_BAK.usfm
+      #=============================================================================================
 
 
 # XXX sed -i "s/^\\\\v \([0-9]*\) \\\\p /\x5cp\n\x5cv \1 /g"  $SloKJV$format/64_2JN.usfm | cat $SloKJV$format/64_2JN.usfm
@@ -722,7 +787,10 @@ rm     /home/pc/Dokumenti/osis2usfm/40____.usfm
 echo -E "   --==  Prestavi usfm datotke v pravo mapo za PTXPRINT"
 mv /home/pc/Dokumenti/osis2usfm/*.usfm $SloKJV$format/ >/dev/null 2>&1
 echo -E "======= Koncal generiranje usfm datotek === "
+# ======================================================================================
 
+
+#======================================================================================
 echo -E "   --==      Popravi  znak \p eno vrstico visje v vseh usfm datotekah"
 #                    > \p   
 #    \v 6 \p Text    > \v 6 Text
@@ -735,11 +803,10 @@ sed -i "s/^\\\\v \([0-9]*\) \\\\p /\x5cp\n\x5cv \1 /g"  $SloKJV$format/*.usfm
 #sed -i "s/^\\\\c \([0-9]*\)/\x5cb\n\x5cc \1 /g"         $SloKJV$format/*.usfm
 # cat $SloKJV$format/67_REV.usfm
 
-
 echo -E "   --==  Takoj za zacetkom poglavja naredi odstavek ==--"
 #   \c stevilka    ->   \c stevilka
 #                       \p
-sed -i "s/^\\\\c \([0-9]*\)/\x5cc \1\n\x5cp/g"         $SloKJV$format/*.usfm
+sed -i "s/^\\\\c \([0-9]*\)/\x5cc \1\n\x5cp/g"          $SloKJV$format/*.usfm
 
 
 echo -E "   --==  Kjer sta opomba in referenca skupaj naredi presledek ==--"
@@ -748,6 +815,49 @@ sed -i "s/\\\\add\*\\\\x/\x5cadd\* \x5cx/g"             $SloKJV$format/*.usfm
 #========================================================
 
 
+#========== Rdece Jezusove besede =========================
+#  Pri barvnem tisku popravi nazaj na wj   in   wj*
+echo -E "   --== Povrne nazaj rdece JEZUSOVE BESEDE ==--"
+#echo -E "   --==       Words of Jesus begin  <q who=\"Jesus\" marker=\"\">  \</q>    "
+#echo -E "   --==       \wj     \wj*    "    
+#echo -E "   --==    CB tisk moba biti \bd in \bd*  "    
+# Zamenja #rz#  ->
+sed -i "s/#rz#/\\\\bd /g"                               $SloKJV$format/*.usfm
+# Zamenja #rk#  -> 
+sed -i "s/#rk#/\\\\bd\* /g"                             $SloKJV$format/*.usfm
+#==========================================================
+
+
+#================ UVOD Popravi  ===========================
+#  \imt1 UVOD
+#  \ip Besedilo uvoda
+#   usfm  \mt1 Evangelij...
+#   usfm  \c 1
+# Zamenja #UVOD#   z 
+#  V psalmu 23 to pobrisem ker dela prevelike crke in ne sluzi presledku
+sed -i "s/\\\\iex //g"                                              $SloKJV$format/19_PSA.usfm
+# Popravi vse uvode vseh datotek
+sed -i ':a;N;$!ba;s|\\c 1\n\\p\n\\p \n\\v 1 |\\imt1\n\\iex |g'      $SloKJV$format/*.usfm
+sed -i ':a;N;$!ba;s|#UVOD#|\n\\c 1\n\\p\n\\p \n\\v 1 |g'            $SloKJV$format/*.usfm
+#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "xxxxx"
+#head -12 /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release/SloKJV_A4/42_MRK.usfm
+#==========================================================
+
+
+#============== Odstrani UVOD iz naslednjih knjig ========================
+      case $format in
+           "A5_NZ_BIG")
+               echo "Pobrise uvod - celo vrstico ki se zacne z \iex"
+               sed -i '/^\\iex/d'                                   $SloKJV$format/*.usfm
+               ;;
+           *)  echo "   Nic ne naredi. Obicajno Sveto pismo ... "
+               ;;
+      esac
+      # head $SloKJV$format/66_JUD.usfm
+#=============================================================================================
+
+
+#========================================================
 #echo -E "======================================="
 #tail /home/pc/Dokumenti/osis2usfm/run_osis2usfm
 #echo -E "======================================="
@@ -800,7 +910,7 @@ echo -E "   --==  Popravi naslove knjig ==--"
   sed -i "s/\\\\toc2/\x5ctoc2 Levitik/g"                                                         $SloKJV$format/03_LEV.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 3Mz/g"                                                             $SloKJV$format/03_LEV.usfm
   sed -i "s/\\\\mt1/\x5cmt1 Tretja Mojzesova knjiga, imenovana Levitik/g"                        $SloKJV$format/03_LEV.usfm
- 
+
 # NUM
   sed -i "s/\\\\h  /\x5ch 4 Mz/g"                                                                $SloKJV$format/04_NUM.usfm
   sed -i "s/\\\\h1/\x5ch1 Četrta Mojzesova knjiga, imenovana Numeri/g"                           $SloKJV$format/04_NUM.usfm
@@ -818,12 +928,13 @@ echo -E "   --==  Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Peta Mojzesova knjiga, imenovana Devteronomij/g"                     $SloKJV$format/05_DEU.usfm
 
 # JOS
+#  UTF-8   U+00F3  ó   c3 b3  \xC3\xB3
   sed -i "s/\\\\h  /\x5ch Joz/g"                                                                 $SloKJV$format/06_JOS.usfm
-  sed -i "s/\\\\h1/\x5ch1 Jozuetova knjiga/g"                                                    $SloKJV$format/06_JOS.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Jozuetova knjiga/g"                                                $SloKJV$format/06_JOS.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Jozue/g"                                                           $SloKJV$format/06_JOS.usfm
+  sed -i "s/\\\\h1/\x5ch1 J\xC3\xB3zuetova knjiga/g"                                                    $SloKJV$format/06_JOS.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 J\xC3\xB3zuetova knjiga/g"                                                $SloKJV$format/06_JOS.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 J\xC3\xB3zue/g"                                                           $SloKJV$format/06_JOS.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Joz/g"                                                             $SloKJV$format/06_JOS.usfm
-  sed -i "s/\\\\mt1/\x5cmt1 Jozuetova knjiga/g"                                                  $SloKJV$format/06_JOS.usfm
+  sed -i "s/\\\\mt1/\x5cmt1 J\xC3\xB3zuetova knjiga/g"                                                  $SloKJV$format/06_JOS.usfm
 
 # JDG
   sed -i "s/\\\\h  /\x5ch Sod/g"                                                                 $SloKJV$format/07_JDG.usfm
@@ -1099,11 +1210,11 @@ echo -E "   --==  Popravi naslove knjig ==--"
 
 # MRK
   sed -i "s/\\\\h  /\x5ch Mr/g"                                                                  $SloKJV$format/42_MRK.usfm
-  sed -i "s/\\\\h1/\x5ch1 Evangelij po Svetem Marku/g"                                           $SloKJV$format/42_MRK.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Svetem Marku/g"                                       $SloKJV$format/42_MRK.usfm
+  sed -i "s/\\\\h1/\x5ch1 Evangelij po Marku/g"                                                  $SloKJV$format/42_MRK.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Marku/g"                                              $SloKJV$format/42_MRK.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Marko/g"                                                           $SloKJV$format/42_MRK.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Mr/g"                                                              $SloKJV$format/42_MRK.usfm
-  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Svetem Marku/g"                                         $SloKJV$format/42_MRK.usfm
+  sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Marku/g"                                                $SloKJV$format/42_MRK.usfm
 
 # LUK
   sed -i "s/\\\\h  /\x5ch Lk/g"                                                                  $SloKJV$format/43_LUK.usfm
@@ -1351,7 +1462,7 @@ sed -i "s|\(\\\mt1 Prva Mojzesova knjiga\)|\\\pb\n\\\mt1 STARA ZAVEZA\n\\\b\\\b\
               sed -i "s|\(\\\toc3 Mt\)|\1\n\\\mt1 NOVA ZAVEZA\n\\\b\n|g"         $SloKJV$format/41_MAT.usfm
               ;;
           *)  echo "  Celotno Sveto pismo ... "
-              sed -i "s|\(\\\toc3 Mt\)|\1\\n\\\mt1 NOVA ZAVEZA\n\\\b\n|g"                $SloKJV$format/41_MAT.usfm
+              sed -i "s|\(\\\toc3 Mt\)|\1\\n\\\mt1 NOVA ZAVEZA\n\\\b\n|g"        $SloKJV$format/41_MAT.usfm
               ;;
      esac
 #=============================================================================================
@@ -1370,7 +1481,7 @@ sed -i "s/Lepa zaradi lege/Lepa zaradi lege \\\zqrcode|pgpos=\"cr\" size=\"1.7cm
 sed -i "s/da se mazili Najsvetejše./da se mazili Najsvetejše. \\\zqrcode|pgpos=\"cr\" size=\"1.6cm\" data=\"https:\/\/github.com\/msavli\/Ronald_Wyatt\"\\\* /g"  $SloKJV$format/27_DAN.usfm
 # cat $SloKJV$format/27_DAN.usfm |grep -1 "da se mazili Najsvetejše."
 sed -i "s/›Jaz sem Kralj Judov.‹«/›Jaz sem Kralj Judov.‹« \\\zqrcode|pgpos=\"cr\" size=\"1.9cm\" data=\"https:\/\/relojprofetico.blogspot.com\/2010\/07\/yeshua-hanotzri-wmelej-hayehudim.html\"\\\* /g"  $SloKJV$format/44_JHN.usfm
-cat $SloKJV$format/44_JHN.usfm |grep -1 "›Jaz sem Kralj Judov.‹«"
+#cat $SloKJV$format/44_JHN.usfm |grep -1 "›Jaz sem Kralj Judov.‹«"
 #========================================
 
 
@@ -1384,7 +1495,7 @@ ptxprint -c       /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format
 
 #===========  Spredaj doda 6 A4 strani SloKJV PDF-ju  =======================================
 #              to je ze v PTXprint nastavljeno
-#echo -E "   --==  Spredaj doda 6 A4 strani SloKJV PDF-ju ==--"
+#echo -E "   --==  Zadaj doda zemljevide SloKJV PDF-ju ==--"
 #echo "   pdfunite $osis2usfm/uvod/SloKJV_"$format"_prvi_del_knjige.pdf $SloKJV$format/local/ptxprint/SloKJV_"$format"_Default_GEN-REV_ptxp.pdf $SloKJV_Github/SloKJV_"$format"_dva_stolpca.pdf"
 echo  "   Kopira v Github mapo ..."
 #============================================================================================

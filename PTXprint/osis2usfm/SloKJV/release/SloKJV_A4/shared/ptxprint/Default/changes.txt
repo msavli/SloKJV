@@ -1,0 +1,8 @@
+# This (changes.txt) file is for configuration-specific changes (which will not affect other saved configurations).
+# Other generic project-wide changes can be specified in PrintDraftChanges.txt).
+# Note that the 'inlcude' statement on the next line imports those (legacy/generic) project-wide changes.
+include "../../../PrintDraftChanges.txt"
+# ===== RegEx snippets =======
+#   https://github.com/sillsdev/ptx2pdf/blob/master/docs/documentation/snippets.md
+#  Add a rule after the intro (for all books)
+# '(\\c 1 ?\r?\n)' > '\\zrule\\*\r\n\1 '  
