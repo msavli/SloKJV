@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ 
 # Set paths
 SloKJVepubPath=/home/pc/Dokumenti/epub
 osis2usfm=/home/pc/Dokumenti/osis2usfm
@@ -34,6 +34,10 @@ key_pressed_brisanje_temp_files() {
         echo "   Nadaljujem ...."
     fi
 }
+
+#= === Vklop in izklop čakanja ===
+key_pressed_brisanje_temp_files
+#=================================
 
 
 #======= zberi velikost PDF verzije SloKJV =============
@@ -189,10 +193,10 @@ echo " "
 echo "   Pozene GITHUB Desktop?"
 echo " "
 PS5='   Izberi: '
-options_ver=("Ne" "Pozene" "Izhod")
-select opt_ver in "${options_ver[@]}"
-do
-      case $opt_ver in
+options_ver_Git=("Ne" "Pozene" "Izhod")
+select opt_ver_Git in "${options_ver_Git[@]}"
+ do
+      case $opt_ver_Git in
           "Ne")
               echo " "
               echo "   Pa drugic sinhronizacija z Githubom."
@@ -223,8 +227,9 @@ do
              ;;
           *) echo "Napacna izbira $REPLY";;
      esac
-done
+ done
 #==========================================================================
+
 
 cd $osis2usfm
 
@@ -256,21 +261,39 @@ cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "milestone"
 # =============================================
 
 
-# ============= REFERENCE OSTEVILCI ===============================================================
-#   V reference je treba dati vrstico v kateri se nahaja
+# ============= Note da vsakega v svojo vrstico ================
+sed -i "s|<note|\n<note|g"                      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+
+# Ko je <note type="study">             naredi iz   </note>   ->    </noteStudy>
+sed -i 's|<note type=\"study\">\(.*\)<\/note>|<note type=\"study\">\1<\/noteStudy>|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#
+# Ko je <note type="crossReference">    naredi iz   </note>   ->    </noteCrossReference>
+sed -i 's|<note type=\"crossReference\">\(.*\)<\/note>|<note type=\"crossReference\">\1<\/noteCrossReference>|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#
+# Sedaj pa vrstice potegnem nazaj gor
+sed -i ':a;N;$!ba;s/\n<note/<note/g'                     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#
+# Problematičen ker ima v sebi  3 x </note> Eden od reference, dva pa od study opombe...
+#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<verse osisID="Gen.1.29">'
+# ==============================================================
+
+
+# ============= STUDIJSKE OPOMBE ===============================================================
+echo -E "   --==    Spremeni študijske opombe"
+#   V opombo je treba dati vrstico v kateri se nahaja
 #   Veckrat ponovi max je bilo 9x v Kroniski knjigi. Dodal se 2x za vsak slucaj.
 #   <verse osisID="Gen.1.1">    ->  <note type="study">[text.]</note>       ->   \ef + \fr 1.1: \ft [text]\ef*
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2.\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #
 #
 # Še v Psalmih naslove psalmov ostevilci z .0
@@ -278,61 +301,151 @@ sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note t
 #  <title type="psalm" canonical="true"> Vodji<note type="study">Vodji…: ali, Nadzorniku.</note>
 #  <note type="study">    ...   </note>
 #  <title type="chapter">Psalm 32</title>
-sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<title type=\"chapter\">Psalm \1<\/title>\2 \\ef + \\fr \1.0: \\ft [\3]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<title type=\"chapter\">Psalm \1<\/title>\2 \\ef + \\fr \1.0: \\ft [\3]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\[\(.*\)\]<\/note>|<title type=\"chapter\">Psalm \1<\/title>\2 \\ef + \\fr \1.0: \\ft [\3]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\ef + \\fr \1.0: \\ft [\3]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\ef + \\fr \1.0: \\ft [\3]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\ef + \\fr \1.0: \\ft [\3]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #
 #  Potem popravlja     \f
 #                     \f + \fr 1.0: \fk svetlobo…: \ft hebr. med temo in med svetlobo.\f*
-sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\(.*\)<\/note>|<title type=\"chapter\">Psalm \1<\/title>\2 \\f + \\fr \1.0: \\ft \3\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\(.*\)<\/note>|<title type=\"chapter\">Psalm \1<\/title>\2 \\f + \\fr \1.0: \\ft \3\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\(.*\)<\/note>|<title type=\"chapter\">Psalm \1<\/title>\2 \\f + \\fr \1.0: \\ft \3\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\(.*\)<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\f + \\fr \1.0: \\ft \3\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\(.*\)<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\f + \\fr \1.0: \\ft \3\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\(.*\)<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\f + \\fr \1.0: \\ft \3\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 # cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -e '<note type=\"study\">' |grep -e "Psalm"
 #
 #
 #   V reference je treba dati vrstico v kateri se nahaja
 #   Veckrat ponovi max je bilo 9x v Kroniski knjigi. Dodal se 2x za vsak slucaj.
 #   <verse osisID="Gen.1.1">    ->  <note type="study">[text.]</note>       ->   \f + \fr 1.1: \fk svetlobo: \ft [text]\ef*
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\(.*\):\(.*\)<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2.\3: \fk \5 \\ft \6\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\(.*\):\(.*\)<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2.\3: \fk \5 \\ft \6\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\(.*\):\(.*\)<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2.\3: \fk \5 \\ft \6\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\(.*\):\(.*\)<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2.\3: \fk \5 \\ft \6\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\(.*\):\(.*\)<\/note>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2.\3: \fk \5 \\ft \6\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-
-#                               ->  <note type="study">svetlobo…: hebr. med temo in med svetlobo.</note>                                                                         ->   \f + \fr 1.1: \fk svetlobo…: \ft hebr. med temo in med svetlobo.\f*
-
-
-exit
-
-
-
-
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\(.*\): \(.*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2.\3: \\fk \5: \\ft \6\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\(.*\): \(.*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2.\3: \\fk \5: \\ft \6\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\(.*\): \(.*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2.\3: \\fk \5: \\ft \6\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\(.*\): \(.*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2.\3: \\fk \5: \\ft \6\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\(.*\): \(.*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2.\3: \\fk \5: \\ft \6\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#
+#
+#   V 1Tim.c je še ena opomba
+#   <div type="colophon" osisID="1Tim.c"> [Prvo Timóteju je bilo napisano iz Laodikeje, ki je glavno mesto Frigije<note type="study">[Frigija: zahodni del izmed dveh frigijskih provinc.]</note> Pacatiane.]
+#   Kar fixn popravin na zadnjo vrstico v 1Tim.6.21
+sed -i 's|<note type=\"study\">\[\(.*\)\]<\/noteStudy>| \\ef + \\fr 6.21: \\ft [\1]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+# ========================================================================================
 
 
-# Najprej jih polovimo tam, kjer jih je v enen <note> vec
+# ============= TEST ==========
+# Testiram 
+#cat ../GitHub/SloKJV/SloKJV_sword.xml | grep "štiriintrideset let ter zaplodil Pelega"
+#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep 'Gen.11.16'
+echo " <note type=study>"
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<note type="study"' |wc -l
+echo " </noteStudy>"
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<\/noteStudy>' |wc -l
+# ============================
+
+
+
+# ============= REFERENCE ===============================================================
+echo -E "   --==    Spremeni reference"
+# Najprej jih polovimo tam, kjer jih je v enem <note> vec
 #    Veckrat ponovi max je bilo 9x v Ps 62,12. Dodal se 3x za vsak slucaj.
-#    <reference osisRef="Ps.33.6">Ps 33,6</reference>   ->   \x - \xo 1.1: \xt Jer 4,23.\x*
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-
+#    <reference osisRef="Ps.33.6">Ps 33,6</reference>                    ->   \x - \xo 1.1: \xt Ps 33,6\x*
+#    <reference osisRef="1Chr.1.1-1Chr.1.54">1 Krn 1,1-54</reference>    ->   \x - \xo 1.1: \xt 1 Krn 1,1-54\x*
+#                                                                          <reference osisRef="Prov.24.12">          Prg 24,12          </reference>
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep "Ps.62.12"
+#
 # Kaj pa ce je referenca dodana? Da je v Oglatih oklepajih. Ponovimo vajo
 #    Veckrat ponovi max je bilo 13x v Dan.12,1. Dodal se 3x za vsak slucaj.
 #    <reference osisRef="Ps.33.6">[Ps 33,6]</reference>   ->   \x - \xo 1.1: \xt [Jer 4,23]\x*
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\[\([A-Za-z0-9 -]*\)\]<\/reference>| TTT-1 <verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep "Dan.12.1"
+#
+#
+# Ostane še enojna referenca z oglatimi oklepaji
+#   <note type="crossReference"><reference osisRef="Dan.10.13">[Dan 10,13]</reference>;
+#
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"crossReference\"><reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#
+	# Odstrani še končni </note> pri enojni (zadnji) referenci z oglatimi oklepaji
+	#sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"crossReference\"><reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#
+##
+# Ostane še enojna referenca brez oglatih oklepajev
+#   <note type="crossReference"><reference osisRef="Ps.62.12">Dan 10,13</reference>;
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"crossReference\"><reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"crossReference\"><reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"crossReference\"><reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"crossReference\"><reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"crossReference\"><reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"crossReference\"><reference osisRef=\"\([A-Za-z0-9.-]*\)\">\([A-Za-z0-9 ,-.]*\)<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \6 \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 
-pico /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+	# Odstrani še končni </note> pri enojni (zadnji) referenci z oglatimi oklepaji
+	#sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"crossReference\"><reference osisRef=\"\([A-Za-z0-9.-]*\)\">\[\([A-Za-z0-9 ,-.]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \[\6\] \\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#
+# Odstrani </noteCrossReference>
+sed -i 's|<\/noteCrossReference>||g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#
+# ======= TEST ==========
+echo -E "   --==    Testiram"
+# Problematičen ker ima v sebi  3 x </note> Eden od reference, dva pa od study opombe...
+# Primerjajmo prej in sedaj isto vrstico Gen.1.19
+#cat ../GitHub/SloKJV/SloKJV_sword.xml | grep "Bog je rekel: »Glejta, dal sem vama vsako"
+#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<verse osisID="Gen.1.29">'
+#
+#
+# Problematičen ker ima v sebi  3 x </note> Eden od reference, dva pa od study opombe...
+# Primerjajmo prej in sedaj isto vrstico Gen.1.19
+#cat ../GitHub/SloKJV/SloKJV_sword.xml | grep "Tudi tebi, oh Gospod,"
+#
+#  1Cor.15.47
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep 'TTTT'
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep 'Gen.2.7'
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '1Cor.15.47'
+echo "<note type=crossReference>"
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<note type="crossReference">' |wc -l
+# ======================================================================================
+
+
 exit
+
+
+
+
+
+
+
+
+
+
+
 
 
 sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\[\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
@@ -351,6 +464,13 @@ sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <refe
 sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\[\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\[\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\.\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\); <reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\[\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)\]<\/reference>|<verse osisID=\"\1.\2.\3\">\4; \\x - \\xo \2.\3: \\xt \5 \6,\7.\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+
+
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep "Dan.12.1"
+
+exit
+
+
 # Odstrani se podpicje na koncu za brez oglatih oklepaji in z  [ ]
 sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"crossReference\"><reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\[\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)\]<\/reference>;| TTTT0 <verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \5 \6,\7.\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"crossReference\"><reference osisRef=\"\([A-Za-z0-9-]*\).\([0-9]*\).\([0-9]*\)\">\[\([A-Za-z0-9 ]*\) \([0-9]*\),\([0-9]*\)\]<\/reference>| TTTT0 <verse osisID=\"\1.\2.\3\">\4 \\x - \\xo \2.\3: \\xt \5 \6,\7.\\x*|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
