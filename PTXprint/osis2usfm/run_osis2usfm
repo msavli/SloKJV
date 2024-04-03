@@ -475,8 +475,6 @@ echo " "
 # ==============================
 
 
-
-
 # ================= Naslovi Psalmov ====================
 echo -E " "
 echo -E "   --==     Naslovi v Psalmih  Ulovi med  >  Naslov in potem v naslednji vrstici presledki in potem  \</title>\<verse    "
@@ -722,9 +720,18 @@ sed -i ':a;N;$!ba;s|<introduction>|<chapter>1. Poglavje\n<verse>|g'             
 #   Potegne gor 1. vrstico
 sed -i ':a;N;$!ba;s|#UVOD#\n<verse>|#UVOD#|g'                                                                           /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #   Izjema pri Psalmih kjer se Poglavje imenuje Psalm
+
+
+
+
 sed -i ':a;N;$!ba;s|Psalmi_X_Knjiga Psalmov\n<chapter>1. Poglavje|Psalmi_X_Knjiga Psalmov|g'                            /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i ':a;N;$!ba;s|#UVOD#\n<chapter>\\p \\n _P_Psalm 1\n<verse>|#UVOD#|g'                                              /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i ':a;N;$!ba;s|Psalmi_X_Knjiga Psalmov\n<verse>|Psalmi_X_Knjiga Psalmov\n<chapter>\\p \\n _P_Psalm 1\n<verse>|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+
+pico   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+exit
+
+
 #   Odstrani osamelo podpičje ki je ostalo od preobračanja referenc " ; " -> " ; "
 sed -i "s| ; | |g"                                                                                                      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #   Odstrani osamelo podpičje ki je ostalo od preobračanja referenc "(; " -> "( "
@@ -733,6 +740,9 @@ sed -i "s|(; |( |g"                                                             
 sed -i "s|</reference>||g"                                                                                              /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<verse>V zač"
 #========================================================================
+
+
+
 
 
 #=========================================================================
