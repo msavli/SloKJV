@@ -728,9 +728,6 @@ sed -i ':a;N;$!ba;s|Psalmi_X_Knjiga Psalmov\n<chapter>1. Poglavje|Psalmi_X_Knjig
 sed -i ':a;N;$!ba;s|#UVOD#\n<chapter>\\p \\n _P_Psalm 1\n<verse>|#UVOD#|g'                                              /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i ':a;N;$!ba;s|Psalmi_X_Knjiga Psalmov\n<verse>|Psalmi_X_Knjiga Psalmov\n<chapter>\\p \\n _P_Psalm 1\n<verse>|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 
-pico   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-exit
-
 
 #   Odstrani osamelo podpičje ki je ostalo od preobračanja referenc " ; " -> " ; "
 sed -i "s| ; | |g"                                                                                                      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
