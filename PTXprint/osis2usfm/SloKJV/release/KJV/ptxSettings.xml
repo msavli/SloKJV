@@ -6,6 +6,12 @@
     <DefaultFontSize>14</DefaultFontSize>
     <FileNamePostPart>KJV.USFM</FileNamePostPart>
     <FileNameBookNameForm>41MAT</FileNameBookNameForm>
+    <ChapterVerseSeparator>,</ChapterVerseSeparator>
+    <RangeIndicator>-</RangeIndicator>
+    <SequenceIndicator>.</SequenceIndicator>
+    <ChapterRangeSeparator>–</ChapterRangeSeparator>
+    <BookSequenceSeparator>; </BookSequenceSeparator>
+    <ChapterNumberSeparator>; </ChapterNumberSeparator>
     <FileNamePrePart />
     <StyleSheet>usfm.sty</StyleSheet>
     <MinParatextVersion>8.0.63.1</MinParatextVersion>
