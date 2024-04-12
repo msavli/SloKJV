@@ -77,60 +77,66 @@ key_pressed_brisanje_temp_files
 echo "   Izberi velikost PDF verzije SloKJV"
 echo -E "   "
 PS3='Izberi velikost PDF verzije SloKJV: '
-options=("A4" "US_Trade" "A5" "A5_NZ_BIG" "A5_NZ_Ps" "A5_NZ_prostor" "SLO-KJV" "Test" "FRTLOCAL_SFM" "PTXPRINT_STY" "Izhod")
+options=("A4" "US_Trade" "A5" "A5_NZ_BIG" "A5_NZ_Ps" "A5_NZ_prostor" "SLO-KJV" "Test" "FRTLOCAL_SFM" "PTXPRINT_STY" "PTXPRINT_CFG" "Izhod")
 select opt in "${options[@]}"
 do
     case $opt in
         "A4")
-            echo "   Izbral si A4."
+            echo "   Izbral si: A4."
             format=A4
             break
             ;;
         "US_Trade")
-            echo "   Izbral si US_Trade."
+            echo "   Izbral si: US_Trade."
             format=US_Trade
             break
             ;;
         "A5")
-            echo "   Izbral si A5."
+            echo "   Izbral si: A5."
             format=A5
             break
             ;;
         "A5_NZ_BIG")
-            echo "   Izbral si A5_NZ_BIG."
+            echo "   Izbral si: A5_NZ_BIG."
             format=A5_NZ_BIG
             break
             ;;
         "A5_NZ_Ps")
-            echo "   Izbral si A5_NZ_Ps."
+            echo "   Izbral si: A5_NZ_Ps."
             format=A5_NZ_Ps
             break
             ;;
         "A5_NZ_prostor")
-            echo "   Izbral si A5_NZ_prostor."
+            echo "   Izbral si: A5_NZ_prostor."
             format=A5_NZ_prostor
             break
             ;;
         "SLO-KJV")
-            echo "   Izbral si SLO-KJV."
+            echo "   Izbral si: SLO-KJV."
             format=SLO-KJV
             break
             ;;
         "Test")
-            echo "   Izbral si Test."
+            echo "   Izbral si: Test."
             format=Test
             break
             ;;
         "FRTLOCAL_SFM")
-            echo "   Izbral si Urejanje FRTlocal.sfm datotek."
+            echo "   Izbral si: Urejanje FRTlocal.sfm datotek."
             format=FRTLOCAL_SFM
             find SloKJV/ -type f -name "FRTlocal.sfm" -exec pico {} \;
             break
             ;;
         "PTXPRINT_STY")
-            echo "   Izbral si Urejanje ptxprint.sty datotek."
+            echo "   Izbral si: Urejanje ptxprint.sty datotek."
             format=PTXPRINT_STY
             find SloKJV/ -type f -name "ptxprint.sty" -exec pico {} \;
+            break
+            ;;
+        "PTXPRINT_CFG")
+            echo "   Izbral si: Urejanje ptxprint.cfg datotek."
+            format=PTXPRINT_STY
+            find SloKJV/ -type f -name "ptxprint.cfg" -exec pico {} \;
             break
             ;;
         "Izhod")
@@ -308,17 +314,17 @@ echo -E "   --==    Spremeni študijske opombe"
 #   V opombo je treba dati vrstico v kateri se nahaja
 #   Veckrat ponovi max je bilo 9x v Kroniski knjigi. Dodal se 2x za vsak slucaj.
 #   <verse osisID="Gen.1.1">    ->  <note type="study">[text.]</note>       ->   \ef + \fr 1.1: \ft [text]\ef*
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2,\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2,\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2,\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2,\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2,\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2,\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2,\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2,\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2,\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2,\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\ef + \\fr \2,\3: \\ft [\5]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #
 #
 # Še v Psalmih naslove psalmov ostevilci z .0
@@ -326,12 +332,13 @@ sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note t
 #  <title type="psalm" canonical="true"> Vodji<note type="study">Vodji…: ali, Nadzorniku.</note>
 #  <note type="study">    ...   </note>
 #  <title type="chapter">Psalm 32</title>
-sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\ef + \\fr \1,0: \\ft [\3]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\ef + \\fr \1,0: \\ft [\3]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\ef + \\fr \1,0: \\ft [\3]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\f + \\fr \1,0: \\ft [\3]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\f + \\fr \1,0: \\ft [\3]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\f + \\fr \1,0: \\ft [\3]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #
 #  Potem popravlja     \f
 #                     \f + \fr 1.0: \fk svetlobo…: \ft hebr. med temo in med svetlobo.\f*
+#       Te sem popravil iz \f -> \ef   da se izpisejo v dveh stolpcih
 sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\(.*\)<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\f + \\fr \1,0: \\ft \3\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\(.*\)<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\f + \\fr \1,0: \\ft \3\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"study\">\(.*\)<\/noteStudy>|<title type=\"chapter\">Psalm \1<\/title>\2 \\f + \\fr \1,0: \\ft \3\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
@@ -341,6 +348,7 @@ sed -i 's|<title type=\"chapter\">Psalm \([0-9]*\)<\/title>\(.*\)<note type=\"st
 #   V reference je treba dati vrstico v kateri se nahaja
 #   Veckrat ponovi max je bilo 9x v Kroniski knjigi. Dodal se 2x za vsak slucaj.
 #   <verse osisID="Gen.1.1">    ->  <note type="study">[text.]</note>       ->   \f + \fr 1.1: \fk svetlobo: \ft [text]\ef*   xxx tukaj popravil \ef* -> \f*
+#       Te sem popravil iz \f -> \ef   da se izpisejo v dveh stolpcih
 sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\(.*\): \(.*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\fk \5: \\ft \6\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\(.*\): \(.*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\fk \5: \\ft \6\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\(.*\): \(.*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\fk \5: \\ft \6\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
@@ -351,7 +359,7 @@ sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note t
 #   V 1Tim.c je še ena opomba
 #   <div type="colophon" osisID="1Tim.c"> [Prvo Timóteju je bilo napisano iz Laodikeje, ki je glavno mesto Frigije<note type="study">[Frigija: zahodni del izmed dveh frigijskih provinc.]</note> Pacatiane.]
 #   Kar fixn popravin na zadnjo vrstico v 1Tim.6.21
-sed -i 's|<note type=\"study\">\[\(.*\)\]<\/noteStudy>| \\ef + \\fr 6.21: \\ft [\1]\\ef*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<note type=\"study\">\[\(.*\)\]<\/noteStudy>| \\f + \\fr 6.21: \\ft [\1]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 # ========================================================================================
 #
 #
@@ -364,6 +372,19 @@ cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<note type="study"' |w
 echo -e "   --==    Število </noteStudy>"
 cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<\/noteStudy>' |wc -l
 # ---------------------------------------------------------------------------------------
+#
+# ---------------------------------------------------------------------------------------
+# Ce je A4 Biblija, potem se vse \f spremenijo v \ef zato da so opombe v dveh stolpcih.
+      case $format in
+           "A4")
+               echo "   Spremeni:  \f -> \ef"
+               sed -i 's|\\f |\\ef |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               sed -i 's|\\f* |\\ef* |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               ;;
+           *)  echo "   ."
+               echo "   Nic ne naredi."
+               ;;
+      esac
 # =======================================================================================
 
 
@@ -932,8 +953,9 @@ echo -E "   --==    SELAH    "
 #    Pridela se lahko nazaj, ker je to samo v knjigi Ps in Hab.
 echo -E "               \qs  \qs*    "
 echo -E " "
-sed -i "s| Sela.| \\qs Sela. \\qs*|g"           $SloKJV$format/19_PSA.usfm
-sed -i "s| Sela.| \\qs Sela. \\qs*|g"           $SloKJV$format/35_HAB.usfm
+#sed -i "s| Sela.| \\\qs Sela. \\\qs*|g"           $SloKJV$format/19_PSA.usfm
+#sed -i "s| Sela.| \\\qs Sela. \\\qs*|g"           $SloKJV$format/35_HAB.usfm
+
 cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "\qs"
 cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -F 'type="selah">'
 #=============================================================
@@ -965,7 +987,7 @@ sed -i "s/#rk#/\\\\bd\* /g"                             $SloKJV$format/*.usfm
 sed -i "s/\\\\iex //g"                                              $SloKJV$format/19_PSA.usfm
 # Popravi vse uvode vseh datotek
 sed -i ':a;N;$!ba;s|\\c 1\n\\p\n\\p \n\\v 1 |\\imt1\n\\iex |g'      $SloKJV$format/*.usfm
-sed -i ':a;N;$!ba;s|#UVOD#|\n\\c 1\n\\p\n\\p \n\\v 1 |g'            $SloKJV$format/*.usfm
+sed -i ':a;N;$!ba;s|#UVOD#|\n\\c 1\n\\p \n\\v 1 |g'            $SloKJV$format/*.usfm
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "xxxxx"
 #head -12 /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release/SloKJV_A4/42_MRK.usfm
 #==========================================================
@@ -1594,12 +1616,46 @@ sed -i "s|\(\\\mt1 Prva Mojzesova knjiga\)|\\\pb\n\\\mt1 STARA ZAVEZA\n\\\b\\\b\
      esac
 #=============================================================================================
 
-#==============================================================
 
 #========== Popravi ALEF ===============
-sed -i "s|\(\\\c 119\)|\1\n\\\qa ALEF א|g"                                                     $SloKJV$format/19_PSA.usfm
-# cat $SloKJV$format/19_PSA.usfm |grep -2 "ALEF"
-#========================================
+sed -i "s|\(\\\c 119\)|\1\n\\\qa ALEF א|g"                                      $SloKJV$format/19_PSA.usfm
+#    Odstrani \p
+#    \p   pri Psalmu 119 na začetku in ga zamenja z enojnim  \p
+# sed -i ':a;N;$!ba;s|\\\p\n\\\p \n||g'                             $SloKJV$format/19_PSA.usfm
+cat $SloKJV$format/19_PSA.usfm |grep -4 "ALEF"
+	#==========================================================================
+	# Tole spodaj sicer ujame hebrejsko crko in jo ulovi, toda se ne uporablja.
+	# Hebrejske crke Alef podvoji v prvi vrstici   
+	#   \c 119
+	#   \qa ALEF א
+	#   \p
+	#   \v 1
+	#
+	#   Spremeni  v 
+	#
+	#   \c 119
+	#   \qa ALEF א
+	#   \p
+	#   \qac א \qac* \v 1
+	#
+sed -i ':a;N;$!ba;s|\\\qa \([A-Z]*\) \([א-ת]\)\n\\\p\n|\\\qa \1 \2\n\x5cp\n\2 |g'   $SloKJV$format/19_PSA.usfm
+	#      Jih zamenja in jim da slog \qac
+	#      א \v 1   ->     \v 1 \qac א \qac* 
+sed -i "s|\([א-ת]\) \\\v \([0-9]*\)|\\\qac \1 \\\qac\* \\\v \2|g"      $SloKJV$format/19_PSA.usfm
+	#========================================
+# Manualno Doda črko  ALEF א, ker je takoj za uvodom in  ŠIN ש  in  REŠ ר   ker ju SED nekje izgubi.
+sed -i ':a;N;$!ba;s|א \\\p \n||g'   $SloKJV$format/19_PSA.usfm
+sed -i "s|\\\v 1 Blagoslovljeni|\\\qac א \\\qac\* \\\v 1 Blagoslovljeni|g"                                                    $SloKJV$format/19_PSA.usfm
+sed -i "s|\\\v 161 Princi so me preganjali brez vzroka|\\\qac ש \\\qac\* \\\v 161 Princi so me preganjali brez vzroka|g"      $SloKJV$format/19_PSA.usfm
+sed -i "s|\\\v 153 Preudari mojo stisko in me osvobodi|\\\qac ר \\\qac\* \\\v 153 Preudari mojo stisko in me osvobodi|g"      $SloKJV$format/19_PSA.usfm
+#
+# Pobrise vse vrstice, ki se zacnejo z \qa  (ALEF, BET, GIMEL,....)
+sed -i '/^\\qa /d'   $SloKJV$format/19_PSA.usfm
+#
+#cat $SloKJV$format/19_PSA.usfm |grep -3 " ALEF "
+#cat $SloKJV$format/19_PSA.usfm |grep -3 " ŠIN "
+#cat $SloKJV$format/19_PSA.usfm |grep -3 " REŠ "
+#==============================================
 
 
 #========== Doda QR kodo ===============
