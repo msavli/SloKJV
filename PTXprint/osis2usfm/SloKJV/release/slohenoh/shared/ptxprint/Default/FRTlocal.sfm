@@ -32,7 +32,7 @@
 \im CC BY-NC-ND PRIZNANJE AVTORSTVA – NEKOMERCIALNO – BREZ PREDELAV
 \im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo. https://creativecommons.org/licenses/by-nc-nd/4.0/
 \zccimg by-nc-nd|size="col" pgpos="pc" scale="0.15"\*
-\zbl|3\*
+\zbl|1\*
 \ip Prva izdaja
 \im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2023
 \im Priprava besedila: Marjan Šavli (PTXPrint)
@@ -44,9 +44,8 @@
 \zqrcode|pgpos="cr" size="1.2cm" data="https://github.com/msavli/SloHenoh/"\*
 \zbl|1\*
 \ip CIP       xxxxxxxxxxxxxxxxxxxxxxxxxx
-\zbl|3\*
-\ip BREZPLAČEN IZVOD – NI ZA PRODAJO
 \zbl|1\*
+\ip BREZPLAČEN IZVOD – NI ZA PRODAJO
 \pb
 \zEmptyPage
 \zEmptyPage
@@ -63,7 +62,7 @@
 \ip Prosiva Boga, da bi bila tudi vam ta knjiga v blagoslov in spodbudo pri hoji z Jezusom.
 \ipr Prevajalca
 \pb
-\zEmptyPage
+\zNeedOddPage
 \rem -------------------------------------------------------------------------
 \h Jezus reši me!
 \ipi Bog je že dokazal Svojo ljubezen do tebe osebno. Kajti Bog je tako ljubil svet (tebe), da je dal Svojega edinorojenega Sina, da kdorkoli veruje vanj, (ti?) se ne bo pogubil, temveč bo imel večno življenje.\vp(Jn 3,16)\vp*

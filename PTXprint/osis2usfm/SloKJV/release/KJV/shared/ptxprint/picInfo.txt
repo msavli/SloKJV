@@ -10,10 +10,56 @@ picclear = unknown
 picaccept = Unknown
 picreverse = OK
 approved = false
+approved_by = 
+approval_date = 
 
 [map_exodus_and_canaan_conquest_bw]
 picclear = yes
 picaccept = Unknown
 picreverse = OK
 approved = false
+
+[1]
+picclear = unknown
+picaccept = Unknown
+picreverse = OK
+approved = false
+
+[map_israel_new_testament_bw]
+picclear = yes
+picaccept = Culturally Appropriate
+picreverse = OK
+approved = false
+approved_by = 
+approval_date = 
+
+[map_paul_journeys_bw]
+picclear = unknown
+picaccept = Unknown
+picreverse = OK
+approved = false
+
+[map_ancient_world_patriarchs_bw_90]
+picclear = yes
+picaccept = Culturally Appropriate
+picreverse = OK
+approved = true
+approved_by = 
+approval_date = 
+
+[map_exodus_and_canaan_conquest_bw_90]
+picclear = yes
+picaccept = Culturally Appropriate
+picreverse = OK
+approved = true
+approved_by = 
+approval_date = 
+
+[map_paul_journeys_bw_90]
+picclear = yes
+picaccept = Culturally Appropriate
+picreverse = OK
+approved = false
+approved_by = 
+approval_date = 
 

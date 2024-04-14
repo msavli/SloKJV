@@ -77,10 +77,15 @@ key_pressed_brisanje_temp_files
 echo "   Izberi velikost PDF verzije SloKJV"
 echo -E "   "
 PS3='Izberi velikost PDF verzije SloKJV: '
-options=("A4" "US_Trade" "A5" "A5_NZ_BIG" "A5_NZ_Ps" "A5_NZ_prostor" "SLO-KJV" "Test" "FRTLOCAL_SFM" "PTXPRINT_STY" "PTXPRINT_CFG" "Izhod")
+options=("Test" "A4" "US_Trade" "A5" "A5_NZ_BIG" "A5_NZ_Ps" "A5_NZ_prostor" "SLO-KJV" "FRTLOCAL_SFM" "PTXPRINT_STY" "PTXPRINT_CFG" "Izhod")
 select opt in "${options[@]}"
 do
     case $opt in
+        "Test")
+            echo "   Izbral si: Test."
+            format=Test
+            break
+            ;;
         "A4")
             echo "   Izbral si: A4."
             format=A4
@@ -114,11 +119,6 @@ do
         "SLO-KJV")
             echo "   Izbral si: SLO-KJV."
             format=SLO-KJV
-            break
-            ;;
-        "Test")
-            echo "   Izbral si: Test."
-            format=Test
             break
             ;;
         "FRTLOCAL_SFM")
@@ -377,6 +377,11 @@ cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<\/noteStudy>' |wc -l
 # Ce je A4 Biblija, potem se vse \f spremenijo v \ef zato da so opombe v dveh stolpcih.
       case $format in
            "A4")
+               echo "   Spremeni:  \f -> \ef"
+               sed -i 's|\\f |\\ef |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               sed -i 's|\\f* |\\ef* |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               ;;
+           "Test")
                echo "   Spremeni:  \f -> \ef"
                sed -i 's|\\f |\\ef |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
                sed -i 's|\\f* |\\ef* |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
@@ -879,9 +884,11 @@ rm     /home/pc/Dokumenti/osis2usfm/40____.usfm
 
 
       # ======= Kreira datoteko z dodatki - zemljevidi maps mapami =============
+      #  https://ubsicap.github.io/usfm/peripherals/back.html
       touch A1_BAK.usfm
 		echo "\id BAK"                 >> A1_BAK.usfm
 		echo "\h Dodatki"              >> A1_BAK.usfm
+		echo "\periph Kazalo zemljevidov|id=\"maps\""        >> A1_BAK.usfm
 		echo "\toc1 Zemljevidi"        >> A1_BAK.usfm
 		echo "\toc2 "                  >> A1_BAK.usfm
 		echo "\toc3 "                  >> A1_BAK.usfm
@@ -893,13 +900,47 @@ rm     /home/pc/Dokumenti/osis2usfm/40____.usfm
 		echo "\zfiga|p003\*"           >> A1_BAK.usfm
                 echo "\pb"                     >> A1_BAK.usfm
 		echo "\zfiga|p004\*"           >> A1_BAK.usfm
-      # cat pico A1_BAK.usfm
+      # cat A1_BAK.usfm
+      # ========================================================================
+
+
+      # ======= Kreira datoteko z Introduction Matter =============
+      #   https://ubsicap.github.io/usfm/identification/books.html
+      #   https://ubsicap.github.io/usfm/peripherals/index.html
+      #   https://ubsicap.github.io/usfm/peripherals/intros.html
+      touch A7_INT.usfm
+		echo "\id INT"                                   >> A7_INT.usfm
+                echo "\periph Uvod v Staro zavezo"               >> A7_INT.usfm
+                echo "\mt1 Uvod v Staro zavezo"                  >> A7_INT.usfm
+                echo "\p Stara zaveza je zapis......"            >> A7_INT.usfm
+                # echo "\periph History Introduction"            >> A7_INT.usfm
+                # echo "\s1 Historical Books"                    >> A7_INT.usfm
+                # echo "\p The books in thi..."                  >> A7_INT.usfm
+                # echo "\periph Poetry Introduction"             >> A7_INT.usfm
+                # echo "\s1 Books of Wisdom and Poetry"          >> A7_INT.usfm
+                # echo "\periph Prophecy Introduction"           >> A7_INT.usfm
+                # echo "\s1 The Prophets"                        >> A7_INT.usfm
+                # echo "\periph Deuterocanon Introduction"       >> A7_INT.usfm
+                # echo "\mt1 Deuterocanonicals/Apocrypha"        >> A7_INT.usfm
+                # echo "\p Most of the books g...."              >> A7_INT.usfm
+                echo "\periph Uvod v Novo zavezo"                >> A7_INT.usfm
+                echo "\mt1 Nova zaveza"                          >> A7_INT.usfm
+                echo "\p Knjige Noveze so napisali učenci Jezusa Kristusa....."         >> A7_INT.usfm
+                # echo "\periph Gospels Introduction"            >> A7_INT.usfm
+                # echo "\s1 Gospels and Acts"                    >> A7_INT.usfm
+                # echo "\periph Epistles Introduction"           >> A7_INT.usfm
+                # echo "\s1 The Letters of Paul"                 >> A7_INT.usfm
+                # echo "\periph Letters Introduction"            >> A7_INT.usfm
+                # echo "\s1 General Letters and Revelation"      >> A7_INT.usfm
+      cat A7_INT.usfm
       # ========================================================================
 
 
       #============== Da ni v SLO-KJV med zemljevidi praznih strani ========================
       case $format in
            "SLO-KJV")
+
+
                echo -E "   --==    Pobrise \pb da ni med zemljevidi praznih strani"
                sed -i "s|\\\\pb||g"             A1_BAK.usfm
                ;;

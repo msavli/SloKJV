@@ -35,8 +35,10 @@ pubusage = Clarification
 pubclear = yes
 pubnoise = no
 pubaccept = Culturally Appropriate
-approved = false
+approved = true
 notes = 
+approved_by = 
+approval_date = 
 
 [map_paul_journeys_bw]
 pubusage = Unknown
@@ -49,9 +51,9 @@ notes =
 [map_ancient_world_patriarchs_bw_90]
 pubusage = Clarification
 pubclear = yes
-pubnoise = no
+pubnoise = yes
 pubaccept = Culturally Appropriate
-approved = true
+approved = false
 notes = 
 approved_by = 
 approval_date = 
@@ -61,7 +63,7 @@ pubusage = Clarification
 pubclear = yes
 pubnoise = no
 pubaccept = Culturally Appropriate
-approved = true
+approved = false
 notes = 
 approved_by = 
 approval_date = 
@@ -71,6 +73,8 @@ pubusage = Clarification
 pubclear = yes
 pubnoise = no
 pubaccept = Culturally Appropriate
-approved = false
+approved = true
 notes = 
+approved_by = 
+approval_date = 
 
