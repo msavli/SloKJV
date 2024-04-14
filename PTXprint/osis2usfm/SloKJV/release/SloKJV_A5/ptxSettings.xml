@@ -6,6 +6,12 @@
     <DefaultFontSize>9,5</DefaultFontSize>
     <FileNamePostPart>.usfm</FileNamePostPart>
     <FileNameBookNameForm>41_MAT</FileNameBookNameForm>
+    <ChapterVerseSeparator>,</ChapterVerseSeparator>
+    <RangeIndicator>-</RangeIndicator>
+    <SequenceIndicator>.</SequenceIndicator>
+    <ChapterRangeSeparator>–</ChapterRangeSeparator>
+    <BookSequenceSeparator>; </BookSequenceSeparator>
+    <ChapterNumberSeparator>; </ChapterNumberSeparator>
     <FileNamePrePart />
     <MinParatextVersion>8.0.63.1</MinParatextVersion>
     <FullName>Sveto pismo kralja Jakoba (1769)</FullName>
