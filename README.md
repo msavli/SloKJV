@@ -23,7 +23,7 @@ Viri: [Angleško besedilo](http://www.crosswire.org/~dmsmith/kjv2006/), [Opombe 
 
 Prevajanje je potekalo v programu [Notepad++](https://notepad-plus-plus.org/) kjer je slovensko besedilo in pod njim angleško. Potem se s skripto to pretvori v OSIS obliko - XML datoteko, ki je objavljena na tej strani. XML datoteko se potem pretvori v Sword modul, ki je dostopen na spletni strani [Crosswire.org](http://www2.crosswire.org/sword/modules/).
 
-### Datoteke programi in naprave:
+### Datoteke, programi in naprave:
 Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [Preglednica programov na crosswire.org za Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
  #### Izvorna datoteka 
@@ -86,7 +86,7 @@ Sources: [English text](http://www.crosswire.org/~dmsmith/kjv2006/), [Notes and 
  
 Translation takes place in [Notepad++](https://notepad-plus-plus.org/) where the Slovenian text is below the English text for each verse. Then with a script this is converted to OSIS format - the XML file that is published on this page. The XML file is then converted into a Sword module, which is accessible on the [Crosswire.org](http://www2.crosswire.org/sword/modules/). 
 
-### Files programs and devices:
+### Files, programs and devices:
 You can read the Bible using one of these devices or programs:
   - [Crosswire.org list of programs for Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
   #### Source file
