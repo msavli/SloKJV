@@ -1,6 +1,6 @@
 # SloKJV
 ## Sveto pismo kralja Jakoba (1769) v slovenščini
-
+![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_400.png?raw=true "400e")
 
 ## *Slovensko / Slovenščina*
 
@@ -54,12 +54,9 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
 
 ### Papirni izvod SloKJV
  Sveto pismo je tiskano z digitalnim tiskom na 60g papir z broširano vezavo. Sta dva založnika, toda isti digitalni stroji, na katerih se 800 stranska Sveta pisma tiskajo (lulu.com).
+ ![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_150.png?raw=true "150e")
  - Hojkar-Šavli: Do meseca meseca maja 2024 bo predvidoma dobava stekla. Naročite ga s [klikom](mailto:marjan.savli@gmail.com?subject=SloKJV–Narocilo&body=%0ASpostovani%21%0A%0ANa%20voljo%20so%20brosirane%20vezave%3A%0A%0A%20%2D%20%281%29%20SloKJV%20%28A4%2C%20%20trde%20%20platnice%2C%20velikost%20pisave%2012%2C5%29%0A%20%2D%20%282%29%20SloKJV%20%28A4%2C%20%20mehke%20platnice%2C%20velikost%20pisave%2012%2C5%29%0A%20%2D%20%283%29%20SloKJV%20%28A5%2B%2C%20trde%20%20platnice%2C%20velikost%20pisave%2010%29%0A%20%2D%20%284%29%20SloKJV%20%28A5%2B%2C%20mehke%20platnice%2C%20velikost%20pisave%2010%29%0A%20%2D%20%285%29%20SloKJV%20%28A5%2C%20%20mehke%20platnice%2C%20velikost%20pisave%209%2C4%29%0A%20%2D%20%286%29%20SloKJV%20%28A5%2C%20%20mehke%20%20platnice%2C%20velikost%20pisave%209%2C4%29%0A%20%2D%20%287%29%20SloKJV%20Ps%2BNz%20%28A5%2C%20mehke%20platnice%2C%20velikost%20pisave%209%2C4%29%0A%20%2D%20%288%29%20SloKJV%20Ps+NZ%20%28A5%2C%20trde%20%20platnice%2C%20velikost%20pisave%209%2C4%29%0A%0A%20Narocam%201%20%28en%29%20kos%20papirni%20izvod%20SloKJV%20z%20zaporedno%20stevilko%3A%20%5F%5F%5F%5F%5F%2C%20s%20ceno%200%20EUR%20%28cena%20vkljucuje%20dostavo%29%2E%0A%20%0A%20%20Moj%20naslov%3A%0A%20%20%5F%5F%5F%5F%5F%5F%5F%5F%0A%20%20%5F%5F%5F%5F%5F%5F%5F%5F%0A%20%20%5F%5F%5F%5F%5F%5F%5F%5F%0A%0A%0A%0AHvala%20za%20narocilo%2E%0AKmalu%20boste%20na%20e%2Dmail%20prejeli%20potrditev%20posiljanja%20paketa%20in%20potem%20prejmete%20se%20paket%2E%0A%0AJezus%20je%20GOSPOD%2E%0A%0AMarjan%20Savli%20in%20Barbara%20Hojkar%20Savli%0AMestni%20trg%2011%0ASI%2D4220%20Skofja%20Loka%OASlovenia%2FEurope%0Aemail%3A%20marjan%2Esavli%40gmail%2Ecom).
  - [Nainoia Inc.](https://nainoia-inc.signedon.net/) Anionian verzija z [mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/paperback/product-1y5gpyry.html), s [trdimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/hardcover/product-j25j7z.html) in [Nova Zaveza z mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769-new-testament/paperback/product-6k4jeq.html).
-![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_100.png?raw=true "100e")
-![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_150.png?raw=true "150e")
-![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_200.png?raw=true "200e")
-![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_400.png?raw=true "400e")
 
 ### Predlogi za izboljšavo
  Če ste v prevodu našli kako napako ali predlog za izboljšavo, jo lahko [sporočite](mailto:marjan.savli@gmail.com?subject=SloKJV–predlog&body=Predlagam...).
