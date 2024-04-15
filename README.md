@@ -6,7 +6,7 @@
 
 >Projekt prevoda **Sveto pismo kralja Jakoba** v slovenski jezik je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Sedaj poteka lektoriranje in odprava napak.
 >
->Prevedene knjige: Geneza, Eksodus, Levitik, Numeri, Devteronomij, Jozue, Sodniki, Ruta, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Nehemija, Estera, Job, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
+>Prevedene knjige: Geneza do Malahija in celotna Nova Zaveza.
 >
 > ### Posebnosti prevoda:
 >
@@ -23,25 +23,25 @@
 >
 >Prevajanje je potekalo v programu [Notepad++](https://notepad-plus-plus.org/) kjer je slovensko besedilo in pod njim angleško. Potem se s skripto to pretvori v OSIS obliko - XML datoteko, ki je objavljena na tej strani. XML datoteko se potem pretvori v Sword modul, ki je dostopen na spletni strani [Crosswire.org](http://www2.crosswire.org/sword/modules/).
 >
+> ### Datoteke programi in naprave:
 > Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
-> - [Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program) Za operacijski sistem Windows in Linux predlagam program [Xiphos](https://xiphos.org/), za Android naprave [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity), za okolje iPhone pa [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
-> - [Windows e-sword](https://www.e-sword.net/) ([modul](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) je potrebno ročno namestiti)
-> - [ePUB](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, Kobo, e-bralniki)
-> - [VideoPsalm](https://myvideopsalm.weebly.com/)
-> - online [Stara Zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [Nova zaveza](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New)
+> - [Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program) 
+> - Windows in Linux [Xiphos](https://xiphos.org/)
+> - Android naprave [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) Sicer je namestitev modula avtomatična. Za ročno namestitev datoteko `Android_data_net.bible.android.activity_files.zip` zazpakirati v mapo \\Android\data\net.bible.android.activity\files)
+> - iPhone [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
+> - [Windows e-sword](https://www.e-sword.net/) ([modul](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) `SloKJV.bblx` odložiti v mapo: c:\Program Files (x86)\e-Sword)
+> - [Mysword for Android](https://www.mysword.info/download-mysword) ([modul](https://github.com/msavli/SloKJV/blob/master/SloKJV.bbl.mybible) `SloKJV.bbl.mybible` je potrebno ročno namestiti)
+> - [MyBible](https://mybible.zone/) ([modul](https://github.com/msavli/SloKJV/blob/master/SloKJV.sqlite3) `SloKJV.sqlite3`je potrebno ročno namestiti)
+> - Java telefoni [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) Za stare Java MIDP 2.0 mobilne naprave; GoBible SLO-ENG KJV z opombami in referencami; Datoteki `slokjv.jad` in `slokjv.jar` je potrebno ročno namestiti)
+> - [Palm Bible+](https://palmbibleplus.sourceforge.net/) ([modul](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdb) `SloKJV.pdb` je potrebno ročno namestiti)
+> - [ePUB](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (`SloKJV.epub` ePUB datoteka za Kindle, KoboPDF, e-bralnike)
+> - [VideoPsalm](https://myvideopsalm.weebly.com/) `SloEngKJV_VideoPsalm_sword.xml` (Za uvoz v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini)
+> - online [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
+> - online [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
 > - [PDF - en stolpec]( https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) mi je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti PDF verzijo.)
-> - PDF - dva stolpca,
-> - stari telefoni, ki podpirajo Java MIDP 2.0 - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
->
-> ### Opis datotek:
 > - `SloKJV_sword.xml` (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV)
 > - `slokjv.conf` (konfiguracija za SloKJV_sword.xml)
-> - `SloKJV*.pdf` (PDF datoteke)
-> - `SloKJV.epub` (ePUB datoteka za Kindle, KoboPDF, e-bralnike)
-> - `slokjv.jad` in `slokjv.jar` (za stare Java MIDP 2.0 mobilne naprave; GoBible SLO-ENG KJV z opombami in referencami)
-> - `SloEngKJV_VideoPsalm_sword.xml` (Za uvoz v program VideoPsalm, ki se uporablja za prezentacijo v evangelijskih cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini)
-> - `Android_data_net.bible.android.activity_files.zip` (**Ročna namestitev na Android** napravo z nameščenim programom [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity). Razpakirati v mapo \\Android\data\net.bible.android.activity\files na vaši Android napravi)
-> - `SloKJV.bblx` ([e-SWORD](https://www.e-sword.net/) datoteka. Odložiti v mapo: c:\Program Files (x86)\e-Sword )
+> - `SloKJV*.pdf` (PDF datoteke za tisk)
 >
 > ### Papirni izvod SloKJV
 > Sveto pismo je tiskano z digitalnim tiskom na 60g papir z broširano vezavo. Sta dva založnika, toda isti digitalni stroji, na katerih se 800 stranska Sveta pisma tiskajo (lulu.com).
@@ -58,7 +58,7 @@
 
 >Translation project **King James Version** Bible in to Slovenian language since May 2010 to May 2022. 66 books have been translated. Since then, proofreading and corrections have been made.
 >
->Translated books: Genesis, Exodus, Leviticus, Deuteronomy, Numbers, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Salomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi and whole New Testament.
+>Translated books: Old Testament (Genesis to Malachi) and whole New Testament.
 >
 > ### Translation features:
 >
@@ -75,25 +75,25 @@
 > 
 >Translation takes place in [Notepad++](https://notepad-plus-plus.org/) where the Slovenian text is below the English text for each verse. Then with a script this is converted to OSIS format - the XML file that is published on this page. The XML file is then converted into a Sword module, which is accessible on the [Crosswire.org](http://www2.crosswire.org/sword/modules/). 
 >
->SloKJV Bible can be read using one of these operating system or devices:
-> - [Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program) For the Windows and Linux operating system I suggest the program [Xiphos](https://xiphos.org/), for Android devices [AndBible](https://play.google.com/store/apps/details?id=net.bible .android.activity), and for the iPhone environment [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
-> - [Windows e-sword](https://www.e-sword.net/) ([modul](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) must be installed manually)
-> - [ePUB](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, Kobo, e-readers)
-> - [VideoPsalm](https://myvideopsalm.weebly.com/)
-> - online [Old Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/Old), [New Testament](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible/New)
-> - [PDF - one column](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) helped me with his project [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) to make PDF version.)
-> - PDF - two columns
-> - old phones with Java MIDP 2.0 support - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar).
->
-> ### Files description:
-> - `SloKJV_sword.xml` (main translation file; XML SWORD format for [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV)
+> ### Files programs and devices:
+> You can read the Bible using one of these devices or programs:
+> - [Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
+> - Windows on Linux [Xiphos](https://xiphos.org/)
+> - Android devices [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) Otherwise, the installation of the module is automatic. To manually install the file `Android_data_net.bible.android.activity_files.zip` in folder \\Android\data\net.bible.android.activity\files)
+> - iPhone [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
+> - [Windows e-sword](https://www.e-sword.net/) ([module](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) `SloKJV. bblx` put to the folder: c:\Program Files (x86)\e-Sword)
+> - [Mysword for Android](https://www.mysword.info/download-mysword) ([module](https://github.com/msavli/SloKJV/blob/master/SloKJV.bbl.mybible) ` SloKJV.bbl.mybible` must be installed manually)
+> - [MyBible](https://mybible.zone/) ([module](https://github.com/msavli/SloKJV/blob/master/SloKJV.sqlite3) `SloKJV.sqlite3' needs to be installed manually)
+> - Java phones [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) For old Java MIDP 2.0 mobile devices; GoBible SLO-ENG KJV with notes and references; The files `slokjv.jad` and `slokjv.jar` need to be installed manually)
+> - [Palm Bible+](https://palmbibleplus.sourceforge.net/) ([module](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdb) `SloKJV.pdb' is required install manually)
+> - [ePUB](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (`SloKJV.epub' ePUB file for Kindle, KoboPDF, e-readers)
+> - [VideoPsalm](https://myvideopsalm.weebly.com/) `SloEngKJV_VideoPsalm_sword.xml` (For import into the VideoPsalm program, which is used for presentation on the screen in churches. Each Bible type is in Slovenian and below it in English)
+> - online [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
+> - online [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
+> - [PDF - one column]( https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) with his project [ Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [version: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip ) helped make the PDF version.)
+> - `SloKJV_sword.xml` (main translation file; SWORD XML format for [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV)
 > - `slokjv.conf` (configuration for SloKJV_sword.xml)
-> - `SloKJV*.pdf` (PDF files)
-> - `SloKJV.epub` (ePUB file for Kindle, KoboPDF, e-readers)
-> - `slokjv.jad` and `slokjv.jar` (for old Java MIDP 2.0 mobile devices; GoBible SLO-ENG KJV with notes and references)
-> - `SloEngKJV_VideoPsalm_sword.xml` (For import into the VideoPsalm program used for presentation in evangelical churches. Each Bible verse is in Slovene and below it in English)
-> - `Android_data_net.bible.android.activity_files.zip` (**Manual installation on Android** device with [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installed. Unpack in \\Android\data\net.bible.android.activity\files folder on your Android device)
-> - `SloKJV.bblx` ([e-SWORD](https://www.e-sword.net/) file. Put it into folder: c:\Program Files (x86)\e-Sword )
+> - `SloKJV*.pdf` (Printable PDF files)
 > 
 > ### SloKJV paper copy
 > The Bible is digitally printed on 60g paper with a paperback binding. There are two publishers, but the same digital presses on which the 800-page Bibles are printed (lulu.com).
