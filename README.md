@@ -24,10 +24,10 @@ Prevajanje je potekalo v programu [Notepad++](https://notepad-plus-plus.org/) kj
 
 ### Datoteke programi in naprave:
 Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
- - [Preglednica programov na crosswire.org: Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
+ - [Preglednica programov na crosswire.org za Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
  #### Izvorna datoteka 
  - [`SloKJV_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.xml) (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
- - `slokjv.conf` (konfiguracija za SloKJV_sword.xml)
+ - [`slokjv.conf`](https://github.com/msavli/SloKJV/blob/master/slokjv.conf) (konfiguracija za [`SloKJV_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.xml))
  #### Windows
  - [Xiphos](https://xiphos.org/)
  - [Windows e-sword](https://www.e-sword.net/) ([`SloKJV.bblx`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) odložiti v mapo: c:\Program Files (x86)\e-Sword)
@@ -38,14 +38,14 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  #### iPhone
  -  [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
  #### Java telefoni
- -  [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) (Za stare Java MIDP 2.0 telefone; SLO-ENG KJV z opombami in referencami; datoteki `slokjv.jad` in `slokjv.jar` je potrebno ročno namestiti)
+ -  [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) (Za stare Java MIDP 2.0 telefone; SLO-ENG KJV z opombami in referencami; datoteki [`slokjv.jad`](https://github.com/msavli/SloKJV/blob/master/slokjv.jad) in [`slokjv.jar`](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) je potrebno ročno namestiti)
  #### Palm
  - [Palm Bible+](https://palmbibleplus.sourceforge.net/) ([`SloKJV.pdb`](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdb) je potrebno ročno namestiti)
  #### ePUB
  - [`SloKJV.epub`](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, KoboPDF, e-bralniki)
  #### VideoPsalm
  - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloEngKJV_VideoPsalm_sword.xml) uvoziti v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini
- #### Online
+ #### Online (ni vedno zadnja verzija SloKJV)
  - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
  - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
  #### PDF
@@ -86,10 +86,10 @@ Translation takes place in [Notepad++](https://notepad-plus-plus.org/) where the
 
 ### Files programs and devices:
 You can read the Bible using one of these devices or programs:
-  - [List of programs on crosswire.org: Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
+  - [Crosswire.org list of programs for Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
   #### Source file
   - [`SloKJV_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.xml) (master translation file; XML SWORD format for [Crosswire.org](https://crosswire .org/sword/modules/ModInfo.jsp?modName=SloKJV))
-  - `slokjv.conf` (configuration for SloKJV_sword.xml)
+  - [`slokjv.conf`](https://github.com/msavli/SloKJV/blob/master/slokjv.conf) (config for [`SloKJV_sword.xml`](https://github.com/msavli/ SloKJV/blob/master/SloKJV_sword.xml))
   #### Windows
   - [Xiphos](https://xiphos.org/)
   - [Windows e-sword](https://www.e-sword.net/) ([`SloKJV.bblx`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) put in the folder: c:\Program Files (x86)\e-Sword)
@@ -100,14 +100,14 @@ You can read the Bible using one of these devices or programs:
   #### iPhone
   - [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
   #### Java Phones
-  - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) (For old Java MIDP 2.0 phones; SLO-ENG KJV with notes and references; files `slokjv.jad` and ` slokjv.jar must be installed manually)
+  - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) (For old Java MIDP 2.0 phones; SLO-ENG KJV with notes and references; files [`slokjv.jad`] (https://github.com/msavli/SloKJV/blob/master/slokjv.jad) and [`slokjv.jar`](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) must be installed manually)
   #### Palms
   - [Palm Bible+](https://palmbibleplus.sourceforge.net/) ([`SloKJV.pdb`](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdb) must be manually installed )
   #### ePUB
   - [`SloKJV.epub`](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, KoboPDF, e-readers)
   #### VideoPsalm
   - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloEngKJV_VideoPsalm_sword.xml) import into the VideoPsalm program, which is used for screen presentation in churches. Each Bible line is in Slovenian and below it in English
-  #### Online
+  #### Online (not always the latest SloKJV version)
   - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
   - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
   #### PDF
