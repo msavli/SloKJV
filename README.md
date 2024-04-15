@@ -26,23 +26,23 @@ Prevajanje je potekalo v programu [Notepad++](https://notepad-plus-plus.org/) kj
 Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [Preglednica programov na crosswire.org: Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
  #### Izvorna datoteka 
- - [`SloKJV_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.xml) (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV)
+ - [`SloKJV_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.xml) (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
  - `slokjv.conf` (konfiguracija za SloKJV_sword.xml)
  #### Windows
  - [Xiphos](https://xiphos.org/)
  - [Windows e-sword](https://www.e-sword.net/) ([`SloKJV.bblx`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) odložiti v mapo: c:\Program Files (x86)\e-Sword)
  #### Android
- - [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) namestitev je avtomatična. Za ročno namestitev datoteko [`Android_data_net.bible.android.activity_files.zip`](https://github.com/msavli/SloKJV/blob/master/Android_data_net.bible.android.activity_files.zip) razpakirati v mapo \\Android\data\net.bible.android.activity\files)
+ - [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) namestitev je avtomatična. Za ročno namestitev datoteko [`Android_data_net.bible.android.activity_files.zip`](https://github.com/msavli/SloKJV/blob/master/Android_data_net.bible.android.activity_files.zip) razpakirati v mapo `\\Android\data\net.bible.android.activity\files`)
  - [Mysword for Android](https://www.mysword.info/download-mysword) ([`SloKJV.bbl.mybible`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bbl.mybible) je potrebno ročno namestiti)
  - [MyBible](https://mybible.zone/) ([`SloKJV.sqlite3`](https://github.com/msavli/SloKJV/blob/master/SloKJV.sqlite3) je potrebno ročno namestiti)
  #### iPhone
  -  [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
  #### Java telefoni
- -  [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) Za stare Java MIDP 2.0 telefone; SLO-ENG KJV z opombami in referencami; Datoteki `slokjv.jad` in `slokjv.jar` je potrebno ročno namestiti)
+ -  [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) (Za stare Java MIDP 2.0 telefone; SLO-ENG KJV z opombami in referencami; datoteki `slokjv.jad` in `slokjv.jar` je potrebno ročno namestiti)
  #### Palm
  - [Palm Bible+](https://palmbibleplus.sourceforge.net/) ([`SloKJV.pdb`](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdb) je potrebno ročno namestiti)
  #### ePUB
- - [`SloKJV.epub`](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) za Kindle, KoboPDF, e-bralnike
+ - [`SloKJV.epub`](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, KoboPDF, e-bralniki)
  #### VideoPsalm
  - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloEngKJV_VideoPsalm_sword.xml) uvoziti v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini
  #### Online
@@ -88,23 +88,23 @@ Translation takes place in [Notepad++](https://notepad-plus-plus.org/) where the
 You can read the Bible using one of these devices or programs:
   - [List of programs on crosswire.org: Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
   #### Source file
-  - [`SloKJV_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.xml) (master translation file; XML SWORD format for [Crosswire.org](https://crosswire .org/sword/modules/ModInfo.jsp?modName=SloKJV)
+  - [`SloKJV_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.xml) (master translation file; XML SWORD format for [Crosswire.org](https://crosswire .org/sword/modules/ModInfo.jsp?modName=SloKJV))
   - `slokjv.conf` (configuration for SloKJV_sword.xml)
   #### Windows
   - [Xiphos](https://xiphos.org/)
   - [Windows e-sword](https://www.e-sword.net/) ([`SloKJV.bblx`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) put in the folder: c:\Program Files (x86)\e-Sword)
   #### Android
-  - [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installation is automatic. For manual installation, unzip the file [`Android_data_net.bible.android.activity_files.zip`](https://github.com/msavli/SloKJV/blob/master/Android_data_net.bible.android.activity_files.zip) into the folder \\Android \data\net.bible.android.activity\files)
+  - [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installation is automatic. For manual installation, unpack the file [`Android_data_net.bible.android.activity_files.zip`](https://github.com/msavli/SloKJV/blob/master/Android_data_net.bible.android.activity_files.zip) into the folder `\\ Android\data\net.bible.android.activity\files`)
   - [Mysword for Android](https://www.mysword.info/download-mysword) ([`SloKJV.bbl.mybible`](https://github.com/msavli/SloKJV/blob/master/SloKJV. bbl.mybible) must be manually installed)
   - [MyBible](https://mybible.zone/) ([`SloKJV.sqlite3`](https://github.com/msavli/SloKJV/blob/master/SloKJV.sqlite3) needs to be installed manually)
   #### iPhone
   - [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
   #### Java Phones
-  - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) For old Java MIDP 2.0 phones; SLO-ENG KJV with notes and references; Files `slokjv.jad' and `slokjv.jar' need to be installed manually)
+  - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) (For old Java MIDP 2.0 phones; SLO-ENG KJV with notes and references; files `slokjv.jad` and ` slokjv.jar must be installed manually)
   #### Palms
   - [Palm Bible+](https://palmbibleplus.sourceforge.net/) ([`SloKJV.pdb`](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdb) must be manually installed )
   #### ePUB
-  - [`SloKJV.epub`](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) for Kindle, KoboPDF, e-readers
+  - [`SloKJV.epub`](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, KoboPDF, e-readers)
   #### VideoPsalm
   - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloEngKJV_VideoPsalm_sword.xml) import into the VideoPsalm program, which is used for screen presentation in churches. Each Bible line is in Slovenian and below it in English
   #### Online
