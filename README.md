@@ -1,6 +1,5 @@
-# SloKJV
-## Sveto pismo kralja Jakoba (1769) v slovenščini
-![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_400.png?raw=true "400e")
+| # SloKJV   |![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_400.png?raw=true "400e") |
+| ## Sveto pismo kralja Jakoba (1769) v slovenščini  |  |
 
 ## *Slovensko / Slovenščina*
 
