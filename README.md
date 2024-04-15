@@ -33,7 +33,7 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [Windows e-sword](https://www.e-sword.net/) ([`SloKJV.bblx`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) odložiti v mapo: c:\Program Files (x86)\e-Sword)
  #### Android
  - [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) namestitev je avtomatična. Za ročno namestitev datoteko [`Android_data_net.bible.android.activity_files.zip`](https://github.com/msavli/SloKJV/blob/master/Android_data_net.bible.android.activity_files.zip) razpakirati v mapo `\\Android\data\net.bible.android.activity\files`)
- - [Mysword for Android](https://www.mysword.info/download-mysword) ([`SloKJV.bbl.mybible`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bbl.mybible) je potrebno ročno namestiti)
+ - [Mysword for Android](https://www.mysword.info/download-mysword) ([`SloKJV.bbl.mybible`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bbl.mybible) odložiti v mapo [`/storage/emulated/0/mysword/bibles`])
  - [MyBible](https://mybible.zone/) ([`SloKJV.sqlite3`](https://github.com/msavli/SloKJV/blob/master/SloKJV.sqlite3) je potrebno ročno namestiti)
  #### iPhone
  -  [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
@@ -95,7 +95,7 @@ You can read the Bible using one of these devices or programs:
   - [Windows e-sword](https://www.e-sword.net/) ([`SloKJV.bblx`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) put in the folder: c:\Program Files (x86)\e-Sword)
   #### Android
   - [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installation is automatic. For manual installation, unpack the file [`Android_data_net.bible.android.activity_files.zip`](https://github.com/msavli/SloKJV/blob/master/Android_data_net.bible.android.activity_files.zip) into the folder `\\ Android\data\net.bible.android.activity\files`)
-  - [Mysword for Android](https://www.mysword.info/download-mysword) ([`SloKJV.bbl.mybible`](https://github.com/msavli/SloKJV/blob/master/SloKJV. bbl.mybible) must be manually installed)
+  - [Mysword for Android](https://www.mysword.info/download-mysword) ([`SloKJV.bbl.mybible`](https://github.com/msavli/SloKJV/blob/master/SloKJV. bbl.mybible) put in folder [`/storage/emulated/0/mysword/bibles`])
   - [MyBible](https://mybible.zone/) ([`SloKJV.sqlite3`](https://github.com/msavli/SloKJV/blob/master/SloKJV.sqlite3) needs to be installed manually)
   #### iPhone
   - [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
