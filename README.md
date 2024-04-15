@@ -25,7 +25,7 @@ Prevajanje je potekalo v programu [Notepad++](https://notepad-plus-plus.org/) kj
 ### Datoteke programi in naprave:
 Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [Preglednica programov na crosswire.org: Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
-Izvorna datoteka 
+ #### Izvorna datoteka 
  - [`SloKJV_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.xml) (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV)
  - `slokjv.conf` (konfiguracija za SloKJV_sword.xml)
  #### Windows
@@ -87,7 +87,7 @@ Translation takes place in [Notepad++](https://notepad-plus-plus.org/) where the
 ### Files programs and devices:
 You can read the Bible using one of these devices or programs:
   - [List of programs on crosswire.org: Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
-Source file
+  #### Source file
   - [`SloKJV_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.xml) (master translation file; XML SWORD format for [Crosswire.org](https://crosswire .org/sword/modules/ModInfo.jsp?modName=SloKJV)
   - `slokjv.conf` (configuration for SloKJV_sword.xml)
   #### Windows
