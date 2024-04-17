@@ -48,7 +48,7 @@ format=US_Trade
 echo "   Pritisni tipko za brisanje začasnih PTXprint datotek ..."
 # Function to check if a key is pressed
 key_pressed_brisanje_temp_files() {
-    read -t 1 -n 1 key
+    read -t 2 -n 1 key
     if [ $? -eq 0 ]; then
         echo "   Brisanje datotek ...."
 		#======== Pobrise vse  *pdf  in  *.usfm  datoteke =====
@@ -68,16 +68,12 @@ key_pressed_brisanje_temp_files() {
     fi
 }
 
-#= === Vklop in izklop čakanja ===
-key_pressed_brisanje_temp_files
-#=================================
-
 
 #======= zberi velikost PDF verzije SloKJV =============
 echo "   Izberi velikost PDF verzije SloKJV"
 echo -E "   "
 PS3='Izberi velikost PDF verzije SloKJV: '
-options=("Test" "A4" "US_Trade" "A5" "A5_NZ_BIG" "A5_NZ_Ps" "A5_NZ_prostor" "SLO-KJV" "FRTLOCAL_SFM" "PTXPRINT_STY" "PTXPRINT_CFG" "Izhod")
+options=("Test" "A4" "US_Trade" "A5" "A5_NZ_BIG" "A5_NZ_Ps" "A5_NZ_prostor" "SLO-KJV" "FRTLOCAL_SFM" "PTXPRINT_STY" "PTXPRINT_CFG" "BrisanjeTemp" "Izhod")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -138,6 +134,14 @@ do
             format=PTXPRINT_STY
             find SloKJV/ -type f -name "ptxprint.cfg" -exec pico {} \;
             break
+            ;;
+        "BrisanjeTemp")
+            echo "   Izbral si Brisanje Temp datotek $opt"
+            #= === Vklop in izklop čakanja ===
+            key_pressed_brisanje_temp_files
+            #=================================
+            echo "key..."
+            exit
             ;;
         "Izhod")
             echo "   Izbral si $REPLY kar je $opt"
@@ -483,6 +487,7 @@ sed -i 's|<\/noteCrossReference>||g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword
 #     QZQ spremenim nazaj v  Ž   (v Ps 16.5 recimo)
 sed -i 's|QZQ|\xc5\xbd|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep "Ps.16.5"
+#
 #
 # ======= TEST ==========
 echo -E "   --==    Testiram število preostalih referenc"
@@ -900,7 +905,8 @@ rm     /home/pc/Dokumenti/osis2usfm/40____.usfm
 		echo "\zfiga|p003\*"           >> A1_BAK.usfm
                 echo "\pb"                     >> A1_BAK.usfm
 		echo "\zfiga|p004\*"           >> A1_BAK.usfm
-      # cat A1_BAK.usfm
+		echo "\zendperiph"             >> A1_BAK.usfm
+       cat A1_BAK.usfm
       # ========================================================================
 
 
@@ -909,29 +915,38 @@ rm     /home/pc/Dokumenti/osis2usfm/40____.usfm
       #   https://ubsicap.github.io/usfm/peripherals/index.html
       #   https://ubsicap.github.io/usfm/peripherals/intros.html
       touch A7_INT.usfm
-		echo "\id INT"                                   >> A7_INT.usfm
-                echo "\periph Uvod v Staro zavezo"               >> A7_INT.usfm
-                echo "\mt1 Uvod v Staro zavezo"                  >> A7_INT.usfm
-                echo "\p Stara zaveza je zapis......"            >> A7_INT.usfm
-                # echo "\periph History Introduction"            >> A7_INT.usfm
-                # echo "\s1 Historical Books"                    >> A7_INT.usfm
-                # echo "\p The books in thi..."                  >> A7_INT.usfm
-                # echo "\periph Poetry Introduction"             >> A7_INT.usfm
-                # echo "\s1 Books of Wisdom and Poetry"          >> A7_INT.usfm
-                # echo "\periph Prophecy Introduction"           >> A7_INT.usfm
-                # echo "\s1 The Prophets"                        >> A7_INT.usfm
-                # echo "\periph Deuterocanon Introduction"       >> A7_INT.usfm
-                # echo "\mt1 Deuterocanonicals/Apocrypha"        >> A7_INT.usfm
-                # echo "\p Most of the books g...."              >> A7_INT.usfm
-                echo "\periph Uvod v Novo zavezo"                >> A7_INT.usfm
-                echo "\mt1 Nova zaveza"                          >> A7_INT.usfm
-                echo "\p Knjige Noveze so napisali učenci Jezusa Kristusa....."         >> A7_INT.usfm
-                # echo "\periph Gospels Introduction"            >> A7_INT.usfm
-                # echo "\s1 Gospels and Acts"                    >> A7_INT.usfm
-                # echo "\periph Epistles Introduction"           >> A7_INT.usfm
-                # echo "\s1 The Letters of Paul"                 >> A7_INT.usfm
-                # echo "\periph Letters Introduction"            >> A7_INT.usfm
-                # echo "\s1 General Letters and Revelation"      >> A7_INT.usfm
+		echo "\id INT"                                                     >> A7_INT.usfm
+                echo "\periph Uvod v Staro zavezo|id=\"intot\""                    >> A7_INT.usfm
+                echo "\mt1 Uvod v Staro zavezo"                                    >> A7_INT.usfm
+                echo "\p Stara zaveza je zapis......"                              >> A7_INT.usfm
+		echo "\zendperiph"                                                 >> A7_INT.usfm
+                # echo "\periph History Introduction|id=\"inthistory\""            >> A7_INT.usfm
+                # echo "\s1 Historical Books"                                      >> A7_INT.usfm
+                # echo "\p The books in thi..."                                    >> A7_INT.usfm
+		# echo "\zendperiph"                                               >> A7_INT.usfm
+                # echo "\periph Poetry Introduction|id=\"intpoetry\""              >> A7_INT.usfm
+                # echo "\s1 Books of Wisdom and Poetry"                            >> A7_INT.usfm
+		# echo "\zendperiph"                                               >> A7_INT.usfm
+                # echo "\periph Prophecy Introduction|id=\"intprophesy\""          >> A7_INT.usfm
+                # echo "\s1 The Prophets"                                          >> A7_INT.usfm
+		# echo "\zendperiph"                                               >> A7_INT.usfm
+                # echo "\periph Deuterocanon Introduction|id=\"intdc\""            >> A7_INT.usfm
+                # echo "\mt1 Deuterocanonicals/Apocrypha"                          >> A7_INT.usfm
+                # echo "\p Most of the books g...."                                >> A7_INT.usfm
+		# echo "\zendperiph"                                               >> A7_INT.usfm
+                echo "\periph Uvod v Novo zavezo|id=\"intnt\""                     >> A7_INT.usfm
+                echo "\mt1 Nova zaveza"                                            >> A7_INT.usfm
+                echo "\p Knjige Noveze so napisali učenci Jezusa Kristusa....."    >> A7_INT.usfm
+		echo "\zendperiph"                                                 >> A7_INT.usfm
+                # echo "\periph Gospels Introduction|id=\"intgospels\""            >> A7_INT.usfm
+                # echo "\s1 Gospels and Acts"                                      >> A7_INT.usfm
+		# echo "\zendperiph"                                               >> A7_INT.usfm
+                # echo "\periph Epistles Introduction|id=\"intepistles\""          >> A7_INT.usfm
+                # echo "\s1 The Letters of Paul"                                   >> A7_INT.usfm
+		# echo "\zendperiph"                                               >> A7_INT.usfm
+                # echo "\periph Letters Introduction|id=\"intletters\""            >> A7_INT.usfm
+                # echo "\s1 General Letters and Revelation""                       >> A7_INT.usfm
+		# echo "\zendperiph"                                               >> A7_INT.usfm
       cat A7_INT.usfm
       # ========================================================================
 
@@ -951,6 +966,7 @@ rm     /home/pc/Dokumenti/osis2usfm/40____.usfm
       #=============================================================================================
 
 
+
 # XXX sed -i "s/^\\\\v \([0-9]*\) \\\\p /\x5cp\n\x5cv \1 /g"  $SloKJV$format/64_2JN.usfm | cat $SloKJV$format/64_2JN.usfm
 
 echo -E "   --==    Prestavi usfm datotke v pravo mapo za PTXPRINT"
@@ -966,26 +982,22 @@ echo -E "   --==    Popravi  znak \p eno vrstico visje v vseh usfm datotekah"
 #                    > \p   
 #    \v 6 \p Text    > \v 6 Text
 sed -i "s/^\\\\v \([0-9]*\) \\\\p /\x5cp\n\x5cv \1 /g"  $SloKJV$format/*.usfm 
-
 # Izklopil, ker je delalo tezave in se uporablja pri Psalmih
 # Popravi  znak \c eno vrstico visje doda \b kar pomeni prazno vrstico pred poglavjem
 #                > \b   
 #    \c 6 Text   > \c 6 Text
 #sed -i "s/^\\\\c \([0-9]*\)/\x5cb\n\x5cc \1 /g"         $SloKJV$format/*.usfm
 # cat $SloKJV$format/67_REV.usfm
-
+#
 echo -E "   --==    Takoj za zacetkom poglavja naredi odstavek ==--"
 #   \c stevilka    ->   \c stevilka
 #                       \p
 sed -i "s/^\\\\c \([0-9]*\)/\x5cc \1\n\x5cp/g"          $SloKJV$format/*.usfm
-
-
+#
 echo -E "   --==    Kjer sta opomba in referenca skupaj naredi presledek ==--"
 #      \add*\x   ->    \add* \x
 sed -i "s/\\\\add\*\\\\x/\x5cadd\* \x5cx/g"             $SloKJV$format/*.usfm
-#========================================================
-
-
+# =======================================================
 
 
 # ================= SELAH ================================
@@ -1015,7 +1027,12 @@ sed -i "s/#rk#/\\\\bd\* /g"                             $SloKJV$format/*.usfm
 #==========================================================
 
 
-
+# =========================================================
+# Dva presledka zamenja z enim presledkom
+sed -i "s/  / /g"             $SloKJV$format/*.usfm
+cat $SloKJV$format/44_JHN.usfm |grep "lovek, poslan od Boga"
+exit
+#==========================================================
 
 
 #================ UVOD Popravi  ===========================
@@ -1651,7 +1668,7 @@ sed -i "s|\(\\\mt1 Prva Mojzesova knjiga\)|\\\pb\n\\\mt1 STARA ZAVEZA\n\\\b\\\b\
               echo " "
               sed -i "s|\(\\\toc3 Mt\)|\1\n\\\mt1 NOVA ZAVEZA\n\\\b\n|g"         $SloKJV$format/41_MAT.usfm
               ;;
-          *)  echo -E "   --==    Celotno Sveto pismoCelotno Sveto pismo ... "
+          *)  echo -E "   --==    Celotno Sveto pismoo ... "
               sed -i "s|\(\\\toc3 Mt\)|\1\\n\\\mt1 NOVA ZAVEZA\n\\\b\n|g"        $SloKJV$format/41_MAT.usfm
               ;;
      esac
@@ -1663,7 +1680,7 @@ sed -i "s|\(\\\c 119\)|\1\n\\\qa ALEF א|g"                                     
 #    Odstrani \p
 #    \p   pri Psalmu 119 na začetku in ga zamenja z enojnim  \p
 # sed -i ':a;N;$!ba;s|\\\p\n\\\p \n||g'                             $SloKJV$format/19_PSA.usfm
-cat $SloKJV$format/19_PSA.usfm |grep -4 "ALEF"
+# cat $SloKJV$format/19_PSA.usfm |grep -4 "ALEF"
 	#==========================================================================
 	# Tole spodaj sicer ujame hebrejsko crko in jo ulovi, toda se ne uporablja.
 	# Hebrejske crke Alef podvoji v prvi vrstici   
