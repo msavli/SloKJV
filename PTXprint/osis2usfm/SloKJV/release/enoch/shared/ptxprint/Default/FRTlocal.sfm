@@ -6,83 +6,80 @@
 \mt1 \zvar|maintitle\*
 \mt2 \zvar|subtitle\*
 \zbl|12\*\p
-\mt4 Študijska izdaja
+\mt4 Study Edition
 \zbl|9\*\p
-\mt4 Škofja Loka, 2024
+\mt4 Škofja Loka, Slovenia, 2024
 \pb
-\rem ----------------Kolofon-------------------------------------------------
-\h Kolofon
-\ip Naslov izvirnika: The Book of Enoch
-\ip Avtor: H.R. Charles
+\rem ----------------Colophon----------------------------- ------------------
+\h Colophon
+\im Original title: The Book of Enoch
+\im Author: H.R. Charles
 \zbl|1\*
-\ip \zvar|maintitle\*
-\ip \zvar|subtitle\*
-\ip Z uvodnimi ter kritičnimi in pojasnjenimi
-\ip opombami k več knjigam v sodelovanju s
-\ip številnimi učenjaki je urejal R. H. Charles, D.Litt., 
+\im \zvar|maintitle\*
+\im \zvar|subtitle\*
+\im With Introductory and Critical and Explanatory
+\im notes to several books in collaboration with
+\im many scholars edited by R. H. Charles, D.Litt.,
 \zbl|1\*
-\ip D.D. Oxford: The Clarendon Press
-\ip Oxford: The Clarendon Press 1913
+\im D.D. Oxford: The Clarendon Press
+\im Oxford: The Clarendon Press 1913
 \zbl|1\*
-\ip Skeniral in uredil: Joshua Williams, Northwest Nazarene College, 1995,
-\ip vir: https://archive.org/details/apocryphapseudep02charuoft
+\im Scanned and edited by Joshua Williams, Northwest Nazarene College, 1995,
+\im source: https://archive.org/details/apocryphapseudep02charuoft
 \zbl|1\*
-\im Pravica do uporabe besedila
-\im To delo je ponujeno pod licenco Creative Commons 
-\im CC BY-NC-ND PRIZNANJE AVTORSTVA – NEKOMERCIALNO – BREZ PREDELAV
-\im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo. https://creativecommons.org/licenses/by-nc-nd/4.0/
+\im The right to use the text
+\im This work is offered under a Creative Commons license
+\im CC BY-NC-ND ACKNOWLEDGMENT - NON-COMMERCIAL - NO REPRODUCTIONS
+\im Users are permitted to reproduce, distribute, rent and publicly communicate the original author's work, but only for non-commercial purposes, provided that they credit the author of the original work and do not modify the work. https://creativecommons.org/licenses/by-nc-nd/4.0/
 \zccimg by-nc-nd|size="col" pgpos="pc" scale="0.15"\*
 \zbl|1\*
-\ip Prva izdaja
-\im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2023
-\im Priprava besedila: Marjan Šavli (PTXPrint)
-\im email: marjan.savli@gmail.com
-\im Fotografija na naslovnici: arhiv družine Šavli X XX
-\im Založnik: Marjan Šavli in Barbara Hojkar Šavli
+\im First edition
+\im Text preparation: Marjan Šavli (PTXPrint), marjan.savli@gmail.com
+\im Photo on the cover: archive of the Šavli family
+\im Publisher: Marjan Šavli and Barbara Hojkar Šavli
 \im Mestni trg 11, Škofja Loka
-\im Knjiga je objavljena na: https://github.com/msavli/SloHenoh/
+\im The book is published at: https://github.com/msavli/SloHenoh/
 \zqrcode|pgpos="cr" size="1.2cm" data="https://github.com/msavli/SloHenoh/"\*
 \zbl|1\*
-\ip CIP       xxxxxxxxxxxxxxxxxxxxxxxxxx
+\im CIP xxxxxxxxxxxxxxxxxxxxxxxx
 \zbl|1\*
-\ip BREZPLAČEN IZVOD – NI ZA PRODAJO
+\ip FREE COPY - NOT FOR SALE
 \pb
 \zEmptyPage
 \zEmptyPage
 \resetpagenums -1
 \dopagenums
-\rem -------------------------------------------------------------------------
-\h Spremna beseda
-\mt1 Spremna beseda
+\rem ------------------------------------------------ ------------------------
+\h Foreword
+\mt1 Foreword
 \zbl|2\*
-\ip Pred vami je slovenski prevod Henohove knjige v študijski obliki z opombami in referencami.
-\ip Sveto pismo v predzadnji, Judovi knjigi, omenja Henohovo knjigo, ki je bila očitno v Jezusovih časih poznana. Kasneje so jo zaradi različnih razlogov, predvsem pa zato, ker je s svojo vsebino tako neposredna do greha, izločili iz knjig, ki bi bile vsebovane v Svetem pismu.
-\ip Branje angleške verzije naju je spodbudilo, da jo prevedeva v slovenščino. Pri prevajanju sva obstoječim referencam, ki knjigo povezujejo s Svetim pismom, dodala še nekaj dodatnih, ki so označene z [oglatimi oklepaji].
-\ip Vzporedno s prevodom je potekalo tudi ažuriranje napak spletne verzije, s primerjavo s papirnim izvirnikom, na podlagi katere je narejena angleška verzija za branje na elektronskih napravah.
-\ip Prosiva Boga, da bi bila tudi vam ta knjiga v blagoslov in spodbudo pri hoji z Jezusom.
-\ipr Prevajalca
+\ip Before you is the Enoch's book in a study format with notes and references.
+\ip In the book of Jude, the Bible mentions the Book of Enoch, which was apparently known in the time of Jesus. Later, for various reasons, but mainly because its content is so direct to sin, it was excluded from the books that would be contained in the Bible.
+\ip Reading the English version encouraged us to translate it into Slovenian. When translating, we added a few additional ones to the existing references that connect the book with the Holy Scriptures, which are marked with [square brackets].
+\ip In parallel with the translation, the errors of the online version were also updated, by comparison with the paper original, on the basis of which the English version is made for reading on electronic devices.
+\ip We ask God that this book will also be a blessing and an encouragement to you in your walk with Jesus.
+\ipr Translators
 \pb
 \zNeedOddPage
-\rem -------------------------------------------------------------------------
-\h Jezus reši me!
-\ipi Bog je že dokazal Svojo ljubezen do tebe osebno. Kajti Bog je tako ljubil svet (tebe), da je dal Svojega edinorojenega Sina, da kdorkoli veruje vanj, (ti?) se ne bo pogubil, temveč bo imel večno življenje.\vp(Jn 3,16)\vp*
-\ipi Ali verjameš Besedi Njega, ki te je ustvaril, ki te pozna in te ljubi?
-\ipi Ali si pripravljen sprejeti Njega, to je Božjo Besedo – Jezusa Kristusa, po katerem so bile narejene vse stvari?
-\ipi Toda sedaj povsod vsem ljudem zapoveduje, da se pokesajo.\vp(Apd 17,30)\vp*
-\ipi Pokesajte se torej in bodite spreobrnjeni (tj. obrnite se proč od greha k živemu Boga), da bodo vaši grehi lahko izbrisani.\vp(Apd 3,19)\vp*
-\ipi Sprejmite Jezusa in ne grešite več, kajti Bog je določil dan na katerega bo sodil svet v pravičnosti, po tem možu (Jezusu Kristusu), katerega je določil. O tem je dal zagotovilo vsem ljudem, ker ga je obudil od mrtvih.\vp(Apd 17,31)\vp*
-\ipi Kajti s srcem človek veruje v pravičnost, z usti pa je narejeno priznanje v rešitev duše.\vp(Rim 10,10)\vp* Tvoja molitev (iskren pogovor z Bogom) naj bi bila takšna.
-\ipi Na glas izgovori:
-\ipi »Jezus, žal mi je za vse moje grehe. Prosim odpusti mi, osvobodi me in me popolnoma očisti. Sprejemam te  za svojega Odrešenika, Gospoda in Gospodarja svojega življenja. Hvala, ker si tudi zame plačal na križu, umrl in tretji dan vstal.«
+\rem ------------------------------------------------ ------------------------
+\h Jesus save me!
+\ipi God has already proved His love for you personally. For God so loved the world (you), that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.\vp(John 3:16)\vp*
+\ipi Do you believe the Word of Him who created you, who knows you and loves you?
+\ipi Are you ready to accept Him, that is, the Word of God – Jesus Christ, through whom all things were made?
+\ipi But now commandeth all men every where to repent.\vp(Acts 17:30)\vp*
+\ipi Repent ye therefore, and be converted (i.e. turn away from sin to the living God), that your sins may be blotted out.\vp(Acts 3:19)\vp*
+\ipi Receive Jesus and sin no more, for God has appointed a day on which the world will be judged in righteousness, according to this man (Jesus Christ) whom he has appointed. He gave assurance of this to all people because he raised him from the dead.\vp(Acts 17:31)\vp*
+\ipi For with the heart man believeth unto righteousness; and with the mouth confession is made unto salvation.\vp(Romans 10:10)\vp* Your prayer (sincere conversation with God) should be like this.
+\ipi Say out loud:
+\ipi “Jesus, I am sorry for all my sins. Please forgive me, set me free and cleanse me completely. I accept you as my Savior, Lord and Master of my life. Thank you for paying on the cross for me too, dying and rising on the third day."
 \zbl|2\*
-\ipi datum: ____________, podpis: _________________________
+\ipi date: ____________, signature: _________________________
 \zbl|1\*
-\ipi Toda tolikim, kot so ga sprejeli, njim je on dal moč, da postanejo Božji sinovi, torej njim, ki verujejo v njegovo ime, (v ime Jezusa Kristusa).\vp(Jn 1,12)\vp* Potem so bili tisti, ki so z veseljem sprejeli njegovo besedo, krščeni.\vp(Apd 2,41)\vp*
-\ipi Pokesajte se (če si to ravnokar storil, sledi navodilu)
-\ipi in vsak izmed vas naj bo krščen v imenu Jezusa Kristusa v odpuščanje grehov
-\ipi in prejeli boste dar Svetega Duha.\vp(Apd 2,38)\vp*
-\ipi Kdor veruje vanj, ni obsojen, toda kdor ne veruje, je že obsojen, ker ni veroval v ime edinorojenega Božjega Sina.\vp(Jn 3,18)\vp* Kdor zavrača mene (Jezusa) in ne sprejema mojih besed, ima nekoga, ki ga sodi. Beseda, ki sem jo govoril, ta ista ga bo sodila na poslednji dan.\vp(Jn 12,48)\vp*
+\ipi But as many as received him, to them gave he power to become the sons of God, even to them that believe on his name (in the name of Jesus Christ).\vp(John 1:12)\vp* Then they that gladly received his word were baptized.\vp(Acts 2:41)\vp*
+\ipi Repent (if you have just done this, follow the instructions)
+\ipi and let every one of you be baptized in the name of Jesus Christ for the remission of sins
+\ipi and you will receive the gift of the Holy Spirit.\vp(Acts 2:38)\vp*
+\ipi He that believeth on him is not condemned: but he that believeth not is condemned already, because he hath not believed in the name of the only begotten Son of God. \vp(John 3:18)\vp* He who rejects me (Jesus) and does not accept my words, he has someone to judge him. The word that I have spoken, the same shall judge him in the last day.\vp(John 12:48)\vp*
 \pb
-\rem -------------------------------------------------------------------------
-\rem \nopagenums
+\rem ------------------------------------------------ ------------------------
 \zNeedEvenPage

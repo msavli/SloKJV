@@ -4,6 +4,7 @@ picaccept = Unknown
 picreverse = OK
 piccreditbox = 
 piccredit = 
+approved = false
 
 [map_ancient_world_patriarchs_bw]
 picclear = yes
@@ -43,7 +44,7 @@ approved = false
 picclear = yes
 picaccept = Culturally Appropriate
 picreverse = OK
-approved = false
+approved = true
 approved_by = 
 approval_date = 
 
@@ -62,4 +63,30 @@ picreverse = OK
 approved = true
 approved_by = 
 approval_date = 
+
+[image]
+picclear = yes
+picaccept = Unknown
+picreverse = OK
+approved = false
+piccreditbox = br,90,None
+piccredit = IM
+
+[slithytoves]
+picclear = unknown
+picaccept = Unknown
+picreverse = OK
+approved = false
+
+[gutenberg]
+picclear = unknown
+picaccept = Unknown
+picreverse = OK
+approved = false
+
+[test]
+picclear = unknown
+picaccept = Unknown
+picreverse = OK
+approved = false
 

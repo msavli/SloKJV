@@ -1031,7 +1031,6 @@ sed -i "s/#rk#/\\\\bd\* /g"                             $SloKJV$format/*.usfm
 # Dva presledka zamenja z enim presledkom
 sed -i "s/  / /g"             $SloKJV$format/*.usfm
 cat $SloKJV$format/44_JHN.usfm |grep "lovek, poslan od Boga"
-exit
 #==========================================================
 
 
@@ -1062,6 +1061,8 @@ sed -i ':a;N;$!ba;s|#UVOD#|\n\\c 1\n\\p \n\\v 1 |g'            $SloKJV$format/*.
       esac
       # head $SloKJV$format/66_JUD.usfm
 #=============================================================================================
+
+
 
 
 #========================================================
@@ -1095,7 +1096,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
 
 
 # GEN
-  sed -i "s/\\\\h  /\x5ch 1 Mz/g"                                                                $SloKJV$format/01_GEN.usfm
+  sed -i "s/\\\\h /\x5ch 1 Mz/g"                                                                 $SloKJV$format/01_GEN.usfm
   sed -i "s/\\\\h1/\x5ch1 Prva Mojzesova knjiga, imenovana Geneza/g"                             $SloKJV$format/01_GEN.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Prva Mojzesova knjiga, imenovana Geneza/g"                         $SloKJV$format/01_GEN.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Geneza/g"                                                          $SloKJV$format/01_GEN.usfm
@@ -1103,7 +1104,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Prva Mojzesova knjiga, imenovana Geneza/g"                           $SloKJV$format/01_GEN.usfm
 
 # EXO
-  sed -i "s/\\\\h  /\x5ch 2 Mz/g"                                                                $SloKJV$format/02_EXO.usfm
+  sed -i "s/\\\\h /\x5ch 2 Mz/g"                                                                 $SloKJV$format/02_EXO.usfm
   sed -i "s/\\\\h1/\x5ch1 Druga Mojzesova knjiga, imenovana Eksodus/g"                           $SloKJV$format/02_EXO.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Druga Mojzesova knjiga, imenovana Eksodus/g"                       $SloKJV$format/02_EXO.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Eksodus/g"                                                         $SloKJV$format/02_EXO.usfm
@@ -1111,7 +1112,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Druga Mojzesova knjiga, imenovana Eksodus/g"                         $SloKJV$format/02_EXO.usfm
 
 # LEV
-  sed -i "s/\\\\h  /\x5ch 3 Mz/g"                                                                $SloKJV$format/03_LEV.usfm
+  sed -i "s/\\\\h /\x5ch 3 Mz/g"                                                                 $SloKJV$format/03_LEV.usfm
   sed -i "s/\\\\h1/\x5ch1 Tretja Mojzesova knjiga, imenovana Levitik/g"                          $SloKJV$format/03_LEV.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Tretja Mojzesova knjiga, imenovana Levitik/g"                      $SloKJV$format/03_LEV.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Levitik/g"                                                         $SloKJV$format/03_LEV.usfm
@@ -1119,7 +1120,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Tretja Mojzesova knjiga, imenovana Levitik/g"                        $SloKJV$format/03_LEV.usfm
 
 # NUM
-  sed -i "s/\\\\h  /\x5ch 4 Mz/g"                                                                $SloKJV$format/04_NUM.usfm
+  sed -i "s/\\\\h /\x5ch 4 Mz/g"                                                                 $SloKJV$format/04_NUM.usfm
   sed -i "s/\\\\h1/\x5ch1 Četrta Mojzesova knjiga, imenovana Numeri/g"                           $SloKJV$format/04_NUM.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Četrta Mojzesova knjiga, imenovana Numeri/g"                       $SloKJV$format/04_NUM.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Numeri/g"                                                          $SloKJV$format/04_NUM.usfm
@@ -1127,7 +1128,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Četrta Mojzesova knjiga, imenovana Numeri/g"                         $SloKJV$format/04_NUM.usfm
 
 # DEU
-  sed -i "s/\\\\h  /\x5ch 5 Mz/g"                                                                $SloKJV$format/05_DEU.usfm
+  sed -i "s/\\\\h /\x5ch 5 Mz/g"                                                                 $SloKJV$format/05_DEU.usfm
   sed -i "s/\\\\h1/\x5ch1 Peta Mojzesova knjiga, imenovana Devteronomij/g"                       $SloKJV$format/05_DEU.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Peta Mojzesova knjiga, imenovana Devteronomij/g"                   $SloKJV$format/05_DEU.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Devteronomij/g"                                                    $SloKJV$format/05_DEU.usfm
@@ -1136,15 +1137,15 @@ echo -E "   --==    Popravi naslove knjig ==--"
 
 # JOS
 #  UTF-8   U+00F3  ó   c3 b3  \xC3\xB3
-  sed -i "s/\\\\h  /\x5ch Joz/g"                                                                 $SloKJV$format/06_JOS.usfm
-  sed -i "s/\\\\h1/\x5ch1 J\xC3\xB3zuetova knjiga/g"                                                    $SloKJV$format/06_JOS.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 J\xC3\xB3zuetova knjiga/g"                                                $SloKJV$format/06_JOS.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 J\xC3\xB3zue/g"                                                           $SloKJV$format/06_JOS.usfm
+  sed -i "s/\\\\h /\x5ch Joz/g"                                                                  $SloKJV$format/06_JOS.usfm
+  sed -i "s/\\\\h1/\x5ch1 J\xC3\xB3zuetova knjiga/g"                                             $SloKJV$format/06_JOS.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 J\xC3\xB3zuetova knjiga/g"                                         $SloKJV$format/06_JOS.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 J\xC3\xB3zue/g"                                                    $SloKJV$format/06_JOS.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Joz/g"                                                             $SloKJV$format/06_JOS.usfm
-  sed -i "s/\\\\mt1/\x5cmt1 J\xC3\xB3zuetova knjiga/g"                                                  $SloKJV$format/06_JOS.usfm
+  sed -i "s/\\\\mt1/\x5cmt1 J\xC3\xB3zuetova knjiga/g"                                           $SloKJV$format/06_JOS.usfm
 
 # JDG
-  sed -i "s/\\\\h  /\x5ch Sod/g"                                                                 $SloKJV$format/07_JDG.usfm
+  sed -i "s/\\\\h /\x5ch Sod/g"                                                                  $SloKJV$format/07_JDG.usfm
   sed -i "s/\\\\h1/\x5ch1 Knjiga sodnikov/g"                                                     $SloKJV$format/07_JDG.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Knjiga sodnikov/g"                                                 $SloKJV$format/07_JDG.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Sodniki/g"                                                         $SloKJV$format/07_JDG.usfm
@@ -1152,7 +1153,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Knjiga sodnikov/g"                                                   $SloKJV$format/07_JDG.usfm
 
 # RUT
-  sed -i "s/\\\\h  /\x5ch Ruta/g"                                                                $SloKJV$format/08_RUT.usfm
+  sed -i "s/\\\\h /\x5ch Ruta/g"                                                                 $SloKJV$format/08_RUT.usfm
   sed -i "s/\\\\h1/\x5ch1 Rutina knjiga/g"                                                       $SloKJV$format/08_RUT.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Rutina knjiga/g"                                                   $SloKJV$format/08_RUT.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Ruta/g"                                                            $SloKJV$format/08_RUT.usfm
@@ -1160,7 +1161,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Rutina knjiga/g"                                                     $SloKJV$format/08_RUT.usfm
 
 # 1SA
-  sed -i "s/\\\\h  /\x5ch 1 Sam/g"                                                               $SloKJV$format/09_1SA.usfm
+  sed -i "s/\\\\h /\x5ch 1 Sam/g"                                                                $SloKJV$format/09_1SA.usfm
   sed -i "s/\\\\h1/\x5ch1 Prva Samuelova knjiga, tudi Prva knjiga kraljev/g"                     $SloKJV$format/09_1SA.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Prva Samuelova knjiga, tudi Prva knjiga kraljev/g"                 $SloKJV$format/09_1SA.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 1 Samuel/g"                                                        $SloKJV$format/09_1SA.usfm
@@ -1168,7 +1169,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Prva Samuelova knjiga, drugače imenovana Prva knjiga kraljev/g"      $SloKJV$format/09_1SA.usfm
 
 # 2SA
-  sed -i "s/\\\\h  /\x5ch 2 Sam/g"                                                               $SloKJV$format/10_2SA.usfm
+  sed -i "s/\\\\h /\x5ch 2 Sam/g"                                                                $SloKJV$format/10_2SA.usfm
   sed -i "s/\\\\h1/\x5ch1 Druga Samuelova knjiga, tudi Druga knjiga kraljev/g"                   $SloKJV$format/10_2SA.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Druga Samuelova knjiga, tudi Druga knjiga kraljev/g"               $SloKJV$format/10_2SA.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 2 Samuel/g"                                                        $SloKJV$format/10_2SA.usfm
@@ -1176,7 +1177,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Druga Samuelova knjiga, drugače imenovana Druga knjiga kraljev/g"    $SloKJV$format/10_2SA.usfm
 
 # 1KI
-  sed -i "s/\\\\h  /\x5ch 1 Kr/g"                                                                $SloKJV$format/11_1KI.usfm
+  sed -i "s/\\\\h /\x5ch 1 Kr/g"                                                                 $SloKJV$format/11_1KI.usfm
   sed -i "s/\\\\h1/\x5ch1 Prva knjiga kraljev, tudi Tretja knjiga kraljev/g"                     $SloKJV$format/11_1KI.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Prva knjiga kraljev, tudi Tretja knjiga kraljev/g"                 $SloKJV$format/11_1KI.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 1 Kralji/g"                                                        $SloKJV$format/11_1KI.usfm
@@ -1184,7 +1185,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Prva knjiga kraljev, pogosto imenovana Tretja knjiga kraljev/g"      $SloKJV$format/11_1KI.usfm
 
 # 2KI
-  sed -i "s/\\\\h  /\x5ch 2 Kr/g"                                                                $SloKJV$format/12_2KI.usfm
+  sed -i "s/\\\\h /\x5ch 2 Kr/g"                                                                 $SloKJV$format/12_2KI.usfm
   sed -i "s/\\\\h1/\x5ch1 Druga knjiga kraljev, tudi Četrta knjiga kraljev/g"                    $SloKJV$format/12_2KI.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Druga knjiga kraljev, tudi Četrta knjiga kraljev/g"                $SloKJV$format/12_2KI.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 2 Kralji/g"                                                        $SloKJV$format/12_2KI.usfm
@@ -1192,7 +1193,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Druga knjiga kraljev, pogosto imenovana Četrta knjiga kraljev/g"     $SloKJV$format/12_2KI.usfm
 
 # 1CH
-  sed -i "s/\\\\h  /\x5ch 1 Krn/g"                                                               $SloKJV$format/13_1CH.usfm
+  sed -i "s/\\\\h /\x5ch 1 Krn/g"                                                                $SloKJV$format/13_1CH.usfm
   sed -i "s/\\\\h1/\x5ch1 Prva kroniška knjiga/g"                                                $SloKJV$format/13_1CH.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Prva kroniška knjiga/g"                                            $SloKJV$format/13_1CH.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 1 Kroniška/g"                                                      $SloKJV$format/13_1CH.usfm
@@ -1200,7 +1201,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Prva kroniška knjiga/g"                                              $SloKJV$format/13_1CH.usfm
 
 # 2CH
-  sed -i "s/\\\\h  /\x5ch 2 Krn/g"                                                               $SloKJV$format/14_2CH.usfm
+  sed -i "s/\\\\h /\x5ch 2 Krn/g"                                                                $SloKJV$format/14_2CH.usfm
   sed -i "s/\\\\h1/\x5ch1 Druga kroniška knjiga/g"                                               $SloKJV$format/14_2CH.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Druga kroniška knjiga/g"                                           $SloKJV$format/14_2CH.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 2 Kroniška/g"                                                      $SloKJV$format/14_2CH.usfm
@@ -1208,7 +1209,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Druga kroniška knjiga/g"                                             $SloKJV$format/14_2CH.usfm
 
 # EZR
-  sed -i "s/\\\\h  /\x5ch Ezra/g"                                                                $SloKJV$format/15_EZR.usfm
+  sed -i "s/\\\\h /\x5ch Ezra/g"                                                                 $SloKJV$format/15_EZR.usfm
   sed -i "s/\\\\h1/\x5ch1 Ezrova knjiga/g"                                                       $SloKJV$format/15_EZR.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Ezrova knjiga/g"                                                   $SloKJV$format/15_EZR.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Ezra/g"                                                            $SloKJV$format/15_EZR.usfm
@@ -1216,7 +1217,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Ezrova knjiga/g"                                                     $SloKJV$format/15_EZR.usfm
 
 # NEH
-  sed -i "s/\\\\h  /\x5ch Neh/g"                                                                 $SloKJV$format/16_NEH.usfm
+  sed -i "s/\\\\h /\x5ch Neh/g"                                                                  $SloKJV$format/16_NEH.usfm
   sed -i "s/\\\\h1/\x5ch1 Nehemijeva knjiga/g"                                                   $SloKJV$format/16_NEH.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Nehemijeva knjiga/g"                                               $SloKJV$format/16_NEH.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Nehemija/g"                                                        $SloKJV$format/16_NEH.usfm
@@ -1224,7 +1225,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Nehemijeva knjiga/g"                                                 $SloKJV$format/16_NEH.usfm
 
 # EST
-  sed -i "s/\\\\h  /\x5ch Est/g"                                                                 $SloKJV$format/17_EST.usfm
+  sed -i "s/\\\\h /\x5ch Est/g"                                                                  $SloKJV$format/17_EST.usfm
   sed -i "s/\\\\h1/\x5ch1 Esterina knjiga/g"                                                     $SloKJV$format/17_EST.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Esterina knjiga/g"                                                 $SloKJV$format/17_EST.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Estera/g"                                                          $SloKJV$format/17_EST.usfm
@@ -1232,7 +1233,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Esterina knjiga/g"                                                   $SloKJV$format/17_EST.usfm
 
 # JOB
-  sed -i "s/\\\\h  /\x5ch Job/g"                                                                 $SloKJV$format/18_JOB.usfm
+  sed -i "s/\\\\h /\x5ch Job/g"                                                                  $SloKJV$format/18_JOB.usfm
   sed -i "s/\\\\h1/\x5ch1 Jobova knjiga/g"                                                       $SloKJV$format/18_JOB.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Jobova knjiga/g"                                                   $SloKJV$format/18_JOB.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Job/g"                                                             $SloKJV$format/18_JOB.usfm
@@ -1240,7 +1241,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Jobova knjiga/g"                                                     $SloKJV$format/18_JOB.usfm
 
 # PSA
-  sed -i "s/\\\\h  /\x5ch Ps/g"                                                                  $SloKJV$format/19_PSA.usfm
+  sed -i "s/\\\\h /\x5ch Ps/g"                                                                   $SloKJV$format/19_PSA.usfm
   sed -i "s/\\\\h1/\x5ch1 Knjiga Psalmov/g"                                                      $SloKJV$format/19_PSA.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Knjiga Psalmov/g"                                                  $SloKJV$format/19_PSA.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Psalmi/g"                                                          $SloKJV$format/19_PSA.usfm
@@ -1248,7 +1249,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Knjiga Psalmov/g"                                                    $SloKJV$format/19_PSA.usfm
 
 # PRO
-  sed -i "s/\\\\h  /\x5ch Prg/g"                                                                 $SloKJV$format/20_PRO.usfm
+  sed -i "s/\\\\h /\x5ch Prg/g"                                                                  $SloKJV$format/20_PRO.usfm
   sed -i "s/\\\\h1/\x5ch1 Pregovori/g"                                                           $SloKJV$format/20_PRO.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Pregovori/g"                                                       $SloKJV$format/20_PRO.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Pregovori/g"                                                       $SloKJV$format/20_PRO.usfm
@@ -1256,7 +1257,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Pregovori/g"                                                         $SloKJV$format/20_PRO.usfm
 
 # ECC
-  sed -i "s/\\\\h  /\x5ch Prd/g"                                                                 $SloKJV$format/21_ECC.usfm
+  sed -i "s/\\\\h /\x5ch Prd/g"                                                                  $SloKJV$format/21_ECC.usfm
   sed -i "s/\\\\h1/\x5ch1 Kohelet ali Pridigar/g"                                                $SloKJV$format/21_ECC.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Kohelet ali Pridigar/g"                                            $SloKJV$format/21_ECC.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Pridigar/g"                                                        $SloKJV$format/21_ECC.usfm
@@ -1264,7 +1265,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Kohelet ali Pridigar/g"                                              $SloKJV$format/21_ECC.usfm
 
 # SNG
-  sed -i "s/\\\\h  /\x5ch Pp/g"                                                                  $SloKJV$format/22_SNG.usfm
+  sed -i "s/\\\\h /\x5ch Pp/g"                                                                   $SloKJV$format/22_SNG.usfm
   sed -i "s/\\\\h1/\x5ch1 Salomonova pesem (hebr. Pesem pesmi)/g"                                $SloKJV$format/22_SNG.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Salomonova pesem (hebr. Pesem pesmi)/g"                            $SloKJV$format/22_SNG.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Pesem pesmi/g"                                                     $SloKJV$format/22_SNG.usfm
@@ -1272,7 +1273,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Salomonova pesem (hebr. Pesem pesmi)/g"                              $SloKJV$format/22_SNG.usfm
 
 # ISA
-  sed -i "s/\\\\h  /\x5ch Iz/g"                                                                  $SloKJV$format/23_ISA.usfm
+  sed -i "s/\\\\h /\x5ch Iz/g"                                                                   $SloKJV$format/23_ISA.usfm
   sed -i "s/\\\\h1/\x5ch1 Knjiga preroka Izaija/g"                                               $SloKJV$format/23_ISA.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Knjiga preroka Izaija/g"                                           $SloKJV$format/23_ISA.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Izaija/g"                                                          $SloKJV$format/23_ISA.usfm
@@ -1280,7 +1281,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Knjiga preroka Izaija/g"                                             $SloKJV$format/23_ISA.usfm
 
 # JER
-  sed -i "s/\\\\h  /\x5ch Jer/g"                                                                 $SloKJV$format/24_JER.usfm
+  sed -i "s/\\\\h /\x5ch Jer/g"                                                                  $SloKJV$format/24_JER.usfm
   sed -i "s/\\\\h1/\x5ch1 Knjiga preroka Jeremija/g"                                             $SloKJV$format/24_JER.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Knjiga preroka Jeremija/g"                                         $SloKJV$format/24_JER.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Jeremija/g"                                                        $SloKJV$format/24_JER.usfm
@@ -1288,7 +1289,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Knjiga preroka Jeremija/g"                                           $SloKJV$format/24_JER.usfm
 
 # LAM
-  sed -i "s/\\\\h  /\x5ch Žal/g"                                                                 $SloKJV$format/25_LAM.usfm
+  sed -i "s/\\\\h /\x5ch Žal/g"                                                                  $SloKJV$format/25_LAM.usfm
   sed -i "s/\\\\h1/\x5ch1 Jeremijeve žalostinke/g"                                               $SloKJV$format/25_LAM.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Jeremijeve žalostinke/g"                                           $SloKJV$format/25_LAM.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Žalostinke/g"                                                      $SloKJV$format/25_LAM.usfm
@@ -1296,7 +1297,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Jeremijeve žalostinke/g"                                             $SloKJV$format/25_LAM.usfm
 
 # EZK
-  sed -i "s/\\\\h  /\x5ch Ezk/g"                                                                 $SloKJV$format/26_EZK.usfm
+  sed -i "s/\\\\h /\x5ch Ezk/g"                                                                  $SloKJV$format/26_EZK.usfm
   sed -i "s/\\\\h1/\x5ch1 Knjiga preroka Ezekiela/g"                                             $SloKJV$format/26_EZK.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Knjiga preroka Ezekiela/g"                                         $SloKJV$format/26_EZK.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Ezekiel/g"                                                         $SloKJV$format/26_EZK.usfm
@@ -1304,7 +1305,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Knjiga preroka Ezekiela/g"                                           $SloKJV$format/26_EZK.usfm
 
 # DAN
-  sed -i "s/\\\\h  /\x5ch Dan/g"                                                                 $SloKJV$format/27_DAN.usfm
+  sed -i "s/\\\\h /\x5ch Dan/g"                                                                  $SloKJV$format/27_DAN.usfm
   sed -i "s/\\\\h1/\x5ch1 Danielova knjiga/g"                                                    $SloKJV$format/27_DAN.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Danielova knjiga/g"                                                $SloKJV$format/27_DAN.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Daniel/g"                                                          $SloKJV$format/27_DAN.usfm
@@ -1312,7 +1313,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Danielova knjiga/g"                                                  $SloKJV$format/27_DAN.usfm
 
 # HOS
-  sed -i "s/\\\\h  /\x5ch Oz/g"                                                                  $SloKJV$format/28_HOS.usfm
+  sed -i "s/\\\\h /\x5ch Oz/g"                                                                   $SloKJV$format/28_HOS.usfm
   sed -i "s/\\\\h1/\x5ch1 Ozej/g"                                                                $SloKJV$format/28_HOS.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Ozej/g"                                                            $SloKJV$format/28_HOS.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Ozej/g"                                                            $SloKJV$format/28_HOS.usfm
@@ -1320,7 +1321,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Ozej/g"                                                              $SloKJV$format/28_HOS.usfm
 
 # JOL
-  sed -i "s/\\\\h  /\x5ch Jl/g"                                                                  $SloKJV$format/29_JOL.usfm
+  sed -i "s/\\\\h /\x5ch Jl/g"                                                                   $SloKJV$format/29_JOL.usfm
   sed -i "s/\\\\h1/\x5ch1 Joel/g"                                                                $SloKJV$format/29_JOL.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Joel/g"                                                            $SloKJV$format/29_JOL.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Joel/g"                                                            $SloKJV$format/29_JOL.usfm
@@ -1328,7 +1329,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Joel/g"                                                              $SloKJV$format/29_JOL.usfm
 
 # AMO
-  sed -i "s/\\\\h  /\x5ch Am/g"                                                                  $SloKJV$format/30_AMO.usfm
+  sed -i "s/\\\\h /\x5ch Am/g"                                                                   $SloKJV$format/30_AMO.usfm
   sed -i "s/\\\\h1/\x5ch1 Amos/g"                                                                $SloKJV$format/30_AMO.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Amos/g"                                                            $SloKJV$format/30_AMO.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Amos/g"                                                            $SloKJV$format/30_AMO.usfm
@@ -1336,7 +1337,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Amos/g"                                                              $SloKJV$format/30_AMO.usfm
 
 # OBA
-  sed -i "s/\\\\h  /\x5ch Abd/g"                                                                 $SloKJV$format/31_OBA.usfm
+  sed -i "s/\\\\h /\x5ch Abd/g"                                                                  $SloKJV$format/31_OBA.usfm
   sed -i "s/\\\\h1/\x5ch1 Abdija/g"                                                              $SloKJV$format/31_OBA.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Abdija/g"                                                          $SloKJV$format/31_OBA.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Abdija/g"                                                          $SloKJV$format/31_OBA.usfm
@@ -1344,7 +1345,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Abdija/g"                                                            $SloKJV$format/31_OBA.usfm
 
 # JON
-  sed -i "s/\\\\h  /\x5ch Jon/g"                                                                 $SloKJV$format/32_JON.usfm
+  sed -i "s/\\\\h /\x5ch Jon/g"                                                                  $SloKJV$format/32_JON.usfm
   sed -i "s/\\\\h1/\x5ch1 Jona/g"                                                                $SloKJV$format/32_JON.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Jona/g"                                                            $SloKJV$format/32_JON.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Jona/g"                                                            $SloKJV$format/32_JON.usfm
@@ -1352,7 +1353,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Jona/g"                                                              $SloKJV$format/32_JON.usfm
 
 # MIC
-  sed -i "s/\\\\h  /\x5ch Mih/g"                                                                 $SloKJV$format/33_MIC.usfm
+  sed -i "s/\\\\h /\x5ch Mih/g"                                                                  $SloKJV$format/33_MIC.usfm
   sed -i "s/\\\\h1/\x5ch1 Mihej/g"                                                               $SloKJV$format/33_MIC.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Mihej/g"                                                           $SloKJV$format/33_MIC.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Mihej/g"                                                           $SloKJV$format/33_MIC.usfm
@@ -1360,7 +1361,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Mihej/g"                                                             $SloKJV$format/33_MIC.usfm
 
 # NAM
-  sed -i "s/\\\\h  /\x5ch Nah/g"                                                                 $SloKJV$format/34_NAM.usfm
+  sed -i "s/\\\\h /\x5ch Nah/g"                                                                  $SloKJV$format/34_NAM.usfm
   sed -i "s/\\\\h1/\x5ch1 Nahum/g"                                                               $SloKJV$format/34_NAM.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Nahum/g"                                                           $SloKJV$format/34_NAM.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Nahum/g"                                                           $SloKJV$format/34_NAM.usfm
@@ -1368,7 +1369,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Nahum/g"                                                             $SloKJV$format/34_NAM.usfm
 
 # HAB
-  sed -i "s/\\\\h  /\x5ch Hab/g"                                                                 $SloKJV$format/35_HAB.usfm
+  sed -i "s/\\\\h /\x5ch Hab/g"                                                                  $SloKJV$format/35_HAB.usfm
   sed -i "s/\\\\h1/\x5ch1 Habakuk/g"                                                             $SloKJV$format/35_HAB.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Habakuk/g"                                                         $SloKJV$format/35_HAB.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Habakuk/g"                                                         $SloKJV$format/35_HAB.usfm
@@ -1376,7 +1377,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Habakuk/g"                                                           $SloKJV$format/35_HAB.usfm
 
 # ZEP
-  sed -i "s/\\\\h  /\x5ch Sof/g"                                                                 $SloKJV$format/36_ZEP.usfm
+  sed -i "s/\\\\h /\x5ch Sof/g"                                                                  $SloKJV$format/36_ZEP.usfm
   sed -i "s/\\\\h1/\x5ch1 Sofonija/g"                                                            $SloKJV$format/36_ZEP.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Sofonija/g"                                                        $SloKJV$format/36_ZEP.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Sofonija/g"                                                        $SloKJV$format/36_ZEP.usfm
@@ -1384,7 +1385,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Sofonija/g"                                                          $SloKJV$format/36_ZEP.usfm
 
 # HAG
-  sed -i "s/\\\\h  /\x5ch Ag/g"                                                                  $SloKJV$format/37_HAG.usfm
+  sed -i "s/\\\\h /\x5ch Ag/g"                                                                   $SloKJV$format/37_HAG.usfm
   sed -i "s/\\\\h1/\x5ch1 Agej/g"                                                                $SloKJV$format/37_HAG.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Agej/g"                                                            $SloKJV$format/37_HAG.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Agej/g"                                                            $SloKJV$format/37_HAG.usfm
@@ -1392,7 +1393,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Agej/g"                                                              $SloKJV$format/37_HAG.usfm
 
 # ZEC
-  sed -i "s/\\\\h  /\x5ch Zah/g"                                                                 $SloKJV$format/38_ZEC.usfm
+  sed -i "s/\\\\h /\x5ch Zah/g"                                                                  $SloKJV$format/38_ZEC.usfm
   sed -i "s/\\\\h1/\x5ch1 Zaharija/g"                                                            $SloKJV$format/38_ZEC.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Zaharija/g"                                                        $SloKJV$format/38_ZEC.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Zaharija/g"                                                        $SloKJV$format/38_ZEC.usfm
@@ -1400,7 +1401,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Zaharija/g"                                                          $SloKJV$format/38_ZEC.usfm
 
 # MAL
-  sed -i "s/\\\\h  /\x5ch Mal/g"                                                                 $SloKJV$format/39_MAL.usfm
+  sed -i "s/\\\\h /\x5ch Mal/g"                                                                  $SloKJV$format/39_MAL.usfm
   sed -i "s/\\\\h1/\x5ch1 Malahija/g"                                                            $SloKJV$format/39_MAL.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Malahija/g"                                                        $SloKJV$format/39_MAL.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Malahija/g"                                                        $SloKJV$format/39_MAL.usfm
@@ -1408,7 +1409,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Malahija/g"                                                          $SloKJV$format/39_MAL.usfm
 
 # MAT
-  sed -i "s/\\\\h  /\x5ch Mt/g"                                                                  $SloKJV$format/41_MAT.usfm
+  sed -i "s/\\\\h /\x5ch Mt/g"                                                                   $SloKJV$format/41_MAT.usfm
   sed -i "s/\\\\h1/\x5ch1 Evangelij po Mateju/g"                                                 $SloKJV$format/41_MAT.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Mateju/g"                                             $SloKJV$format/41_MAT.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Matej/g"                                                           $SloKJV$format/41_MAT.usfm
@@ -1416,7 +1417,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Mateju/g"                                               $SloKJV$format/41_MAT.usfm
 
 # MRK
-  sed -i "s/\\\\h  /\x5ch Mr/g"                                                                  $SloKJV$format/42_MRK.usfm
+  sed -i "s/\\\\h /\x5ch Mr/g"                                                                   $SloKJV$format/42_MRK.usfm
   sed -i "s/\\\\h1/\x5ch1 Evangelij po Marku/g"                                                  $SloKJV$format/42_MRK.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Marku/g"                                              $SloKJV$format/42_MRK.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Marko/g"                                                           $SloKJV$format/42_MRK.usfm
@@ -1424,7 +1425,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Marku/g"                                                $SloKJV$format/42_MRK.usfm
 
 # LUK
-  sed -i "s/\\\\h  /\x5ch Lk/g"                                                                  $SloKJV$format/43_LUK.usfm
+  sed -i "s/\\\\h /\x5ch Lk/g"                                                                   $SloKJV$format/43_LUK.usfm
   sed -i "s/\\\\h1/\x5ch1 Evangelij po Luku/g"                                                   $SloKJV$format/43_LUK.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Luku/g"                                               $SloKJV$format/43_LUK.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Luka/g"                                                            $SloKJV$format/43_LUK.usfm
@@ -1432,7 +1433,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Luku/g"                                                 $SloKJV$format/43_LUK.usfm
 
 # JHN
-  sed -i "s/\\\\h  /\x5ch Jn/g"                                                                  $SloKJV$format/44_JHN.usfm
+  sed -i "s/\\\\h /\x5ch Jn/g"                                                                   $SloKJV$format/44_JHN.usfm
   sed -i "s/\\\\h1/\x5ch1 Evangelij po Janezu/g"                                                 $SloKJV$format/44_JHN.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Evangelij po Janezu/g"                                             $SloKJV$format/44_JHN.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Janez/g"                                                           $SloKJV$format/44_JHN.usfm
@@ -1440,7 +1441,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Evangelij po Janezu/g"                                               $SloKJV$format/44_JHN.usfm
 
 # ACT
-  sed -i "s/\\\\h  /\x5ch Apd/g"                                                                 $SloKJV$format/45_ACT.usfm
+  sed -i "s/\\\\h /\x5ch Apd/g"                                                                  $SloKJV$format/45_ACT.usfm
   sed -i "s/\\\\h1/\x5ch1 Apostolska dela/g"                                                     $SloKJV$format/45_ACT.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Apostolska dela/g"                                                 $SloKJV$format/45_ACT.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Apostolska dela/g"                                                 $SloKJV$format/45_ACT.usfm
@@ -1448,7 +1449,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Apostolska dela/g"                                                   $SloKJV$format/45_ACT.usfm
 
 # ROM
-  sed -i "s/\\\\h  /\x5ch Rim/g"                                                                 $SloKJV$format/46_ROM.usfm
+  sed -i "s/\\\\h /\x5ch Rim/g"                                                                  $SloKJV$format/46_ROM.usfm
   sed -i "s/\\\\h1/\x5ch1 Poslanica apostola Pavla Rimljanom/g"                                  $SloKJV$format/46_ROM.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Poslanica apostola Pavla Rimljanom/g"                              $SloKJV$format/46_ROM.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Rimljanom/g"                                                       $SloKJV$format/46_ROM.usfm
@@ -1456,7 +1457,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Poslanica apostola Pavla Rimljanom/g"                                $SloKJV$format/46_ROM.usfm
 
 # 1CO
-  sed -i "s/\\\\h  /\x5ch 1 Kor/g"                                                               $SloKJV$format/47_1CO.usfm
+  sed -i "s/\\\\h /\x5ch 1 Kor/g"                                                                $SloKJV$format/47_1CO.usfm
   sed -i "s/\\\\h1/\x5ch1 Prva poslanica apostola Pavla Korinčanom/g"                            $SloKJV$format/47_1CO.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Prva poslanica apostola Pavla Korinčanom/g"                        $SloKJV$format/47_1CO.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 1 Korinčanom/g"                                                    $SloKJV$format/47_1CO.usfm
@@ -1464,7 +1465,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Prva poslanica apostola Pavla Korinčanom/g"                          $SloKJV$format/47_1CO.usfm
 
 # 2CO
-  sed -i "s/\\\\h  /\x5ch 2 Kor/g"                                                               $SloKJV$format/48_2CO.usfm
+  sed -i "s/\\\\h /\x5ch 2 Kor/g"                                                                $SloKJV$format/48_2CO.usfm
   sed -i "s/\\\\h1/\x5ch1 Druga poslanica apostola Pavla Korinčanom/g"                           $SloKJV$format/48_2CO.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Druga poslanica apostola Pavla Korinčanom/g"                       $SloKJV$format/48_2CO.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 2 Korinčanom/g"                                                    $SloKJV$format/48_2CO.usfm
@@ -1472,7 +1473,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Druga poslanica apostola Pavla Korinčanom/g"                         $SloKJV$format/48_2CO.usfm
 
 # GAL
-  sed -i "s/\\\\h  /\x5ch Gal/g"                                                                 $SloKJV$format/49_GAL.usfm
+  sed -i "s/\\\\h /\x5ch Gal/g"                                                                  $SloKJV$format/49_GAL.usfm
   sed -i "s/\\\\h1/\x5ch1 Poslanica apostola Pavla Galačanom/g"                                  $SloKJV$format/49_GAL.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Poslanica apostola Pavla Galačanom/g"                              $SloKJV$format/49_GAL.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Galačanom/g"                                                       $SloKJV$format/49_GAL.usfm
@@ -1480,7 +1481,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Poslanica apostola Pavla Galačanom/g"                                $SloKJV$format/49_GAL.usfm
 
 # EPH
-  sed -i "s/\\\\h  /\x5ch Ef/g"                                                                  $SloKJV$format/50_EPH.usfm
+  sed -i "s/\\\\h /\x5ch Ef/g"                                                                   $SloKJV$format/50_EPH.usfm
   sed -i "s/\\\\h1/\x5ch1 Poslanica apostola Pavla Efežanom/g"                                   $SloKJV$format/50_EPH.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Poslanica apostola Pavla Efežanom/g"                               $SloKJV$format/50_EPH.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Efežanom/g"                                                        $SloKJV$format/50_EPH.usfm
@@ -1488,7 +1489,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Poslanica apostola Pavla Efežanom/g"                                 $SloKJV$format/50_EPH.usfm
 
 # PHP
-  sed -i "s/\\\\h  /\x5ch Flp/g"                                                                 $SloKJV$format/51_PHP.usfm
+  sed -i "s/\\\\h /\x5ch Flp/g"                                                                  $SloKJV$format/51_PHP.usfm
   sed -i "s/\\\\h1/\x5ch1 Poslanica apostola Pavla Filipljanom/g"                                $SloKJV$format/51_PHP.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Poslanica apostola Pavla Filipljanom/g"                            $SloKJV$format/51_PHP.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Filipljanom/g"                                                     $SloKJV$format/51_PHP.usfm
@@ -1496,7 +1497,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Poslanica apostola Pavla Filipljanom/g"                              $SloKJV$format/51_PHP.usfm
 
 # COL
-  sed -i "s/\\\\h  /\x5ch Kol/g"                                                                 $SloKJV$format/52_COL.usfm
+  sed -i "s/\\\\h /\x5ch Kol/g"                                                                  $SloKJV$format/52_COL.usfm
   sed -i "s/\\\\h1/\x5ch1 Poslanica apostola Pavla Kološanom/g"                                  $SloKJV$format/52_COL.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Poslanica apostola Pavla Kološanom/g"                              $SloKJV$format/52_COL.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Kološanom/g"                                                       $SloKJV$format/52_COL.usfm
@@ -1504,7 +1505,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Poslanica apostola Pavla Kološanom/g"                                $SloKJV$format/52_COL.usfm
 
 # 1TH
-  sed -i "s/\\\\h  /\x5ch 1 Tes/g"                                                               $SloKJV$format/53_1TH.usfm
+  sed -i "s/\\\\h /\x5ch 1 Tes/g"                                                                $SloKJV$format/53_1TH.usfm
   sed -i "s/\\\\h1/\x5ch1 Prva poslanica apostola Pavla Tesaloničanom/g"                         $SloKJV$format/53_1TH.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Prva poslanica apostola Pavla Tesaloničanom/g"                     $SloKJV$format/53_1TH.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 1 Tesaloničanom/g"                                                 $SloKJV$format/53_1TH.usfm
@@ -1512,7 +1513,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Prva poslanica apostola Pavla Tesaloničanom/g"                       $SloKJV$format/53_1TH.usfm
 
 # 2TH
-  sed -i "s/\\\\h  /\x5ch 2 Tes/g"                                                               $SloKJV$format/54_2TH.usfm
+  sed -i "s/\\\\h /\x5ch 2 Tes/g"                                                                $SloKJV$format/54_2TH.usfm
   sed -i "s/\\\\h1/\x5ch1 Druga poslanica apostola Pavla Tesaloničanom/g"                        $SloKJV$format/54_2TH.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Druga poslanica apostola Pavla Tesaloničanom/g"                    $SloKJV$format/54_2TH.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 2 Tesaloničanom/g"                                                 $SloKJV$format/54_2TH.usfm
@@ -1520,7 +1521,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Druga poslanica apostola Pavla Tesaloničanom/g"                      $SloKJV$format/54_2TH.usfm
 
 # 1TI
-  sed -i "s/\\\\h  /\x5ch 1 Tim/g"                                                               $SloKJV$format/55_1TI.usfm
+  sed -i "s/\\\\h /\x5ch 1 Tim/g"                                                                $SloKJV$format/55_1TI.usfm
   sed -i "s/\\\\h1/\x5ch1 Prva poslanica apostola Pavla Timóteju/g"                              $SloKJV$format/55_1TI.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Prva poslanica apostola Pavla Timóteju/g"                          $SloKJV$format/55_1TI.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 1 Timóteju/g"                                                      $SloKJV$format/55_1TI.usfm
@@ -1528,7 +1529,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Prva poslanica apostola Pavla Timóteju/g"                            $SloKJV$format/55_1TI.usfm
 
 # 2TI
-  sed -i "s/\\\\h  /\x5ch 2 Tim/g"                                                               $SloKJV$format/56_2TI.usfm
+  sed -i "s/\\\\h /\x5ch 2 Tim/g"                                                                $SloKJV$format/56_2TI.usfm
   sed -i "s/\\\\h1/\x5ch1 Druga poslanica apostola Pavla Timóteju/g"                             $SloKJV$format/56_2TI.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Druga poslanica apostola Pavla Timóteju/g"                         $SloKJV$format/56_2TI.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 2 Timóteju/g"                                                      $SloKJV$format/56_2TI.usfm
@@ -1536,7 +1537,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Druga poslanica apostola Pavla Timóteju/g"                           $SloKJV$format/56_2TI.usfm
 
 # TIT
-  sed -i "s/\\\\h  /\x5ch Tit/g"                                                                 $SloKJV$format/57_TIT.usfm
+  sed -i "s/\\\\h /\x5ch Tit/g"                                                                  $SloKJV$format/57_TIT.usfm
   sed -i "s/\\\\h1/\x5ch1 Poslanica apostola Pavla Titu/g"                                       $SloKJV$format/57_TIT.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Poslanica apostola Pavla Titu/g"                                   $SloKJV$format/57_TIT.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Titu/g"                                                            $SloKJV$format/57_TIT.usfm
@@ -1544,7 +1545,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Poslanica apostola Pavla Titu/g"                                     $SloKJV$format/57_TIT.usfm
 
 # PHM
-  sed -i "s/\\\\h  /\x5ch Fil/g"                                                                 $SloKJV$format/58_PHM.usfm
+  sed -i "s/\\\\h /\x5ch Fil/g"                                                                  $SloKJV$format/58_PHM.usfm
   sed -i "s/\\\\h1/\x5ch1 Poslanica apostola Pavla Filemonu/g"                                   $SloKJV$format/58_PHM.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Poslanica apostola Pavla Filemonu/g"                               $SloKJV$format/58_PHM.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Filemonu/g"                                                        $SloKJV$format/58_PHM.usfm
@@ -1552,7 +1553,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Poslanica apostola Pavla Filemonu/g"                                 $SloKJV$format/58_PHM.usfm
 
 # HEB
-  sed -i "s/\\\\h  /\x5ch Heb/g"                                                                 $SloKJV$format/59_HEB.usfm
+  sed -i "s/\\\\h /\x5ch Heb/g"                                                                  $SloKJV$format/59_HEB.usfm
   sed -i "s/\\\\h1/\x5ch1 Poslanica apostola Pavla Hebrejcem/g"                                  $SloKJV$format/59_HEB.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Poslanica apostola Pavla Hebrejcem/g"                              $SloKJV$format/59_HEB.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Hebrejcem/g"                                                       $SloKJV$format/59_HEB.usfm
@@ -1560,7 +1561,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Poslanica apostola Pavla Hebrejcem/g"                                $SloKJV$format/59_HEB.usfm
 
 # JAS
-  sed -i "s/\\\\h  /\x5ch Jak/g"                                                                 $SloKJV$format/60_JAS.usfm
+  sed -i "s/\\\\h /\x5ch Jak/g"                                                                  $SloKJV$format/60_JAS.usfm
   sed -i "s/\\\\h1/\x5ch1 Splošno Jakobovo pismo/g"                                              $SloKJV$format/60_JAS.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Splošno Jakobovo pismo/g"                                          $SloKJV$format/60_JAS.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Jakob/g"                                                           $SloKJV$format/60_JAS.usfm
@@ -1568,7 +1569,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Splošno Jakobovo pismo/g"                                            $SloKJV$format/60_JAS.usfm
 
 # 1PE
-  sed -i "s/\\\\h  /\x5ch 1 Pet/g"                                                               $SloKJV$format/61_1PE.usfm
+  sed -i "s/\\\\h /\x5ch 1 Pet/g"                                                                $SloKJV$format/61_1PE.usfm
   sed -i "s/\\\\h1/\x5ch1 Prva splošna Petrova poslanica/g"                                      $SloKJV$format/61_1PE.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Prva splošna Petrova poslanica/g"                                  $SloKJV$format/61_1PE.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 1 Peter/g"                                                         $SloKJV$format/61_1PE.usfm
@@ -1576,7 +1577,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Prva splošna Petrova poslanica/g"                                    $SloKJV$format/61_1PE.usfm
 
 # 2PE
-  sed -i "s/\\\\h  /\x5ch 2 Pet/g"                                                               $SloKJV$format/62_2PE.usfm
+  sed -i "s/\\\\h /\x5ch 2 Pet/g"                                                                $SloKJV$format/62_2PE.usfm
   sed -i "s/\\\\h1/\x5ch1 Druga splošna Petrova poslanica/g"                                     $SloKJV$format/62_2PE.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Druga splošna Petrova poslanica/g"                                 $SloKJV$format/62_2PE.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 2 Peter/g"                                                         $SloKJV$format/62_2PE.usfm
@@ -1584,7 +1585,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Druga splošna Petrova poslanica/g"                                   $SloKJV$format/62_2PE.usfm
 
 # 1JN
-  sed -i "s/\\\\h  /\x5ch 1 Jn/g"                                                                $SloKJV$format/63_1JN.usfm
+  sed -i "s/\\\\h /\x5ch 1 Jn/g"                                                                 $SloKJV$format/63_1JN.usfm
   sed -i "s/\\\\h1/\x5ch1 Prva splošna Janezova poslanica/g"                                     $SloKJV$format/63_1JN.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Prva splošna Janezova poslanica/g"                                 $SloKJV$format/63_1JN.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 1 Janez/g"                                                         $SloKJV$format/63_1JN.usfm
@@ -1592,7 +1593,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Prva splošna Janezova poslanica/g"                                   $SloKJV$format/63_1JN.usfm
 
 # 2JN
-  sed -i "s/\\\\h  /\x5ch 2 Jn/g"                                                                $SloKJV$format/64_2JN.usfm
+  sed -i "s/\\\\h /\x5ch 2 Jn/g"                                                                 $SloKJV$format/64_2JN.usfm
   sed -i "s/\\\\h1/\x5ch1 Druga Janezova poslanica/g"                                            $SloKJV$format/64_2JN.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Druga Janezova poslanica/g"                                        $SloKJV$format/64_2JN.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 2 Janez/g"                                                         $SloKJV$format/64_2JN.usfm
@@ -1600,7 +1601,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Druga Janezova poslanica/g"                                          $SloKJV$format/64_2JN.usfm
 
 # 3JN
-  sed -i "s/\\\\h  /\x5ch 3 Jn/g"                                                                $SloKJV$format/65_3JN.usfm
+  sed -i "s/\\\\h /\x5ch 3 Jn/g"                                                                 $SloKJV$format/65_3JN.usfm
   sed -i "s/\\\\h1/\x5ch1 Tretja Janezova poslanica/g"                                           $SloKJV$format/65_3JN.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Tretja Janezova poslanica/g"                                       $SloKJV$format/65_3JN.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 3 Janez/g"                                                         $SloKJV$format/65_3JN.usfm
@@ -1608,7 +1609,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Tretja Janezova poslanica/g"                                         $SloKJV$format/65_3JN.usfm
 
 # JUD
-  sed -i "s/\\\\h  /\x5ch Jud/g"                                                                 $SloKJV$format/66_JUD.usfm
+  sed -i "s/\\\\h /\x5ch Jud/g"                                                                  $SloKJV$format/66_JUD.usfm
   sed -i "s/\\\\h1/\x5ch1 Judova splošna poslanica/g"                                            $SloKJV$format/66_JUD.usfm
   sed -i "s/\\\\toc1/\x5ctoc1 Judova splošna poslanica/g"                                        $SloKJV$format/66_JUD.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Juda/g"                                                            $SloKJV$format/66_JUD.usfm
