@@ -109,7 +109,3 @@
 \pb
 \rem -------------------------------------------------------------------------
 \zNeedOddPage
-
-\zgetperiph|intot\*
-\zgetperiph|intnt\*
-

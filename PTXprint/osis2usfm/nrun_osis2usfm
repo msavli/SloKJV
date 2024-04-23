@@ -910,15 +910,18 @@ rm     /home/pc/Dokumenti/osis2usfm/40____.usfm
       # ========================================================================
 
 
-      # ======= Kreira datoteko z Introduction Matter =============
+# ======= Kreira strani   med Kazalom in SZ    in     med SZ in NZ  ============
       #   https://ubsicap.github.io/usfm/identification/books.html
       #   https://ubsicap.github.io/usfm/peripherals/index.html
       #   https://ubsicap.github.io/usfm/peripherals/intros.html
-      touch A7_INT.usfm
+      case $format in
+           "A4")
+                touch A7_INT.usfm
 		echo "\id INT"                                                     >> A7_INT.usfm
-                echo "\periph Uvod v Staro zavezo|id=\"intot\""                    >> A7_INT.usfm
-                echo "\mt1 Uvod v Staro zavezo"                                    >> A7_INT.usfm
-                echo "\p Stara zaveza je zapis......"                              >> A7_INT.usfm
+                echo "\periph Stara zaveza|id=\"intot\""                           >> A7_INT.usfm
+                echo "\mt1 Stara zaveza"                                           >> A7_INT.usfm
+                # echo "\p Stara zaveza je zapis......"                            >> A7_INT.usfm
+	        echo "\pb"                                                         >> A7_INT.usfm
 		echo "\zendperiph"                                                 >> A7_INT.usfm
                 # echo "\periph History Introduction|id=\"inthistory\""            >> A7_INT.usfm
                 # echo "\s1 Historical Books"                                      >> A7_INT.usfm
@@ -934,9 +937,10 @@ rm     /home/pc/Dokumenti/osis2usfm/40____.usfm
                 # echo "\mt1 Deuterocanonicals/Apocrypha"                          >> A7_INT.usfm
                 # echo "\p Most of the books g...."                                >> A7_INT.usfm
 		# echo "\zendperiph"                                               >> A7_INT.usfm
-                echo "\periph Uvod v Novo zavezo|id=\"intnt\""                     >> A7_INT.usfm
+                echo "\periph Nova zaveza|id=\"intnt\""                            >> A7_INT.usfm
                 echo "\mt1 Nova zaveza"                                            >> A7_INT.usfm
-                echo "\p Knjige Noveze so napisali učenci Jezusa Kristusa....."    >> A7_INT.usfm
+                # echo "\p Knjige Noveze so napisali učenci Jezusa Kristusa....."  >> A7_INT.usfm
+	        echo "\pb"                                                         >> A7_INT.usfm
 		echo "\zendperiph"                                                 >> A7_INT.usfm
                 # echo "\periph Gospels Introduction|id=\"intgospels\""            >> A7_INT.usfm
                 # echo "\s1 Gospels and Acts"                                      >> A7_INT.usfm
@@ -947,8 +951,13 @@ rm     /home/pc/Dokumenti/osis2usfm/40____.usfm
                 # echo "\periph Letters Introduction|id=\"intletters\""            >> A7_INT.usfm
                 # echo "\s1 General Letters and Revelation""                       >> A7_INT.usfm
 		# echo "\zendperiph"                                               >> A7_INT.usfm
-      cat A7_INT.usfm
-      # ========================================================================
+                # cat A7_INT.usfm
+               ;;
+           *)  echo "   ."
+               echo "   Nic ne naredi."
+               ;;
+      esac
+# =======================================================================================
 
 
       #============== Da ni v SLO-KJV med zemljevidi praznih strani ========================
