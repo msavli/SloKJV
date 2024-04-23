@@ -12,20 +12,20 @@
 \pb
 \rem ----------------Kolofon-------------------------------------------------
 \h Kolofon
-\ip Naslov izvirnika: The Book of Enoch
-\ip Avtor: H.R. Charles
+\im Naslov izvirnika: The Book of Enoch
+\im Avtor: H.R. Charles
 \zbl|1\*
-\ip \zvar|maintitle\*
-\ip \zvar|subtitle\*
-\ip Z uvodnimi ter kritičnimi in pojasnjenimi
-\ip opombami k več knjigam v sodelovanju s
-\ip številnimi učenjaki je urejal R. H. Charles, D.Litt., 
+\im \zvar|maintitle\*
+\im \zvar|subtitle\*
+\im Z uvodnimi ter kritičnimi in pojasnjenimi
+\im opombami k več knjigam v sodelovanju s
+\im številnimi učenjaki je urejal R. H. Charles, D.Litt., 
 \zbl|1\*
-\ip D.D. Oxford: The Clarendon Press
-\ip Oxford: The Clarendon Press 1913
+\im D.D. Oxford: The Clarendon Press
+\im Oxford: The Clarendon Press 1913
 \zbl|1\*
-\ip Skeniral in uredil: Joshua Williams, Northwest Nazarene College, 1995,
-\ip vir: https://archive.org/details/apocryphapseudep02charuoft
+\im Skeniral in uredil: Joshua Williams, Northwest Nazarene College, 1995,
+\im vir: https://archive.org/details/apocryphapseudep02charuoft
 \zbl|1\*
 \im Pravica do uporabe besedila
 \im To delo je ponujeno pod licenco Creative Commons 
@@ -33,17 +33,17 @@
 \im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo. https://creativecommons.org/licenses/by-nc-nd/4.0/
 \zccimg by-nc-nd|size="col" pgpos="pc" scale="0.15"\*
 \zbl|1\*
-\ip Prva izdaja
+\im Prva izdaja
 \im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2023
 \im Priprava besedila: Marjan Šavli (PTXPrint)
 \im email: marjan.savli@gmail.com
-\im Fotografija na naslovnici: arhiv družine Šavli X XX
+\im Fotografija na naslovnici: arhiv družine Šavli
 \im Založnik: Marjan Šavli in Barbara Hojkar Šavli
 \im Mestni trg 11, Škofja Loka
 \im Knjiga je objavljena na: https://github.com/msavli/SloHenoh/
 \zqrcode|pgpos="cr" size="1.2cm" data="https://github.com/msavli/SloHenoh/"\*
 \zbl|1\*
-\ip CIP       xxxxxxxxxxxxxxxxxxxxxxxxxx
+\im CIP       xxxxxxxxxxxxxxxxxxxxxxxxxx
 \zbl|1\*
 \ip BREZPLAČEN IZVOD – NI ZA PRODAJO
 \pb

@@ -78,11 +78,3 @@ notes =
 approved_by = 
 approval_date = 
 
-[image]
-pubusage = Unknown
-pubclear = yes
-pubnoise = yes
-pubaccept = Unknown
-approved = false
-notes = 
-

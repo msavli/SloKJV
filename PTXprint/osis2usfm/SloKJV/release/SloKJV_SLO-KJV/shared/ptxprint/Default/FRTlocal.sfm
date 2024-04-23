@@ -69,6 +69,7 @@
 \zEmptyPage
 \rem -------------------------------------------------------------------------
 \periph Jezus|id="jezus"
+\h Jezus reši me!
 \ipi Bog je že dokazal Svojo ljubezen do tebe osebno. Kajti Bog je tako ljubil svet (tebe), da je dal Svojega edinorojenega Sina, da kdorkoli veruje vanj, (ti?) se ne bo pogubil, temveč bo imel večno življenje.\vp(Jn 3,16)\vp*
 \ipi Ali verjameš Besedi Njega, ki te je ustvaril, ki te pozna in te ljubi?
 \ipi Ali si pripravljen sprejeti Njega, to je Božjo Besedo – Jezusa Kristusa, po katerem so bile narejene vse stvari?
@@ -90,6 +91,7 @@
 \pb
 \rem ----------Page KAZALO----------------
 \periph Table of Contents|id="contents"
+\h Kazalo
 \mt3 \zvar|pritoctitle\*
 \ip \ztoc|mainL\*
 \zthumbtab Intro

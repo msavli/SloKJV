@@ -1,12 +1,7 @@
 \id FRT
-\zEmptyPage
 \nopagenums
 \zEmptyPage
-\ip .
-\rem -------------------------------------------------------------------------
-\rem \periph Title Page|id="title"
-\rem -------------------------------------------------------------------------
-\nopagenums
+\zEmptyPage
 \zbl|5\*\p
 \mt1 \zvar|maintitle\*
 \zbl|2\*\p
@@ -15,9 +10,9 @@
 \mt4 Študijska izdaja
 \zbl|25\*\p
 \mt4 Škofja Loka
-\rem ----------------Kolofon-------------------------------------------------
 \pb
-
+\rem ----------------Kolofon-------------------------------------------------
+\h Kolofon
 \ip Naslov izvirnika: Holy Bible King James Version
 \zbl|1\*
 \ip \zvar|maintitle\*
@@ -66,6 +61,7 @@
 \pb
 \zEmptyPage
 \rem -------------------------------------------------------------------------
+\h Jezus reši me!
 \ipi Bog je že dokazal Svojo ljubezen do tebe osebno. Kajti Bog je tako ljubil svet (tebe), da je dal Svojega edinorojenega Sina, da kdorkoli veruje vanj, (ti?) se ne bo pogubil, temveč bo imel večno življenje.\vp(Jn 3,16)\vp*
 \ipi Ali verjameš Besedi Njega, ki te je ustvaril, ki te pozna in te ljubi?
 \ipi Ali si pripravljen sprejeti Njega, to je Božjo Besedo – Jezusa Kristusa, po katerem so bile narejene vse stvari?
@@ -85,18 +81,18 @@
 \ipi Kdor veruje vanj, ni obsojen, toda kdor ne veruje, je že obsojen, ker ni veroval v ime edinorojenega Božjega Sina.\vp(Jn 3,18)\vp* Kdor zavrača mene (Jezusa) in ne sprejema mojih besed, ima nekoga, ki ga sodi. Beseda, ki sem jo govoril, ta ista ga bo sodila na poslednji dan.\vp(Jn 12,48)\vp*
 \pb
 \rem -------------------------------Kazalo------------------------------------------
-\nopagenums
+\h Kazalo
 \mt3 \zvar|toctitle\*
 \is Knjige Stare zaveze
 \ip \ztoc|ot\*
 \is Knjige Nove zaveze
 \ip \ztoc|nt\*
+\is Dodatki
+\ip \ztoc|post\*
+\b
+\is Abecedni seznam Svetopisemskih knjig
+\ip \ztoc|sortb\*
 \pb
 \rem -------------------------------------------------------------------------
 \zNeedOddPage
-
-
-
-
-
-
+\zgetperiph|intot\*
