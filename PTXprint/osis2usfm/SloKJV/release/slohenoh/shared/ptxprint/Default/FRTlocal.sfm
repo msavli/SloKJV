@@ -14,7 +14,7 @@
 \mt4 Škofja Loka, 2024
 \pb
 \rem ----------Page 3----------------
-\rem ----------------Kolofon-------------------------------------------------
+\rem ----------------Kolofon--------
 \periph Publication Data|id="pubdata"
 \h Kolofon
 \im Naslov izvirnika: The Book of Enoch
@@ -22,31 +22,29 @@
 \zbl|1\*
 \im \zvar|maintitle\*
 \im \zvar|subtitle\*
-\im Z uvodnimi ter kritičnimi in pojasnjenimi
-\im opombami k več knjigam v sodelovanju s
-\im številnimi učenjaki je urejal R. H. Charles, D.Litt., 
+\im Z uvodnimi ter kritičnimi in pojasnjenimi opombami k več knjigam
+\im v sodelovanju s številnimi učenjaki je urejal R. H. Charles, D.Litt.,
 \zbl|1\*
 \im D.D. Oxford: The Clarendon Press
 \im Oxford: The Clarendon Press 1913
 \zbl|1\*
 \im Skeniral in uredil: Joshua Williams, Northwest Nazarene College, 1995,
-\im vir: https://archive.org/details/apocryphapseudep02charuoft
+\im vir: archive.org/details/apocryphapseudep02charuoft
 \zbl|1\*
 \im Pravica do uporabe besedila
-\im To delo je ponujeno pod licenco Creative Commons 
-\im CC BY-NC-ND PRIZNANJE AVTORSTVA – NEKOMERCIALNO – BREZ PREDELAV
-\im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo. https://creativecommons.org/licenses/by-nc-nd/4.0/
-\zccimg by-nc-nd|size="col" pgpos="pc" scale="0.15"\*
+\im To delo je ponujeno pod licenco Creative Commons (CC BY-NC-ND PRIZNANJE AVTORSTVA – NEKOMERCIALNO – BREZ PREDELAV).
+\im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo. (creativecommons.org/licenses/by-nc-nd/4.0/)
+\zccimg by-nc-nd|size="col" pgpos="cr" scale="0.15"\*
 \zbl|1\*
 \im Prva izdaja
-\im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2023
-\im Priprava besedila: Marjan Šavli (PTXPrint)
-\im email: marjan.savli@gmail.com
-\im Fotografija na naslovnici: arhiv družine Šavli
-\im Založnik: Marjan Šavli in Barbara Hojkar Šavli
-\im Mestni trg 11, Škofja Loka
-\im Knjiga je objavljena na: https://github.com/msavli/SloHenoh/
+\im Knjiga je objavljena na: github.com/msavli/SloHenoh/
 \zqrcode|pgpos="cr" size="1.2cm" data="https://github.com/msavli/SloHenoh/"\*
+\im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2024
+\im Priprava besedila: Marjan Šavli (PTXPrint)
+\im Fotografija na naslovnici: arhiv družine Šavli
+\im Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka, marjan.savli@gmail.com
+\im Verzija za mobilne naprave: www.crosswire.org/applications/
+\zqrcode|pgpos="cr" size="1.2cm" data="http://www.crosswire.org/applications/"\*
 \zbl|1\*
 \im CIP       xxxxxxxxxxxxxxxxxxxxxxxxxx
 \zbl|1\*

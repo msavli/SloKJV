@@ -45,7 +45,6 @@ format=US_Trade
                           #  US Trade  152 x 229 mm
 
 
-echo "   Pritisni tipko za brisanje začasnih PTXprint datotek ..."
 # Function to check if a key is pressed
 key_pressed_brisanje_temp_files() {
     read -t 2 -n 1 key
@@ -137,6 +136,7 @@ do
             ;;
         "BrisanjeTemp")
             echo "   Izbral si Brisanje Temp datotek $opt"
+            echo "   Pritisni tipko za brisanje začasnih PTXprint datotek ..."
             #= === Vklop in izklop čakanja ===
             key_pressed_brisanje_temp_files
             #=================================
