@@ -15,18 +15,12 @@ approved_by =
 approval_date = 
 
 [map_exodus_and_canaan_conquest_bw]
-pubusage = Unknown
 pubclear = yes
 pubnoise = yes
-pubaccept = Unknown
 approved = false
 notes = 
 
 [1]
-pubusage = Unknown
-pubclear = unchecked
-pubnoise = unchecked
-pubaccept = Unknown
 approved = false
 notes = 
 
@@ -35,16 +29,12 @@ pubusage = Clarification
 pubclear = yes
 pubnoise = no
 pubaccept = Culturally Appropriate
-approved = true
+approved = false
 notes = 
 approved_by = 
 approval_date = 
 
 [map_paul_journeys_bw]
-pubusage = Unknown
-pubclear = unchecked
-pubnoise = unchecked
-pubaccept = Unknown
 approved = false
 notes = 
 
@@ -63,7 +53,7 @@ pubusage = Clarification
 pubclear = yes
 pubnoise = no
 pubaccept = Culturally Appropriate
-approved = false
+approved = true
 notes = 
 approved_by = 
 approval_date = 
@@ -73,8 +63,14 @@ pubusage = Clarification
 pubclear = yes
 pubnoise = no
 pubaccept = Culturally Appropriate
-approved = true
+approved = false
 notes = 
 approved_by = 
 approval_date = 
+
+[image]
+pubclear = yes
+pubnoise = yes
+approved = false
+notes = 
 

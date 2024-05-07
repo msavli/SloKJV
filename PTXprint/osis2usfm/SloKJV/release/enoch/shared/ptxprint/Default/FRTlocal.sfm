@@ -1,7 +1,10 @@
 \id FRT
 \nopagenums
+\rem ----------Page 1----------------
 \zEmptyPage
+\rem ----------Page 2----------------
 \zEmptyPage
+\periph Title Page|id="title"
 \zgap|4cm\*
 \mt1 \zvar|maintitle\*
 \mt2 \zvar|subtitle\*
@@ -10,7 +13,8 @@
 \zbl|9\*\p
 \mt4 Škofja Loka, Slovenia, 2024
 \pb
-\rem ----------------Colophon----------------------------- ------------------
+\rem ----------Page 3-----------------
+\rem ----------------Colophon---------
 \h Colophon
 \im Original title: The Book of Enoch
 \im Author: H.R. Charles
@@ -45,11 +49,14 @@
 \zbl|1\*
 \ip FREE COPY - NOT FOR SALE
 \pb
+\rem ----------Page 4----------------
 \zEmptyPage
+\rem ----------Page 5----------------
 \zEmptyPage
+\rem ----------Page 6----------------
 \resetpagenums -1
 \dopagenums
-\rem ------------------------------------------------ ------------------------
+\rem ----------Page 7----------------
 \h Foreword
 \mt1 Foreword
 \zbl|2\*
@@ -61,7 +68,7 @@
 \ipr Translators
 \pb
 \zNeedOddPage
-\rem ------------------------------------------------ ------------------------
+\rem ----------Page 9----------------
 \h Jesus save me!
 \ipi God has already proved His love for you personally. For God so loved the world (you), that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.\vp(John 3:16)\vp*
 \ipi Do you believe the Word of Him who created you, who knows you and loves you?
@@ -73,7 +80,7 @@
 \ipi Say out loud:
 \ipi “Jesus, I am sorry for all my sins. Please forgive me, set me free and cleanse me completely. I accept you as my Savior, Lord and Master of my life. Thank you for paying on the cross for me too, dying and rising on the third day."
 \zbl|2\*
-\ipi date: ____________, signature: _________________________
+\ipi date: ____________   signature: _________________________
 \zbl|1\*
 \ipi But as many as received him, to them gave he power to become the sons of God, even to them that believe on his name (in the name of Jesus Christ).\vp(John 1:12)\vp* Then they that gladly received his word were baptized.\vp(Acts 2:41)\vp*
 \ipi Repent (if you have just done this, follow the instructions)
@@ -81,5 +88,14 @@
 \ipi and you will receive the gift of the Holy Spirit.\vp(Acts 2:38)\vp*
 \ipi He that believeth on him is not condemned: but he that believeth not is condemned already, because he hath not believed in the name of the only begotten Son of God. \vp(John 3:18)\vp* He who rejects me (Jesus) and does not accept my words, he has someone to judge him. The word that I have spoken, the same shall judge him in the last day.\vp(John 12:48)\vp*
 \pb
-\rem ------------------------------------------------ ------------------------
+\rem ----------Page 10----------------
+\zEmptyPage
+\rem ----------Page 11----------------
+\zNeedOddPage
+\periph Table of Contents|id="contents"
+\mt3 \zvar|toctitle\*
+\ip \ztoc|main\*
+\ip
+\pb
+\rem ----------Page 12-13----------------
 \zNeedEvenPage

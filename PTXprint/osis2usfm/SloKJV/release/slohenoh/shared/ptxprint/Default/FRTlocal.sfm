@@ -1,7 +1,10 @@
 \id FRT
 \nopagenums
+\rem ----------Page 1----------------
 \zEmptyPage
+\rem ----------Page 2----------------
 \zEmptyPage
+\periph Title Page|id="title"
 \zgap|4cm\*
 \mt1 \zvar|maintitle\*
 \mt2 \zvar|subtitle\*
@@ -10,7 +13,9 @@
 \zbl|9\*\p
 \mt4 Škofja Loka, 2024
 \pb
+\rem ----------Page 3----------------
 \rem ----------------Kolofon-------------------------------------------------
+\periph Publication Data|id="pubdata"
 \h Kolofon
 \im Naslov izvirnika: The Book of Enoch
 \im Avtor: H.R. Charles
@@ -47,11 +52,14 @@
 \zbl|1\*
 \ip BREZPLAČEN IZVOD – NI ZA PRODAJO
 \pb
+\rem ----------Page 4----------------
 \zEmptyPage
+\rem ----------Page 5----------------
 \zEmptyPage
+\rem ----------Page 6----------------
 \resetpagenums -1
 \dopagenums
-\rem -------------------------------------------------------------------------
+\rem ----------Page 7----------------
 \h Spremna beseda
 \mt1 Spremna beseda
 \zbl|2\*
@@ -63,19 +71,19 @@
 \ipr Prevajalca
 \pb
 \zNeedOddPage
-\rem -------------------------------------------------------------------------
+\rem ----------Page 9----------------
 \h Jezus reši me!
 \ipi Bog je že dokazal Svojo ljubezen do tebe osebno. Kajti Bog je tako ljubil svet (tebe), da je dal Svojega edinorojenega Sina, da kdorkoli veruje vanj, (ti?) se ne bo pogubil, temveč bo imel večno življenje.\vp(Jn 3,16)\vp*
 \ipi Ali verjameš Besedi Njega, ki te je ustvaril, ki te pozna in te ljubi?
 \ipi Ali si pripravljen sprejeti Njega, to je Božjo Besedo – Jezusa Kristusa, po katerem so bile narejene vse stvari?
 \ipi Toda sedaj povsod vsem ljudem zapoveduje, da se pokesajo.\vp(Apd 17,30)\vp*
 \ipi Pokesajte se torej in bodite spreobrnjeni (tj. obrnite se proč od greha k živemu Boga), da bodo vaši grehi lahko izbrisani.\vp(Apd 3,19)\vp*
-\ipi Sprejmite Jezusa in ne grešite več, kajti Bog je določil dan na katerega bo sodil svet v pravičnosti, po tem možu (Jezusu Kristusu), katerega je določil. O tem je dal zagotovilo vsem ljudem, ker ga je obudil od mrtvih.\vp(Apd 17,31)\vp*
+\ipi Sprejmite Jezusa in ne grešite več, kajti Bog je določil dan, na katerega bo sodil svet v pravičnosti, po tem možu (Jezusu Kristusu), katerega je določil. O tem je dal zagotovilo vsem ljudem, ker ga je obudil od mrtvih.\vp(Apd 17,31)\vp*
 \ipi Kajti s srcem človek veruje v pravičnost, z usti pa je narejeno priznanje v rešitev duše.\vp(Rim 10,10)\vp* Tvoja molitev (iskren pogovor z Bogom) naj bi bila takšna.
 \ipi Na glas izgovori:
-\ipi »Jezus, žal mi je za vse moje grehe. Prosim odpusti mi, osvobodi me in me popolnoma očisti. Sprejemam te  za svojega Odrešenika, Gospoda in Gospodarja svojega življenja. Hvala, ker si tudi zame plačal na križu, umrl in tretji dan vstal.«
+\ipi »Jezus, žal mi je za vse moje grehe. Prosim odpusti mi, osvobodi me in me popolnoma očisti. Sprejemam te  za svojega Odrešenika, Gospoda in Gospodarja svojega življenja. Hvala, ker si tudi zame plačal ceno za moje grehe na križu, umrl in tretji dan vstal.«
 \zbl|2\*
-\ipi datum: ____________, podpis: _________________________
+\ipi datum: ____________    podpis: _________________________
 \zbl|1\*
 \ipi Toda tolikim, kot so ga sprejeli, njim je on dal moč, da postanejo Božji sinovi, torej njim, ki verujejo v njegovo ime, (v ime Jezusa Kristusa).\vp(Jn 1,12)\vp* Potem so bili tisti, ki so z veseljem sprejeli njegovo besedo, krščeni.\vp(Apd 2,41)\vp*
 \ipi Pokesajte se (če si to ravnokar storil, sledi navodilu)
@@ -83,6 +91,14 @@
 \ipi in prejeli boste dar Svetega Duha.\vp(Apd 2,38)\vp*
 \ipi Kdor veruje vanj, ni obsojen, toda kdor ne veruje, je že obsojen, ker ni veroval v ime edinorojenega Božjega Sina.\vp(Jn 3,18)\vp* Kdor zavrača mene (Jezusa) in ne sprejema mojih besed, ima nekoga, ki ga sodi. Beseda, ki sem jo govoril, ta ista ga bo sodila na poslednji dan.\vp(Jn 12,48)\vp*
 \pb
-\rem -------------------------------------------------------------------------
-\rem \nopagenums
+\rem ----------Page 10----------------
+\zEmptyPage
+\rem ----------Page 11----------------
+\zNeedOddPage
+\periph Table of Contents|id="contents"
+\mt3 \zvar|toctitle\*
+\ip \ztoc|main\*
+\ip
+\pb
+\rem ----------Page 12-13----------------
 \zNeedEvenPage
