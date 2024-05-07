@@ -28,6 +28,7 @@ picclear = yes
 picaccept = Culturally Appropriate
 approved_by = 
 approval_date = 
+approved = true
 
 [map_exodus_and_canaan_conquest_bw_90]
 picclear = yes
