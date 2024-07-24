@@ -53,6 +53,9 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [PDF - en stolpec]( https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti prvo PDF verzijo.)
  - `SloKJV*.pdf` (PDF datoteke za tisk)
 
+### Audio SloKJV
+Celotno besedilo SloKJV ([MP3](https://k00.fr/moucjmct), 84 ur 22, minut)
+
 ### Papirni izvod SloKJV
 ![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_150.png?raw=true "150e")
  Sveto pismo je tiskano z digitalnim tiskom na 60g papir z broširano vezavo. Sta dva založnika, toda isti digitalni stroji, na katerih se 800 stranska Sveta pisma tiskajo (lulu.com).
