@@ -1,0 +1,22 @@
+diff --git a/python/epub/test.py b/python/epub/test.py
+index cc18000..28ac162 100755
+--- a/python/epub/test.py
++++ b/python/epub/test.py
+@@ -199,7 +199,7 @@ markup=Sword.MarkupFilterMgr(outputType)
+ markup.thisown=False
+ mgr = Sword.SWMgr(markup)
+ 
+-moduleName="SBLGNT"   
++moduleName="SloKJV"   
+ """ moduleName="FreCrampon" """
+ 
+ mod=mgr.getModule(moduleName)
+@@ -224,7 +224,7 @@ tocOffset=2
+ 
+ uniqueID=tocOffset+1
+ for cur in getAllBooks(versification):
+-  if cur['testament']==2:
++  if cur['testament']!=4:
+     tmpContent=createBook(moduleName,cur["abbr"],mgr)
+     prefix=int(bookPrefix(cur["abbr"]))+tocOffset
+     curBook={}

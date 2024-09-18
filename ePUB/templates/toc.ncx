@@ -1,0 +1,34 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+ "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta content="urn:uuid:5ad2adae-ec76-4dca-a936-8bb17482653a" name="dtb:uid"/>
+    <meta content="0" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+
+  <docTitle>
+    <text>Sveto pismo kralja Jakoba</text>
+  </docTitle>
+  <navMap>
+
+{% for book in books -%}
+<navPoint id="navPoint-{{book.navpointId}}" playOrder="{{book.playOrderId}}">
+<navLabel><text>{{book.name}}</text></navLabel>
+<content src="Text/{{book.file}}"/>
+{% if book.chapters|length %}
+{%for chapter in book.chapters -%}
+<navPoint id="navPoint-{{chapter.navpointId}}" playOrder="{{chapter.playOrderId}}">
+<navLabel><text>{{chapter.name}}</text></navLabel>
+<content src="Text/{{chapter.file}}"/>
+</navPoint>
+{% endfor -%}
+{% endif -%}
+</navPoint>
+
+{% endfor -%}
+
+</navMap>
+</ncx>

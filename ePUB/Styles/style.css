@@ -1,0 +1,43 @@
+.verseNbr{
+  font-size:60%;
+  font-weight: bold;
+  display:inline-block;
+  vertical-align: text-top;
+
+}
+
+@font-face {
+  font-family: "Gentium Plus"; 
+  src: url("../Fonts/GentiumPlus-Regular.ttf");
+}
+
+body {
+    font-family: "Gentium Plus"; 
+}
+
+/* Styles for cover.xhtml */
+body.cover {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+p.cover {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+img.cover {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+H1 {
+	width: 100%;
+	text-align: center;
+}
+
+H2 {
+	width: 100%;	
+	text-align: center;
+}

@@ -1,0 +1,7 @@
+<h2>{{chapter.bookname}}<br>{{chapter.nbr}}. poglavje</h2>
+  {% for verse in chapter.verses -%}
+	  <span class="verseNbr">{{verse.nbr}}</span>
+   {{verse.content}}
+  {% endfor -%}
+
+<span style="page-break-after: always" />
