@@ -43,7 +43,7 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  #### Palm
  - [Palm Bible+](https://palmbibleplus.sourceforge.net/) ([`SloKJV.pdb`](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdb) je potrebno ročno namestiti)
  #### ePUB
- - [`SloKJV.epub`](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, KoboPDF, e-bralniki)
+ - [`SloKJV.epub`](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, KoboPDF, e-bralniki) Dodana preprosta navigacija med kazalom in poglavji.
  #### VideoPsalm
  - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloEngKJV_VideoPsalm_sword.xml) uvoziti v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini
  #### Online (ni vedno zadnja verzija SloKJV)
@@ -108,7 +108,7 @@ You can read the Bible using one of these devices or programs:
   #### Palms
   - [Palm Bible+](https://palmbibleplus.sourceforge.net/) ([`SloKJV.pdb`](https://github.com/msavli/SloKJV/blob/master/SloKJV.pdb) must be manually installed )
   #### ePUB
-  - [`SloKJV.epub`](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, KoboPDF, e-readers)
+  - [`SloKJV.epub`](https://github.com/msavli/SloKJV/blob/master/SloKJV.epub) (Kindle, KoboPDF, e-readers) Easy navigation between the table of contents and chapters added.
   #### VideoPsalm
   - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloEngKJV_VideoPsalm_sword.xml) import into the VideoPsalm program, which is used for screen presentation in churches. Each Bible line is in Slovenian and below it in English
   #### Online (not always the latest SloKJV version)
