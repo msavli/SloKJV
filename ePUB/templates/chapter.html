@@ -1,6 +1,6 @@
-<h2>{{chapter.bookname}}<br>{{chapter.nbr}}. poglavje</h2>
+<h2 class="center-text">{{chapter.bookname}}</h2><h3 class="center-text">{{chapter.nbr}}. poglavje</h3>
   {% for verse in chapter.verses -%}
-	  <span class="verseNbr">{{verse.nbr}}</span>
+	 <span class="verseNbr">{{verse.nbr}}</span>
    {{verse.content}}
   {% endfor -%}
 

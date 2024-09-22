@@ -32,10 +32,13 @@ mkdir $SloKJV_Module_Path/modules/texts                                         
 mkdir $SloKJV_Module_Path/modules/texts/ztext                                   >/dev/null 2>&1
 mkdir $SloKJV_Module_Path/modules/texts/ztext/slokjv                            >/dev/null 2>&1
 
+
+
 # Kopira predloge in kaj je se za narediti
-cp templates/foreword.html          html/02-Foreword.html
+cp templates/foreword.html          html/02-foreword.html
+cp templates/jezus.html             html/03-jezus.html 
 cp templates/cover.html             html/00_preimenuj_me_v_cover.xhtml
-cp templates/content_opf.xhtml      html/00_vsebino_metadata_daj_v_content.opf_in_popravi_datum_.xhtml
+cp templates/content_opf.xhtml      html/00_vsebino_metadata_daj_v_content.opf.xhtml
 echo "<html><body></body></html>" > html/00_pobrisi_Section001.xhtml
 echo "<html><body></body></html>" > html/00_dodaj_font.xhtml
 echo "<html><body></body></html>" > html/00_vsebino_toc.ncx_prekopiraj_v_toc.ncx_fajl.xhtml
@@ -61,9 +64,7 @@ echo "   Kreiram html datoteke..."
 echo
 python3 $SloKJVepubPath/test.py   # |& tee    log.txt
 
-
 cd html
-
 
 echo
 echo "   Preimenujem datoteke poglavij da bodo imele  *-1.html  ->  *-0001.htm  *-0002.htm ..."
@@ -89,7 +90,7 @@ for file in *.html; do
 done
 
 
-echo "   Preimenujem datoteke knjig da bodo imele   68-Rev.html  ->  68-Rev-0000.htm"
+echo "   Preimenujem datoteke knjig da bodo imele   69-Rev.html  ->  69-Rev-0000.htm"
 # Loop through all HTML files in the current directory
 for file in *.html; do
   # Extract the base name and the extension
@@ -108,7 +109,7 @@ for file in *.html; do
 done
 
 
-echo "   Zdruzi knjige in poglavja od pripadajocih knjig  ->  68-Rev.html "
+echo "   Zdruzi knjige in poglavja od pripadajocih knjig  ->  69-Rev.html "
 # Define the prefix pattern
 prefix_pattern='^[0-9]{2}-[A-Z0-9][A-Za-z]+-'
 
@@ -177,8 +178,8 @@ echo
 sed -i ':a;N;$!ba;s/\(<span class=\"verseNbr\">[0-9]\+<\/span>\)\n   \n/<br \/>\n  \1\n   /g'  $SloKJVepubPath/html/*.html
 
 # Hebrejske crke - dodam prelom, da gr besedilo v novo vrstico    [iz]<br>  pa potem nazaj popravim
-sed -i 's/]/]<br \/>/g'       $SloKJVepubPath/html/21-Ps.html     ### 21-Ps-119.html
-sed -i 's/iz\]<br \/>/iz\]/g' $SloKJVepubPath/html/21-Ps.html     ### 21-Ps-119.html
+sed -i 's/]/]<br \/>/g'       $SloKJVepubPath/html/22-Ps.html     ### 22-Ps-119.html
+sed -i 's/iz\]<br \/>/iz\]/g' $SloKJVepubPath/html/22-Ps.html     ### 22-Ps-119.html
 
 # Pred hebrejskimi crkami nardi <br>
 # yet to do
@@ -211,57 +212,20 @@ cat $SloKJVepubPath/html/01-toc.html |grep '<li> <a' >$SloKJVepubPath/templates/
 echo "   Zamenja ul z  baskslash li"
 sed -i 's/<ul>/<\/li>/g' $SloKJVepubPath/templates/toc_temp.txt
 
-echo '<h2>Podrobno kazalo</h2>' >> $SloKJVepubPath/templates/toc_temp.txt
-
+#echo '<h2>Podrobno kazalo</h2>' >> $SloKJVepubPath/templates/toc_temp.txt
+#
 # awk  -vn=1 '{print}; /Predgovor/ && n{while (getline <"templates/toc_temp.txt") print;n=0}' html/01-toc.html >html/01-toc-popravljen.html 
-awk   -v n=1 '{print}; /Predgovor/ && n{while (getline <\"templates/toc_temp.txt\") print;n=0}' html/01-toc.html > html/01-toc-popravljen.html
-
-mv html/01-toc-popravljen.html html/01-toc.html
-
+#awk   -v n=1 '{print}; /Predgovor/ && n{while (getline <\"templates/toc_temp.txt\") print;n=0}' html/01-toc.html > html/01-toc-popravljen.html
+#
+#mv html/01-toc-popravljen.html html/01-toc.html
+#
 # Pobrise zacasno datoteko
-rm templates/toc_temp.txt
-
-# Obe Kroniske dobita sumnik in kazalo
-#sed -i 's/Kroniska/Kroniška/g' $SloKJVepubPath/html/01-toc.html
-#sed -i 's/Kroniska/Kroniška/g' $SloKJVepubPath/html/15-1Chr*.html
-#sed -i 's/Kroniska/Kroniška/g' $SloKJVepubPath/html/16-2Chr*.html
-
-# Visoka pesem rata Pesem pesmi
-#sed -i 's/Visoka pesem/Pesem pesmi/g' $SloKJVepubPath/html/01-toc.html
-
-# Zalostinke dobi ZZ
-#sed -i 's/Zalostinke/Žalostinke/g' $SloKJVepubPath/html/01-toc.html
-#sed -i 's/Zalostinke/Žalostinke/g' $SloKJVepubPath/html/27-Lam*.html
-
-# Dela postane Apostoslska dela
-#sed -i 's/Dela/Apostolska dela/g' $SloKJVepubPath/html/01-toc.html
-
-# Korincanom dobi sumnik
-#sed -i 's/Korincanom/Korinčanom/g' $SloKJVepubPath/html/01-toc.html
-#sed -i 's/Korincanom/Korinčanom/g' $SloKJVepubPath/html/48-1Cor*.html
-#sed -i 's/Korincanom/Korinčanom/g' $SloKJVepubPath/html/49-2Cor*.html
-
-# Galacanom dobi sumnik
-#sed -i 's/Galacanom/Galačanom/g' $SloKJVepubPath/html/01-toc.html
-#sed -i 's/Galacanom/Galačanom/g' $SloKJVepubPath/html/50-Gal*.html
-
-# Efezanom dobi sumnik
-#sed -i 's/Efezanom/Efežanom/g' $SloKJVepubPath/html/01-toc.html
-#sed -i 's/Efezanom/Efežanom/g' $SloKJVepubPath/html/51-Eph*.html
-
-# Kolosanom dobi sumnik
-#sed -i 's/Kolosanom/Kološanom/g' $SloKJVepubPath/html/01-toc.html
-#sed -i 's/Kolosanom/Kološanom/g' $SloKJVepubPath/html/53-Col*.html
-
-# Obe knjigi Tesalonicanom dobita sumnik in Kazalo
-#sed -i 's/Tesalonicanom/Tesaloničanom/g' $SloKJVepubPath/html/01-toc.html
-#sed -i 's/Tesalonicanom/Tesaloničanom/g' $SloKJVepubPath/html/54-1Thess*.html
-#sed -i 's/Tesalonicanom/Tesaloničanom/g' $SloKJVepubPath/html/55-2Thess*.html
+#rm templates/toc_temp.txt
 
 
 # V podrobnem kazalu odstrani naslove poglavij knjig da ostanejo samo stevilke poglavij
-sed -i 's/^ <a href=\"\([-a-zA-Z0-9]*\).html\">\([A-Za-zčžšČŽŠ., ]*\) \([0-9]*\)<\/a>/<a href=\"\1.html\">\3<\/a>/g'    $SloKJVepubPath/html/01-toc.html
-sed -i 's/Salomonova pesem \[hebr. Pesem pesmi\] \([0-9]\)<\/a>,/\1<\/a>,/g'                                            $SloKJVepubPath/html/01-toc.html
+sed -i 's/^ <a href=\"\([-a-zA-Z0-9]*\).html\">\([0-9A-Za-zčžšČŽŠ., ]*\) \([0-9]*\)<\/a>/<a href=\"\1.html\">\3<\/a>/g'    $SloKJVepubPath/html/01-toc.html
+sed -i 's/Salomonova pesem \[hebr. Pesem pesmi\] \([0-9]\)<\/a>,/\1<\/a>,/g'                                               $SloKJVepubPath/html/01-toc.html
 
 
 echo "   Kazalo  html/01-toc.html  popravi ..."
@@ -273,11 +237,50 @@ echo "   Kazalo  toc.ncx           popravi ..."
 sed -i 's/-\([0-9]*\)\.html/\.html#chapter\1/g'  $SloKJVepubPath/toc.ncx      # |head -50 $SloKJVepubPath/toc.ncx
 echo " "
 
+
+#head -9 $SloKJVepubPath/html/04-Gen.html
 echo "   Popravi posamezne datoteke da linki delujejo."
 echo "       <h2>Geneza<br>1. poglavje</h2>   ->    <h2 id=\"chapter2\" >Geneza<br>1. poglavje</h2>"
   for file in *.html; do
-    sed -i 's/<h2>\([A-Za-z0-9 ,\xC4\x8C\xC4\x8D\xC5\xA0\xC5\xA1\xC5\xBD\xC5\xBE]*\)<br>\([0-9]*\)/<h2 id=\"chapter\2\" >\1<br>\2/g' "$file"
+    sed -i 's/<h2 class=\"center-text\">\([A-Za-z0-9 ,\xC4\x8C\xC4\x8D\xC5\xA0\xC5\xA1\xC5\xBD\xC5\xBE]*\)<\/h2><h3 class=\"center-text\">\([0-9]*\)/<h2 class=\"center-text\" id=\"chapter\2\">\1<\/h2><h3 class=\"center-text\">\2/g' "$file"
   done
+#head -9 $SloKJVepubPath/html/04-Gen.html
+
+
+
+echo "  Popravi datum na trenutni v content_opf.xhtml "
+# Get the current date in the format YYYY-MM-DD
+current_date_eng=$(date +%Y-%m-%d)
+# echo $current_date_eng
+#  current_date=$(date +%d-%m-%Y) brez presledkov - narobe
+current_date_slo=$(date +"%d. %m. %Y")
+# echo $current_date_slo
+
+# Define the file path
+content_path="$SloKJVepubPath/html/00_vsebino_metadata_daj_v_content.opf.xhtml"
+uvod_path="$SloKJVepubPath/html/02-foreword.html"
+
+# Use sed to replace the date in the XML file
+#        2007/opf">2023-01-01</dc
+sed -i "s/2007\/opf\">[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}/2007\/opf\">$current_date_eng/" "$content_path"
+
+#  Popravi   Datum   v Uvodu na danasnji datum:
+sed -i "s/Datum\:/Datum\: $current_date_slo/" "$uvod_path"
+# cat $uvod_path
+# cat $content_path
+echo
+
+
+
+echo "  V kazalo vnese Novo in Staro zavezo. "
+#  <h2>Stara zaveza</h2>
+#  <li><a href="04-
+sed -i 's|<li> <a href="04-|<h2>Stara zaveza</h2>\n<li><a href="04-|g' $SloKJVepubPath/html/01-toc.html
+#  <h2>Nova zaveza</h2>
+#  <li> <a href="43-
+sed -i 's|<li> <a href="43-|<h2>Nova zaveza</h2>\n<li><a href="43-|g' $SloKJVepubPath/html/01-toc.html
+# cat $SloKJVepubPath/html/01-toc.html |grep zaveza
+
 
 
 echo
@@ -290,7 +293,7 @@ echo "   Pozene Sigil 2.0...     zakomentiran"
 echo
 echo "   Nadaljuj z  Text, desni klik, add existing files "
 echo "   iz mape $SloKJVepubPath/html "
-echo   
+echo
 echo "   Potem imas v imenih datotek na vrhu navodila "
 echo
 #echo "  Ko to koncas to objavi na https://kdp.amazon.com/ "
@@ -299,9 +302,11 @@ echo
 		# sigil >/dev/null 2>&1    # Ta pozene verzijo 3.0
 
 
-echo "   Poglejmo ePUB z mupdf bralnikom ..."
-# mupdf $SloKJVepubPath/untitled.epub
+echo "  Prekopira v Github mapo "
 mv $SloKJVepubPath/untitled.epub $SloKJV_Github/SloKJV.epub
+
+echo "   Poglejmo ePUB z mupdf bralnikom ..."
+mupdf $SloKJVepubPath/$SloKJV_Github/SloKJV.epub
 
 
 cd $SloKJV_Github
@@ -314,9 +319,6 @@ cd $SloKJV_Github
 
 cd $SloKJVepubPath
 
-# Preveri ali je prav naredil
-# pico html/15-1Chr-19.html
-
 # echo "   Odpre brskalnik kjer se knjigo nalozi na Amazon.com"
 # xdg-open https://kdp.amazon.com/
 
@@ -324,7 +326,7 @@ cd $SloKJVepubPath
 echo
 echo "   Preveri ePUB "
 echo
-java -jar /home/pc/Dokumenti/epub/epubcheck-5.1.0/epubcheck.jar  /home/pc/Dokumenti/epub/untitled.epub >log.txt 2>&1
+java -jar /home/pc/Dokumenti/epub/epubcheck-5.1.0/epubcheck.jar  $SloKJVepubPath/$SloKJV_Github/SloKJV.epub >log.txt 2>&1
 echo
 echo "   Pokaze napake v ePUB "
 echo

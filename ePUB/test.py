@@ -230,10 +230,18 @@ toc.append({
 toc.append({
     "navpointId":"2",
     "playOrderId":"2",
-    "name":"Predgovor",
-    "file":"02-Foreword.html"
+    "name":"Kolofon in predgovor",
+    "file":"02-foreword.html"
     })
-tocOffset=2
+
+toc.append({
+    "navpointId":"3",
+    "playOrderId":"3",
+    "name":"Jezus, reši me!",
+    "file":"03-jezus.html"
+    })
+
+tocOffset=3
 
 uniqueID=tocOffset+1
 for cur in getAllBooks(versification):

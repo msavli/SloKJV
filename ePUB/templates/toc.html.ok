@@ -17,7 +17,7 @@
  {% if book.chapters|length %}
  <ul>
  {%for chapter in book.chapters -%}
- <a href="{{chapter.file}}">{{chapter.name}}</a> 
+ <a href="{{chapter.file}}">{{chapter.name}}</a>, 
  {% endfor -%}
  </ul>
  {% endif -%}

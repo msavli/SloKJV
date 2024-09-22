@@ -41,3 +41,13 @@ H2 {
 	width: 100%;	
 	text-align: center;
 }
+
+/* Odstavek v kazalu */
+.chapter-link {
+  padding-left: 20px; /* Adjust the value as needed */
+  display: inline-block;
+}
+
+.center-text {
+    text-align: center;
+}
