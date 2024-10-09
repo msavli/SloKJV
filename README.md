@@ -53,7 +53,10 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [PDF - en stolpec]( https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti prvo PDF verzijo.)
  - `SloKJV*.pdf` (PDF datoteke za tisk)
   #### MP3
- - Avdio SloKJV ([MP3](https://k00.fr/SloKJV), 84 ur, 22 minut)
+ - Avdio SloKJV ([MP3](https://k00.fr/SloKJV)
+   - Stara zaveza (1,6 Gb, 67 ur)
+   - Nova zaveza (0,5 Gb, 20 ur)
+   - posamezne knjige
 
 ### Papirni izvod SloKJV
 ![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_150.png?raw=true "150e")
@@ -118,7 +121,10 @@ You can read the Bible using one of these devices or programs:
   - [PDF - one column]( https://github.com/msavli/SloKJV/blob/master/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) with his project [Free Scriptures ](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) helped make the first PDF version.)
   - `SloKJV*.pdf` (printable PDF files)
   #### MP3
-  - Audio SloKJV ([MP3](https://k00.fr/SloKJV), 84:22 h)
+   - Audio SloKJV ([MP3](https://k00.fr/SloKJV)
+   - Old Testament (1.6 Gb, 67 hours)
+   - New Testament (0.5 Gb, 20 hours)
+   - individual books
  
  ### SloKJV paper copy
  ![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_150.png?raw=true "150e")
