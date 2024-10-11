@@ -1,21 +1,22 @@
-<ScriptureText><Name>SloKJV</Name>
-    <Language>Slovene</Language>
-    <Encoding>65001</Encoding>
-    <Copyright></Copyright>
+<ScriptureText>
+    <BookSequenceSeparator>; </BookSequenceSeparator>
+    <BooksPresent>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</BooksPresent>
+    <ChapterNumberSeparator>; </ChapterNumberSeparator>
+    <ChapterRangeSeparator>–</ChapterRangeSeparator>
+    <ChapterVerseSeparator>,</ChapterVerseSeparator>
+    <Copyright>None</Copyright>
     <DefaultFont>Linux Libertine O</DefaultFont>
     <DefaultFontSize>9</DefaultFontSize>
-    <FileNamePostPart>.usfm</FileNamePostPart>
+    <Editable>F</Editable>
+    <Encoding>65001</Encoding>
     <FileNameBookNameForm>41_MAT</FileNameBookNameForm>
-    <ChapterVerseSeparator>,</ChapterVerseSeparator>
+    <FileNamePostPart>.usfm</FileNamePostPart>
+    <FileNamePrePart>None</FileNamePrePart>
+    <FullName>Sveto pismo kralja Jakoba (1769)</FullName>
+    <Guid>A280E816856F11EFB649080027AAC1F4</Guid>
+    <Language>Slovene</Language>
+    <MinParatextVersion>8.0.63.1</MinParatextVersion>
+    <Name>SloKJV</Name>
     <RangeIndicator>-</RangeIndicator>
     <SequenceIndicator>.</SequenceIndicator>
-    <ChapterRangeSeparator>–</ChapterRangeSeparator>
-    <BookSequenceSeparator>; </BookSequenceSeparator>
-    <ChapterNumberSeparator>; </ChapterNumberSeparator>
-    <FileNamePrePart />
-    <MinParatextVersion>8.0.63.1</MinParatextVersion>
-    <FullName>Sveto pismo kralja Jakoba (1769)</FullName>
-    <Editable>F</Editable>
-    <BooksPresent>0000000000000000000000000000000000000000111111111111111111111111111111111000000000000000000000000000000000000000000000000000</BooksPresent>
 </ScriptureText>
-    

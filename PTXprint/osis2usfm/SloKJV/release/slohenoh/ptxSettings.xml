@@ -1,21 +1,22 @@
-<ScriptureText><Name>SloHenoh</Name>
-    <Language>Slovene</Language>
-    <Encoding>65001</Encoding>
-    <Copyright></Copyright>
+<ScriptureText>
+    <BookSequenceSeparator>; </BookSequenceSeparator>
+    <BooksPresent>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</BooksPresent>
+    <ChapterNumberSeparator>; </ChapterNumberSeparator>
+    <ChapterRangeSeparator>–</ChapterRangeSeparator>
+    <ChapterVerseSeparator>,</ChapterVerseSeparator>
+    <Copyright>None</Copyright>
     <DefaultFont>Linux Libertine O</DefaultFont>
     <DefaultFontSize>10</DefaultFontSize>
-    <FileNamePostPart>.usfm</FileNamePostPart>
+    <Editable>F</Editable>
+    <Encoding>65001</Encoding>
     <FileNameBookNameForm>41_MAT</FileNameBookNameForm>
-    <ChapterVerseSeparator>,</ChapterVerseSeparator>
+    <FileNamePostPart>.usfm</FileNamePostPart>
+    <FileNamePrePart>None</FileNamePrePart>
+    <FullName>Henohova knjiga</FullName>
+    <Guid>A27A4848856F11EFAC0D080027AAC1F4</Guid>
+    <Language>Slovene</Language>
+    <MinParatextVersion>8.0.63.1</MinParatextVersion>
+    <Name>SloHenoh</Name>
     <RangeIndicator>-</RangeIndicator>
     <SequenceIndicator>,</SequenceIndicator>
-    <ChapterRangeSeparator>–</ChapterRangeSeparator>
-    <BookSequenceSeparator>; </BookSequenceSeparator>
-    <ChapterNumberSeparator>; </ChapterNumberSeparator>
-    <FileNamePrePart />
-    <MinParatextVersion>8.0.63.1</MinParatextVersion>
-    <FullName>Henohova knjiga</FullName>
-    <Editable>F</Editable>
-    <BooksPresent>1111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111</BooksPresent>
 </ScriptureText>
-    

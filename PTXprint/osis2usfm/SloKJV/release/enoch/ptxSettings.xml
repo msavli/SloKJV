@@ -1,21 +1,22 @@
-<ScriptureText><Name>Enoch</Name>
-    <Language>English</Language>
-    <Encoding>65001</Encoding>
-    <Copyright></Copyright>
+<ScriptureText>
+    <BookSequenceSeparator>; </BookSequenceSeparator>
+    <BooksPresent>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</BooksPresent>
+    <ChapterNumberSeparator>; </ChapterNumberSeparator>
+    <ChapterRangeSeparator>–</ChapterRangeSeparator>
+    <ChapterVerseSeparator>:</ChapterVerseSeparator>
+    <Copyright>None</Copyright>
     <DefaultFont>Linux Libertine O</DefaultFont>
     <DefaultFontSize>11</DefaultFontSize>
-    <FileNamePostPart>.usfm</FileNamePostPart>
+    <Editable>F</Editable>
+    <Encoding>65001</Encoding>
     <FileNameBookNameForm>41_MAT</FileNameBookNameForm>
-    <ChapterVerseSeparator>:</ChapterVerseSeparator>
+    <FileNamePostPart>.usfm</FileNamePostPart>
+    <FileNamePrePart>None</FileNamePrePart>
+    <FullName>Enoch book</FullName>
+    <Guid>A27D9960856F11EFBFAF080027AAC1F4</Guid>
+    <Language>English</Language>
+    <MinParatextVersion>8.0.63.1</MinParatextVersion>
+    <Name>Enoch</Name>
     <RangeIndicator>-</RangeIndicator>
     <SequenceIndicator>,</SequenceIndicator>
-    <ChapterRangeSeparator>–</ChapterRangeSeparator>
-    <BookSequenceSeparator>; </BookSequenceSeparator>
-    <ChapterNumberSeparator>; </ChapterNumberSeparator>
-    <FileNamePrePart />
-    <MinParatextVersion>8.0.63.1</MinParatextVersion>
-    <FullName>Enoch book</FullName>
-    <Editable>F</Editable>
-    <BooksPresent>1111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111</BooksPresent>
 </ScriptureText>
-    
