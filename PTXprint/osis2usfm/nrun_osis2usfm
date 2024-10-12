@@ -312,15 +312,29 @@ sed -i ':a;N;$!ba;s/\n<note/<note/g'                     /home/pc/Dokumenti/osis
 # ==============================================================
 
 
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Zlomil bom tudi zapah"
+
+
 # ================= STUDIJSKE OPOMBE ===========================================================
 # ----------------------------------------------------------------------------------------------
 echo -E "   --==    Spremeni študijske opombe"
 #   V opombo je treba dati vrstico v kateri se nahaja
 #   Veckrat ponovi max je bilo 9x v Kroniski knjigi. Dodal se 2x za vsak slucaj.
 #   <verse osisID="Gen.1.1">    ->  <note type="study">[text.]</note>       ->   \ef + \fr 1.1: \ft [text]\ef*
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-]*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Zlomil bom tudi zapah"
+
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-]*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Zlomil bom tudi zapah"
+
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-]*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Zlomil bom tudi zapah"
+
+
+
 sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
@@ -368,7 +382,7 @@ sed -i 's|<note type=\"study\">\[\(.*\)\]<\/noteStudy>| \\f + \\fr 6.21: \\ft [\
 #
 #
 # ================= Testiram število preostalih študijskih opomb ==========
-echo -E "   --==    Testiram število preostalih študijskih opomb"
+echo -E "   --==    Testiram število preostalih študijskih opomb: biti mora  0"
 #cat ../GitHub/SloKJV/SloKJV_sword.xml | grep "štiriintrideset let ter zaplodil Pelega"
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep 'Gen.11.16'
 echo -e "   --==    Število <note type=\"study\">"
