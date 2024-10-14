@@ -321,18 +321,18 @@ echo -E "   --==    Spremeni študijske opombe"
 #   V opombo je treba dati vrstico v kateri se nahaja
 #   Veckrat ponovi max je bilo 9x v Kroniski knjigi. Dodal se 2x za vsak slucaj.
 #   <verse osisID="Gen.1.1">    ->  <note type="study">text.</note>       ->   \ef + \fr 1.1: \ft [text]\ef*
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\ef*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\ef*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\ef*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\ef*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\ef*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\ef*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\ef*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\ef*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\ef*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\ef*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\ef*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\ef*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 
 #
 #
@@ -609,21 +609,22 @@ cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<divine>"
 cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "</divine>"
 #
 # Spet vgnezdene izjeme
-#  \nd Gospod\nd* je rekel mojemu Gospodu
+#  \nd Gospod\nd* je rekel mojemu Gospodu      \+nd    + sem brisal ker se  je Paratext pritožil
+
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "na mojo desnico, dokler ne storim tvojih sovražnikov"
-sed -i "s|\\\\nd Gospod\\\\nd\* je rekel mojemu Gospodu|\x5c+nd Gospod\x5c+nd\* je rekel mojemu Gospodu|g"     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i "s|\\\\nd Gospod\\\\nd\* je rekel mojemu Gospodu|\x5cnd Gospod\x5cnd\* je rekel mojemu Gospodu|g"     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "na mojo desnico, dokler ne storim tvojih sovražnikov"
-#
+#                                              +add  ->  add      dvakrat
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "nam bodo stvari nadnaravno dodane od Boga"
-sed -i "s|\\\\add tvoje oko\\\\add\* hudobno, \\\\add je\\\\add\*|\x5c+add tvoje oko\x5c+add\* hudobno, \x5c+add je\x5c+add\*|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i "s|\\\\add tvoje oko\\\\add\* hudobno, \\\\add je\\\\add\*|\x5cadd tvoje oko\x5cadd\* hudobno, \x5c+add je\x5c+add\*|g"  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "nam bodo stvari nadnaravno dodane od Boga"
-#
+#                                              +add  ->  add      dvakrat
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "te stvari se morajo najprej zgoditi"
-sed -i "s|konec \\\\add še\\\\add\* ni v kratkem|konec \x5c+add še\x5c+add\* ni v kratkem|g"     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i "s|konec \\\\add še\\\\add\* ni v kratkem|konec \x5cadd še\x5cadd\* ni v kratkem|g"     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "te stvari se morajo najprej zgoditi"
 #
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "bom ven in bom lažniv duh v ustih"
-sed -i "s|\\\\add \\\\nd Gospod\\\\nd\*\\\\add\*|\x5c+add \x5c+nd Gospod\x5c+nd\*\x5c+add\*|g"     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i "s|\\\\add \\\\nd Gospod\\\\nd\*\\\\add\*|\x5c+add \x5c+nd Gospod\x5c+nd\*\x5cadd\*|g"     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "bom ven in bom lažniv duh v ustih"
 # ===============================================================
 
@@ -914,9 +915,10 @@ sed -i "s|</hi>| \\\bd* |g"                                   /home/pc/Dokumenti
 # cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -2 "<lb "  #  |grep "book"
 # cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<lb " | grep "<introduction>" | wc -l
 #============================================================
-
-
 cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "napisano iz Laodikeje"
+
+# V vrsticah, ki se začnejo z \iex, zamenjajte \add z \k in \add* z \k*  ker paratex ne dovoljuje \add v \iex vrstici
+sed -i '/^\\iex/s/\\add/\\k/g; /^\\iex/s/\\add\*/\\k\*/g'    /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 
 
 
@@ -1147,7 +1149,7 @@ sed -i "s/\\\\iex //g"                                              $SloKJV$form
 echo -E " "
 echo -E "   --==     Popravi vse uvode vseh datotek"
 cat /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release/SloKJV_Test/09_1SA.usfm |grep "#UVOD#"
-sed -i ':a;N;$!ba;s|\\c 1\n\\p\n\\p \n\\v 1 |\\imt1\n\\iex |g'      $SloKJV$format/*.usfm
+sed -i ':a;N;$!ba;s|\\c 1\n\\p\n\\p \n\\v 1 |\\imt1 Uvod\n\\iex |g'      $SloKJV$format/*.usfm
 sed -i ':a;N;$!ba;s|#UVOD#|\n\\c 1\n\\p \n\\v 1 |g'                 $SloKJV$format/*.usfm
 cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "#UVOD#"
 cat /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release/SloKJV_Test/09_1SA.usfm |grep "#UVOD#"
