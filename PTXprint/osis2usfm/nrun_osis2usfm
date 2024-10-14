@@ -406,7 +406,7 @@ echo -e "   --==    Število </noteStudy>"
                echo "   --==    Spremeni:  \f -> \ef"
                sed -i 's|\\f |\\ef |g'                       /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
                sed -i 's|\\f\* |\\ef\* |g'                   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-
+               sed -i 's|provinc.]\\f\*|provinc.]\\ef\* |g'  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml  # Izjema za Kolofon 1Tim.c ki ima opombo Pacatiane
                ;;
            "Test")
                echo "   --==    Spremeni:  \f -> \ef"
