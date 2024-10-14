@@ -369,9 +369,9 @@ sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note t
 #   <div type="colophon" osisID="1Tim.c"> [Prvo Timóteju je bilo napisano iz Laodikeje, ki je glavno mesto Frigije<note type="study">[Frigija: zahodni del izmed dveh frigijskih provinc.]</note> Pacatiane.]
 #   Kar fixn popravin na zadnjo vrstico v 1Tim.6.21
 sed -i 's|<note type=\"study\">\[\(.*\)\]<\/noteStudy>| \\f + \\fr 6.21: \\ft [\1]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-# ========================================================================================
-#
-#
+# ========================================================================
+
+
 # ================= Testiram število preostalih študijskih opomb ==========
 echo -E "   --==    Testiram število preostalih študijskih opomb: biti mora  0"
 #cat ../GitHub/SloKJV/SloKJV_sword.xml | grep "štiriintrideset let ter zaplodil Pelega"
@@ -395,10 +395,8 @@ echo -e "   --==    Število </noteStudy>"
 	else
 	   echo " "
 	fi
-
-
 # ---------------------------------------------------------------------------------------
-#
+
 
 
 # ---------------------------------------------------------------------------------------
@@ -406,18 +404,21 @@ echo -e "   --==    Število </noteStudy>"
       case $format in
            "A4")
                echo "   --==    Spremeni:  \f -> \ef"
-               sed -i 's|\\f |\\ef |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-               sed -i 's|\\f* |\\ef* |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               sed -i 's|\\f |\\ef |g'                       /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               sed -i 's|\\f\* |\\ef\* |g'                   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+
                ;;
            "Test")
                echo "   --==    Spremeni:  \f -> \ef"
-               sed -i 's|\\f |\\ef |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-               sed -i 's|\\f* |\\ef* |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               sed -i 's|\\f |\\ef |g'                       /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               sed -i 's|\\f\* |\\ef\* |g'                   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+               sed -i 's|provinc.]\\f\*|provinc.]\\ef\* |g'  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml  # Izjema za Kolofon 1Tim.c ki ima opombo Pacatiane
                ;;
            *)  echo "   ."
                echo "   Nic ne naredi."
                ;;
       esac
+      # cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "napisano iz Laodikeje"
 # =======================================================================================
 
 
@@ -811,11 +812,20 @@ echo -E " "
 #Pripravi kolofon za       \cls
 #         ]
 #</div>
-sed -i ':a;N;$!ba;s|]\n</div>|]</verse></chapter>|g'       /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -2 "služabniku Onézimu"
+# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -2 "Pacatiane"
+echo -E " "
+sed -i ':a;N;$!ba;s|]\n</div>|]</verse></chapter>|g'                                   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i ':a;N;$!ba;s|provinc.]\\\ef\*\n</div>|provinc.]\\\ef\*<\/verse><\/chapter>|g'   /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml   # Izjema za opombo pri 1 Tim Pacatiane
 #</verse></chapter>
 #<div type=\"colophon\" osisID=\"Titus.c\">
+# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -2 "služabniku Onézimu"
+# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -2 "Pacatiane"
+echo -E " "
 sed -i ':a;N;$!ba;s|</verse></chapter>\n<div type=\"colophon\" osisID=\"\([^.]*\).c\">|\x5ccls|g'       /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "napisano iz Laodikeje"
+#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -2 "služabniku Onézimu"
+#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -2 "Pacatiane"
+echo -E " "
 #=============================================================
 
 
@@ -888,7 +898,6 @@ sed -i "s|_P_Psalm \([0-9]*\)<\/title>|_P_Psalm \1|g"                           
 # ==============================================================
 
 
-
 # ================ Pri Psalmih popravi uvod ===================
 echo -E "   --==    Pri Psalmih popravi uvod            "
 #
@@ -915,18 +924,12 @@ sed -i "s|</hi>| \\\bd* |g"                                   /home/pc/Dokumenti
 # cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -2 "<lb "  #  |grep "book"
 # cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "<lb " | grep "<introduction>" | wc -l
 #============================================================
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "napisano iz Laodikeje"
-
-# V vrsticah, ki se začnejo z \iex, zamenjajte \add z \k in \add* z \k*  ker paratex ne dovoljuje \add v \iex vrstici
-sed -i '/^\\iex/s/\\add/\\k/g; /^\\iex/s/\\add\*/\\k\*/g'    /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-
-
-
-
-
-
-
+# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "napisano iz Laodikeje"
 #=========================================================================
+
+
+
+
 #=========================================================================
 echo -E "   --==    Pozene generiranje usfm datotek==--   "
 #=========================================================================
@@ -1148,19 +1151,24 @@ echo -E "   --==    V psalmu 23 to pobrisem ker dela prevelike crke in ne sluzi 
 sed -i "s/\\\\iex //g"                                              $SloKJV$format/19_PSA.usfm
 echo -E " "
 echo -E "   --==     Popravi vse uvode vseh datotek"
-cat /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release/SloKJV_Test/09_1SA.usfm |grep "#UVOD#"
-sed -i ':a;N;$!ba;s|\\c 1\n\\p\n\\p \n\\v 1 |\\imt1 Uvod\n\\iex |g'      $SloKJV$format/*.usfm
+# cat /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release/SloKJV_Test/09_1SA.usfm |grep "#UVOD#"
+sed -i ':a;N;$!ba;s|\\c 1\n\\p\n\\p \n\\v 1 |\\imt1 Uvod\n\\iex |g' $SloKJV$format/*.usfm
 sed -i ':a;N;$!ba;s|#UVOD#|\n\\c 1\n\\p \n\\v 1 |g'                 $SloKJV$format/*.usfm
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "#UVOD#"
-cat /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release/SloKJV_Test/09_1SA.usfm |grep "#UVOD#"
+# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "#UVOD#"
+# cat /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release/SloKJV_Test/09_1SA.usfm |grep "#UVOD#"
+#
+# V vrsticah, ki se začnejo z \iex, zamenjajte \add z \k in \add* z \k*  ker paratex ne dovoljuje \add v \iex vrstici
+sed -i '/^\\iex/s/\\add/\\k/g; /^\\iex/s/\\add\*/\\k\*/g'           $SloKJV$format/*.usfm
 #==========================================================
+
+
 
 
 #============== Odstrani UVOD iz naslednjih knjig ========================
       case $format in
            "A5_NZ_BIG")
                echo -E "   --==    Ker je A5_NZ_BIG -> Pobrise uvod - celo vrstico ki se zacne z \iex"
-               sed -i '/^\\iex/d'                                   $SloKJV$format/*.usfm
+               sed -i '/^\\iex/d'                                    $SloKJV$format/*.usfm
                ;;
            *)  echo -E "   --==    Nic ne naredi. Obicajno Sveto pismo (ni A5_NZ_BIG)... "
                ;;
