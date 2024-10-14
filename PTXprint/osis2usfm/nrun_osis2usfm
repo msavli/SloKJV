@@ -238,11 +238,11 @@ select opt_ver_Git in "${options_ver_Git[@]}"
               echo "     Sinhronizacija z Githubom ..."
               echo " "
                 #================================================================================
-                echo -E "  Ocisti mapo $format zacasnih datotek..."
+                echo -E "   Ocisti mapo $format zacasnih datotek..."
                 #  SloKJV_Github=/home/pc/Dokumenti/GitHub/SloKJV
-                find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format -name '*.usfm'     -exec rm {} \;        >/dev/null 2>&1
-                find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format -name '*.usfm.adj' -exec rm {} \;        >/dev/null 2>&1
-                find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format -name 'local'      -exec rm -rf {} \;    >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_* -name '*.usfm'     -exec rm {} \;        >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_* -name '*.usfm.adj' -exec rm {} \;        >/dev/null 2>&1
+                find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_* -name 'local'      -exec rm -rf {} \;    >/dev/null 2>&1
                 #================================================================================
               /usr/bin/github-desktop
               break
@@ -312,7 +312,7 @@ sed -i ':a;N;$!ba;s/\n<note/<note/g'                     /home/pc/Dokumenti/osis
 # ==============================================================
 
 
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Zlomil bom tudi zapah"
+# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Zlomil bom tudi zapah"
 
 
 # ================= STUDIJSKE OPOMBE ===========================================================
@@ -320,29 +320,20 @@ cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Zlomil bom tudi zapah"
 echo -E "   --==    Spremeni študijske opombe"
 #   V opombo je treba dati vrstico v kateri se nahaja
 #   Veckrat ponovi max je bilo 9x v Kroniski knjigi. Dodal se 2x za vsak slucaj.
-#   <verse osisID="Gen.1.1">    ->  <note type="study">[text.]</note>       ->   \ef + \fr 1.1: \ft [text]\ef*
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-]*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+#   <verse osisID="Gen.1.1">    ->  <note type="study">text.</note>       ->   \ef + \fr 1.1: \ft [text]\ef*
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
+sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-~]*\)<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft \5\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Zlomil bom tudi zapah"
-
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-]*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Zlomil bom tudi zapah"
-
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\([a-z A-Z()0-9,.:;/"-\_–_…óôíúÁÚáé?!="č‘ćžšČĆŽŠ-]*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'     /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "Zlomil bom tudi zapah"
-
-
-
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-sed -i 's|<verse osisID=\"\([A-Za-z0-9]*\).\([0-9]*\).\([0-9]*\)\">\(.*\)<note type=\"study\">\[\(.*\)\]<\/noteStudy>|<verse osisID=\"\1.\2.\3\">\4 \\f + \\fr \2,\3: \\ft [\5]\\f*|g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 #
 #
 # Še v Psalmih naslove psalmov ostevilci z .0
@@ -385,22 +376,41 @@ sed -i 's|<note type=\"study\">\[\(.*\)\]<\/noteStudy>| \\f + \\fr 6.21: \\ft [\
 echo -E "   --==    Testiram število preostalih študijskih opomb: biti mora  0"
 #cat ../GitHub/SloKJV/SloKJV_sword.xml | grep "štiriintrideset let ter zaplodil Pelega"
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep 'Gen.11.16'
+
 echo -e "   --==    Število <note type=\"study\">"
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<note type="study"' |wc -l
+	stevilo=$(grep '<note type="study"' /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | wc -l)
+	if [ "$stevilo" -gt 0 ]; then
+	  echo "Najdenih $stevilo pojavitev '<note type=\"study\"'. Ustavitev skripte."
+	  exit 1
+	else
+	  echo " "
+	fi
+
+
 echo -e "   --==    Število </noteStudy>"
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<\/noteStudy>' |wc -l
+	stevilo=$(grep '<\/noteStudy>' /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | wc -l)
+	if [ "$stevilo" -gt 0 ]; then
+	   echo "Najdenih $stevilo pojavitev '<\/noteStudy>'. Ustavitev skripte."
+	   exit 1
+	else
+	   echo " "
+	fi
+
+
 # ---------------------------------------------------------------------------------------
 #
+
+
 # ---------------------------------------------------------------------------------------
 # Ce je A4 Biblija, potem se vse \f spremenijo v \ef zato da so opombe v dveh stolpcih.
       case $format in
            "A4")
-               echo "   Spremeni:  \f -> \ef"
+               echo "   --==    Spremeni:  \f -> \ef"
                sed -i 's|\\f |\\ef |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
                sed -i 's|\\f* |\\ef* |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
                ;;
            "Test")
-               echo "   Spremeni:  \f -> \ef"
+               echo "   --==    Spremeni:  \f -> \ef"
                sed -i 's|\\f |\\ef |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
                sed -i 's|\\f* |\\ef* |g'      /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
                ;;
@@ -517,13 +527,41 @@ echo -E "   --==    Testiram število preostalih referenc"
 #echo -e "  Poglej Dan 12.1  :"
 #cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<verse osisID=\"Dan.12.1\">'
 echo "   --==    Število <note type=\"crossReference\">"
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<note type="crossReference">' |wc -l
+	stevilo=$(grep '<note type="crossReference"' /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | wc -l)
+	if [ "$stevilo" -gt 0 ]; then
+	  echo "Najdenih $stevilo pojavitev '<note type=\"crossReference\"'. Ustavitev skripte."
+	  exit 1
+	else
+	   echo " "
+	fi
+
 echo "   --==    Število <note type=\"study\""
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<note type="study"' |wc -l
+	stevilo=$(grep '<note type="study"' /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | wc -l)
+	if [ "$stevilo" -gt 0 ]; then
+	  echo "Najdenih $stevilo pojavitev '<note type=\"study\"'. Ustavitev skripte."
+	  exit 1
+	else
+	   echo " "
+	fi
+
 echo "   --==    Število <reference osisRef="
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<reference osisRef=' |wc -l
+	stevilo=$(grep '<reference osisRef=' /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | wc -l)
+	if [ "$stevilo" -gt 0 ]; then
+	  echo "Najdenih $stevilo pojavitev '<reference osisRef='. Ustavitev skripte."
+	  exit 1
+	else
+	   echo " "
+	fi
+
 echo "   --==    Število <\/noteCrossReference>"
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | grep '<\/noteCrossReference>' |wc -l
+	stevilo=$(grep '</noteCrossReference>' /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml | wc -l)
+	if [ "$stevilo" -gt 0 ]; then
+	  echo "Najdenih $stevilo pojavitev '</noteCrossReference>'. Ustavitev skripte."
+	  exit 1
+	else
+	   echo " "
+	fi
+
 # --------------------------------------------------------------------------------------
 # ======================================================================================
 
@@ -537,7 +575,8 @@ cd $osis2usfm                                  >/dev/null 2>&1
 
 
 # ================= Popravi vrstice z Uvodom ================================
-echo -E "   --==    Popravi vrstice z Uvodom da je stevilcenje poglavij v redu dokler se ne naredi boljsi osis2usfm.py"
+echo -E "   --==    Popravi vrstice z Uvodom da je stevilcenje poglavij v redu "
+echo -E "           dokler se ne naredi boljsi osis2usfm.py"
 #     To naj bi zamenjal s \ip   Introduction paragraph
 # Potegne gor vrstico in vse zamenja z   introduction
 #    div type="introduction">         <p type="x-noindent" subType="x-introduction">
@@ -598,7 +637,7 @@ echo -E " "
 sed -i "s|                      <verse osisID=\"\([^.]*\).\([^.]*\).\([^.]*\)\"> \\\p <title type=\"acrostic\" canonical=\"true\"><foreign n=\"\([^.]*\)\">\([^.]*\)</foreign> </title>|\x5cqa \5 \n\                      <verse osisID=\"\1.\2.\3\"> \x5cp |g" /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 sed -i "s|              </verse><verse osisID=\"\([^.]*\).\([^.]*\).\([^.]*\)\"> \\\p <title type=\"acrostic\" canonical=\"true\"><foreign n=\"\([^.]*\)\">\([^.]*\)</foreign> </title>|\x5cqa \5 \n\              </verse><verse osisID=\"\1.\2.\3\"> \x5cp |g" /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 echo " "
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -1 "acrostic"
+# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -1 "acrostic"
 # ==============================
 
 
@@ -775,7 +814,7 @@ sed -i ':a;N;$!ba;s|]\n</div>|]</verse></chapter>|g'       /home/pc/Dokumenti/os
 #</verse></chapter>
 #<div type=\"colophon\" osisID=\"Titus.c\">
 sed -i ':a;N;$!ba;s|</verse></chapter>\n<div type=\"colophon\" osisID=\"\([^.]*\).c\">|\x5ccls|g'       /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep -2 "Titus.c"
+# cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "napisano iz Laodikeje"
 #=============================================================
 
 
@@ -827,9 +866,6 @@ sed -i "s|              </verse></chapter><chapter osisID=|  </verse></chapter><
 sed -i 's|          <\/title><verse osisID=\"|              <\/title><verse osisID=\"|g'                  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
 # ========================================================================
 
-#pico  /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml
-#exit
-
 
 # ================= Psalmi ki imajo naslove ====================
 echo -E "   --==    Psalmi ki imajo naslove"
@@ -880,6 +916,12 @@ sed -i "s|</hi>| \\\bd* |g"                                   /home/pc/Dokumenti
 #============================================================
 
 
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "napisano iz Laodikeje"
+
+
+
+
+
 
 
 #=========================================================================
@@ -892,7 +934,7 @@ rm $SloKJV$format/*.usfm >/dev/null 2>&1
 # Pobrise vse prejsnje PDF datoteke   in ne izpise napake na ekranu
 rm $SloKJV$format/local/ptxprint/*.pdf >/dev/null 2>&1
 echo -E " "
-echo -E "python3 osis2usfm.py SloKJV_sword.xml"
+echo -E "   python3 osis2usfm.py SloKJV_sword.xml"
 echo -E " "
 python3 osis2usfm.py SloKJV_sword.xml
 # Pobrise 40-to kvazi knjigo da so knjige Nove zaveze pravilno ostevilcene
@@ -900,10 +942,6 @@ rm     /home/pc/Dokumenti/osis2usfm/40____.usfm
 #=========================================================================
 #=========================================================================
 
-ls $SloKJV
-ls $SloKJV$format
-
-exit
 
 
       # ======= Kreira datoteko z dodatki - zemljevidi maps mapami =============
@@ -924,7 +962,7 @@ exit
                 echo "\pb"                     >> A1_BAK.usfm
 		echo "\zfiga|p004\*"           >> A1_BAK.usfm
 		echo "\zendperiph"             >> A1_BAK.usfm
-       cat A1_BAK.usfm
+                # cat A1_BAK.usfm
       # ========================================================================
 
 
@@ -1035,14 +1073,14 @@ exit
 echo -E "   --==    Prestavi usfm datotke v pravo mapo za PTXPRINT"
 mv /home/pc/Dokumenti/osis2usfm/*.usfm $SloKJV$format/ >/dev/null 2>&1
 echo -E " " 
-echo -E "======= Koncal generiranje usfm datotek ========= "
-ls -al $SloKJV$format/
+echo -E "   ======= Koncal generiranje usfm datotek ========= "
 echo -E " " 
+	# ls -al $SloKJV$format/
 # ======================================================================================
 
 
 #======================================================================================
-echo -E "   --==    Popravi  znak \p eno vrstico visje v vseh usfm datotekah"
+echo -E "   --==    Popravi znak \p eno vrstico visje v vseh usfm datotekah"
 #                    > \p   
 #    \v 6 \p Text    > \v 6 Text
 sed -i "s/^\\\\v \([0-9]*\) \\\\p /\x5cp\n\x5cv \1 /g"  $SloKJV$format/*.usfm 
@@ -1094,7 +1132,7 @@ sed -i "s/#rk#/\\\\bd\* /g"                             $SloKJV$format/*.usfm
 # =========================================================
 # Dva presledka zamenja z enim presledkom
 sed -i "s/  / /g"             $SloKJV$format/*.usfm
-cat $SloKJV$format/44_JHN.usfm |grep "lovek, poslan od Boga"
+# cat $SloKJV$format/44_JHN.usfm |grep "lovek, poslan od Boga"
 #==========================================================
 
 
@@ -1103,14 +1141,16 @@ cat $SloKJV$format/44_JHN.usfm |grep "lovek, poslan od Boga"
 #  \ip Besedilo uvoda
 #   usfm  \mt1 Evangelij...
 #   usfm  \c 1
-# Zamenja #UVOD#   z 
-#  V psalmu 23 to pobrisem ker dela prevelike crke in ne sluzi presledku
+# Zamenja #UVOD#   z      novo vrsico in zacetkom poglavja 
+echo -E "   --==    V psalmu 23 to pobrisem ker dela prevelike crke in ne sluzi presledku"
 sed -i "s/\\\\iex //g"                                              $SloKJV$format/19_PSA.usfm
-# Popravi vse uvode vseh datotek
+echo -E " "
+echo -E "   --==     Popravi vse uvode vseh datotek"
+cat /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release/SloKJV_Test/09_1SA.usfm |grep "#UVOD#"
 sed -i ':a;N;$!ba;s|\\c 1\n\\p\n\\p \n\\v 1 |\\imt1\n\\iex |g'      $SloKJV$format/*.usfm
-sed -i ':a;N;$!ba;s|#UVOD#|\n\\c 1\n\\p \n\\v 1 |g'            $SloKJV$format/*.usfm
-#cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "xxxxx"
-#head -12 /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release/SloKJV_A4/42_MRK.usfm
+sed -i ':a;N;$!ba;s|#UVOD#|\n\\c 1\n\\p \n\\v 1 |g'                 $SloKJV$format/*.usfm
+cat /home/pc/Dokumenti/osis2usfm/SloKJV_sword.xml |grep "#UVOD#"
+cat /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release/SloKJV_Test/09_1SA.usfm |grep "#UVOD#"
 #==========================================================
 
 
@@ -1689,9 +1729,9 @@ echo -E "   --==    Popravi naslove knjig ==--"
   sed -i "s/\\\\mt1/\x5cmt1 Božansko razodetje Janeza/g"                                         $SloKJV$format/67_REV.usfm
 
 
-echo -E "   --==    Fajl od Psalmov popravi da doda prazno vrstico pred psalme ki imajo naslov ==--"
+echo -E "   --==    Fajl od Psalmov popravi da doda prazno vrstico \b pred psalme ki imajo naslov ==--"
 sed -i "s|\\\v 1 \\\d|\\\d|g"                                                                    $SloKJV$format/19_PSA.usfm
-sed -i "s|XXYYmt2XX|\n\\\q1\n\\\p\n\\\v 1|g"                                                     $SloKJV$format/19_PSA.usfm
+sed -i "s|XXYYmt2XX|\n\\\b\n\\\q1\n\\\v 1|g"                                                     $SloKJV$format/19_PSA.usfm
 
 
 	# C:\Program Files\PTXprint\PTXprint.exe" -c Diglot XYZ
@@ -1797,14 +1837,16 @@ sed -i "s/›Jaz sem Kralj Judov.‹«/›Jaz sem Kralj Judov.‹« \\\zqrcode|p
 #========================================
 
 
+
 #=================  PTXPRINT  ============================
 echo -E "   --==    PTXPRINT                           "
 echo -E " "
-echo -E                 ukaz: ptxprint -c /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format
+echo -E "   ukaz: ptxprint -c /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format"
 echo -E " "
 echo -E " "
-ptxprint -c       /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format
+ptxprint -c  /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format
 #====================================================
+
 
 
 
