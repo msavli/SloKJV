@@ -31,7 +31,7 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [`slokjv.conf`](https://github.com/msavli/SloKJV/blob/master/slokjv.conf) (konfiguracija za [`SloKJV_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.xml))
  #### Windows
  - [Xiphos](https://xiphos.org/)
- - [Windows e-sword](https://www.e-sword.net/) ([`SloKJV.bblx`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) odložiti v mapo: c:\Program Files (x86)\e-Sword)
+ - [Windows e-sword](https://www.e-sword.net/) ([`SloKJV.bblx`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) odložiti v mapo: "c:\Program Files (x86)\e-Sword" Tej mapi je potrebno dodati 'write' pravice, da se sploh lahko datoteko vanjo shrani.)
  #### Android
  - [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) namestitev je avtomatična. Za ročno namestitev datoteko [`Android_data_net.bible.android.activity_files.zip`](https://github.com/msavli/SloKJV/blob/master/Android_data_net.bible.android.activity_files.zip) razpakirati v mapo `\\Android\data\net.bible.android.activity\files`)
  - [Mysword for Android](https://www.mysword.info/download-mysword) ([`SloKJV.bbl.mybible`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bbl.mybible) odložiti v mapo [`/storage/emulated/0/mysword/bibles`])
@@ -99,7 +99,7 @@ You can read the Bible using one of these devices or programs:
   - [`slokjv.conf`](https://github.com/msavli/SloKJV/blob/master/slokjv.conf) (config for [`SloKJV_sword.xml`](https://github.com/msavli/ SloKJV/blob/master/SloKJV_sword.xml))
   #### Windows
   - [Xiphos](https://xiphos.org/)
-  - [Windows e-sword](https://www.e-sword.net/) ([`SloKJV.bblx`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) put in the folder: c:\Program Files (x86)\e-Sword)
+  - [Windows e-sword](https://www.e-sword.net/) ([`SloKJV.bblx`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bblx) put in the folder: "c:\Program Files (x86)\e-Sword" It is necessary to add 'write' permission to this folder in order for the file to be saved.)
   #### Android
   - [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installation is automatic. For manual installation, unpack the file [`Android_data_net.bible.android.activity_files.zip`](https://github.com/msavli/SloKJV/blob/master/Android_data_net.bible.android.activity_files.zip) into the folder `\\ Android\data\net.bible.android.activity\files`)
   - [Mysword for Android](https://www.mysword.info/download-mysword) ([`SloKJV.bbl.mybible`](https://github.com/msavli/SloKJV/blob/master/SloKJV. bbl.mybible) put in folder [`/storage/emulated/0/mysword/bibles`])
