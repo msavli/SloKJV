@@ -7,5 +7,13 @@ piccredit =
 
 [map_ancient_world_patriarchs_bw_90]
 approved = false
-picclear = yes
+
+[map_israel_new_testament_bw]
+approved = false
+
+[map_paul_journeys_bw_90]
+approved = false
+
+[map_exodus_and_canaan_conquest_bw_90]
+approved = false
 
