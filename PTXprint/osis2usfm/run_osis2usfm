@@ -186,7 +186,7 @@ done
 echo " "
 echo "   Ali se PTXPrint nadgradi na zadnjo verzijo?"
 echo " "
-PS4='   Izberi: '
+PS3='   Izberi: '
 options_ver=("Ne" "Nadgradi" "Izhod")
  select opt_ver in "${options_ver[@]}"
  do
@@ -717,12 +717,15 @@ echo -E " "
 #
 #
 python3 pridobi_Naslove_psalmov.py
-# cat 19_PSA.usfm |grep -3 "pred svojim sinom Absalomom."
+echo " "
+#cat 19_PSA.usfm |grep -2 "pred svojim sinom Absalomom."
 #echo -E " "
 #cat 19_PSA.usfm |grep -1 "Pazljivo prisluhni mojim besedam"
 #echo -E " "
 echo -E "   --==    Odstrani naslove poglavij   "
-#  Psalme sem drugače rešil, drugje pa se ne rabi.
+#
+#  Psalm 1   Psalm 2     sem drugače rešil, drugje pa se ne rabi.
+#    Zato odstrani tage    #Start_naslov#  in  #Start_naslov#
 python3 pridobi_odstrani_naslove.py
 #cat 01_GEN.usfm |grep "#Start_naslov#"
 #cat 67_REV.usfm |grep "#Start_naslov#"
@@ -769,6 +772,7 @@ mv 19_PSA_modified.usfm 19_PSA.usfm
 #cat 19_PSA.usfm |grep "S čim naj mladenič"
 echo -E " "
 #=============================================================
+
 
 
       # ======= Kreira datoteko z dodatki - zemljevidi maps mapami =============
@@ -910,9 +914,61 @@ echo -E "   --==    Popravi znak \p eno vrstico visje v vseh usfm datotekah"
 #    \v 6 \p Text    > \v 6 Text
 sed -i "s/^\\\\v \([0-9]*\) \\\\p /\x5cp\n\x5cv \1 /g"  $SloKJV$format/*.usfm 
 #
-#   Za \c 1     doda enter
-# pico sed -i "s/^\\\\c \([0-9]*\)/\x5cc \1\n\x5cp/g"          $SloKJV$format/*.usfm
+#   Za Uvodom se pri vrstici 1 začne . Če tega ne narediš je prva vrstica pri uvodu
+#   Za \c 1     doda enter   
+sed -i "s/^\\\\c \([0-9]*\)/\x5cc \1\n\x5cp/g"     $SloKJV$format/*.usfm
+# 
+# Pri Psalmih potem pobriše vse \p vrstice   xxxx
+sed -i "/^\\\\p/d"     $SloKJV$format/19_PSA.usfm
+# cat $SloKJV$format/19_PSA.usfm |grep "\p "
 # =======================================================
+
+
+# ======= Doda \p vrstico povsod kjer je \v 1 ===========
+# Potem doda \p vrstico povsod kjer je \v 1  
+#  
+# \c 3                    \c3
+# \s Davidov psalm    ->  \s Davidov psalm      (ta vrstica je ali pa ni)
+# \v 1                    \p
+#                         \v 1
+#
+cat $SloKJV$format/19_PSA.usfm |grep -1  "je bežal pred svojim sinom Absalomom"
+echo " "
+sed -i '/^\\v 1 /{x;p;x;s/^\\v 1 /\\p\n\\v 1 /;}' $SloKJV$format/19_PSA.usfm
+# Tole zgoraj Naredi nekaj praznih vrstic  v 19_PSA.usfm
+#cat $SloKJV$format/19_PSA.usfm |grep -1 "\p "
+cat $SloKJV$format/19_PSA.usfm |grep  -1 "je bežal pred svojim sinom Absalomom"
+# ========================================================
+
+
+# ================= Odstrani prazne vrstice =================================
+echo -E "   --==    Odstrani prazne vrstice v Ps 119   "
+echo -E " "
+sed -i -e "/^$/d" $SloKJV$format/19_PSA.usfm
+# ============================================================================
+
+
+# ================= Pridobi Stevilke Psalmov  ================================
+echo -E "   --==    Pridobi Stevilke Psalmov    "
+echo -E " "
+#
+#  Za vsako hebrejsko ško naredi prazno vrstico, razen pri ALEF, kjer je že#
+python3 pridobi_Psalm_119_Bet_p.py $SloKJV$format/19_PSA.usfm
+cat 19_PSA.usfm |grep -1 "Absalom"
+echo -E " "
+#cat 19_PSA.usfm |grep -1 "ko je bežal pred svojim"
+#echo -E " "
+#=============================================================
+
+# Tukaj še ne deluje 
+#Do a Python script. 
+#Find line in 19_PSA.usfm started with "\qa"
+#After that line make  a line:
+#\p
+#But if you find line "\qa [ALEF א]" do not do a line with \p
+#Changes save in the same file
+
+exit
 
 
 # ================= SELAH ================================

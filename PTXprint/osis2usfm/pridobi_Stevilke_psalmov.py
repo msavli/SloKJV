@@ -12,7 +12,8 @@ usfm_content = usfm_content.replace('\\c 1', '\\cl Psalm\n\\c 1', 1)
 
 # Insert \q1 after each \c xxx tag (xxx represents numbers from 1 to 150)
 # Ensures proper handling of numbers from 1 to 150 and optional spaces
-usfm_content = re.sub(r'(\\c\s+\d+)', r'\1\n\\q1', usfm_content)
+#  prej je bilo   usfm_content = re.sub(r'(\\c\s+\d+)', r'\1\n\\q1', usfm_content)
+usfm_content = re.sub(r'(\\c\s+\d+)', r'\1\n', usfm_content)
 
 # Save the modified USFM content back to the file with the same encoding
 with open('19_PSA.usfm', 'w', encoding='utf-8') as file:

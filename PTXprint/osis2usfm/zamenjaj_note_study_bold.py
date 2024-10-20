@@ -4,8 +4,8 @@ def change_bold_hi(text):
     # Define the regex pattern to find <hi type="bold">some_text</hi>
     pattern = r'<hi type="bold">(.*?)</hi>'
     
-    # Replace the pattern with \+bd some_text\+bd*
-    text = re.sub(pattern, r'\\+bd \1\\+bd*', text)
+    # Replace the pattern with \+bd some_text\+bd*  (tu sem spredaj dodal presledek)
+    text = re.sub(pattern, r' \\+bd \1\\+bd*', text)
     
     return text
 

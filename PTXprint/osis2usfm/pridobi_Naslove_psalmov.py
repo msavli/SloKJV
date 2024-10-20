@@ -2,7 +2,8 @@ import re
 
 def process_psalm_file(filename):
     # Regular expression to find the psalm title between the #Start_Psalm_title# and #End_Psalm_title# tags
-    pattern = r"#Start_Psalm_title#(.*?)#End_Psalm_title#"
+    # Tukaj sem spredaj dodal presledek da Psalm 3   lepo pride     \v 1 \nd Gospod\
+    pattern = r"  #Start_Psalm_title#(.*?)#End_Psalm_title#"
     
     with open(filename, 'r', encoding='utf-8') as infile:
         lines = infile.readlines()

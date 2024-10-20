@@ -13,9 +13,9 @@ def process_file(input_filename, output_filename):
                 extracted_text = match.group(1).strip()
                 line = re.sub(pattern, '', line).strip()  # Remove the tags and extracted text from the line
                 
-                # Write the extracted text and then the modified line
+                # Write the extracted text and then the modified line  ( odstranil  \\g\n)
                 if extracted_text:
-                    outfile.write(f"{extracted_text}\n\\q1\n")
+                    outfile.write(f"{extracted_text}\n")
                 if line:
                     outfile.write(f"{line}\n")
             else:
