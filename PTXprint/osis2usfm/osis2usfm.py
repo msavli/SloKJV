@@ -179,17 +179,17 @@ for testament in root[0][1:]:
             f.write(u"\\h  " + booknames[ids[id_ind]] + u"\n")
             f.write(u"\\h1 " + booknames[ids[id_ind]] + u"\n")
             f.write(u"\\toc2 " + booknames[ids[id_ind]] + u"\n")
-            f.write(u"\\mt1 " + booknames[ids[id_ind]] + u"\n")
+            f.write(u"\\mt2 " + booknames[ids[id_ind]] + u"\n")
         else:
             f.write(u"\\h  \n")
             f.write(u"\\h1 \n")
             f.write(u"\\toc1 \n")
             f.write(u"\\toc2 \n")
             f.write(u"\\toc3 \n")
-            f.write(u"\\mt1 \n")
+            f.write(u"\\mt2 \n")
         for (chapter_ind, chapter) in enumerate(book):
             f.write(u"\\c %d\n" % (chapter_ind+1))
-            f.write(u"\\p \n")
+#            f.write(u"\\p \n")   #  Paratex se ne strinja z \p
             for (verse_ind, verse) in enumerate(chapter):
                 f.write(u"\\v %d " % (verse_ind+1))
                 if verse.text:
