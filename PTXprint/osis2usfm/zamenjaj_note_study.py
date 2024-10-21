@@ -6,8 +6,8 @@ def replace_notes(text):
     # Define the regex pattern to find <note type="study">some text</note>
     note_pattern = r'<note type="study">(.*?)</note>'
     
-    # Define the regex pattern to find Jesus speaking
-    jesus_speaking_pattern = r'<q who="Jesus" marker="">(.*?)</q>'
+    #x Define the regex pattern to find Jesus speaking
+    #x jesus_speaking_pattern = r'<q who="Jesus" marker="">(.*?)</q>'
     
     # Define the regex pattern to extract the chapter and verse numbers from <verse osisID="Matt.4.7">
     verse_pattern = r'<verse osisID="[^"]+?(\d+)\.(\d+)">'
@@ -43,16 +43,16 @@ def replace_notes_in_line(line, chapter, verse):
     # Define the regex pattern to find <note type="study">some text</note>
     note_pattern = r'<note type="study">(.*?)</note>'
     
-    # Define the regex pattern to find Jesus speaking
-    jesus_speaking_pattern = r'<q who="Jesus" marker="">(.*?)</q>'
+    #x Define the regex pattern to find Jesus speaking
+    #x jesus_speaking_pattern = r'<q who="Jesus" marker="">(.*?)</q>'
     
-    # Replace <note> when Jesus is speaking
-    if re.search(jesus_speaking_pattern, line):
-        # Jesus is speaking: Replace with the +f format
-        line = re.sub(note_pattern, lambda m: f"\\+f + \\fr {chapter},{verse}: \\+ft {m.group(1)}\\f*", line)
-    else:
-        # Jesus is not speaking: Replace with the standard f format
-        line = re.sub(note_pattern, lambda m: f"\\f + \\fr {chapter},{verse}: \\ft {m.group(1)}\\f*", line)
+    #x Replace <note> when Jesus is speaking
+    #x if re.search(jesus_speaking_pattern, line):
+    #x    # Jesus is speaking: Replace with the +f format
+    #x    line = re.sub(note_pattern, lambda m: f"\\+f + \\fr {chapter},{verse}: \\+ft {m.group(1)}\\f*", line)
+    #xelse:
+    #x    # Jesus is not speaking: Replace with the standard f format
+    line = re.sub(note_pattern, lambda m: f"\\f + \\fr {chapter},{verse}: \\ft {m.group(1)}\\f*", line)
     
     return line
 

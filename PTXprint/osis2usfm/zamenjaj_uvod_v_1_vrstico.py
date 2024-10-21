@@ -2,6 +2,7 @@ import re
 
 def change_lb_and_introduction(text):
     # Replace <lb /> with \ip
+    #  lb sem odstranil iz izvorne datoteke pri škrlatni črv, ker čudno razporedi opombo in se to ne uporablja več.
     text = re.sub(r'<lb\s*/>', r'\\ip', text)
     
     # Define the regex pattern to find <div type="introduction">...</div> followed by <chapter><verse>

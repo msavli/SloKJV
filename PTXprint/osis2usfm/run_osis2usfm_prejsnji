@@ -1121,8 +1121,14 @@ sed -i "s/^\\\\c \([0-9]*\)/\x5cc \1\n\x5cp/g"          $SloKJV$format/*.usfm
 echo -E "   --==    Kjer sta opomba in referenca skupaj naredi presledek ==--"
 #      \add*\x   ->    \add* \x
 sed -i "s/\\\\add\*\\\\x/\x5cadd\* \x5cx/g"             $SloKJV$format/*.usfm
+echo -E "   --==    Kjer sta opomba in referenca skupaj naredi presledek ==--"
+#      \wj*\x    ->    \wj* \x
+sed -i "s/\\\\wj\*\\\\x/\x5cwj\* \x5cx/g"             $SloKJV$format/*.usfm
+cat $SloKJV$format/45_ACT.usfm |grep "Samariji ter do skrajnega dela zemlje"
 # =======================================================
 
+
+exit
 
 # ================= SELAH ================================
 echo -E "   --==    SELAH    "

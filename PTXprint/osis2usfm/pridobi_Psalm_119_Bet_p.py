@@ -1,17 +1,16 @@
-def process_psalm_file(input_file):
-    with open(input_file, 'r') as file:
-        lines = file.readlines()
+# Open the file and read its contents
+with open('19_PSA.usfm', 'r') as file:
+    lines = file.readlines()
 
-    output_lines = []
-    for line in lines:
-        output_lines.append(line)
-        if line.startswith('\\qa') and not line.startswith('\\qa [ALEF א]'):
-            output_lines.append('\\p\n')
+# Process the lines
+new_lines = []
+for line in lines:
+    new_lines.append(line)
+    if line.startswith("\\qa") and line.strip() != "\\qa [ALEF א]":
+        new_lines.append("\\p\n")
 
-    with open(input_file, 'w') as file:
-        file.writelines(output_lines)
+# Write the modified content back to the file
+with open('19_PSA.usfm', 'w') as file:
+    file.writelines(new_lines)
 
-# Process the file
-process_psalm_file('19_PSA.usfm')
-
-# print("The file has been processed and saved in '19_PSA.usfm'.")
+# print("The file has been updated successfully.")
