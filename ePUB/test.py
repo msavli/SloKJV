@@ -212,7 +212,7 @@ markup=Sword.MarkupFilterMgr(outputType)
 markup.thisown=False
 mgr = Sword.SWMgr(markup)
 
-moduleName="SloKJV"   
+moduleName="SloKJV"
 """ moduleName="FreCrampon" """
 
 mod=mgr.getModule(moduleName)

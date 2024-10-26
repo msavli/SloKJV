@@ -62,6 +62,7 @@ osis2mod $SloKJV_Module_Path/modules/texts/ztext/slokjv $SloKJV_Github/SloKJV_sw
 echo
 echo "   Kreiram html datoteke..."
 echo
+
 python3 $SloKJVepubPath/test.py   # |& tee    log.txt
 
 cd html
@@ -169,7 +170,6 @@ for file in [0-9][0-9]-[A-Z0-9][A-Za-z]*.html; do
     mv "$tmpfile" "$file"
 done
 
-
 echo
 echo "   Popravljam html datoteke..."
 echo
@@ -177,12 +177,14 @@ echo
 #sed -i ':a;N;$!ba;s/\(<span class=\"verseNbr\">[0-9]\+<\/span>\)\n   \n/<p>\&#160;<\/p>\n  \1\n   /g'  $SloKJVepubPath/html/*.html
 sed -i ':a;N;$!ba;s/\(<span class=\"verseNbr\">[0-9]\+<\/span>\)\n   \n/<br \/>\n  \1\n   /g'  $SloKJVepubPath/html/*.html
 
-# Hebrejske crke - dodam prelom, da gr besedilo v novo vrstico    [iz]<br>  pa potem nazaj popravim
-sed -i 's/]/]<br \/>/g'       $SloKJVepubPath/html/22-Ps.html     ### 22-Ps-119.html
-sed -i 's/iz\]<br \/>/iz\]/g' $SloKJVepubPath/html/22-Ps.html     ### 22-Ps-119.html
 
-# Pred hebrejskimi crkami nardi <br>
-# yet to do
+
+
+echo "   Hebrejske crke - pobrisem ALEF ... vrstice v Ps 119"
+# cat 22-Ps.html |grep -1 "Blagoslovljeni so neomade"
+sed -i '/[א-ת]/d' $SloKJVepubPath/html/22-Ps.html
+      #  sed -i "s/ \([א-ת]\)\]/ \1\]<br>/g" $SloKJVepubPath/html/22-Ps.html   # Vstavi <br> ce hebr. ostane
+# cat 22-Ps.html |grep -1 "Blagoslovljeni so neomade"
 
 
 # Popravi kazalo da ni pikice pred -Kazalo in ga spremeni v H2
@@ -223,9 +225,15 @@ sed -i 's/<ul>/<\/li>/g' $SloKJVepubPath/templates/toc_temp.txt
 #rm templates/toc_temp.txt
 
 
-# V podrobnem kazalu odstrani naslove poglavij knjig da ostanejo samo stevilke poglavij
+echo "  V podrobnem kazalu odstrani naslove poglavij knjig da ostanejo samo stevilke poglavij"
 sed -i 's/^ <a href=\"\([-a-zA-Z0-9]*\).html\">\([0-9A-Za-zčžšČŽŠ., ]*\) \([0-9]*\)<\/a>/<a href=\"\1.html\">\3<\/a>/g'    $SloKJVepubPath/html/01-toc.html
-sed -i 's/Salomonova pesem \[hebr. Pesem pesmi\] \([0-9]\)<\/a>,/\1<\/a>,/g'                                               $SloKJVepubPath/html/01-toc.html
+	# sed -i 's/Salomonova pesem \[hebr. Pesem pesmi\] \([0-9]\)<\/a>,/\1<\/a>,/g'                                               $SloKJVepubPath/html/01-toc.html
+
+echo "  Naslovi knjig in poglavij se popravljajo v templates/sl-utf8.conf"
+# sed -i 's/Kraljev/Kralji/g'                                                                                                $SloKJVepubPath/html/01-toc.html      # |head -50 $SloKJVepubPath/toc.ncx
+# sed -i 's/Dela/Apostolska Dela/g'                                                                                          $SloKJVepubPath/html/01-toc.html      # |head -50 $SloKJVepubPath/toc.ncx
+# sed -i 's/Kraljev/Kralji/g'                                                                                                $SloKJVepubPath/toc.ncx               # |head -50 $SloKJVepubPath/toc.ncx
+# sed -i 's/Dela/Apostolska Dela/g'                                                                                          $SloKJVepubPath/toc.ncx               # |head -50 $SloKJVepubPath/toc.ncx
 
 
 echo "   Kazalo  html/01-toc.html  popravi ..."
@@ -273,13 +281,14 @@ echo
 
 
 echo "  V kazalo vnese Novo in Staro zavezo. "
-#  <h2>Stara zaveza</h2>
+#  <li><h2>Stara zaveza</h2></li>
 #  <li><a href="04-
-sed -i 's|<li> <a href="04-|<h2>Stara zaveza</h2>\n<li><a href="04-|g' $SloKJVepubPath/html/01-toc.html
-#  <h2>Nova zaveza</h2>
+sed -i 's|<li> <a href="04-|<\/ul><h2>Stara zaveza<\/h2>\n<li><a href="04-|g' $SloKJVepubPath/html/01-toc.html
+#  <li><h2>Nova zaveza</h2></li>
 #  <li> <a href="43-
-sed -i 's|<li> <a href="43-|<h2>Nova zaveza</h2>\n<li><a href="43-|g' $SloKJVepubPath/html/01-toc.html
+sed -i 's|<li> <a href="43-|<h2>Nova zaveza<\/h2>\n<li><a href="43-|g' $SloKJVepubPath/html/01-toc.html
 # cat $SloKJVepubPath/html/01-toc.html |grep zaveza
+
 
 
 
@@ -306,7 +315,7 @@ echo "  Prekopira v Github mapo "
 mv $SloKJVepubPath/untitled.epub $SloKJV_Github/SloKJV.epub
 
 echo "   Poglejmo ePUB z mupdf bralnikom ..."
-mupdf $SloKJVepubPath/$SloKJV_Github/SloKJV.epub
+mupdf $SloKJV_Github/SloKJV.epub
 
 
 cd $SloKJV_Github
@@ -326,7 +335,7 @@ cd $SloKJVepubPath
 echo
 echo "   Preveri ePUB "
 echo
-java -jar /home/pc/Dokumenti/epub/epubcheck-5.1.0/epubcheck.jar  $SloKJVepubPath/$SloKJV_Github/SloKJV.epub >log.txt 2>&1
+java -jar /home/pc/Dokumenti/epub/epubcheck-5.1.0/epubcheck.jar  $SloKJV_Github/SloKJV.epub >log.txt 2>&1
 echo
 echo "   Pokaze napake v ePUB "
 echo
