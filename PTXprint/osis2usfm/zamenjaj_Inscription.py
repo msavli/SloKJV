@@ -5,7 +5,9 @@ def replace_inscription_tags(text):
     inscription_pattern = r'<inscription>(.*?)</inscription>'
     
     # Replace <inscription> tags
-    text = re.sub(inscription_pattern, r'\\w \1\\w*', text)
+    #  Centered paragraph.
+    #    https://ubsicap.github.io/usfm/paragraphs/index.html?highlight=inscription
+    text = re.sub(inscription_pattern, r'\\pc \1\\pc*', text)
     
     return text
 

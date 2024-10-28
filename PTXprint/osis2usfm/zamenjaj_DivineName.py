@@ -10,6 +10,9 @@ def replace_divineName_tags(text):
     # Define the regex pattern to find inscription tags
     inscription_pattern = r'<inscription>(.*?)</inscription>'
     
+    # Define the regex pattern to find footnote tags
+    footnote_pattern = r'<note type="study">(.*?)</note>'
+    
     # Find all instances where Jesus is speaking
     jesus_speaking_matches = re.findall(jesus_speaking_pattern, text, re.DOTALL)
     
@@ -21,6 +24,12 @@ def replace_divineName_tags(text):
     # Replace <divineName> tags within inscription sections
     inscription_matches = re.findall(inscription_pattern, text, re.DOTALL)
     for match in inscription_matches:
+        replaced_text = re.sub(divineName_pattern, r'\\+nd \1\\+nd*', match)
+        text = text.replace(match, replaced_text)
+
+    # Replace <divineName> tags within footnote sections
+    footnote_matches = re.findall(footnote_pattern, text, re.DOTALL)
+    for match in footnote_matches:
         replaced_text = re.sub(divineName_pattern, r'\\+nd \1\\+nd*', match)
         text = text.replace(match, replaced_text)
     
@@ -41,6 +50,3 @@ result = replace_divineName_tags(bible_lines)
 output_file = 'SloKJV_sword1.xml'
 with open(output_file, 'w') as file:
     file.write(result)
-
-# print(f"Replacements done. Check the output in {output_file}.")
-

@@ -318,6 +318,21 @@ echo -E " "
 # ======================================================================
 
 
+# ======= Zamenja DIVINE NAME GOSPOD ===============
+echo -E "   --==    Zamenja DIVINE NAME GOSPOD"
+# Write a Python script to change <divineName>Gospod</divineName> to \\+nd Gospod\\+nd if it is between Jesus speaking tags, and to \\nd Gospod\\nd if it is not between Jesus speaking tags. 
+# Do the same if the <divineName> tag is inside an <inscription> tag
+# <inscription>SVETO \nd Gospodu\nd*</inscription>   ->   \w SVETO \+nd Gospodu\+nd*\w
+python3 zamenjaj_DivineName.py $osis2usfm/SloKJV_sword.xml $osis2usfm/SloKJV_sword1.xml
+mv SloKJV_sword1.xml SloKJV_sword.xml
+cat $osis2usfm/SloKJV_sword.xml |grep "Bog je Mojzesu spregovoril in mu rekel: »Jaz"
+cat $osis2usfm/SloKJV_sword.xml |grep "Človek je sklonil svojo glavo"
+cat $osis2usfm/SloKJV_sword.xml |grep "mojemu Gospodu: ›Sédi na mojo"
+cat $osis2usfm/SloKJV_sword.xml |grep "istega zlata in nanjo napisali pisanje"
+echo -E "  "
+# ================================================================================
+
+
 # =================== BOLD v opombi Psalma 22  ========================
 echo -E "   --==    BOLD v opombi Psalma 22"
 echo -E " "
@@ -365,20 +380,6 @@ echo -E "   --==    Zamenjaj Odstrani Reference iz uvoda"
 echo -E " "
 python3 zamenjaj_note_reference_introduction.py 
 cat $osis2usfm/SloKJV_sword.xml |grep "introduction" |grep "reference"
-# ================================================================================
-
-
-# ======= Zamenja DIVINE NAME GOSPOD ===============
-echo -E "   --==    Zamenja DIVINE NAME GOSPOD"
-# Write a Python script to change <divineName>Gospod</divineName> to \\+nd Gospod\\+nd if it is between Jesus speaking tags, and to \\nd Gospod\\nd if it is not between Jesus speaking tags. 
-# Do the same if the <divineName> tag is inside an <inscription> tag
-# <inscription>SVETO \nd Gospodu\nd*</inscription>   ->   \w SVETO \+nd Gospodu\+nd*\w
-python3 zamenjaj_DivineName.py $osis2usfm/SloKJV_sword.xml $osis2usfm/SloKJV_sword1.xml
-mv SloKJV_sword1.xml SloKJV_sword.xml
-#cat $osis2usfm/SloKJV_sword.xml |grep "Človek je sklonil svojo glavo"
-#cat $osis2usfm/SloKJV_sword.xml |grep "mojemu Gospodu: ›Sédi na mojo"
-#cat $osis2usfm/SloKJV_sword.xml |grep "istega zlata in nanjo napisali pisanje"
-echo -E "  "
 # ================================================================================
 
 
