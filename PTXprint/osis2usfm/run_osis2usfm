@@ -322,13 +322,12 @@ echo -E " "
 echo -E "   --==    Zamenja DIVINE NAME GOSPOD"
 # Write a Python script to change <divineName>Gospod</divineName> to \\+nd Gospod\\+nd if it is between Jesus speaking tags, and to \\nd Gospod\\nd if it is not between Jesus speaking tags. 
 # Do the same if the <divineName> tag is inside an <inscription> tag
-# <inscription>SVETO \nd Gospodu\nd*</inscription>   ->   \w SVETO \+nd Gospodu\+nd*\w
 python3 zamenjaj_DivineName.py $osis2usfm/SloKJV_sword.xml $osis2usfm/SloKJV_sword1.xml
 mv SloKJV_sword1.xml SloKJV_sword.xml
-cat $osis2usfm/SloKJV_sword.xml |grep "Bog je Mojzesu spregovoril in mu rekel: »Jaz"
-cat $osis2usfm/SloKJV_sword.xml |grep "Človek je sklonil svojo glavo"
-cat $osis2usfm/SloKJV_sword.xml |grep "mojemu Gospodu: ›Sédi na mojo"
-cat $osis2usfm/SloKJV_sword.xml |grep "istega zlata in nanjo napisali pisanje"
+# cat $osis2usfm/SloKJV_sword.xml |grep "Bog je Mojzesu spregovoril in mu rekel: »Jaz"
+# cat $osis2usfm/SloKJV_sword.xml |grep "Človek je sklonil svojo glavo"
+# cat $osis2usfm/SloKJV_sword.xml |grep "mojemu Gospodu: ›Sédi na mojo"
+# cat $osis2usfm/SloKJV_sword.xml |grep "istega zlata in nanjo napisali pisanje"
 echo -E "  "
 # ================================================================================
 
@@ -385,10 +384,11 @@ cat $osis2usfm/SloKJV_sword.xml |grep "introduction" |grep "reference"
 
 # ======= Zamenja Inscription ======================
 echo -E "   --==    Zamenja Inscription"
-# <inscription>SVETO \nd Gospodu\nd*</inscription>   ->   \w SVETO \+nd Gospodu\+nd*\w
+# <inscription>SVETO \+nd Gospodu\+nd*</inscription>   ->   \em SVETO \+nd Gospodu\+nd*\}\em*
 python3 zamenjaj_Inscription.py $osis2usfm/SloKJV_sword.xml $osis2usfm/SloKJV_sword1.xml
 mv SloKJV_sword1.xml SloKJV_sword.xml
-# cat $osis2usfm/SloKJV_sword.xml |grep "MENE, MENE, TEKEL"
+#   preveri   MENE, MENE, TEKEL, UPHARSIN
+cat $osis2usfm/SloKJV_sword.xml |grep -2 "Bog je preštel tvoje kraljestvo in ga konč"
 echo -E "  "
 # ================================================================================
 
@@ -641,7 +641,7 @@ echo -E "   python3 osis2usfm.py SloKJV_sword.xml"
 echo -E " "
 python3 osis2usfm.py SloKJV_sword.xml
 # Pobrise 40-to kvazi knjigo da so knjige Nove zaveze pravilno ostevilcene
-rm 40____.usfm >/dev/null 2>&1
+rm $SloKJV$format/40____.usfm >/dev/null 2>&1
 #=========================================================================
 #=========================================================================
 
@@ -971,8 +971,8 @@ echo -E "   --==    SELAH    "
 #    Pridela se lahko nazaj, ker je to samo v knjigi Ps in Hab.
 #              \qs  \qs*
 echo -E " "
-sed -i "s| Sela.| \\\qs Sela. \\\qs*|g" 19_PSA.usfm
-sed -i "s| Sela.| \\\qs Sela. \\\qs*|g" 35_HAB.usfm
+sed -i "s| Sela.|\\\qs Sela. \\\qs*|g" 19_PSA.usfm
+sed -i "s| Sela.|\\\qs Sela. \\\qs*|g" 35_HAB.usfm
 
 cat SloKJV_sword.xml |grep "\qs"
 cat SloKJV_sword.xml |grep -F 'type="selah">'
