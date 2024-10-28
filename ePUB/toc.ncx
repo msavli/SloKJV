@@ -1,0 +1,5184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+ "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta content="urn:uuid:5ad2adae-ec76-4dca-a936-8bb17482653a" name="dtb:uid"/>
+    <meta content="0" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+
+  <docTitle>
+    <text>Sveto pismo kralja Jakoba</text>
+  </docTitle>
+  <navMap>
+
+<navPoint id="navPoint-1" playOrder="1">
+<navLabel><text>Kazalo knjig</text></navLabel>
+<content src="Text/01-toc.html"/>
+</navPoint>
+
+<navPoint id="navPoint-2" playOrder="2">
+<navLabel><text>Kolofon in predgovor</text></navLabel>
+<content src="Text/02-foreword.html"/>
+</navPoint>
+
+<navPoint id="navPoint-3" playOrder="3">
+<navLabel><text>Jezus, reši me!</text></navLabel>
+<content src="Text/03-jezus.html"/>
+</navPoint>
+
+<navPoint id="navPoint-4" playOrder="4">
+<navLabel><text></text></navLabel>
+<content src="Text/04-Gen.html"/>
+
+<navPoint id="navPoint-5" playOrder="5">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/04-Gen.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-6" playOrder="6">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/04-Gen.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-7" playOrder="7">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/04-Gen.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-8" playOrder="8">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/04-Gen.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-9" playOrder="9">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/04-Gen.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-10" playOrder="10">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/04-Gen.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-11" playOrder="11">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/04-Gen.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-12" playOrder="12">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/04-Gen.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-13" playOrder="13">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/04-Gen.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-14" playOrder="14">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/04-Gen.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-15" playOrder="15">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/04-Gen.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-16" playOrder="16">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/04-Gen.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-17" playOrder="17">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/04-Gen.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-18" playOrder="18">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/04-Gen.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-19" playOrder="19">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/04-Gen.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-20" playOrder="20">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/04-Gen.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-21" playOrder="21">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/04-Gen.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-22" playOrder="22">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/04-Gen.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-23" playOrder="23">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/04-Gen.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-24" playOrder="24">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/04-Gen.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-25" playOrder="25">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/04-Gen.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-26" playOrder="26">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/04-Gen.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-27" playOrder="27">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/04-Gen.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-28" playOrder="28">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/04-Gen.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-29" playOrder="29">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/04-Gen.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-30" playOrder="30">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/04-Gen.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-31" playOrder="31">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/04-Gen.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-32" playOrder="32">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/04-Gen.html#chapter28"/>
+</navPoint>
+<navPoint id="navPoint-33" playOrder="33">
+<navLabel><text> 29</text></navLabel>
+<content src="Text/04-Gen.html#chapter29"/>
+</navPoint>
+<navPoint id="navPoint-34" playOrder="34">
+<navLabel><text> 30</text></navLabel>
+<content src="Text/04-Gen.html#chapter30"/>
+</navPoint>
+<navPoint id="navPoint-35" playOrder="35">
+<navLabel><text> 31</text></navLabel>
+<content src="Text/04-Gen.html#chapter31"/>
+</navPoint>
+<navPoint id="navPoint-36" playOrder="36">
+<navLabel><text> 32</text></navLabel>
+<content src="Text/04-Gen.html#chapter32"/>
+</navPoint>
+<navPoint id="navPoint-37" playOrder="37">
+<navLabel><text> 33</text></navLabel>
+<content src="Text/04-Gen.html#chapter33"/>
+</navPoint>
+<navPoint id="navPoint-38" playOrder="38">
+<navLabel><text> 34</text></navLabel>
+<content src="Text/04-Gen.html#chapter34"/>
+</navPoint>
+<navPoint id="navPoint-39" playOrder="39">
+<navLabel><text> 35</text></navLabel>
+<content src="Text/04-Gen.html#chapter35"/>
+</navPoint>
+<navPoint id="navPoint-40" playOrder="40">
+<navLabel><text> 36</text></navLabel>
+<content src="Text/04-Gen.html#chapter36"/>
+</navPoint>
+<navPoint id="navPoint-41" playOrder="41">
+<navLabel><text> 37</text></navLabel>
+<content src="Text/04-Gen.html#chapter37"/>
+</navPoint>
+<navPoint id="navPoint-42" playOrder="42">
+<navLabel><text> 38</text></navLabel>
+<content src="Text/04-Gen.html#chapter38"/>
+</navPoint>
+<navPoint id="navPoint-43" playOrder="43">
+<navLabel><text> 39</text></navLabel>
+<content src="Text/04-Gen.html#chapter39"/>
+</navPoint>
+<navPoint id="navPoint-44" playOrder="44">
+<navLabel><text> 40</text></navLabel>
+<content src="Text/04-Gen.html#chapter40"/>
+</navPoint>
+<navPoint id="navPoint-45" playOrder="45">
+<navLabel><text> 41</text></navLabel>
+<content src="Text/04-Gen.html#chapter41"/>
+</navPoint>
+<navPoint id="navPoint-46" playOrder="46">
+<navLabel><text> 42</text></navLabel>
+<content src="Text/04-Gen.html#chapter42"/>
+</navPoint>
+<navPoint id="navPoint-47" playOrder="47">
+<navLabel><text> 43</text></navLabel>
+<content src="Text/04-Gen.html#chapter43"/>
+</navPoint>
+<navPoint id="navPoint-48" playOrder="48">
+<navLabel><text> 44</text></navLabel>
+<content src="Text/04-Gen.html#chapter44"/>
+</navPoint>
+<navPoint id="navPoint-49" playOrder="49">
+<navLabel><text> 45</text></navLabel>
+<content src="Text/04-Gen.html#chapter45"/>
+</navPoint>
+<navPoint id="navPoint-50" playOrder="50">
+<navLabel><text> 46</text></navLabel>
+<content src="Text/04-Gen.html#chapter46"/>
+</navPoint>
+<navPoint id="navPoint-51" playOrder="51">
+<navLabel><text> 47</text></navLabel>
+<content src="Text/04-Gen.html#chapter47"/>
+</navPoint>
+<navPoint id="navPoint-52" playOrder="52">
+<navLabel><text> 48</text></navLabel>
+<content src="Text/04-Gen.html#chapter48"/>
+</navPoint>
+<navPoint id="navPoint-53" playOrder="53">
+<navLabel><text> 49</text></navLabel>
+<content src="Text/04-Gen.html#chapter49"/>
+</navPoint>
+<navPoint id="navPoint-54" playOrder="54">
+<navLabel><text> 50</text></navLabel>
+<content src="Text/04-Gen.html#chapter50"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-55" playOrder="55">
+<navLabel><text></text></navLabel>
+<content src="Text/05-Exod.html"/>
+
+<navPoint id="navPoint-56" playOrder="56">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/05-Exod.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-57" playOrder="57">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/05-Exod.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-58" playOrder="58">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/05-Exod.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-59" playOrder="59">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/05-Exod.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-60" playOrder="60">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/05-Exod.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-61" playOrder="61">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/05-Exod.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-62" playOrder="62">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/05-Exod.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-63" playOrder="63">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/05-Exod.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-64" playOrder="64">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/05-Exod.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-65" playOrder="65">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/05-Exod.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-66" playOrder="66">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/05-Exod.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-67" playOrder="67">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/05-Exod.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-68" playOrder="68">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/05-Exod.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-69" playOrder="69">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/05-Exod.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-70" playOrder="70">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/05-Exod.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-71" playOrder="71">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/05-Exod.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-72" playOrder="72">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/05-Exod.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-73" playOrder="73">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/05-Exod.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-74" playOrder="74">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/05-Exod.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-75" playOrder="75">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/05-Exod.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-76" playOrder="76">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/05-Exod.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-77" playOrder="77">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/05-Exod.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-78" playOrder="78">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/05-Exod.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-79" playOrder="79">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/05-Exod.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-80" playOrder="80">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/05-Exod.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-81" playOrder="81">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/05-Exod.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-82" playOrder="82">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/05-Exod.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-83" playOrder="83">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/05-Exod.html#chapter28"/>
+</navPoint>
+<navPoint id="navPoint-84" playOrder="84">
+<navLabel><text> 29</text></navLabel>
+<content src="Text/05-Exod.html#chapter29"/>
+</navPoint>
+<navPoint id="navPoint-85" playOrder="85">
+<navLabel><text> 30</text></navLabel>
+<content src="Text/05-Exod.html#chapter30"/>
+</navPoint>
+<navPoint id="navPoint-86" playOrder="86">
+<navLabel><text> 31</text></navLabel>
+<content src="Text/05-Exod.html#chapter31"/>
+</navPoint>
+<navPoint id="navPoint-87" playOrder="87">
+<navLabel><text> 32</text></navLabel>
+<content src="Text/05-Exod.html#chapter32"/>
+</navPoint>
+<navPoint id="navPoint-88" playOrder="88">
+<navLabel><text> 33</text></navLabel>
+<content src="Text/05-Exod.html#chapter33"/>
+</navPoint>
+<navPoint id="navPoint-89" playOrder="89">
+<navLabel><text> 34</text></navLabel>
+<content src="Text/05-Exod.html#chapter34"/>
+</navPoint>
+<navPoint id="navPoint-90" playOrder="90">
+<navLabel><text> 35</text></navLabel>
+<content src="Text/05-Exod.html#chapter35"/>
+</navPoint>
+<navPoint id="navPoint-91" playOrder="91">
+<navLabel><text> 36</text></navLabel>
+<content src="Text/05-Exod.html#chapter36"/>
+</navPoint>
+<navPoint id="navPoint-92" playOrder="92">
+<navLabel><text> 37</text></navLabel>
+<content src="Text/05-Exod.html#chapter37"/>
+</navPoint>
+<navPoint id="navPoint-93" playOrder="93">
+<navLabel><text> 38</text></navLabel>
+<content src="Text/05-Exod.html#chapter38"/>
+</navPoint>
+<navPoint id="navPoint-94" playOrder="94">
+<navLabel><text> 39</text></navLabel>
+<content src="Text/05-Exod.html#chapter39"/>
+</navPoint>
+<navPoint id="navPoint-95" playOrder="95">
+<navLabel><text> 40</text></navLabel>
+<content src="Text/05-Exod.html#chapter40"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-96" playOrder="96">
+<navLabel><text></text></navLabel>
+<content src="Text/06-Lev.html"/>
+
+<navPoint id="navPoint-97" playOrder="97">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/06-Lev.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-98" playOrder="98">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/06-Lev.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-99" playOrder="99">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/06-Lev.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-100" playOrder="100">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/06-Lev.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-101" playOrder="101">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/06-Lev.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-102" playOrder="102">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/06-Lev.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-103" playOrder="103">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/06-Lev.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-104" playOrder="104">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/06-Lev.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-105" playOrder="105">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/06-Lev.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-106" playOrder="106">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/06-Lev.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-107" playOrder="107">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/06-Lev.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-108" playOrder="108">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/06-Lev.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-109" playOrder="109">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/06-Lev.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-110" playOrder="110">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/06-Lev.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-111" playOrder="111">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/06-Lev.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-112" playOrder="112">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/06-Lev.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-113" playOrder="113">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/06-Lev.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-114" playOrder="114">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/06-Lev.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-115" playOrder="115">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/06-Lev.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-116" playOrder="116">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/06-Lev.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-117" playOrder="117">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/06-Lev.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-118" playOrder="118">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/06-Lev.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-119" playOrder="119">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/06-Lev.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-120" playOrder="120">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/06-Lev.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-121" playOrder="121">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/06-Lev.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-122" playOrder="122">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/06-Lev.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-123" playOrder="123">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/06-Lev.html#chapter27"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-124" playOrder="124">
+<navLabel><text></text></navLabel>
+<content src="Text/07-Num.html"/>
+
+<navPoint id="navPoint-125" playOrder="125">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/07-Num.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-126" playOrder="126">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/07-Num.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-127" playOrder="127">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/07-Num.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-128" playOrder="128">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/07-Num.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-129" playOrder="129">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/07-Num.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-130" playOrder="130">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/07-Num.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-131" playOrder="131">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/07-Num.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-132" playOrder="132">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/07-Num.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-133" playOrder="133">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/07-Num.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-134" playOrder="134">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/07-Num.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-135" playOrder="135">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/07-Num.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-136" playOrder="136">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/07-Num.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-137" playOrder="137">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/07-Num.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-138" playOrder="138">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/07-Num.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-139" playOrder="139">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/07-Num.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-140" playOrder="140">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/07-Num.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-141" playOrder="141">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/07-Num.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-142" playOrder="142">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/07-Num.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-143" playOrder="143">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/07-Num.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-144" playOrder="144">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/07-Num.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-145" playOrder="145">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/07-Num.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-146" playOrder="146">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/07-Num.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-147" playOrder="147">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/07-Num.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-148" playOrder="148">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/07-Num.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-149" playOrder="149">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/07-Num.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-150" playOrder="150">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/07-Num.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-151" playOrder="151">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/07-Num.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-152" playOrder="152">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/07-Num.html#chapter28"/>
+</navPoint>
+<navPoint id="navPoint-153" playOrder="153">
+<navLabel><text> 29</text></navLabel>
+<content src="Text/07-Num.html#chapter29"/>
+</navPoint>
+<navPoint id="navPoint-154" playOrder="154">
+<navLabel><text> 30</text></navLabel>
+<content src="Text/07-Num.html#chapter30"/>
+</navPoint>
+<navPoint id="navPoint-155" playOrder="155">
+<navLabel><text> 31</text></navLabel>
+<content src="Text/07-Num.html#chapter31"/>
+</navPoint>
+<navPoint id="navPoint-156" playOrder="156">
+<navLabel><text> 32</text></navLabel>
+<content src="Text/07-Num.html#chapter32"/>
+</navPoint>
+<navPoint id="navPoint-157" playOrder="157">
+<navLabel><text> 33</text></navLabel>
+<content src="Text/07-Num.html#chapter33"/>
+</navPoint>
+<navPoint id="navPoint-158" playOrder="158">
+<navLabel><text> 34</text></navLabel>
+<content src="Text/07-Num.html#chapter34"/>
+</navPoint>
+<navPoint id="navPoint-159" playOrder="159">
+<navLabel><text> 35</text></navLabel>
+<content src="Text/07-Num.html#chapter35"/>
+</navPoint>
+<navPoint id="navPoint-160" playOrder="160">
+<navLabel><text> 36</text></navLabel>
+<content src="Text/07-Num.html#chapter36"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-161" playOrder="161">
+<navLabel><text></text></navLabel>
+<content src="Text/08-Deut.html"/>
+
+<navPoint id="navPoint-162" playOrder="162">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/08-Deut.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-163" playOrder="163">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/08-Deut.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-164" playOrder="164">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/08-Deut.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-165" playOrder="165">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/08-Deut.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-166" playOrder="166">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/08-Deut.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-167" playOrder="167">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/08-Deut.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-168" playOrder="168">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/08-Deut.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-169" playOrder="169">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/08-Deut.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-170" playOrder="170">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/08-Deut.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-171" playOrder="171">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/08-Deut.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-172" playOrder="172">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/08-Deut.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-173" playOrder="173">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/08-Deut.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-174" playOrder="174">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/08-Deut.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-175" playOrder="175">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/08-Deut.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-176" playOrder="176">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/08-Deut.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-177" playOrder="177">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/08-Deut.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-178" playOrder="178">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/08-Deut.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-179" playOrder="179">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/08-Deut.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-180" playOrder="180">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/08-Deut.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-181" playOrder="181">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/08-Deut.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-182" playOrder="182">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/08-Deut.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-183" playOrder="183">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/08-Deut.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-184" playOrder="184">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/08-Deut.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-185" playOrder="185">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/08-Deut.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-186" playOrder="186">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/08-Deut.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-187" playOrder="187">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/08-Deut.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-188" playOrder="188">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/08-Deut.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-189" playOrder="189">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/08-Deut.html#chapter28"/>
+</navPoint>
+<navPoint id="navPoint-190" playOrder="190">
+<navLabel><text> 29</text></navLabel>
+<content src="Text/08-Deut.html#chapter29"/>
+</navPoint>
+<navPoint id="navPoint-191" playOrder="191">
+<navLabel><text> 30</text></navLabel>
+<content src="Text/08-Deut.html#chapter30"/>
+</navPoint>
+<navPoint id="navPoint-192" playOrder="192">
+<navLabel><text> 31</text></navLabel>
+<content src="Text/08-Deut.html#chapter31"/>
+</navPoint>
+<navPoint id="navPoint-193" playOrder="193">
+<navLabel><text> 32</text></navLabel>
+<content src="Text/08-Deut.html#chapter32"/>
+</navPoint>
+<navPoint id="navPoint-194" playOrder="194">
+<navLabel><text> 33</text></navLabel>
+<content src="Text/08-Deut.html#chapter33"/>
+</navPoint>
+<navPoint id="navPoint-195" playOrder="195">
+<navLabel><text> 34</text></navLabel>
+<content src="Text/08-Deut.html#chapter34"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-196" playOrder="196">
+<navLabel><text></text></navLabel>
+<content src="Text/09-Josh.html"/>
+
+<navPoint id="navPoint-197" playOrder="197">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/09-Josh.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-198" playOrder="198">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/09-Josh.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-199" playOrder="199">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/09-Josh.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-200" playOrder="200">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/09-Josh.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-201" playOrder="201">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/09-Josh.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-202" playOrder="202">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/09-Josh.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-203" playOrder="203">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/09-Josh.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-204" playOrder="204">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/09-Josh.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-205" playOrder="205">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/09-Josh.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-206" playOrder="206">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/09-Josh.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-207" playOrder="207">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/09-Josh.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-208" playOrder="208">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/09-Josh.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-209" playOrder="209">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/09-Josh.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-210" playOrder="210">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/09-Josh.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-211" playOrder="211">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/09-Josh.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-212" playOrder="212">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/09-Josh.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-213" playOrder="213">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/09-Josh.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-214" playOrder="214">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/09-Josh.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-215" playOrder="215">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/09-Josh.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-216" playOrder="216">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/09-Josh.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-217" playOrder="217">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/09-Josh.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-218" playOrder="218">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/09-Josh.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-219" playOrder="219">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/09-Josh.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-220" playOrder="220">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/09-Josh.html#chapter24"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-221" playOrder="221">
+<navLabel><text></text></navLabel>
+<content src="Text/10-Judg.html"/>
+
+<navPoint id="navPoint-222" playOrder="222">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/10-Judg.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-223" playOrder="223">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/10-Judg.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-224" playOrder="224">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/10-Judg.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-225" playOrder="225">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/10-Judg.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-226" playOrder="226">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/10-Judg.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-227" playOrder="227">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/10-Judg.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-228" playOrder="228">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/10-Judg.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-229" playOrder="229">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/10-Judg.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-230" playOrder="230">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/10-Judg.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-231" playOrder="231">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/10-Judg.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-232" playOrder="232">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/10-Judg.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-233" playOrder="233">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/10-Judg.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-234" playOrder="234">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/10-Judg.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-235" playOrder="235">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/10-Judg.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-236" playOrder="236">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/10-Judg.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-237" playOrder="237">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/10-Judg.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-238" playOrder="238">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/10-Judg.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-239" playOrder="239">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/10-Judg.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-240" playOrder="240">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/10-Judg.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-241" playOrder="241">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/10-Judg.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-242" playOrder="242">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/10-Judg.html#chapter21"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-243" playOrder="243">
+<navLabel><text></text></navLabel>
+<content src="Text/11-Ruth.html"/>
+
+<navPoint id="navPoint-244" playOrder="244">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/11-Ruth.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-245" playOrder="245">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/11-Ruth.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-246" playOrder="246">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/11-Ruth.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-247" playOrder="247">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/11-Ruth.html#chapter4"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-248" playOrder="248">
+<navLabel><text></text></navLabel>
+<content src="Text/12-1Sam.html"/>
+
+<navPoint id="navPoint-249" playOrder="249">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/12-1Sam.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-250" playOrder="250">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/12-1Sam.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-251" playOrder="251">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/12-1Sam.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-252" playOrder="252">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/12-1Sam.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-253" playOrder="253">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/12-1Sam.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-254" playOrder="254">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/12-1Sam.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-255" playOrder="255">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/12-1Sam.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-256" playOrder="256">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/12-1Sam.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-257" playOrder="257">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/12-1Sam.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-258" playOrder="258">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/12-1Sam.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-259" playOrder="259">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/12-1Sam.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-260" playOrder="260">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/12-1Sam.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-261" playOrder="261">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/12-1Sam.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-262" playOrder="262">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/12-1Sam.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-263" playOrder="263">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/12-1Sam.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-264" playOrder="264">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/12-1Sam.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-265" playOrder="265">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/12-1Sam.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-266" playOrder="266">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/12-1Sam.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-267" playOrder="267">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/12-1Sam.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-268" playOrder="268">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/12-1Sam.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-269" playOrder="269">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/12-1Sam.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-270" playOrder="270">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/12-1Sam.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-271" playOrder="271">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/12-1Sam.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-272" playOrder="272">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/12-1Sam.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-273" playOrder="273">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/12-1Sam.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-274" playOrder="274">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/12-1Sam.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-275" playOrder="275">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/12-1Sam.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-276" playOrder="276">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/12-1Sam.html#chapter28"/>
+</navPoint>
+<navPoint id="navPoint-277" playOrder="277">
+<navLabel><text> 29</text></navLabel>
+<content src="Text/12-1Sam.html#chapter29"/>
+</navPoint>
+<navPoint id="navPoint-278" playOrder="278">
+<navLabel><text> 30</text></navLabel>
+<content src="Text/12-1Sam.html#chapter30"/>
+</navPoint>
+<navPoint id="navPoint-279" playOrder="279">
+<navLabel><text> 31</text></navLabel>
+<content src="Text/12-1Sam.html#chapter31"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-280" playOrder="280">
+<navLabel><text></text></navLabel>
+<content src="Text/13-2Sam.html"/>
+
+<navPoint id="navPoint-281" playOrder="281">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/13-2Sam.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-282" playOrder="282">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/13-2Sam.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-283" playOrder="283">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/13-2Sam.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-284" playOrder="284">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/13-2Sam.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-285" playOrder="285">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/13-2Sam.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-286" playOrder="286">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/13-2Sam.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-287" playOrder="287">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/13-2Sam.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-288" playOrder="288">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/13-2Sam.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-289" playOrder="289">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/13-2Sam.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-290" playOrder="290">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/13-2Sam.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-291" playOrder="291">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/13-2Sam.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-292" playOrder="292">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/13-2Sam.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-293" playOrder="293">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/13-2Sam.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-294" playOrder="294">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/13-2Sam.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-295" playOrder="295">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/13-2Sam.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-296" playOrder="296">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/13-2Sam.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-297" playOrder="297">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/13-2Sam.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-298" playOrder="298">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/13-2Sam.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-299" playOrder="299">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/13-2Sam.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-300" playOrder="300">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/13-2Sam.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-301" playOrder="301">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/13-2Sam.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-302" playOrder="302">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/13-2Sam.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-303" playOrder="303">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/13-2Sam.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-304" playOrder="304">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/13-2Sam.html#chapter24"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-305" playOrder="305">
+<navLabel><text></text></navLabel>
+<content src="Text/14-1Kgs.html"/>
+
+<navPoint id="navPoint-306" playOrder="306">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-307" playOrder="307">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-308" playOrder="308">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-309" playOrder="309">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-310" playOrder="310">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-311" playOrder="311">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-312" playOrder="312">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-313" playOrder="313">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-314" playOrder="314">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-315" playOrder="315">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-316" playOrder="316">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-317" playOrder="317">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-318" playOrder="318">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-319" playOrder="319">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-320" playOrder="320">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-321" playOrder="321">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-322" playOrder="322">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-323" playOrder="323">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-324" playOrder="324">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-325" playOrder="325">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-326" playOrder="326">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-327" playOrder="327">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/14-1Kgs.html#chapter22"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-328" playOrder="328">
+<navLabel><text></text></navLabel>
+<content src="Text/15-2Kgs.html"/>
+
+<navPoint id="navPoint-329" playOrder="329">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-330" playOrder="330">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-331" playOrder="331">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-332" playOrder="332">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-333" playOrder="333">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-334" playOrder="334">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-335" playOrder="335">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-336" playOrder="336">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-337" playOrder="337">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-338" playOrder="338">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-339" playOrder="339">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-340" playOrder="340">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-341" playOrder="341">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-342" playOrder="342">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-343" playOrder="343">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-344" playOrder="344">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-345" playOrder="345">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-346" playOrder="346">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-347" playOrder="347">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-348" playOrder="348">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-349" playOrder="349">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-350" playOrder="350">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-351" playOrder="351">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-352" playOrder="352">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-353" playOrder="353">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/15-2Kgs.html#chapter25"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-354" playOrder="354">
+<navLabel><text></text></navLabel>
+<content src="Text/16-1Chr.html"/>
+
+<navPoint id="navPoint-355" playOrder="355">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/16-1Chr.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-356" playOrder="356">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/16-1Chr.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-357" playOrder="357">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/16-1Chr.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-358" playOrder="358">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/16-1Chr.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-359" playOrder="359">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/16-1Chr.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-360" playOrder="360">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/16-1Chr.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-361" playOrder="361">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/16-1Chr.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-362" playOrder="362">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/16-1Chr.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-363" playOrder="363">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/16-1Chr.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-364" playOrder="364">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/16-1Chr.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-365" playOrder="365">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/16-1Chr.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-366" playOrder="366">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/16-1Chr.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-367" playOrder="367">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/16-1Chr.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-368" playOrder="368">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/16-1Chr.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-369" playOrder="369">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/16-1Chr.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-370" playOrder="370">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/16-1Chr.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-371" playOrder="371">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/16-1Chr.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-372" playOrder="372">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/16-1Chr.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-373" playOrder="373">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/16-1Chr.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-374" playOrder="374">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/16-1Chr.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-375" playOrder="375">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/16-1Chr.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-376" playOrder="376">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/16-1Chr.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-377" playOrder="377">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/16-1Chr.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-378" playOrder="378">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/16-1Chr.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-379" playOrder="379">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/16-1Chr.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-380" playOrder="380">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/16-1Chr.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-381" playOrder="381">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/16-1Chr.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-382" playOrder="382">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/16-1Chr.html#chapter28"/>
+</navPoint>
+<navPoint id="navPoint-383" playOrder="383">
+<navLabel><text> 29</text></navLabel>
+<content src="Text/16-1Chr.html#chapter29"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-384" playOrder="384">
+<navLabel><text></text></navLabel>
+<content src="Text/17-2Chr.html"/>
+
+<navPoint id="navPoint-385" playOrder="385">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/17-2Chr.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-386" playOrder="386">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/17-2Chr.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-387" playOrder="387">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/17-2Chr.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-388" playOrder="388">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/17-2Chr.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-389" playOrder="389">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/17-2Chr.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-390" playOrder="390">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/17-2Chr.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-391" playOrder="391">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/17-2Chr.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-392" playOrder="392">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/17-2Chr.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-393" playOrder="393">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/17-2Chr.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-394" playOrder="394">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/17-2Chr.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-395" playOrder="395">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/17-2Chr.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-396" playOrder="396">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/17-2Chr.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-397" playOrder="397">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/17-2Chr.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-398" playOrder="398">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/17-2Chr.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-399" playOrder="399">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/17-2Chr.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-400" playOrder="400">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/17-2Chr.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-401" playOrder="401">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/17-2Chr.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-402" playOrder="402">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/17-2Chr.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-403" playOrder="403">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/17-2Chr.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-404" playOrder="404">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/17-2Chr.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-405" playOrder="405">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/17-2Chr.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-406" playOrder="406">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/17-2Chr.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-407" playOrder="407">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/17-2Chr.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-408" playOrder="408">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/17-2Chr.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-409" playOrder="409">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/17-2Chr.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-410" playOrder="410">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/17-2Chr.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-411" playOrder="411">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/17-2Chr.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-412" playOrder="412">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/17-2Chr.html#chapter28"/>
+</navPoint>
+<navPoint id="navPoint-413" playOrder="413">
+<navLabel><text> 29</text></navLabel>
+<content src="Text/17-2Chr.html#chapter29"/>
+</navPoint>
+<navPoint id="navPoint-414" playOrder="414">
+<navLabel><text> 30</text></navLabel>
+<content src="Text/17-2Chr.html#chapter30"/>
+</navPoint>
+<navPoint id="navPoint-415" playOrder="415">
+<navLabel><text> 31</text></navLabel>
+<content src="Text/17-2Chr.html#chapter31"/>
+</navPoint>
+<navPoint id="navPoint-416" playOrder="416">
+<navLabel><text> 32</text></navLabel>
+<content src="Text/17-2Chr.html#chapter32"/>
+</navPoint>
+<navPoint id="navPoint-417" playOrder="417">
+<navLabel><text> 33</text></navLabel>
+<content src="Text/17-2Chr.html#chapter33"/>
+</navPoint>
+<navPoint id="navPoint-418" playOrder="418">
+<navLabel><text> 34</text></navLabel>
+<content src="Text/17-2Chr.html#chapter34"/>
+</navPoint>
+<navPoint id="navPoint-419" playOrder="419">
+<navLabel><text> 35</text></navLabel>
+<content src="Text/17-2Chr.html#chapter35"/>
+</navPoint>
+<navPoint id="navPoint-420" playOrder="420">
+<navLabel><text> 36</text></navLabel>
+<content src="Text/17-2Chr.html#chapter36"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-421" playOrder="421">
+<navLabel><text></text></navLabel>
+<content src="Text/18-Ezra.html"/>
+
+<navPoint id="navPoint-422" playOrder="422">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/18-Ezra.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-423" playOrder="423">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/18-Ezra.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-424" playOrder="424">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/18-Ezra.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-425" playOrder="425">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/18-Ezra.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-426" playOrder="426">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/18-Ezra.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-427" playOrder="427">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/18-Ezra.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-428" playOrder="428">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/18-Ezra.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-429" playOrder="429">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/18-Ezra.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-430" playOrder="430">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/18-Ezra.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-431" playOrder="431">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/18-Ezra.html#chapter10"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-432" playOrder="432">
+<navLabel><text></text></navLabel>
+<content src="Text/19-Neh.html"/>
+
+<navPoint id="navPoint-433" playOrder="433">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/19-Neh.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-434" playOrder="434">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/19-Neh.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-435" playOrder="435">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/19-Neh.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-436" playOrder="436">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/19-Neh.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-437" playOrder="437">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/19-Neh.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-438" playOrder="438">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/19-Neh.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-439" playOrder="439">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/19-Neh.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-440" playOrder="440">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/19-Neh.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-441" playOrder="441">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/19-Neh.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-442" playOrder="442">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/19-Neh.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-443" playOrder="443">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/19-Neh.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-444" playOrder="444">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/19-Neh.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-445" playOrder="445">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/19-Neh.html#chapter13"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-446" playOrder="446">
+<navLabel><text></text></navLabel>
+<content src="Text/20-Esth.html"/>
+
+<navPoint id="navPoint-447" playOrder="447">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/20-Esth.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-448" playOrder="448">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/20-Esth.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-449" playOrder="449">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/20-Esth.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-450" playOrder="450">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/20-Esth.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-451" playOrder="451">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/20-Esth.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-452" playOrder="452">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/20-Esth.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-453" playOrder="453">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/20-Esth.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-454" playOrder="454">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/20-Esth.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-455" playOrder="455">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/20-Esth.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-456" playOrder="456">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/20-Esth.html#chapter10"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-457" playOrder="457">
+<navLabel><text></text></navLabel>
+<content src="Text/21-Job.html"/>
+
+<navPoint id="navPoint-458" playOrder="458">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/21-Job.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-459" playOrder="459">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/21-Job.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-460" playOrder="460">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/21-Job.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-461" playOrder="461">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/21-Job.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-462" playOrder="462">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/21-Job.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-463" playOrder="463">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/21-Job.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-464" playOrder="464">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/21-Job.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-465" playOrder="465">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/21-Job.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-466" playOrder="466">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/21-Job.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-467" playOrder="467">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/21-Job.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-468" playOrder="468">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/21-Job.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-469" playOrder="469">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/21-Job.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-470" playOrder="470">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/21-Job.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-471" playOrder="471">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/21-Job.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-472" playOrder="472">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/21-Job.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-473" playOrder="473">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/21-Job.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-474" playOrder="474">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/21-Job.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-475" playOrder="475">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/21-Job.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-476" playOrder="476">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/21-Job.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-477" playOrder="477">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/21-Job.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-478" playOrder="478">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/21-Job.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-479" playOrder="479">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/21-Job.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-480" playOrder="480">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/21-Job.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-481" playOrder="481">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/21-Job.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-482" playOrder="482">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/21-Job.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-483" playOrder="483">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/21-Job.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-484" playOrder="484">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/21-Job.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-485" playOrder="485">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/21-Job.html#chapter28"/>
+</navPoint>
+<navPoint id="navPoint-486" playOrder="486">
+<navLabel><text> 29</text></navLabel>
+<content src="Text/21-Job.html#chapter29"/>
+</navPoint>
+<navPoint id="navPoint-487" playOrder="487">
+<navLabel><text> 30</text></navLabel>
+<content src="Text/21-Job.html#chapter30"/>
+</navPoint>
+<navPoint id="navPoint-488" playOrder="488">
+<navLabel><text> 31</text></navLabel>
+<content src="Text/21-Job.html#chapter31"/>
+</navPoint>
+<navPoint id="navPoint-489" playOrder="489">
+<navLabel><text> 32</text></navLabel>
+<content src="Text/21-Job.html#chapter32"/>
+</navPoint>
+<navPoint id="navPoint-490" playOrder="490">
+<navLabel><text> 33</text></navLabel>
+<content src="Text/21-Job.html#chapter33"/>
+</navPoint>
+<navPoint id="navPoint-491" playOrder="491">
+<navLabel><text> 34</text></navLabel>
+<content src="Text/21-Job.html#chapter34"/>
+</navPoint>
+<navPoint id="navPoint-492" playOrder="492">
+<navLabel><text> 35</text></navLabel>
+<content src="Text/21-Job.html#chapter35"/>
+</navPoint>
+<navPoint id="navPoint-493" playOrder="493">
+<navLabel><text> 36</text></navLabel>
+<content src="Text/21-Job.html#chapter36"/>
+</navPoint>
+<navPoint id="navPoint-494" playOrder="494">
+<navLabel><text> 37</text></navLabel>
+<content src="Text/21-Job.html#chapter37"/>
+</navPoint>
+<navPoint id="navPoint-495" playOrder="495">
+<navLabel><text> 38</text></navLabel>
+<content src="Text/21-Job.html#chapter38"/>
+</navPoint>
+<navPoint id="navPoint-496" playOrder="496">
+<navLabel><text> 39</text></navLabel>
+<content src="Text/21-Job.html#chapter39"/>
+</navPoint>
+<navPoint id="navPoint-497" playOrder="497">
+<navLabel><text> 40</text></navLabel>
+<content src="Text/21-Job.html#chapter40"/>
+</navPoint>
+<navPoint id="navPoint-498" playOrder="498">
+<navLabel><text> 41</text></navLabel>
+<content src="Text/21-Job.html#chapter41"/>
+</navPoint>
+<navPoint id="navPoint-499" playOrder="499">
+<navLabel><text> 42</text></navLabel>
+<content src="Text/21-Job.html#chapter42"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-500" playOrder="500">
+<navLabel><text></text></navLabel>
+<content src="Text/22-Ps.html"/>
+
+<navPoint id="navPoint-501" playOrder="501">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/22-Ps.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-502" playOrder="502">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/22-Ps.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-503" playOrder="503">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/22-Ps.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-504" playOrder="504">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/22-Ps.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-505" playOrder="505">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/22-Ps.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-506" playOrder="506">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/22-Ps.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-507" playOrder="507">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/22-Ps.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-508" playOrder="508">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/22-Ps.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-509" playOrder="509">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/22-Ps.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-510" playOrder="510">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/22-Ps.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-511" playOrder="511">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/22-Ps.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-512" playOrder="512">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/22-Ps.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-513" playOrder="513">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/22-Ps.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-514" playOrder="514">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/22-Ps.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-515" playOrder="515">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/22-Ps.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-516" playOrder="516">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/22-Ps.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-517" playOrder="517">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/22-Ps.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-518" playOrder="518">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/22-Ps.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-519" playOrder="519">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/22-Ps.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-520" playOrder="520">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/22-Ps.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-521" playOrder="521">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/22-Ps.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-522" playOrder="522">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/22-Ps.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-523" playOrder="523">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/22-Ps.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-524" playOrder="524">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/22-Ps.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-525" playOrder="525">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/22-Ps.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-526" playOrder="526">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/22-Ps.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-527" playOrder="527">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/22-Ps.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-528" playOrder="528">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/22-Ps.html#chapter28"/>
+</navPoint>
+<navPoint id="navPoint-529" playOrder="529">
+<navLabel><text> 29</text></navLabel>
+<content src="Text/22-Ps.html#chapter29"/>
+</navPoint>
+<navPoint id="navPoint-530" playOrder="530">
+<navLabel><text> 30</text></navLabel>
+<content src="Text/22-Ps.html#chapter30"/>
+</navPoint>
+<navPoint id="navPoint-531" playOrder="531">
+<navLabel><text> 31</text></navLabel>
+<content src="Text/22-Ps.html#chapter31"/>
+</navPoint>
+<navPoint id="navPoint-532" playOrder="532">
+<navLabel><text> 32</text></navLabel>
+<content src="Text/22-Ps.html#chapter32"/>
+</navPoint>
+<navPoint id="navPoint-533" playOrder="533">
+<navLabel><text> 33</text></navLabel>
+<content src="Text/22-Ps.html#chapter33"/>
+</navPoint>
+<navPoint id="navPoint-534" playOrder="534">
+<navLabel><text> 34</text></navLabel>
+<content src="Text/22-Ps.html#chapter34"/>
+</navPoint>
+<navPoint id="navPoint-535" playOrder="535">
+<navLabel><text> 35</text></navLabel>
+<content src="Text/22-Ps.html#chapter35"/>
+</navPoint>
+<navPoint id="navPoint-536" playOrder="536">
+<navLabel><text> 36</text></navLabel>
+<content src="Text/22-Ps.html#chapter36"/>
+</navPoint>
+<navPoint id="navPoint-537" playOrder="537">
+<navLabel><text> 37</text></navLabel>
+<content src="Text/22-Ps.html#chapter37"/>
+</navPoint>
+<navPoint id="navPoint-538" playOrder="538">
+<navLabel><text> 38</text></navLabel>
+<content src="Text/22-Ps.html#chapter38"/>
+</navPoint>
+<navPoint id="navPoint-539" playOrder="539">
+<navLabel><text> 39</text></navLabel>
+<content src="Text/22-Ps.html#chapter39"/>
+</navPoint>
+<navPoint id="navPoint-540" playOrder="540">
+<navLabel><text> 40</text></navLabel>
+<content src="Text/22-Ps.html#chapter40"/>
+</navPoint>
+<navPoint id="navPoint-541" playOrder="541">
+<navLabel><text> 41</text></navLabel>
+<content src="Text/22-Ps.html#chapter41"/>
+</navPoint>
+<navPoint id="navPoint-542" playOrder="542">
+<navLabel><text> 42</text></navLabel>
+<content src="Text/22-Ps.html#chapter42"/>
+</navPoint>
+<navPoint id="navPoint-543" playOrder="543">
+<navLabel><text> 43</text></navLabel>
+<content src="Text/22-Ps.html#chapter43"/>
+</navPoint>
+<navPoint id="navPoint-544" playOrder="544">
+<navLabel><text> 44</text></navLabel>
+<content src="Text/22-Ps.html#chapter44"/>
+</navPoint>
+<navPoint id="navPoint-545" playOrder="545">
+<navLabel><text> 45</text></navLabel>
+<content src="Text/22-Ps.html#chapter45"/>
+</navPoint>
+<navPoint id="navPoint-546" playOrder="546">
+<navLabel><text> 46</text></navLabel>
+<content src="Text/22-Ps.html#chapter46"/>
+</navPoint>
+<navPoint id="navPoint-547" playOrder="547">
+<navLabel><text> 47</text></navLabel>
+<content src="Text/22-Ps.html#chapter47"/>
+</navPoint>
+<navPoint id="navPoint-548" playOrder="548">
+<navLabel><text> 48</text></navLabel>
+<content src="Text/22-Ps.html#chapter48"/>
+</navPoint>
+<navPoint id="navPoint-549" playOrder="549">
+<navLabel><text> 49</text></navLabel>
+<content src="Text/22-Ps.html#chapter49"/>
+</navPoint>
+<navPoint id="navPoint-550" playOrder="550">
+<navLabel><text> 50</text></navLabel>
+<content src="Text/22-Ps.html#chapter50"/>
+</navPoint>
+<navPoint id="navPoint-551" playOrder="551">
+<navLabel><text> 51</text></navLabel>
+<content src="Text/22-Ps.html#chapter51"/>
+</navPoint>
+<navPoint id="navPoint-552" playOrder="552">
+<navLabel><text> 52</text></navLabel>
+<content src="Text/22-Ps.html#chapter52"/>
+</navPoint>
+<navPoint id="navPoint-553" playOrder="553">
+<navLabel><text> 53</text></navLabel>
+<content src="Text/22-Ps.html#chapter53"/>
+</navPoint>
+<navPoint id="navPoint-554" playOrder="554">
+<navLabel><text> 54</text></navLabel>
+<content src="Text/22-Ps.html#chapter54"/>
+</navPoint>
+<navPoint id="navPoint-555" playOrder="555">
+<navLabel><text> 55</text></navLabel>
+<content src="Text/22-Ps.html#chapter55"/>
+</navPoint>
+<navPoint id="navPoint-556" playOrder="556">
+<navLabel><text> 56</text></navLabel>
+<content src="Text/22-Ps.html#chapter56"/>
+</navPoint>
+<navPoint id="navPoint-557" playOrder="557">
+<navLabel><text> 57</text></navLabel>
+<content src="Text/22-Ps.html#chapter57"/>
+</navPoint>
+<navPoint id="navPoint-558" playOrder="558">
+<navLabel><text> 58</text></navLabel>
+<content src="Text/22-Ps.html#chapter58"/>
+</navPoint>
+<navPoint id="navPoint-559" playOrder="559">
+<navLabel><text> 59</text></navLabel>
+<content src="Text/22-Ps.html#chapter59"/>
+</navPoint>
+<navPoint id="navPoint-560" playOrder="560">
+<navLabel><text> 60</text></navLabel>
+<content src="Text/22-Ps.html#chapter60"/>
+</navPoint>
+<navPoint id="navPoint-561" playOrder="561">
+<navLabel><text> 61</text></navLabel>
+<content src="Text/22-Ps.html#chapter61"/>
+</navPoint>
+<navPoint id="navPoint-562" playOrder="562">
+<navLabel><text> 62</text></navLabel>
+<content src="Text/22-Ps.html#chapter62"/>
+</navPoint>
+<navPoint id="navPoint-563" playOrder="563">
+<navLabel><text> 63</text></navLabel>
+<content src="Text/22-Ps.html#chapter63"/>
+</navPoint>
+<navPoint id="navPoint-564" playOrder="564">
+<navLabel><text> 64</text></navLabel>
+<content src="Text/22-Ps.html#chapter64"/>
+</navPoint>
+<navPoint id="navPoint-565" playOrder="565">
+<navLabel><text> 65</text></navLabel>
+<content src="Text/22-Ps.html#chapter65"/>
+</navPoint>
+<navPoint id="navPoint-566" playOrder="566">
+<navLabel><text> 66</text></navLabel>
+<content src="Text/22-Ps.html#chapter66"/>
+</navPoint>
+<navPoint id="navPoint-567" playOrder="567">
+<navLabel><text> 67</text></navLabel>
+<content src="Text/22-Ps.html#chapter67"/>
+</navPoint>
+<navPoint id="navPoint-568" playOrder="568">
+<navLabel><text> 68</text></navLabel>
+<content src="Text/22-Ps.html#chapter68"/>
+</navPoint>
+<navPoint id="navPoint-569" playOrder="569">
+<navLabel><text> 69</text></navLabel>
+<content src="Text/22-Ps.html#chapter69"/>
+</navPoint>
+<navPoint id="navPoint-570" playOrder="570">
+<navLabel><text> 70</text></navLabel>
+<content src="Text/22-Ps.html#chapter70"/>
+</navPoint>
+<navPoint id="navPoint-571" playOrder="571">
+<navLabel><text> 71</text></navLabel>
+<content src="Text/22-Ps.html#chapter71"/>
+</navPoint>
+<navPoint id="navPoint-572" playOrder="572">
+<navLabel><text> 72</text></navLabel>
+<content src="Text/22-Ps.html#chapter72"/>
+</navPoint>
+<navPoint id="navPoint-573" playOrder="573">
+<navLabel><text> 73</text></navLabel>
+<content src="Text/22-Ps.html#chapter73"/>
+</navPoint>
+<navPoint id="navPoint-574" playOrder="574">
+<navLabel><text> 74</text></navLabel>
+<content src="Text/22-Ps.html#chapter74"/>
+</navPoint>
+<navPoint id="navPoint-575" playOrder="575">
+<navLabel><text> 75</text></navLabel>
+<content src="Text/22-Ps.html#chapter75"/>
+</navPoint>
+<navPoint id="navPoint-576" playOrder="576">
+<navLabel><text> 76</text></navLabel>
+<content src="Text/22-Ps.html#chapter76"/>
+</navPoint>
+<navPoint id="navPoint-577" playOrder="577">
+<navLabel><text> 77</text></navLabel>
+<content src="Text/22-Ps.html#chapter77"/>
+</navPoint>
+<navPoint id="navPoint-578" playOrder="578">
+<navLabel><text> 78</text></navLabel>
+<content src="Text/22-Ps.html#chapter78"/>
+</navPoint>
+<navPoint id="navPoint-579" playOrder="579">
+<navLabel><text> 79</text></navLabel>
+<content src="Text/22-Ps.html#chapter79"/>
+</navPoint>
+<navPoint id="navPoint-580" playOrder="580">
+<navLabel><text> 80</text></navLabel>
+<content src="Text/22-Ps.html#chapter80"/>
+</navPoint>
+<navPoint id="navPoint-581" playOrder="581">
+<navLabel><text> 81</text></navLabel>
+<content src="Text/22-Ps.html#chapter81"/>
+</navPoint>
+<navPoint id="navPoint-582" playOrder="582">
+<navLabel><text> 82</text></navLabel>
+<content src="Text/22-Ps.html#chapter82"/>
+</navPoint>
+<navPoint id="navPoint-583" playOrder="583">
+<navLabel><text> 83</text></navLabel>
+<content src="Text/22-Ps.html#chapter83"/>
+</navPoint>
+<navPoint id="navPoint-584" playOrder="584">
+<navLabel><text> 84</text></navLabel>
+<content src="Text/22-Ps.html#chapter84"/>
+</navPoint>
+<navPoint id="navPoint-585" playOrder="585">
+<navLabel><text> 85</text></navLabel>
+<content src="Text/22-Ps.html#chapter85"/>
+</navPoint>
+<navPoint id="navPoint-586" playOrder="586">
+<navLabel><text> 86</text></navLabel>
+<content src="Text/22-Ps.html#chapter86"/>
+</navPoint>
+<navPoint id="navPoint-587" playOrder="587">
+<navLabel><text> 87</text></navLabel>
+<content src="Text/22-Ps.html#chapter87"/>
+</navPoint>
+<navPoint id="navPoint-588" playOrder="588">
+<navLabel><text> 88</text></navLabel>
+<content src="Text/22-Ps.html#chapter88"/>
+</navPoint>
+<navPoint id="navPoint-589" playOrder="589">
+<navLabel><text> 89</text></navLabel>
+<content src="Text/22-Ps.html#chapter89"/>
+</navPoint>
+<navPoint id="navPoint-590" playOrder="590">
+<navLabel><text> 90</text></navLabel>
+<content src="Text/22-Ps.html#chapter90"/>
+</navPoint>
+<navPoint id="navPoint-591" playOrder="591">
+<navLabel><text> 91</text></navLabel>
+<content src="Text/22-Ps.html#chapter91"/>
+</navPoint>
+<navPoint id="navPoint-592" playOrder="592">
+<navLabel><text> 92</text></navLabel>
+<content src="Text/22-Ps.html#chapter92"/>
+</navPoint>
+<navPoint id="navPoint-593" playOrder="593">
+<navLabel><text> 93</text></navLabel>
+<content src="Text/22-Ps.html#chapter93"/>
+</navPoint>
+<navPoint id="navPoint-594" playOrder="594">
+<navLabel><text> 94</text></navLabel>
+<content src="Text/22-Ps.html#chapter94"/>
+</navPoint>
+<navPoint id="navPoint-595" playOrder="595">
+<navLabel><text> 95</text></navLabel>
+<content src="Text/22-Ps.html#chapter95"/>
+</navPoint>
+<navPoint id="navPoint-596" playOrder="596">
+<navLabel><text> 96</text></navLabel>
+<content src="Text/22-Ps.html#chapter96"/>
+</navPoint>
+<navPoint id="navPoint-597" playOrder="597">
+<navLabel><text> 97</text></navLabel>
+<content src="Text/22-Ps.html#chapter97"/>
+</navPoint>
+<navPoint id="navPoint-598" playOrder="598">
+<navLabel><text> 98</text></navLabel>
+<content src="Text/22-Ps.html#chapter98"/>
+</navPoint>
+<navPoint id="navPoint-599" playOrder="599">
+<navLabel><text> 99</text></navLabel>
+<content src="Text/22-Ps.html#chapter99"/>
+</navPoint>
+<navPoint id="navPoint-600" playOrder="600">
+<navLabel><text> 100</text></navLabel>
+<content src="Text/22-Ps.html#chapter100"/>
+</navPoint>
+<navPoint id="navPoint-601" playOrder="601">
+<navLabel><text> 101</text></navLabel>
+<content src="Text/22-Ps.html#chapter101"/>
+</navPoint>
+<navPoint id="navPoint-602" playOrder="602">
+<navLabel><text> 102</text></navLabel>
+<content src="Text/22-Ps.html#chapter102"/>
+</navPoint>
+<navPoint id="navPoint-603" playOrder="603">
+<navLabel><text> 103</text></navLabel>
+<content src="Text/22-Ps.html#chapter103"/>
+</navPoint>
+<navPoint id="navPoint-604" playOrder="604">
+<navLabel><text> 104</text></navLabel>
+<content src="Text/22-Ps.html#chapter104"/>
+</navPoint>
+<navPoint id="navPoint-605" playOrder="605">
+<navLabel><text> 105</text></navLabel>
+<content src="Text/22-Ps.html#chapter105"/>
+</navPoint>
+<navPoint id="navPoint-606" playOrder="606">
+<navLabel><text> 106</text></navLabel>
+<content src="Text/22-Ps.html#chapter106"/>
+</navPoint>
+<navPoint id="navPoint-607" playOrder="607">
+<navLabel><text> 107</text></navLabel>
+<content src="Text/22-Ps.html#chapter107"/>
+</navPoint>
+<navPoint id="navPoint-608" playOrder="608">
+<navLabel><text> 108</text></navLabel>
+<content src="Text/22-Ps.html#chapter108"/>
+</navPoint>
+<navPoint id="navPoint-609" playOrder="609">
+<navLabel><text> 109</text></navLabel>
+<content src="Text/22-Ps.html#chapter109"/>
+</navPoint>
+<navPoint id="navPoint-610" playOrder="610">
+<navLabel><text> 110</text></navLabel>
+<content src="Text/22-Ps.html#chapter110"/>
+</navPoint>
+<navPoint id="navPoint-611" playOrder="611">
+<navLabel><text> 111</text></navLabel>
+<content src="Text/22-Ps.html#chapter111"/>
+</navPoint>
+<navPoint id="navPoint-612" playOrder="612">
+<navLabel><text> 112</text></navLabel>
+<content src="Text/22-Ps.html#chapter112"/>
+</navPoint>
+<navPoint id="navPoint-613" playOrder="613">
+<navLabel><text> 113</text></navLabel>
+<content src="Text/22-Ps.html#chapter113"/>
+</navPoint>
+<navPoint id="navPoint-614" playOrder="614">
+<navLabel><text> 114</text></navLabel>
+<content src="Text/22-Ps.html#chapter114"/>
+</navPoint>
+<navPoint id="navPoint-615" playOrder="615">
+<navLabel><text> 115</text></navLabel>
+<content src="Text/22-Ps.html#chapter115"/>
+</navPoint>
+<navPoint id="navPoint-616" playOrder="616">
+<navLabel><text> 116</text></navLabel>
+<content src="Text/22-Ps.html#chapter116"/>
+</navPoint>
+<navPoint id="navPoint-617" playOrder="617">
+<navLabel><text> 117</text></navLabel>
+<content src="Text/22-Ps.html#chapter117"/>
+</navPoint>
+<navPoint id="navPoint-618" playOrder="618">
+<navLabel><text> 118</text></navLabel>
+<content src="Text/22-Ps.html#chapter118"/>
+</navPoint>
+<navPoint id="navPoint-619" playOrder="619">
+<navLabel><text> 119</text></navLabel>
+<content src="Text/22-Ps.html#chapter119"/>
+</navPoint>
+<navPoint id="navPoint-620" playOrder="620">
+<navLabel><text> 120</text></navLabel>
+<content src="Text/22-Ps.html#chapter120"/>
+</navPoint>
+<navPoint id="navPoint-621" playOrder="621">
+<navLabel><text> 121</text></navLabel>
+<content src="Text/22-Ps.html#chapter121"/>
+</navPoint>
+<navPoint id="navPoint-622" playOrder="622">
+<navLabel><text> 122</text></navLabel>
+<content src="Text/22-Ps.html#chapter122"/>
+</navPoint>
+<navPoint id="navPoint-623" playOrder="623">
+<navLabel><text> 123</text></navLabel>
+<content src="Text/22-Ps.html#chapter123"/>
+</navPoint>
+<navPoint id="navPoint-624" playOrder="624">
+<navLabel><text> 124</text></navLabel>
+<content src="Text/22-Ps.html#chapter124"/>
+</navPoint>
+<navPoint id="navPoint-625" playOrder="625">
+<navLabel><text> 125</text></navLabel>
+<content src="Text/22-Ps.html#chapter125"/>
+</navPoint>
+<navPoint id="navPoint-626" playOrder="626">
+<navLabel><text> 126</text></navLabel>
+<content src="Text/22-Ps.html#chapter126"/>
+</navPoint>
+<navPoint id="navPoint-627" playOrder="627">
+<navLabel><text> 127</text></navLabel>
+<content src="Text/22-Ps.html#chapter127"/>
+</navPoint>
+<navPoint id="navPoint-628" playOrder="628">
+<navLabel><text> 128</text></navLabel>
+<content src="Text/22-Ps.html#chapter128"/>
+</navPoint>
+<navPoint id="navPoint-629" playOrder="629">
+<navLabel><text> 129</text></navLabel>
+<content src="Text/22-Ps.html#chapter129"/>
+</navPoint>
+<navPoint id="navPoint-630" playOrder="630">
+<navLabel><text> 130</text></navLabel>
+<content src="Text/22-Ps.html#chapter130"/>
+</navPoint>
+<navPoint id="navPoint-631" playOrder="631">
+<navLabel><text> 131</text></navLabel>
+<content src="Text/22-Ps.html#chapter131"/>
+</navPoint>
+<navPoint id="navPoint-632" playOrder="632">
+<navLabel><text> 132</text></navLabel>
+<content src="Text/22-Ps.html#chapter132"/>
+</navPoint>
+<navPoint id="navPoint-633" playOrder="633">
+<navLabel><text> 133</text></navLabel>
+<content src="Text/22-Ps.html#chapter133"/>
+</navPoint>
+<navPoint id="navPoint-634" playOrder="634">
+<navLabel><text> 134</text></navLabel>
+<content src="Text/22-Ps.html#chapter134"/>
+</navPoint>
+<navPoint id="navPoint-635" playOrder="635">
+<navLabel><text> 135</text></navLabel>
+<content src="Text/22-Ps.html#chapter135"/>
+</navPoint>
+<navPoint id="navPoint-636" playOrder="636">
+<navLabel><text> 136</text></navLabel>
+<content src="Text/22-Ps.html#chapter136"/>
+</navPoint>
+<navPoint id="navPoint-637" playOrder="637">
+<navLabel><text> 137</text></navLabel>
+<content src="Text/22-Ps.html#chapter137"/>
+</navPoint>
+<navPoint id="navPoint-638" playOrder="638">
+<navLabel><text> 138</text></navLabel>
+<content src="Text/22-Ps.html#chapter138"/>
+</navPoint>
+<navPoint id="navPoint-639" playOrder="639">
+<navLabel><text> 139</text></navLabel>
+<content src="Text/22-Ps.html#chapter139"/>
+</navPoint>
+<navPoint id="navPoint-640" playOrder="640">
+<navLabel><text> 140</text></navLabel>
+<content src="Text/22-Ps.html#chapter140"/>
+</navPoint>
+<navPoint id="navPoint-641" playOrder="641">
+<navLabel><text> 141</text></navLabel>
+<content src="Text/22-Ps.html#chapter141"/>
+</navPoint>
+<navPoint id="navPoint-642" playOrder="642">
+<navLabel><text> 142</text></navLabel>
+<content src="Text/22-Ps.html#chapter142"/>
+</navPoint>
+<navPoint id="navPoint-643" playOrder="643">
+<navLabel><text> 143</text></navLabel>
+<content src="Text/22-Ps.html#chapter143"/>
+</navPoint>
+<navPoint id="navPoint-644" playOrder="644">
+<navLabel><text> 144</text></navLabel>
+<content src="Text/22-Ps.html#chapter144"/>
+</navPoint>
+<navPoint id="navPoint-645" playOrder="645">
+<navLabel><text> 145</text></navLabel>
+<content src="Text/22-Ps.html#chapter145"/>
+</navPoint>
+<navPoint id="navPoint-646" playOrder="646">
+<navLabel><text> 146</text></navLabel>
+<content src="Text/22-Ps.html#chapter146"/>
+</navPoint>
+<navPoint id="navPoint-647" playOrder="647">
+<navLabel><text> 147</text></navLabel>
+<content src="Text/22-Ps.html#chapter147"/>
+</navPoint>
+<navPoint id="navPoint-648" playOrder="648">
+<navLabel><text> 148</text></navLabel>
+<content src="Text/22-Ps.html#chapter148"/>
+</navPoint>
+<navPoint id="navPoint-649" playOrder="649">
+<navLabel><text> 149</text></navLabel>
+<content src="Text/22-Ps.html#chapter149"/>
+</navPoint>
+<navPoint id="navPoint-650" playOrder="650">
+<navLabel><text> 150</text></navLabel>
+<content src="Text/22-Ps.html#chapter150"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-651" playOrder="651">
+<navLabel><text></text></navLabel>
+<content src="Text/23-Prov.html"/>
+
+<navPoint id="navPoint-652" playOrder="652">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/23-Prov.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-653" playOrder="653">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/23-Prov.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-654" playOrder="654">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/23-Prov.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-655" playOrder="655">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/23-Prov.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-656" playOrder="656">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/23-Prov.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-657" playOrder="657">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/23-Prov.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-658" playOrder="658">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/23-Prov.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-659" playOrder="659">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/23-Prov.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-660" playOrder="660">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/23-Prov.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-661" playOrder="661">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/23-Prov.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-662" playOrder="662">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/23-Prov.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-663" playOrder="663">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/23-Prov.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-664" playOrder="664">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/23-Prov.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-665" playOrder="665">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/23-Prov.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-666" playOrder="666">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/23-Prov.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-667" playOrder="667">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/23-Prov.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-668" playOrder="668">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/23-Prov.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-669" playOrder="669">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/23-Prov.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-670" playOrder="670">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/23-Prov.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-671" playOrder="671">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/23-Prov.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-672" playOrder="672">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/23-Prov.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-673" playOrder="673">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/23-Prov.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-674" playOrder="674">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/23-Prov.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-675" playOrder="675">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/23-Prov.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-676" playOrder="676">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/23-Prov.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-677" playOrder="677">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/23-Prov.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-678" playOrder="678">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/23-Prov.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-679" playOrder="679">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/23-Prov.html#chapter28"/>
+</navPoint>
+<navPoint id="navPoint-680" playOrder="680">
+<navLabel><text> 29</text></navLabel>
+<content src="Text/23-Prov.html#chapter29"/>
+</navPoint>
+<navPoint id="navPoint-681" playOrder="681">
+<navLabel><text> 30</text></navLabel>
+<content src="Text/23-Prov.html#chapter30"/>
+</navPoint>
+<navPoint id="navPoint-682" playOrder="682">
+<navLabel><text> 31</text></navLabel>
+<content src="Text/23-Prov.html#chapter31"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-683" playOrder="683">
+<navLabel><text></text></navLabel>
+<content src="Text/24-Eccl.html"/>
+
+<navPoint id="navPoint-684" playOrder="684">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/24-Eccl.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-685" playOrder="685">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/24-Eccl.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-686" playOrder="686">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/24-Eccl.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-687" playOrder="687">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/24-Eccl.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-688" playOrder="688">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/24-Eccl.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-689" playOrder="689">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/24-Eccl.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-690" playOrder="690">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/24-Eccl.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-691" playOrder="691">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/24-Eccl.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-692" playOrder="692">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/24-Eccl.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-693" playOrder="693">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/24-Eccl.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-694" playOrder="694">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/24-Eccl.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-695" playOrder="695">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/24-Eccl.html#chapter12"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-696" playOrder="696">
+<navLabel><text></text></navLabel>
+<content src="Text/25-Song.html"/>
+
+<navPoint id="navPoint-697" playOrder="697">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/25-Song.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-698" playOrder="698">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/25-Song.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-699" playOrder="699">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/25-Song.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-700" playOrder="700">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/25-Song.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-701" playOrder="701">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/25-Song.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-702" playOrder="702">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/25-Song.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-703" playOrder="703">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/25-Song.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-704" playOrder="704">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/25-Song.html#chapter8"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-705" playOrder="705">
+<navLabel><text></text></navLabel>
+<content src="Text/26-Isa.html"/>
+
+<navPoint id="navPoint-706" playOrder="706">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/26-Isa.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-707" playOrder="707">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/26-Isa.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-708" playOrder="708">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/26-Isa.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-709" playOrder="709">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/26-Isa.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-710" playOrder="710">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/26-Isa.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-711" playOrder="711">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/26-Isa.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-712" playOrder="712">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/26-Isa.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-713" playOrder="713">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/26-Isa.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-714" playOrder="714">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/26-Isa.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-715" playOrder="715">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/26-Isa.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-716" playOrder="716">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/26-Isa.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-717" playOrder="717">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/26-Isa.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-718" playOrder="718">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/26-Isa.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-719" playOrder="719">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/26-Isa.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-720" playOrder="720">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/26-Isa.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-721" playOrder="721">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/26-Isa.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-722" playOrder="722">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/26-Isa.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-723" playOrder="723">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/26-Isa.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-724" playOrder="724">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/26-Isa.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-725" playOrder="725">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/26-Isa.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-726" playOrder="726">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/26-Isa.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-727" playOrder="727">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/26-Isa.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-728" playOrder="728">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/26-Isa.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-729" playOrder="729">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/26-Isa.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-730" playOrder="730">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/26-Isa.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-731" playOrder="731">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/26-Isa.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-732" playOrder="732">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/26-Isa.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-733" playOrder="733">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/26-Isa.html#chapter28"/>
+</navPoint>
+<navPoint id="navPoint-734" playOrder="734">
+<navLabel><text> 29</text></navLabel>
+<content src="Text/26-Isa.html#chapter29"/>
+</navPoint>
+<navPoint id="navPoint-735" playOrder="735">
+<navLabel><text> 30</text></navLabel>
+<content src="Text/26-Isa.html#chapter30"/>
+</navPoint>
+<navPoint id="navPoint-736" playOrder="736">
+<navLabel><text> 31</text></navLabel>
+<content src="Text/26-Isa.html#chapter31"/>
+</navPoint>
+<navPoint id="navPoint-737" playOrder="737">
+<navLabel><text> 32</text></navLabel>
+<content src="Text/26-Isa.html#chapter32"/>
+</navPoint>
+<navPoint id="navPoint-738" playOrder="738">
+<navLabel><text> 33</text></navLabel>
+<content src="Text/26-Isa.html#chapter33"/>
+</navPoint>
+<navPoint id="navPoint-739" playOrder="739">
+<navLabel><text> 34</text></navLabel>
+<content src="Text/26-Isa.html#chapter34"/>
+</navPoint>
+<navPoint id="navPoint-740" playOrder="740">
+<navLabel><text> 35</text></navLabel>
+<content src="Text/26-Isa.html#chapter35"/>
+</navPoint>
+<navPoint id="navPoint-741" playOrder="741">
+<navLabel><text> 36</text></navLabel>
+<content src="Text/26-Isa.html#chapter36"/>
+</navPoint>
+<navPoint id="navPoint-742" playOrder="742">
+<navLabel><text> 37</text></navLabel>
+<content src="Text/26-Isa.html#chapter37"/>
+</navPoint>
+<navPoint id="navPoint-743" playOrder="743">
+<navLabel><text> 38</text></navLabel>
+<content src="Text/26-Isa.html#chapter38"/>
+</navPoint>
+<navPoint id="navPoint-744" playOrder="744">
+<navLabel><text> 39</text></navLabel>
+<content src="Text/26-Isa.html#chapter39"/>
+</navPoint>
+<navPoint id="navPoint-745" playOrder="745">
+<navLabel><text> 40</text></navLabel>
+<content src="Text/26-Isa.html#chapter40"/>
+</navPoint>
+<navPoint id="navPoint-746" playOrder="746">
+<navLabel><text> 41</text></navLabel>
+<content src="Text/26-Isa.html#chapter41"/>
+</navPoint>
+<navPoint id="navPoint-747" playOrder="747">
+<navLabel><text> 42</text></navLabel>
+<content src="Text/26-Isa.html#chapter42"/>
+</navPoint>
+<navPoint id="navPoint-748" playOrder="748">
+<navLabel><text> 43</text></navLabel>
+<content src="Text/26-Isa.html#chapter43"/>
+</navPoint>
+<navPoint id="navPoint-749" playOrder="749">
+<navLabel><text> 44</text></navLabel>
+<content src="Text/26-Isa.html#chapter44"/>
+</navPoint>
+<navPoint id="navPoint-750" playOrder="750">
+<navLabel><text> 45</text></navLabel>
+<content src="Text/26-Isa.html#chapter45"/>
+</navPoint>
+<navPoint id="navPoint-751" playOrder="751">
+<navLabel><text> 46</text></navLabel>
+<content src="Text/26-Isa.html#chapter46"/>
+</navPoint>
+<navPoint id="navPoint-752" playOrder="752">
+<navLabel><text> 47</text></navLabel>
+<content src="Text/26-Isa.html#chapter47"/>
+</navPoint>
+<navPoint id="navPoint-753" playOrder="753">
+<navLabel><text> 48</text></navLabel>
+<content src="Text/26-Isa.html#chapter48"/>
+</navPoint>
+<navPoint id="navPoint-754" playOrder="754">
+<navLabel><text> 49</text></navLabel>
+<content src="Text/26-Isa.html#chapter49"/>
+</navPoint>
+<navPoint id="navPoint-755" playOrder="755">
+<navLabel><text> 50</text></navLabel>
+<content src="Text/26-Isa.html#chapter50"/>
+</navPoint>
+<navPoint id="navPoint-756" playOrder="756">
+<navLabel><text> 51</text></navLabel>
+<content src="Text/26-Isa.html#chapter51"/>
+</navPoint>
+<navPoint id="navPoint-757" playOrder="757">
+<navLabel><text> 52</text></navLabel>
+<content src="Text/26-Isa.html#chapter52"/>
+</navPoint>
+<navPoint id="navPoint-758" playOrder="758">
+<navLabel><text> 53</text></navLabel>
+<content src="Text/26-Isa.html#chapter53"/>
+</navPoint>
+<navPoint id="navPoint-759" playOrder="759">
+<navLabel><text> 54</text></navLabel>
+<content src="Text/26-Isa.html#chapter54"/>
+</navPoint>
+<navPoint id="navPoint-760" playOrder="760">
+<navLabel><text> 55</text></navLabel>
+<content src="Text/26-Isa.html#chapter55"/>
+</navPoint>
+<navPoint id="navPoint-761" playOrder="761">
+<navLabel><text> 56</text></navLabel>
+<content src="Text/26-Isa.html#chapter56"/>
+</navPoint>
+<navPoint id="navPoint-762" playOrder="762">
+<navLabel><text> 57</text></navLabel>
+<content src="Text/26-Isa.html#chapter57"/>
+</navPoint>
+<navPoint id="navPoint-763" playOrder="763">
+<navLabel><text> 58</text></navLabel>
+<content src="Text/26-Isa.html#chapter58"/>
+</navPoint>
+<navPoint id="navPoint-764" playOrder="764">
+<navLabel><text> 59</text></navLabel>
+<content src="Text/26-Isa.html#chapter59"/>
+</navPoint>
+<navPoint id="navPoint-765" playOrder="765">
+<navLabel><text> 60</text></navLabel>
+<content src="Text/26-Isa.html#chapter60"/>
+</navPoint>
+<navPoint id="navPoint-766" playOrder="766">
+<navLabel><text> 61</text></navLabel>
+<content src="Text/26-Isa.html#chapter61"/>
+</navPoint>
+<navPoint id="navPoint-767" playOrder="767">
+<navLabel><text> 62</text></navLabel>
+<content src="Text/26-Isa.html#chapter62"/>
+</navPoint>
+<navPoint id="navPoint-768" playOrder="768">
+<navLabel><text> 63</text></navLabel>
+<content src="Text/26-Isa.html#chapter63"/>
+</navPoint>
+<navPoint id="navPoint-769" playOrder="769">
+<navLabel><text> 64</text></navLabel>
+<content src="Text/26-Isa.html#chapter64"/>
+</navPoint>
+<navPoint id="navPoint-770" playOrder="770">
+<navLabel><text> 65</text></navLabel>
+<content src="Text/26-Isa.html#chapter65"/>
+</navPoint>
+<navPoint id="navPoint-771" playOrder="771">
+<navLabel><text> 66</text></navLabel>
+<content src="Text/26-Isa.html#chapter66"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-772" playOrder="772">
+<navLabel><text></text></navLabel>
+<content src="Text/27-Jer.html"/>
+
+<navPoint id="navPoint-773" playOrder="773">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/27-Jer.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-774" playOrder="774">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/27-Jer.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-775" playOrder="775">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/27-Jer.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-776" playOrder="776">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/27-Jer.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-777" playOrder="777">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/27-Jer.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-778" playOrder="778">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/27-Jer.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-779" playOrder="779">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/27-Jer.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-780" playOrder="780">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/27-Jer.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-781" playOrder="781">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/27-Jer.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-782" playOrder="782">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/27-Jer.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-783" playOrder="783">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/27-Jer.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-784" playOrder="784">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/27-Jer.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-785" playOrder="785">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/27-Jer.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-786" playOrder="786">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/27-Jer.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-787" playOrder="787">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/27-Jer.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-788" playOrder="788">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/27-Jer.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-789" playOrder="789">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/27-Jer.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-790" playOrder="790">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/27-Jer.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-791" playOrder="791">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/27-Jer.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-792" playOrder="792">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/27-Jer.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-793" playOrder="793">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/27-Jer.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-794" playOrder="794">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/27-Jer.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-795" playOrder="795">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/27-Jer.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-796" playOrder="796">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/27-Jer.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-797" playOrder="797">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/27-Jer.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-798" playOrder="798">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/27-Jer.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-799" playOrder="799">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/27-Jer.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-800" playOrder="800">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/27-Jer.html#chapter28"/>
+</navPoint>
+<navPoint id="navPoint-801" playOrder="801">
+<navLabel><text> 29</text></navLabel>
+<content src="Text/27-Jer.html#chapter29"/>
+</navPoint>
+<navPoint id="navPoint-802" playOrder="802">
+<navLabel><text> 30</text></navLabel>
+<content src="Text/27-Jer.html#chapter30"/>
+</navPoint>
+<navPoint id="navPoint-803" playOrder="803">
+<navLabel><text> 31</text></navLabel>
+<content src="Text/27-Jer.html#chapter31"/>
+</navPoint>
+<navPoint id="navPoint-804" playOrder="804">
+<navLabel><text> 32</text></navLabel>
+<content src="Text/27-Jer.html#chapter32"/>
+</navPoint>
+<navPoint id="navPoint-805" playOrder="805">
+<navLabel><text> 33</text></navLabel>
+<content src="Text/27-Jer.html#chapter33"/>
+</navPoint>
+<navPoint id="navPoint-806" playOrder="806">
+<navLabel><text> 34</text></navLabel>
+<content src="Text/27-Jer.html#chapter34"/>
+</navPoint>
+<navPoint id="navPoint-807" playOrder="807">
+<navLabel><text> 35</text></navLabel>
+<content src="Text/27-Jer.html#chapter35"/>
+</navPoint>
+<navPoint id="navPoint-808" playOrder="808">
+<navLabel><text> 36</text></navLabel>
+<content src="Text/27-Jer.html#chapter36"/>
+</navPoint>
+<navPoint id="navPoint-809" playOrder="809">
+<navLabel><text> 37</text></navLabel>
+<content src="Text/27-Jer.html#chapter37"/>
+</navPoint>
+<navPoint id="navPoint-810" playOrder="810">
+<navLabel><text> 38</text></navLabel>
+<content src="Text/27-Jer.html#chapter38"/>
+</navPoint>
+<navPoint id="navPoint-811" playOrder="811">
+<navLabel><text> 39</text></navLabel>
+<content src="Text/27-Jer.html#chapter39"/>
+</navPoint>
+<navPoint id="navPoint-812" playOrder="812">
+<navLabel><text> 40</text></navLabel>
+<content src="Text/27-Jer.html#chapter40"/>
+</navPoint>
+<navPoint id="navPoint-813" playOrder="813">
+<navLabel><text> 41</text></navLabel>
+<content src="Text/27-Jer.html#chapter41"/>
+</navPoint>
+<navPoint id="navPoint-814" playOrder="814">
+<navLabel><text> 42</text></navLabel>
+<content src="Text/27-Jer.html#chapter42"/>
+</navPoint>
+<navPoint id="navPoint-815" playOrder="815">
+<navLabel><text> 43</text></navLabel>
+<content src="Text/27-Jer.html#chapter43"/>
+</navPoint>
+<navPoint id="navPoint-816" playOrder="816">
+<navLabel><text> 44</text></navLabel>
+<content src="Text/27-Jer.html#chapter44"/>
+</navPoint>
+<navPoint id="navPoint-817" playOrder="817">
+<navLabel><text> 45</text></navLabel>
+<content src="Text/27-Jer.html#chapter45"/>
+</navPoint>
+<navPoint id="navPoint-818" playOrder="818">
+<navLabel><text> 46</text></navLabel>
+<content src="Text/27-Jer.html#chapter46"/>
+</navPoint>
+<navPoint id="navPoint-819" playOrder="819">
+<navLabel><text> 47</text></navLabel>
+<content src="Text/27-Jer.html#chapter47"/>
+</navPoint>
+<navPoint id="navPoint-820" playOrder="820">
+<navLabel><text> 48</text></navLabel>
+<content src="Text/27-Jer.html#chapter48"/>
+</navPoint>
+<navPoint id="navPoint-821" playOrder="821">
+<navLabel><text> 49</text></navLabel>
+<content src="Text/27-Jer.html#chapter49"/>
+</navPoint>
+<navPoint id="navPoint-822" playOrder="822">
+<navLabel><text> 50</text></navLabel>
+<content src="Text/27-Jer.html#chapter50"/>
+</navPoint>
+<navPoint id="navPoint-823" playOrder="823">
+<navLabel><text> 51</text></navLabel>
+<content src="Text/27-Jer.html#chapter51"/>
+</navPoint>
+<navPoint id="navPoint-824" playOrder="824">
+<navLabel><text> 52</text></navLabel>
+<content src="Text/27-Jer.html#chapter52"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-825" playOrder="825">
+<navLabel><text></text></navLabel>
+<content src="Text/28-Lam.html"/>
+
+<navPoint id="navPoint-826" playOrder="826">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/28-Lam.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-827" playOrder="827">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/28-Lam.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-828" playOrder="828">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/28-Lam.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-829" playOrder="829">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/28-Lam.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-830" playOrder="830">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/28-Lam.html#chapter5"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-831" playOrder="831">
+<navLabel><text></text></navLabel>
+<content src="Text/29-Ezek.html"/>
+
+<navPoint id="navPoint-832" playOrder="832">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/29-Ezek.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-833" playOrder="833">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/29-Ezek.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-834" playOrder="834">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/29-Ezek.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-835" playOrder="835">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/29-Ezek.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-836" playOrder="836">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/29-Ezek.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-837" playOrder="837">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/29-Ezek.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-838" playOrder="838">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/29-Ezek.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-839" playOrder="839">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/29-Ezek.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-840" playOrder="840">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/29-Ezek.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-841" playOrder="841">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/29-Ezek.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-842" playOrder="842">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/29-Ezek.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-843" playOrder="843">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/29-Ezek.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-844" playOrder="844">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/29-Ezek.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-845" playOrder="845">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/29-Ezek.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-846" playOrder="846">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/29-Ezek.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-847" playOrder="847">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/29-Ezek.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-848" playOrder="848">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/29-Ezek.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-849" playOrder="849">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/29-Ezek.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-850" playOrder="850">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/29-Ezek.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-851" playOrder="851">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/29-Ezek.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-852" playOrder="852">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/29-Ezek.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-853" playOrder="853">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/29-Ezek.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-854" playOrder="854">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/29-Ezek.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-855" playOrder="855">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/29-Ezek.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-856" playOrder="856">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/29-Ezek.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-857" playOrder="857">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/29-Ezek.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-858" playOrder="858">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/29-Ezek.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-859" playOrder="859">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/29-Ezek.html#chapter28"/>
+</navPoint>
+<navPoint id="navPoint-860" playOrder="860">
+<navLabel><text> 29</text></navLabel>
+<content src="Text/29-Ezek.html#chapter29"/>
+</navPoint>
+<navPoint id="navPoint-861" playOrder="861">
+<navLabel><text> 30</text></navLabel>
+<content src="Text/29-Ezek.html#chapter30"/>
+</navPoint>
+<navPoint id="navPoint-862" playOrder="862">
+<navLabel><text> 31</text></navLabel>
+<content src="Text/29-Ezek.html#chapter31"/>
+</navPoint>
+<navPoint id="navPoint-863" playOrder="863">
+<navLabel><text> 32</text></navLabel>
+<content src="Text/29-Ezek.html#chapter32"/>
+</navPoint>
+<navPoint id="navPoint-864" playOrder="864">
+<navLabel><text> 33</text></navLabel>
+<content src="Text/29-Ezek.html#chapter33"/>
+</navPoint>
+<navPoint id="navPoint-865" playOrder="865">
+<navLabel><text> 34</text></navLabel>
+<content src="Text/29-Ezek.html#chapter34"/>
+</navPoint>
+<navPoint id="navPoint-866" playOrder="866">
+<navLabel><text> 35</text></navLabel>
+<content src="Text/29-Ezek.html#chapter35"/>
+</navPoint>
+<navPoint id="navPoint-867" playOrder="867">
+<navLabel><text> 36</text></navLabel>
+<content src="Text/29-Ezek.html#chapter36"/>
+</navPoint>
+<navPoint id="navPoint-868" playOrder="868">
+<navLabel><text> 37</text></navLabel>
+<content src="Text/29-Ezek.html#chapter37"/>
+</navPoint>
+<navPoint id="navPoint-869" playOrder="869">
+<navLabel><text> 38</text></navLabel>
+<content src="Text/29-Ezek.html#chapter38"/>
+</navPoint>
+<navPoint id="navPoint-870" playOrder="870">
+<navLabel><text> 39</text></navLabel>
+<content src="Text/29-Ezek.html#chapter39"/>
+</navPoint>
+<navPoint id="navPoint-871" playOrder="871">
+<navLabel><text> 40</text></navLabel>
+<content src="Text/29-Ezek.html#chapter40"/>
+</navPoint>
+<navPoint id="navPoint-872" playOrder="872">
+<navLabel><text> 41</text></navLabel>
+<content src="Text/29-Ezek.html#chapter41"/>
+</navPoint>
+<navPoint id="navPoint-873" playOrder="873">
+<navLabel><text> 42</text></navLabel>
+<content src="Text/29-Ezek.html#chapter42"/>
+</navPoint>
+<navPoint id="navPoint-874" playOrder="874">
+<navLabel><text> 43</text></navLabel>
+<content src="Text/29-Ezek.html#chapter43"/>
+</navPoint>
+<navPoint id="navPoint-875" playOrder="875">
+<navLabel><text> 44</text></navLabel>
+<content src="Text/29-Ezek.html#chapter44"/>
+</navPoint>
+<navPoint id="navPoint-876" playOrder="876">
+<navLabel><text> 45</text></navLabel>
+<content src="Text/29-Ezek.html#chapter45"/>
+</navPoint>
+<navPoint id="navPoint-877" playOrder="877">
+<navLabel><text> 46</text></navLabel>
+<content src="Text/29-Ezek.html#chapter46"/>
+</navPoint>
+<navPoint id="navPoint-878" playOrder="878">
+<navLabel><text> 47</text></navLabel>
+<content src="Text/29-Ezek.html#chapter47"/>
+</navPoint>
+<navPoint id="navPoint-879" playOrder="879">
+<navLabel><text> 48</text></navLabel>
+<content src="Text/29-Ezek.html#chapter48"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-880" playOrder="880">
+<navLabel><text></text></navLabel>
+<content src="Text/30-Dan.html"/>
+
+<navPoint id="navPoint-881" playOrder="881">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/30-Dan.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-882" playOrder="882">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/30-Dan.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-883" playOrder="883">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/30-Dan.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-884" playOrder="884">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/30-Dan.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-885" playOrder="885">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/30-Dan.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-886" playOrder="886">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/30-Dan.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-887" playOrder="887">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/30-Dan.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-888" playOrder="888">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/30-Dan.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-889" playOrder="889">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/30-Dan.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-890" playOrder="890">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/30-Dan.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-891" playOrder="891">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/30-Dan.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-892" playOrder="892">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/30-Dan.html#chapter12"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-893" playOrder="893">
+<navLabel><text></text></navLabel>
+<content src="Text/31-Hos.html"/>
+
+<navPoint id="navPoint-894" playOrder="894">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/31-Hos.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-895" playOrder="895">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/31-Hos.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-896" playOrder="896">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/31-Hos.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-897" playOrder="897">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/31-Hos.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-898" playOrder="898">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/31-Hos.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-899" playOrder="899">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/31-Hos.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-900" playOrder="900">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/31-Hos.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-901" playOrder="901">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/31-Hos.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-902" playOrder="902">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/31-Hos.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-903" playOrder="903">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/31-Hos.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-904" playOrder="904">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/31-Hos.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-905" playOrder="905">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/31-Hos.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-906" playOrder="906">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/31-Hos.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-907" playOrder="907">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/31-Hos.html#chapter14"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-908" playOrder="908">
+<navLabel><text></text></navLabel>
+<content src="Text/32-Joel.html"/>
+
+<navPoint id="navPoint-909" playOrder="909">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/32-Joel.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-910" playOrder="910">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/32-Joel.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-911" playOrder="911">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/32-Joel.html#chapter3"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-912" playOrder="912">
+<navLabel><text></text></navLabel>
+<content src="Text/33-Amos.html"/>
+
+<navPoint id="navPoint-913" playOrder="913">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/33-Amos.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-914" playOrder="914">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/33-Amos.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-915" playOrder="915">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/33-Amos.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-916" playOrder="916">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/33-Amos.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-917" playOrder="917">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/33-Amos.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-918" playOrder="918">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/33-Amos.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-919" playOrder="919">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/33-Amos.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-920" playOrder="920">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/33-Amos.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-921" playOrder="921">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/33-Amos.html#chapter9"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-922" playOrder="922">
+<navLabel><text></text></navLabel>
+<content src="Text/34-Obad.html"/>
+
+<navPoint id="navPoint-923" playOrder="923">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/34-Obad.html#chapter1"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-924" playOrder="924">
+<navLabel><text></text></navLabel>
+<content src="Text/35-Jonah.html"/>
+
+<navPoint id="navPoint-925" playOrder="925">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/35-Jonah.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-926" playOrder="926">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/35-Jonah.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-927" playOrder="927">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/35-Jonah.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-928" playOrder="928">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/35-Jonah.html#chapter4"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-929" playOrder="929">
+<navLabel><text></text></navLabel>
+<content src="Text/36-Mic.html"/>
+
+<navPoint id="navPoint-930" playOrder="930">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/36-Mic.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-931" playOrder="931">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/36-Mic.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-932" playOrder="932">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/36-Mic.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-933" playOrder="933">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/36-Mic.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-934" playOrder="934">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/36-Mic.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-935" playOrder="935">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/36-Mic.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-936" playOrder="936">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/36-Mic.html#chapter7"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-937" playOrder="937">
+<navLabel><text></text></navLabel>
+<content src="Text/37-Nah.html"/>
+
+<navPoint id="navPoint-938" playOrder="938">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/37-Nah.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-939" playOrder="939">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/37-Nah.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-940" playOrder="940">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/37-Nah.html#chapter3"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-941" playOrder="941">
+<navLabel><text></text></navLabel>
+<content src="Text/38-Hab.html"/>
+
+<navPoint id="navPoint-942" playOrder="942">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/38-Hab.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-943" playOrder="943">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/38-Hab.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-944" playOrder="944">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/38-Hab.html#chapter3"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-945" playOrder="945">
+<navLabel><text></text></navLabel>
+<content src="Text/39-Zeph.html"/>
+
+<navPoint id="navPoint-946" playOrder="946">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/39-Zeph.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-947" playOrder="947">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/39-Zeph.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-948" playOrder="948">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/39-Zeph.html#chapter3"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-949" playOrder="949">
+<navLabel><text></text></navLabel>
+<content src="Text/40-Hag.html"/>
+
+<navPoint id="navPoint-950" playOrder="950">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/40-Hag.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-951" playOrder="951">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/40-Hag.html#chapter2"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-952" playOrder="952">
+<navLabel><text></text></navLabel>
+<content src="Text/41-Zech.html"/>
+
+<navPoint id="navPoint-953" playOrder="953">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/41-Zech.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-954" playOrder="954">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/41-Zech.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-955" playOrder="955">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/41-Zech.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-956" playOrder="956">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/41-Zech.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-957" playOrder="957">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/41-Zech.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-958" playOrder="958">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/41-Zech.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-959" playOrder="959">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/41-Zech.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-960" playOrder="960">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/41-Zech.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-961" playOrder="961">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/41-Zech.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-962" playOrder="962">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/41-Zech.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-963" playOrder="963">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/41-Zech.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-964" playOrder="964">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/41-Zech.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-965" playOrder="965">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/41-Zech.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-966" playOrder="966">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/41-Zech.html#chapter14"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-967" playOrder="967">
+<navLabel><text></text></navLabel>
+<content src="Text/42-Mal.html"/>
+
+<navPoint id="navPoint-968" playOrder="968">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/42-Mal.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-969" playOrder="969">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/42-Mal.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-970" playOrder="970">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/42-Mal.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-971" playOrder="971">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/42-Mal.html#chapter4"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-972" playOrder="972">
+<navLabel><text></text></navLabel>
+<content src="Text/43-Matt.html"/>
+
+<navPoint id="navPoint-973" playOrder="973">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/43-Matt.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-974" playOrder="974">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/43-Matt.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-975" playOrder="975">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/43-Matt.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-976" playOrder="976">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/43-Matt.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-977" playOrder="977">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/43-Matt.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-978" playOrder="978">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/43-Matt.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-979" playOrder="979">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/43-Matt.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-980" playOrder="980">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/43-Matt.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-981" playOrder="981">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/43-Matt.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-982" playOrder="982">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/43-Matt.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-983" playOrder="983">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/43-Matt.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-984" playOrder="984">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/43-Matt.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-985" playOrder="985">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/43-Matt.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-986" playOrder="986">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/43-Matt.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-987" playOrder="987">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/43-Matt.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-988" playOrder="988">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/43-Matt.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-989" playOrder="989">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/43-Matt.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-990" playOrder="990">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/43-Matt.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-991" playOrder="991">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/43-Matt.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-992" playOrder="992">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/43-Matt.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-993" playOrder="993">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/43-Matt.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-994" playOrder="994">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/43-Matt.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-995" playOrder="995">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/43-Matt.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-996" playOrder="996">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/43-Matt.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-997" playOrder="997">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/43-Matt.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-998" playOrder="998">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/43-Matt.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-999" playOrder="999">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/43-Matt.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-1000" playOrder="1000">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/43-Matt.html#chapter28"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1001" playOrder="1001">
+<navLabel><text></text></navLabel>
+<content src="Text/44-Mark.html"/>
+
+<navPoint id="navPoint-1002" playOrder="1002">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/44-Mark.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1003" playOrder="1003">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/44-Mark.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1004" playOrder="1004">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/44-Mark.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1005" playOrder="1005">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/44-Mark.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1006" playOrder="1006">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/44-Mark.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-1007" playOrder="1007">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/44-Mark.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-1008" playOrder="1008">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/44-Mark.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-1009" playOrder="1009">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/44-Mark.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-1010" playOrder="1010">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/44-Mark.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-1011" playOrder="1011">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/44-Mark.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-1012" playOrder="1012">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/44-Mark.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-1013" playOrder="1013">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/44-Mark.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-1014" playOrder="1014">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/44-Mark.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-1015" playOrder="1015">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/44-Mark.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-1016" playOrder="1016">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/44-Mark.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-1017" playOrder="1017">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/44-Mark.html#chapter16"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1018" playOrder="1018">
+<navLabel><text></text></navLabel>
+<content src="Text/45-Luke.html"/>
+
+<navPoint id="navPoint-1019" playOrder="1019">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/45-Luke.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1020" playOrder="1020">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/45-Luke.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1021" playOrder="1021">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/45-Luke.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1022" playOrder="1022">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/45-Luke.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1023" playOrder="1023">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/45-Luke.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-1024" playOrder="1024">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/45-Luke.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-1025" playOrder="1025">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/45-Luke.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-1026" playOrder="1026">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/45-Luke.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-1027" playOrder="1027">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/45-Luke.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-1028" playOrder="1028">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/45-Luke.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-1029" playOrder="1029">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/45-Luke.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-1030" playOrder="1030">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/45-Luke.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-1031" playOrder="1031">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/45-Luke.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-1032" playOrder="1032">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/45-Luke.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-1033" playOrder="1033">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/45-Luke.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-1034" playOrder="1034">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/45-Luke.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-1035" playOrder="1035">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/45-Luke.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-1036" playOrder="1036">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/45-Luke.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-1037" playOrder="1037">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/45-Luke.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-1038" playOrder="1038">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/45-Luke.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-1039" playOrder="1039">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/45-Luke.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-1040" playOrder="1040">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/45-Luke.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-1041" playOrder="1041">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/45-Luke.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-1042" playOrder="1042">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/45-Luke.html#chapter24"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1043" playOrder="1043">
+<navLabel><text></text></navLabel>
+<content src="Text/46-John.html"/>
+
+<navPoint id="navPoint-1044" playOrder="1044">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/46-John.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1045" playOrder="1045">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/46-John.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1046" playOrder="1046">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/46-John.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1047" playOrder="1047">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/46-John.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1048" playOrder="1048">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/46-John.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-1049" playOrder="1049">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/46-John.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-1050" playOrder="1050">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/46-John.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-1051" playOrder="1051">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/46-John.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-1052" playOrder="1052">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/46-John.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-1053" playOrder="1053">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/46-John.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-1054" playOrder="1054">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/46-John.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-1055" playOrder="1055">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/46-John.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-1056" playOrder="1056">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/46-John.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-1057" playOrder="1057">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/46-John.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-1058" playOrder="1058">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/46-John.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-1059" playOrder="1059">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/46-John.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-1060" playOrder="1060">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/46-John.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-1061" playOrder="1061">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/46-John.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-1062" playOrder="1062">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/46-John.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-1063" playOrder="1063">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/46-John.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-1064" playOrder="1064">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/46-John.html#chapter21"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1065" playOrder="1065">
+<navLabel><text></text></navLabel>
+<content src="Text/47-Acts.html"/>
+
+<navPoint id="navPoint-1066" playOrder="1066">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/47-Acts.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1067" playOrder="1067">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/47-Acts.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1068" playOrder="1068">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/47-Acts.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1069" playOrder="1069">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/47-Acts.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1070" playOrder="1070">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/47-Acts.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-1071" playOrder="1071">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/47-Acts.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-1072" playOrder="1072">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/47-Acts.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-1073" playOrder="1073">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/47-Acts.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-1074" playOrder="1074">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/47-Acts.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-1075" playOrder="1075">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/47-Acts.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-1076" playOrder="1076">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/47-Acts.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-1077" playOrder="1077">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/47-Acts.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-1078" playOrder="1078">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/47-Acts.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-1079" playOrder="1079">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/47-Acts.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-1080" playOrder="1080">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/47-Acts.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-1081" playOrder="1081">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/47-Acts.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-1082" playOrder="1082">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/47-Acts.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-1083" playOrder="1083">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/47-Acts.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-1084" playOrder="1084">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/47-Acts.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-1085" playOrder="1085">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/47-Acts.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-1086" playOrder="1086">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/47-Acts.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-1087" playOrder="1087">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/47-Acts.html#chapter22"/>
+</navPoint>
+<navPoint id="navPoint-1088" playOrder="1088">
+<navLabel><text> 23</text></navLabel>
+<content src="Text/47-Acts.html#chapter23"/>
+</navPoint>
+<navPoint id="navPoint-1089" playOrder="1089">
+<navLabel><text> 24</text></navLabel>
+<content src="Text/47-Acts.html#chapter24"/>
+</navPoint>
+<navPoint id="navPoint-1090" playOrder="1090">
+<navLabel><text> 25</text></navLabel>
+<content src="Text/47-Acts.html#chapter25"/>
+</navPoint>
+<navPoint id="navPoint-1091" playOrder="1091">
+<navLabel><text> 26</text></navLabel>
+<content src="Text/47-Acts.html#chapter26"/>
+</navPoint>
+<navPoint id="navPoint-1092" playOrder="1092">
+<navLabel><text> 27</text></navLabel>
+<content src="Text/47-Acts.html#chapter27"/>
+</navPoint>
+<navPoint id="navPoint-1093" playOrder="1093">
+<navLabel><text> 28</text></navLabel>
+<content src="Text/47-Acts.html#chapter28"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1094" playOrder="1094">
+<navLabel><text></text></navLabel>
+<content src="Text/48-Rom.html"/>
+
+<navPoint id="navPoint-1095" playOrder="1095">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/48-Rom.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1096" playOrder="1096">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/48-Rom.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1097" playOrder="1097">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/48-Rom.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1098" playOrder="1098">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/48-Rom.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1099" playOrder="1099">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/48-Rom.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-1100" playOrder="1100">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/48-Rom.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-1101" playOrder="1101">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/48-Rom.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-1102" playOrder="1102">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/48-Rom.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-1103" playOrder="1103">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/48-Rom.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-1104" playOrder="1104">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/48-Rom.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-1105" playOrder="1105">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/48-Rom.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-1106" playOrder="1106">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/48-Rom.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-1107" playOrder="1107">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/48-Rom.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-1108" playOrder="1108">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/48-Rom.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-1109" playOrder="1109">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/48-Rom.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-1110" playOrder="1110">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/48-Rom.html#chapter16"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1111" playOrder="1111">
+<navLabel><text></text></navLabel>
+<content src="Text/49-1Cor.html"/>
+
+<navPoint id="navPoint-1112" playOrder="1112">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/49-1Cor.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1113" playOrder="1113">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/49-1Cor.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1114" playOrder="1114">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/49-1Cor.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1115" playOrder="1115">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/49-1Cor.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1116" playOrder="1116">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/49-1Cor.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-1117" playOrder="1117">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/49-1Cor.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-1118" playOrder="1118">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/49-1Cor.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-1119" playOrder="1119">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/49-1Cor.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-1120" playOrder="1120">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/49-1Cor.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-1121" playOrder="1121">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/49-1Cor.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-1122" playOrder="1122">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/49-1Cor.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-1123" playOrder="1123">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/49-1Cor.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-1124" playOrder="1124">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/49-1Cor.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-1125" playOrder="1125">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/49-1Cor.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-1126" playOrder="1126">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/49-1Cor.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-1127" playOrder="1127">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/49-1Cor.html#chapter16"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1128" playOrder="1128">
+<navLabel><text></text></navLabel>
+<content src="Text/50-2Cor.html"/>
+
+<navPoint id="navPoint-1129" playOrder="1129">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/50-2Cor.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1130" playOrder="1130">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/50-2Cor.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1131" playOrder="1131">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/50-2Cor.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1132" playOrder="1132">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/50-2Cor.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1133" playOrder="1133">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/50-2Cor.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-1134" playOrder="1134">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/50-2Cor.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-1135" playOrder="1135">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/50-2Cor.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-1136" playOrder="1136">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/50-2Cor.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-1137" playOrder="1137">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/50-2Cor.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-1138" playOrder="1138">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/50-2Cor.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-1139" playOrder="1139">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/50-2Cor.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-1140" playOrder="1140">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/50-2Cor.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-1141" playOrder="1141">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/50-2Cor.html#chapter13"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1142" playOrder="1142">
+<navLabel><text></text></navLabel>
+<content src="Text/51-Gal.html"/>
+
+<navPoint id="navPoint-1143" playOrder="1143">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/51-Gal.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1144" playOrder="1144">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/51-Gal.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1145" playOrder="1145">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/51-Gal.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1146" playOrder="1146">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/51-Gal.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1147" playOrder="1147">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/51-Gal.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-1148" playOrder="1148">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/51-Gal.html#chapter6"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1149" playOrder="1149">
+<navLabel><text></text></navLabel>
+<content src="Text/52-Eph.html"/>
+
+<navPoint id="navPoint-1150" playOrder="1150">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/52-Eph.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1151" playOrder="1151">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/52-Eph.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1152" playOrder="1152">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/52-Eph.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1153" playOrder="1153">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/52-Eph.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1154" playOrder="1154">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/52-Eph.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-1155" playOrder="1155">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/52-Eph.html#chapter6"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1156" playOrder="1156">
+<navLabel><text></text></navLabel>
+<content src="Text/53-Phil.html"/>
+
+<navPoint id="navPoint-1157" playOrder="1157">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/53-Phil.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1158" playOrder="1158">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/53-Phil.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1159" playOrder="1159">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/53-Phil.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1160" playOrder="1160">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/53-Phil.html#chapter4"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1161" playOrder="1161">
+<navLabel><text></text></navLabel>
+<content src="Text/54-Col.html"/>
+
+<navPoint id="navPoint-1162" playOrder="1162">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/54-Col.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1163" playOrder="1163">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/54-Col.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1164" playOrder="1164">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/54-Col.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1165" playOrder="1165">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/54-Col.html#chapter4"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1166" playOrder="1166">
+<navLabel><text></text></navLabel>
+<content src="Text/55-1Thess.html"/>
+
+<navPoint id="navPoint-1167" playOrder="1167">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/55-1Thess.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1168" playOrder="1168">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/55-1Thess.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1169" playOrder="1169">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/55-1Thess.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1170" playOrder="1170">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/55-1Thess.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1171" playOrder="1171">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/55-1Thess.html#chapter5"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1172" playOrder="1172">
+<navLabel><text></text></navLabel>
+<content src="Text/56-2Thess.html"/>
+
+<navPoint id="navPoint-1173" playOrder="1173">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/56-2Thess.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1174" playOrder="1174">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/56-2Thess.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1175" playOrder="1175">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/56-2Thess.html#chapter3"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1176" playOrder="1176">
+<navLabel><text></text></navLabel>
+<content src="Text/57-1Tim.html"/>
+
+<navPoint id="navPoint-1177" playOrder="1177">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/57-1Tim.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1178" playOrder="1178">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/57-1Tim.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1179" playOrder="1179">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/57-1Tim.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1180" playOrder="1180">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/57-1Tim.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1181" playOrder="1181">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/57-1Tim.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-1182" playOrder="1182">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/57-1Tim.html#chapter6"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1183" playOrder="1183">
+<navLabel><text></text></navLabel>
+<content src="Text/58-2Tim.html"/>
+
+<navPoint id="navPoint-1184" playOrder="1184">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/58-2Tim.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1185" playOrder="1185">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/58-2Tim.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1186" playOrder="1186">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/58-2Tim.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1187" playOrder="1187">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/58-2Tim.html#chapter4"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1188" playOrder="1188">
+<navLabel><text></text></navLabel>
+<content src="Text/59-Titus.html"/>
+
+<navPoint id="navPoint-1189" playOrder="1189">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/59-Titus.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1190" playOrder="1190">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/59-Titus.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1191" playOrder="1191">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/59-Titus.html#chapter3"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1192" playOrder="1192">
+<navLabel><text></text></navLabel>
+<content src="Text/60-Phlm.html"/>
+
+<navPoint id="navPoint-1193" playOrder="1193">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/60-Phlm.html#chapter1"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1194" playOrder="1194">
+<navLabel><text></text></navLabel>
+<content src="Text/61-Heb.html"/>
+
+<navPoint id="navPoint-1195" playOrder="1195">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/61-Heb.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1196" playOrder="1196">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/61-Heb.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1197" playOrder="1197">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/61-Heb.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1198" playOrder="1198">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/61-Heb.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1199" playOrder="1199">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/61-Heb.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-1200" playOrder="1200">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/61-Heb.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-1201" playOrder="1201">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/61-Heb.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-1202" playOrder="1202">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/61-Heb.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-1203" playOrder="1203">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/61-Heb.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-1204" playOrder="1204">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/61-Heb.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-1205" playOrder="1205">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/61-Heb.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-1206" playOrder="1206">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/61-Heb.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-1207" playOrder="1207">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/61-Heb.html#chapter13"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1208" playOrder="1208">
+<navLabel><text></text></navLabel>
+<content src="Text/62-Jas.html"/>
+
+<navPoint id="navPoint-1209" playOrder="1209">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/62-Jas.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1210" playOrder="1210">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/62-Jas.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1211" playOrder="1211">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/62-Jas.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1212" playOrder="1212">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/62-Jas.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1213" playOrder="1213">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/62-Jas.html#chapter5"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1214" playOrder="1214">
+<navLabel><text></text></navLabel>
+<content src="Text/63-1Pet.html"/>
+
+<navPoint id="navPoint-1215" playOrder="1215">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/63-1Pet.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1216" playOrder="1216">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/63-1Pet.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1217" playOrder="1217">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/63-1Pet.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1218" playOrder="1218">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/63-1Pet.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1219" playOrder="1219">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/63-1Pet.html#chapter5"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1220" playOrder="1220">
+<navLabel><text></text></navLabel>
+<content src="Text/64-2Pet.html"/>
+
+<navPoint id="navPoint-1221" playOrder="1221">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/64-2Pet.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1222" playOrder="1222">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/64-2Pet.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1223" playOrder="1223">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/64-2Pet.html#chapter3"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1224" playOrder="1224">
+<navLabel><text></text></navLabel>
+<content src="Text/65-1John.html"/>
+
+<navPoint id="navPoint-1225" playOrder="1225">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/65-1John.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1226" playOrder="1226">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/65-1John.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1227" playOrder="1227">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/65-1John.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1228" playOrder="1228">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/65-1John.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1229" playOrder="1229">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/65-1John.html#chapter5"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1230" playOrder="1230">
+<navLabel><text></text></navLabel>
+<content src="Text/66-2John.html"/>
+
+<navPoint id="navPoint-1231" playOrder="1231">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/66-2John.html#chapter1"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1232" playOrder="1232">
+<navLabel><text></text></navLabel>
+<content src="Text/67-3John.html"/>
+
+<navPoint id="navPoint-1233" playOrder="1233">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/67-3John.html#chapter1"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1234" playOrder="1234">
+<navLabel><text></text></navLabel>
+<content src="Text/68-Jude.html"/>
+
+<navPoint id="navPoint-1235" playOrder="1235">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/68-Jude.html#chapter1"/>
+</navPoint>
+</navPoint>
+
+<navPoint id="navPoint-1236" playOrder="1236">
+<navLabel><text></text></navLabel>
+<content src="Text/69-Rev.html"/>
+
+<navPoint id="navPoint-1237" playOrder="1237">
+<navLabel><text> 1</text></navLabel>
+<content src="Text/69-Rev.html#chapter1"/>
+</navPoint>
+<navPoint id="navPoint-1238" playOrder="1238">
+<navLabel><text> 2</text></navLabel>
+<content src="Text/69-Rev.html#chapter2"/>
+</navPoint>
+<navPoint id="navPoint-1239" playOrder="1239">
+<navLabel><text> 3</text></navLabel>
+<content src="Text/69-Rev.html#chapter3"/>
+</navPoint>
+<navPoint id="navPoint-1240" playOrder="1240">
+<navLabel><text> 4</text></navLabel>
+<content src="Text/69-Rev.html#chapter4"/>
+</navPoint>
+<navPoint id="navPoint-1241" playOrder="1241">
+<navLabel><text> 5</text></navLabel>
+<content src="Text/69-Rev.html#chapter5"/>
+</navPoint>
+<navPoint id="navPoint-1242" playOrder="1242">
+<navLabel><text> 6</text></navLabel>
+<content src="Text/69-Rev.html#chapter6"/>
+</navPoint>
+<navPoint id="navPoint-1243" playOrder="1243">
+<navLabel><text> 7</text></navLabel>
+<content src="Text/69-Rev.html#chapter7"/>
+</navPoint>
+<navPoint id="navPoint-1244" playOrder="1244">
+<navLabel><text> 8</text></navLabel>
+<content src="Text/69-Rev.html#chapter8"/>
+</navPoint>
+<navPoint id="navPoint-1245" playOrder="1245">
+<navLabel><text> 9</text></navLabel>
+<content src="Text/69-Rev.html#chapter9"/>
+</navPoint>
+<navPoint id="navPoint-1246" playOrder="1246">
+<navLabel><text> 10</text></navLabel>
+<content src="Text/69-Rev.html#chapter10"/>
+</navPoint>
+<navPoint id="navPoint-1247" playOrder="1247">
+<navLabel><text> 11</text></navLabel>
+<content src="Text/69-Rev.html#chapter11"/>
+</navPoint>
+<navPoint id="navPoint-1248" playOrder="1248">
+<navLabel><text> 12</text></navLabel>
+<content src="Text/69-Rev.html#chapter12"/>
+</navPoint>
+<navPoint id="navPoint-1249" playOrder="1249">
+<navLabel><text> 13</text></navLabel>
+<content src="Text/69-Rev.html#chapter13"/>
+</navPoint>
+<navPoint id="navPoint-1250" playOrder="1250">
+<navLabel><text> 14</text></navLabel>
+<content src="Text/69-Rev.html#chapter14"/>
+</navPoint>
+<navPoint id="navPoint-1251" playOrder="1251">
+<navLabel><text> 15</text></navLabel>
+<content src="Text/69-Rev.html#chapter15"/>
+</navPoint>
+<navPoint id="navPoint-1252" playOrder="1252">
+<navLabel><text> 16</text></navLabel>
+<content src="Text/69-Rev.html#chapter16"/>
+</navPoint>
+<navPoint id="navPoint-1253" playOrder="1253">
+<navLabel><text> 17</text></navLabel>
+<content src="Text/69-Rev.html#chapter17"/>
+</navPoint>
+<navPoint id="navPoint-1254" playOrder="1254">
+<navLabel><text> 18</text></navLabel>
+<content src="Text/69-Rev.html#chapter18"/>
+</navPoint>
+<navPoint id="navPoint-1255" playOrder="1255">
+<navLabel><text> 19</text></navLabel>
+<content src="Text/69-Rev.html#chapter19"/>
+</navPoint>
+<navPoint id="navPoint-1256" playOrder="1256">
+<navLabel><text> 20</text></navLabel>
+<content src="Text/69-Rev.html#chapter20"/>
+</navPoint>
+<navPoint id="navPoint-1257" playOrder="1257">
+<navLabel><text> 21</text></navLabel>
+<content src="Text/69-Rev.html#chapter21"/>
+</navPoint>
+<navPoint id="navPoint-1258" playOrder="1258">
+<navLabel><text> 22</text></navLabel>
+<content src="Text/69-Rev.html#chapter22"/>
+</navPoint>
+</navPoint>
+
+</navMap>
+</ncx>
