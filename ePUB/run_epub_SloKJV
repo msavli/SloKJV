@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set paths
-SloKJVepubPath=/home/pc/Dokumenti/epub
+SloKJVepubPath=/home/pc/Dokumenti/GitHub/SloKJV/ePUB
 # Od tukaj pobira Python skripta
 SloKJV_Module_Path=/home/pc/.sword
 SloKJV_Mods_Path=/home/pc/.sword/mods.d
@@ -22,7 +22,7 @@ git pull
 
 
 # Create folders
-mkdir  $SloKJVepubPath                                                         >/dev/null 2>&1
+mkdir  $SloKJVepubPath                                                          >/dev/null 2>&1
 cd $SloKJVepubPath
 rm -rf html
 mkdir html                                                                      >/dev/null 2>&1
@@ -63,7 +63,7 @@ echo
 echo "   Kreiram html datoteke..."
 echo
 
-python3 $SloKJVepubPath/test.py   # |& tee    log.txt
+python3 $SloKJVepubPath/test.py   # |& tee    $SloKJVepubPath/log.txt
 
 cd html
 
@@ -295,7 +295,7 @@ sed -i 's|<li> <a href="43-|<h2>Nova zaveza<\/h2>\n<li><a href="43-|g' $SloKJVep
 echo
 echo "   Pozene Urejevalnik besedil in v njem pripravi toc.ncx"
 echo
-gnome-terminal -- sh -c 'gedit /home/pc/Dokumenti/epub/toc.ncx'
+gnome-terminal -- sh -c "gedit $SloKJVepubPath/toc.ncx"
 
 echo
 echo "   Pozene Sigil 2.0...     zakomentiran"
@@ -312,7 +312,7 @@ echo
 
 
 echo "  Prekopira v Github mapo "
-mv $SloKJVepubPath/untitled.epub $SloKJV_Github/SloKJV.epub
+mv $SloKJVepubPath/untitled.epub $SloKJV_Github/SloKJV.epub    >/dev/null 2>&1
 
 echo "   Poglejmo ePUB z mupdf bralnikom ..."
 mupdf $SloKJV_Github/SloKJV.epub
@@ -335,8 +335,20 @@ cd $SloKJVepubPath
 echo
 echo "   Preveri ePUB "
 echo
-java -jar /home/pc/Dokumenti/epub/epubcheck-5.1.0/epubcheck.jar  $SloKJV_Github/SloKJV.epub >log.txt 2>&1
-echo
+java -jar /home/pc/util/epubcheck-5.1.0/epubcheck.jar  $SloKJV_Github/SloKJV.epub >$SloKJVepubPath/log.txt 2>&1
+echo " "
 echo "   Pokaze napake v ePUB "
-echo
-gnome-terminal -- sh -c 'gedit /home/pc/Dokumenti/epub/log.txt'
+echo " "
+gnome-terminal -- sh -c "gedit $SloKJVepubPath/log.txt"
+echo " "
+# ======== Pobrise vse  *.html  datoteke =====
+echo "   Pocisti datoteke za seboj da ni guzve na Githubu"
+echo "     Brisanje datotek ...."
+                find $SloKJVepubPath/html  . -type f -name "*.xhtml"  -exec rm {} +   >/dev/null 2>&1
+                find $SloKJVepubPath/html  . -type f -name "*.html"  -exec rm {} +    >/dev/null 2>&1
+# ======== Pobrise vse  *.html  datoteke =====
+echo " "
+echo "   Konec"
+echo " "
+
+

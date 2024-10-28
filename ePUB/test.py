@@ -1,4 +1,6 @@
 #!/home/melmoth/dev/swordstuff/bin/python
+# Od tukaj nekje sem pobral ta skript
+#     https://github.com/pierre-amadio/SwordSandBox/tree/master/python
 # -*- coding: utf-8 -*-
 """
     Copyright 2022 Pierre Amadio <pierre.amadio@laposte.net>
