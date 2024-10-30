@@ -13,17 +13,17 @@
 \rem ----------------Kolofon-------------------------------------------------
 \h Kolofon
 \pb
-\ip Naslov izvirnika: Holy Bible King James Version
+\im Naslov izvirnika: Holy Bible King James Version
 \zbl|1\*
-\ip \zvar|maintitle\*
-\ip \zvar|subtitle\*
+\im \zvar|maintitle\*
+\im \zvar|subtitle\*
 \zbl|1\*
 \im Dovoljenje za uporabo besedila
 \im To delo je ponujeno pod licenco Creative Commons (CC BY-NC-ND PRIZNANJE AVTORSTVA – NEKOMERCIALNO – BREZ PREDELAV)
 \im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo. (creativecommons.org/licenses/by-nc-nd/4.0/)
-\zccimg by-nc-nd|size="col" pgpos="cr" scale="0.15"\*
+\zccimg by-nc-nd|size="col" pgpos="pr" scale="0.15"\*
 \zbl|15\*
-\ip Prva izdaja
+\im Prva izdaja
 \im Knjiga je objavljena na spletni strani: github.com/msavli/SloKJV
 \zqrcode|pgpos="cr" size="1.2cm" data="https://github.com/msavli/SloKJV"\*
 \im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2024
@@ -31,13 +31,13 @@
 \im Fotografija na naslovnici: arhiv družine Šavli
 \im Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka, marjan.savli@gmail.com
 \im Verzija za mobilne naprave: crosswire.org/applications/
-\zqrcode|pgpos="cr" size="1.2cm" data="http://www.crosswire.org/applications/"\*
+\zqrcode|pgpos="pr" size="1.2cm" data="http://www.crosswire.org/applications/"\*
 \zbl|1\*
-\ip CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
+\im CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
 \zbl|3\*
-\ip BREZPLAČEN IZVOD – NI ZA PRODAJO
+\im BREZPLAČEN IZVOD – NI ZA PRODAJO
 \zbl|1\*
-\pb
+\pm
 \rem -------------------------------------------------------------------------
 \h Predgovor
 \mt1 Predgovor
@@ -87,9 +87,10 @@
 \ip \ztoc|nt\*
 \is Dodatki
 \ip \ztoc|post\*
-\b
+\pb
+\ip
+\ip
 \is Abecedni seznam Svetopisemskih knjig
 \ip \ztoc|sortb\*
 \pb
-\rem -------------------------------------------------------------------------
-\zNeedEvenPage
+\zNeedOddPage
