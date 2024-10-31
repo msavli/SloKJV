@@ -33,14 +33,14 @@
 \im Verzija za mobilne naprave: crosswire.org/applications/
 \zqrcode|pgpos="pr" size="1.2cm" data="http://www.crosswire.org/applications/"\*
 \zbl|1\*
-\im CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
+\rem        \im CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
 \zbl|3\*
 \im BREZPLAČEN IZVOD – NI ZA PRODAJO
 \zbl|1\*
 \pm
 \rem -------------------------------------------------------------------------
 \h Predgovor
-\mt1 Predgovor
+\mt2 Predgovor
 \zbl|2\*
 \ip Projekt prevoda Sveto pismo kralja Jakoba v slovenski jezik je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Pri pregledu besedila sodeluje Vinko Ošlak.
 \ip Prevedene knjige: Geneza, Eksodus, Levitik, Numeri, Devteronomij, Jozue, Sodniki, Ruta, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Nehemija, Estera, Job, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
@@ -49,7 +49,7 @@
 \zbl|1\*
 \ipr Prevajalca
 \zbl|4\*
-\mt1 Posebnosti prevoda:
+\mt2 Posebnosti prevoda:
 \zbl|2\*
 \ip    • dodane opombe in reference; KJV 1611,
 \ip    • dodane približne letnice dogodkov; KJV Oxford 1769,
@@ -83,6 +83,8 @@
 \rem -------------------------------Kazalo------------------------------------------
 \h Kazalo
 \mt3 \zvar|toctitle\*
+\is Knjige Stare zaveze
+\ip \ztoc|ot\*
 \is Knjige Nove zaveze
 \ip \ztoc|nt\*
 \is Dodatki

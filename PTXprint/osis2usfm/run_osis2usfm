@@ -649,10 +649,15 @@ echo -E "   python3 osis2usfm.py SloKJV_sword.xml"
 echo -E " "
 python3 osis2usfm.py SloKJV_sword.xml
 # Pobrise 40-to kvazi knjigo da so knjige Nove zaveze pravilno ostevilcene
-rm $SloKJV$format/40____.usfm >/dev/null 2>&1
+rm 40____.usfm >/dev/null 2>&1
 #=========================================================================
 #=========================================================================
 
+
+
+ls -al $SloKJV$format
+
+exit
 
 # ================= Pridobi BibleName iz USFM datoteke  ================================
 echo -E "   --==    Naslov knjige shrani v 1. vrstico     "
@@ -672,6 +677,8 @@ echo -E " "
 #
 #  \v 1 #Zacetek_Ime_Biblije#Sveto pismo Kralja Jakoba (1769) – SloKJV#Konec_ime_Biblije##
 #
+# To v bistvu rešujem z A7_INT.usfm
+# Tukaj samo pobrišem "Stara zaveza" in "Nova zaveza"
 python3 pridobi_Zaveza.py
 # cat 00_BibleName.txt
 #cat 01_GEN.usfm |head -10
@@ -686,7 +693,7 @@ echo -E " "
 #  \v 1 #Zacetek_knjige# ...  #Konec_knjige#
 #
 python3 pridobi_Naslove_Knjig.py
-#head -15 cat 01_GEN.usfm
+# head -15 cat 01_GEN.usfm
 echo -E " "
 # head -10 02_EXO.usfm
 #=============================================================
@@ -699,9 +706,15 @@ echo -E " "
 #  \v 1 #Zacetek_Uvoda# ....  #Konec_Uvoda#
 #
 python3 pridobi_Uvode.py
-#head -15 cat 01_GEN.usfm
+#
+# Sedaj pa \imi kjer so številke spremeni v \io1
+#          \imi 1.      -->                 \io1 1.
+#          \imi 2.      -->                 \io1 2.
+sed -i 's/\\imi \([0-9]*\)\. /\\io1 \1\. /'                      *.usfm
+
+#head -30 cat 01_GEN.usfm
 echo -E " "
-#head -15 cat 02_EXO.usfm
+# head -15 cat 02_EXO.usfm
 #=============================================================
 
 
@@ -794,16 +807,15 @@ echo -E " "
       # ======= Kreira datoteko z dodatki - zemljevidi maps mapami =============
       #  https://ubsicap.github.io/usfm/peripherals/back.html
       touch A1_BAK.usfm
-		echo "\zNeedOddPage"                                 >> A1_BAK.usfm
 		echo "\id BAK"                                       >> A1_BAK.usfm
-		echo "\h Dodatki"                                    >> A1_BAK.usfm
-		echo "\mt2 Dodatki"                                  >> A1_BAK.usfm
-                echo "\pb"                                           >> A1_BAK.usfm
-                echo "\periph Kazalo zemljevidov|id=\"maps\""        >> A1_BAK.usfm
+                echo "\periph Zemljevidi|id=\"maps\""                >> A1_BAK.usfm
+		echo "\mt1 Dodatki"                                  >> A1_BAK.usfm
+		echo "\mt2 Zemljevidi"                               >> A1_BAK.usfm
+		echo "\h Zemljevidi"                                 >> A1_BAK.usfm
 		echo "\toc1 Zemljevidi"                              >> A1_BAK.usfm
 		echo "\toc2 "                                        >> A1_BAK.usfm
 		echo "\toc3 "                                        >> A1_BAK.usfm
-		# echo "\mt Zemljevidi"            >> A1_BAK.usfm
+                echo "\pb"                                           >> A1_BAK.usfm
 		echo "\zfiga|p001\*"                                 >> A1_BAK.usfm
                 echo "\pb"                                           >> A1_BAK.usfm
 		echo "\zfiga|p002\*"                                 >> A1_BAK.usfm
@@ -811,7 +823,6 @@ echo -E " "
 		echo "\zfiga|p003\*"                                 >> A1_BAK.usfm
                 echo "\pb"                                           >> A1_BAK.usfm
 		echo "\zfiga|p004\*"                                 >> A1_BAK.usfm
-		# echo "\zendperiph"               >> A1_BAK.usfm
                 # cat A1_BAK.usfm
       # ========================================================================
 
@@ -860,14 +871,14 @@ echo -E " "
                 # cat A7_INT.usfm
                ;;
            *)  #echo "   ."
-               #echo "   Nic ne naredi."
+               #echo "   NAstavitve A7_INT za velikost manjso kot A4."
                 touch A7_INT.usfm
                 echo "\id INT"                                                     >> A7_INT.usfm
-                echo "\periph Stara zaveza|id=\"intot\""                           >> A7_INT.usfm
-                #echo "\mt1 Stara zaveza"                                           >> A7_INT.usfm
-                # echo "\p Stara zaveza je zapis......"                            >> A7_INT.usfm
-                #echo "\pb"                                                         >> A7_INT.usfm
-                # echo "\zendperiph"                                                 >> A7_INT.usfm
+                echo "\periph STARA ZAVEZA|id=\"intot\""                           >> A7_INT.usfm
+                echo "\mt1 STARA ZAVEZA"                                           >> A7_INT.usfm
+                #echo "\ipi Stara zaveza je zapis......"                           >> A7_INT.usfm
+                # echo "\pb"                                                       >> A7_INT.usfm
+                # echo "\zendperiph"                                               >> A7_INT.usfm
                 # echo "\periph History Introduction|id=\"inthistory\""            >> A7_INT.usfm
                 # echo "\s1 Historical Books"                                      >> A7_INT.usfm
                 # echo "\p The books in thi..."                                    >> A7_INT.usfm
@@ -881,12 +892,16 @@ echo -E " "
                 # echo "\periph Deuterocanon Introduction|id=\"intdc\""            >> A7_INT.usfm
                 # echo "\mt1 Deuterocanonicals/Apocrypha"                          >> A7_INT.usfm
                 # echo "\p Most of the books g...."                                >> A7_INT.usfm
-                # echo "\zendperiph"                                               >> A7_INT.usfm
-                echo "\periph Nova zaveza|id=\"intnt\""                            >> A7_INT.usfm
-                #echo "\mt1 Nova zaveza"                                            >> A7_INT.usfm
-                # echo "\p Knjige Noveze so napisali učenci Jezusa Kristusa....."  >> A7_INT.usfm
-                #echo "\pb"                                                         >> A7_INT.usfm
-                # echo "\zendperiph"                                                 >> A7_INT.usfm
+                echo "\zendperiph"                                               >> A7_INT.usfm
+                echo "\zNeedOddPage"                                             >> A7_INT.usfm
+                echo "\periph NOVA ZAVEZA|id=\"intnt\""                            >> A7_INT.usfm
+                echo "\mt1 NOVA ZAVEZA"                                            >> A7_INT.usfm
+                echo "\mt2 NAŠEGA GOSPODA IN REŠITELJA NAŠIH DUŠ"                  >> A7_INT.usfm
+                echo "\mt2 JEZUSA KRISTUSA"                                        >> A7_INT.usfm
+                echo "\mt3 z vsemi besedami Jezusa Krisusa, zapisanimi z rdečo"    >> A7_INT.usfm
+                # echo "\pb"                                                       >> A7_INT.usfm
+                echo "\zendperiph"                                               >> A7_INT.usfm
+                echo "\zNeedOddPage"                                             >> A7_INT.usfm
                 # echo "\periph Gospels Introduction|id=\"intgospels\""            >> A7_INT.usfm
                 # echo "\s1 Gospels and Acts"                                      >> A7_INT.usfm
                 # echo "\zendperiph"                                               >> A7_INT.usfm

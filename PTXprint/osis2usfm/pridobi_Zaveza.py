@@ -18,7 +18,7 @@ toc3_index = usfm_content_modified.find("\\toc3") + len("\\toc3")
 # Insert the extracted text after \toc3 tag with additional formatting
 new_content = (
     usfm_content_modified[:toc3_index] +
-    "\n\\pb\n\\mt1 " + extracted_text + "\n\\pb\n\\pb" +
+    # "\n\\pb\n\\mt1 " + extracted_text + "\n\\pb\n\\pb" +
     usfm_content_modified[toc3_index:]
 )
 
@@ -49,7 +49,7 @@ toc3_index = usfm_content_modified.find("\\toc3") + len("\\toc3")
 # Insert the extracted text after \toc3 tag with additional formatting
 new_content = (
     usfm_content_modified[:toc3_index] +
-    "\n\\pb\n\\mt1 " + extracted_text + "\n\\pb\n\\pb" +
+    # "\n\\pb\n\\mt1 " + extracted_text + "\n\\pb\n\\pb" +
     usfm_content_modified[toc3_index:]
 )
 

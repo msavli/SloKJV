@@ -14,7 +14,7 @@ def process_usfm_file(file_path):
     extracted_text = usfm_content[start_index:end_index].strip()
 
     # Split the extracted text by \ip tags and format it
-    formatted_text = "\n".join([f"\\ip {line.strip()}" for line in extracted_text.split("\\ip") if line.strip()])
+    formatted_text = "\n".join([f"\\imi {line.strip()}" for line in extracted_text.split("\\ip") if line.strip()])
 
     # Remove the tags and the text between them from the USFM content
     usfm_content_modified = usfm_content[:start_index - len(start_tag)] + usfm_content[end_index + len(end_tag):]
