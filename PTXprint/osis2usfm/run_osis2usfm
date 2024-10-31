@@ -6,6 +6,7 @@
    SloKJV_Github=/home/pc/Dokumenti/GitHub/SloKJV
           SloKJV=/home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release/SloKJV_
           format=US_Trade
+      zemljevidi=/home/pc/Dokumenti/GitHub/Bible-Maps/
 
 # Naredi mapo release in mapo projekta
 mkdir $osis2usfm/SloKJV/release                >/dev/null 2>&1
@@ -69,6 +70,9 @@ key_pressed_brisanje_temp_files() {
 		echo  "      Pobrise vse fajle v mapah local ..."
 		find $osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print -delete ';'
 		# find $osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print ';'
+                echo "     Pobrise simbilicen link do zemljevidov ki ga vsakic znova kreira"
+		find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release -type l -name 'figures' -exec rm '{}' \;
+                # ls -al $SloKJV$format
 		#=======================================================
     else
         echo "   Nadaljujem ...."
@@ -169,17 +173,21 @@ done
            "PTXPRINT_STY")
                echo "   Preskoci kreiranje mape."
                ;;
+           "PTXPRINT_CFG")
+               echo "   Preskoci kreiranje mape."
+               ;;
+           "PTXPRINT_CFG")
+               echo "   Preskoci kreiranje mape."
+               ;;
            *)  echo "   Kreira mapo."
                mkdir $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format  2>/dev/null
+               echo "   Kreira simbolicen link do zemljevidov"
+               ln -s $zemljevidi $SloKJV$format/figures                               2>/dev/null
+                 # cd $SloKJV$format/figures
+                 #ls -al
                ;;
       esac
 #=============================================================================================
-
-
-# Naredi simbolicen link iz Github na mapo osis2usfm (samo prvic)
-#ln -s $SloKJV_Github/PTXprint/osis2usfm/run_osis2usfm $osis2usfm       2>/dev/null
-#ln -s $SloKJV_Github/PTXprint/osis2usfm/osis2usfm.py $osis2usfm        2>/dev/null
-#ln -s $SloKJV_Github/PTXprint/osis2usfm/SloKJV/ $osis2usfm             2>/dev/null
 
 
 #================ PTXPrint nadgradi na zadnjo verzijo? ====================
@@ -388,7 +396,7 @@ echo -E "   --==    Zamenja Inscription"
 python3 zamenjaj_Inscription.py $osis2usfm/SloKJV_sword.xml $osis2usfm/SloKJV_sword1.xml
 mv SloKJV_sword1.xml SloKJV_sword.xml
 #   preveri   MENE, MENE, TEKEL, UPHARSIN
-cat $osis2usfm/SloKJV_sword.xml |grep -2 "Bog je preštel tvoje kraljestvo in ga konč"
+# cat $osis2usfm/SloKJV_sword.xml |grep -2 "Bog je preštel tvoje kraljestvo in ga konč"
 echo -E "  "
 # ================================================================================
 
@@ -680,7 +688,7 @@ echo -E " "
 python3 pridobi_Naslove_Knjig.py
 #head -15 cat 01_GEN.usfm
 echo -E " "
-#head -15 cat 02_EXO.usfm
+# head -10 02_EXO.usfm
 #=============================================================
 
 
@@ -786,21 +794,24 @@ echo -E " "
       # ======= Kreira datoteko z dodatki - zemljevidi maps mapami =============
       #  https://ubsicap.github.io/usfm/peripherals/back.html
       touch A1_BAK.usfm
-		echo "\id BAK"                 >> A1_BAK.usfm
-		echo "\h Dodatki"              >> A1_BAK.usfm
-		echo "\periph Kazalo zemljevidov|id=\"maps\""        >> A1_BAK.usfm
-		echo "\toc1 Zemljevidi"        >> A1_BAK.usfm
-		echo "\toc2 "                  >> A1_BAK.usfm
-		echo "\toc3 "                  >> A1_BAK.usfm
-		# echo "\mt Zemljevidi"          >> A1_BAK.usfm
-		echo "\zfiga|p001\*"           >> A1_BAK.usfm
-                echo "\pb"                     >> A1_BAK.usfm
-		echo "\zfiga|p002\*"           >> A1_BAK.usfm
-                echo "\pb"                     >> A1_BAK.usfm
-		echo "\zfiga|p003\*"           >> A1_BAK.usfm
-                echo "\pb"                     >> A1_BAK.usfm
-		echo "\zfiga|p004\*"           >> A1_BAK.usfm
-		echo "\zendperiph"             >> A1_BAK.usfm
+		echo "\zNeedOddPage"                                 >> A1_BAK.usfm
+		echo "\id BAK"                                       >> A1_BAK.usfm
+		echo "\h Dodatki"                                    >> A1_BAK.usfm
+		echo "\mt2 Dodatki"                                  >> A1_BAK.usfm
+                echo "\pb"                                           >> A1_BAK.usfm
+                echo "\periph Kazalo zemljevidov|id=\"maps\""        >> A1_BAK.usfm
+		echo "\toc1 Zemljevidi"                              >> A1_BAK.usfm
+		echo "\toc2 "                                        >> A1_BAK.usfm
+		echo "\toc3 "                                        >> A1_BAK.usfm
+		# echo "\mt Zemljevidi"            >> A1_BAK.usfm
+		echo "\zfiga|p001\*"                                 >> A1_BAK.usfm
+                echo "\pb"                                           >> A1_BAK.usfm
+		echo "\zfiga|p002\*"                                 >> A1_BAK.usfm
+                echo "\pb"                                           >> A1_BAK.usfm
+		echo "\zfiga|p003\*"                                 >> A1_BAK.usfm
+                echo "\pb"                                           >> A1_BAK.usfm
+		echo "\zfiga|p004\*"                                 >> A1_BAK.usfm
+		# echo "\zendperiph"               >> A1_BAK.usfm
                 # cat A1_BAK.usfm
       # ========================================================================
 
@@ -817,7 +828,7 @@ echo -E " "
                 echo "\mt1 Stara zaveza"                                           >> A7_INT.usfm
                 # echo "\p Stara zaveza je zapis......"                            >> A7_INT.usfm
 	        echo "\pb"                                                         >> A7_INT.usfm
-		echo "\zendperiph"                                                 >> A7_INT.usfm
+		# echo "\zendperiph"                                                 >> A7_INT.usfm
                 # echo "\periph History Introduction|id=\"inthistory\""            >> A7_INT.usfm
                 # echo "\s1 Historical Books"                                      >> A7_INT.usfm
                 # echo "\p The books in thi..."                                    >> A7_INT.usfm
@@ -836,7 +847,7 @@ echo -E " "
                 echo "\mt1 Nova zaveza"                                            >> A7_INT.usfm
                 # echo "\p Knjige Noveze so napisali učenci Jezusa Kristusa....."  >> A7_INT.usfm
 	        echo "\pb"                                                         >> A7_INT.usfm
-		echo "\zendperiph"                                                 >> A7_INT.usfm
+		# echo "\zendperiph"                                                 >> A7_INT.usfm
                 # echo "\periph Gospels Introduction|id=\"intgospels\""            >> A7_INT.usfm
                 # echo "\s1 Gospels and Acts"                                      >> A7_INT.usfm
 		# echo "\zendperiph"                                               >> A7_INT.usfm
@@ -856,7 +867,7 @@ echo -E " "
                 #echo "\mt1 Stara zaveza"                                           >> A7_INT.usfm
                 # echo "\p Stara zaveza je zapis......"                            >> A7_INT.usfm
                 #echo "\pb"                                                         >> A7_INT.usfm
-                echo "\zendperiph"                                                 >> A7_INT.usfm
+                # echo "\zendperiph"                                                 >> A7_INT.usfm
                 # echo "\periph History Introduction|id=\"inthistory\""            >> A7_INT.usfm
                 # echo "\s1 Historical Books"                                      >> A7_INT.usfm
                 # echo "\p The books in thi..."                                    >> A7_INT.usfm
@@ -875,7 +886,7 @@ echo -E " "
                 #echo "\mt1 Nova zaveza"                                            >> A7_INT.usfm
                 # echo "\p Knjige Noveze so napisali učenci Jezusa Kristusa....."  >> A7_INT.usfm
                 #echo "\pb"                                                         >> A7_INT.usfm
-                echo "\zendperiph"                                                 >> A7_INT.usfm
+                # echo "\zendperiph"                                                 >> A7_INT.usfm
                 # echo "\periph Gospels Introduction|id=\"intgospels\""            >> A7_INT.usfm
                 # echo "\s1 Gospels and Acts"                                      >> A7_INT.usfm
                 # echo "\zendperiph"                                               >> A7_INT.usfm
@@ -1017,341 +1028,407 @@ echo -E "   --==    Popravi naslove knjig ==--"
 
 # \h 1 Pet
 # \h1 Prvo Petrovo pismo       - to potegne iz SloKJV_sword.sml datoteke
-# \toc1 Prvo Petrovo pismo     - to potegne iz SloKJV_sword.sml datoteke
+# \toc1 Prvo Petrovo pismo     - to rocno popravim  na  krajša imena 1 Mojzes
 # \toc2 1 Peter
-# \toc3 1 Pet
+# \toc3 1 Pet                   (To je za navpicne crne ThumbTabs ob zunanji strani knjige)
 # \mt1 Prvo Petrovo pismo      - to potegne iz SloKJV_sword.sml datoteke
 
 
 # GEN
   sed -i "s/\\\\h /\x5ch 1 Mz/g"                 01_GEN.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 1 Mojzes/g"        01_GEN.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Geneza/g"          01_GEN.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 1Mz/g"             01_GEN.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 1 Mz/g"            01_GEN.usfm
 
 # EXO
   sed -i "s/\\\\h /\x5ch 2 Mz/g"                 02_EXO.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 2 Mojzes/g"        01_GEN.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Eksodus/g"         02_EXO.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 2Mz/g"             02_EXO.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 2 Mz/g"            02_EXO.usfm
 
 # LEV
   sed -i "s/\\\\h /\x5ch 3 Mz/g"                 03_LEV.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 3 Mojzes/g"        01_GEN.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Levitik/g"         03_LEV.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 3Mz/g"             03_LEV.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 3 Mz/g"            03_LEV.usfm
 
 # NUM
   sed -i "s/\\\\h /\x5ch 4 Mz/g"                 04_NUM.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 4 Mojzes/g"        01_GEN.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Numeri/g"          04_NUM.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 4Mz/g"             04_NUM.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 4 Mz/g"            04_NUM.usfm
 
 # DEU
   sed -i "s/\\\\h /\x5ch 5 Mz/g"                 05_DEU.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 5 Mojzes/g"        01_GEN.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Devteronomij/g"    05_DEU.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 5Mz/g"             05_DEU.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 5 Mz/g"             05_DEU.usfm
 
 # JOS
 #  UTF-8   U+00F3  ó   c3 b3  \xC3\xB3
   sed -i "s/\\\\h /\x5ch Joz/g"                  06_JOS.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 J\xC3\xB3zue/g"    06_JOS.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 J\xC3\xB3zue/g"    06_JOS.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                06_JOS.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Joz/g"             06_JOS.usfm
 
 # JDG
   sed -i "s/\\\\h /\x5ch Sod/g"                  07_JDG.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Sodniki/g"         07_JDG.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Sodniki/g"         07_JDG.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                07_JDG.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Sod/g"             07_JDG.usfm
 
 # RUT
-  sed -i "s/\\\\h /\x5ch Ruta/g"                 08_RUT.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Ruta/g"            08_RUT.usfm
+  sed -i "s/\\\\h /\x5ch Rut/g"                  08_RUT.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Ruta/g"            08_RUT.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                08_RUT.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Rut/g"             08_RUT.usfm
 
 # 1SA
   sed -i "s/\\\\h /\x5ch 1 Sam/g"                09_1SA.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 1 Samuel/g"        09_1SA.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 1Sa/g"             09_1SA.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 1 Samuel/g"        09_1SA.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                09_1SA.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 1 Sam/g"           09_1SA.usfm
 
 # 2SA
   sed -i "s/\\\\h /\x5ch 2 Sam/g"                10_2SA.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 2 Samuel/g"        10_2SA.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 2Sa/g"             10_2SA.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 2 Samuel/g"        10_2SA.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                10_2SA.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 2 Sam/g"            10_2SA.usfm
 
 # 1KI
   sed -i "s/\\\\h /\x5ch 1 Kr/g"                 11_1KI.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 1 Kralji/g"        11_1KI.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 1Kr/g"             11_1KI.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 1 Kralji/g"        11_1KI.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                11_1KI.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 1 Kr/g"            11_1KI.usfm
 
 # 2KI
   sed -i "s/\\\\h /\x5ch 2 Kr/g"                 12_2KI.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 2 Kralji/g"        12_2KI.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 2Kr/g"             12_2KI.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 2 Kralji/g"        12_2KI.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                12_2KI.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 2 Kr/g"            12_2KI.usfm
 
 # 1CH
   sed -i "s/\\\\h /\x5ch 1 Krn/g"                13_1CH.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 1 Kroniška/g"      13_1CH.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 1Krn/g"            13_1CH.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 1 Kroniška/g"      13_1CH.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                13_1CH.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 1 Krn/g"           13_1CH.usfm
 
 # 2CH
   sed -i "s/\\\\h /\x5ch 2 Krn/g"                14_2CH.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 2 Kroniška/g"      14_2CH.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 2Krn/g"            14_2CH.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 2 Kroniška/g"      14_2CH.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                14_2CH.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 2 Krn/g"           14_2CH.usfm
 
 # EZR
-  sed -i "s/\\\\h /\x5ch Ezra/g"                 15_EZR.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Ezra/g"            15_EZR.usfm
+  sed -i "s/\\\\h /\x5ch Ezr/g"                  15_EZR.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Ezra/g"            15_EZR.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                15_EZR.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Ezr/g"             15_EZR.usfm
 
 # NEH
   sed -i "s/\\\\h /\x5ch Neh/g"                  16_NEH.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Nehemija/g"        16_NEH.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Nehemija/g"        16_NEH.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                16_NEH.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Neh/g"             16_NEH.usfm
 
 # EST
   sed -i "s/\\\\h /\x5ch Est/g"                  17_EST.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Estera/g"          17_EST.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Estera/g"          17_EST.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                17_EST.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Est/g"             17_EST.usfm
 
 # JOB
   sed -i "s/\\\\h /\x5ch Job/g"                  18_JOB.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Job/g"             18_JOB.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Job/g"             18_JOB.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                18_JOB.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Job/g"             18_JOB.usfm
 
 # PSA
   sed -i "s/\\\\h /\x5ch Ps/g"                   19_PSA.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Psalmi/g"          19_PSA.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Psalmi/g"          19_PSA.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                19_PSA.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Ps/g"              19_PSA.usfm
 
 # PRO
   sed -i "s/\\\\h /\x5ch Prg/g"                  20_PRO.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Pregovori/g"       20_PRO.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Pregovori/g"       20_PRO.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                20_PRO.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Prg/g"             20_PRO.usfm
 
 # ECC
   sed -i "s/\\\\h /\x5ch Prd/g"                  21_ECC.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Pridigar/g"        21_ECC.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Pridigar/g"        21_ECC.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 Kohelet/g"         21_ECC.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Prd/g"             21_ECC.usfm
 
 # SNG
   sed -i "s/\\\\h /\x5ch Pp/g"                   22_SNG.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Pesem pesmi/g"     22_SNG.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Pesem pesmi/g"     22_SNG.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 Visoka pesem/g"    22_SNG.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Pp/g"              22_SNG.usfm
 
 # ISA
   sed -i "s/\\\\h /\x5ch Iz/g"                   23_ISA.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Izaija/g"          23_ISA.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Izaija/g"          23_ISA.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                23_ISA.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Iz/g"              23_ISA.usfm
 
 # JER
   sed -i "s/\\\\h /\x5ch Jer/g"                  24_JER.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Jeremija/g"        24_JER.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Jeremija/g"        24_JER.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                24_JER.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Jer/g"             24_JER.usfm
 
 # LAM
   sed -i "s/\\\\h /\x5ch Žal/g"                  25_LAM.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Žalostinke/g"      25_LAM.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Žalostinke/g"      25_LAM.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                25_LAM.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Žal/g"             25_LAM.usfm
 
 # EZK
   sed -i "s/\\\\h /\x5ch Ezk/g"                  26_EZK.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Ezekiel/g"         26_EZK.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Ezekiel/g"         26_EZK.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                26_EZK.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Ezk/g"             26_EZK.usfm
 
 # DAN
   sed -i "s/\\\\h /\x5ch Dan/g"                  27_DAN.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Daniel/g"          27_DAN.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Daniel/g"          27_DAN.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                27_DAN.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Dan/g"             27_DAN.usfm
 
 # HOS
   sed -i "s/\\\\h /\x5ch Oz/g"                   28_HOS.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Ozej/g"            28_HOS.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Ozej/g"            28_HOS.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                28_HOS.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Oz/g"              28_HOS.usfm
 
 # JOL
   sed -i "s/\\\\h /\x5ch Jl/g"                   29_JOL.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Joel/g"            29_JOL.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Joel/g"            29_JOL.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                29_JOL.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Jl/g"              29_JOL.usfm
 
 # AMO
   sed -i "s/\\\\h /\x5ch Am/g"                   30_AMO.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Amos/g"            30_AMO.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Amos/g"            30_AMO.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                30_AMO.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Am/g"              30_AMO.usfm
 
 # OBA
   sed -i "s/\\\\h /\x5ch Abd/g"                  31_OBA.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Abdija/g"          31_OBA.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Abdija/g"          31_OBA.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                31_OBA.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Abd/g"             31_OBA.usfm
 
 # JON
   sed -i "s/\\\\h /\x5ch Jon/g"                  32_JON.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Jona/g"            32_JON.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Jona/g"            32_JON.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                32_JON.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Jon/g"             32_JON.usfm
 
 # MIC
   sed -i "s/\\\\h /\x5ch Mih/g"                  33_MIC.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Mihej/g"           33_MIC.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Mihej/g"           33_MIC.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                33_MIC.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Mih/g"             33_MIC.usfm
 
 # NAM
   sed -i "s/\\\\h /\x5ch Nah/g"                  34_NAM.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Nahum/g"           34_NAM.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Nahum/g"           34_NAM.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                34_NAM.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Nah/g"             34_NAM.usfm
 
 # HAB
   sed -i "s/\\\\h /\x5ch Hab/g"                  35_HAB.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Habakuk/g"         35_HAB.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Habakuk/g"         35_HAB.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                35_HAB.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Hab/g"             35_HAB.usfm
 
 # ZEP
   sed -i "s/\\\\h /\x5ch Sof/g"                  36_ZEP.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Sofonija/g"        36_ZEP.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Sofonija/g"        36_ZEP.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                36_ZEP.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Sof/g"             36_ZEP.usfm
 
 # HAG
   sed -i "s/\\\\h /\x5ch Ag/g"                   37_HAG.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Agej/g"            37_HAG.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Agej/g"            37_HAG.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                37_HAG.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Ag/g"              37_HAG.usfm
 
 # ZEC
   sed -i "s/\\\\h /\x5ch Zah/g"                  38_ZEC.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Zaharija/g"        38_ZEC.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Zaharija/g"        38_ZEC.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                38_ZEC.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Zah/g"             38_ZEC.usfm
 
 # MAL
   sed -i "s/\\\\h /\x5ch Mal/g"                  39_MAL.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Malahija/g"        39_MAL.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Malahija/g"        39_MAL.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                39_MAL.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Mal/g"             39_MAL.usfm
 
 # MAT
   sed -i "s/\\\\h /\x5ch Mt/g"                   41_MAT.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Matej/g"           41_MAT.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Matej/g"           41_MAT.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                41_MAT.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Mt/g"              41_MAT.usfm
 
 # MRK
   sed -i "s/\\\\h /\x5ch Mr/g"                   42_MRK.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Marko/g"           42_MRK.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Marko/g"           42_MRK.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                42_MRK.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Mr/g"              42_MRK.usfm
 
 # LUK
   sed -i "s/\\\\h /\x5ch Lk/g"                   43_LUK.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Luka/g"            43_LUK.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Luka/g"            43_LUK.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                43_LUK.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Lk/g"              43_LUK.usfm
 
 # JHN
   sed -i "s/\\\\h /\x5ch Jn/g"                   44_JHN.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Janez/g"           44_JHN.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Janez/g"           44_JHN.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                44_JHN.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Jn/g"              44_JHN.usfm
 
 # ACT
   sed -i "s/\\\\h /\x5ch Apd/g"                  45_ACT.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Apostolska dela/g" 45_ACT.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Apostolska dela/g" 45_ACT.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 Dela/g"            45_ACT.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Apd/g"             45_ACT.usfm
 
 # ROM
   sed -i "s/\\\\h /\x5ch Rim/g"                  46_ROM.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Rimljanom/g"       46_ROM.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Rimljanom/g"       46_ROM.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                46_ROM.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Rim/g"             46_ROM.usfm
 
 # 1CO
   sed -i "s/\\\\h /\x5ch 1 Kor/g"                47_1CO.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 1 Korinčanom/g"    47_1CO.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 1Ko/g"             47_1CO.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 1 Korinčanom/g"    47_1CO.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                47_1CO.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 1 Kor/g"           47_1CO.usfm
 
 # 2CO
   sed -i "s/\\\\h /\x5ch 2 Kor/g"                48_2CO.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 2 Korinčanom/g"    48_2CO.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 2Ko/g"             48_2CO.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 2 Korinčanom/g"    48_2CO.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                48_2CO.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 2 Kor/g"           48_2CO.usfm
 
 # GAL
   sed -i "s/\\\\h /\x5ch Gal/g"                  49_GAL.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Galačanom/g"       49_GAL.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Galačanom/g"       49_GAL.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                49_GAL.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Gal/g"             49_GAL.usfm
 
 # EPH
   sed -i "s/\\\\h /\x5ch Ef/g"                   50_EPH.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Efežanom/g"        50_EPH.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Efežanom/g"        50_EPH.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                50_EPH.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Ef/g"              50_EPH.usfm
 
 # PHP
   sed -i "s/\\\\h /\x5ch Flp/g"                  51_PHP.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Filipljanom/g"     51_PHP.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Filipljanom/g"     51_PHP.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                51_PHP.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Flp/g"             51_PHP.usfm
 
 # COL
   sed -i "s/\\\\h /\x5ch Kol/g"                  52_COL.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Kološanom/g"       52_COL.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Kološanom/g"       52_COL.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                52_COL.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Kol/g"             52_COL.usfm
 
 # 1TH
   sed -i "s/\\\\h /\x5ch 1 Tes/g"                53_1TH.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 1 Tesaloničanom/g" 53_1TH.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 1Te/g"             53_1TH.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 1 Tesaloničanom/g" 53_1TH.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                53_1TH.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 1 Tes/g"           53_1TH.usfm
 
 # 2TH
   sed -i "s/\\\\h /\x5ch 2 Tes/g"                54_2TH.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 2 Tesaloničanom/g" 54_2TH.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 2Te/g"             54_2TH.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 2 Tesaloničanom/g" 54_2TH.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                54_2TH.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 2 Tes/g"           54_2TH.usfm
 
 # 1TI
   sed -i "s/\\\\h /\x5ch 1 Tim/g"                55_1TI.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 1 Timóteju/g"      55_1TI.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 1Ti/g"             55_1TI.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 1 Timóteju/g"      55_1TI.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                55_1TI.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 1 Tim/g"           55_1TI.usfm
 
 # 2TI
   sed -i "s/\\\\h /\x5ch 2 Tim/g"                56_2TI.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 2 Timóteju/g"      56_2TI.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 2Ti/g"             56_2TI.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 2 Timóteju/g"      56_2TI.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                56_2TI.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 2 Tim/g"           56_2TI.usfm
 
 # TIT
   sed -i "s/\\\\h /\x5ch Tit/g"                  57_TIT.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Titu/g"            57_TIT.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Titu/g"            57_TIT.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                57_TIT.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Tit/g"             57_TIT.usfm
 
 # PHM
   sed -i "s/\\\\h /\x5ch Fil/g"                  58_PHM.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Filemonu/g"        58_PHM.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 Fil/g"             58_PHM.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Filemonu/g"        58_PHM.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                58_PHM.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 Flm/g"             58_PHM.usfm
 
 # HEB
   sed -i "s/\\\\h /\x5ch Heb/g"                  59_HEB.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Hebrejcem/g"       59_HEB.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Hebrejcem/g"       59_HEB.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                59_HEB.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Heb/g"             59_HEB.usfm
 
 # JAS
   sed -i "s/\\\\h /\x5ch Jak/g"                  60_JAS.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Jakob/g"           60_JAS.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Jakob/g"           60_JAS.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                60_JAS.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Jak/g"             60_JAS.usfm
 
 # 1PE
-  sed -i "s/\\\\h /\x5ch 1 Pet/g"                61_1PE.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 1 Peter/g"         61_1PE.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 1Pt/g"             61_1PE.usfm
+  sed -i "s/\\\\h /\x5ch 1 Pt/g"                 61_1PE.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 1 Peter/g"         61_1PE.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                61_1PE.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 1 Pt/g"            61_1PE.usfm
 
 # 2PE
-  sed -i "s/\\\\h /\x5ch 2 Pet/g"                62_2PE.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 2 Peter/g"         62_2PE.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 2Pt/g"             62_2PE.usfm
+  sed -i "s/\\\\h /\x5ch 2 Pt/g"                 62_2PE.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 2 Peter/g"         62_2PE.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                62_2PE.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 2 Pt/g"            62_2PE.usfm
 
 # 1JN
   sed -i "s/\\\\h /\x5ch 1 Jn/g"                 63_1JN.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 1 Janez/g"         63_1JN.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 1Jn/g"             63_1JN.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 1 Janez/g"         63_1JN.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                63_1JN.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 1 Jn/g"            63_1JN.usfm
 
 # 2JN
   sed -i "s/\\\\h /\x5ch 2 Jn/g"                 64_2JN.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 2 Janez/g"         64_2JN.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 2Jn/g"             64_2JN.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 2 Janez/g"         64_2JN.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                64_2JN.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 2 Jn/g"            64_2JN.usfm
 
 # 3JN
   sed -i "s/\\\\h /\x5ch 3 Jn/g"                 65_3JN.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 3 Janez/g"         65_3JN.usfm
-  sed -i "s/\\\\toc3/\x5ctoc3 3Jn/g"             65_3JN.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 3 Janez/g"         65_3JN.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                65_3JN.usfm
+  sed -i "s/\\\\toc3/\x5ctoc3 3 Jn/g"            65_3JN.usfm
 
 # JUD
   sed -i "s/\\\\h /\x5ch Jud/g"                  66_JUD.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Juda/g"            66_JUD.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Juda/g"            66_JUD.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                66_JUD.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Jud/g"             66_JUD.usfm
 
 # REV
   sed -i "s/\\\\h /\x5ch Raz/g"                  67_REV.usfm
-  sed -i "s/\\\\toc2/\x5ctoc2 Razodetje/g"       67_REV.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Razodetje/g"       67_REV.usfm
+  sed -i "s/\\\\toc2/\x5ctoc2 /g"                67_REV.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Raz/g"             67_REV.usfm
 
 
