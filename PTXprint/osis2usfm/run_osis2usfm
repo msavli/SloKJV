@@ -73,6 +73,7 @@ key_pressed_brisanje_temp_files() {
                 echo "     Pobrise simbilicen link do zemljevidov ki ga vsakic znova kreira"
 		find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release -type l -name 'figures' -exec rm '{}' \;
                 # ls -al $SloKJV$format
+                rm   $osis2usfm/SloKJV_sword.xml                       >/dev/null 2>&1
 		#=======================================================
     else
         echo "   Nadaljujem ...."
@@ -654,11 +655,6 @@ rm 40____.usfm >/dev/null 2>&1
 #=========================================================================
 
 
-
-ls -al $SloKJV$format
-
-exit
-
 # ================= Pridobi BibleName iz USFM datoteke  ================================
 echo -E "   --==    Naslov knjige shrani v 1. vrstico     "
 echo -E " "
@@ -892,16 +888,16 @@ echo -E " "
                 # echo "\periph Deuterocanon Introduction|id=\"intdc\""            >> A7_INT.usfm
                 # echo "\mt1 Deuterocanonicals/Apocrypha"                          >> A7_INT.usfm
                 # echo "\p Most of the books g...."                                >> A7_INT.usfm
-                echo "\zendperiph"                                               >> A7_INT.usfm
-                echo "\zNeedOddPage"                                             >> A7_INT.usfm
+                #echo "\zendperiph"                                               >> A7_INT.usfm
+                #echo "\zNeedOddPage"                                             >> A7_INT.usfm
                 echo "\periph NOVA ZAVEZA|id=\"intnt\""                            >> A7_INT.usfm
                 echo "\mt1 NOVA ZAVEZA"                                            >> A7_INT.usfm
                 echo "\mt2 NAŠEGA GOSPODA IN REŠITELJA NAŠIH DUŠ"                  >> A7_INT.usfm
                 echo "\mt2 JEZUSA KRISTUSA"                                        >> A7_INT.usfm
                 echo "\mt3 z vsemi besedami Jezusa Krisusa, zapisanimi z rdečo"    >> A7_INT.usfm
                 # echo "\pb"                                                       >> A7_INT.usfm
-                echo "\zendperiph"                                               >> A7_INT.usfm
-                echo "\zNeedOddPage"                                             >> A7_INT.usfm
+                #echo "\zendperiph"                                               >> A7_INT.usfm
+                #echo "\zNeedOddPage"                                             >> A7_INT.usfm
                 # echo "\periph Gospels Introduction|id=\"intgospels\""            >> A7_INT.usfm
                 # echo "\s1 Gospels and Acts"                                      >> A7_INT.usfm
                 # echo "\zendperiph"                                               >> A7_INT.usfm
