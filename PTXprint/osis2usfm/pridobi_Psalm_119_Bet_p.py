@@ -5,6 +5,18 @@ with open('19_PSA.usfm', 'r') as file:
 # Process the lines
 new_lines = []
 for line in lines:
+
+# If the line starts with "\qa", add "\\p\n" before it
+
+#    if line.startswith("\\qa"):
+#        new_lines.append("\\p\n" + line)
+#    else:
+#        new_lines.append(line)
+#
+#    # Add "\\p\n" after each "\qa" line except "\qa [ALEF א]"
+#    if line.startswith("\\qa") and line.strip() != "\\qa [ALEF א]":
+#        new_lines.append("\\p\n")
+
     new_lines.append(line)
     if line.startswith("\\qa") and line.strip() != "\\qa [ALEF א]":
         new_lines.append("\\p\n")

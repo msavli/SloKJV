@@ -1,0 +1,9 @@
+% This is the .tex file specific for the SloKJV_A5_NZ_Ps project used by PTXprint.
+% Saved Configuration name: Default
+%
+% https://support.bible/13045/want-to-get-the-word-qs-selah-qs-aligned-to-the-right 
+%   Na zalost Gre Sela v drugo vrstico. Zato sem dodal dodaten enter
+% sed -i "s| Sela.|\\\qs Sela. \\\qs*\n\\p\n|g" 19_PSA.usfm
+% sed -i "s| Sela.|\\\qs Sela. \\\qs*\n\\p\n|g" 35_HAB.usfm
+\sethook{start}{qs}{\unskip\nobreak\hfill\penalty50\hskip0.3em\hbox{}\nobreak\hfill\hbox\bgroup}
+\sethook{end}{qs}{\egroup}

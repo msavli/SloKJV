@@ -77,7 +77,7 @@ def replace_references(note_content, chapter, verse, reference_pattern):
     #x    return f"\\x - \\xo {chapter},{verse}: \\xt {formatted_references} \\x*"
     #x else:
     #x    return f"\\x - \\xo {chapter},{verse}: \\xt {formatted_references} \\x*"
-    return f"\\x - \\xo {chapter},{verse}: \\xt {formatted_references} \\x*"
+    return f"\\x + \\xo {chapter},{verse}: \\xt {formatted_references} \\x*"
 
 # Read input from file
 input_file = 'SloKJV_sword.xml'

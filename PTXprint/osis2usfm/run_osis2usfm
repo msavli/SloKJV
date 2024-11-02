@@ -462,7 +462,7 @@ echo -E "   --==    Zamenja Psalm 119 Alef"
 # <title type="acrostic" canonical="true"><foreign n="א">[ALEF א]</foreign> </title>
 #
 #   spremeni v
-#                  \qa [ALEF א]
+#                  \qa [ALEF א]      
 #
 python3 zamenjaj_Psalm_119_Alef.py $osis2usfm/SloKJV_sword.xml $osis2usfm/SloKJV_sword1.xml
 mv SloKJV_sword1.xml SloKJV_sword.xml
@@ -728,7 +728,23 @@ echo -E " "
 #=============================================================
 
 
-# ================= Pridobi Naslove Psalmov  ================================
+# ================= Pridobi Stevilke Psalmov  ================================
+echo -E "   --==    Pridobi Stevilke Psalmov    "
+echo -E " "
+#
+#  #Start_naslov#Psalm 1#Konec_naslov#
+# Write a Python script to modify the file 19_PSA.usfm. 
+# If between the start tag #Start_Psalm_title# and end tag #End_Psalm_title# 
+# there are tags \add some_text\add, then change \add to \bdit and \add to \bdit*.**
+#
+cat 19_PSA.usfm |grep -1 "roke vseh njegovih sovražnikov"
+python3 pridobi_Naslove_psalmov_italic.py
+cat 19_PSA.usfm |grep -1 "roke vseh njegovih sovražnikov"
+#echo -E " "
+#=============================================================
+
+
+# ================= Pridobi italiv v bold v Naslovu Psalmov  ================================
 echo -E "   --==    Pridobi Naslove Psalmov    "
 echo -E " "
 #
@@ -789,15 +805,21 @@ sed -i '/\\c 119/{N;N;s/\(.*\)\n\(.*\)\n\(.*\) \\p #Zacetek_Alef#\\qa \[ALEF א\
 # \q1
 # \v 1  #Zacetek_Alef#\qa [ALEF א]#Konec_Alef#
 #
+# [ALEF א]#  -> [ALEF [א
+# Tukaj obrnem zaklepaj, da ga potem sam obrne zarad hebrejske pisave od desne proti levi
+sed -i "s|\([א-ת]\)\]|\[\1|g" 19_PSA.usfm
+echo " "
+# cat 19_PSA.usfm  |grep  -2 "ALEF"
+#
 python3 pridobi_Psalm_119_Alef.py
+#
 mv 19_PSA_modified.usfm 19_PSA.usfm
-#cat 19_PSA.usfm |grep -2 "BET"
+# cat 19_PSA.usfm |grep -2 "BET"
 #echo -E "--- "
-#cat 19_PSA.usfm |grep -2 "DALET"
+# cat 19_PSA.usfm |grep -2 "DALET"
 #cat 19_PSA.usfm |grep "S čim naj mladenič"
 echo -E " "
 #=============================================================
-
 
 
       # ======= Kreira datoteko z dodatki - zemljevidi maps mapami =============
@@ -982,7 +1004,7 @@ echo -E " "
 python3 pridobi_Psalm_119_Bet_p.py
 # cat 19_PSA.usfm |grep -1 "Absalom"
 echo -E " "
-#cat 19_PSA.usfm |grep -1 "ko je bežal pred svojim"
+# cat 19_PSA.usfm |grep -1 "ko je bežal pred svojim"
 #echo -E " "
 #=============================================================
 
@@ -992,12 +1014,13 @@ echo -E "   --==    SELAH    "
 #    To sem odstranil ne vem več zakaj....       </verse><lg><l type=\"selah\"> Sela.</l></lg>    "
 #    Pridela se lahko nazaj, ker je to samo v knjigi Ps in Hab.
 #              \qs  \qs*
+#      Doda se en odstavek zaradi kode  https://github.com/sillsdev/ptx2pdf/blob/master/docs/documentation/snippets.md#move-the-qr-word-up-to-the-end-of-previous-line-if-space-permits
 echo -E " "
-sed -i "s| Sela.|\\\qs Sela. \\\qs*|g" 19_PSA.usfm
-sed -i "s| Sela.|\\\qs Sela. \\\qs*|g" 35_HAB.usfm
+sed -i "s| Sela.|\\\qs Sela. \\\qs*\n\\\p|g" 19_PSA.usfm
+sed -i "s| Sela.|\\\qs Sela. \\\qs*\n\\\p|g" 35_HAB.usfm
 
-cat SloKJV_sword.xml |grep "\qs"
-cat SloKJV_sword.xml |grep -F 'type="selah">'
+# cat SloKJV_sword.xml |grep "\qs"
+# cat SloKJV_sword.xml |grep -F 'type="selah">'
 #=============================================================
 
 
@@ -1498,11 +1521,11 @@ echo -E "   --==    Popravi naslove knjig ==--"
 
 
 #========== Doda QR kodo ===============
-sed -i "s/Lepa zaradi lege/Lepa zaradi lege \\\zqrcode|pgpos=\"cr\" size=\"1.7cm\" data=\"https:\/\/www.brighteon.com\/fc8a3ecf-7b86-469e-b7fb-ea723c84e347\"\\\* /g"                                      19_PSA.usfm
+sed -i "s/Lepa zaradi lege/Lepa zaradi lege \\\zqrcode|size=\"1.7cm\" data=\"https:\/\/www.brighteon.com\/fc8a3ecf-7b86-469e-b7fb-ea723c84e347\"\\\* /g"                                      19_PSA.usfm
 #cat 19_PSA.usfm |grep -2 "Lepa zaradi lege"
-sed -i "s/da se mazili Najsvetejše./da se mazili Najsvetejše. \\\zqrcode|pgpos=\"cr\" size=\"1.6cm\" data=\"https:\/\/github.com\/msavli\/Ronald_Wyatt\"\\\* /g"                                           27_DAN.usfm
+sed -i "s/da se mazili Najsvetejše./da se mazili Najsvetejše. \\\zqrcode|size=\"1.6cm\" data=\"https:\/\/github.com\/msavli\/Ronald_Wyatt\"\\\* /g"                                           27_DAN.usfm
 # cat 27_DAN.usfm |grep -1 "da se mazili Najsvetejše."
-sed -i "s/›Jaz sem Kralj Judov.‹«/›Jaz sem Kralj Judov.‹« \\\zqrcode|pgpos=\"cr\" size=\"1.9cm\" data=\"https:\/\/relojprofetico.blogspot.com\/2010\/07\/yeshua-hanotzri-wmelej-hayehudim.html\"\\\* /g"   44_JHN.usfm
+sed -i "s/›Jaz sem Kralj Judov.‹«/›Jaz sem Kralj Judov.‹« \\\zqrcode|size=\"1.9cm\" data=\"https:\/\/relojprofetico.blogspot.com\/2010\/07\/yeshua-hanotzri-wmelej-hayehudim.html\"\\\* /g"   44_JHN.usfm
 #cat 44_JHN.usfm |grep -1 "›Jaz sem Kralj Judov.‹«"
 #========================================
 

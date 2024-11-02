@@ -1,0 +1,11 @@
+# This (changes.txt) file is for configuration-specific changes (which will not affect other saved configurations).
+# Other generic project-wide changes can be specified in PrintDraftChanges.txt).
+# Note that the 'include' statement on the next line imports those (legacy/generic) project-wide changes.
+include "../../../PrintDraftChanges.txt"
+#
+#Add a rule after the intro (for all books)
+#Use a horizontal rule (line) after the introductory outline, before the 1st chapter.
+# '(\\c 1 ?\r?\n)' > '\\zrule\\*\r\n\1 '
+#
+# Add an ornamental ‘rule’ under the book’s main title 
+# "(\\mt1 .+?\n)" > '\1\\zrule |cat="ornaments" width=".5" align="c" thick="8pt"\*\n'

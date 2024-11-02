@@ -18,26 +18,42 @@
 \im \zvar|maintitle\*
 \im \zvar|subtitle\*
 \zbl|1\*
-\im Dovoljenje za uporabo besedila
-\im To delo je ponujeno pod licenco Creative Commons (CC BY-NC-ND PRIZNANJE AVTORSTVA – NEKOMERCIALNO – BREZ PREDELAV)
-\im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo. (creativecommons.org/licenses/by-nc-nd/4.0/)
-\zccimg by-nc-nd|size="col" pgpos="pr" scale="0.15"\*
-\zbl|15\*
-\im Prva izdaja
-\im Knjiga je objavljena na spletni strani: github.com/msavli/SloKJV
-\zqrcode|pgpos="cr" size="1.2cm" data="https://github.com/msavli/SloKJV"\*
-\im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2024
-\im Priprava besedila: Marjan Šavli (PTXPrint)
-\im Fotografija na naslovnici: arhiv družine Šavli
-\im Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka, marjan.savli@gmail.com
-\im Verzija za mobilne naprave: crosswire.org/applications/
-\zqrcode|pgpos="pr" size="1.2cm" data="http://www.crosswire.org/applications/"\*
-\zbl|1\*
-\rem        \im CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
+\rem
+\im Dovoljenje za uporabo besedila: 
+\im To delo je ponujeno pod licenco Creative Commons (CC BY-NC-ND)
+\im (PRIZNANJE AVTORSTVA – NEKOMERCIALNO – BREZ PREDELAV). 
+\im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo.
+\zccimg by-nc-nd|size="col" pgpos="pr" scale="0.13"\*
 \zbl|3\*
-\im BREZPLAČEN IZVOD – NI ZA PRODAJO
+\tr \th1 \th2 \th3 
+\tr \tcr1 Prevod dela: \tc2 Holy Bible King James Version \tc3
+\tr \tcr1 Prevajalca: \tc2 Marjan Šavli in Barbara Hojkar Šavli \tc3
+\tr \tcr1 Priprava besedila:  \tc2 Marjan Šavli (PTXprint) \tc3
+\tr \tcr1 Naslovnica: \tc2 arhiv družine Šavli \tc3 
+\tr \tcr1 Izdala in založila:  \tc2 Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka, \tc3 
+\tr \tcr1 e-pošta: \tc2 marjan.savli@gmail.com \tc3
+\tr \tcr1 Leto izida: \tc2  2024, 1. izdaja, 1. natis \tc3
+\tr \tcr1 Brezplačen izvod: \tc2 ni za prodajo \tc3
+\tr \tcr1 Spletna stran: \tc2 github.com/msavli/SloKJV \tc3 \zqrcode|pgpos="H" size="1.2cm" data="https://github.com/msavli/SloKJV"\*
+\tr \tcr1 Mobilne naprave:  \tc2 crosswire.org/applications/ \tc3 \zqrcode|size="1.2cm" data="http://www.crosswire.org/applications/"\*
+\rem\
+\rem  ====CIP=========
+\zbl|3\*
+\im CIP - Kataložni zapis o publikaciji
+\im Narodna in univerzitetna knjižnica, Ljubljana
 \zbl|1\*
-\pm
+\im XXX
+\zbl|1\*
+\im .
+\im .    
+\zbl|1\*
+\im Prevod dela: 
+\im ISBN (samozal. M. Šavli)
+\im COBISS.SI-ID 
+\rem   ====== konec CIP ========
+\im 
+\zbl|1\*
+\pb
 \rem -------------------------------------------------------------------------
 \h Predgovor
 \mt2 Predgovor
@@ -88,6 +104,8 @@
 \is Knjige Nove zaveze
 \ip \ztoc|nt\*
 \is Dodatki
+\rem # Razni dodatki v kazalo pod "Dodatki" - ročno vnešeni
+\rem # \ztocafter\tr \tc1 Maps\tc2 \tcr3 479\ztocafter*
 \ip \ztoc|post\*
 \pb
 \ip
@@ -96,3 +114,36 @@
 \ip \ztoc|sortb\*
 \pb
 \zNeedOddPage
+\rem --------------------------COVER---------------------------
+\periph front|id="coverfront"
+\zgap|33pt\*
+\zbl|22\*\p
+\mt1 \zvar|covertitle1\*
+\mt1 \zvar|covertitle2\*
+\mt2 \zvar|coversubtitle\*
+\mt2 \zvar|subtitle\*
+\vfill
+\endgraf
+\periph spine|id="coverspine"
+\mt1 \zvar|coversubtitle\* ~~-~~ \zvar|subtitle\*
+\p
+\periph back|id="coverback"
+\zgap|1in\*
+\m Kajti Bog je tako ljubil svet,
+\m da je dal svojega edinorojenega Sina, da kdorkoli
+\m veruje vanj, se ne bo pogubil,
+\m temveč bo imel večno življenje.
+\b
+\m Jn 3,16
+\zbl|30\*\p
+\m \zvar|mesecletotiska\*
+\b
+\pc ~
+\vfill
+\periph spannedCover|id="coverwhole"
+\zgap|1pt\*
+\vfill
+\pc ~
+\vfill
+\endgraf
+\rem --------------------------END COVER---------------------------
