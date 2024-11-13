@@ -26,4 +26,4 @@ modified_content = modify_psalm_titles(file_content)
 with open('19_PSA.usfm', 'w') as file:
     file.write(modified_content)
 
-print("The file has been modified successfully.")
+# print("The file has been modified successfully.")
