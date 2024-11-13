@@ -16,7 +16,7 @@ Prevedene knjige: Geneza do Malahija in celotna Nova Zaveza.
  - »<sup>a</sup>« opombe KJV 1611 in opombe prevajalca,
  - »<sub>b</sub>« sklici na druge dela besedila,
  - »[ ]« dodala prevajalca, ni v originalu KJV,
- - »§« razlika besedila SloKJV od ostalih slovenskih prevodov,
+ - »§« razlika med besedilom SloKJV in ostalimi slovenskimi prevodi,
  - Jezusove besede izpisane z rdečo (Android verzija).
  
 Viri: [Angleško besedilo](http://www.crosswire.org/~dmsmith/kjv2006/), [Opombe in reference](https://www.kingjamesbibleonline.org/Genesis-Chapter-1_Original-1611-KJV/) in [biblija.net](http://www.biblija.net/biblija.cgi?m=&id13=1&id7=1&pos=0&set=6&l=sl).
