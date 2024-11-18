@@ -15,3 +15,11 @@
 \setbookhook{end}{PSA}{\pb\zNeedOddPage}
 \setbookhook{start}{MAT}{\pb\zNeedOddPage}
 % =============
+
+% === Set a smaller space after footnote and cross-reference callers in the notes area ===
+\sethook{start}{zfcle}{\hskip 0.00em}
+\sethook{end}{zfcle}{\hskip -0.29em}
+%
+\sethook{start}{zxcle}{\hskip -0.00em}
+\sethook{end}{zxcle}{\hskip -0.29em}
+% ===========
