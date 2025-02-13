@@ -37,7 +37,7 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [Mysword for Android](https://www.mysword.info/download-mysword) ([`SloKJV.bbl.mybible`](https://github.com/msavli/SloKJV/blob/master/SloKJV.bbl.mybible) odložiti v mapo [`/storage/emulated/0/mysword/bibles`])
  - [MyBible](https://mybible.zone/) ([`SloKJV.sqlite3`](https://github.com/msavli/SloKJV/blob/master/SloKJV.sqlite3) je potrebno ročno namestiti)
  #### iPhone
- -  [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
+ -  [Bishop](https://itunes.apple.com/us/app/the-sword-project-for-apple/id1399921911?mt=8)
  #### Java telefoni
  -  [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) (Za stare Java MIDP 2.0 telefone; SLO-ENG KJV z opombami in referencami; datoteki [`slokjv.jad`](https://github.com/msavli/SloKJV/blob/master/slokjv.jad) in [`slokjv.jar`](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) je potrebno ročno namestiti)
  #### Palm
@@ -105,7 +105,7 @@ You can read the Bible using one of these devices or programs:
   - [Mysword for Android](https://www.mysword.info/download-mysword) ([`SloKJV.bbl.mybible`](https://github.com/msavli/SloKJV/blob/master/SloKJV. bbl.mybible) put in folder [`/storage/emulated/0/mysword/bibles`])
   - [MyBible](https://mybible.zone/) ([`SloKJV.sqlite3`](https://github.com/msavli/SloKJV/blob/master/SloKJV.sqlite3) needs to be installed manually)
   #### iPhone
-  - [PocketSword](https://apps.apple.com/us/app/pocketsword/id341046078)
+  -  [Bishop](https://itunes.apple.com/us/app/the-sword-project-for-apple/id1399921911?mt=8)
   #### Java Phones
   - [GoBible](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) (For old Java MIDP 2.0 phones; SLO-ENG KJV with notes and references; files [`slokjv.jad`] (https://github.com/msavli/SloKJV/blob/master/slokjv.jad) and [`slokjv.jar`](https://github.com/msavli/SloKJV/blob/master/slokjv.jar) must be installed manually)
   #### Palms
