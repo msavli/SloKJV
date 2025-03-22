@@ -1,12 +1,12 @@
 MIDlet-1: slokjva Go Bible, Icon.png, GoBible
 MIDlet-Name: slokjva Go Bible
 MIDlet-Icon: Icon.png
-MIDlet-Jar-Size: 4214327
+MIDlet-Jar-Size: 4225789
 MIDlet-Jar-URL: slokjva.jar
 MIDlet-Info-URL: http://wap.jolon.org
 MIDlet-Vendor: marjan.savli@gmail.com
 MIDlet-Version: 2.4.5
 MIDlet-Data-Size: 100
 MicroEdition-Profile: MIDP-2.0
-Go-Bible-Info: Sveto pismo Kralja Jakoba. License: Creative Commons: by-nc-nd. Verzija: 2024-11-24 Ver. 2.4.5
+Go-Bible-Info: Sveto pismo Kralja Jakoba. License: Creative Commons: by-nc-nd. Verzija: 2025-03-22 Ver. 2.4.5
 Go-Bible-Align: Left
