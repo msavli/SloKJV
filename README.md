@@ -1,7 +1,7 @@
 # SloKJV
 ## Sveto pismo kralja Jakoba (1769) v slovenščini
 
-![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_400.png?raw=true "400e")
+[![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_400.png?raw=true "SloKJV")](https://ueskl.com/index.htm)
 
 ## *Slovensko / Slovenščina*
 
@@ -22,6 +22,8 @@ Prevedene knjige: Geneza do Malahija in celotna Nova Zaveza.
 Viri: [Angleško besedilo](http://www.crosswire.org/~dmsmith/kjv2006/), [Opombe in reference](https://www.kingjamesbibleonline.org/Genesis-Chapter-1_Original-1611-KJV/) in [biblija.net](http://www.biblija.net/biblija.cgi?m=&id13=1&id7=1&pos=0&set=6&l=sl).
 
 Prevajanje je potekalo v programu [Notepad++](https://notepad-plus-plus.org/) kjer je slovensko besedilo in pod njim angleško. Potem se s skripto to pretvori v OSIS obliko - XML datoteko, ki je objavljena na tej strani. XML datoteko se potem pretvori v Sword modul, ki je dostopen na spletni strani [Crosswire.org](http://www2.crosswire.org/sword/modules/).
+
+### [Beri SloKJV na spletu](https://ueskl.com/index.htm) (vedno zadnja verzija)
 
 ### Datoteke, programi in naprave:
 Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
@@ -90,6 +92,8 @@ Translated books: Old Testament (Genesis to Malachi) and whole New Testament.
 Sources: [English text](http://www.crosswire.org/~dmsmith/kjv2006/), [Notes and references](https://www.kingjamesbibleonline.org/Genesis-Chapter-1_Original-1611-KJV/) and [biblija.net](http://www.biblija.net/biblija.cgi?m=&id13=1&id7=1&pos=0&set=6&l=sl).
  
 Translation takes place in [Notepad++](https://notepad-plus-plus.org/) where the Slovenian text is below the English text for each verse. Then with a script this is converted to OSIS format - the XML file that is published on this page. The XML file is then converted into a Sword module, which is accessible on the [Crosswire.org](http://www2.crosswire.org/sword/modules/). 
+
+### [Read SloKJV on web](https://ueskl.com/index.htm) (always last version)
 
 ### Files, programs and devices:
 You can read the Bible using one of these devices or programs:
