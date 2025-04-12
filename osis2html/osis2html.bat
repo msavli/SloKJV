@@ -24,6 +24,7 @@ REM C:\Osebno\SavliM86\util\python3\python.exe -m pip install lxml
 mkdir c:\temp\sword\html  1>NUL
 C:\Osebno\SavliM86\util\python3\python.exe "m:\SloKJVA\github\osis2html\osis2html.py"
 
+pause
 echo.
 echo   Odpre Firefox 
 c:

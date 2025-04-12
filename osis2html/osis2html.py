@@ -67,10 +67,10 @@ html.night-mode .amplified { color: #ff7f50; }
 .colophon { color: gray; margin: 15px 0; text-align: left; transition: color 0.3s; }
 html.night-mode .colophon { color: #888; }
 .study-container, .xref-container { position: relative; display: inline; }
-.study-ref { font-size: texts>0.8em; color: green; vertical-align: super; cursor: pointer; transition: color 0.3s; }
+.study-ref { font-size: 0.8em; color: green; vertical-align: super; cursor: pointer; transition: color 0.3s; }
 html.night-mode .study-ref { color: #90ee90; }
-.xref-ref { font-size: 0.9em; color: #666; vertical-align: sub; cursor: pointer; transition: color 0.3s; }
-html.night-mode .xref-ref { color: #999; }
+.xref-ref { font-size: 0.9em; color: #0066cc; vertical-align: sub; cursor: pointer; transition: color 0.3s; }
+html.night-mode .xref-ref { color: #66b3ff; }
 .xref-link { color: #0066cc; text-decoration: none; transition: color 0.3s; }
 html.night-mode .xref-link { color: #66b3ff; }
 .xref-link:hover { text-decoration: underline; }
@@ -93,8 +93,8 @@ html.night-mode .footer a { color: #66b3ff; }
 .footer a:hover { text-decoration: underline; }
 .study-note { font-size: 0.9em; color: green; transition: color 0.3s; }
 html.night-mode .study-note { color: #90ee90; }
-.xref-note { font-size: 0.9em; color: #666; transition: color 0.3s; }
-html.night-mode .xref-note { color: #999; }
+.xref-note { font-size: 0.9em; color: #0066cc; transition: color 0.3s; }
+html.night-mode .xref-note { color: #66b3ff; }
 .study-note.hidden, .xref-note.hidden { display: none; }
 .poetry { margin: 15px 0; }
 .poetry-line { margin-left: 20px; }
@@ -114,6 +114,13 @@ html.night-mode button:hover { background-color: #5a9bd4; }
 }
 .acrostic-title { font-weight: bold; color: purple; text-align: center; margin: 10px 0; transition: color 0.3s; }
 html.night-mode .acrostic-title { color: #dda0dd; }
+/* Stili za zemljevide */
+.maps-section { text-align: center; margin-top: 30px; }
+.maps-section h2 { color: #333; transition: color 0.3s; }
+html.night-mode .maps-section h2 { color: #d3d3d3; }
+.map-preview { max-width: 250px; height: auto; margin: 15px; border: 1px solid #ccc; transition: border-color 0.3s; cursor: pointer; }
+html.night-mode .map-preview { border-color: #555; }
+.map-preview:hover { border-color: #0066cc; }
 """
 with open(f"{output_dir}/style.css", "w", encoding="utf-8") as f:
     f.write(css_content)
@@ -125,7 +132,9 @@ function toggleStudyNotes() {
     const button = document.getElementById('toggle-study');
     console.log('Toggling study notes');
     notes.forEach(note => note.classList.toggle('hidden'));
-    button.textContent = button.textContent === 'Prikaži opombe' ? 'Skrij opombe' : 'Prikaži opombe';
+    const isVisible = !notes[0].classList.contains('hidden');
+    button.textContent = isVisible ? 'Skrij opombe' : 'Prikaži opombe';
+    localStorage.setItem('studyNotesVisible', isVisible ? 'true' : 'false');
 }
 
 function toggleXrefs() {
@@ -133,7 +142,9 @@ function toggleXrefs() {
     const button = document.getElementById('toggle-xrefs');
     console.log('Toggling xrefs');
     xrefs.forEach(xref => xref.classList.toggle('hidden'));
-    button.textContent = button.textContent === 'Prikaži reference' ? 'Skrij reference' : 'Prikaži reference';
+    const isVisible = !xrefs[0].classList.contains('hidden');
+    button.textContent = isVisible ? 'Skrij reference' : 'Prikaži reference';
+    localStorage.setItem('xrefsVisible', isVisible ? 'true' : 'false');
 }
 
 function toggleMode() {
@@ -147,15 +158,40 @@ function toggleMode() {
 
 window.onload = function() {
     console.log('Window loaded, initializing');
-    document.querySelectorAll('.study-note, .xref-note').forEach(note => note.classList.add('hidden'));
-    const button = document.getElementById('toggle-mode');
+    const studyNotes = document.querySelectorAll('.study-note');
+    const xrefNotes = document.querySelectorAll('.xref-note');
+    const toggleStudyButton = document.getElementById('toggle-study');
+    const toggleXrefsButton = document.getElementById('toggle-xrefs');
+    const toggleModeButton = document.getElementById('toggle-mode');
+
+    // Initialize study notes
+    const studyNotesVisible = localStorage.getItem('studyNotesVisible');
+    if (studyNotesVisible === 'true') {
+        studyNotes.forEach(note => note.classList.remove('hidden'));
+        toggleStudyButton.textContent = 'Skrij opombe';
+    } else {
+        studyNotes.forEach(note => note.classList.add('hidden'));
+        toggleStudyButton.textContent = 'Prikaži opombe';
+    }
+
+    // Initialize cross-references
+    const xrefsVisible = localStorage.getItem('xrefsVisible');
+    if (xrefsVisible === 'true') {
+        xrefNotes.forEach(xref => xref.classList.remove('hidden'));
+        toggleXrefsButton.textContent = 'Skrij reference';
+    } else {
+        xrefNotes.forEach(xref => xref.classList.add('hidden'));
+        toggleXrefsButton.textContent = 'Prikaži reference';
+    }
+
+    // Initialize theme
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'night') {
         document.body.classList.add('night-mode');
-        button.textContent = 'Dnevni način';
+        toggleModeButton.textContent = 'Dnevni način';
     } else {
         document.body.classList.remove('night-mode');
-        button.textContent = 'Nočni način';
+        toggleModeButton.textContent = 'Nočni način';
     }
 };
 """
@@ -177,9 +213,9 @@ new_testament = book_list[39:]
 # --- Navigation Generation ---
 def generate_book_nav(main_title, is_index=False):
     if is_index:
-        title_line = f'    <h1>{main_title}</h1>'  # No link for index.html
+        title_line = f'    <h1>{main_title}</h1>'
     else:
-        title_line = f'    <h1><a href="index.html">{main_title}</a></h1>'  # Link for book pages
+        title_line = f'    <h1><a href="index.html">{main_title}</a></h1>'
     nav_html = [
         title_line,
         '    <div class="book-nav">',
@@ -231,6 +267,7 @@ index_content = [
     '<html lang="sl">',
     "  <head>",
     '    <meta charset="UTF-8">',
+    '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
     f"    <title>{main_title}</title>",
     '    <link rel="stylesheet" href="./style.css">',
     '    <script>',
@@ -254,6 +291,22 @@ else:
 index_content.extend([
     "      </ul>",
     "    </div>",
+    "    <div class='maps-section'>",
+    "      <h2>Zemljevidi</h2>",
+    "      <p>Kliknite na sliko za ogled v polni velikosti:</p>",
+    "      <a href='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Ancient_World_Patriarchs_Slo.jpg' target='_blank'>",
+    "        <img src='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Ancient_World_Patriarchs_Slo_thumb.jpg' alt='Stari svet patriarhov' class='map-preview'>",
+    "      </a>",
+    "      <a href='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Exodus_and_Canaan_Conquest_Slo.jpg' target'slo_thumb.jpg' alt='_blank'>",
+    "        <img src='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Exodus_and_Canaan_Conquest_Slo_thumb.jpg' alt='Eksodus in osvajanje Kanaana' class='map-preview'>",
+    "      </a>",
+    "      <a href='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Paul_Journeys_Slo.jpg' target='_blank'>",
+    "        <img src='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Paul_Journeys_Slo_thumb.jpg' alt='Pavlova potovanja' class='map-preview'>",
+    "      </a>",
+    "      <a href='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Israel_New_Testament_Slo.jpg' target='_blank'>",
+    "        <img src='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Israel_New_Testament_Slo_thumb.jpg' alt='Izrael v času Nove zaveze' class='map-preview'>",
+    "      </a>",
+    "    </div>",
     '    <div style="text-align: center;">',
     '      <button id="toggle-mode" onclick="toggleMode()">Nočni način</button>',
     "    </div>",
@@ -261,6 +314,14 @@ index_content.extend([
     '    <script src="./script.js"></script>',
     "  </body>",
     "</html>",
+])
+
+index_content.extend([
+    "    <div style='text-align: center;'>",
+    "      <button id='toggle-mode' onclick='toggleMode()'>Nočni način</button>",
+    "      <br><br>",
+    "      <a href='search.php'>Iskanje po Svetem pismu</a>",
+    "    </div>",
 ])
 
 with open(f"{output_dir}/index.html", "w", encoding="utf-8") as f:
@@ -280,7 +341,6 @@ def process_note_content(note_elem):
                 content += " "
         if child.tail and child.tail.strip():
             content += child.tail.strip()
-    # Strip existing brackets if present
     content = content.strip()
     if content.startswith("[") and content.endswith("]"):
         content = content[1:-1].strip()
@@ -291,13 +351,14 @@ def process_colophon_content(colophon_elem):
     for child in colophon_elem:
         if child.tag == f"{{{ns['osis']}}}transChange" and child.get("type") == "added":
             added_text = child.text.strip() if child.text and child.text.strip() else ""
-            if content and not content.endswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")):
+            if content and not content.endswith(" "):
                 content += " "
             content += f"<i>{added_text}</i>"
-            if child.tail and child.tail.strip() and not child.tail.strip().startswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")):
-                content += " "
-        if child.tail and child.tail.strip():
-            content += child.tail.strip()
+            if child.tail and child.tail.strip():
+                tail_text = child.tail.strip()
+                if not tail_text.startswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")) and not content.endswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")):
+                    content += " "
+                content += tail_text
     return content.strip()
 
 def process_quote_element(sub_elem, who, chapter_id):
@@ -310,7 +371,7 @@ def process_quote_element(sub_elem, who, chapter_id):
         elif child.tag == f"{{{ns['osis']}}}transChange" and child.get("type") == "added":
             added_text = child.text.strip() if child.text and child.text.strip() else ""
             if quote_content and not quote_content.endswith(" "):
-                quote_content += " "  # Ensure space before <transChange> if not already present
+                quote_content += " "
             quote_content += f"<i>{added_text}</i>"
             if child.tail and child.tail.strip():
                 tail_text = child.tail.strip()
@@ -357,8 +418,8 @@ def process_quote_element(sub_elem, who, chapter_id):
 
 def process_title_content(title_elem, chapter_id):
     title_content = title_elem.text.strip() if title_elem.text and title_elem.text.strip() else ""
-    study_counter = 0  # Reset for title notes
-    xref_counter = 0   # Reset for title cross-references
+    study_counter = 0
+    xref_counter = 0
     for sub_elem in title_elem:
         if sub_elem.tag == f"{{{ns['osis']}}}transChange" and sub_elem.get("type") == "added":
             added_text = sub_elem.text.strip() if sub_elem.text and sub_elem.text.strip() else ""
@@ -427,6 +488,7 @@ for i, book in enumerate(books):
         '<html lang="sl">',
         "  <head>",
         '    <meta charset="UTF-8">',
+        '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
         f"    <title>{full_title}</title>",
         '    <link rel="stylesheet" href="./style.css">',
         '    <script>',
@@ -446,7 +508,8 @@ for i, book in enumerate(books):
         '      <button id="toggle-mode" onclick="toggleMode()">Nočni način</button>',
         "    </div>",
         f"    <h1>{full_title} ({book_id})</h1>",
-    ]    
+    ]
+    
     chapters = book.findall("osis:chapter", namespaces=ns)
     chapter_nums = [chapter.get("osisID").split(".")[1] for chapter in chapters]
     chapter_nav = f"    <div class='chapter-nav'>" + " ".join(f"<a href='#{num}'>{num}</a>" for num in chapter_nums) + "</div>"
@@ -534,19 +597,25 @@ for i, book in enumerate(books):
                         if sub_elem.tail and sub_elem.tail.strip():
                             verse_content += " " + sub_elem.tail.strip()
                     elif sub_elem.tag == f"{{{ns['osis']}}}transChange" and sub_elem.get("type") == "added":
-                        added_text = sub_elem.text or ""
-                        if verse_content and not verse_content.endswith((" ", "›", "‹")):  # Check for quote marks
+                        added_text = sub_elem.text.strip() if sub_elem.text and sub_elem.text.strip() else ""
+                        if verse_content and not verse_content.endswith((" ", "›", "‹")):
                             verse_content += " "
                         verse_content += f"<i>{added_text}</i>"
                         if sub_elem.tail and sub_elem.tail.strip():
-                            verse_content += " " + sub_elem.tail.strip()
+                            tail_text = sub_elem.tail.strip()
+                            if not tail_text.startswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")) and not verse_content.endswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")):
+                                verse_content += " "
+                            verse_content += tail_text
                     elif sub_elem.tag == f"{{{ns['osis']}}}divineName":
                         divine_text = sub_elem.text.strip() if sub_elem.text and sub_elem.text.strip() else ""
-                        if verse_content and not verse_content.endswith((" ", "›", "‹")):  # Check for quote marks
+                        if verse_content and not verse_content.endswith((" ", "›", "‹")):
                             verse_content += " "
                         verse_content += f"<span class='small-caps'>{divine_text}</span>"
                         if sub_elem.tail and sub_elem.tail.strip():
-                            verse_content += " " + sub_elem.tail.strip()
+                            tail_text = sub_elem.tail.strip()
+                            if not tail_text.startswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")) and not verse_content.endswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")):
+                                verse_content += " "
+                            verse_content += tail_text
 
                 if verse_content.strip():
                     if first_verse_in_paragraph:
@@ -557,7 +626,7 @@ for i, book in enumerate(books):
 
                 if elem.tail and elem.tail.strip():
                     paragraph += " " + elem.tail.strip()
-                    
+
         if poetry_lines:
             html_content.append("    <div class='poetry'>")
             html_content.extend(poetry_lines)
