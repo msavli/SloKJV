@@ -6,7 +6,9 @@
    SloKJV_Github=/home/pc/Dokumenti/GitHub/SloKJV
           SloKJV=/home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release/SloKJV_
           format=US_Trade
+           uvodi=Da
       zemljevidi=/home/pc/Dokumenti/GitHub/Bible-Maps/
+
 
 # Naredi mapo release in mapo projekta
 mkdir $osis2usfm/SloKJV/release                >/dev/null 2>&1
@@ -14,6 +16,9 @@ mkdir $osis2usfm/SloKJV/release/SloKJV_$format >/dev/null 2>&1
 
 # Prestavi se v mapo   osis2usfm=/home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm
 cd $osis2usfm                                  >/dev/null 2>&1
+
+
+
 
 
 # Ko kreiras novo knjigo je potrebno vnesti v ptxSettings.xml
@@ -191,6 +196,42 @@ done
 #=============================================================================================
 
 
+#============ Odstrani uvode? ========================
+echo " "
+echo "   Odstrani uvode?"
+echo " "
+PS5='   Izberi: '
+options_ver_Git=("Ne" "Odstrani" "Izhod")
+select opt_ver_Git in "${options_ver_Git[@]}"
+ do
+      case $opt_ver_Git in
+          "Ne")
+              echo -e " "
+              echo -e "   --==    Naprej ..."
+              echo -e " "
+              break
+             ;;
+          "Odstrani")
+              echo " "
+              echo "   Izbral si odstranitev uvodov iz xml datoteke."
+              echo "     Dejansko to potem naredi preden požene PTXPrint"
+              uvodi=Odstrani_uvode
+              echo " "
+              break
+              ;;
+          "Izhod")
+              echo " "
+              echo "   Izbral si $REPLY kar je $opt_ver"
+              echo " "
+              exit
+             ;;
+          *) echo "Napacna izbira $REPLY";;
+     esac
+ done
+#==========================================================================
+
+
+
 #================ PTXPrint nadgradi na zadnjo verzijo? ====================
 echo " "
 echo "   Ali se PTXPrint nadgradi na zadnjo verzijo?"
@@ -277,54 +318,11 @@ select opt_ver_Git in "${options_ver_Git[@]}"
 #==========================================================================
 
 
-
-echo "$osis2usfm"
+# echo "$osis2usfm"
 cd $osis2usfm
 
 # Potegne iz lokanega Githuba (hitreje)
 cp $SloKJV_Github/SloKJV_sword.xml  $osis2usfm/SloKJV_sword.xml
-
-
-#============ Odstrani uvode? ========================
-echo " "
-echo "   Odstrani uvode?"
-echo " "
-PS5='   Izberi: '
-options_ver_Git=("Ne" "Odstrani" "Izhod")
-select opt_ver_Git in "${options_ver_Git[@]}"
- do
-      case $opt_ver_Git in
-          "Ne")
-              echo -e " "
-              echo -e "   --==    Naprej ..."
-              echo -e " "
-              break
-             ;;
-          "Odstrani")
-              echo " "
-              echo "   Izbral si odstranitev uvodov iz xml datoteke."
-              echo " "
-                #================================================================================
-                #  SloKJV_Github=/home/pc/Dokumenti/GitHub/SloKJV
-                #echo "$SloKJV_Github"
-                cat $osis2usfm/SloKJV_sword.xml |grep "Geneza je prvi del Petero"
-                python3 odstrani_uvode.py
-                mv SloKJV_sword1.xml SloKJV_sword.xml
-                cat $osis2usfm/SloKJV_sword.xml |grep "Geneza je prvi del Petero"
-                #================================================================================
-              echo " "
-              break
-              ;;
-          "Izhod")
-              echo " "
-              echo "   Izbral si $REPLY kar je $opt_ver"
-              echo " "
-              exit
-             ;;
-          *) echo "Napacna izbira $REPLY";;
-     esac
- done
-#==========================================================================
 
 
 # =============== Potegne gor vrstice k stevilki verza ====================
@@ -348,9 +346,10 @@ cat $osis2usfm/SloKJV_sword.xml |grep "<title><title type="
 
 # ================ Uredi odstavke =============
 echo -E "   --==    Uredi odstavke                                                "
-echo -E "   --==    <milestone type=\"x-p\" marker=\"¶ \"/>                       "
-echo -E "   --==    <milestone type=\"x-p\" subType=\"x-added\" marker=\"¶\"/>    "
-echo -E "   --==    \p                                                            "
+echo " "
+# echo -E "   --==    <milestone type=\"x-p\" marker=\"¶ \"/>                       "
+# echo -E "   --==    <milestone type=\"x-p\" subType=\"x-added\" marker=\"¶\"/>    "
+# echo -E "   --==    \p                                                            "
 sed -i "s|<milestone type=\"x-p\" marker=\"¶ \"/>| \x5cp|g"                       $osis2usfm/SloKJV_sword.xml
 sed -i "s|<milestone type=\"x-p\" subType=\"x-added\" marker=\"¶\"/>| \x5cp|g"    $osis2usfm/SloKJV_sword.xml
 cat $osis2usfm/SloKJV_sword.xml |grep "milestone"
@@ -359,6 +358,7 @@ cat $osis2usfm/SloKJV_sword.xml |grep "milestone"
 
 # =================== DODANE BESEDE ITALIC JEZUS ========================
 echo -E "   --==    Kjer je italic vgnezden v Jezusovih besedah..."
+echo " "
 #  <transChange type="added">nekaj</transChange>          ->     \+add nekaj\+add* 
 #
 # Run the Python script
@@ -367,12 +367,12 @@ mv SloKJV_sword1.xml SloKJV_sword.xml
 #cat $osis2usfm/SloKJV_sword.xml |grep "gospodar naredil za vladarja nad njegovo dru"
 #cat $osis2usfm/SloKJV_sword.xml |grep "To je moje telo"
 #cat $osis2usfm/SloKJV_sword.xml |grep "tako se nama spodobi"
-echo -E " "
 # ======================================================================
 
 
 # ======= Zamenja DIVINE NAME GOSPOD ===============
 echo -E "   --==    Zamenja DIVINE NAME GOSPOD"
+echo -E "  "
 # Write a Python script to change <divineName>Gospod</divineName> to \\+nd Gospod\\+nd if it is between Jesus speaking tags, and to \\nd Gospod\\nd if it is not between Jesus speaking tags. 
 # Do the same if the <divineName> tag is inside an <inscription> tag
 python3 zamenjaj_DivineName.py $osis2usfm/SloKJV_sword.xml $osis2usfm/SloKJV_sword1.xml
@@ -381,7 +381,6 @@ mv SloKJV_sword1.xml SloKJV_sword.xml
 # cat $osis2usfm/SloKJV_sword.xml |grep "Človek je sklonil svojo glavo"
 # cat $osis2usfm/SloKJV_sword.xml |grep "mojemu Gospodu: ›Sédi na mojo"
 # cat $osis2usfm/SloKJV_sword.xml |grep "istega zlata in nanjo napisali pisanje"
-echo -E "  "
 # ================================================================================
 
 
@@ -394,7 +393,6 @@ echo -E " "
 python3 zamenjaj_note_study_bold.py $osis2usfm/SloKJV_sword.xml $osis2usfm/SloKJV_sword1.xml
 mv SloKJV_sword1.xml SloKJV_sword.xml
 # cat $osis2usfm/SloKJV_sword.xml |grep "sposoben leteti in oplodi"
-echo -E " "
 # ======================================================================
 
 
@@ -461,6 +459,7 @@ echo -E "  "
 
 # ================================================================================
 echo -E "   --==    Dodaj presledek med opombo in referenco"
+echo " "
 sed -i 's/\\f\*\\x/\\f\* \\x/g' $osis2usfm/SloKJV_sword.xml
 # cat $osis2usfm/SloKJV_sword.xml |grep "spremeniti v obliko nad nečem"
 # ================================================================================
@@ -468,28 +467,25 @@ sed -i 's/\\f\*\\x/\\f\* \\x/g' $osis2usfm/SloKJV_sword.xml
 
 # ================================================================================
 echo -E "   --==    Dodaj presledek med Jezusovimi besedami in referenco ==--"
+echo " "
 #      \wj*\x    ->    \wj* \x
 sed -i "s/\\\\wj\*\\\\x/\x5cwj\* \x5cx/g"             $osis2usfm/SloKJV_sword.xml
 # cat $osis2usfm/SloKJV_sword.xml |grep "Samariji ter do skrajnega dela zemlje"
 # ================================================================================
 
 
-echo -E " "
-# cat $osis2usfm/SloKJV_sword.xml |grep -1 "Pacatiane"
-cat $osis2usfm/SloKJV_sword.xml |grep -3 "Rima po Epafroditu"
-echo -E " "
-
 # ======= Kolofon ========================
 echo -E "   --==    Zamenja Kolofon"
+echo -E " "
+# cat $osis2usfm/SloKJV_sword.xml |grep -1 "Pacatiane"
+# cat $osis2usfm/SloKJV_sword.xml |grep -3 "Rima po Epafroditu"
 #</verse></chapter>
 #<div type="colophon" osisID="1Tim.c"> [Prvo Timóteju je bilo napisano iz Laodikeje, ki je glavno mesto Frigije Pacatiane.]\f + \fr 6,21: \ft [Frigija: zahodni del izmed dveh frigijskih provinc.]\f*
 #</div>
 python3 zamenjaj_colophon.py $osis2usfm/SloKJV_sword.xml $osis2usfm/SloKJV_sword1.xml
 mv SloKJV_sword1.xml SloKJV_sword.xml
-echo -E " "
 # cat $osis2usfm/SloKJV_sword.xml |grep -1 "Pacatiane"
-cat $osis2usfm/SloKJV_sword.xml |grep -3 "Rima po Epafroditu"
-echo -E "  "
+# cat $osis2usfm/SloKJV_sword.xml |grep -3 "Rima po Epafroditu"
 # ================================================================================
 
 
@@ -552,7 +548,6 @@ echo -E "   --==    VERSE OSIS ID ODSTRANI (zaradi python skripta)    "
 echo -E " "
 #      Popraviti zaradi python skripta
 #    <verse osisID=\"Gen.1.2\">   ->   <verse>
-echo -E " "
 sed -i "s|<verse osisID=\"\([^.]*\).\([^.]*\).\([^.]*\)\">|<verse>|g"       $osis2usfm/SloKJV_sword.xml
 #cat $osis2usfm/SloKJV_sword.xml |grep -F '<verse osisID=\"Gen.1.2\">'
 #cat $osis2usfm/SloKJV_sword.xml |grep "On bo kakor drevo"
@@ -670,7 +665,7 @@ echo -E " "
 sed -i "s|<\/verse><\/chapter><\/div><\/div>|<\/verse><\/chapter><\/div><div type=\"book\"><\/div><\/div>|g"            $osis2usfm/SloKJV_sword.xml
 # echo -E " "
 # cat $osis2usfm/SloKJV_sword.xml |grep -3 "#Zacetek_zaveze#Nova zaveza#Konec_zaveze#"
-echo -E " "
+# echo -E " "
 #=============================================================
 
 
@@ -742,7 +737,7 @@ echo -E " "
 #
 python3 pridobi_Naslove_Knjig.py
 # head -15 cat 01_GEN.usfm
-echo -E " "
+# echo -E " "
 # head -10 02_EXO.usfm
 #=============================================================
 
@@ -760,8 +755,8 @@ python3 pridobi_Uvode.py
 #          \imi 2.      -->                 \io1 2.
 sed -i 's/\\imi \([0-9]*\)\. /\\io1 \1\. /'                      *.usfm
 
-#head -30 cat 01_GEN.usfm
-echo -E " "
+# head -30 cat 01_GEN.usfm
+# echo -E " "
 # head -15 cat 02_EXO.usfm
 #=============================================================
 
@@ -774,9 +769,7 @@ echo -E " "
 #
 python3 pridobi_Stevilke_psalmov.py
 #cat 19_PSA.usfm |grep -1 "človek, ki ne hodi po nasvetu"
-echo -E " "
 #cat 19_PSA.usfm |grep -1 "ko je bežal pred svojim"
-#echo -E " "
 #=============================================================
 
 
@@ -810,12 +803,12 @@ echo -E " "
 #
 #
 python3 pridobi_Naslove_psalmov.py
-echo " "
+# echo " "
 #cat 19_PSA.usfm |grep -2 "pred svojim sinom Absalomom."
 #echo -E " "
 #cat 19_PSA.usfm |grep -1 "Pazljivo prisluhni mojim besedam"
-#echo -E " "
 echo -E "   --==    Odstrani naslove poglavij   "
+echo -E " "
 #
 #  Psalm 1   Psalm 2     sem drugače rešil, drugje pa se ne rabi.
 #    Zato odstrani tage    #Start_naslov#  in  #Start_naslov#
@@ -860,7 +853,7 @@ sed -i '/\\c 119/{N;N;s/\(.*\)\n\(.*\)\n\(.*\) \\p #Zacetek_Alef#\\qa \[ALEF א\
 # [ALEF א]#  -> [ALEF [א
 # Tukaj obrnem zaklepaj, da ga potem sam obrne zarad hebrejske pisave od desne proti levi
 sed -i "s|\([א-ת]\)\]|\[\1|g" 19_PSA.usfm
-echo " "
+# echo " "
 # cat 19_PSA.usfm  |grep  -2 "ALEF"
 #
 python3 pridobi_Psalm_119_Alef.py
@@ -870,7 +863,7 @@ mv 19_PSA_modified.usfm 19_PSA.usfm
 #echo -E "--- "
 # cat 19_PSA.usfm |grep -2 "DALET"
 #cat 19_PSA.usfm |grep "S čim naj mladenič"
-echo -E " "
+# echo -E " "
 #=============================================================
 
 
@@ -968,7 +961,8 @@ echo -E " "
                 echo "\mt1 NOVA ZAVEZA"                                            >> A7_INT.usfm
                 echo "\mt2 NAŠEGA GOSPODA IN REŠITELJA NAŠIH DUŠ"                  >> A7_INT.usfm
                 echo "\mt2 JEZUSA KRISTUSA"                                        >> A7_INT.usfm
-                echo "\mt3 z vsemi besedami Jezusa Krisusa, zapisanimi z rdečo"    >> A7_INT.usfm
+echo "Odstranil: z vsemi besedami Jezusa Krisusa, zapisanimi z rdečo"
+ #               echo "\mt3 z vsemi besedami Jezusa Krisusa, zapisanimi z rdečo"    >> A7_INT.usfm
                 # echo "\pb"                                                       >> A7_INT.usfm
                 #echo "\zendperiph"                                               >> A7_INT.usfm
                 #echo "\zNeedOddPage"                                             >> A7_INT.usfm
@@ -993,9 +987,11 @@ echo -E " "
 
 
                echo -E "   --==    Pobrise \pb da ni med zemljevidi praznih strani"
+               echo -E " "
                sed -i "s|\\\\pb||g"             A1_BAK.usfm
                ;;
            *)  echo -E "   --==    Nic ne naredi. Obicajno Sveto pismo  (ni SLO-KJV) ... "
+               echo -E " "
                ;;
       esac
       #cat A1_BAK.usfm
@@ -1055,7 +1051,7 @@ echo -E " "
 #  Za vsako hebrejsko ško naredi prazno vrstico, razen pri ALEF, kjer je že
 python3 pridobi_Psalm_119_Bet_p.py
 # cat 19_PSA.usfm |grep -1 "Absalom"
-echo -E " "
+# echo -E " "
 # cat 19_PSA.usfm |grep -1 "ko je bežal pred svojim"
 #echo -E " "
 #=============================================================
@@ -1096,16 +1092,32 @@ sed -i "s/  / /g"                   *.usfm
 
 
 #============== Odstrani UVOD iz naslednjih knjig ========================
-      case $format in
-           "A5_NZ_BIG")
-               echo -E "   --==    Ker je A5_NZ_BIG -> Pobrise uvod - celo vrstico ki se zacne z \ip"
-               sed -i '/^\\imt1/d'  *.usfm
-               sed -i '/^\\ip/d'    *.usfm
-               ;;
-           *)  echo -E "   --==    Nic ne naredi. Obicajno Sveto pismo (ni A5_NZ_BIG)... "
-               ;;
-      esac
-      # head 66_JUD.usfm
+case $uvodi in
+    "Odstrani_uvode")
+        echo "   Odstranjujem uvode iz .usfm datotek..."
+            #pwd
+            #head -9 66_JUD.usfm
+            sed -i '/^\\imt1/d' $osis2usfm/*.usfm
+            sed -i '/^\\imi/d' $osis2usfm/*.usfm
+            sed -i '/^\\io1/d' $osis2usfm/*.usfm
+            echo "   Uvodi (\imt1 in \ip) so bili odstranjeni iz .usfm datotek."
+            #head -9 66_JUD.usfm
+            echo " "
+        ;;
+    *)
+        echo "   Preskakujem odstranitev uvodov (uvodi=$uvodi)."
+        ;;
+esac
+#      case $format in
+#           "A5_NZ_BIG")
+#               echo -E "   --==    Ker je A5_NZ_BIG -> Pobrise uvod - celo vrstico ki se zacne z \ip"
+#               sed -i '/^\\imt1/d'  *.usfm
+#               sed -i '/^\\ip/d'    *.usfm
+#               ;;
+#           *)  echo -E "   --==    Nic ne naredi. Obicajno Sveto pismo (ni A5_NZ_BIG)... "
+#               ;;
+#      esac
+# head 66_JUD.usfm
 #=============================================================================================
 
 
@@ -1115,8 +1127,8 @@ echo -E "   --==    Popravi naslove knjig ==--"
 # \h 1 Pet
 # \h1 Prvo Petrovo pismo       - to potegne iz SloKJV_sword.sml datoteke
 # \toc1 Prvo Petrovo pismo     - to rocno popravim  na  krajša imena 1 Mojzes
-# \toc2 1 Peter
-# \toc3 1 Pet                   (To je za navpicne crne ThumbTabs ob zunanji strani knjige)
+# \toc2 1 Peter                - to rocno popravim  na 1 Peter - to se vidi v kazalu v drugem stolpcu
+# \toc3 1 Pet                   (To je za navpicne crne ThumbTabs ob zunanji strani knjige) in v kazalu 2 stolpec
 # \mt1 Prvo Petrovo pismo      - to potegne iz SloKJV_sword.sml datoteke
 
 
@@ -1381,7 +1393,7 @@ echo -E "   --==    Popravi naslove knjig ==--"
 
 # ACT
   sed -i "s/\\\\h /\x5ch Apd/g"                  45_ACT.usfm
-  sed -i "s/\\\\toc1/\x5ctoc1 Apostolska dela/g" 45_ACT.usfm
+  sed -i "s/\\\\toc1/\x5ctoc1 Dejanja apostolov/g" 45_ACT.usfm
   sed -i "s/\\\\toc2/\x5ctoc2 Dela/g"            45_ACT.usfm
   sed -i "s/\\\\toc3/\x5ctoc3 Apd/g"             45_ACT.usfm
 
@@ -1566,12 +1578,15 @@ echo -E "   --==    Popravi naslove knjig ==--"
               ;;
           *)  #echo -E "   --==    Celotno Sveto pismoo ... "
               #sed -i "s|\(\\\toc3 Mt\)|\1\\n\\\mt1 NOVA ZAVEZA\n\\\pb\n|g"        41_MAT.usfm
+              #echo " "
               ;;
      esac
 #=============================================================================================
 
 
-echo "========== Doda QR kodo ==============="
+#============================================================================================
+echo "   --==     Doda QR kodo ... "
+              #echo " "
 echo "    izklopljeno ker se text ne ovija lepo okoli "
 sed -i "s/Lepa zaradi lege/Lepa zaradi lege \\\zqrcode|size=\"1.5cm\" pgpos=\"cr\" data=\"https:\/\/www.brighteon.com\/fc8a3ecf-7b86-469e-b7fb-ea723c84e347\"\\\* /g"                                      19_PSA.usfm
 #cat 19_PSA.usfm |grep -2 "Lepa zaradi lege"
@@ -1579,7 +1594,7 @@ sed -i "s/da se mazili Najsvetejše./da se mazili Najsvetejše. \\\zqrcode|size=
 # cat 27_DAN.usfm |grep -1 "da se mazili Najsvetejše."
 sed -i "s/›Jaz sem Kralj Judov.‹«/›Jaz sem Kralj Judov.‹« \\\zqrcode|size=\"1.8cm\" pgpos=\"cr\" data=\"https:\/\/relojprofetico.blogspot.com\/2010\/07\/yeshua-hanotzri-wmelej-hayehudim.html\"\\\* /g"   44_JHN.usfm
 #cat 44_JHN.usfm |grep -1 "›Jaz sem Kralj Judov.‹«"
-#========================================
+#============================================================================================
 
 
 # Počisti za samo ime Biblije ki jo je izvozil iz XML datoteke.
