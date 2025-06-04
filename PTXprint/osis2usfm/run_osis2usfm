@@ -277,10 +277,54 @@ select opt_ver_Git in "${options_ver_Git[@]}"
 #==========================================================================
 
 
+
+echo "$osis2usfm"
 cd $osis2usfm
 
 # Potegne iz lokanega Githuba (hitreje)
 cp $SloKJV_Github/SloKJV_sword.xml  $osis2usfm/SloKJV_sword.xml
+
+
+#============ Odstrani uvode? ========================
+echo " "
+echo "   Odstrani uvode?"
+echo " "
+PS5='   Izberi: '
+options_ver_Git=("Ne" "Odstrani" "Izhod")
+select opt_ver_Git in "${options_ver_Git[@]}"
+ do
+      case $opt_ver_Git in
+          "Ne")
+              echo -e " "
+              echo -e "   --==    Naprej ..."
+              echo -e " "
+              break
+             ;;
+          "Odstrani")
+              echo " "
+              echo "   Izbral si odstranitev uvodov iz xml datoteke."
+              echo " "
+                #================================================================================
+                #  SloKJV_Github=/home/pc/Dokumenti/GitHub/SloKJV
+                #echo "$SloKJV_Github"
+                cat $osis2usfm/SloKJV_sword.xml |grep "Geneza je prvi del Petero"
+                python3 odstrani_uvode.py
+                mv SloKJV_sword1.xml SloKJV_sword.xml
+                cat $osis2usfm/SloKJV_sword.xml |grep "Geneza je prvi del Petero"
+                #================================================================================
+              echo " "
+              break
+              ;;
+          "Izhod")
+              echo " "
+              echo "   Izbral si $REPLY kar je $opt_ver"
+              echo " "
+              exit
+             ;;
+          *) echo "Napacna izbira $REPLY";;
+     esac
+ done
+#==========================================================================
 
 
 # =============== Potegne gor vrstice k stevilki verza ====================

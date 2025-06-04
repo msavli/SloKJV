@@ -1,20 +1,23 @@
 import re
 
-def modify_xml(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        content = file.read()
-
+def modify_xml(content):
     # Define the pattern to search for
     pattern = re.compile(r'(</verse></chapter>)\s*<div type="colophon"[^>]*>([^<]*)</div>', re.DOTALL)
-
+    
     # Replace the pattern with the desired format
     modified_content = pattern.sub(r'\\cls \2\n\1', content)
+    
+    return modified_content
 
-    # Write the modified content back to the file
-    with open(file_path, 'w', encoding='utf-8') as file:
-        file.write(modified_content)
+# Read input from file
+input_file = 'SloKJV_sword.xml'
+with open(input_file, 'r', encoding='utf-8') as file:
+    content = file.read()
 
-# Example usage
-file_path = 'SloKJV_sword.xml'
-modify_xml(file_path)
+# Apply the modification function
+result = modify_xml(content)
 
+# Write output to file
+output_file = 'SloKJV_sword1.xml'
+with open(output_file, 'w', encoding='utf-8') as file:
+    file.write(result)
