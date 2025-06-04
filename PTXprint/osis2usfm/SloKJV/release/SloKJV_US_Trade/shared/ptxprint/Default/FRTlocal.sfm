@@ -1,13 +1,10 @@
 \id FRT
 \nopagenums
-\zbl|30\*\p
+\zgap|2in\*\p
 \mt1 \zvar|maintitle\*
-\zbl|2\*\p
+\zgap|1in\*\p
 \mt2 \zvar|subtitle\*
-\zbl|15\*\p
 \rem \mt4 Študijska izdaja
-\zbl|9\*\p
-\rem \mt4 Škofja Loka
 \pb
 \rem ----------------Kolofon-------------------------------------------------
 \h Kolofon
@@ -62,6 +59,8 @@
 \zEmptyPage
 \rem -------------------------------------------------------------------------
 \h Jezus reši me!
+\mt1 Jezus reši me!
+\zgap|0.10in\*\p
 \ipi Bog je že dokazal Svojo ljubezen do tebe osebno. Kajti Bog je tako ljubil svet (tebe), da je dal Svojega edinorojenega Sina, da kdorkoli veruje vanj, (ti?) se ne bo pogubil, temveč bo imel večno življenje.\vp(Jn 3,16)\vp*
 \ipi Ali verjameš Besedi Njega, ki te je ustvaril, ki te pozna in te ljubi?
 \ipi Ali si pripravljen sprejeti Njega, to je Božjo Besedo – Jezusa Kristusa, po katerem so bile narejene vse stvari?
@@ -82,10 +81,11 @@
 \pb
 \rem -------------------------------Kazalo------------------------------------------
 \h Kazalo
-\mt3 \zvar|toctitle\*
+\mt1 Kazalo vsebine
 \is Knjige Stare zaveze
 \ip \ztoc|ot\*
 \pb
+\zgap|0.18in\*\p
 \is Knjige Nove zaveze
 \ip \ztoc|nt\*
 \rem \is Dodatki
