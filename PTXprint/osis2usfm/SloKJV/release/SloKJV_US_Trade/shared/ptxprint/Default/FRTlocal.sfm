@@ -1,27 +1,27 @@
 \id FRT
 \nopagenums
-\zbl|5\*\p
+\zbl|30\*\p
 \mt1 \zvar|maintitle\*
 \zbl|2\*\p
 \mt2 \zvar|subtitle\*
 \zbl|15\*\p
-\mt4 Študijska izdaja
+\rem \mt4 Študijska izdaja
 \zbl|9\*\p
-\mt4 Škofja Loka
+\rem \mt4 Škofja Loka
 \pb
 \rem ----------------Kolofon-------------------------------------------------
 \h Kolofon
-\ip Naslov izvirnika: Holy Bible King James Version
+\im Naslov izvirnika: Holy Bible King James Version
 \zbl|1\*
-\ip \zvar|maintitle\*
-\ip \zvar|subtitle\*
+\im \zvar|maintitle\*
+\im \zvar|subtitle\*
 \zbl|1\*
 \im Dovoljenje za uporabo besedila
 \im To delo je ponujeno pod licenco Creative Commons (CC BY-NC-ND PRIZNANJE AVTORSTVA – NEKOMERCIALNO – BREZ PREDELAV)
 \im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo. https://creativecommons.org/licenses/by-nc-nd/4.0/
 \zccimg by-nc-nd|size="col" pgpos="pr" scale="0.15"\*
 \zbl|15\*
-\ip Prva izdaja
+\im Prva izdaja
 \im Knjiga je objavljena na spletni strani: github.com/msavli/SloKJV
 \zqrcode|pgpos="cr" size="1.2cm" data="https://github.com/msavli/SloKJV"\*
 \im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2024
@@ -31,19 +31,21 @@
 \im Verzija za mobilne naprave: crosswire.org/applications/
 \zqrcode|pgpos="cr" size="1.2cm" data="http://www.crosswire.org/applications/"\*
 \zbl|1\*
-\ip CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
+\im CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
 \zbl|3\*
-\ip BREZPLAČEN IZVOD – NI ZA PRODAJO
+\im BREZPLAČEN IZVOD – NI ZA PRODAJO
 \zbl|1\*
 \pb
 \rem -------------------------------------------------------------------------
 \h Predgovor
 \mt1 Predgovor
 \zbl|2\*
-\ip Projekt prevoda Sveto pismo kralja Jakoba v slovenski jezik je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Pri pregledu besedila sodeluje Vinko Ošlak.
-\ip Prevedene knjige: Geneza, Eksodus, Levitik, Numeri, Devteronomij, Jozue, Sodniki, Ruta, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Nehemija, Estera, Job, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
-\ip Pred vami je študijska verzija z opombami in referencami.
-\ip Prosiva Boga, da bi bila tudi vam ta knjiga v blagoslov in spodbudo pri hoji z Jezusom.
+\im Projekt prevoda Sveto pismo kralja Jakoba v slovenski jezik je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Pri pregledu besedila sodeluje Vinko Ošlak.
+\zbl|1\*
+\im Prevedene knjige: Geneza, Eksodus, Levitik, Numeri, Devteronomij, Jozue, Sodniki, Ruta, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Nehemija, Estera, Job, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
+\zbl|1\*
+\rem \ip Pred vami je študijska verzija z opombami in referencami.
+\im Prosiva Boga, da bi bila tudi vam ta knjiga v blagoslov in spodbudo pri hoji z Jezusom.
 \zbl|1\*
 \ipr Prevajalca
 \zbl|4\*
@@ -70,7 +72,7 @@
 \ipi Na glas izgovori:
 \ipi »Jezus, žal mi je za vse moje grehe. Prosim odpusti mi, osvobodi me in me popolnoma očisti. Sprejemam te  za svojega Odrešenika, Gospoda in Gospodarja svojega življenja. Hvala, ker si tudi zame plačal ceno za moje grehe na križu, umrl in tretji dan vstal.«
 \zbl|2\*
-\ipi datum: ____________   podpis: _________________________
+\pc datum: ____________   podpis: _________________________
 \zbl|1\*
 \ipi Toda tolikim, kot so ga sprejeli, njim je on dal moč, da postanejo Božji sinovi, torej njim, ki verujejo v njegovo ime, (v ime Jezusa Kristusa).\vp(Jn 1,12)\vp* Potem so bili tisti, ki so z veseljem sprejeli njegovo besedo, krščeni.\vp(Apd 2,41)\vp*
 \ipi Pokesajte se (če si to ravnokar storil, sledi navodilu)
@@ -83,13 +85,15 @@
 \mt3 \zvar|toctitle\*
 \is Knjige Stare zaveze
 \ip \ztoc|ot\*
+\pb
 \is Knjige Nove zaveze
 \ip \ztoc|nt\*
-\is Dodatki
+\rem \is Dodatki
 \ip \ztoc|post\*
 \b
+\pb
 \is Abecedni seznam Svetopisemskih knjig
-\ip \ztoc|sortb\*
+\ip \ztoc|sorta\*
 \pb
 \rem -------------------------------------------------------------------------
 \zNeedOddPage
