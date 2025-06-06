@@ -18,17 +18,17 @@
 \im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo. https://creativecommons.org/licenses/by-nc-nd/4.0/
 \zccimg by-nc-nd|size="col" pgpos="pr" scale="0.15"\*
 \zbl|15\*
-\im Prva izdaja
-\im Knjiga je objavljena na spletni strani: github.com/msavli/SloKJV
+\im Datum izdaje:  junij 2025.
+\im Knjiga je objavljena na spletni strani: github.com/msavli/SloKJV.
 \zqrcode|pgpos="cr" size="1.2cm" data="https://github.com/msavli/SloKJV"\*
-\im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2024
-\im Priprava besedila: Marjan Šavli (PTXPrint)
-\im Fotografija na naslovnici: arhiv družine Šavli
-\im Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka, marjan.savli@gmail.com
-\im Verzija za mobilne naprave: crosswire.org/applications/
+\im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2024.
+\im Priprava besedila: Marjan Šavli (PTXPrint).
+\im Fotografija na naslovnici: arhiv družine Šavli.
+\im Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka, marjan.savli@gmail.com.
+\im Verzija za mobilne naprave: crosswire.org/applications/.
 \zqrcode|pgpos="cr" size="1.2cm" data="http://www.crosswire.org/applications/"\*
 \zbl|1\*
-\im CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
+\rem \im CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
 \zbl|3\*
 \im BREZPLAČEN IZVOD – NI ZA PRODAJO
 \zbl|1\*
@@ -37,9 +37,7 @@
 \h Predgovor
 \mt1 Predgovor
 \zbl|2\*
-\im Projekt prevoda Sveto pismo kralja Jakoba v slovenski jezik je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Pri pregledu besedila sodeluje Vinko Ošlak.
-\zbl|1\*
-\im Prevedene knjige: Geneza, Eksodus, Levitik, Numeri, Devteronomij, Jozue, Sodniki, Ruta, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Nehemija, Estera, Job, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
+\im Projekt prevoda Svetega pisma kralja Jakoba (1769), imenovanega tudi kot Avtorizirana Verzija, je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Pri pregledu besedila sodeluje Vinko Ošlak. Vir besedila: crosswire.org.
 \zbl|1\*
 \rem \ip Pred vami je študijska verzija z opombami in referencami.
 \im Prosiva Boga, da bi bila tudi vam ta knjiga v blagoslov in spodbudo pri hoji z Jezusom.
@@ -48,11 +46,11 @@
 \zbl|4\*
 \mt1 Posebnosti prevoda:
 \zbl|2\*
-\ip    • dodane opombe in reference; KJV 1611,
-\ip    • dodane približne letnice dogodkov; KJV Oxford 1769,
-\ip    • »nagnjene« besede so dodane izvirnem KJV besedilu,
-\ip    • »a« opombe KJV 1611 in opombe prevajalca,
-\ip    • »b« sklici na druge dela besedila,
+\ip    • dodane opombe in reference; KJV Cambridge edition, 1611,
+\ip    • dodane približne letnice dogodkov; KJV Oxford, 1769,
+\ip    • »\it nagnjene\it*« besede so dodane izvirnem KJV besedilu,
+\rem \ip    • »a« opombe KJV 1611 in opombe prevajalca,
+\rem \ip    • »b« sklici na druge dela besedila,
 \ip    • »[ ]« dodala prevajalca, ni v originalu,
 \ip    • »§« razlika besedila SloKJV in ostalih slovenskih prevodov.
 \pb
@@ -97,3 +95,27 @@
 \pb
 \rem -------------------------------------------------------------------------
 \zNeedOddPage
+\periph front|id="coverfront"
+\zgap|30pt\*
+\mt1 \zvar|maintitle\*
+\mt2 \zvar|subtitle\*
+\vfill
+\endgraf
+\periph spine|id="coverspine"
+\mt2 \zvar|maintitle\* ~~-~~ \zvar|subtitle\*
+\p
+\periph back|id="coverback"
+\zgap|1in\*
+\pc ~
+\vfill
+\zifvarset|var="isbn" emptyok="F"\*
+\ztruetext
+\esb \cat ISBNbox\cat* \pc \zISBNbarcode|var="isbn" height="medium"\* \esbe
+\zgap|10pt\*
+\ztruetext*
+\periph spannedCover|id="coverwhole"
+\zgap|1pt\*
+\vfill
+\pc ~
+\vfill
+\endgraf
