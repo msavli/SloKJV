@@ -95,27 +95,37 @@
 \pb
 \rem -------------------------------------------------------------------------
 \zNeedOddPage
+\rem --------------------------COVER---------------------------
 \periph front|id="coverfront"
-\zgap|30pt\*
-\mt1 \zvar|maintitle\*
-\mt2 \zvar|subtitle\*
+\zgap|33pt\*
+\zbl|25\*\p
+\mt1 \zvar|covertitle1\* 
+\rem \mt1 \zvar|covertitle2\*
+\mt2 \zvar|coversubtitle\*
+\zgap|11pt\*
+\mte \zvar|subtitle\*
 \vfill
 \endgraf
 \periph spine|id="coverspine"
-\mt2 \zvar|maintitle\* ~~-~~ \zvar|subtitle\*
+\mt1 \zvar|coversubtitle\* ~~-~~ \zvar|subtitle\*
 \p
 \periph back|id="coverback"
 \zgap|1in\*
+\m Kajti Bog je tako ljubil svet,
+\m da je dal svojega edinorojenega Sina, da kdorkoli
+\m veruje vanj, se ne bo pogubil,
+\m temveč bo imel večno življenje.
+\b
+\m Jn 3,16
+\zbl|30\*\p
+\m \zvar|mesecletotiska\*
+\b
 \pc ~
 \vfill
-\zifvarset|var="isbn" emptyok="F"\*
-\ztruetext
-\esb \cat ISBNbox\cat* \pc \zISBNbarcode|var="isbn" height="medium"\* \esbe
-\zgap|10pt\*
-\ztruetext*
 \periph spannedCover|id="coverwhole"
 \zgap|1pt\*
 \vfill
 \pc ~
 \vfill
 \endgraf
+\rem --------------------------END COVER---------------------------

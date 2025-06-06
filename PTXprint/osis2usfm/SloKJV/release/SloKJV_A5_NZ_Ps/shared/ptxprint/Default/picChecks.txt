@@ -7,4 +7,6 @@ pubaccept = Unknown
 [map_ancient_world_patriarchs_bw_90]
 approved = false
 notes = 
+pubclear = yes
+pubnoise = yes
 
