@@ -1,10 +1,9 @@
 \id FRT
 \nopagenums
-\zgap|2in\*\p
+\zgap|1in\*\p
 \mt1 \zvar|maintitle\*
 \zgap|1in\*\p
 \mt2 \zvar|subtitle\*
-\rem \mt4 Študijska izdaja
 \pb
 \rem ----------------Kolofon-------------------------------------------------
 \h Kolofon
@@ -17,10 +16,9 @@
 \im To delo je ponujeno pod licenco Creative Commons (CC BY-NC-ND PRIZNANJE AVTORSTVA – NEKOMERCIALNO – BREZ PREDELAV)
 \im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo. https://creativecommons.org/licenses/by-nc-nd/4.0/
 \zccimg by-nc-nd|size="col" pgpos="pr" scale="0.15"\*
-\zbl|15\*
+\zbl|3\*
 \im Datum izdaje:  junij 2025.
-\im Knjiga je objavljena na spletni strani: github.com/msavli/SloKJV.
-\zqrcode|pgpos="cr" size="1.2cm" data="https://github.com/msavli/SloKJV"\*
+\im vir: github.com/msavli/SloKJV.
 \im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2024.
 \im Priprava besedila: Marjan Šavli (PTXPrint).
 \im Fotografija na naslovnici: arhiv družine Šavli.
@@ -39,43 +37,17 @@
 \zbl|2\*
 \im Projekt prevoda Svetega pisma kralja Jakoba (1769), imenovanega tudi kot Avtorizirana Verzija, je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Pri pregledu besedila sodeluje Vinko Ošlak. Vir besedila: crosswire.org.
 \zbl|1\*
-\rem \ip Pred vami je študijska verzija z opombami in referencami.
+\ip Pred vami je mini verzija, ki vsebuje naslednje knjige in/ali odlomke: 4 Mz 24; 5 Mz 5-34; Est; Ps 22, 48, 51, 68, 70, 72, 95-99, 110, 121, 124, 125, 139, 149; Pp; Iz 26-28, 30, 32, 39-40, 42-43, 47-48, 50, 53, 54, 56-57, 59, 61, 63-64, 66; Jer 31; Zah 12,14; Jn; 1, 3 Kor; 1, 2 Tim; Tit; Heb; 1, 2 Pt; 1, 2 John; Jude, Raz.
+\ip 
 \im Prosiva Boga, da bi bila tudi vam ta knjiga v blagoslov in spodbudo pri hoji z Jezusom.
 \zbl|1\*
 \ipr Prevajalca
 \zbl|4\*
 \mt1 Posebnosti prevoda:
 \zbl|2\*
-\ip    • dodane opombe in reference; KJV Cambridge edition, 1611,
-\ip    • dodane približne letnice dogodkov; KJV Oxford, 1769,
 \ip    • »\it nagnjene\it*« besede so dodane izvirnem KJV besedilu,
-\rem \ip    • »a« opombe KJV 1611 in opombe prevajalca,
-\rem \ip    • »b« sklici na druge dela besedila,
 \ip    • »[ ]« dodala prevajalca, ni v originalu,
 \ip    • »§« razlika besedila SloKJV in ostalih slovenskih prevodov.
-\pb
-\zEmptyPage
-\rem -------------------------------------------------------------------------
-\h Jezus reši me!
-\mt1 Jezus reši me!
-\zgap|0.10in\*\p
-\ipi Bog je že dokazal Svojo ljubezen do tebe osebno. Kajti Bog je tako ljubil svet (tebe), da je dal Svojega edinorojenega Sina, da kdorkoli veruje vanj, (ti?) se ne bo pogubil, temveč bo imel večno življenje.\vp(Jn 3,16)\vp*
-\ipi Ali verjameš Besedi Njega, ki te je ustvaril, ki te pozna in te ljubi?
-\ipi Ali si pripravljen sprejeti Njega, to je Božjo Besedo – Jezusa Kristusa, po katerem so bile narejene vse stvari?
-\ipi Toda sedaj povsod vsem ljudem zapoveduje, da se pokesajo.\vp(Apd 17,30)\vp*
-\ipi Pokesajte se torej in bodite spreobrnjeni (tj. obrnite se proč od greha, k živemu Bogu), da bodo vaši grehi lahko izbrisani.\vp(Apd 3,19)\vp*
-\ipi Sprejmite Jezusa in ne grešite več, kajti Bog je določil dan, na katerega bo sodil svet v pravičnosti, po tem možu (Jezusu Kristusu), katerega je določil. O tem je dal zagotovilo vsem ljudem, ker ga je obudil od mrtvih.\vp(Apd 17,31)\vp*
-\ipi Kajti s srcem človek veruje v pravičnost, z usti pa je narejeno priznanje v rešitev duše.\vp(Rim 10,10)\vp* Tvoja molitev (iskren pogovor z Bogom) naj bi bila takšna.
-\ipi Na glas izgovori:
-\ipi »Jezus, žal mi je za vse moje grehe. Prosim odpusti mi, osvobodi me in me popolnoma očisti. Sprejemam te  za svojega Odrešenika, Gospoda in Gospodarja svojega življenja. Hvala, ker si tudi zame plačal ceno za moje grehe na križu, umrl in tretji dan vstal.«
-\zbl|2\*
-\pc datum: ____________   podpis: _________________________
-\zbl|1\*
-\ipi Toda tolikim, kot so ga sprejeli, njim je on dal moč, da postanejo Božji sinovi, torej njim, ki verujejo v njegovo ime, (v ime Jezusa Kristusa).\vp(Jn 1,12)\vp* Potem so bili tisti, ki so z veseljem sprejeli njegovo besedo, krščeni.\vp(Apd 2,41)\vp*
-\ipi Pokesajte se (če si to ravnokar storil, sledi navodilu)
-\ipi in vsak izmed vas naj bo krščen v imenu Jezusa Kristusa v odpuščanje grehov
-\ipi in prejeli boste dar Svetega Duha.\vp(Apd 2,38)\vp*
-\ipi Kdor veruje vanj, ni obsojen, toda kdor ne veruje, je že obsojen, ker ni veroval v ime edinorojenega Božjega Sina.\vp(Jn 3,18)\vp* Kdor zavrača mene (Jezusa) in ne sprejema mojih besed, ima nekoga, ki ga sodi. Beseda, ki sem jo govoril, ta ista ga bo sodila na poslednji dan.\vp(Jn 12,48)\vp*
 \pb
 \rem -------------------------------Kazalo------------------------------------------
 \h Kazalo
@@ -90,15 +62,11 @@
 \ip \ztoc|post\*
 \b
 \pb
-\is Abecedni seznam Svetopisemskih knjig
-\ip \ztoc|sorta\*
-\pb
 \rem -------------------------------------------------------------------------
 \zNeedOddPage
 \rem --------------------------COVER---------------------------
 \periph front|id="coverfront"
-\zgap|33pt\*
-\zbl|25\*\p
+\zgap|10pt\*
 \mt1 \zvar|covertitle1\* 
 \rem \mt1 \zvar|covertitle2\*
 \mt2 \zvar|coversubtitle\*
@@ -117,7 +85,7 @@
 \m temveč bo imel večno življenje.
 \b
 \m Jn 3,16
-\zbl|30\*\p
+\zbl|10\*\p
 \m \zvar|mesecletotiska\*
 \b
 \pc ~
