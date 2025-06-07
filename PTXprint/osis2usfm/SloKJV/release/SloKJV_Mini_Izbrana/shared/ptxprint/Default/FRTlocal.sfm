@@ -1,0 +1,97 @@
+\id FRT
+\nopagenums
+\zgap|1in\*\p
+\mt1 \zvar|maintitle\*
+\zgap|1in\*\p
+\mt2 \zvar|subtitle\*
+\pb
+\rem ----------------Kolofon-------------------------------------------------
+\h Kolofon
+\im Naslov izvirnika: Holy Bible King James Version
+\zbl|1\*
+\im \zvar|maintitle\*
+\im \zvar|subtitle\*
+\zbl|1\*
+\im Dovoljenje za uporabo besedila
+\im To delo je ponujeno pod licenco Creative Commons (CC BY-NC-ND PRIZNANJE AVTORSTVA – NEKOMERCIALNO – BREZ PREDELAV)
+\im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo. https://creativecommons.org/licenses/by-nc-nd/4.0/
+\zccimg by-nc-nd|size="col" pgpos="pr" scale="0.15"\*
+\zbl|3\*
+\im Datum izdaje:  junij 2025.
+\im vir: github.com/msavli/SloKJV.
+\im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2024.
+\im Priprava besedila: Marjan Šavli (PTXPrint).
+\im Fotografija na naslovnici: arhiv družine Šavli.
+\im Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka, marjan.savli@gmail.com.
+\im Verzija za mobilne naprave: crosswire.org/applications/.
+\zqrcode|pgpos="cr" size="1.2cm" data="http://www.crosswire.org/applications/"\*
+\zbl|1\*
+\rem \im CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
+\zbl|3\*
+\im BREZPLAČEN IZVOD – NI ZA PRODAJO
+\zbl|1\*
+\pb
+\rem -------------------------------------------------------------------------
+\h Predgovor
+\mt1 Predgovor
+\zbl|2\*
+\im Projekt prevoda Svetega pisma kralja Jakoba (1769), imenovanega tudi kot Avtorizirana Verzija, je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Pri pregledu besedila sodeluje Vinko Ošlak. Vir besedila: crosswire.org.
+\zbl|1\*
+\ip Pred vami je mini verzija, ki vsebuje naslednje knjige in/ali odlomke: 4 Mz 24; 5 Mz 5-34; Est; Ps 22, 48, 51, 68, 70, 72, 95-99, 110, 121, 124, 125, 139, 149; Pp; Iz 26-28, 30, 32, 39-40, 42-43, 47-48, 50, 53, 54, 56-57, 59, 61, 63-64, 66; Jer 31; Zah 12,14; Jn; 1, 3 Kor; 1, 2 Tim; Tit; Heb; 1, 2 Pt; 1, 2 John; Jude, Raz.
+\ip 
+\im Prosiva Boga, da bi bila tudi vam ta knjiga v blagoslov in spodbudo pri hoji z Jezusom.
+\zbl|1\*
+\ipr Prevajalca
+\zbl|4\*
+\mt1 Posebnosti prevoda:
+\zbl|2\*
+\ip    • »\it nagnjene\it*« besede so dodane izvirnem KJV besedilu,
+\ip    • »[ ]« dodala prevajalca, ni v originalu,
+\ip    • »§« razlika besedila SloKJV in ostalih slovenskih prevodov.
+\pb
+\rem -------------------------------Kazalo------------------------------------------
+\h Kazalo
+\mt1 Kazalo vsebine
+\is Knjige Stare zaveze
+\ip \ztoc|ot\*
+\pb
+\zgap|0.18in\*\p
+\is Knjige Nove zaveze
+\ip \ztoc|nt\*
+\rem \is Dodatki
+\ip \ztoc|post\*
+\b
+\pb
+\rem -------------------------------------------------------------------------
+\zNeedOddPage
+\rem --------------------------COVER---------------------------
+\periph front|id="coverfront"
+\zgap|155pt\*
+\mt1 \zvar|covertitle1\* 
+\mt1 \zvar|covertitle2\*
+\mt2 \zvar|coversubtitle\*
+\vfill
+\endgraf
+\periph spine|id="coverspine"
+\mt1 \zvar|coversubtitle\* ~~-~~ \zvar|subtitle\*
+\p
+\periph back|id="coverback"
+\zgap|1in\*
+\m Kajti Bog je tako ljubil svet,
+\m da je dal svojega edinorojenega Sina, da kdorkoli
+\m veruje vanj, se ne bo pogubil,
+\m temveč bo imel večno življenje.
+\b
+\m Jn 3,16
+\zbl|10\*\p
+\m \zvar|mesecletotiska\*
+\b
+\pc ~
+\vfill
+\periph spannedCover|id="coverwhole"
+\zgap|1pt\*
+\vfill
+\pc ~
+\vfill
+\endgraf
+\rem --------------------------END COVER---------------------------
