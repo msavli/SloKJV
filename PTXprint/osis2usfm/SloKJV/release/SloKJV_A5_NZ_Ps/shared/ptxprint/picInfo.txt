@@ -7,4 +7,5 @@ piccredit =
 
 [map_ancient_world_patriarchs_bw_90]
 approved = false
+picclear = yes
 

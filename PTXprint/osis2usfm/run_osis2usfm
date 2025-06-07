@@ -90,7 +90,7 @@ key_pressed_brisanje_temp_files() {
 echo "   Izberi velikost PDF verzije SloKJV"
 echo -E "   "
 PS3='Izberi velikost PDF verzije SloKJV: '
-options=("Test" "A4" "US_Trade" "A5" "A5_NZ_BIG" "A5_NZ_Ps" "A5_NZ_prostor" "SLO-KJV" "FRTLOCAL_SFM" "PTXPRINT_STY" "PTXPRINT_CFG" "BrisanjeTemp" "Izhod")
+options=("Test" "A4" "US_Trade" "A5" "A5_NZ_BIG" "A5_NZ_Ps" "A5_NZ_prostor" "Mini_Izbrana" "SLO-KJV" "FRTLOCAL_SFM" "PTXPRINT_STY" "PTXPRINT_CFG" "BrisanjeTemp" "Izhod")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -127,6 +127,11 @@ do
         "A5_NZ_prostor")
             echo "   Izbral si: A5_NZ_prostor."
             format=A5_NZ_prostor
+            break
+            ;;
+        "Mini_Izbrana")
+            echo "   Izbral si: Mini_Izbrana"
+            format=Mini_Izbrana
             break
             ;;
         "SLO-KJV")
