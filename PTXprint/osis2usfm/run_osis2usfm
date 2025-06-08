@@ -64,22 +64,20 @@ key_pressed_brisanje_temp_files() {
     read -t 2 -n 1 key
     if [ $? -eq 0 ]; then
         echo "   Brisanje datotek ...."
-		#======== Pobrise vse  *pdf  in  *.usfm  datoteke =====
-		echo  "    Pobrise vse pdf datoteke ..."
-		echo  "      Ostaja samo *.USFM v KJV mapi ..."
-		cd $osis2usfm
-		#find $osis2usfm/SloKJV/release . -type f -name "*.pdf"  -exec ls {} +
-		find $osis2usfm/SloKJV/release  . -type f -name "*.pdf"  -exec rm {} +
-		find $osis2usfm/SloKJV/release  . -type f -name "*.usfm" -exec ls {} +
-		find $osis2usfm/SloKJV/release  . -type f -name "*.usfm" -exec rm {} +
-		echo  "      Pobrise vse fajle v mapah local ..."
-		find $osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print -delete ';'
-		# find $osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print ';'
-                echo "     Pobrise simbilicen link do zemljevidov ki ga vsakic znova kreira"
-		find /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release -type l -name 'figures' -exec rm '{}' \;
-                # ls -al $SloKJV$format
-                rm   $osis2usfm/SloKJV_sword.xml                       >/dev/null 2>&1
-		#=======================================================
+        #======== Pobrise vse  *pdf  in  *.usfm  datoteke =====
+        echo  "    Pobrise vse pdf datoteke ..."
+        echo  "      Ostaja samo *.USFM v KJV mapi ..."
+        cd $osis2usfm
+        # Exclude the specific folder from pdf and usfm deletion
+        find $osis2usfm/SloKJV/release -type f -name "*.pdf" -exec rm {} +
+        find $osis2usfm/SloKJV/release -type f -not -path "$osis2usfm/SloKJV/release/SloKJV_Mini_Izbrana/*" -name "*.usfm" -exec rm {} +
+        echo  "      Pobrise vse fajle v mapah local ..."
+        # Delete files in 'local' directories, including those under SloKJV_Mini_Izbrana
+        find $osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print -delete ';'
+        echo "     Pobrise simbilicen link do zemljevidov ki ga vsakic znova kreira"
+        find $osis2usfm/SloKJV/release -type l -name 'figures' -exec rm '{}' \;
+        rm $osis2usfm/SloKJV_sword.xml >/dev/null 2>&1
+        #=======================================================
     else
         echo "   Nadaljujem ...."
     fi
