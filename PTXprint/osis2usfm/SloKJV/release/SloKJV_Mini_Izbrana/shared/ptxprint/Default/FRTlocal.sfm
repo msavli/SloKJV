@@ -38,8 +38,8 @@
 \im Projekt prevoda Svetega pisma kralja Jakoba (1769), imenovanega tudi kot Avtorizirana Verzija, je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Pri pregledu besedila sodeluje Vinko Ošlak. Vir besedila: crosswire.org.
 \zbl|1\*
 \ip Pred vami je mini verzija, ki vsebuje naslednje knjige in/ali odlomke: 
-\ip 4 Mz 24; 5 Mz 5-34; Est; Ps 22, 48, 51, 68, 70, 72, 95-99, 110, 121, 124, 125, 139, 149; Pp; Iz 26-28, 30, 32, 39-40, 42-43, 47-48, 50, 53, 54, 56-57, 59, 61, 63-64, 66; Jer 31; Zah 12,14; Jn; 1, 3 Kor; 1, 2 Tim; Tit; Heb; 1, 2 Pt; 1, 2 John; Jude, Raz.
-\ip 
+\ip 1 Mz 1-3; 4 Mz 24; 5 Mz 5-34; Est; Ps 22, 23, 48, 51, 68, 70, 72, 95-99, 110, 121, 124, 125, 139, 149; Pp; Iz 26-28, 30, 32, 39-40, 42-43, 47-48, 50, 53, 54, 56-57, 59, 61, 63-64, 66; Jer 31; Zah 12,14; Mt 5-7; Lk 15; Jn 1, Rim 8-10; 1, 2 Kor; 1, 2 Tim; Tit; Heb; 1, 2 Pt; 1, 2 John; Jude, Raz.
+\ip
 \im Prosiva Boga, da bi bila tudi vam ta knjiga v blagoslov in spodbudo pri hoji z Jezusom.
 \zbl|1\*
 \ipr Prevajalca
@@ -55,16 +55,67 @@
 \mt1 Kazalo vsebine
 \is Knjige Stare zaveze
 \ip \ztoc|ot\*
-\pb
 \zgap|0.18in\*\p
 \is Knjige Nove zaveze
 \ip \ztoc|nt\*
 \rem \is Dodatki
 \ip \ztoc|post\*
-\b
 \pb
 \rem -------------------------------------------------------------------------
-\zNeedOddPage
+\h Izbrani odlomki
+\mt1 Izbrani odlomki
+\tr \th1 Referenca \th2 Opis
+\tr \tc1 1 Mz 1–3 \tc2 Stvarjenje sveta, Adam in Eva, padec v greh; temelji za razumevanje Božjega stvarjenja in človekove odgovornosti.
+\tr \tc1 4 Mz 24 \tc2 Balaamova prerokba o zvezdi iz Jakoba; napoved mesijanskega voditelja, ki bo blagoslovil Izrael.
+\tr \tc1 5 Mz 5–34 \tc2 Deset zapovedi in Mojzesovi zakoni; osnova Božje zaveze z Izraelom, ki poudarja poslušnost in pravičnost.
+\tr \tc1 Est \tc2 Zgodba o Esteri; Božja previdnost pri reševanju Judov pred iztrebljenjem skozi pogum in vero.
+\tr \tc1 Ps 22 \tc2 Psalm trpljenja in upanja; napoveduje Mesijevo trpljenje, pogosto povezan z Jezusovim križanjem.
+\tr \tc1 Ps 23 \tc2 Pastirski psalm; Božja skrb, vodstvo in tolažba v težavah.
+\tr \tc1 Ps 48 \tc2 Hvalnica Sionu; slavi Božjo veličino in zaščito svetega mesta.
+\tr \tc1 Ps 51 \tc2 Psalm kesanja; prošnja za odpuščanje in očiščenje po grehu.
+\tr \tc1 Ps 68 \tc2 Hvalnica; slavi Božjo moč in zmago nad sovražniki.
+\tr \tc1 Ps 70 \tc2 Prošnja za hitro Božjo pomoč; izraža nujnost in zaupanje v Božje posredovanje.
+\tr \tc1 Ps 72 \tc2 Kraljevski psalm; molitev za pravičnega kralja, ki napoveduje Mesijevo vladavino.
+\tr \tc1 Ps 95–99 \tc2 Hvalnice Božji veličini; vabijo k čaščenju Boga kot stvarnika in kralja vseh narodov.
+\tr \tc1 Ps 110 \tc2 Mesijanski psalm; napoveduje Kristusa kot kralja in duhovnika po Melkizedekovem redu.
+\tr \tc1 Ps 121 \tc2 Psalm zaščite; varnost in skrb na vseh poteh.
+\tr \tc1 Ps 124 \tc2 Zahvala za rešitev; priznava Božjo pomoč pri preprečevanju uničenja.
+\tr \tc1 Ps 125 \tc2 Zaupanje v Božjo zaščito; primerja pravične z neomajno goro Sion.
+\tr \tc1 Ps 139 \tc2 Hvalnica Božji vsemogočnosti; slavi Božjo intimno poznavanje in navzočnost v življenju.
+\tr \tc1 Ps 149 \tc2 Hvalnica z veseljem; poziva k slavljenju Boga z glasbo in plesom.
+\tr \tc1 Pp \tc2 Pesem pesmi; ljubezen med ženinom in nevesto, pogosto razumljena kot prispodoba za Božjo ljubezen do Izraela ali Kristusa do Cerkve.
+\tr \tc1 Pregovori \tc2 Modrostne izreke za praktično in pobožno življenje.
+\tr \tc1 Iz 26–28 \tc2 Pesmi upanja in obsodbe; poudarjajo Božjo sodbo in obljubo odrešenja.
+\tr \tc1 Iz 30 \tc2 Opozorilo pred zavezništvom z Egiptom; poziva k zaupanju v Boga za rešitev.
+\tr \tc1 Iz 32 \tc2 Prerokba o pravičnem kralju; napoveduje Mesijevo vladavino pravičnosti.
+\tr \tc1 Iz 39–40 \tc2 Prehod k tolažbi; napoveduje Babilonsko suženjstvo in Božjo obljubo osvoboditve.
+\tr \tc1 Iz 42–43 \tc2 Pesmi o Božjem služabniku; opisujejo Mesija kot luč narodov in Izraelovo odrešenje.
+\tr \tc1 Iz 47–48 \tc2 Obsodba Babilona; poudarja Božjo suverenost in Izraelovo izvoljenost.
+\tr \tc1 Iz 50 \tc2 Napoveduje Mesijevo poslušnost kljub preganjanju.
+\tr \tc1 Iz 53 \tc2 Ključna prerokba o Kristusovem odrešilnem delu.
+\tr \tc1 Iz 54 \tc2 Obljuba obnove; slavi Božjo zvestobo in novo zavezo z Izraelom.
+\tr \tc1 Iz 56–57 \tc2 Poziv k pravičnosti; obljublja blagoslove vsem, ki sledijo Bogu.
+\tr \tc1 Iz 59 \tc2 Obsodba greha in odrešenje; poudarja Božjo pravičnost in odrešilno moč.
+\tr \tc1 Iz 61 \tc2 Napoveduje osvoboditev in tolažbo za potrte.
+\tr \tc1 Iz 63–64 \tc2 Molitev za odrešenje in obnovo Izraela.
+\tr \tc1 Iz 66 \tc2 Novo nebo in zemlja; obljuba večne slave.
+\tr \tc1 Jer 31 \tc2 Obljuba Božje odrešitve in duhovne obnove Izraela.
+\tr \tc1 Zah 12, 14 \tc2 Napovedujejo trpljenje in končno zmago nad narodi.
+\tr \tc1 Mt 5–7 \tc2 Govor na gori; Jezusovi temeljni nauki o kraljestvu, pravičnosti in ljubezni.
+\tr \tc1 Lk 15 \tc2 Prilike o izgubljenem; poudarjajo Božjo milost do grešnikov.
+\tr \tc1 Jn \tc2 Janezov evangelij razglaša Jezusa kot Božjo Besedo in Odrešenika, ki prinaša večno življenje skozi vero.
+\tr \tc1 Rim 8–10 \tc2 Življenje v Duhu, Božja ljubezen in vloga Izraela; ključni teološki nauki.
+\tr \tc1 1 Kor \tc2 Pavlovo pismo korintski cerkvi; obravnava enotnost, moralnost, duhovne darove in ljubezen, z napotki za krščansko življenje.
+\tr \tc1 2 Kor \tc2 Pavlovo drugo pismo korintski cerkvi; brani njegovo apostolsko službo, spodbuja velikodušnost in poudarja moč v šibkosti skozi Božjo milost.
+\tr \tc1 1, 2 Tim \tc2 Pastoralni napotki Timoteju; vodstvo za cerkveno vodstvo in zdravo učenje.
+\tr \tc1 Tit \tc2 Pismo Titu; navodila za cerkveno ureditev in krščansko življenje.
+\tr \tc1 Heb \tc2 Pismo Hebrejcem; razlaga Kristusa kot najvišjega duhovnika in popolne žrtve.
+\tr \tc1 1, 2 Pt \tc2 Petrova pisma; spodbuda k vztrajanju v veri kljub preizkušnjam.
+\tr \tc1 1, 2, 3 Jn \tc2 Janezova pisma; poudarjajo ljubezen, resnico in svarila pred lažnimi učitelji.
+\tr \tc1 Jude \tc2 Judovo pismo; opozarja pred odpadom, spodbuja k ohranjanju vere.
+\tr \tc1 Raz \tc2 Razodetje; apokaliptične vizije o Božji zmagi, sodbi in novem stvarjenju.
+\tr \tc1 \tc2   \rem Prazna vrstica da sploh pokaze tc2 od Razodetja
+\rem -------------------------------------------------------------------------
 \rem --------------------------COVER---------------------------
 \periph front|id="coverfront"
 \zgap|240pt\*
