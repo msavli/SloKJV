@@ -1,0 +1,11 @@
+[DEFAULT]
+picclear = unknown
+picaccept = Unknown
+picreverse = OK
+piccreditbox = 
+piccredit = 
+
+[map_ancient_world_patriarchs_bw_90]
+approved = false
+picclear = yes
+
