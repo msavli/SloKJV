@@ -1,7 +1,7 @@
 # SloKJV
 ## Sveto pismo kralja Jakoba (1769) v slovenščini
 
-[![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_400.png?raw=true "SloKJV")](https://ueskl.com/index.php)
+[![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_400.png?raw=true "SloKJV")](https://ueskl.com/knjige/#sveto-pismo-kralja-jakoba)
 
 ## *Slovensko / Slovenščina*
 
@@ -61,7 +61,7 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
    - posamezne knjige
 
 ### Papirni izvod SloKJV
-[![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_150.png?raw=true "SloKJV")](https://ueskl.com/index.php)
+[![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_150.png?raw=true "SloKJV")](https://ueskl.com/knjige/#sveto-pismo-kralja-jakoba)
  Sveto pismo je tiskano z digitalnim tiskom na 60g papir z broširano vezavo. Sta dva založnika, toda isti digitalni stroji, na katerih se 800 stranska Sveta pisma tiskajo (lulu.com).
   - Hojkar-Šavli: Papirne izvode SloKJV Svetih pisem in ostale knjige lahko naročite v ([spletni trgovini.](https://ueskl.com/knjige/))
  - [Nainoia Inc.](https://nainoia-inc.signedon.net/) Anionian verzija z [mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/paperback/product-1y5gpyry.html), s [trdimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/hardcover/product-j25j7z.html) in [Nova Zaveza z mehkimi platnicami](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769-new-testament/paperback/product-6k4jeq.html).
@@ -131,7 +131,7 @@ You can read the Bible using one of these devices or programs:
    - individual books
  
  ### SloKJV paper copy
- [![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_150.png?raw=true "SloKJV")](https://ueskl.com/index.php)
+ [![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_150.png?raw=true "SloKJV")](https://ueskl.com/knjige/#sveto-pismo-kralja-jakoba)
  The Bible is digitally printed on 60g paper with a paperback binding. There are two publishers, but the same digital presses on which the 800-page Bibles are printed (lulu.com).
  - Hojkar-Šavli: Paper copies of the SloKJV Bibles and other books can be ordered from the ([online shop](https://ueskl.com/knjige/))
  - [Nainoia Inc.](https://nainoia-inc.signedon.net/) Anionian version: [Paperback](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/paperback/product-1y5gpyry.html), [Hardcover](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769/hardcover/product-j25j7z.html) and [Paperback New Testament](https://www.lulu.com/shop/-nainoia-inc/holy-bible-aionian-edition-slovene-king-james-bible-1769-new-testament/paperback/product-6k4jeq.html) 
