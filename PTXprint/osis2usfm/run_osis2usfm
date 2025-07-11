@@ -72,7 +72,7 @@ key_pressed_brisanje_temp_files() {
         find $osis2usfm/SloKJV/release -type f -name "*.pdf" -exec rm {} +
         find $osis2usfm/SloKJV/release -type f -not -path "$osis2usfm/SloKJV/release/SloKJV_Mini_Izbrana/*" -name "*.usfm" -exec rm {} +
         echo  "      Pobrise vse fajle v mapah local ..."
-        # Delete files in 'local' directories, including those under SloKJV_Mini_Izbrana
+        # Delete files in 'local' directories
         find $osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print -delete ';'
         echo "     Pobrise simbilicen link do zemljevidov ki ga vsakic znova kreira"
         find $osis2usfm/SloKJV/release -type l -name 'figures' -exec rm '{}' \;
@@ -900,11 +900,10 @@ mv 19_PSA_modified.usfm 19_PSA.usfm
       case $format in
            "A4")
                 touch A7_INT.usfm
-		echo "\id INT"                                                     >> A7_INT.usfm
-                echo "\periph Stara zaveza|id=\"intot\""                           >> A7_INT.usfm
-                echo "\mt1 Stara zaveza"                                           >> A7_INT.usfm
+                echo "\id INT"                                                     >> A7_INT.usfm
+                echo "\periph STARA ZAVEZA|id=\"intot\""                           >> A7_INT.usfm
+                echo "\mt1 STARA ZAVEZA"                                           >> A7_INT.usfm
                 # echo "\p Stara zaveza je zapis......"                            >> A7_INT.usfm
-	        echo "\pb"                                                         >> A7_INT.usfm
 		# echo "\zendperiph"                                                 >> A7_INT.usfm
                 # echo "\periph History Introduction|id=\"inthistory\""            >> A7_INT.usfm
                 # echo "\s1 Historical Books"                                      >> A7_INT.usfm
@@ -921,9 +920,10 @@ mv 19_PSA_modified.usfm 19_PSA.usfm
                 # echo "\p Most of the books g...."                                >> A7_INT.usfm
 		# echo "\zendperiph"                                               >> A7_INT.usfm
                 echo "\periph Nova zaveza|id=\"intnt\""                            >> A7_INT.usfm
-                echo "\mt1 Nova zaveza"                                            >> A7_INT.usfm
-                # echo "\p Knjige Noveze so napisali učenci Jezusa Kristusa....."  >> A7_INT.usfm
-	        echo "\pb"                                                         >> A7_INT.usfm
+                echo "\mt1 NOVA ZAVEZA"                                            >> A7_INT.usfm
+                echo "\mt2 NAŠEGA GOSPODA IN REŠITELJA NAŠIH DUŠ"                  >> A7_INT.usfm
+                echo "\mt2 JEZUSA KRISTUSA"                                        >> A7_INT.usfm
+                echo "\mt3 z vsemi besedami Jezusa Krisusa, zapisanimi z rdečo"    >> A7_INT.usfm
 		# echo "\zendperiph"                                                 >> A7_INT.usfm
                 # echo "\periph Gospels Introduction|id=\"intgospels\""            >> A7_INT.usfm
                 # echo "\s1 Gospels and Acts"                                      >> A7_INT.usfm
@@ -964,8 +964,7 @@ mv 19_PSA_modified.usfm 19_PSA.usfm
                 echo "\mt1 NOVA ZAVEZA"                                            >> A7_INT.usfm
                 echo "\mt2 NAŠEGA GOSPODA IN REŠITELJA NAŠIH DUŠ"                  >> A7_INT.usfm
                 echo "\mt2 JEZUSA KRISTUSA"                                        >> A7_INT.usfm
-echo "Odstranil: z vsemi besedami Jezusa Krisusa, zapisanimi z rdečo"
- #               echo "\mt3 z vsemi besedami Jezusa Krisusa, zapisanimi z rdečo"    >> A7_INT.usfm
+                echo "\mt3 z vsemi besedami Jezusa Krisusa, zapisanimi z rdečo"    >> A7_INT.usfm
                 # echo "\pb"                                                       >> A7_INT.usfm
                 #echo "\zendperiph"                                               >> A7_INT.usfm
                 #echo "\zNeedOddPage"                                             >> A7_INT.usfm
@@ -1082,8 +1081,17 @@ sed -i "s| Sela.|\\\qs Sela. \\\qs*\n\\\p|g" 35_HAB.usfm
 #echo -E "   --==       \wj     \wj*    "    
 #echo -E "   --==    CB tisk moba biti \bd in \bd*  "    
 # Zamenja #rz#  ->
-#sed -i "s/\\\\wj /\\\\bd /g"     *.usfm
-#sed -i "s/\\\\wj* /\\\\bd* /g"   *.usfm
+      case $format in
+            "A4")
+                echo -E "   --==    Rdeča barva Jezusovih besed"
+                echo -E " "
+                ;;
+            *)  echo -E "   --==    Nic ne naredi. Obicajno Sveto pismo (ni barvno) ... "
+                sed -i "s/\\\\wj /\\\\bd /g"     *.usfm
+                sed -i "s/\\\\wj* /\\\\bd* /g"   *.usfm
+                echo -E " "
+                ;;
+       esac
 #==========================================================
 
 

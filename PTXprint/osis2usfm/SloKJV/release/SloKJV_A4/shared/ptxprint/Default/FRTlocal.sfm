@@ -1,67 +1,67 @@
 \id FRT
 \nopagenums
-\zEmptyPage
-\zEmptyPage
-\zbl|5\*\p
+\zgap|1in\*\p
 \mt1 \zvar|maintitle\*
-\zbl|2\*\p
+\zgap|1in\*\p
 \mt2 \zvar|subtitle\*
-\zbl|12\*\p
-\mt4 Študijska izdaja
-\zbl|25\*\p
-\mt4 Škofja Loka
+\zgap|2in\*\p
+\mt4 \zvar|izdaja\* 
+\zgap|3in\*\p
+\mt4 Škofja Loka, \zvar|leto_mesec\* 
 \pb
 \rem ----------------Kolofon-------------------------------------------------
 \h Kolofon
-\ip Naslov izvirnika: Holy Bible King James Version
+\im Naslov izvirnika: Holy Bible King James Version
 \zbl|1\*
-\ip \zvar|maintitle\*
-\ip \zvar|subtitle\*
+\im \zvar|maintitle\*
+\im \zvar|subtitle\* \zvar|izdaja\* 
 \zbl|1\*
 \im Dovoljenje za uporabo besedila
-\im To delo je ponujeno pod licenco Creative Commons (CC BY-NC-ND PRIZNANJE AVTORSTVA – NEKOMERCIALNO – BREZ PREDELAV).
+\im To delo je ponujeno pod licenco Creative Commons (CC BY-NC-ND PRIZNANJE AVTORSTVA – NEKOMERCIALNO – BREZ PREDELAV)
 \im Uporabnikom je dovoljeno reproduciranje, distribuiranje, dajanje v najem in javna priobčitev izvirnega avtorskega dela, vendar samo v nekomercialne namene, pod pogojem, da navedejo avtorja izvirnega dela in da dela ne spreminjajo. https://creativecommons.org/licenses/by-nc-nd/4.0/
 \zccimg by-nc-nd|size="col" pgpos="pr" scale="0.15"\*
 \zbl|15\*
-\ip Prva izdaja
-\im Knjiga je objavljena na spletni strani: github.com/msavli/SloKJV
+\im Datum izdaje:  \zvar|leto_mesec\*.
+\im Knjiga je objavljena na spletni strani: github.com/msavli/SloKJV.
 \zqrcode|pgpos="cr" size="1.2cm" data="https://github.com/msavli/SloKJV"\*
-\im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2024
-\im Priprava besedila: Marjan Šavli (PTXPrint)
-\im Fotografija na naslovnici: arhiv družine Šavli
-\im Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka, marjan.savli@gmail.com
-\im Verzija za mobilne naprave: crosswire.org/applications/
+\im Prevod: Marjan Šavli in Barbara Hojkar Šavli.
+\im Priprava besedila: Marjan Šavli (PTXPrint).
+\im Fotografija na naslovnici: arhiv družine Šavli.
+\im Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka, marjan.savli@gmail.com.
+\im Verzija za mobilne naprave: crosswire.org/applications/.
 \zqrcode|pgpos="cr" size="1.2cm" data="http://www.crosswire.org/applications/"\*
 \zbl|1\*
-\ip CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
+\rem \im CIP                                            xxxxxxxxxxxxxxxxxxxxxxxxxx
 \zbl|3\*
-\ip BREZPLAČEN IZVOD – NI ZA PRODAJO
+\im BREZPLAČEN IZVOD – NI ZA PRODAJO
 \zbl|1\*
 \pb
 \rem -------------------------------------------------------------------------
 \h Predgovor
 \mt1 Predgovor
 \zbl|2\*
-\ip Projekt prevoda Sveto pismo kralja Jakoba v slovenski jezik je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Pri pregledu besedila sodeluje Vinko Ošlak.
-\ip Prevedene knjige: Geneza, Eksodus, Levitik, Numeri, Devteronomij, Jozue, Sodniki, Ruta, 1 Samuel, 2 Samuel, 1 Kralji, 2 Kralji, 1 Kroniška, 2 Kroniška, Ezra, Nehemija, Estera, Job, Psalmi, Pregovori, Pridigar, Visoka pesem, Izaija, Jeremija, Žalostinke, Ezekiel, Daniel, Ozej, Joel, Amos, Abdija, Jona, Mihej, Nahum, Habakuk, Sofonija, Agej, Zaharija, Malahija in celotna Nova Zaveza.
-\ip Pred vami je študijska verzija z opombami in referencami.
-\ip Prosiva Boga, da bi bila tudi vam ta knjiga v blagoslov in spodbudo pri hoji z Jezusom.
+\im Projekt prevoda Svetega pisma kralja Jakoba (1769), imenovanega tudi kot Avtorizirana Verzija, je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Pri pregledu besedila sodeluje Vinko Ošlak. Vir besedila: crosswire.org.
+\zbl|1\*
+\rem \ip Pred vami je študijska verzija z opombami in referencami.
+\im Prosiva Boga, da bi bila tudi vam ta knjiga v blagoslov in spodbudo pri hoji z Jezusom.
 \zbl|1\*
 \ipr Prevajalca
 \zbl|4\*
 \mt1 Posebnosti prevoda:
 \zbl|2\*
-\ip    • dodane opombe in reference; KJV 1611,
-\ip    • dodane približne letnice dogodkov; KJV Oxford 1769,
-\ip    • »nagnjene« besede so dodane izvirnem KJV besedilu,
-\ip    • »a« opombe KJV 1611 in opombe prevajalca,
-\ip    • »b« sklici na druge dela besedila,
+\ip    • dodane opombe in reference; KJV Cambridge edition, 1611,
+\ip    • dodane približne letnice dogodkov; KJV Oxford, 1769,
+\ip    • »\it nagnjene\it*« besede so dodane izvirnem KJV besedilu,
+\rem \ip    • »a« opombe KJV 1611 in opombe prevajalca,
+\rem \ip    • »b« sklici na druge dela besedila,
 \ip    • »[ ]« dodala prevajalca, ni v originalu,
 \ip    • »§« razlika besedila SloKJV in ostalih slovenskih prevodov.
 \pb
 \zEmptyPage
 \rem -------------------------------------------------------------------------
 \h Jezus reši me!
+\mt1 Jezus reši me!
+\zgap|0.10in\*\p
 \ipi Bog je že dokazal Svojo ljubezen do tebe osebno. Kajti Bog je tako ljubil svet (tebe), da je dal Svojega edinorojenega Sina, da kdorkoli veruje vanj, (ti?) se ne bo pogubil, temveč bo imel večno življenje.\vp(Jn 3,16)\vp*
 \ipi Ali verjameš Besedi Njega, ki te je ustvaril, ki te pozna in te ljubi?
 \ipi Ali si pripravljen sprejeti Njega, to je Božjo Besedo – Jezusa Kristusa, po katerem so bile narejene vse stvari?
@@ -72,7 +72,7 @@
 \ipi Na glas izgovori:
 \ipi »Jezus, žal mi je za vse moje grehe. Prosim odpusti mi, osvobodi me in me popolnoma očisti. Sprejemam te  za svojega Odrešenika, Gospoda in Gospodarja svojega življenja. Hvala, ker si tudi zame plačal ceno za moje grehe na križu, umrl in tretji dan vstal.«
 \zbl|2\*
-\ipi datum: ____________   podpis: _________________________
+\pc datum: ____________   podpis: _________________________
 \zbl|1\*
 \ipi Toda tolikim, kot so ga sprejeli, njim je on dal moč, da postanejo Božji sinovi, torej njim, ki verujejo v njegovo ime, (v ime Jezusa Kristusa).\vp(Jn 1,12)\vp* Potem so bili tisti, ki so z veseljem sprejeli njegovo besedo, krščeni.\vp(Apd 2,41)\vp*
 \ipi Pokesajte se (če si to ravnokar storil, sledi navodilu)
@@ -82,16 +82,19 @@
 \pb
 \rem -------------------------------Kazalo------------------------------------------
 \h Kazalo
-\mt3 \zvar|toctitle\*
+\mt1 Kazalo vsebine
 \is Knjige Stare zaveze
 \ip \ztoc|ot\*
+\pb
+\zgap|0.18in\*\p
 \is Knjige Nove zaveze
 \ip \ztoc|nt\*
-\is Dodatki
+\rem \is Dodatki
 \ip \ztoc|post\*
 \b
+\pb
 \is Abecedni seznam Svetopisemskih knjig
-\ip \ztoc|sortb\*
+\ip \ztoc|sorta\*
 \pb
 \rem -------------------------------------------------------------------------
-\zNeedEvenPage
+\zNeedOddPage
