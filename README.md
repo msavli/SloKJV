@@ -54,7 +54,9 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  #### PDF
  - [PDF - 1 stolpec](https://ueskl.com/bin/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti prvo PDF verzijo.)
  - [PDF - 2 stolpca](https://k00.fr/odqgcju1) tiskano na Pretore/NL, 6/2025
-  #### MP3
+ #### Pregled datotek
+ - [Vpogled v mapo z binarnimi datotekami](https://ueskl.com/folder_bin.php)
+ #### MP3
  - Avdio SloKJV ([MP3](https://k00.fr/SloKJV))
    - Stara zaveza (1,6 Gb, 67 ur)
    - Nova zaveza (0,5 Gb, 20 ur)
@@ -124,6 +126,8 @@ You can read the Bible using one of these devices or programs:
   #### PDF
   - [PDF - 1 column](https://ueskl.com/bin/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) with his project [Free Scriptures ](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) helped make the first PDF version.)
   - [PDF - 2 columns](https://k00.fr/odqgcju1) printed by Pretore/NL, 6/2025
+ #### Viewing files
+ - [Access the binary files folder](https://ueskl.com/folder_bin.php)
   #### MP3
    - Audio SloKJV ([MP3](https://k00.fr/SloKJV))
    - Old Testament (1.6 Gb, 67 hours)
