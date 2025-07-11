@@ -106,7 +106,7 @@ You can read the Bible using one of these devices or programs:
   - [Windows e-sword](https://www.e-sword.net/) ([`SloKJV.bblx`](https://ueskl.com/bin/SloKJV.bblx) put in the folder: "c:\Program Files (x86)\e-Sword" It is necessary to add 'write' permission to this folder in order for the file to be saved.)
   #### Android
   - [AndBible](https://play.google.com/store/apps/details?id=net.bible.android.activity) installation is automatic. For manual installation, unpack the file [`Android_data_net.bible.android.activity_files.zip`](https://ueskl.com/bin/Android_data_net.bible.android.activity_files.zip) into the folder `\\ Android\data\net.bible.android.activity\files`)
-  - [Mysword for Android](https://www.mysword.info/download-mysword) ([`SloKJV.bbl.mybible`](https://ueskl.com/bin/SloKJV. bbl.mybible) put in folder [`/storage/emulated/0/mysword/bibles`])
+  - [Mysword for Android](https://www.mysword.info/download-mysword) ([`SloKJV.bbl.mybible`](https://ueskl.com/bin/SloKJV.bbl.mybible) put in folder [`/storage/emulated/0/mysword/bibles`])
   - [MyBible](https://mybible.zone/) ([`SloKJV.sqlite3`](https://ueskl.com/bin/SloKJV.sqlite3) needs to be installed manually)
   #### iPhone
   -  [Bishop](https://itunes.apple.com/us/app/the-sword-project-for-apple/id1399921911?mt=8)
