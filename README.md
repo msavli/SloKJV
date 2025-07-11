@@ -29,8 +29,8 @@ Prevajanje je potekalo v programu [Notepad++](https://notepad-plus-plus.org/) kj
 Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [Preglednica programov na crosswire.org za Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
  #### Izvorna datoteka 
- - [`SloKJV_sword.xml`](https://ueskl.com/bin/SloKJV_sword.xml) (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
- - [`slokjv.conf`](https://ueskl.com/bin/slokjv.conf) (konfiguracija za [`SloKJV_sword.xml`](https://ueskl.com/bin/SloKJV_sword.xml))
+ - [`SloKJV_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.xml) (glavna datoteka s prevodom; XML SWORD oblika za [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
+ - [`slokjv.conf`](https://github.com/msavli/SloKJV/blob/master/slokjv.conf) (konfiguracija za [`SloKJV_sword.xml`](https://ueskl.com/bin/SloKJV_sword.xml))
  #### Windows
  - [Xiphos](https://xiphos.org/)
  - [Windows e-sword](https://www.e-sword.net/) ([`SloKJV.bblx`](https://ueskl.com/bin/SloKJV.bblx) odložiti v mapo: "c:\Program Files (x86)\e-Sword" Tej mapi je potrebno dodati 'write' pravice, da se sploh lahko datoteko vanjo shrani.)
@@ -99,8 +99,8 @@ Translation takes place in [Notepad++](https://notepad-plus-plus.org/) where the
 You can read the Bible using one of these devices or programs:
   - [Crosswire.org list of programs for Windows, Mac, Linux, Andorid, iPhone, iPad](http://wiki.crosswire.org/Choosing_a_SWORD_program)
   #### Source file
-  - [`SloKJV_sword.xml`](https://ueskl.com/bin/SloKJV_sword.xml) (master translation file; XML SWORD format for [Crosswire.org](https://crosswire .org/sword/modules/ModInfo.jsp?modName=SloKJV))
-  - [`slokjv.conf`](https://ueskl.com/bin/slokjv.conf) (config for [`SloKJV_sword.xml`](https://github.com/msavli/ SloKJV/blob/master/SloKJV_sword.xml))
+  - [`SloKJV_sword.xml`](https://github.com/msavli/SloKJV/blob/master/SloKJV_sword.xml) (master translation file; XML SWORD format for [Crosswire.org](https://crosswire.org/sword/modules/ModInfo.jsp?modName=SloKJV))
+  - [`slokjv.conf`](https://github.com/msavli/SloKJV/blob/master/slokjv.conf) (config for [`SloKJV_sword.xml`](https://github.com/msavli/ SloKJV/blob/master/SloKJV_sword.xml))
   #### Windows
   - [Xiphos](https://xiphos.org/)
   - [Windows e-sword](https://www.e-sword.net/) ([`SloKJV.bblx`](https://ueskl.com/bin/SloKJV.bblx) put in the folder: "c:\Program Files (x86)\e-Sword" It is necessary to add 'write' permission to this folder in order for the file to be saved.)
