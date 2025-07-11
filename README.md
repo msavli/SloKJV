@@ -52,8 +52,8 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
  - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
  #### PDF
- - [PDF - en stolpec]( https://ueskl.com/bin/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti prvo PDF verzijo.)
- - `SloKJV*.pdf` (PDF datoteke za tisk)
+ - [PDF - 1 stolpec](https://ueskl.com/bin/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti prvo PDF verzijo.)
+ - [PDF - 2 stolpca](https://k00.fr/odqgcju1) tiskano na Pretore/NL, 6/2025
   #### MP3
  - Avdio SloKJV ([MP3](https://k00.fr/SloKJV))
    - Stara zaveza (1,6 Gb, 67 ur)
@@ -122,8 +122,8 @@ You can read the Bible using one of these devices or programs:
   - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
   - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
   #### PDF
-  - [PDF - one column]( https://ueskl.com/bin/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) with his project [Free Scriptures ](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) helped make the first PDF version.)
-  - `SloKJV*.pdf` (printable PDF files)
+  - [PDF - 1 column](https://ueskl.com/bin/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) with his project [Free Scriptures ](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) helped make the first PDF version.)
+  - [PDF - 2 columns](https://k00.fr/odqgcju1) printed by Pretore/NL, 6/2025
   #### MP3
    - Audio SloKJV ([MP3](https://k00.fr/SloKJV))
    - Old Testament (1.6 Gb, 67 hours)
