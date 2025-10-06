@@ -49,7 +49,7 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  #### VideoPsalm (predstavitev za cerkve na PC računalnikih)
  - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) uvoziti v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini
  #### OpenLP (predstavitev za cerkve na Apple računalnikih)
- - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) > Open > Next
+ - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) (Preimenuj .xml v .osis) > Open > Next
  #### Online (ni vedno zadnja verzija SloKJV)
  - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
  - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
@@ -123,7 +123,7 @@ You can read the Bible using one of these devices or programs:
   #### VideoPsalm (presentation for churches on PCs)
   - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) import into the VideoPsalm program, which is used for presentation on screens in churches. Each Bible verse is in Slovenian, followed by the English translation.
   #### OpenLP (presentation for churches on Apple computers)
- - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) > Open > Next
+ - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) (Rename .xml to .osis) > Open > Next
   #### Online (not always the latest SloKJV version)
   - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
   - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
