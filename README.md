@@ -50,7 +50,7 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) uvoziti v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini
  #### OpenLP (predstavitev za cerkve na Apple računalnikih)
  - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) > Open > Next
-  #### Online (ni vedno zadnja verzija SloKJV)
+ #### Online (ni vedno zadnja verzija SloKJV)
  - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
  - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
  #### PDF
@@ -121,16 +121,16 @@ You can read the Bible using one of these devices or programs:
   #### ePUB
   - [`SloKJV.epub`](https://slokjv.si/bin/SloKJV.epub) (Kindle, KoboPDF, e-readers) Easy navigation between the table of contents and chapters added.
   #### VideoPsalm (presentation for churches on PCs)
-  - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) import into the VideoPsalm program, which is used for screen presentation in churches. Each Bible line is in Slovenian and below it in English
+  - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) import into the VideoPsalm program, which is used for presentation on screens in churches. Each Bible verse is in Slovenian, followed by the English translation.
   #### OpenLP (presentation for churches on Apple computers)
-  - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) > Open > Next
-   #### Online (not always the latest SloKJV version)
+ - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) > Open > Next
+  #### Online (not always the latest SloKJV version)
   - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
   - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
   #### PDF
   - [PDF - 1 column](https://slokjv.si/bin/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) with his project [Free Scriptures ](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) helped make the first PDF version.)
   - [PDF - 2 columns](https://k00.fr/odqgcju1) printed by Pretore/NL, 6/2025
- #### Viewing files
+  #### Viewing files
  - [Access the binary files folder](https://slokjv.si/folder_bin.php)
   #### MP3
    - Audio SloKJV ([MP3](https://k00.fr/SloKJV))
@@ -138,7 +138,7 @@ You can read the Bible using one of these devices or programs:
    - New Testament (0.5 Gb, 20 hours)
    - individual books
  
- ### SloKJV paper copy
+  ### SloKJV paper copy
  [![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_150.png?raw=true "SloKJV")](https://slokjv.si/knjige/#sveto-pismo-kralja-jakoba)
  The Bible is digitally printed on 60g paper with a paperback binding. There are two publishers, but the same digital presses on which the 800-page Bibles are printed (lulu.com).
  - Hojkar-Šavli: Paper copies of the SloKJV Bibles and other books can be ordered from the ([online shop](https://slokjv.si/knjige/))
