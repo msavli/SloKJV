@@ -46,9 +46,11 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [Palm Bible+](https://palmbibleplus.sourceforge.net/) ([`SloKJV.pdb`](https://slokjv.si/bin/SloKJV.pdb) je potrebno ročno namestiti)
  #### ePUB
  - [`SloKJV.epub`](https://slokjv.si/bin/SloKJV.epub) (Kindle, KoboPDF, e-bralniki) Dodana preprosta navigacija med kazalom in poglavji.
- #### VideoPsalm
+ #### VideoPsalm (predstavitev za cerkve na PC računalnikih)
  - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) uvoziti v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini
- #### Online (ni vedno zadnja verzija SloKJV)
+ #### OpenLP (predstavitev za cerkve na Apple računalnikih)
+ - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) > Open > Next
+  #### Online (ni vedno zadnja verzija SloKJV)
  - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
  - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
  #### PDF
@@ -118,9 +120,11 @@ You can read the Bible using one of these devices or programs:
   - [Palm Bible+](https://palmbibleplus.sourceforge.net/) ([`SloKJV.pdb`](https://slokjv.si/bin/SloKJV.pdb) must be manually installed )
   #### ePUB
   - [`SloKJV.epub`](https://slokjv.si/bin/SloKJV.epub) (Kindle, KoboPDF, e-readers) Easy navigation between the table of contents and chapters added.
-  #### VideoPsalm
+  #### VideoPsalm (presentation for churches on PCs)
   - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) import into the VideoPsalm program, which is used for screen presentation in churches. Each Bible line is in Slovenian and below it in English
-  #### Online (not always the latest SloKJV version)
+  #### OpenLP (presentation for churches on Apple computers)
+  - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) > Open > Next
+   #### Online (not always the latest SloKJV version)
   - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
   - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
   #### PDF
