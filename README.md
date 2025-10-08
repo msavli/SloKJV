@@ -53,19 +53,24 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
 
  ![Jn 3:16](slike/Jn_3_16.jpg)
 
- <table>
+<table>
   <tr>
-    <td><tr>
-      #### VideoPsalm (predstavitev za cerkve na PC računalnikih)
-      - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) uvoziti v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini
-     </tr>     
-     <tr>
-     #### OpenLP (predstavitev za cerkve na Apple računalnikih)
-      - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_OpenLP.osis`](https://slokjv.si/bin/SloEngKJV_OpenLP.osis) > Open > Next
-      </tr>
-    </td>
     <td>
+      <h4>VideoPsalm (predstavitev za cerkve na PC računalnikih)</h4>
+      <ul>
+        <li><a href="https://myvideopsalm.weebly.com/">VideoPsalm</a> <a href="https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml">SloEngKJV_VideoPsalm_sword.xml</a> uvoziti v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini</li>
+      </ul>
+    </td>
+    <td rowspan="2">
       <img src="slike/Jn_3_16.jpg" alt="Jn 3:16" width="400" height="226">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h4>OpenLP (predstavitev za cerkve na Apple računalnikih)</h4>
+      <ul>
+        <li><a href="https://openlp.org/">OpenLP</a> File > Import > Bible > OSIS <a href="https://slokjv.si/bin/SloEngKJV_OpenLP.osis">SloEngKJV_OpenLP.osis</a> > Open > Next</li>
+      </ul>
     </td>
   </tr>
 </table>
