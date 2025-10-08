@@ -64,8 +64,8 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
       <li><a href="https://openlp.org/">OpenLP</a> File > Import > Bible > OSIS <a href="https://slokjv.si/bin/SloEngKJV_OpenLP.osis">SloEngKJV_OpenLP.osis</a> > Open > Next</li>
     </ul>
   </div>
-  <div style="flex: 0 0 400px; max-width: 100%;">
-    <img src="slike/Jn_3_16.jpg" alt="Jn 3:16" style="width: 100%; max-width: 400px; height: auto;">
+  <div style="flex: 0 0 auto;">
+    <img src="slike/Jn_3_16.jpg" alt="Jn 3:16" style="width: 400px; max-width: 100%; height: auto;">
   </div>
 </div>
 
