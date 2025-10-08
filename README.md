@@ -53,8 +53,8 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
 
  ![Jn 3:16](slike/Jn_3_16.jpg)
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
-  <div style="flex: 1; min-width: 250px;">
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; justify-content: space-between;">
+  <div style="flex: 1; min-width: 250px; max-width: 600px;">
     <h4>VideoPsalm (predstavitev za cerkve na PC računalnikih)</h4>
     <ul>
       <li><a href="https://myvideopsalm.weebly.com/">VideoPsalm</a> <a href="https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml">SloEngKJV_VideoPsalm_sword.xml</a> uvoziti v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini</li>
@@ -64,8 +64,8 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
       <li><a href="https://openlp.org/">OpenLP</a> File > Import > Bible > OSIS <a href="https://slokjv.si/bin/SloEngKJV_OpenLP.osis">SloEngKJV_OpenLP.osis</a> > Open > Next</li>
     </ul>
   </div>
-  <div style="flex: 0 0 auto;">
-    <img src="slike/Jn_3_16.jpg" alt="Jn 3:16" style="width: 400px; max-width: 100%; height: auto;">
+  <div style="flex: 0 0 auto; margin-left: auto;">
+    <img src="slike/Jn_3_16.jpg" alt="Jn 3,16" style="width: 400px; max-width: 100%; height: auto;">
   </div>
 </div>
 
