@@ -53,31 +53,21 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
 
  ![Jn 3:16](slike/Jn_3_16.jpg)
 
-
-<table style="border-collapse: collapse; border: none;" border="0">
-  <tr>
-    <td style="vertical-align: top;">
-      <h4>VideoPsalm (predstavitev za cerkve na PC računalnikih)</h4>
-      <ul>
-        <li><a href="https://myvideopsalm.weebly.com/">VideoPsalm</a> <a href="https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml">SloEngKJV_VideoPsalm_sword.xml</a> uvoziti v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini</li>
-      </ul>
-    </td>
-    <td rowspan="2" style="width: 400px; vertical-align: top;">
-      <img src="slike/Jn_3_16.jpg" alt="Jn 3:16" width="400" height="226">
-    </td>
-  </tr>
-  <tr>
-    <td style="vertical-align: top;">
-      <h4>OpenLP (predstavitev za cerkve na Apple računalnikih)</h4>
-      <ul>
-        <li><a href="https://openlp.org/">OpenLP</a> File > Import > Bible > OSIS <a href="https://slokjv.si/bin/SloEngKJV_OpenLP.osis">SloEngKJV_OpenLP.osis</a> > Open > Next</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-## Dodatne informacije
-- Poskrbite, da je slika `Jn_3_16.jpg` naložena v mapo `slike/` v repozitoriju.
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
+  <div style="flex: 1; min-width: 250px;">
+    <h4>VideoPsalm (predstavitev za cerkve na PC računalnikih)</h4>
+    <ul>
+      <li><a href="https://myvideopsalm.weebly.com/">VideoPsalm</a> <a href="https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml">SloEngKJV_VideoPsalm_sword.xml</a> uvoziti v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini</li>
+    </ul>
+    <h4>OpenLP (predstavitev za cerkve na Apple računalnikih)</h4>
+    <ul>
+      <li><a href="https://openlp.org/">OpenLP</a> File > Import > Bible > OSIS <a href="https://slokjv.si/bin/SloEngKJV_OpenLP.osis">SloEngKJV_OpenLP.osis</a> > Open > Next</li>
+    </ul>
+  </div>
+  <div style="flex: 0 0 400px; max-width: 100%;">
+    <img src="slike/Jn_3_16.jpg" alt="Jn 3:16" style="width: 100%; max-width: 400px; height: auto;">
+  </div>
+</div>
 
   #### Online (ni vedno zadnja verzija SloKJV)
  - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
