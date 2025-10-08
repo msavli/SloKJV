@@ -52,37 +52,39 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_OpenLP.osis`](https://slokjv.si/bin/SloEngKJV_OpenLP.osis) > Open > Next
 
  ![Jn 3:16](slike/Jn_3_16.jpg)
-<!-- README.md -->
-<table width="100%" cellpadding="12" cellspacing="0">
-  <tr>
-    <!-- leva celica: tekst -->
-    <td valign="top" style="max-width:800px;">
+
+<div align="center" style="max-width: 1200px; margin: 0 auto;">
+
+  <div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 20px;">
+
+    <div style="flex: 1; min-width: 280px; max-width: 600px;">
       <h4>VideoPsalm (predstavitev za cerkve na PC računalnikih)</h4>
       <ul>
         <li>
-          <a href="https://myvideopsalm.weebly.com/">VideoPsalm</a> -
-          uvozi datoteko
-          <a href="https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml">SloEngKJV_VideoPsalm_sword.xml</a>
-          v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini.
+          <a href="https://myvideopsalm.weebly.com/">VideoPsalm</a>
+          —
+          <a href="https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml">SloEngKJV_VideoPsalm_sword.xml</a>  
+          Uvozite datoteko v program VideoPsalm, ki se uporablja za prezentacijo na platnu v cerkvah.
+          Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini.
         </li>
       </ul>
 
       <h4>OpenLP (predstavitev za cerkve na Apple računalnikih)</h4>
       <ul>
         <li>
-          <a href="https://openlp.org/">OpenLP</a> — File &gt; Import &gt; Bible &gt; OSIS:
-          <a href="https://slokjv.si/bin/SloEngKJV_OpenLP.osis">SloEngKJV_OpenLP.osis</a> &gt; Open &gt; Next.
+          <a href="https://openlp.org/">OpenLP</a>  
+          File > Import > Bible > OSIS  
+          <a href="https://slokjv.si/bin/SloEngKJV_OpenLP.osis">SloEngKJV_OpenLP.osis</a> > Open > Next
         </li>
       </ul>
-    </td>
+    </div>
 
-    <!-- desna celica: slika -->
-    <td valign="top" align="right" style="white-space:nowrap;">
-      <!-- width=400 bo na namizju nastavil širino; max-width:100% omogoči responsive ob manjših zaslonih -->
-      <img src="slike/Jn_3_16.jpg" alt="Jn 3,16" width="400" style="max-width:100%; height:auto; display:block;">
-    </td>
-  </tr>
-</table>
+    <div style="flex: 0 0 auto; text-align: right;">
+      <img src="slike/Jn_3_16.jpg" alt="Jn 3,16" style="width: 400px; max-width: 100%; height: auto; border-radius: 8px;">
+    </div>
+
+  </div>
+</div>
 
 
   #### Online (ni vedno zadnja verzija SloKJV)
