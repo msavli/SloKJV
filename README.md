@@ -52,6 +52,22 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_OpenLP.osis`](https://slokjv.si/bin/SloEngKJV_OpenLP.osis) > Open > Next
 
  ![Jn 3:16](slike/Jn_3_16.jpg)
+
+ <table>
+  <tr>
+    <td>
+      #### VideoPsalm (predstavitev za cerkve na PC računalnikih)
+      - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) uvoziti v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini
+      
+      #### OpenLP (predstavitev za cerkve na Apple računalnikih)
+      - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_OpenLP.osis`](https://slokjv.si/bin/SloEngKJV_OpenLP.osis) > Open > Next
+    </td>
+    <td>
+      <img src="slike/Jn_3_16.jpg" alt="Jn 3:16" width="400" height="226">
+    </td>
+  </tr>
+</table>
+
   #### Online (ni vedno zadnja verzija SloKJV)
  - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
  - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
