@@ -53,20 +53,21 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
 
  ![Jn 3:16](slike/Jn_3_16.jpg)
 
-<table>
+
+<table style="border-collapse: collapse; border: none;" border="0">
   <tr>
-    <td>
+    <td style="vertical-align: top;">
       <h4>VideoPsalm (predstavitev za cerkve na PC računalnikih)</h4>
       <ul>
         <li><a href="https://myvideopsalm.weebly.com/">VideoPsalm</a> <a href="https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml">SloEngKJV_VideoPsalm_sword.xml</a> uvoziti v program VideoPsalm, ki se uporablja za prezentacijo na platno v cerkvah. Vsaka biblijska vrstica je v slovenščini in pod njo še v angleščini</li>
       </ul>
     </td>
-    <td rowspan="2">
+    <td rowspan="2" style="width: 400px; vertical-align: top;">
       <img src="slike/Jn_3_16.jpg" alt="Jn 3:16" width="400" height="226">
     </td>
   </tr>
   <tr>
-    <td>
+    <td style="vertical-align: top;">
       <h4>OpenLP (predstavitev za cerkve na Apple računalnikih)</h4>
       <ul>
         <li><a href="https://openlp.org/">OpenLP</a> File > Import > Bible > OSIS <a href="https://slokjv.si/bin/SloEngKJV_OpenLP.osis">SloEngKJV_OpenLP.osis</a> > Open > Next</li>
@@ -74,6 +75,9 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
     </td>
   </tr>
 </table>
+
+## Dodatne informacije
+- Poskrbite, da je slika `Jn_3_16.jpg` naložena v mapo `slike/` v repozitoriju.
 
   #### Online (ni vedno zadnja verzija SloKJV)
  - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
