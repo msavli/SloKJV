@@ -53,7 +53,7 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
 
  ![Jn 3:16](slike/Jn_3_16.jpg)
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; justify-content: space-between;">
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; max-width: 1200px; margin: 0 auto;">
   <div style="flex: 1; min-width: 250px; max-width: 600px;">
     <h4>VideoPsalm (predstavitev za cerkve na PC računalnikih)</h4>
     <ul>
@@ -64,7 +64,7 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
       <li><a href="https://openlp.org/">OpenLP</a> File > Import > Bible > OSIS <a href="https://slokjv.si/bin/SloEngKJV_OpenLP.osis">SloEngKJV_OpenLP.osis</a> > Open > Next</li>
     </ul>
   </div>
-  <div style="flex: 0 0 auto; margin-left: auto;">
+  <div style="flex: 0 0 auto; display: flex; justify-content: flex-end;">
     <img src="slike/Jn_3_16.jpg" alt="Jn 3,16" style="width: 400px; max-width: 100%; height: auto;">
   </div>
 </div>
