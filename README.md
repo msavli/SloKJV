@@ -51,9 +51,10 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  #### OpenLP (predstavitev za cerkve na Apple računalnikih)
  - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_OpenLP.osis`](https://slokjv.si/bin/SloEngKJV_OpenLP.osis) > Open > Next
  ![Jn 3:16](slike/Jn_3_16.jpg)
-  #### Online (ni vedno zadnja verzija SloKJV)
- - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
- - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
+  #### Online
+ - [SloKJV.si](https://slokjv.si)
+ - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible) (ni vedno zadnja verzija SloKJV)
+ - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV) (ni vedno zadnja verzija SloKJV)
  #### PDF
  - [PDF - 1 stolpec](https://slokjv.si/bin/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) je s svojim projektom [Free Scriptures](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) pomagal narediti prvo PDF verzijo.)
  - [PDF - 2 stolpca](https://k00.fr/odqgcju1) tiskano na Pretore/NL, 6/2025
@@ -125,9 +126,10 @@ You can read the Bible using one of these devices or programs:
   - [VideoPsalm](https://myvideopsalm.weebly.com/) [`SloEngKJV_VideoPsalm_sword.xml`](https://slokjv.si/bin/SloEngKJV_VideoPsalm_sword.xml) import into the VideoPsalm program, which is used for presentation on screens in churches. Each Bible verse is in Slovenian, followed by the English translation.
   #### OpenLP (presentation for churches on Apple computers)
  - [OpenLP](https://openlp.org/) File > Import > Bible > OSIS [`SloEngKJV_OpenLP.osis`](https://slokjv.si/bin/SloEngKJV_OpenLP.osis) > Open > Next
-  #### Online (not always the latest SloKJV version)
-  - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible)
-  - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV)
+  #### Online
+ - [SloKJV.si](https://slokjv.si)
+ - [Aionianbible.org](https://www.aionianbible.org/Bibles/Slovene---Slovene-Savli-Bible) (not always the latest version of SloKJV)
+ - [StepBible.org](https://www.stepbible.org/version.jsp?version=SloKJV) (not always the latest version of SloKJV)
   #### PDF
   - [PDF - 1 column](https://slokjv.si/bin/SloKJV.pdf) ([Stephan Kreutzer](https://skreutzer.de/) with his project [Free Scriptures ](http://www.free-scriptures.org/index.php?page=downloads), [ver: 2019_07_31](http://www.free-scriptures.org/downloads/free-scriptures_gnu_20190731.zip) helped make the first PDF version.)
   - [PDF - 2 columns](https://k00.fr/odqgcju1) printed by Pretore/NL, 6/2025
