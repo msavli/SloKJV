@@ -3,200 +3,27 @@ import os
 from datetime import datetime
 
 # --- XML Parsing and Setup ---
-xml_path = "../SloKJV_sword.xml"
+xml_path = "m:/SloKJVA/SloKJV_sword_removed_apokrif_ref.xml"
 try:
     tree = etree.parse(xml_path)
     root = tree.getroot()
-    print(f"Successfully loaded XML from: {xml_path}")
-    print(f"Root element: {root.tag}")
-    print("First few children of root:")
+    print("\n" + "    " + "="*60)
+    print("    KREIRA .html DATOTEKE z osis2html.py")
+    print("    " + "="*60)
+    print("\n")
+    print(f"    Successfully loaded XML from: {xml_path}")
+    print(f"    Root element: {root.tag}")
+    print("     First few children of root:")
     for i, child in enumerate(root):
         if i < 5:
-            print(f"  - {child.tag} (attributes: {child.attrib})")
+            print(f"      - {child.tag} (attributes: {child.attrib})")
 except Exception as e:
     print(f"Error loading XML from {xml_path}: {e}")
     raise
 
 ns = {"osis": "http://www.bibletechnologies.net/2003/OSIS/namespace"}
-output_dir = "c:/temp/sword/html"
+output_dir = "m:/trgovina_s_knjigami/root"
 os.makedirs(output_dir, exist_ok=True)
-
-# --- CSS Generation ---
-css_content = """
-html {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    background-color: #ffffff;
-    color: #000000;
-    transition: background-color 0.3s, color 0.3s;
-}
-html.night-mode {
-    background-color: #1a1a1a;
-    color: #e0e0e0;
-}
-h1 { color: navy; text-align: center; transition: color 0.3s; }
-h1 a { color: navy; text-decoration: none; transition: color 0.3s; }
-h1 a:hover { text-decoration: underline; }
-html.night-mode h1, html.night-mode h1 a { color: #87ceeb; }
-h2 { font-size: 1.4em; margin-top: 30px; color: #333; font-style: normal; transition: color 0.3s; }
-html.night-mode h2 { color: #d3d3d3; }
-h3 { font-size: 1.2em; font-style: normal; margin: 10px 0; color: #555; transition: color 0.3s; }
-html.night-mode h3 { color: #c0c0c0; }
-h4 { font-size: 1.1em; font-weight: bold; margin: 15px 0; color: #444; transition: color 0.3s; }
-html.night-mode h4 { color: #b0b0b0; }
-p { margin: 15px 0; text-align: justify; }
-sup { font-size: 0.8em; color: #555; vertical-align: super; transition: color 0.3s; }
-html.night-mode sup { color: #a0a0a0; }
-.note { font-size: 0.9em; color: #666; transition: color 0.3s; }
-html.night-mode .note { color: #999; }
-.xref { font-size: 0.9em; color: #0066cc; transition: color 0.3s; }
-html.night-mode .xref { color: #66b3ff; }
-.quote-jesus { color: #D43128; }
-html.night-mode .quote-jesus { color: #ff6666; }
-.quote-other { font-style: italic; }
-i { font-style: italic; }
-b { font-weight: bold; }
-del { text-decoration: line-through; color: #888; transition: color 0.3s; }
-html.night-mode del { color: #666; }
-.small-caps { font-variant: small-caps; }
-.foreign { font-weight: bold; color: purple; transition: color 0.3s; }
-html.night-mode .foreign { color: #dda0dd; }
-.amplified { font-style: italic; color: #ff4500; transition: color 0.3s; }
-html.night-mode .amplified { color: #ff7f50; }
-.colophon { color: gray; margin: 15px 0; text-align: left; transition: color 0.3s; }
-html.night-mode .colophon { color: #888; }
-.study-container, .xref-container { position: relative; display: inline; }
-.study-ref { font-size: 0.8em; color: green; vertical-align: super; cursor: pointer; transition: color 0.3s; }
-html.night-mode .study-ref { color: #90ee90; }
-.xref-ref { font-size: 0.9em; color: #0066cc; vertical-align: sub; cursor: pointer; transition: color 0.3s; }
-html.night-mode .xref-ref { color: #66b3ff; }
-.xref-link { color: #0066cc; text-decoration: none; transition: color 0.3s; }
-html.night-mode .xref-link { color: #66b3ff; }
-.xref-link:hover { text-decoration: underline; }
-.book-nav { text-align: center; margin: 10px 0; }
-.book-nav a { margin: 0 10px; color: #0066cc; text-decoration: none; transition: color 0.3s; }
-html.night-mode .book-nav a { color: #66b3ff; }
-.book-nav a:hover { text-decoration: underline; }
-.chapter-nav { text-align: center; margin: 10px 0; }
-.chapter-nav a { margin: 0 5px; color: #0066cc; text-decoration: none; transition: color 0.3s; }
-html.night-mode .chapter-nav a { color: #66b3ff; }
-.chapter-nav a:hover { text-decoration: underline; }
-.top-link { text-align: right; margin: 10px 0; }
-.top-link a { color: #0066cc; text-decoration: none; font-size: 0.9em; transition: color 0.3s; }
-html.night-mode .top-link a { color: #66b3ff; }
-.top-link a:hover { text-decoration: underline; }
-.footer { text-align: center; font-size: 0.9em; color: #666; margin-top: 20px; transition: color 0.3s; }
-html.night-mode .footer { color: #999; }
-.footer a { color: #0066cc; text-decoration: none; transition: color 0.3s; }
-html.night-mode .footer a { color: #66b3ff; }
-.footer a:hover { text-decoration: underline; }
-.study-note { font-size: 0.9em; color: green; transition: color 0.3s; }
-html.night-mode .study-note { color: #90ee90; }
-.xref-note { font-size: 0.9em; color: #0066cc; transition: color 0.3s; }
-html.night-mode .xref-note { color: #66b3ff; }
-.study-note.hidden, .xref-note.hidden { display: none; }
-.poetry { margin: 15px 0; }
-.poetry-line { margin-left: 20px; }
-.study-container:hover .study-note.hidden, .xref-container:hover .xref-note.hidden {
-    display: inline-block; position: absolute; background-color: #f9f9f9; border: 1px solid #ccc; padding: 5px; z-index: 10; white-space: nowrap; top: -2em; left: 1em; transition: background-color 0.3s, border-color 0.3s;
-}
-html.night-mode .study-container:hover .study-note.hidden, html.night-mode .xref-container:hover .xref-note.hidden {
-    background-color: #333; border-color: #555;
-}
-button { margin: 10px 5px; padding: 8px 15px; background-color: #0066cc; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; }
-button:hover { background-color: #005bb5; }
-html.night-mode button { background-color: #4682b4; }
-html.night-mode button:hover { background-color: #5a9bd4; }
-@media print {
-    button, .top-link, .footer { display: none; }
-    .study-note.hidden, .xref-note.hidden { display: inline-block; }
-}
-.acrostic-title { font-weight: bold; color: purple; text-align: center; margin: 10px 0; transition: color 0.3s; }
-html.night-mode .acrostic-title { color: #dda0dd; }
-/* Stili za zemljevide */
-.maps-section { text-align: center; margin-top: 30px; }
-.maps-section h2 { color: #333; transition: color 0.3s; }
-html.night-mode .maps-section h2 { color: #d3d3d3; }
-.map-preview { max-width: 250px; height: auto; margin: 15px; border: 1px solid #ccc; transition: border-color 0.3s; cursor: pointer; }
-html.night-mode .map-preview { border-color: #555; }
-.map-preview:hover { border-color: #0066cc; }
-"""
-with open(f"{output_dir}/style.css", "w", encoding="utf-8") as f:
-    f.write(css_content)
-
-# --- JavaScript Generation ---
-js_content = """
-function toggleStudyNotes() {
-    const notes = document.querySelectorAll('.study-note');
-    const button = document.getElementById('toggle-study');
-    console.log('Toggling study notes');
-    notes.forEach(note => note.classList.toggle('hidden'));
-    const isVisible = !notes[0].classList.contains('hidden');
-    button.textContent = isVisible ? 'Skrij opombe' : 'Prikaži opombe';
-    localStorage.setItem('studyNotesVisible', isVisible ? 'true' : 'false');
-}
-
-function toggleXrefs() {
-    const xrefs = document.querySelectorAll('.xref-note');
-    const button = document.getElementById('toggle-xrefs');
-    console.log('Toggling xrefs');
-    xrefs.forEach(xref => xref.classList.toggle('hidden'));
-    const isVisible = !xrefs[0].classList.contains('hidden');
-    button.textContent = isVisible ? 'Skrij reference' : 'Prikaži reference';
-    localStorage.setItem('xrefsVisible', isVisible ? 'true' : 'false');
-}
-
-function toggleMode() {
-    const body = document.body;
-    const button = document.getElementById('toggle-mode');
-    body.classList.toggle('night-mode');
-    const isNightMode = body.classList.contains('night-mode');
-    button.textContent = isNightMode ? 'Dnevni način' : 'Nočni način';
-    localStorage.setItem('theme', isNightMode ? 'night' : 'day');
-}
-
-window.onload = function() {
-    console.log('Window loaded, initializing');
-    const studyNotes = document.querySelectorAll('.study-note');
-    const xrefNotes = document.querySelectorAll('.xref-note');
-    const toggleStudyButton = document.getElementById('toggle-study');
-    const toggleXrefsButton = document.getElementById('toggle-xrefs');
-    const toggleModeButton = document.getElementById('toggle-mode');
-
-    // Initialize study notes
-    const studyNotesVisible = localStorage.getItem('studyNotesVisible');
-    if (studyNotesVisible === 'true') {
-        studyNotes.forEach(note => note.classList.remove('hidden'));
-        toggleStudyButton.textContent = 'Skrij opombe';
-    } else {
-        studyNotes.forEach(note => note.classList.add('hidden'));
-        toggleStudyButton.textContent = 'Prikaži opombe';
-    }
-
-    // Initialize cross-references
-    const xrefsVisible = localStorage.getItem('xrefsVisible');
-    if (xrefsVisible === 'true') {
-        xrefNotes.forEach(xref => xref.classList.remove('hidden'));
-        toggleXrefsButton.textContent = 'Skrij reference';
-    } else {
-        xrefNotes.forEach(xref => xref.classList.add('hidden'));
-        toggleXrefsButton.textContent = 'Prikaži reference';
-    }
-
-    // Initialize theme
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'night') {
-        document.body.classList.add('night-mode');
-        toggleModeButton.textContent = 'Dnevni način';
-    } else {
-        document.body.classList.remove('night-mode');
-        toggleModeButton.textContent = 'Nočni način';
-    }
-};
-"""
-with open(f"{output_dir}/script.js", "w", encoding="utf-8") as f:
-    f.write(js_content)
 
 # --- Book List Extraction ---
 books = root.findall(".//osis:div[@type='book']", namespaces=ns)
@@ -205,6 +32,9 @@ for book in books:
     book_id = book.get("osisID")
     title_elem = book.find("osis:title[@type='main']", namespaces=ns)
     short_title = title_elem.get("short", book_id) if title_elem is not None else book_id
+    # Add non-breaking space for two-word book names
+    if " " in short_title:
+        short_title = short_title.replace(" ", "&nbsp;")
     book_list.append((book_id, short_title))
 
 old_testament = book_list[:39]
@@ -215,14 +45,14 @@ def generate_book_nav(main_title, is_index=False):
     if is_index:
         title_line = f'    <h1>{main_title}</h1>'
     else:
-        title_line = f'    <h1><a href="index.html">{main_title}</a></h1>'
+        title_line = f'    <h1><a href="index.php">{main_title}</a></h1>'
     nav_html = [
         title_line,
         '    <div class="book-nav">',
         '      <h3>Stara zaveza</h3>',
-        '      <p>' + " ".join(f'<a href="{book_id}.html">{short_title}</a>' for book_id, short_title in old_testament) + '</p>',
+        '      <p>' + "  ".join(f'<a href="{book_id}.html">{short_title}</a>' for book_id, short_title in old_testament) + '</p>',
         '      <h3>Nova zaveza</h3>',
-        '      <p>' + " ".join(f'<a href="{book_id}.html">{short_title}</a>' for book_id, short_title in new_testament) + '</p>',
+        '      <p>' + "  ".join(f'<a href="{book_id}.html">{short_title}</a>' for book_id, short_title in new_testament) + '</p>',
         '    </div>'
     ]
     return nav_html
@@ -235,9 +65,12 @@ source = root.findtext("osis:osisText/osis:header/osis:work/osis:source", defaul
 source_link = source.replace("TextSource=", "Vir: <a href='https://") + "'>github.com/msavli/SloKJV</a>"
 footer_html = [
     f'    <div class="footer">',
-    f'      <p>Ustvarjeno: {current_datetime}</p>',
-    f'      <p>{rights}</p>',
-    f'      <p>{source_link}</p>',
+    f'      <p>',
+    f'         Ustvarjeno:',
+    f'          {current_datetime}<br>',
+    f'          {rights}<br>',
+    f'          {source_link}',
+    f'      </p>',
     '    </div>'
 ]
 
@@ -246,23 +79,52 @@ header = root.find("osis:osisText/osis:header", namespaces=ns)
 if header is None:
     print("No <header> found in XML!")
 else:
-    print("Found <header> in XML.")
+    print("    Found <header> in XML.")
     work = header.find("osis:work", namespaces=ns)
     if work is None:
         print("No <work> found in <header>!")
     else:
-        print("Found <work> in <header>.")
+        print("    Found <work> in <header>.")
 
 descriptions = root.findall("osis:osisText/osis:header/osis:work/osis:description", namespaces=ns)
-print("Descriptions found in XML:")
+print("    Descriptions found in XML:")
 if descriptions:
     for desc in descriptions:
         text = desc.text if desc.text else "(empty)"
-        print(f"  - {text}")
+        print(f"      {text}")
 else:
-    print("  - No descriptions found! Check XML file path or structure.")
+    print("- No descriptions found! Check XML file path or structure.")
 
 index_content = [
+    '<?php',
+    '/* ------------------------------------------',
+    '   Vključitve & inicializacija',
+    '------------------------------------------- */',
+    "header('Content-Type: text/html; charset=UTF-8');",
+    "if (!defined('SLOKJV_APP')) {",
+    "    define('SLOKJV_APP', true); // omogoči varno vključitev config.php",
+    '}',
+    "require_once __DIR__ . '/../config_biblija.php'; // DB konfiguracija + slokjv_db()",
+    'session_start();',
+    "// Enable error reporting",
+    "ini_set('display_errors', 1);",
+    "ini_set('display_startup_errors', 1);",
+    'error_reporting(E_ALL);',
+    '// Get database connection',
+    '$conn = slokjv_db();',
+    '// Poizvedba za izbiro naključne vrstice',
+    '$sql = "SELECT book, chapter, verse, text FROM verses ORDER BY RAND() LIMIT 1";',
+    '$result = $conn->query($sql);',
+    '$random_verse = "";',
+    'if ($result->num_rows > 0) {',
+    '    $row = $result->fetch_assoc();',
+    '    $random_verse = "<p><a href=\'{$row[\'book\']}.html#{$row[\'chapter\']}.{$row[\'verse\']}\'><strong>{$row[\'book\']} {$row[\'chapter\']}:{$row[\'verse\']}</strong></a> {$row[\'text\']}</p>";',
+    '} else {',
+    '    $random_verse = "<p>Ni podatkov v bazi.</p>";',
+    '}',
+    '$conn->close();',
+    '?>',
+    '',
     "<!DOCTYPE html>",
     '<html lang="sl">',
     "  <head>",
@@ -280,24 +142,60 @@ index_content = [
     '    </script>',
     "  </head>",
     "  <body>",
+    '',
+    # === NOV MENI IN TEMA GUMB (tukaj vstavljeno) ===
+    ' <div class="menu-container">',
+    '     <button class="menu-toggle" onclick="toggleMenu(event)" aria-label="Odpri meni">',
+    '         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+    '             <line x1="3" y1="6" x2="21" y2="6"></line>',
+    '             <line x1="3" y1="12" x2="21" y2="12"></line>',
+    '             <line x1="3" y1="18" x2="21" y2="18"></line>',
+    '         </svg>',
+    '     </button>',
+    '     <div id="dropdownMenu" class="dropdown-menu">',
+    '         <ul>',
+    '             <li><a href="index.php">Domov</a></li>',
+    '             <li><a href="knjige/index.php">Spletni viri in naročila knjig</a></li>',
+    '             <li><a href="knjige/Jezus.php">Jezus</a></li>',
+    '             <li><a href="knjige/o_nas.php">O nas</a></li>',
+    '         </ul>',
+    '     </div>',
+    ' </div>',
+    ' <!-- TEMA GUMB (desno zgoraj) -->',
+    ' <div class="theme-toggle-container">',
+    '     <button type="button" id="toggle-mode" onclick="toggleMode()" aria-label="Preklopi nočni/dnevni način">',
+    '         <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+    '             <circle cx="12" cy="12" r="5"></circle>',
+    '             <line x1="12" y1="1" x2="12" y2="3"></line>',
+    '             <line x1="12" y1="21" x2="12" y2="23"></line>',
+    '             <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>',
+    '             <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>',
+    '             <line x1="1" y1="12" x2="3" y2="12"></line>',
+    '             <line x1="21" y1="12" x2="23" y2="12"></line>',
+    '             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>',
+    '             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>',
+    '         </svg>',
+    '         <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+    '             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>',
+    '         </svg>',
+    '     </button>',
+    ' </div>',
+    '',
 ] + generate_book_nav(main_title, is_index=True) + [
-    "    <div>",
-    "      <ul>",
-]
-if descriptions:
-    index_content.extend([f"        <li>{desc.text}</li>" for desc in descriptions if desc.text and desc.text.strip()])
-else:
-    index_content.append("        <li>No descriptions available in XML.</li>")
-index_content.extend([
-    "      </ul>",
-    "    </div>",
+    '    <div class="center-buttons">',
+    '      <input type="text" id="search-input" placeholder="Vpiši iskalni niz" class="search-input">',
+    '      <button id="search-button" onclick="performSearch()">Izpiši</button>',
+    '    </div>',
+    '    <div class="random-verse">',
+    '      <button id="refresh-verse">Naključna vrstica</button>',
+    '      <div id="random-verse"><?php echo $random_verse; ?></div>',
+    '    </div>',
     "    <div class='maps-section'>",
     "      <h2>Zemljevidi</h2>",
-    "      <p>Kliknite na sliko za ogled v polni velikosti:</p>",
     "      <a href='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Ancient_World_Patriarchs_Slo.jpg' target='_blank'>",
     "        <img src='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Ancient_World_Patriarchs_Slo_thumb.jpg' alt='Stari svet patriarhov' class='map-preview'>",
     "      </a>",
-    "      <a href='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Exodus_and_Canaan_Conquest_Slo.jpg' target'slo_thumb.jpg' alt='_blank'>",
+    "      <a href='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Exodus_and_Canaan_Conquest_Slo.jpg' target='_blank'>",
     "        <img src='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Exodus_and_Canaan_Conquest_Slo_thumb.jpg' alt='Eksodus in osvajanje Kanaana' class='map-preview'>",
     "      </a>",
     "      <a href='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Paul_Journeys_Slo.jpg' target='_blank'>",
@@ -307,26 +205,33 @@ index_content.extend([
     "        <img src='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Israel_New_Testament_Slo_thumb.jpg' alt='Izrael v času Nove zaveze' class='map-preview'>",
     "      </a>",
     "    </div>",
-    '    <div style="text-align: center;">',
-    '      <button id="toggle-mode" onclick="toggleMode()">Nočni način</button>',
+    "    <div>",
+    "      <ul>",
+    "        <li>Sveto Pismo kralja Jakoba, poznano tudi kot Avtorizirana Verzija</li>",
+    "        <li>Posebnosti prevoda:</li>",
+    "        <li>- dodane opombe in reference iz KJV 1611 Cambridge edition</li>",
+    "        <li>- Jezusove besede izpisane z rdečo</li>",
+    "        <li>- [ ] opomba prevajalca, ni v originalu</li>",
+    "        <li>- § razlika med besedilom KJV in ostalimi slovenskimi prevodi</li>",
+    "      </ul>",
+    "      <p>Papirne izvode SloKJV Svetih pisem in ostale knjige lahko naročite v <a href='https://slokjv.si/knjige/'>spletni trgovini.</a> </p>",
     "    </div>",
-] + footer_html + [
+    ' <?php require_once __DIR__ . \'/footer.php\'; ?>',
+    '    <div class="footer">',
+    "      <p>",
+    f"         Ustvarjeno: {datetime.now().strftime('%d.%m.%Y %H:%M:%S')}<br>",
+    "          Licenca: CC BY-NC-ND 4.0<br>",
+    "          Vir: <a href='https://github.com/msavli/SloKJV'>github.com/msavli/SloKJV</a>",
+    "      </p>",
+    "    </div>",
     '    <script src="./script.js"></script>',
     "  </body>",
     "</html>",
-])
+]
 
-index_content.extend([
-    "    <div style='text-align: center;'>",
-    "      <button id='toggle-mode' onclick='toggleMode()'>Nočni način</button>",
-    "      <br><br>",
-    "      <a href='search.php'>Iskanje po Svetem pismu</a>",
-    "    </div>",
-])
-
-with open(f"{output_dir}/index.html", "w", encoding="utf-8") as f:
+with open(f"{output_dir}/index.php", "w", encoding="utf-8") as f:
     f.write("\n".join(index_content))
-print(f"Wrote file: {output_dir}/index.html")
+print(f"      Wrote file: {output_dir}/index.php")
 
 # --- Helper Functions ---
 def process_note_content(note_elem):
@@ -421,7 +326,7 @@ def process_title_content(title_elem, chapter_id):
     study_counter = 0
     xref_counter = 0
     for sub_elem in title_elem:
-        if sub_elem.tag == f"{{{ns['osis']}}}transChange" and sub_elem.get("type") == "added":
+        if sub_elem.tag == f"{{{ns['osis']}}}transChange" and child.get("type") == "added":
             added_text = sub_elem.text.strip() if sub_elem.text and sub_elem.text.strip() else ""
             if title_content and not title_content.endswith(" "):
                 title_content += " "
@@ -477,11 +382,16 @@ for i, book in enumerate(books):
         print("No osisID found for a book, skipping...")
         continue
     
-    print(f"Processing book: {book_id}")
+    print(f"      Processing book: {book_id}")
     
     title_elem = book.find("osis:title[@type='main']", namespaces=ns)
     short_title = title_elem.get("short", book_id) if title_elem is not None else book_id
     full_title = title_elem.text if title_elem is not None and title_elem.text else book_id
+    # Add non-breaking space for two-word book names
+    if " " in short_title:
+        short_title = short_title.replace(" ", "&nbsp;")
+    if " " in full_title:
+        full_title = full_title.replace(" ", "&nbsp;")
     
     html_content = [
         "<!DOCTYPE html>",
@@ -501,13 +411,53 @@ for i, book in enumerate(books):
         '    </script>',
         "  </head>",
         "  <body>",
+        '',
+        # === NOV MENI IN TEMA GUMB (tukaj vstavljeno) ===
+        ' <div class="menu-container">',
+        '     <button class="menu-toggle" onclick="toggleMenu(event)" aria-label="Odpri meni">',
+        '         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+        '             <line x1="3" y1="6" x2="21" y2="6"></line>',
+        '             <line x1="3" y1="12" x2="21" y2="12"></line>',
+        '             <line x1="3" y1="18" x2="21" y2="18"></line>',
+        '         </svg>',
+        '     </button>',
+        '     <div id="dropdownMenu" class="dropdown-menu">',
+        '         <ul>',
+        '             <li><a href="index.php">Domov</a></li>',
+        '             <li><a href="knjige/index.php">Spletni viri in naročila knjig</a></li>',
+        '             <li><a href="knjige/Jezus.php">Jezus</a></li>',
+        '             <li><a href="knjige/o_nas.php">O nas</a></li>',
+        '         </ul>',
+        '     </div>',
+        ' </div>',
+        ' <!-- TEMA GUMB (desno zgoraj) -->',
+        ' <div class="theme-toggle-container">',
+        '     <button type="button" id="toggle-mode" onclick="toggleMode()" aria-label="Preklopi nočni/dnevni način">',
+        '         <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+        '             <circle cx="12" cy="12" r="5"></circle>',
+        '             <line x1="12" y1="1" x2="12" y2="3"></line>',
+        '             <line x1="12" y1="21" x2="12" y2="23"></line>',
+        '             <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>',
+        '             <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>',
+        '             <line x1="1" y1="12" x2="3" y2="12"></line>',
+        '             <line x1="21" y1="12" x2="23" y2="12"></line>',
+        '             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>',
+        '             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>',
+        '         </svg>',
+        '         <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+        '             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>',
+        '         </svg>',
+        '     </button>',
+        ' </div>',
+        '',
     ] + generate_book_nav(main_title, is_index=False) + [
-        '    <div style="text-align: center;">',
-        '      <button id="toggle-study" onclick="toggleStudyNotes()">Prikaži opombe</button>',
-        '      <button id="toggle-xrefs" onclick="toggleXrefs()">Prikaži reference</button>',
-        '      <button id="toggle-mode" onclick="toggleMode()">Nočni način</button>',
-        "    </div>",
-        f"    <h1>{full_title} ({book_id})</h1>",
+        '    <div class="center-buttons">',
+        '      <button id="toggle-study" onclick="toggleStudyNotes()">Odpri opombe</button>',
+        '      <button id="toggle-xrefs" onclick="toggleXrefs()">Odpri reference</button>',
+        '      <input type="text" id="search-input" placeholder="Vpiši iskalni niz" class="search-input">',
+        '      <button id="search-button" onclick="performSearch()">Izpiši</button>',
+        '    </div>',
+        f"    <h2>{full_title} ({book_id})</h2>",
     ]
     
     chapters = book.findall("osis:chapter", namespaces=ns)
@@ -515,7 +465,7 @@ for i, book in enumerate(books):
     chapter_nav = f"    <div class='chapter-nav'>" + " ".join(f"<a href='#{num}'>{num}</a>" for num in chapter_nums) + "</div>"
     html_content.append(chapter_nav)
 
-    print(f"Found {len(chapters)} chapters in {book_id}")
+    print(f"        Found {len(chapters)} chapters in {book_id}")
     for chapter in chapters:
         chapter_id = chapter.get("osisID", "Unknown Chapter")
         chapter_num = chapter_id.split(".")[1]
@@ -523,7 +473,7 @@ for i, book in enumerate(books):
             chapter_title = f"Psalm {chapter_num}"
         else:
             chapter_title = f"{short_title}, {chapter_num}. poglavje"
-        html_content.append(f"    <h2><span id='{chapter_num}'>{chapter_title}</span></h2>")
+        html_content.append(f"    <h3><span id='{chapter_num}'>{chapter_title}</span></h3>")
 
         psalm_title_elem = chapter.find("osis:title[@type='psalm']", namespaces=ns)
         if psalm_title_elem is not None:
@@ -534,9 +484,9 @@ for i, book in enumerate(books):
         study_counter = 0
         xref_counter = 0
         poetry_lines = []
-
         first_verse_in_paragraph = True
-        for elem in chapter:
+
+        for elem in chapter.iter():
             if elem.tag == f"{{{ns['osis']}}}verse":
                 verse_id = elem.get("osisID", "Unknown Verse")
                 verse_num = verse_id.split(".")[-1]
@@ -616,6 +566,18 @@ for i, book in enumerate(books):
                             if not tail_text.startswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")) and not verse_content.endswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")):
                                 verse_content += " "
                             verse_content += tail_text
+                    elif sub_elem.tag == f"{{{ns['osis']}}}inscription":
+                        inscription_text = sub_elem.text.strip() if sub_elem.text and sub_elem.text.strip() else ""
+                        if verse_content and not verse_content.endswith((" ", "›", "‹")):
+                            verse_content += " "
+                        verse_content += f"<span class='inscription'>{inscription_text}</span>"
+                        if sub_elem.tail and sub_elem.tail.strip():
+                            tail_text = sub_elem.tail.strip()
+                            if not tail_text.startswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")) and not verse_content.endswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")):
+                                verse_content += " "
+                            verse_content += tail_text
+                    else:
+                        print(f"Unhandled tag in {verse_id}: {sub_elem.tag}")
 
                 if verse_content.strip():
                     if first_verse_in_paragraph:
@@ -627,13 +589,31 @@ for i, book in enumerate(books):
                 if elem.tail and elem.tail.strip():
                     paragraph += " " + elem.tail.strip()
 
+            elif elem.tag == f"{{{ns['osis']}}}lg":
+                for line_elem in elem.findall(f"{{{ns['osis']}}}l"):
+                    line_text = ""
+                    if line_elem.text and line_elem.text.strip():
+                        line_text += line_elem.text.strip()
+                    for sub_line in line_elem:
+                        if sub_line.tag == f"{{{ns['osis']}}}q":
+                            who = sub_line.get("who", "")
+                            line_text += process_quote_element(sub_line, who, chapter_id)
+                        if sub_line.tail and sub_line.tail.strip():
+                            line_text += " " + sub_line.tail.strip()
+                    if line_text.strip():
+                        poetry_lines.append(f"    <div class='poetry-line'>{line_text.strip()}</div>")
+                    if line_elem.tail and line_elem.tail.strip():
+                        poetry_lines.append(f"    <div class='poetry-line'>{line_elem.tail.strip()}</div>")
+
         if poetry_lines:
             html_content.append("    <div class='poetry'>")
             html_content.extend(poetry_lines)
             html_content.append("    </div>")
+            poetry_lines = []
         if paragraph.strip():
             html_content.append(f"    <p>{paragraph.strip()}</p>")
-        
+            paragraph = ""
+
         colophons = chapter.findall(".//osis:div[@type='colophon']", namespaces=ns)
         for colophon in colophons:
             colophon_text = process_colophon_content(colophon)
@@ -643,8 +623,6 @@ for i, book in enumerate(books):
                     html_content.append(f"    <div class='colophon' id='{colophon_id}'>{colophon_text}</div>")
                 else:
                     html_content.append(f"    <div class='colophon'>{colophon_text}</div>")
-        
-        html_content.append('    <div class="top-link"><a href="#">⇧ Na vrh</a></div>')
 
     colophons = book.findall(".//osis:div[@type='colophon']", namespaces=ns)
     for colophon in colophons:
@@ -662,23 +640,28 @@ for i, book in enumerate(books):
     nav_links = ['    <div class="book-nav">']
     if prev_book:
         nav_links.append(f'      <a href="{prev_book}.html">Prejšnja knjiga</a>')
-    nav_links.append('      <a href="index.html">Kazalo</a>')
+    nav_links.append('      <a href="index.php">Kazalo</a>')
     if next_book:
         nav_links.append(f'      <a href="{next_book}.html">Naslednja knjiga</a>')
     nav_links.append('    </div>')
     html_content.extend(nav_links)
 
     html_content.extend(footer_html)
-    html_content.append('    <script src="./script.js"></script>')
     html_content.extend([
-        "  </body>",
-        "</html>",
+    '    <script src="./script.js"></script>',
+    "  </body>",
+    "</html>",
     ])
 
     safe_book_id = book_id.replace(".", "_")
     file_path = f"{output_dir}/{safe_book_id}.html"
     with open(file_path, "w", encoding="utf-8") as f:
         f.write("\n".join(html_content))
-    print(f"Wrote file: {file_path}")
+    print(f"        Wrote file: {file_path}")
 
-print(f"HTML files generated in {output_dir}/")
+print(f"    HTML files generated in {output_dir}/")
+
+print("\n" + "    " + "="*60)
+print("    KONCAL KREIRANJE .html DATOTEK z osis2html.py")
+print("    " + "="*60)
+print("\n")
