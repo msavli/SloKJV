@@ -1,0 +1,4 @@
+File not found: "/home/pc/Dokumenti/GitHub/SloKJV/SloKJV.epub"
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos
+
+EPUBCheck completed
