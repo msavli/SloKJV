@@ -1,9 +1,13 @@
-.verseNbr{
-  font-size:60%;
-  font-weight: bold;
-  display:inline-block;
-  vertical-align: text-top;
+.verseNbr {
+    font-size: 0.6em !important;
+    font-weight: bold;
+    vertical-align: super;
+}
 
+/* Dodatno: prepreči, da bralnik ignorira */
+sup.verseNbr {
+    font-size: 0.6em !important;
+    vertical-align: super;
 }
 
 @font-face {
