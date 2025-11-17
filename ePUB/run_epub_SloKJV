@@ -1,0 +1,209 @@
+#!/bin/bash
+# Set paths
+SloKJVepubPath=/home/pc/Dokumenti/GitHub/SloKJV/ePUB
+SloKJV_Module_Path=/home/pc/.sword
+SloKJV_Mods_Path=/home/pc/.sword/mods.d
+SloKJV_Github=/home/pc/Dokumenti/GitHub/SloKJV
+
+# echo
+# echo " Vlecem iz Githuba.... z git stash"
+# echo
+# cd "$SloKJV_Github"
+# git stash push -m "auto-stash before pull" --quiet
+# git pull --rebase
+# git stash pop --quiet || true
+
+# Create folders
+mkdir -p "$SloKJVepubPath/html" "$SloKJV_Module_Path/modules/texts/ztext/slokjv"
+
+# Briši stare HTML datoteke (razen 00_*.xhtml)
+find "$SloKJVepubPath/html" -type f ! -name "00_*.xhtml" -delete
+
+# Kopiraj predloge
+cp "$SloKJVepubPath/templates/foreword.html" "$SloKJVepubPath/html/02-foreword.html"
+cp "$SloKJVepubPath/templates/jezus.html" "$SloKJVepubPath/html/03-jezus.html"
+cp "$SloKJVepubPath/templates/cover.html" "$SloKJVepubPath/html/00_preimenuj_me_v_cover.xhtml"
+cp "$SloKJVepubPath/templates/content_opf.xhtml" "$SloKJVepubPath/html/00_vsebino_metadata_daj_v_content.opf.xhtml"
+echo "<html><body></body></html>" > "$SloKJVepubPath/html/00_pobrisi_Section001.xhtml"
+echo "<html><body></body></html>" > "$SloKJVepubPath/html/00_dodaj_font.xhtml"
+echo "<html><body></body></html>" > "$SloKJVepubPath/html/00_vsebino_toc.ncx_prekopiraj_v_toc.ncx_fajl.xhtml"
+
+echo
+echo " Prekopiram conf datoteko SloKJV modula "
+cp "$SloKJV_Github/slokjv.conf" "$SloKJV_Mods_Path/slokjv.conf"
+
+echo
+echo " Kreiram SloKJV modul iz SloKJV_sword.xml datoteke ..."
+osis2mod "$SloKJV_Module_Path/modules/texts/ztext/slokjv" "$SloKJV_Github/SloKJV_sword.xml" -v KJVA -z
+
+echo
+echo " Kreiram html datoteke..."
+echo
+cd "$SloKJVepubPath"
+python3 test.py
+
+
+
+cd html
+
+# Preimenuj knjige v *-0000.html (če obstajajo)
+echo
+echo " Preimenujem datoteke knjig da bodo imele 69-Rev.html -> 69-Rev-0000.html"
+for file in *.html; do
+    base="${file%.html}"
+    if [[ $base =~ ^([0-9]{2}-[A-Z0-9][A-Za-z]+)$ ]]; then
+        prefix="${BASH_REMATCH[1]}"
+        mv "$file" "${prefix}-0000.html" 2>/dev/null || true
+    fi
+done
+
+echo
+echo " Zdruzi knjige in poglavja od pripadajocih knjig -> 69-Rev.html "
+
+# Zberi edinstvene knjižne kode
+book_prefixes=()
+while IFS= read -r -d '' file; do
+    if [[ "$file" =~ ^\.?/([0-9]{2}-[A-Z0-9][A-Za-z]+)-[0-9]{4}\.html$ ]]; then
+        book_prefixes+=("${BASH_REMATCH[1]}")
+    fi
+done < <(find . -maxdepth 1 -name "[0-9][0-9]-*-000[0-9].html" -print0 2>/dev/null)
+
+book_prefixes=($(printf '%s\n' "${book_prefixes[@]}" | sort -u))
+
+for prefix in "${book_prefixes[@]}"; do
+    output_file="${prefix}.html"
+
+    chapter_files=()
+    while IFS= read -r -d '' chap; do
+        chapter_files+=("$chap")
+    done < <(find . -maxdepth 1 -name "${prefix}-[0-9][0-9][0-9][0-9].html" -print0 2>/dev/null | sort -z)
+
+    [ ${#chapter_files[@]} -eq 0 ] && continue
+
+    echo "   Združujem $prefix iz ${#chapter_files[@]} poglavij"
+
+    cat > "$output_file" << 'EOF'
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="../Styles/style.css"/>
+</head>
+<body>
+EOF
+
+    for chapter_file in "${chapter_files[@]}"; do
+        echo "     + $(basename "$chapter_file")"
+        grep -q "<body>" "$chapter_file" 2>/dev/null || continue
+        sed -n '/<body>/,/<\/body>/p' "$chapter_file" | \
+        sed '1s/<body>//; $s/<\/body>//' | \
+        sed '/^$/d' >> "$output_file"
+        echo '<h4><a href="01-toc.html">Na kazalo</a></h4>' >> "$output_file"
+        echo '<span style="page-break-after: always"></span>' >> "$output_file"
+    done
+
+    [ -f "$output_file" ] && [ $(wc -l < "$output_file") -gt 10 ] && sed -i '$d' "$output_file" && sed -i '$d' "$output_file"
+    echo '<h4><a href="01-toc.html">Na kazalo</a></h4>' >> "$output_file"
+    echo '<span style="page-break-after: always"></span>' >> "$output_file"
+    cat >> "$output_file" << 'EOF'
+</body>
+</html>
+EOF
+done
+
+
+
+echo " Pobrisem datoteke poglavij (pusti samo knjige: 01-toc.html, 02-foreword.html, 03-jezus.html, *.html knjige)"
+find . -type f -name "*.html" \
+     ! -name "01-toc.html" \
+     ! -name "02-foreword.html" \
+     ! -name "03-jezus.html" \
+     -regextype posix-egrep \
+     -regex ".*/[0-9]{2}-[A-Za-z0-9]+-[0-9]{4}\.html" \
+     -delete 2>/dev/null || true
+
+
+echo
+echo " Popravljam html datoteke..."
+sed -i ':a;N;$!ba;s/\(<span class=\"verseNbr\">[0-9]\+<\/span>\)\n \n/<br \/>\n \1\n /g' *.html 2>/dev/null || true
+
+echo " Hebrejske črke - pobrišem ALEF ... v Ps 119"
+sed -i '/[א-ת]/d' 22-Ps.html 2>/dev/null || true
+
+echo " Popravi kazalo"
+sed -i ':a;N;$!ba;s/<ul>\n<li>\n <a href=\"01-toc.html\">Kazalo knjig<\/a>\n <\/li>/<H2>Kazalo knjig<\/H2>\n<ul>/g' 01-toc.html 2>/dev/null || true
+sed -i ':a;N;$!ba;s/<\/a>\n \n <ul>/<\/a><ul>/g' 01-toc.html 2>/dev/null || true
+sed -i ':a;N;$!ba;s/<li>\n <a/<li> <a/g' 01-toc.html 2>/dev/null || true
+sed -i ':a;N;$!ba;s/<li> <a href=\"02-foreword.html\">Predgovor<\/a>\n <\/li>/<li><a href=\"02-foreword.html\">Kolofon in predgovor<\/a><\/li><br \/>/g' 01-toc.html 2>/dev/null || true
+
+echo " V podrobnem kazalu odstrani naslove poglavij"
+sed -i 's/^ <a href=\"\([-a-zA-Z0-9]*\).html\">\([0-9A-Za-zčžšČŽŠ., ]*\) \([0-9]*\)<\/a>/<a href=\"\1.html\">\3<\/a>/g' 01-toc.html 2>/dev/null || true
+
+echo " -0001.html -> .html#chapter1"
+sed -i 's/-\([0-9]\{4\}\)\.html/\.html#chapter\1/g' 01-toc.html 2>/dev/null || true
+sed -i 's/-\([0-9]\{4\}\)\.html/\.html#chapter\1/g' ../toc.ncx 2>/dev/null || true
+
+echo " Popravi datum"
+current_date_eng=$(date +%Y-%m-%d)
+current_date_slo=$(date +"%d. %m. %Y")
+sed -i "s/2007\/opf\">[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}/2007\/opf\">$current_date_eng/" 00_vsebino_metadata_daj_v_content.opf.xhtml 2>/dev/null || true
+sed -i "s/Datum\:/Datum\: $current_date_slo/" 02-foreword.html 2>/dev/null || true
+
+echo " V kazalo vnese Novo in Staro zavezo"
+#  <li><h2>Stara zaveza</h2></li>
+#  <li><a href="04-
+sed -i 's|<li> <a href="04-|<\/ul><h2>Stara zaveza<\/h2>\n<li><a href="04-|g' 01-toc.html 2>/dev/null || true
+#  <li><h2>Nova zaveza</h2></li>
+#  <li> <a href="43-
+sed -i 's|<li> <a href="43-|<h2>Nova zaveza<\/h2>\n<li><a href="43-|g' 01-toc.html 2>/dev/null || true
+# cat $SloKJVepubPath/html/01-toc.html |grep zaveza
+
+echo
+echo "   Pozene Urejevalnik besedil in v njem pripravi toc.ncx"
+echo
+gnome-terminal -- sh -c "gedit $SloKJVepubPath/toc.ncx"
+
+
+echo
+echo "   Pozene Sigil 2.0...     zakomentiran"
+echo
+echo "   Nadaljuj z  Text, desni klik, add existing files "
+echo "   iz mape $SloKJVepubPath/html "
+echo
+echo "   Potem imas v imenih datotek na vrhu navodila "
+echo
+#echo "  Ko to koncas to objavi na https://kdp.amazon.com/ "
+#echo
+
+
+
+/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=sigil --file-forwarding com.sigil_ebook.Sigil >/dev/null 2>&1
+
+echo " Prekopira v Github mapo "
+mv "$SloKJVepubPath/untitled.epub" "$SloKJV_Github/SloKJV.epub" 2>/dev/null || true
+
+echo "   Poglejmo ePUB z mupdf bralnikom ..."
+mupdf $SloKJV_Github/SloKJV.epub
+
+
+echo
+echo "   Preveri ePUB "
+echo
+java -jar /home/pc/util/epubcheck-5.1.0/epubcheck.jar "$SloKJV_Github/SloKJV.epub" >"$SloKJVepubPath/log.txt" 2>&1
+echo 
+echo "   Pokaze napake v ePUB "
+echo 
+gnome-terminal -- sh -c "gedit $SloKJVepubPath/log.txt"
+
+
+# ======== Pobrise vse  *.html  datoteke =====
+echo "   Pocisti datoteke za seboj da ni guzve na Githubu"
+echo "     Brisanje datotek ...."
+                find $SloKJVepubPath/html -type f -name "*.xhtml"  -exec rm {} +   >/dev/null 2>&1
+                find $SloKJVepubPath/html -type f -name "*.html"  -exec rm {} +    >/dev/null 2>&1
+# ======== Pobrise vse  *.html  datoteke =====
+
+echo
+echo " Konec"
+echo
