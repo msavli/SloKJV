@@ -1,13 +1,9 @@
-.verseNbr {
-    font-size: 0.6em !important;
-    font-weight: bold;
-    vertical-align: super;
-}
+.verseNbr{
+  font-size:60%;
+  font-weight: bold;
+  display:inline-block;
+  vertical-align: text-top;
 
-/* Dodatno: prepreči, da bralnik ignorira */
-sup.verseNbr {
-    font-size: 0.6em !important;
-    vertical-align: super;
 }
 
 @font-face {
@@ -54,4 +50,35 @@ H2 {
 
 .center-text {
     text-align: center;
+}
+
+body:not(.cover) {
+    text-align: justify;
+}
+
+/* Lepše poglavja v kazalu */
+ul ul {
+    margin: 0.3em 0 0.5em 1.5em;
+    font-size: 90%;
+}
+ul ul li {
+    display: inline;
+    margin-right: 0.5em;
+}
+ul ul li:not(:last-child)::after {
+    content: " · ";
+    margin-left: 0.5em;
+}
+
+sup.footnote {
+    font-size: 60%;
+    vertical-align: super;
+    color: blue;
+    cursor: pointer;
+}
+div.footnote {
+    font-size: 85%;
+    margin: 1em 0;
+    padding: 0.5em;
+    border-top: 1px solid #ccc;
 }

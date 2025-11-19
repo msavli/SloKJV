@@ -36,12 +36,12 @@ echo
 echo " Kreiram SloKJV modul iz SloKJV_sword.xml datoteke ..."
 osis2mod "$SloKJV_Module_Path/modules/texts/ztext/slokjv" "$SloKJV_Github/SloKJV_sword.xml" -v KJVA -z
 
+
 echo
 echo " Kreiram html datoteke..."
 echo
 cd "$SloKJVepubPath"
 python3 test.py
-
 
 
 cd html
@@ -99,8 +99,8 @@ EOF
         sed -n '/<body>/,/<\/body>/p' "$chapter_file" | \
         sed '1s/<body>//; $s/<\/body>//' | \
         sed '/^$/d' >> "$output_file"
-        echo '<h4><a href="01-toc.html">Na kazalo</a></h4>' >> "$output_file"
-        echo '<span style="page-break-after: always"></span>' >> "$output_file"
+        #echo '<h4><a href="01-toc.html">Na kazalo</a></h4>' >> "$output_file"
+        #echo '<span style="page-break-after: always"></span>' >> "$output_file"
     done
 
     [ -f "$output_file" ] && [ $(wc -l < "$output_file") -gt 10 ] && sed -i '$d' "$output_file" && sed -i '$d' "$output_file"
@@ -159,10 +159,12 @@ sed -i 's|<li> <a href="04-|<\/ul><h2>Stara zaveza<\/h2>\n<li><a href="04-|g' 01
 sed -i 's|<li> <a href="43-|<h2>Nova zaveza<\/h2>\n<li><a href="43-|g' 01-toc.html 2>/dev/null || true
 # cat $SloKJVepubPath/html/01-toc.html |grep zaveza
 
+
 echo
 echo "   Pozene Urejevalnik besedil in v njem pripravi toc.ncx"
 echo
 gnome-terminal -- sh -c "gedit $SloKJVepubPath/toc.ncx"
+
 
 
 echo
@@ -200,8 +202,8 @@ gnome-terminal -- sh -c "gedit $SloKJVepubPath/log.txt"
 # ======== Pobrise vse  *.html  datoteke =====
 echo "   Pocisti datoteke za seboj da ni guzve na Githubu"
 echo "     Brisanje datotek ...."
-                find $SloKJVepubPath/html -type f -name "*.xhtml"  -exec rm {} +   >/dev/null 2>&1
-                find $SloKJVepubPath/html -type f -name "*.html"  -exec rm {} +    >/dev/null 2>&1
+#                find $SloKJVepubPath/html -type f -name "*.xhtml"  -exec rm {} +   >/dev/null 2>&1
+#                find $SloKJVepubPath/html -type f -name "*.html"  -exec rm {} +    >/dev/null 2>&1
 # ======== Pobrise vse  *.html  datoteke =====
 
 echo

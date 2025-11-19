@@ -10,7 +10,7 @@
     <h3 class="center-text">{{ chapter.nbr }}. poglavje</h3>
     {% for verse in chapter.verses %}
         <sup class="verseNbr">{{ verse.nbr }}</sup>
-        {{ verse.content }}
+        {{ verse.content | safe }}  {# ali pa custom filter, ki naredi post-processing #}
     {% endfor %}
     <h4><a href="01-toc.html">Na kazalo</a></h4>
     <span style="page-break-after: always"></span>

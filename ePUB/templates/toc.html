@@ -15,11 +15,11 @@
 <li>
  <a href="{{book.file}}">{{book.name}}</a>
  {% if book.chapters|length %}
- <ul>
+ <span class="chapter-list">
  {%for chapter in book.chapters -%}
- <a href="{{chapter.file}}">{{chapter.name}}</a>, 
+ <a href="{{chapter.file}}">{{chapter.name}}</a>
  {% endfor -%}
- </ul>
+ </span>
  {% endif -%}
 </li>
 {% endfor -%}

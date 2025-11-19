@@ -68,12 +68,14 @@ def get_verse(bookStr, chapterInt, verseNbr, moduleName, mgr):
     mgr.setGlobalOption("Hebrew Cantillation", "Off")
     mgr.setGlobalOption("Strong's Numbers", "Off")
     mgr.setGlobalOption("Headings", "Off")
-    mgr.setGlobalOption("Footnotes", "Off")
-    mgr.setGlobalOption("Textual Variants", "On")
+    mgr.setGlobalOption("Footnotes", "On")
+    mgr.setGlobalOption("Textual Variants", "Off")
+    mgr.setGlobalOption("Cross-references", "Off")     # ← VKLOPLJENO (če modul ima xref)
     mgr.setGlobalOption("Morphological Tags", "Off")
     mgr.setGlobalOption("Lemmas", "Off")
     mgr.setGlobalOption("Greek Accents", "Off")
     return mod.renderText()
+
 
 def bookPrefix(bookAbbr):
     cnt = 1
