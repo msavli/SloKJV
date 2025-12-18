@@ -1,5 +1,5 @@
 # SloKJV
-## Sveto pismo kralja Jakoba (1769) v slovenščini
+## Sveto pismo kralja Jakoba (1769) v slovenščini, [slokjv.si](https://slokjv.si)
 
 [![Knjiga](slike/Slika_knjige_v_perspektivi_transparent_400.png?raw=true "SloKJV")](https://slokjv.si/)
 
@@ -78,7 +78,7 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
 
 ## *English*
 
-## The King James Version Bible (1769) translated from English to Slovenian language
+## The King James Version Bible (1769) translated from English to Slovenian language  [slokjv.si](https://slokjv.si)
 
 Translation project **King James Version** Bible in to Slovenian language since May 2010 to May 2022. 66 books have been translated. Since then, proofreading and corrections have been made.
 
