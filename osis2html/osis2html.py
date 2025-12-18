@@ -28,10 +28,78 @@ os.makedirs(output_dir, exist_ok=True)
 # --- Book List Extraction ---
 books = root.findall(".//osis:div[@type='book']", namespaces=ns)
 book_list = []
+slovenian_abbr = {
+    "Gen": "1 Mz",
+    "Exod": "2 Mz",
+    "Lev": "3 Mz",
+    "Num": "4 Mz",
+    "Deut": "5 Mz",
+    "Josh": "Joz",
+    "Judg": "Sod",
+    "Ruth": "Rut",
+    "1Sam": "1 Sam",
+    "2Sam": "2 Sam",
+    "1Kgs": "1 Kralj",
+    "2Kgs": "2 Kralj",
+    "1Chr": "1 Krn",
+    "2Chr": "2 Krn",
+    "Ezra": "Ezr",
+    "Neh": "Neh",
+    "Esth": "Est",
+    "Job": "Job",
+    "Ps": "Ps",
+    "Prov": "Prg",
+    "Eccl": "Prd",
+    "Song": "Pp",
+    "Isa": "Iz",
+    "Jer": "Jer",
+    "Lam": "Žal",
+    "Ezek": "Ezk",
+    "Dan": "Dan",
+    "Hos": "Oz",
+    "Joel": "Jl",
+    "Amos": "Am",
+    "Obad": "Abd",
+    "Jonah": "Jon",
+    "Mic": "Mik",
+    "Nah": "Nah",
+    "Hab": "Hab",
+    "Zeph": "Sof",
+    "Hag": "Ag",
+    "Zech": "Zah",
+    "Mal": "Mal",
+    "Matt": "Mt",
+    "Mark": "Mr",
+    "Luke": "Lk",
+    "John": "Jn",
+    "Acts": "Apd",
+    "Rom": "Rim",
+    "1Cor": "1 Kor",
+    "2Cor": "2 Kor",
+    "Gal": "Gal",
+    "Eph": "Ef",
+    "Phil": "Flp",
+    "Col": "Kol",
+    "1Thess": "1 Tes",
+    "2Thess": "2 Tes",
+    "1Tim": "1 Tim",
+    "2Tim": "2 Tim",
+    "Titus": "Tit",
+    "Phlm": "Flm",
+    "Heb": "Heb",
+    "Jas": "Jak",
+    "1Pet": "1 Pt",
+    "2Pet": "2 Pt",
+    "1John": "1 Jn",
+    "2John": "2 Jn",
+    "3John": "3 Jn",
+    "Jude": "Jud",
+    "Rev": "Raz",
+}
 for book in books:
     book_id = book.get("osisID")
     title_elem = book.find("osis:title[@type='main']", namespaces=ns)
-    short_title = title_elem.get("short", book_id) if title_elem is not None else book_id
+    short_title = slovenian_abbr.get(book_id, book_id) if title_elem is not None else book_id
     # Add non-breaking space for two-word book names
     if " " in short_title:
         short_title = short_title.replace(" ", "&nbsp;")
@@ -42,12 +110,12 @@ new_testament = book_list[39:]
 
 # --- Navigation Generation ---
 def generate_book_nav(main_title, is_index=False):
-    if is_index:
-        title_line = f'    <h1>{main_title}</h1>'
-    else:
-        title_line = f'    <h1><a href="index.php">{main_title}</a></h1>'
+    # if is_index:
+        # title_line = f'    <h4>{main_title}</h4>'
+    # else:
+        # title_line = f'    <h1><a href="index.php">{main_title}</a></h1>'
     nav_html = [
-        title_line,
+        # --- title_line,
         '    <div class="book-nav">',
         '      <h3>Stara zaveza</h3>',
         '      <p>' + "  ".join(f'<a href="{book_id}.html">{short_title}</a>' for book_id, short_title in old_testament) + '</p>',
@@ -132,55 +200,109 @@ index_content = [
     '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
     f"    <title>{main_title}</title>",
     '    <link rel="stylesheet" href="./style.css">',
-    '    <script>',
-    '      (function() {',
-    '        const savedTheme = localStorage.getItem("theme");',
-    '        if (savedTheme === "night") {',
-    '          document.documentElement.classList.add("night-mode");',
-    '        }',
-    '      })();',
-    '    </script>',
     "  </head>",
     "  <body>",
     '',
     # === NOV MENI IN TEMA GUMB (tukaj vstavljeno) ===
-    ' <div class="menu-container">',
-    '     <button class="menu-toggle" onclick="toggleMenu(event)" aria-label="Odpri meni">',
-    '         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
-    '             <line x1="3" y1="6" x2="21" y2="6"></line>',
-    '             <line x1="3" y1="12" x2="21" y2="12"></line>',
-    '             <line x1="3" y1="18" x2="21" y2="18"></line>',
-    '         </svg>',
-    '     </button>',
-    '     <div id="dropdownMenu" class="dropdown-menu">',
-    '         <ul>',
-    '             <li><a href="index.php">Domov</a></li>',
-    '             <li><a href="knjige/index.php">Spletni viri in naročila knjig</a></li>',
-    '             <li><a href="knjige/Jezus.php">Jezus</a></li>',
-    '             <li><a href="knjige/o_nas.php">O nas</a></li>',
-    '         </ul>',
-    '     </div>',
-    ' </div>',
-    ' <!-- TEMA GUMB (desno zgoraj) -->',
-    ' <div class="theme-toggle-container">',
-    '     <button type="button" id="toggle-mode" onclick="toggleMode()" aria-label="Preklopi nočni/dnevni način">',
-    '         <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
-    '             <circle cx="12" cy="12" r="5"></circle>',
-    '             <line x1="12" y1="1" x2="12" y2="3"></line>',
-    '             <line x1="12" y1="21" x2="12" y2="23"></line>',
-    '             <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>',
-    '             <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>',
-    '             <line x1="1" y1="12" x2="3" y2="12"></line>',
-    '             <line x1="21" y1="12" x2="23" y2="12"></line>',
-    '             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>',
-    '             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>',
-    '         </svg>',
-    '         <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
-    '             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>',
-    '         </svg>',
-    '     </button>',
-    ' </div>',
+    # === NOV MENI IN TEMA GUMB ===
+    ' <div class="header-top">',
+    '    <!-- Meni container -->',
+    '    <div class="menu-container">',
+    '        <button class="menu-toggle" onclick="toggleMenu(event)" aria-label="Odpri meni">',
+    '            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+    '                <line x1="3" y1="6" x2="21" y2="6"></line>',
+    '                <line x1="3" y1="12" x2="21" y2="12"></line>',
+    '                <line x1="3" y1="18" x2="21" y2="18"></line>',
+    '            </svg>',
+    '        </button>',
+    '        <div id="dropdownMenu" class="dropdown-menu">',
+    '            <ul>',
+    '                <li><a href="index.php">Domov</a></li>',
+    '                <li><a href="knjige/novosti.php">Novosti</a></li>',
+    '                <li><a href="knjige/index.php">Knjige, spletni viri</a></li>',
+    '                <li><a href="knjige/Jezus.php">Jezus</a></li>',
+    '                <li><a href="knjige/o_nas.php">O nas</a></li>',
+    '                <li><a href="bin/index.php" target="_blank" aria-label="Datoteke za različne platforme" title="Datoteke za Windows, Apple, Android, MP3, EPUB, PDF">Datoteke</a></li>',
+    '    ',
+    '                <!-- MP3 povezave za celotno Sveto pismo (domača stran) -->',
+    '                <li class="mp3-link">',
+    '                    <a href="https://k00.fr/SloKJVStaraZavezaMP3" target="_blank" aria-label="Poslušaj Staro zavezo v MP3" title="Poslušaj Staro zavezo v MP3">',
+    '                        <svg class="audio-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+    '                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>',
+    '                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>',
+    '                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>',
+    '                        </svg>',
+    '                        <span class="audio-text">Stara zaveza</span>',
+    '                    </a>',
+    '                </li>',
+    '                <li class="mp3-link">',
+    '                    <a href="https://k00.fr/SloKJVNovaZavezaMP3" target="_blank" aria-label="Poslušaj Novo zavezo v MP3" title="Poslušaj Novo zavezo v MP3">',
+    '                        <svg class="audio-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+    '                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>',
+    '                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>',
+    '                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>',
+    '                        </svg>',
+    '                        <span class="audio-text">Nova zaveza</span>',
+    '                    </a>',
+    '                </li>',    '                ',
+    '                <!-- MOBILNA verzija: kontrole pisave v meniju -->',    '                <li class="font-controls-menu">',
+    '                    <div class="font-size-label">Velikost pisave:</div>',
+    '                    <div class="font-size-controls-menu">',
+    '                        <button class="font-btn-menu" onclick="changeFontSize(-1)" aria-label="Zmanjšaj velikost pisave" title="Zmanjšaj pisavo">',
+    '                            A−',
+    '                        </button>',
+    '                        <button class="font-btn-menu reset-btn" onclick="changeFontSize(0)" aria-label="Ponastavi velikost pisave" title="Privzeta pisava">',
+    '                            A',
+    '                        </button>',
+    '                        <button class="font-btn-menu" onclick="changeFontSize(1)" aria-label="Povečaj velikost pisave" title="Povečaj pisavo">',
+    '                            A+',
+    '                        </button>',
+    '                    </div>',
+    '                </li>',
+    '            </ul>',
+    '        </div>',
+    '    </div>',
     '',
+    '    <!-- Sredina: naslov -->',
+    '    <h1>',
+    '        <span class="full-title">Sveto pismo kralja Jakoba – SloKJV</span>',
+    '        <span class="short-title">Sveto pismo SloKJV</span>',
+    '    </h1>',
+    '',
+    '    <!-- DESKTOP verzija: kontrole pisave v headerju -->',
+    '    <div class="desktop-font-controls">',
+    '        <button class="desktop-font-btn" onclick="changeFontSize(-1)" aria-label="Zmanjšaj velikost pisave" title="Zmanjšaj pisavo">',
+    '            A−',
+    '        </button>',
+    '        <button class="desktop-font-btn" onclick="changeFontSize(0)" aria-label="Ponastavi velikost pisave" title="Privzeta pisava">',
+    '            A',
+    '        </button>',
+    '        <button class="desktop-font-btn" onclick="changeFontSize(1)" aria-label="Povečaj velikost pisave" title="Povečaj pisavo">',
+    '            A+',
+    '        </button>',
+    '    </div>',
+    '',
+    '    <!-- Tema -->',
+    '    <div class="theme-toggle-container">',
+    '        <button type="button" id="toggle-mode" onclick="toggleMode()" aria-label="Preklopi nočni/dnevni način">',
+    '            <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+    '                <circle cx="12" cy="12" r="5"></circle>',
+    '                <line x1="12" y1="1" x2="12" y2="3"></line>',
+    '                <line x1="12" y1="21" x2="12" y2="23"></line>',
+    '                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>',
+    '                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>',
+    '                <line x1="1" y1="12" x2="3" y2="12"></line>',
+    '                <line x1="21" y1="12" x2="23" y2="12"></line>',
+    '                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>',
+    '                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>',
+    '            </svg>',
+    '            <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+    '                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>',
+    '            </svg>',
+    '        </button>',
+    '    </div>',
+    ' </div>',
+    '',    '',
 ] + generate_book_nav(main_title, is_index=True) + [
     '    <div class="center-buttons">',
     '      <input type="text" id="search-input" placeholder="Vpiši iskalni niz" class="search-input">',
@@ -225,6 +347,7 @@ index_content = [
     "      </p>",
     "    </div>",
     '    <script src="./script.js"></script>',
+    '    <script src="./common.js"></script>',
     "  </body>",
     "</html>",
 ]
@@ -385,7 +508,7 @@ for i, book in enumerate(books):
     print(f"      Processing book: {book_id}")
     
     title_elem = book.find("osis:title[@type='main']", namespaces=ns)
-    short_title = title_elem.get("short", book_id) if title_elem is not None else book_id
+    short_title = slovenian_abbr.get(book_id, book_id) if title_elem is not None else book_id
     full_title = title_elem.text if title_elem is not None and title_elem.text else book_id
     # Add non-breaking space for two-word book names
     if " " in short_title:
@@ -393,61 +516,109 @@ for i, book in enumerate(books):
     if " " in full_title:
         full_title = full_title.replace(" ", "&nbsp;")
     
+    # Determine if Old or New Testament for MP3 link
+    is_old_testament = i < 39  # First 39 books are Old Testament
+    mp3_url = "https://k00.fr/SloKJVStaraZavezaMP3" if is_old_testament else "https://k00.fr/SloKJVNovaZavezaMP3"
+    
     html_content = [
         "<!DOCTYPE html>",
         '<html lang="sl">',
         "  <head>",
         '    <meta charset="UTF-8">',
         '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
-        f"    <title>{full_title}</title>",
+        f"    <title>{full_title} ({short_title.replace('&nbsp;', ' ')})</title>",
         '    <link rel="stylesheet" href="./style.css">',
-        '    <script>',
-        '      (function() {',
-        '        const savedTheme = localStorage.getItem("theme");',
-        '        if (savedTheme === "night") {',
-        '          document.documentElement.classList.add("night-mode");',
-        '        }',
-        '      })();',
-        '    </script>',
         "  </head>",
         "  <body>",
         '',
-        # === NOV MENI IN TEMA GUMB (tukaj vstavljeno) ===
-        ' <div class="menu-container">',
-        '     <button class="menu-toggle" onclick="toggleMenu(event)" aria-label="Odpri meni">',
-        '         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
-        '             <line x1="3" y1="6" x2="21" y2="6"></line>',
-        '             <line x1="3" y1="12" x2="21" y2="12"></line>',
-        '             <line x1="3" y1="18" x2="21" y2="18"></line>',
-        '         </svg>',
-        '     </button>',
-        '     <div id="dropdownMenu" class="dropdown-menu">',
-        '         <ul>',
-        '             <li><a href="index.php">Domov</a></li>',
-        '             <li><a href="knjige/index.php">Spletni viri in naročila knjig</a></li>',
-        '             <li><a href="knjige/Jezus.php">Jezus</a></li>',
-        '             <li><a href="knjige/o_nas.php">O nas</a></li>',
-        '         </ul>',
-        '     </div>',
-        ' </div>',
-        ' <!-- TEMA GUMB (desno zgoraj) -->',
-        ' <div class="theme-toggle-container">',
-        '     <button type="button" id="toggle-mode" onclick="toggleMode()" aria-label="Preklopi nočni/dnevni način">',
-        '         <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
-        '             <circle cx="12" cy="12" r="5"></circle>',
-        '             <line x1="12" y1="1" x2="12" y2="3"></line>',
-        '             <line x1="12" y1="21" x2="12" y2="23"></line>',
-        '             <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>',
-        '             <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>',
-        '             <line x1="1" y1="12" x2="3" y2="12"></line>',
-        '             <line x1="21" y1="12" x2="23" y2="12"></line>',
-        '             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>',
-        '             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>',
-        '         </svg>',
-        '         <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
-        '             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>',
-        '         </svg>',
-        '     </button>',
+        # === NOV MENI IN TEMA GUMB ===
+        ' <div class="header-top">',
+        '    <!-- Meni container -->',
+        '    <div class="menu-container">',
+        '        <button class="menu-toggle" onclick="toggleMenu(event)" aria-label="Odpri meni">',
+        '            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+        '                <line x1="3" y1="6" x2="21" y2="6"></line>',
+        '                <line x1="3" y1="12" x2="21" y2="12"></line>',
+        '                <line x1="3" y1="18" x2="21" y2="18"></line>',
+        '            </svg>',
+        '        </button>',
+        f'        <div id="dropdownMenu" class="dropdown-menu">',
+        '            <ul>',
+        '                <li><a href="index.php">Domov</a></li>',
+        '                <li><a href="knjige/novosti.php">Novosti</a></li>',
+        f'                <li><a href="knjige/index.php">Knjige, spletni viri</a></li>',
+        '                <li><a href="knjige/Jezus.php">Jezus</a></li>',
+        '                <li><a href="knjige/o_nas.php">O nas</a></li>',
+        '                <li><a href="bin/index.php" target="_blank" aria-label="Datoteke za različne platforme" title="Datoteke za Windows, Apple, Android, MP3, EPUB, PDF">Datoteke</a></li>',
+        '                ',
+        f'                <!-- MP3 povezava za {"Staro" if is_old_testament else "Novo"} zavezo -->',
+        f'                <li class="mp3-link">',
+        f'                    <a href="{mp3_url}" target="_blank" aria-label="Poslušaj Sveto pismo v MP3" title="Poslušaj {"Staro" if is_old_testament else "Novo"} zavezo v MP3">',
+        '                        <svg class="audio-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+        '                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>',
+        '                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>',
+        '                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>',
+        '                        </svg>',
+        f'                        <span class="audio-text">{"Stara" if is_old_testament else "Nova"} zaveza</span>',
+        '                    </a>',
+        '                </li>',        '                ',
+        '                <!-- MOBILNA verzija: kontrole pisave v meniju -->',
+        '                <li class="font-controls-menu">',
+        '                    <div class="font-size-label">Velikost pisave:</div>',
+        '                    <div class="font-size-controls-menu">',
+        '                        <button class="font-btn-menu" onclick="changeFontSize(-1)" aria-label="Zmanjšaj velikost pisave" title="Zmanjšaj pisavo">',
+        '                            A−',
+        '                        </button>',
+        '                        <button class="font-btn-menu reset-btn" onclick="changeFontSize(0)" aria-label="Ponastavi velikost pisave" title="Privzeta pisava">',
+        '                            A',
+        '                        </button>',
+        '                        <button class="font-btn-menu" onclick="changeFontSize(1)" aria-label="Povečaj velikost pisave" title="Povečaj pisavo">',
+        '                            A+',
+        '                        </button>',
+        '                    </div>',
+        '                </li>',
+        '            </ul>',
+        '        </div>',
+        '    </div>',
+        '',
+        '    <!-- Sredina: naslov -->',
+        '    <h1>',
+        '        <span class="full-title">Sveto pismo kralja Jakoba – SloKJV</span>',
+        '        <span class="short-title">Sveto pismo SloKJV</span>',
+        '    </h1>',
+        '',
+        '    <!-- DESKTOP verzija: kontrole pisave v headerju -->',
+        '    <div class="desktop-font-controls">',
+        '        <button class="desktop-font-btn" onclick="changeFontSize(-1)" aria-label="Zmanjšaj velikost pisave" title="Zmanjšaj pisavo">',
+        '            A−',
+        '        </button>',
+        '        <button class="desktop-font-btn" onclick="changeFontSize(0)" aria-label="Ponastavi velikost pisave" title="Privzeta pisava">',
+        '            A',
+        '        </button>',
+        '        <button class="desktop-font-btn" onclick="changeFontSize(1)" aria-label="Povečaj velikost pisave" title="Povečaj pisavo">',
+        '            A+',
+        '        </button>',
+        '    </div>',
+        '',
+        '    <!-- Tema -->',
+        '    <div class="theme-toggle-container">',
+        '        <button type="button" id="toggle-mode" onclick="toggleMode()" aria-label="Preklopi nočni/dnevni način">',
+        '            <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+        '                <circle cx="12" cy="12" r="5"></circle>',
+        '                <line x1="12" y1="1" x2="12" y2="3"></line>',
+        '                <line x1="12" y1="21" x2="12" y2="23"></line>',
+        '                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>',
+        '                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>',
+        '                <line x1="1" y1="12" x2="3" y2="12"></line>',
+        '                <line x1="21" y1="12" x2="23" y2="12"></line>',
+        '                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>',
+        '                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>',
+        '            </svg>',
+        '            <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+        '                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>',
+        '            </svg>',
+        '        </button>',
+        '    </div>',
         ' </div>',
         '',
     ] + generate_book_nav(main_title, is_index=False) + [
@@ -457,7 +628,7 @@ for i, book in enumerate(books):
         '      <input type="text" id="search-input" placeholder="Vpiši iskalni niz" class="search-input">',
         '      <button id="search-button" onclick="performSearch()">Izpiši</button>',
         '    </div>',
-        f"    <h2>{full_title} ({book_id})</h2>",
+        f"    <h2>{full_title.replace('&nbsp;', ' ')} ({short_title.replace('&nbsp;', ' ')})</h2>",
     ]
     
     chapters = book.findall("osis:chapter", namespaces=ns)
@@ -496,12 +667,30 @@ for i, book in enumerate(books):
                     verse_content += elem.text.strip()
 
                 for sub_elem in elem:
-                    if sub_elem.tag == f"{{{ns['osis']}}}title" and sub_elem.get("type") == "acrostic":
-                        foreign_text = sub_elem.findtext(f"{{{ns['osis']}}}foreign") or ""
-                        if foreign_text.strip():
-                            html_content.append(f"    <div class='acrostic-title'>{foreign_text.strip()}</div>")
+                    if sub_elem.tag == f"{{{ns['osis']}}}foreign":
+                        # Preverite, če je hebrejska črka (ima atribut n)
+                        hebrew_letter = sub_elem.get("n", "")
+                        foreign_text = sub_elem.text or ""
+                        
+                        # Če je hebrejska črka, prikažite v oglatih oklepajih
+                        if hebrew_letter and foreign_text:
+                            # Pokažemo celoten vsebnik z oglatimi oklepaji
+                            display_text = f"{foreign_text.strip()}"
+                            # Če želite ohraniti hebrejski znak tudi v oglatih oklepajih:
+                            # display_text = f"[{foreign_text.strip()} {hebrew_letter}]"
+                        else:
+                            display_text = foreign_text.strip() if foreign_text else ""
+                        
+                        if display_text:
+                            # Dodamo kot besedilo v vrstico, ne kot poseben naslov
+                            if verse_content and not verse_content.endswith(" "):
+                                verse_content += " "
+                            verse_content += display_text
+                        
                         if sub_elem.tail and sub_elem.tail.strip():
-                            verse_content += " " + sub_elem.tail.strip()
+                            if not sub_elem.tail.strip().startswith(" "):
+                                verse_content += " "
+                            verse_content += sub_elem.tail.strip()
                     elif sub_elem.tag == f"{{{ns['osis']}}}milestone" and sub_elem.get("type") == "x-p":
                         if poetry_lines:
                             html_content.append("    <div class='poetry'>")
@@ -649,6 +838,7 @@ for i, book in enumerate(books):
     html_content.extend(footer_html)
     html_content.extend([
     '    <script src="./script.js"></script>',
+    '    <script src="./common.js"></script>',
     "  </body>",
     "</html>",
     ])
