@@ -22,6 +22,9 @@ except Exception as e:
     raise
 
 ns = {"osis": "http://www.bibletechnologies.net/2003/OSIS/namespace"}
+# Global counters for study notes and cross-references used inside quotes
+study_counter = 0
+xref_counter = 0
 output_dir = "m:/trgovina_s_knjigami/root"
 os.makedirs(output_dir, exist_ok=True)
 
@@ -39,8 +42,8 @@ slovenian_abbr = {
     "Ruth": "Rut",
     "1Sam": "1 Sam",
     "2Sam": "2 Sam",
-    "1Kgs": "1 Kralj",
-    "2Kgs": "2 Kralj",
+    "1Kgs": "1 Kr",
+    "2Kgs": "2 Kr",
     "1Chr": "1 Krn",
     "2Chr": "2 Krn",
     "Ezra": "Ezr",
@@ -202,6 +205,8 @@ index_content = [
     '    <link rel="stylesheet" href="./style.css">',
     "  </head>",
     "  <body>",
+    "    <a id='top'></a>",
+    ' <div class="content">',
     '',
     # === NOV MENI IN TEMA GUMB (tukaj vstavljeno) ===
     # === NOV MENI IN TEMA GUMB ===
@@ -286,7 +291,7 @@ index_content = [
     '    <div class="theme-toggle-container">',
     '        <button type="button" id="toggle-mode" onclick="toggleMode()" aria-label="Preklopi nočni/dnevni način">',
     '            <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
-    '                <circle cx="12" cy="12" r="5"></circle>',
+    '                <path d="M12 8c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4"></path>',
     '                <line x1="12" y1="1" x2="12" y2="3"></line>',
     '                <line x1="12" y1="21" x2="12" y2="23"></line>',
     '                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>',
@@ -306,7 +311,7 @@ index_content = [
 ] + generate_book_nav(main_title, is_index=True) + [
     '    <div class="center-buttons">',
     '      <input type="text" id="search-input" placeholder="Vpiši iskalni niz" class="search-input">',
-    '      <button id="search-button" onclick="performSearch()">Izpiši</button>',
+    '      <button id="search-button" class="search-icon-btn" onclick="performSearch()" aria-label="Išči" title="Išči"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M19 11 A8 8 0 1 1 3 11 A8 8 0 1 1 19 11" /> <line x1="21" y1="21" x2="16.65" y2="16.65"></line> </svg> </button>',
     '    </div>',
     '    <div class="random-verse">',
     '      <button id="refresh-verse">Naključna vrstica</button>',
@@ -341,13 +346,14 @@ index_content = [
     ' <?php require_once __DIR__ . \'/footer.php\'; ?>',
     '    <div class="footer">',
     "      <p>",
-    f"         Ustvarjeno: {datetime.now().strftime('%d.%m.%Y %H:%M:%S')}<br>",
+    f"         Ustvarjeno: {datetime.now().strftime('%d.%m.%Y %H:%M:%S')}<br>",
     "          Licenca: CC BY-NC-ND 4.0<br>",
     "          Vir: <a href='https://github.com/msavli/SloKJV'>github.com/msavli/SloKJV</a>",
     "      </p>",
     "    </div>",
     '    <script src="./script.js"></script>',
     '    <script src="./common.js"></script>',
+    ' </div>',          # <-- dodano: zapremo .content
     "  </body>",
     "</html>",
 ]
@@ -449,7 +455,7 @@ def process_title_content(title_elem, chapter_id):
     study_counter = 0
     xref_counter = 0
     for sub_elem in title_elem:
-        if sub_elem.tag == f"{{{ns['osis']}}}transChange" and child.get("type") == "added":
+        if sub_elem.tag == f"{ns['osis']}transChange" and sub_elem.get("type") == "added":
             added_text = sub_elem.text.strip() if sub_elem.text and sub_elem.text.strip() else ""
             if title_content and not title_content.endswith(" "):
                 title_content += " "
@@ -530,6 +536,8 @@ for i, book in enumerate(books):
         '    <link rel="stylesheet" href="./style.css">',
         "  </head>",
         "  <body>",
+        "    <a id='top'></a>",
+        ' <div class="content">',
         '',
         # === NOV MENI IN TEMA GUMB ===
         ' <div class="header-top">',
@@ -603,17 +611,17 @@ for i, book in enumerate(books):
         '    <!-- Tema -->',
         '    <div class="theme-toggle-container">',
         '        <button type="button" id="toggle-mode" onclick="toggleMode()" aria-label="Preklopi nočni/dnevni način">',
-        '            <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
-        '                <circle cx="12" cy="12" r="5"></circle>',
-        '                <line x1="12" y1="1" x2="12" y2="3"></line>',
-        '                <line x1="12" y1="21" x2="12" y2="23"></line>',
-        '                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>',
-        '                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>',
-        '                <line x1="1" y1="12" x2="3" y2="12"></line>',
-        '                <line x1="21" y1="12" x2="23" y2="12"></line>',
-        '                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>',
-        '                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>',
-        '            </svg>',
+    '            <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+    '                <path d="M12 8c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4"></path>',
+    '                <line x1="12" y1="1" x2="12" y2="3"></line>',
+    '                <line x1="12" y1="21" x2="12" y2="23"></line>',
+    '                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>',
+    '                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>',
+    '                <line x1="1" y1="12" x2="3" y2="12"></line>',
+    '                <line x1="21" y1="12" x2="23" y2="12"></line>',
+    '                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>',
+    '                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>',
+    '            </svg>',
         '            <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
         '                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>',
         '            </svg>',
@@ -626,25 +634,54 @@ for i, book in enumerate(books):
         '      <button id="toggle-study" onclick="toggleStudyNotes()">Odpri opombe</button>',
         '      <button id="toggle-xrefs" onclick="toggleXrefs()">Odpri reference</button>',
         '      <input type="text" id="search-input" placeholder="Vpiši iskalni niz" class="search-input">',
-        '      <button id="search-button" onclick="performSearch()">Izpiši</button>',
+        '      <button id="search-button" class="search-icon-btn" onclick="performSearch()" aria-label="Išči" title="Išči"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M19 11 A8 8 0 1 1 3 11 A8 8 0 1 1 19 11" /> <line x1="21" y1="21" x2="16.65" y2="16.65"></line> </svg> </button>',
         '    </div>',
         f"    <h2>{full_title.replace('&nbsp;', ' ')} ({short_title.replace('&nbsp;', ' ')})</h2>",
     ]
     
+
+    # Najdi vsa poglavja v trenutni knjigi
     chapters = book.findall("osis:chapter", namespaces=ns)
-    chapter_nums = [chapter.get("osisID").split(".")[1] for chapter in chapters]
-    chapter_nav = f"    <div class='chapter-nav'>" + " ".join(f"<a href='#{num}'>{num}</a>" for num in chapter_nums) + "</div>"
+
+    # Iz osisID (npr. "Ps.150") pridobi samo številko poglavja ("150")
+    chapter_nums = [ch.get("osisID", "").split(".")[1] for ch in chapters]
+
+    # Navigacija poglavij: stabilna sidra "#{book_id}.{num}" in kot vidno besedilo goli "{num}"
+    # Primer (Ps): #Ps.150150</a>
+    chapter_nav = (
+        " <div class='chapter-nav'>"
+        + " ".join(f"<a href='#{num}'>{num}</a>" for num in chapter_nums)
+        + "</div>"
+    )
     html_content.append(chapter_nav)
+
+
 
     print(f"        Found {len(chapters)} chapters in {book_id}")
     for chapter in chapters:
         chapter_id = chapter.get("osisID", "Unknown Chapter")
         chapter_num = chapter_id.split(".")[1]
-        if book_id.startswith("Ps"):
+
+        # Določi naslov poglavja
+        if book_id == "Ps":
             chapter_title = f"Psalm {chapter_num}"
         else:
             chapter_title = f"{short_title}, {chapter_num}. poglavje"
-        html_content.append(f"    <h3><span id='{chapter_num}'>{chapter_title}</span></h3>")
+
+        # Dodaj stabilno sidro <a id="BookID.{num}"> pred <h3>, ohrani <span id="{num}">
+        # Gumb "na vrh" naj bo dejanska povezava na #top
+        top_link_html = f"""
+        <a id='{book_id}.{chapter_num}'></a>
+        <h3>
+          <span id='{chapter_num}'>{chapter_title}</span>
+            <a href="#" class="chapter-top-link" title="Na vrh strani">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                 <line x1="12" y1="19" x2="12" y2="5"></line>
+                 <polyline points="5 12 12 5 19 12"></polyline>
+              </svg>
+            </a>
+        </h3>"""
+        html_content.append(top_link_html)
 
         psalm_title_elem = chapter.find("osis:title[@type='psalm']", namespaces=ns)
         if psalm_title_elem is not None:
@@ -814,15 +851,40 @@ for i, book in enumerate(books):
                     html_content.append(f"    <div class='colophon'>{colophon_text}</div>")
 
     colophons = book.findall(".//osis:div[@type='colophon']", namespaces=ns)
+    has_colophon = False
+
     for colophon in colophons:
         colophon_text = process_colophon_content(colophon)
         colophon_id = colophon.get("osisID", "")
         if colophon_text:
+            has_colophon = True
             if colophon_id:
-                html_content.append(f"    <div class='colophon' id='{colophon_id}'>{colophon_text}</div>")
+                html_content.append(
+                    f"    <div class='colophon' id='{colophon_id}'>{colophon_text}</div>"
+                )
             else:
-                html_content.append(f"    <div class='colophon'>{colophon_text}</div>")
-        html_content.append('    <div class="top-link"><a href="#">⇧ Na vrh</a></div>')
+                html_content.append(
+                    f"    <div class='colophon'>{colophon_text}</div>"
+                )
+
+    html_content.append("""
+    <div class="top-link global-top-link">
+      <a href="#top" title="Na vrh strani" aria-label="Na vrh">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="18" height="18"
+             viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2"
+             stroke-linecap="round"
+             stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+    """)
+
 
     prev_book = book_list[i - 1][0] if i > 0 else None
     next_book = book_list[i + 1][0] if i < len(book_list) - 1 else None
@@ -839,6 +901,7 @@ for i, book in enumerate(books):
     html_content.extend([
     '    <script src="./script.js"></script>',
     '    <script src="./common.js"></script>',
+    ' </div>',          # <-- dodano: zapremo .content
     "  </body>",
     "</html>",
     ])
