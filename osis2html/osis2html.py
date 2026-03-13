@@ -64,7 +64,7 @@ slovenian_abbr = {
     "Amos": "Am",
     "Obad": "Abd",
     "Jonah": "Jon",
-    "Mic": "Mik",
+    "Mic": "Mih",
     "Nah": "Nah",
     "Hab": "Hab",
     "Zeph": "Sof",
