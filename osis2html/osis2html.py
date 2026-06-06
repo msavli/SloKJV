@@ -364,20 +364,39 @@ print(f"      Wrote file: {output_dir}/index.php")
 
 # --- Helper Functions ---
 def process_note_content(note_elem):
-    content = note_elem.text.strip() if note_elem.text and note_elem.text.strip() else ""
+    # Začnemo z začetnim besedilom opombe
+    content = note_elem.text if note_elem.text else ""
+    
     for child in note_elem:
-        if child.tag == f"{{{ns['osis']}}}hi" and child.get("type") == "bold":
-            bold_text = child.text.strip() if child.text and child.text.strip() else ""
-            if content and not content.endswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")):
-                content += " "
-            content += f"<b>{bold_text}</b>"
-            if child.tail and child.tail.strip() and not child.tail.strip().startswith((" ", ",", ".", ";", ":", "!", "?", "‹", "›")):
-                content += " "
-        if child.tail and child.tail.strip():
-            content += child.tail.strip()
+        tag_name = child.tag.replace(f"{{{ns['osis']}}}", "")
+        
+        # Obdelava taga <hi type="bold">
+        if tag_name == "hi" and child.get("type") == "bold":
+            inner_text = child.text if child.text else ""
+            content += f"<b>{inner_text}</b>"
+        
+        # Obdelava taga <divineName> (Gospod)
+        elif tag_name == "divineName":
+            inner_text = child.text if child.text else ""
+            content += f"<span class='small-caps'>{inner_text}</span>"
+            
+        # Obdelava taga <transChange type="added"> (ležeče)
+        elif tag_name == "transChange":
+            inner_text = child.text if child.text else ""
+            content += f"<i>{inner_text}</i>"
+        
+        # Če so znotraj taga še drugi elementi (npr. gnezdenje), 
+        # bi tukaj lahko dodali rekurzijo, a za OSIS opombe je to dovolj.
+        
+        # Ključno: dodajanje "tail" besedila, ki sledi zaprtemu tagu
+        if child.tail:
+            content += child.tail
+
+    # Čiščenje odvečnih presledkov in oklepajev
     content = content.strip()
     if content.startswith("[") and content.endswith("]"):
         content = content[1:-1].strip()
+    
     return content
 
 def process_colophon_content(colophon_elem):
