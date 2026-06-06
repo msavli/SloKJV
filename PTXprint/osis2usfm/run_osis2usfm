@@ -275,7 +275,7 @@ options_ver=("Ne" "Nadgradi" "Izhod")
 
 # Potegne iz Githuba (po zelji izklopi ko ni interneta)
 #https_proxy=http://proxy.gov.si:80/
-#wget --no-proxy https://github.com/msavli/SloKJV/raw/master/SloKJV_sword.xml -O $osis2usfm/SloKJV_sword.xml
+# wget --no-proxy https://github.com/msavli/SloKJV/raw/master/SloKJV_sword.xml -O $osis2usfm/SloKJV_sword.xml
 
 
 #============ Pozene GITHUB Desktop? ========================
@@ -506,20 +506,22 @@ echo -E "  "
 
 
 # ======= Zamenjaj Psalm 119 Alef ========================
-echo -E "   --==    Zamenja Psalm 119 Alef"
+# echo -E "   --==    Zamenja Psalm 119 Alef"
 #
-# <title type="acrostic" canonical="true"><foreign n="א">[ALEF א]</foreign> </title>
+#     <foreign n="א">[ALEF א]</foreign>
 #
 #   spremeni v
-#                  \qa [ALEF א]      
+#
+#     [ALEF א]
 #
 python3 zamenjaj_Psalm_119_Alef.py $osis2usfm/SloKJV_sword.xml $osis2usfm/SloKJV_sword1.xml
 mv SloKJV_sword1.xml SloKJV_sword.xml
 echo -E "  "
 #cat $osis2usfm/SloKJV_sword.xml |grep "ALEF"
 #cat $osis2usfm/SloKJV_sword.xml |grep "S čim naj mladenič očisti svojo"
-#echo -E "  "
+echo -E "  "
 # ================================================================================
+
 
 
 # ================= Zamenja DIV TYPE BOOK ================================
@@ -685,7 +687,6 @@ sed -i 's/<verse> /<verse>/'                            $osis2usfm/SloKJV_sword.
 #=========================================================================
 
 
-
 #=========================================================================
 echo -E "   --==    Pozene generiranje usfm datotek==--   "
 #=========================================================================
@@ -703,6 +704,19 @@ python3 osis2usfm.py SloKJV_sword.xml
 rm 40____.usfm >/dev/null 2>&1
 #=========================================================================
 #=========================================================================
+
+
+#echo -E " "
+#head -5 $osis2usfm/SloKJV_sword.xml
+#echo -E " "
+#cat $osis2usfm/SloKJV_sword.xml |grep -2 "Smrt sinu ali glasbeni instrument"
+#echo -E " "
+#cat $osis2usfm/SloKJV_sword.xml |grep -2 "S čim naj mladenič očisti svojo"
+#echo -E " "
+#tail -10 $osis2usfm/SloKJV_sword.xml
+#echo -E " "
+#exit
+
 
 
 # ================= Pridobi BibleName iz USFM datoteke  ================================
@@ -822,52 +836,52 @@ python3 pridobi_odstrani_naslove.py
 #=============================================================
 
 
-# ================= Pridobi Psalm 119 Alef  ================================
-echo -E "   --==    Pridobi Psalm 119 Alef    "
-echo -E " "
-#
-# In file 19_PSA.usfm
-# are tags #Start_Psalm_title# and #End_Psalm_title#  and some_text between them.  #Start_Psalm_title# and #End_Psalm_title# are 
-# some_text should be extracted from exact line and put two lines up, right after \c line.
-# But if two lines up are \q1 line, then delete \q1 and instead insert \s1 and some_text
-#
-#  #Zacetek_Alef#\qa [ALEF א]#Konec_Alef#
-#
-# ====
-# \c 119
-# \q1
-# \v 1  \p #Zacetek_Alef#\qa [ALEF א]#Konec_Alef#
-# ====
-# to 
-# ========
-# \c 119
-# \qa [ALEF א]
-# \q1
-# \v 1  \p
-# ========
-sed -i '/\\c 119/{N;N;s/\(.*\)\n\(.*\)\n\(.*\) \\p #Zacetek_Alef#\\qa \[ALEF א\]#Konec_Alef#/\1\n\\qa \[ALEF א\]\n\2\n\3/}' 19_PSA.usfm
-# cat 19_PSA.usfm  |grep  -2 "ALEF"
-#
-# \c 119
-# \qa Aleph
-# \q1
-# \v 1  #Zacetek_Alef#\qa [ALEF א]#Konec_Alef#
-#
-# [ALEF א]#  -> [ALEF [א
-# Tukaj obrnem zaklepaj, da ga potem sam obrne zarad hebrejske pisave od desne proti levi
-sed -i "s|\([א-ת]\)\]|\[\1|g" 19_PSA.usfm
-# echo " "
-# cat 19_PSA.usfm  |grep  -2 "ALEF"
-#
-python3 pridobi_Psalm_119_Alef.py
-#
-mv 19_PSA_modified.usfm 19_PSA.usfm
-# cat 19_PSA.usfm |grep -2 "BET"
-#echo -E "--- "
-# cat 19_PSA.usfm |grep -2 "DALET"
-#cat 19_PSA.usfm |grep "S čim naj mladenič"
-# echo -E " "
-#=============================================================
+	# ================= Pridobi Psalm 119 Alef  ================================
+	# echo -E "   --==    Pridobi Psalm 119 Alef    "
+	# echo -E " "
+	#
+	# In file 19_PSA.usfm
+	# are tags #Start_Psalm_title# and #End_Psalm_title#  and some_text between them.  #Start_Psalm_title# and #End_Psalm_title# are 
+	# some_text should be extracted from exact line and put two lines up, right after \c line.
+	# But if two lines up are \q1 line, then delete \q1 and instead insert \s1 and some_text
+	#
+	#  #Zacetek_Alef#\qa [ALEF א]#Konec_Alef#
+	#
+	# ====
+	# \c 119
+	# \q1
+	# \v 1  \p #Zacetek_Alef#\qa [ALEF א]#Konec_Alef#
+	# ====
+	# to 
+	# ========
+	# \c 119
+	# \qa [ALEF א]
+	# \q1
+	# \v 1  \p
+	# ========
+	# sed -i '/\\c 119/{N;N;s/\(.*\)\n\(.*\)\n\(.*\) \\p #Zacetek_Alef#\\qa \[ALEF א\]#Konec_Alef#/\1\n\\qa \[ALEF א\]\n\2\n\3/}' 19_PSA.usfm
+	# cat 19_PSA.usfm  |grep  -2 "ALEF"
+	#
+	# \c 119
+	# \qa Aleph
+	# \q1
+	# \v 1  #Zacetek_Alef#\qa [ALEF א]#Konec_Alef#
+	#
+	# [ALEF א]#  -> [ALEF [א
+	# Tukaj obrnem zaklepaj, da ga potem sam obrne zarad hebrejske pisave od desne proti levi
+	# sed -i "s|\([א-ת]\)\]|\[\1|g" 19_PSA.usfm
+	# echo " "
+        # cat 19_PSA.usfm  |grep  -2 "ALEF"
+	#
+	# python3 pridobi_Psalm_119_Alef.py
+	#
+	# mv 19_PSA_modified.usfm 19_PSA.usfm
+        # cat 19_PSA.usfm |grep -2 "BET"
+	#echo -E "--- "
+	# cat 19_PSA.usfm |grep -2 "DALET"
+	#cat 19_PSA.usfm |grep "S čim naj mladenič"
+	# echo -E " "
+	#=============================================================
 
 
       # ======= Kreira datoteko z dodatki - zemljevidi maps mapami =============
@@ -1039,24 +1053,24 @@ sed -i -e "/^$/d"                                       19_PSA.usfm
 # ============================================================================
 
 
-# ================= Pridobi BET \n \p  ================================
-echo -E "   --==    Pridobi BET \n \p    "
-echo -E " "
-#
-# Tukaj še ne deluje 
-# Do a Python script. 
-# Find lines in 19_PSA.usfm started with "\qa"
-# After that line make  a line with "\p"
-# But if you find line "\qa [ALEF א]" do not do a line with "\p"
-# Changes save in the same file
+		# ================= Pridobi BET \n \p  ================================
+		# echo -E "   --==    Pridobi BET \n \p    "
+		# echo -E " "
+		#
+		# Tukaj še ne deluje 
+		# Do a Python script. 
+		# Find lines in 19_PSA.usfm started with "\qa"
+		# After that line make  a line with "\p"
+		# But if you find line "\qa [ALEF א]" do not do a line with "\p"
+		# Changes save in the same file
 
-#  Za vsako hebrejsko ško naredi prazno vrstico, razen pri ALEF, kjer je že
-python3 pridobi_Psalm_119_Bet_p.py
-# cat 19_PSA.usfm |grep -1 "Absalom"
-# echo -E " "
-# cat 19_PSA.usfm |grep -1 "ko je bežal pred svojim"
-#echo -E " "
-#=============================================================
+		#  Za vsako hebrejsko ško naredi prazno vrstico, razen pri ALEF, kjer je že
+		# python3 pridobi_Psalm_119_Bet_p.py
+		# cat 19_PSA.usfm |grep -1 "Absalom"
+		# echo -E " "
+		# cat 19_PSA.usfm |grep -1 "ko je bežal pred svojim"
+		#echo -E " "
+		#=============================================================
 
 
 # ================= SELAH ================================

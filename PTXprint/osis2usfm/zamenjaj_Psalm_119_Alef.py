@@ -1,25 +1,31 @@
 import re
 
-def change_acrostic_title(text):
-    # Define the regex pattern to find <title type="acrostic" canonical="true"><foreign n="א">some text</foreign> </title>
-    pattern = r'<title type="acrostic" canonical="true"><foreign n="[^"]+">(.*?)</foreign> </title>'
+def clean_osis_xml(text):
+    # 1. Regex, ki varno najde <foreign>...</foreign>
+    # <foreign[^>]*>  --> najde začetno značko z vsemi atributi (n=...)
+    # ([\s\S]*?)      --> najde ČISTO VSE vmes (tudi nove vrstice in čudne znake)
+    # </foreign>     --> najde zaključek
+    pattern = r'<foreign[^>]*>([\s\S]*?)</foreign>'
     
-    # Replace the pattern with \qa [some text]
-    text = re.sub(pattern, r'#Zacetek_Alef#\\qa \1#Konec_Alef#', text)
+    # 2. Zamenja celotno značko samo z vsebino, ki je bila vmes
+    # strip() odstrani morebitne odvečne presledke ali nove vrstice
+    cleaned_text = re.sub(pattern, lambda m: m.group(1).strip(), text)
     
-    return text
+    return cleaned_text
 
-# Read input from file
+# Branje z eksplicitnim kodiranjem
 input_file = 'SloKJV_sword.xml'
-with open(input_file, 'r') as file:
-    bible_lines = file.read()
-
-# Apply the function to change acrostic titles
-result = change_acrostic_title(bible_lines)
-
-# Write the result to the output file
 output_file = 'SloKJV_sword1.xml'
-with open(output_file, 'w') as file:
-    file.write(result)
 
-# print(f"Acrostic titles have been changed. Check the output in {output_file}.")
+try:
+    with open(input_file, 'r', encoding='utf-8', errors='ignore') as f:
+        content = f.read()
+
+    result = clean_osis_xml(content)
+
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(result)
+    
+    print(f"Uspešno končano. Preveri datoteko {output_file}")
+except Exception as e:
+    print(f"Napaka: {e}")
