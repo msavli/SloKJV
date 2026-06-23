@@ -1100,6 +1100,10 @@ sed -i "s| Sela.|\\\qs Sela. \\\qs*\n\\\p|g" 35_HAB.usfm
                 echo -E "   --==    Rdeča barva Jezusovih besed"
                 echo -E " "
                 ;;
+            "US_Trade")
+                echo -E "   --==    Rdeča barva Jezusovih besed"
+                echo -E " "
+                ;;
             *)  echo -E "   --==    Nic ne naredi. Obicajno Sveto pismo (ni barvno) ... "
                 sed -i "s/\\\\wj /\\\\bd /g"     *.usfm
                 sed -i "s/\\\\wj* /\\\\bd* /g"   *.usfm
