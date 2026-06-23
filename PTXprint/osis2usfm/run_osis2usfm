@@ -306,7 +306,7 @@ select opt_ver_Git in "${options_ver_Git[@]}"
                 find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_* -name '*.usfm.adj' -exec rm {} \;        >/dev/null 2>&1
                 find $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_* -name 'local'      -exec rm -rf {} \;    >/dev/null 2>&1
                 #================================================================================
-              /usr/bin/github-desktop
+              flatpak run io.github.shiftey.Desktop
               break
               ;;
           "Izhod")
