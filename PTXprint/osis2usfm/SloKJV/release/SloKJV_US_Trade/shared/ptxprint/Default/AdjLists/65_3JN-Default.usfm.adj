@@ -1,0 +1,9 @@
+3JN 0.1 0 % mrk=mt1 
+3JN 0.1 0[2] % mrk=imt1 
+3JN 0.1 0[5] % mrk=imi 
+3JN 1.0 +0[6] % mrk=io1 
+3JN 1.1 +0 % mrk=p 
+3JN 1.8 +0 % mrk=p 
+3JN 1.10 +0 % mrk=p 
+3JN 1.12 +0 % mrk=p 
+3JN 1.14 0 % mrk=p 

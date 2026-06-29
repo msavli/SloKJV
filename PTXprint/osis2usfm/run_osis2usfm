@@ -75,7 +75,9 @@ key_pressed_brisanje_temp_files() {
         # Delete files in 'local' directories
         find $osis2usfm/SloKJV/release -type d -name 'local' -exec find '{}' -type f -iname '*' -print -delete ';'
         echo "     Pobrise simbilicen link do zemljevidov ki ga vsakic znova kreira"
-        find $osis2usfm/SloKJV/release -type l -name 'figures' -exec rm '{}' \;
+        
+        # Brisanje tega lahko povzroci da se ptxprit.cfg lahko deloma pobrise  ??
+        # find $osis2usfm/SloKJV/release -type l -name 'figures' -exec rm '{}' \;
         rm $osis2usfm/SloKJV_sword.xml >/dev/null 2>&1
         #=======================================================
     else
@@ -191,7 +193,13 @@ done
            *)  echo "   Kreira mapo."
                mkdir $SloKJV_Github/PTXprint/osis2usfm/SloKJV/release/SloKJV_$format  2>/dev/null
                echo "   Kreira simbolicen link do zemljevidov"
-               ln -s $zemljevidi $SloKJV$format/figures                               2>/dev/null
+
+                  if [ ! -e "$SloKJV$format/figures" ]; then
+                      echo "   Ustvarjam simbolično povezavo do zemljevidov..."
+                      ln -s "$zemljevidi" "$SloKJV$format/figures" 2>/dev/null
+                  else
+                      echo "   Simbolična povezava 'figures' že obstaja, preskakujem."
+                  fi
                  # cd $SloKJV$format/figures
                  #ls -al
                ;;
@@ -521,7 +529,6 @@ echo -E "  "
 #cat $osis2usfm/SloKJV_sword.xml |grep "S čim naj mladenič očisti svojo"
 echo -E "  "
 # ================================================================================
-
 
 
 # ================= Zamenja DIV TYPE BOOK ================================
@@ -886,25 +893,25 @@ python3 pridobi_odstrani_naslove.py
 
       # ======= Kreira datoteko z dodatki - zemljevidi maps mapami =============
       #  https://ubsicap.github.io/usfm/peripherals/back.html
-      touch A1_BAK.usfm
-		echo "\id BAK"                                       >> A1_BAK.usfm
-                echo "\periph Zemljevidi|id=\"maps\""                >> A1_BAK.usfm
-		echo "\mt1 Dodatki"                                  >> A1_BAK.usfm
-		echo "\mt2 Zemljevidi"                               >> A1_BAK.usfm
-		echo "\h Zemljevidi"                                 >> A1_BAK.usfm
-		echo "\toc1 Zemljevidi"                              >> A1_BAK.usfm
-		echo "\toc2 "                                        >> A1_BAK.usfm
-		echo "\toc3 "                                        >> A1_BAK.usfm
-                echo "\pb"                                           >> A1_BAK.usfm
-		echo "\zfiga|p001\*"                                 >> A1_BAK.usfm
-                echo "\pb"                                           >> A1_BAK.usfm
-		echo "\zfiga|p002\*"                                 >> A1_BAK.usfm
-                echo "\pb"                                           >> A1_BAK.usfm
-		echo "\zfiga|p003\*"                                 >> A1_BAK.usfm
-                echo "\pb"                                           >> A1_BAK.usfm
-		echo "\zfiga|p004\*"                                 >> A1_BAK.usfm
-                # cat A1_BAK.usfm
-      # ========================================================================
+      #touch A1_BAK.usfm
+#		echo "\id BAK"                                       >> A1_BAK.usfm
+#               echo "\periph Zemljevidi|id=\"maps\""                >> A1_BAK.usfm
+#		echo "\mt1 Dodatki"                                  >> A1_BAK.usfm
+#		echo "\mt2 Zemljevidi"                               >> A1_BAK.usfm
+#		echo "\h Zemljevidi"                                 >> A1_BAK.usfm
+#		echo "\toc1 Zemljevidi"                              >> A1_BAK.usfm
+#		echo "\toc2 "                                        >> A1_BAK.usfm
+#		echo "\toc3 "                                        >> A1_BAK.usfm
+#               echo "\pb"                                           >> A1_BAK.usfm
+#		echo "\zfiga|p001\*"                                 >> A1_BAK.usfm
+#               echo "\pb"                                           >> A1_BAK.usfm
+#		echo "\zfiga|p002\*"                                 >> A1_BAK.usfm
+#               echo "\pb"                                           >> A1_BAK.usfm
+#		echo "\zfiga|p003\*"                                 >> A1_BAK.usfm
+#               echo "\pb"                                           >> A1_BAK.usfm
+#		echo "\zfiga|p004\*"                                 >> A1_BAK.usfm
+#               # cat A1_BAK.usfm
+# ========================================================================
 
 
 # ======= Kreira strani   med Kazalom in SZ    in     med SZ in NZ  ============
@@ -937,7 +944,7 @@ python3 pridobi_odstrani_naslove.py
                 echo "\mt1 NOVA ZAVEZA"                                            >> A7_INT.usfm
                 echo "\mt2 NAŠEGA GOSPODA IN REŠITELJA NAŠIH DUŠ"                  >> A7_INT.usfm
                 echo "\mt2 JEZUSA KRISTUSA"                                        >> A7_INT.usfm
-                echo "\mt3 z vsemi besedami Jezusa Krisusa, zapisanimi z rdečo"    >> A7_INT.usfm
+                echo "\mt3 z besedami Jezusa Kristusa zapisanimi s temno rdečo"    >> A7_INT.usfm
 		# echo "\zendperiph"                                                 >> A7_INT.usfm
                 # echo "\periph Gospels Introduction|id=\"intgospels\""            >> A7_INT.usfm
                 # echo "\s1 Gospels and Acts"                                      >> A7_INT.usfm
@@ -978,7 +985,7 @@ python3 pridobi_odstrani_naslove.py
                 echo "\mt1 NOVA ZAVEZA"                                            >> A7_INT.usfm
                 echo "\mt2 NAŠEGA GOSPODA IN REŠITELJA NAŠIH DUŠ"                  >> A7_INT.usfm
                 echo "\mt2 JEZUSA KRISTUSA"                                        >> A7_INT.usfm
-                echo "\mt3 z vsemi besedami Jezusa Krisusa, zapisanimi z rdečo"    >> A7_INT.usfm
+                echo "\mt3 z besedami Jezusa Kristusa zapisanimi s temno rdečo"    >> A7_INT.usfm
                 # echo "\pb"                                                       >> A7_INT.usfm
                 #echo "\zendperiph"                                               >> A7_INT.usfm
                 #echo "\zNeedOddPage"                                             >> A7_INT.usfm
@@ -1001,10 +1008,10 @@ python3 pridobi_odstrani_naslove.py
       case $format in
            "SLO-KJV")
 
-
-               echo -E "   --==    Pobrise \pb da ni med zemljevidi praznih strani"
-               echo -E " "
-               sed -i "s|\\\\pb||g"             A1_BAK.usfm
+               # ne uporabljam večA1_BAK za zemlejvide ampak shared/ptxprint/Default/101_XXM.usfm in tam so privzeto page breaki čeprav ne delajo
+               #echo -E "   --==    Pobrise \pb da ni med zemljevidi praznih strani"
+               #echo -E " "
+               #sed -i "s|\\\\pb||g"             A1_BAK.usfm
                ;;
            *)  echo -E "   --==    Nic ne naredi. Obicajno Sveto pismo  (ni SLO-KJV) ... "
                echo -E " "
@@ -1088,20 +1095,20 @@ sed -i "s| Sela.|\\\qs Sela. \\\qs*\n\\\p|g" 35_HAB.usfm
 #=============================================================
 
 
-#========== Rdece Jezusove besede =========================
+#========== Temno rdece Jezusove besede =========================
 #  Pri barvnem tisku popravi nazaj na wj   in   wj*
-#echo -E "   --==    Rdece JEZUSOVE BESEDE ==--"
+#echo -E "   --==    Temno rdece JEZUSOVE BESEDE ==--"
 #echo -E "   --==       Words of Jesus begin  <q who=\"Jesus\" marker=\"\">  \</q>    "
 #echo -E "   --==       \wj     \wj*    "    
 #echo -E "   --==    CB tisk moba biti \bd in \bd*  "    
 # Zamenja #rz#  ->
       case $format in
             "A4")
-                echo -E "   --==    Rdeča barva Jezusovih besed"
+                echo -E "   --==    Temno rdeča barva Jezusovih besed"
                 echo -E " "
                 ;;
             "US_Trade")
-                echo -E "   --==    Rdeča barva Jezusovih besed"
+                echo -E "   --==    Temno rdeča barva Jezusovih besed"
                 echo -E " "
                 ;;
             *)  echo -E "   --==    Nic ne naredi. Obicajno Sveto pismo (ni barvno) ... "
@@ -1621,13 +1628,31 @@ sed -i "s/Lepa zaradi lege/Lepa zaradi lege \\\zqrcode|size=\"1.5cm\" pgpos=\"cr
 #cat 19_PSA.usfm |grep -2 "Lepa zaradi lege"
 sed -i "s/da se mazili Najsvetejše./da se mazili Najsvetejše. \\\zqrcode|size=\"1.4cm\" pgpos=\"cr\" data=\"https:\/\/github.com\/msavli\/Ronald_Wyatt\"\\\* /g"                                           27_DAN.usfm
 # cat 27_DAN.usfm |grep -1 "da se mazili Najsvetejše."
-sed -i "s/›Jaz sem Kralj Judov.‹«/›Jaz sem Kralj Judov.‹« \\\zqrcode|size=\"1.8cm\" pgpos=\"cr\" data=\"https:\/\/relojprofetico.blogspot.com\/2010\/07\/yeshua-hanotzri-wmelej-hayehudim.html\"\\\* /g"   44_JHN.usfm
+# sed -i "s/›Jaz sem Kralj Judov.‹«/›Jaz sem Kralj Judov.‹« \\\zqrcode|size=\"1.8cm\" pgpos=\"cr\" data=\"https:\/\/relojprofetico.blogspot.com\/2010\/07\/yeshua-hanotzri-wmelej-hayehudim.html\"\\\* /g"   44_JHN.usfm
 #cat 44_JHN.usfm |grep -1 "›Jaz sem Kralj Judov.‹«"
 #============================================================================================
 
 
 # Počisti za samo ime Biblije ki jo je izvozil iz XML datoteke.
 rm 00_BibleName.txt
+
+# ===================  Hebrejske črke spremeni v \q ===================================
+# Skripta preišče vse *.usfm datoteke v mapi in preoblikuje vrstice z vrstici (\v).
+# Poišče biblične verze, ki vsebujejo hebrejske črke v oglatih oklepajih (npr. [ALEF א]),
+# odstrani obstoječe \q in \p oznake ter vrstice formatira v pravilno pesniško obliko:
+# prvi hebrejski blok postane \q1 [BLOK] \v N, vsi naslednji pa dobijo oznako \q2 [BLOK].
+python3 convert_HebrewLetters_in_q.py
+# ======================================================================================
+
+
+
+# ======== Širjenje in ožanje črk  v Bibliji - pripomoček  =============================
+# Pripravi TXT datoteko, katere dele/knjige se lahko vstavi v 
+#   PTXprint/View+Edit/changes.txt
+# Prej je treba dati kljukico pri PTXprint/Advanced/Main/Apply Modification to USFM Text (changes.txt)
+python3 generate_p_replacements.py > generate_p_replacements_changes.txt
+# ======================================================================================
+
 
 
 # ======== Prestavi usfm datotke v pravo mapo za PTXPRINT" =============================
@@ -1654,6 +1679,8 @@ echo -E " "
 # ptxprint SloKJV_$format
 # cd /home/pc/Dokumenti/osis2usfm
 # ptxprint -c  /home/pc/Dokumenti/osis2usfm/SloKJV/release SloKJV_$format
+echo ptxprint -p $osis2usfm/SloKJV/release -c Default SloKJV_$format
+echo ptxprint -p /home/pc/Dokumenti/GitHub/SloKJV/PTXprint/osis2usfm/SloKJV/release -c Default SloKJV_US_Trade
 ptxprint -p $osis2usfm/SloKJV/release -c Default SloKJV_$format
 #====================================================
 

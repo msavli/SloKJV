@@ -5,6 +5,6 @@ picreverse = OK
 piccreditbox = 
 piccredit = 
 
-[map_ancient_world_patriarchs_bw_90]
+[map_ancient_world_patriarchs_slo]
 approved = false
 

@@ -1,0 +1,8 @@
+JUD 0.1 -2 % mrk=mt1 
+JUD 0.1 0[2] % mrk=imt1 
+JUD 0.1 +0[3] % mrk=imi 
+JUD 0.1 +0[4] % mrk=imi 
+JUD 0.1 +0[5] % mrk=io1 
+JUD 0.1 +0[6] % mrk=io1 
+JUD 1.0 +0[7] % mrk=io1 
+JUD 1.12 0 % mrk=p 
