@@ -1,0 +1,6 @@
+% This is the .tex file specific for the SloKJV_US_Trade project used by PTXprint.
+% Saved Configuration name: Default
+
+% Move the \zpqr word up to the end of previous line (if space permits)
+\sethook{start}{zpqr}{\unskip\nobreak\hfill\penalty50\hskip0.3em\hbox{}\nobreak\hfill\hbox\bgroup}
+\sethook{end}{zpqr}{\egroup}

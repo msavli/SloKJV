@@ -363,7 +363,8 @@ echo " "
 # echo -E "   --==    \p                                                            "
 sed -i "s|<milestone type=\"x-p\" marker=\"¶ \"/>| \x5cp|g"                       $osis2usfm/SloKJV_sword.xml
 sed -i "s|<milestone type=\"x-p\" subType=\"x-added\" marker=\"¶\"/>| \x5cp|g"    $osis2usfm/SloKJV_sword.xml
-cat $osis2usfm/SloKJV_sword.xml |grep "milestone"
+#cat $osis2usfm/SloKJV_sword.xml |grep "milestone"
+#cat $osis2usfm/SloKJV_sword.xml |grep -1 "Brezbožni pa niso takšni, temveč"
 # =============================================
 
 
@@ -725,7 +726,6 @@ rm 40____.usfm >/dev/null 2>&1
 #exit
 
 
-
 # ================= Pridobi BibleName iz USFM datoteke  ================================
 echo -E "   --==    Naslov knjige shrani v 1. vrstico     "
 echo -E " "
@@ -1020,6 +1020,7 @@ python3 pridobi_odstrani_naslove.py
       #cat A1_BAK.usfm
       #=============================================================================================
 
+
 #======================================================================================
 echo -E "   --==    Popravi znak \p eno vrstico visje v vseh usfm datotekah"
 #                    > \p   
@@ -1030,10 +1031,9 @@ sed -i "s/^\\\\v \([0-9]*\) \\\\p /\x5cp\n\x5cv \1 /g"  *.usfm
 #   Za \c 1     doda enter   
 sed -i "s/^\\\\c \([0-9]*\)/\x5cc \1\n\x5cp/g"          *.usfm
 # 
-# Pri Psalmih potem pobriše vse \p vrstice   xxxx
-sed -i "/^\\\\p/d"                                      19_PSA.usfm
-# cat 19_PSA.usfm |grep "\p "
+# sed -i "/^\\\\p/d"                                      19_PSA.usfm
 # =======================================================
+
 
 
 # ======= Doda \p vrstico povsod kjer je \v 1 ===========
@@ -1049,14 +1049,22 @@ echo " "
 sed -i '/^\\v 1 /{x;p;x;s/^\\v 1 /\\p\n\\v 1 /;}'       19_PSA.usfm
 # Tole zgoraj Naredi nekaj praznih vrstic  v 19_PSA.usfm
 #cat 19_PSA.usfm |grep -1 "\p "
-# cat 19_PSA.usfm |grep  -1 "je bežal pred svojim sinom Absalomom"
+cat 19_PSA.usfm |grep  -2 "labb"
 # ========================================================
 
 
-# ================= Odstrani prazne vrstice =================================
+
+# ================= Odstrani prazne vrstice ==================================
 echo -E "   --==    Odstrani prazne vrstice v Ps 119   "
 echo -E " "
 sed -i -e "/^$/d"                                       19_PSA.usfm
+# ============================================================================
+
+
+# ============= Pri Psalmih pobriše vse podvojene \p =========================
+#                                   \p vrstice  
+perl -i -0777 -pe 's/^\s*\\p\s*\n\s*\\p\s*$/\\p/gm' 19_PSA.usfm
+cat 19_PSA.usfm |grep -3 "Vodji glasbenikov na Mut lab"
 # ============================================================================
 
 
@@ -1087,11 +1095,15 @@ echo -E "   --==    SELAH    "
 #              \qs  \qs*
 #      Doda se en odstavek zaradi kode  https://github.com/sillsdev/ptx2pdf/blob/master/docs/documentation/snippets.md#move-the-qr-word-up-to-the-end-of-previous-line-if-space-permits
 echo -E " "
-sed -i "s| Sela.|\\\qs Sela. \\\qs*\n\\\p|g" 19_PSA.usfm
-sed -i "s| Sela.|\\\qs Sela. \\\qs*\n\\\p|g" 35_HAB.usfm
+	#sed -i "s| Sela.|\\\qs Sela.\\\qs*\n\\\p|g" 19_PSA.usfm          # za Sela in pika (Sela. ) ne sme biti se presledek. Mora biti (Sela.)
+	#sed -i "s| Sela.|\\\qs Sela.\\\qs*\n\\\p|g" 35_HAB.usfm
+
+	#   Nasel v PTXprint slajdih str 410   PSA "\\qr Selah" > "\\zpqr Selah\\zpqr*"  
+	sed -i "s| Sela.|\\\p \\\qr Sela.\\\p |g" 19_PSA.usfm          # Za en stolpec. za Sela in pika (Sela. ) ne sme biti se presledek. Mora biti (Sela.)
+	sed -i "s| Sela.|\\\qr Sela.\\\p |g" 35_HAB.usfm               # Za dva stolpca.
 
 # cat SloKJV_sword.xml |grep "\qs"
-# cat SloKJV_sword.xml |grep -F 'type="selah">'
+#cat SloKJV_sword.xml |grep  "Sela"
 #=============================================================
 
 
@@ -1624,9 +1636,9 @@ echo -E "   --==    Popravi naslove knjig ==--"
 echo "   --==     Doda QR kodo ... "
               #echo " "
 echo "    izklopljeno ker se text ne ovija lepo okoli "
-sed -i "s/Lepa zaradi lege/Lepa zaradi lege \\\zqrcode|size=\"1.5cm\" pgpos=\"cr\" data=\"https:\/\/www.brighteon.com\/fc8a3ecf-7b86-469e-b7fb-ea723c84e347\"\\\* /g"                                      19_PSA.usfm
+#sed -i "s/Lepa zaradi lege/Lepa zaradi lege \\\zqrcode|size=\"1.5cm\" pgpos=\"cr\" data=\"https:\/\/www.brighteon.com\/fc8a3ecf-7b86-469e-b7fb-ea723c84e347\"\\\* /g"                                      19_PSA.usfm
 #cat 19_PSA.usfm |grep -2 "Lepa zaradi lege"
-sed -i "s/da se mazili Najsvetejše./da se mazili Najsvetejše. \\\zqrcode|size=\"1.4cm\" pgpos=\"cr\" data=\"https:\/\/github.com\/msavli\/Ronald_Wyatt\"\\\* /g"                                           27_DAN.usfm
+#sed -i "s/da se mazili Najsvetejše./da se mazili Najsvetejše. \\\zqrcode|size=\"1.4cm\" pgpos=\"cr\" data=\"https:\/\/github.com\/msavli\/Ronald_Wyatt\"\\\* /g"                                           27_DAN.usfm
 # cat 27_DAN.usfm |grep -1 "da se mazili Najsvetejše."
 # sed -i "s/›Jaz sem Kralj Judov.‹«/›Jaz sem Kralj Judov.‹« \\\zqrcode|size=\"1.8cm\" pgpos=\"cr\" data=\"https:\/\/relojprofetico.blogspot.com\/2010\/07\/yeshua-hanotzri-wmelej-hayehudim.html\"\\\* /g"   44_JHN.usfm
 #cat 44_JHN.usfm |grep -1 "›Jaz sem Kralj Judov.‹«"
@@ -1645,7 +1657,6 @@ python3 convert_HebrewLetters_in_q.py
 # ======================================================================================
 
 
-
 # ======== Širjenje in ožanje črk  v Bibliji - pripomoček  =============================
 # Pripravi TXT datoteko, katere dele/knjige se lahko vstavi v 
 #   PTXprint/View+Edit/changes.txt
@@ -1653,6 +1664,37 @@ python3 convert_HebrewLetters_in_q.py
 python3 generate_p_replacements.py > generate_p_replacements_changes.txt
 # ======================================================================================
 
+
+
+#============================================================================================
+echo "   --==     Psalmi sredinsko centrirani ... "
+echo " "
+
+#  Ce je postavicev UE_Trade, potem so Psalmi v datoteki 19_PSA.usfm sredinsko centrirani
+#    \qs ->  \qr
+#    \p  ->  \m    \pc (center)
+#    \q1 ->  \qc  (Prestavi tudi hebrejske Alef na center)
+#    \q2 ->  \qc  (Prestavi tudi hebrejske Alef na center)
+     case $format in
+          "US_Trade")
+              echo " "
+              echo "   Popravi 19_PSA.usfm ..."
+              echo " "
+               sed -i "s/\\\\p/\x5cp/g"              19_PSA.usfm
+               sed -i "s/\\\\q1/\x5cqc/g"            19_PSA.usfm
+               sed -i "s/\\\\q2/\x5cqc/g"            19_PSA.usfm
+               sed -i "s/\\\\qs/\x5cqr/g"            19_PSA.usfm
+            #  sed -i "s/\\\\qr\*//g"                 19_PSA.usfm   # Pobrise \gr*  ker je v PTXprint delal se eno vrstico z zvezdico
+              ;;
+          *)  echo "   Ne popravi 19_Psa.usfm ... "
+              echo " "
+
+              ;;
+     esac
+# cat 19_PSA.usfm |grep -1 "Sela"
+# cat 19_PSA.usfm |grep -1 -i "Alef"
+# cat 19_PSA.usfm |grep -1 -i "\qr"
+#=============================================================================================
 
 
 # ======== Prestavi usfm datotke v pravo mapo za PTXPRINT" =============================

@@ -1,0 +1,20 @@
+% This is the preprocessing .tex file specific for the SloKJV_US_Trade project used by PTXprint.
+% Saved Configuration name: Default
+\makeatletter
+% Preverimo, ali st@rtptxhooks že obstaja in ga redefiniramo z varnostno zanko
+\let\old@st@rtptxhooks\st@rtptxhooks
+\def\st@rtptxhooks{%
+  \old@st@rtptxhooks
+  \def\tst@psa{PSA}%
+  \ifx\ptx@bookID\tst@psa
+    % Če smo v Psalmih, spremenimo lastnost stila \p
+    \Marker p\relax
+    \Justification Center\relax
+    \FirstLineIndent 0pt\relax
+  \else
+    % Za vse ostale knjige (npr. JUD) vrnemo na obojestransko
+    \Marker p\relax
+    \Justification Both\relax
+  \fi
+}
+\makeatother
