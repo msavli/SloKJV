@@ -8,3 +8,15 @@ pubaccept = Unknown
 approved = false
 notes = 
 
+[map_exodus_and_canaan_conquest_slo]
+approved = false
+notes = 
+
+[map_israel_new_testament_slo]
+approved = false
+notes = 
+
+[map_paul_journeys_slo]
+approved = false
+notes = 
+
