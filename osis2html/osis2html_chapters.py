@@ -8,7 +8,7 @@ try:
     tree = etree.parse(xml_path)
     root = tree.getroot()
     print("\n" + "    " + "="*60)
-    print("    KREIRA .html DATOTEKE z osis2html.py")
+    print("    KREIRA .html DATOTEKE z osis2html_chapters.py")
     print("    " + "="*60)
     print("\n")
     print(f"    Successfully loaded XML from: {xml_path}")
@@ -216,17 +216,17 @@ index_content = [
     '    </script>',
     "    <div class='maps-section'>",
     "      <h2>Zemljevidi</h2>",
-    "      <a href='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Ancient_World_Patriarchs_Slo.jpg' target='_blank'>",
-    "        <img src='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Ancient_World_Patriarchs_Slo_thumb.jpg' alt='Stari svet patriarhov' class='map-preview'>",
+    "      <a href='slike/Map_Ancient_World_Patriarchs_Slo.jpg' target='_blank'>",
+    "        <img src='slike/Map_Ancient_World_Patriarchs_Slo_thumb.jpg' alt='Stari svet patriarhov' class='map-preview'>",
     "      </a>",
-    "      <a href='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Exodus_and_Canaan_Conquest_Slo.jpg' target='_blank'>",
-    "        <img src='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Exodus_and_Canaan_Conquest_Slo_thumb.jpg' alt='Eksodus in osvajanje Kanaana' class='map-preview'>",
+    "      <a href='slike/Map_Exodus_and_Canaan_Conquest_Slo.jpg' target='_blank'>",
+    "        <img src='slike/Map_Exodus_and_Canaan_Conquest_Slo_thumb.jpg' alt='Eksodus in osvajanje Kanaana' class='map-preview'>",
     "      </a>",
-    "      <a href='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Paul_Journeys_Slo.jpg' target='_blank'>",
-    "        <img src='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Paul_Journeys_Slo_thumb.jpg' alt='Pavlova potovanja' class='map-preview'>",
+    "      <a href='slike/Map_Paul_Journeys_Slo.jpg' target='_blank'>",
+    "        <img src='slike/Map_Paul_Journeys_Slo_thumb.jpg' alt='Pavlova potovanja' class='map-preview'>",
     "      </a>",
-    "      <a href='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Israel_New_Testament_Slo.jpg' target='_blank'>",
-    "        <img src='https://raw.githubusercontent.com/msavli/Bible-Maps/main/Map_Israel_New_Testament_Slo_thumb.jpg' alt='Izrael v času Nove zaveze' class='map-preview'>",
+    "      <a href='slike/Map_Israel_New_Testament_Slo.jpg' target='_blank'>",
+    "        <img src='slike/Map_Israel_New_Testament_Slo_thumb.jpg' alt='Izrael v času Nove zaveze' class='map-preview'>",
     "      </a>",
     "    </div>",
     "    <div>",
@@ -467,10 +467,12 @@ for i, book in enumerate(books):
         '',
     ] + generate_book_nav(main_title, is_index=False) + [
         '    <div class="center-buttons">',
-        '      <button id="toggle-study" onclick="toggleStudyNotes()" class="icon-toggle-btn" title="Skrij/Odpri opombe" aria-label="Preklopi opombe"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></button>',
-        '      <button id="toggle-xrefs" onclick="toggleXrefs()" class="icon-toggle-btn" title="Skrij/Odpri reference" aria-label="Preklopi reference"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></button>',
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
         '      <input type="text" id="search-input" placeholder="Išči" class="search-input">',
         '      <button id="search-button" class="search-icon-btn" onclick="performSearch()" aria-label="Išči" title="Išči"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>',
+        '      <button id="toggle-study" onclick="toggleStudyNotes()" class="icon-toggle-btn" title="Skrij/Odpri opombe" aria-label="Preklopi opombe"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></button>',
+        '      <button id="toggle-xrefs" onclick="toggleXrefs()" class="icon-toggle-btn" title="Skrij/Odpri reference" aria-label="Preklopi reference"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></button>',
         '    </div>',
         f"    <h2>{full_title.replace('&nbsp;', ' ')} ({short_title.replace('&nbsp;', ' ')})</h2>",
     ]
@@ -779,6 +781,6 @@ for i, book in enumerate(books):
 print(f"    PHP files generated in {output_dir}/")
 
 print("\n" + "    " + "="*60)
-print("    KONCAL KREIRANJE .php DATOTEK z osis2html.py")
+print("    KONCAL KREIRANJE .php DATOTEK z osis2html_chapters.py")
 print("    " + "="*60)
 print("\n")
