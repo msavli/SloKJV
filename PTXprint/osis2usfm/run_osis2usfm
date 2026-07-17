@@ -980,13 +980,13 @@ python3 pridobi_odstrani_naslove.py
                 # echo "\mt1 Deuterocanonicals/Apocrypha"                          >> A7_INT.usfm
                 # echo "\p Most of the books g...."                                >> A7_INT.usfm
                 #echo "\zendperiph"                                               >> A7_INT.usfm
-                #echo "\zNeedOddPage"                                             >> A7_INT.usfm
+                echo "\zNeedOddPage"                                             >> A7_INT.usfm
                 echo "\periph NOVA ZAVEZA|id=\"intnt\""                            >> A7_INT.usfm
                 echo "\mt1 NOVA ZAVEZA"                                            >> A7_INT.usfm
                 echo "\mt2 NAŠEGA GOSPODA IN REŠITELJA NAŠIH DUŠ"                  >> A7_INT.usfm
                 echo "\mt2 JEZUSA KRISTUSA"                                        >> A7_INT.usfm
                 echo "\mt3 z besedami Jezusa Kristusa zapisanimi s temno rdečo"    >> A7_INT.usfm
-                # echo "\pb"                                                       >> A7_INT.usfm
+                echo "\pb"                                                       >> A7_INT.usfm
                 #echo "\zendperiph"                                               >> A7_INT.usfm
                 #echo "\zNeedOddPage"                                             >> A7_INT.usfm
                 # echo "\periph Gospels Introduction|id=\"intgospels\""            >> A7_INT.usfm
