@@ -447,7 +447,8 @@ cat $osis2usfm/SloKJV_sword.xml |grep "introduction" |grep "reference"
 
 # ======= Zamenja Inscription ======================
 echo -E "   --==    Zamenja Inscription"
-# <inscription>SVETO \+nd Gospodu\+nd*</inscription>   ->   \em SVETO \+nd Gospodu\+nd*\}\em*
+# https://docs.usfm.bible/usfm/latest/para/paragraphs/pc.html
+# <inscription>SVETO \+nd Gospodu\+nd*</inscription>   ->   \pc SVETO \+nd Gospodu\+nd*\}\pc*
 python3 zamenjaj_Inscription.py $osis2usfm/SloKJV_sword.xml $osis2usfm/SloKJV_sword1.xml
 mv SloKJV_sword1.xml SloKJV_sword.xml
 #   preveri   MENE, MENE, TEKEL, UPHARSIN
@@ -1008,7 +1009,7 @@ python3 pridobi_odstrani_naslove.py
       case $format in
            "SLO-KJV")
 
-               # ne uporabljam večA1_BAK za zemlejvide ampak shared/ptxprint/Default/101_XXM.usfm in tam so privzeto page breaki čeprav ne delajo
+               # ne uporabljam večA1_BAK za zemljevide ampak shared/ptxprint/Default/101_XXM.usfm in tam so privzeto page breaki čeprav ne delajo
                #echo -E "   --==    Pobrise \pb da ni med zemljevidi praznih strani"
                #echo -E " "
                #sed -i "s|\\\\pb||g"             A1_BAK.usfm
@@ -1672,7 +1673,7 @@ echo " "
 
 #  Ce je postavicev UE_Trade, potem so Psalmi v datoteki 19_PSA.usfm sredinsko centrirani
 #    \qs ->  \qr
-#    \p  ->  \m    \pc (center)
+#    \p  ->  \m   
 #    \q1 ->  \qc  (Prestavi tudi hebrejske Alef na center)
 #    \q2 ->  \qc  (Prestavi tudi hebrejske Alef na center)
      case $format in
