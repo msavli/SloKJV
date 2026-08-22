@@ -30,7 +30,7 @@
 \im Fotografija na naslovnici: arhiv družine Šavli
 \im Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka
 \im E-pošta:  info@slokjv.si
-\im Splet: slokjv.si   
+\im Splet: slokjv.si
 \zqrcode|pgpos="cr" size="48pt" data="http://slokjv.si"\*
 \im Tisk: Pretore, pretore.com, \zvar|mesecletotiska\*
 \im Naklada: \zvar|copiesprinted\* izvodov
@@ -111,15 +111,19 @@
 \zNeedOddPage
 \rem -------------------------------CoverFront------------------------------------------
 \periph front|id="coverfront"
-\zgap|141.886mm\*
+\zgap|111.648mm\*
 \mt1 \zvar|maintitle\*
+\zgap|23.6224251968504mm\*
 \mt2 \zvar|subtitle\*
-\mt3 \zvar|languagename\*
 \vfill
 \endgraf
 \periph spine|id="coverspine"
 \mt2 \zvar|maintitle\* - \zvar|subtitle\*
 \periph back|id="coverback"
 \zgap|1in\*
-\m 
+\m \zvar|back_cover_title\*
+\zvar|back_cover_title_1\*
+\zbl|17\*
+\zvar|mesecletotiska\*
+
 \vfill
