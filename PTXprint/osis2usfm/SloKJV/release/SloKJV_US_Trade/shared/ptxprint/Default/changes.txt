@@ -3,9 +3,9 @@
 include "../../../PrintDraftChanges.txt"
 
 # Sometimes you just need a blank page after the final text. Change the 'Amen.' to whatever the last word in Revelation is.
-# at MAL 4:6 '(prekletstvom.«)' >  '\1\n\\pb\n\\p \\bd ~\\bd*'
+at MAL 4:6 '(prekletstvom.«)' >  '\1\n\\pb\n\\p \\bd ~\\bd*'
 # at REV 22:21 '(Amen.)' >  '\1\n\\pb\n\\p \\bd ~\\bd*'
-# at INT '(rdečo)' >  '\1\n\\pb\n\\p \\bd ~\\bd*'
+at INT '(rdečo)' >  '\1\n\\pb\n\\p \\bd ~\\bd*'
 at XXM '(imi)' >  '\1\n\\pb\n\\p \\bd ~\\bd*'
 
 # Use a horizontal rule (line) after the introductory outline, before the 1st chapter.

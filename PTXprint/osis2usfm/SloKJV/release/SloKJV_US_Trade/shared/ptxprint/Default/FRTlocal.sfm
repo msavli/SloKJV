@@ -34,7 +34,7 @@
 \im Splet: slokjv.si
 \zqrcode|pgpos="cr" size="48pt" data="http://slokjv.si"\*
 \im Tisk: Pretore, pretore.com, \zvar|mesecletotiska\*
-\im Naklada: \zvar|copiesprinted\* izvodov
+#     \im Naklada: \zvar|copiesprinted\* izvodov
 
 
 
@@ -100,7 +100,7 @@
 \is2 Knjige Nove zaveze
 \ip \ztoc|nt\*
 \ip
-\is2 Dodatki
+\is2 Dodatek
 \ip \ztoc|post\*
 \pb
 \ip
