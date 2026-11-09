@@ -2,13 +2,14 @@
 \nopagenums
 \zEmptyPage
 \zEmptyPage
-\zgap|5,3cm\*
-\mt \zvar|maintitle\*
-\zgap|2,4cm\*
+\zgap|70.000mm\*
+\mt1 \zvar|maintitle\*
 \mt2 \zvar|subtitle\*
-\rem \zgap|0cm\*
+\zgap|0,6in\*
+\mt4 \zvar|coversubtitle\*
 \rem \mt4 Študijska izdaja
 \rem \mt4 Škofja Loka
+
 \rem ----------------Kolofon-------------------------------------------------
 \h Kolofon
 \pb
@@ -24,8 +25,8 @@
 \im Zemljevidi: churchmaps.info (različica 1.3, 2020; javna last).
 \im Za slovensko izdajo posodobil, prilagodil in poslovenil Marjan Šavli.
 \im Izvorna koda in grafika: github.com/msavli/Bible-Maps
-\zbl|17\*
-\im Prevod: Marjan Šavli in Barbara Hojkar Šavli, 2026
+\zbl|14\*
+\im Prevod: Marjan Šavli in Barbara Hojkar Šavli, \zvar|letnica\*
 \im Priprava besedila: Marjan Šavli (PTXPrint)
 \im Fotografija na naslovnici: arhiv družine Šavli
 \im Založnik: Marjan Šavli in Barbara Hojkar Šavli, Mestni trg 11, Škofja Loka
@@ -47,13 +48,13 @@
 \rem ----------------------- Predgovor --------------------------------------------------
 \pb
 \h Predgovor
-\mt2 Predgovor
+\is Predgovor
 \ip Projekt prevoda Sveto pismo kralja Jakoba v slovenski jezik je potekal od maja 2010 do maja 2022. Prevedenih je 66 knjig. Pri pregledu besedila sodeluje Vinko Ošlak.
 \ip Prosiva Boga, da bi bila tudi vam ta knjiga v blagoslov in spodbudo pri hoji z Jezusom.
 \zbl|1\*
 \ipr Prevajalca
 \zbl|4\*
-\mt2 O prevodu:
+\is O prevodu
 \zbl|2\*
 \ip    • dodane opombe in reference; KJV 1611,
 \ip    • dodane približne letnice dogodkov; KJV Oxford 1769,
@@ -68,7 +69,7 @@
 \rem -----------------------Jezus, reši me!--------------------------------------------------
 \pb
 \h Jezus
-\mt Jezus, reši me!
+\is Jezus, reši me!
 \ipi Bog je že dokazal Svojo ljubezen do tebe osebno. Kajti Bog je tako ljubil svet (tebe), da je dal Svojega edinorojenega Sina, da kdorkoli veruje vanj, (ti?) se ne bo pogubil, temveč bo imel večno življenje.\vp(Jn 3,16)\vp*
 \ipi Ali verjameš Besedi Njega, ki te je ustvaril, ki te pozna in te ljubi?
 \ipi Ali si pripravljen sprejeti Njega, to je Božjo Besedo – Jezusa Kristusa, po katerem so bile narejene vse stvari?
@@ -78,9 +79,9 @@
 \ipi Kajti s srcem človek veruje v pravičnost, z usti pa je narejeno priznanje v rešitev duše.\vp(Rim 10,10)\vp* Tvoja molitev (iskren pogovor z Bogom) naj bi bila takšna.
 \ipi Na glas izgovori:
 \ipi »Jezus, žal mi je za vse moje grehe. Prosim odpusti mi, osvobodi me in me popolnoma očisti. Sprejemam te  za svojega Odrešenika, Gospoda in Gospodarja svojega življenja. Hvala, ker si tudi zame plačal ceno za moje grehe na križu, umrl in tretji dan vstal.«
-\zbl|2\*
-\ipi datum: ____________   podpis: _________________________
-\zbl|1\*
+\zgap|0,04in\*
+\ipi datum: ______________   podpis: ________________________________
+\zgap|0,01in\*
 \ipi Toda tolikim, kot so ga sprejeli, njim je on dal moč, da postanejo Božji sinovi, torej njim, ki verujejo v njegovo ime, (v ime Jezusa Kristusa).\vp(Jn 1,12)\vp* Potem so bili tisti, ki so z veseljem sprejeli njegovo besedo, krščeni.\vp(Apd 2,41)\vp*
 \ipi Pokesajte se (če si to ravnokar storil, sledi navodilu)
 \ipi in vsak izmed vas naj bo krščen v imenu Jezusa Kristusa v odpuščanje grehov
@@ -88,42 +89,44 @@
 \ipi Kdor veruje vanj, ni obsojen, toda kdor ne veruje, je že obsojen, ker ni veroval v ime edinorojenega Božjega Sina.\vp(Jn 3,18)\vp* Kdor zavrača mene (Jezusa) in ne sprejema mojih besed, ima nekoga, ki ga sodi. Beseda, ki sem jo govoril, ta ista ga bo sodila na poslednji dan.\vp(Jn 12,48)\vp*
 \rem -------------------------------Kazalo------------------------------------------
 \pb
-\h Kazalo
+\is1 Kazalo
 \mt2 \zvar|toctitle\*
-\is Knjige Stare zaveze
+\is2 Knjige Stare zaveze
 \ip \ztoc|ot\*
 \pb
 \ip
 \ip
 \ip
-\is Knjige Nove zaveze
+\is2 Knjige Nove zaveze
 \ip \ztoc|nt\*
 \ip
-\is Dodatki
+\is2 Dodatki
 \ip \ztoc|post\*
 \pb
 \ip
 \ip
-\is Abecedni seznam Svetopisemskih knjig
+\is2 Abecedni seznam knjig
 \ip \ztoc|sorta\*
 
 \pb
 \zNeedOddPage
-\rem -------------------------------CoverFront------------------------------------------
+
+\rem ============= Cover Page Settings =============
 \periph front|id="coverfront"
-\zgap|111.648mm\*
-\mt1 \zvar|maintitle\*
-\zgap|23.6224251968504mm\*
-\mt2 \zvar|subtitle\*
+\zgap|110.000mm\*
+\mt1 \zvar|sveto\*
+\mt1 \zvar|pismo\*
+	\rem \zgap|0,6in\*
+\mte \zvar|coversubtitle\*
 \vfill
 \endgraf
 \periph spine|id="coverspine"
-\mt2 \zvar|maintitle\* - \zvar|subtitle\*
+\mte \zvar|maintitle\* - \zvar|coversubtitle\*
 \periph back|id="coverback"
-\zgap|1in\*
-\m \zvar|back_cover_title\*
-\zvar|back_cover_title_1\*
-\zbl|17\*
-\zvar|mesecletotiska\*
-
+\zgap|1,8in\*
+\m Kajti Bog je tako ljubil svét, da je dal svojega edinorojenega Sina, da se, kdorkoli veruje vanj, ne bi pogubil, temveč bi imel večno življenje.
+\zgap|0,01in\*
+\m Jn 3,16
+\zgap|4,5in\*
+\m 12/2026
 \vfill

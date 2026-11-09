@@ -1,15 +1,15 @@
-
+# This file is currently empty
 \Marker add
 \Bold -
 
 \Marker cat:coverback|esb
 \BgColor 0.34 0.22 0.11
 \FontSize 12.48
-\Color xFFD700
+\Color xD7BB97
 
 \Marker cat:coverfront|esb
-\BorderStyle 
-\BorderRef 
+\BorderStyle
+\BorderRef
 \BorderColor 0.00 0.00 0.00
 \BgImage "/home/pc/Dokumenti/GitHub/SloKJV/slike/Naslovnica_skrinja_brez_besedila.png"
 \BgImageScale 1x1
@@ -17,15 +17,19 @@
 \BgImageAlpha 1
 
 \Marker cat:coverfront|mt1
-\Color xFFD700
-\FontSize 40
-\SpaceAfter 4.92
+\FontName Gentium Book Basic
+\Color xD7BB97
+\FontSize 95
+\SpaceBefore -20.00
+\SpaceAfter -20.00
+\Bold
 
 \Marker cat:coverfront|mt2
 \FontSize 32
-\Color xFFD700
+\Color xD7BB97
 \SpaceAfter 2.28
 \SpaceBefore 4.8
+\Bold
 
 \Marker cat:coverspine|esb
 \SpaceBefore 0.24
@@ -35,18 +39,18 @@
 
 \Marker cat:coverspine|mt1
 \FontSize 26
-\Color xFFD700
+\Color xD7BB97
 
 \Marker cat:coverspine|mt2
 \FontSize 20.8
-\Color xFFD700
+\Color xD7BB97
 
 \Marker cat:coverwhole|esb
 \BgColor 0.46 0.28 0.14
 \BgImageAlpha 0.001
 
 \Marker esb
-\Color xFFD700
+\Color xD7BB97
 
 \Marker ipi
 \SpaceBefore 5.52
@@ -58,22 +62,25 @@
 
 \Marker m
 \Justification Center
-\Color xFFD700
+\Color xD7BB97
 \FontSize 16.92
 
 \Marker mte
 \FontSize 36.48
-\Color xFFD700
+\Color xD7BB97
+\FontName Gentium Book Basic
+\Bold
+\SpaceBefore 15.00
 
 \Marker mte1
 \FontSize 36.48
-\Color xFFD700
+\Color xD7BB97
 
 \Marker mte2
-\Color xFFD700
+\Color xD7BB97
 
 \Marker toc3
-\FontName Linux Libertine O
+\FontName Gentium
 \ztexFontFeatures :extend=0.86
 \Italic -
 \FontSize 14.04
@@ -93,9 +100,10 @@
 \TextProperties publishable
 
 \Marker mt1
-\SpaceBefore 80
-\SpaceAfter 50
+\SpaceBefore 60
+\SpaceAfter 40
 
+# A7_INT-Default.usfm:9:\mt3 z besedami Jezusa Kristusa zapisanimi s temno rdečo
 \Marker mt3
 \SpaceBefore 80
 \Color x500000
@@ -114,59 +122,28 @@
 % Zamaknjeno kazalo 2 Korinčanom je v dveh vrsticah%
 % The ToC issue is a recent regression in 3.0.33 Sorry! We will try to fix it before the next release. Here is a (very strange!) work-around to make them appear on the same line:%
 \Marker cat:toc|tc1
-\SpaceBefore 6
+\SpaceBefore 3
+\Marker cat:toc|tc2
+\SpaceBefore 0
+\Marker cat:toc|tc3
+\SpaceBefore 0
+\Marker cat:toc|tc4
+\SpaceBefore 0
 
-
-%Sela izpise desno v novi vrstici in italic$
+%Sela izpise desno v novi vsrici in italic$
 \Marker qr
 \Italic
 
-\Marker zpqr
-\Name zpqr - Poetry - Right Aligned smart Selah
-\FontSize 12
-\Italic
-\Position
-\Scale 0.25
-\Alpha 0
-\Endmarker zpqr*
-\Description Poetry - Right Aligned smart Selah
-\Mrktype char
-\StyleType Character
-\TextType Versetext
-\Justification Right
-\LineSpacing 1
+% Poveca velikost headerja kjer so 1 Mz 6-7 in strani
+\Marker h
+\FontSize 14.0
 
-Marker cat:coverfront|esb
-\BgImage "/home/pc/Dokumenti/GitHub/SloKJV/slike/Naslovnica_skrinja_brez_besedila.png"
-\BgImageScaleTo colbleed
-\BgImageScale 1x1
-\BgImageAlpha 1
+% Podnaslovi Psalmov niso bold
+\Marker s
+\Bold -
+\SpaceAfter 3.00
+\FontSize 13.0
 
-\Marker cat:coverfront|mt1
-\FontSize 31.8
-
-\Marker cat:coverspine|mt1
-\FontSize 23.53
-
-\Marker cat:coverspine|mt2
-\FontSize 18.824
-
-\Marker cat:coverwhole|esb
-\BgImageAlpha 0
-
-\Marker id:PSA|p
-\Name id:PSA|p - Paragraph - Normal - Centered
-\Description Poetry text Paragraph - Normal - Centered
-
-\FontSize 12
-\Justification Center
-\FirstLineIndent 0
-\LeftMargin 0
-\LineSpacing 1
-\NonJustifiedFill 0.5
-\Endmarker
-\Mrktype versepara
-\StyleType Paragraph
-\TextType Versetext
-\RightMargin 0
-
+% Podnaslovi Psalmov, ki so italic, niso bold
+\Marker bdit
+\Bold -

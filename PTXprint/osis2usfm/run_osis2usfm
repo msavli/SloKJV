@@ -363,6 +363,17 @@ echo " "
 # echo -E "   --==    \p                                                            "
 sed -i "s|<milestone type=\"x-p\" marker=\"¶ \"/>| \x5cp|g"                       $osis2usfm/SloKJV_sword.xml
 sed -i "s|<milestone type=\"x-p\" subType=\"x-added\" marker=\"¶\"/>| \x5cp|g"    $osis2usfm/SloKJV_sword.xml
+#
+# Dodano (nov zapis odstavkov):
+#   <milestone type="x-extra-p"/>                           ->   \p     (stara oblika brez <p>)
+sed -i "s|<milestone type=\"x-extra-p\" */>| \x5cp|g"                          $osis2usfm/SloKJV_sword.xml
+#
+#   Odstavki so sedaj v XML zapisani kot elementi <p> okoli verzov:
+#        <p><verse osisID="Gen.1.3"> ... </verse> ... </p><p><verse osisID="Gen.1.5"> ... </verse></p>
+#   Skripta odstrani <p> in </p> ter v prvi verz vsakega odstavka vstavi \p
+#   (prvi odstavek v poglavju ne dobi \p, ker se ta doda spodaj za vsakim \c).
+python3 zamenjaj_odstavke_p.py $osis2usfm/SloKJV_sword.xml $osis2usfm/SloKJV_sword1.xml
+mv SloKJV_sword1.xml SloKJV_sword.xml
 #cat $osis2usfm/SloKJV_sword.xml |grep "milestone"
 #cat $osis2usfm/SloKJV_sword.xml |grep -1 "Brezbožni pa niso takšni, temveč"
 # =============================================
@@ -1038,6 +1049,7 @@ sed -i "s/^\\\\c \([0-9]*\)/\x5cc \1\n\x5cp/g"          *.usfm
 
 
 # ======= Doda \p vrstico povsod kjer je \v 1 ===========
+echo -E "   --==    V 19_PSA.usfm doda \p vrstico kjer je \v "
 # Potem doda \p vrstico povsod kjer je \v 1  
 #  
 # \c 3                    \c3

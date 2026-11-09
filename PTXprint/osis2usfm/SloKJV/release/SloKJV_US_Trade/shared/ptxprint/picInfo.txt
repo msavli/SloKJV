@@ -5,6 +5,3 @@ picreverse = OK
 piccreditbox = 
 piccredit = 
 
-[map_ancient_world_patriarchs_slo]
-approved = false
-
