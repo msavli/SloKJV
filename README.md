@@ -136,7 +136,7 @@ You can read the Bible using one of these devices or programs:
   #### Viewing files
  - [Access the binary files folder](https://slokjv.si/bin/index.php)
   #### MP3
-   - Audio SloKJV ([MP3](https://k00.fr/SloKJV))
+   - Audio SloKJV
    - ([Old Testament MP3](https://slokjv.si/bin/SloKJV__Stara_zaveza.mp3)) (1,6 Gb, 67 ur)
    - ([New Testament MP3](https://slokjv.si/bin/SloKJV__Nova_zaveza.mp3)) (0,5 Gb, 20 ur)
    - individual books
