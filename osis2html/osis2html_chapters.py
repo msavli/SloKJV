@@ -187,6 +187,7 @@ index_content = [
     '    <meta charset="UTF-8">',
     '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
     f"    <title>{main_title}</title>",
+    '    <script src="./early-prefs.js"></script>',
     '    <link rel="stylesheet" href="./style.css">',
     "  </head>",
     "  <body>",
@@ -457,6 +458,7 @@ for i, book in enumerate(books):
         '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
         f"    <title><?php echo $ch; ?>. poglavje &ndash; {full_title.replace('&nbsp;', ' ')} ({short_title.replace('&nbsp;', ' ')})</title>",
         f'    <link rel="canonical" href="<?php echo htmlspecialchars(\"{safe_book_id}.php?ch=$ch\"); ?>">',
+        '    <script src="./early-prefs.js"></script>',
         '    <link rel="stylesheet" href="./style.css">',
         "  </head>",
         "  <body>",
@@ -560,7 +562,7 @@ for i, book in enumerate(books):
                             if not sub_elem.tail.strip().startswith(" "):
                                 verse_content += " "
                             verse_content += sub_elem.tail.strip()
-                    elif sub_elem.tag == f"{{{ns['osis']}}}milestone" and sub_elem.get("type") == "x-p":
+                    elif sub_elem.tag == f"{{{ns['osis']}}}milestone" and sub_elem.get("type") in ("x-p", "x-extra-p"):
                         if poetry_lines:
                             html_content.append("    <div class='poetry'>")
                             html_content.extend(poetry_lines)
@@ -647,6 +649,19 @@ for i, book in enumerate(books):
 
                 if elem.tail and elem.tail.strip():
                     paragraph += " " + elem.tail.strip()
+
+            elif elem.tag == f"{{{ns['osis']}}}p" and elem.getparent() is chapter:
+                # Odstavki so v XML zapisani kot <p> okoli verzov
+                # (izhod pretvori_odstavke.py): vsak <p> začne nov odstavek.
+                if poetry_lines:
+                    html_content.append("    <div class='poetry'>")
+                    html_content.extend(poetry_lines)
+                    html_content.append("    </div>")
+                    poetry_lines = []
+                if paragraph.strip():
+                    html_content.append(f"    <p>{paragraph.strip()}</p>")
+                    paragraph = ""
+                first_verse_in_paragraph = True
 
             elif elem.tag == f"{{{ns['osis']}}}lg":
                 for line_elem in elem.findall(f"{{{ns['osis']}}}l"):
