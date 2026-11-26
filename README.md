@@ -61,9 +61,9 @@ Sveto pismo lahko berete s pomočjo enega izmed teh naprav ali programov:
  #### Pregled datotek
  - [Vpogled v mapo z binarnimi datotekami](https://slokjv.si/bin/index.php)
  #### MP3
- - Avdio SloKJV ([MP3](https://k00.fr/SloKJV))
-   - Stara zaveza (1,6 Gb, 67 ur)
-   - Nova zaveza (0,5 Gb, 20 ur)
+ - Avdio SloKJV
+   - ([Stara zaveza MP3](https://slokjv.si/bin/SloKJV__Stara_zaveza.mp3)) (1,6 Gb, 67 ur)
+   - ([Nova zaveza MP3](https://slokjv.si/bin/SloKJV__Nova_zaveza.mp3)) (0,5 Gb, 20 ur)
    - posamezne knjige
 
 ### Papirni izvod SloKJV
