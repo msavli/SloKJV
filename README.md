@@ -137,8 +137,8 @@ You can read the Bible using one of these devices or programs:
  - [Access the binary files folder](https://slokjv.si/bin/index.php)
   #### MP3
    - Audio SloKJV ([MP3](https://k00.fr/SloKJV))
-   - Old Testament (1.6 Gb, 67 hours)
-   - New Testament (0.5 Gb, 20 hours)
+   - ([Old Testament MP3](https://slokjv.si/bin/SloKJV__Stara_zaveza.mp3)) (1,6 Gb, 67 ur)
+   - ([New Testament MP3](https://slokjv.si/bin/SloKJV__Nova_zaveza.mp3)) (0,5 Gb, 20 ur)
    - individual books
  
   ### SloKJV paper copy
